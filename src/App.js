@@ -13,7 +13,7 @@ render() {
 	<Router>
 		<div className="App">
 		<Routes>
-				<Route exact path='/' element={< News />}></Route>
+				<Route exact path='/' element={< Home />}></Route>
 				<Route exact path='/Zakazbeton' element={< Zakazbeton />}></Route>
 				<Route exact path='/News' element={< News />}></Route>
 				<Route exact path='/Home' element={< Home />}></Route>

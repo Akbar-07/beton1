@@ -1,6 +1,6 @@
 
 import React from 'react'
-import '../css/nav.css'
+import '../css/Navbar.css'
 import {HiNewspaper} from "react-icons/hi"
 import {FaCalculator} from "react-icons/fa"
 import {FaHandsHelping} from "react-icons/fa"

@@ -439,6 +439,7 @@ cursor: pointer;
         display: block;
         position: absolute;
         top: 0px;
+        height: 100vh;
         left: -350px;
         background-color: #EAEAEA;
         border-radius: 2px;

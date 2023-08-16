@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Navbar from './Navbar'
 import "../css/Home.css"
@@ -23,11 +24,12 @@ import IMG19 from "../img/AdobeStock_70069013 1.png"
 import IMG20 from "../img/QR Code.png"
 
 import {BsChevronRight} from "react-icons/bs"
-// import Zakazbeton from './Zakazbeton'
+import Zakazbeton from './Zakazbeton'
 
 export default function Home() {
   return (
-    <div><div className="seriy">
+    <div>
+        <div className="seriy">
         <Navbar/>
         <div className="rek">
             <img src={IMG1} alt="" />
@@ -37,7 +39,7 @@ export default function Home() {
                 <img className='img1' src={IMG2} alt="" />
                 <span>Заказ бетона</span>
             </div>
-            {/* <Zakazbeton/> */}
+            <Zakazbeton/>
         </div>
         <div className="beton_z">
             <div className=" beton_sar1">
@@ -204,6 +206,8 @@ export default function Home() {
             </div>
 
 
-        </div></div>
+        </div>
+
+    </div>
   )
 }
