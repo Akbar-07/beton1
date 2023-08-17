@@ -1,0 +1,710 @@
+.beton5_div,
+.beton4_div,
+.beton3_div{
+  width: 70%;
+  background: #F6F6F6;
+  border: 1px solid black;
+  border-radius: 41px;
+  padding: 20px 30px 40px 30px;
+}
+.beton5_kotta,
+.beton4_kotta,
+.beton3_kotta{
+  display: flex;
+  justify-content: center;
+}
+.beton3_p{
+  color: #939393;
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.heidh{
+  width: 35vw;
+height: 2px;
+accent-color: black; 
+}
+.heidh1{
+    width: 50vw;
+    height: 6px;
+  accent-color: black; 
+  }
+.beton3_jk{
+  display: flex;
+  justify-content: space-between;
+flex-wrap: wrap;
+}
+.beton3_jk2 p{
+  color: #000;
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.beton3_jk2 span{
+  color: #000;
+font-family: Montserrat Alternates;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.beton3_pl{
+  color: #000;
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.beton3_pl2{
+  color: #000;
+  font-family: Montserrat Alternates;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.beton3_butttton{
+  width: 168px;
+height: 47px;
+border-radius: 9px;
+background: #FFCB13;
+color: #000;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+}
+.beton3_butttton h3{
+  font-size: 15px;
+}
+.beton3_linee{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 30vh;
+}
+.beton4_linee{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.beton5_linee{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 40vh;
+  }
+  .beton5_linee p,
+.beton4_linee p,
+.beton3_linee p{
+  color: #939393;
+text-align: right;
+font-family: Montserrat Alternates;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.beton5_linee span ,
+.beton4_linee span,
+.beton3_linee span{
+  color: #939393;
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.beton3_line,
+.beton4_line{
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  max-width: 1029px;
+  background: #FFF;
+box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.07);
+margin-left: 20px;
+}
+.beton3_lin3,
+.beton4_lin3{
+  width: 35%;
+  height: 10px;
+  border-radius: 10px;
+  background: #FFCB13; 
+}
+.beton3_button1,
+.beton4_button1{
+  width: 117px;
+height: 44px;
+border-radius: 9px;
+border: 1px solid #E93333;
+color: #E93333;
+font-family: 'Inter Tight', sans-serif;
+font-size: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #00000000;
+}
+.beton3_button1 h3,
+.beton4_button1 h3 {
+    margin-top: 3px;
+margin-right: 6px;
+}
+.beton3_button2,
+.beton4_button2{
+  width: 117px;
+height: 44px;
+border-radius: 9px;
+border: 1px solid #E93333;
+background: #E93333;
+color: #FFF;
+font-size: 16px;
+font-family: 'Inter Tight', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.beton3_button2 h3,
+.beton4_button2 h3 {
+margin-top:6px;
+margin-left: 6px;
+}
+.beton3_but,
+.beton4_but{
+  display: flex;
+justify-content: space-between;
+}
+@media (max-width:1024px) {
+  .beton3_linee{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .beton_p4{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .beton_pager2{
+  width: 50%;
+margin-left: 100px;
+  }
+}
+.beton4_input{
+  width: 400px;
+height: 55px; 
+border-radius: 12px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05); 
+border: none; 
+color: rgba(0, 0, 0, 0.50);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+padding: 0px 0px 0px 20px;
+margin-top: 10px;
+}
+.beton_search{
+color: rgba(0, 0, 0, 0.50);
+font-size: 25px;
+position: absolute;
+right: 18px;
+top: 22px;
+}
+.beton_p4{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.beton_surch{
+  display: flex;
+margin-left: 30px;
+position: relative;
+}
+.beton_pager2{
+  width: 50%;
+}
+.beton_xcv{
+  color: #000;
+font-size: 18px;
+font-style: normal;
+color: #000;
+font-weight: 600;
+font-family: Montserrat Alternates;
+text-align: left;
+margin-bottom: 17px;
+margin-top: 10px;
+}
+.beton_boox{
+  width: 440px;
+height: 2px; 
+margin-right: 13px;
+}
+.beton_otkrit{
+  color: #000;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal; 
+margin-left: 15px;
+}
+.beton_karta{
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+.beton_rasm{
+  width: 24px;
+height: 24px; 
+}
+.beton5_uxshad{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.beton5_uxshad img{
+  width: 18px;
+height: 18px; 
+margin-top: 10px;
+margin-left: 20px;
+}
+.beton5_kamaz{
+  margin-top: -20px;
+  margin-right: 20px;
+}
+.beton5_kamaz1{
+  margin-top: -40px;
+  margin-right: 20px;
+}
+.beton5_phu1{
+  display: flex;
+  justify-content: space-around;
+   width: 90%;
+  gap: 40px;
+}
+.beton_phu12{
+  display: flex;
+  justify-content: space-around;
+
+}
+.checkbox-field{
+  opacity: 0;
+}
+.checkbox-label{
+  font-size: 1.6em;
+  line-height: 1em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.checkbox-label::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 38px;
+  height: 38px; 
+  border-radius: 100%;
+  background-color: #FFCB13;
+}
+.checkbox-label::after{
+  content: '';
+  position: absolute;
+  left: 14px;
+top: 7px;
+width: 6px;
+height: 13px;
+border: solid black;
+border-width: 0 6px 6px 0;
+transition: 0.2s ease;
+}
+.checkbox-field:not(:checked) + .checkbox-label::after{
+  transform: scale(0);
+  opacity: 0;
+
+}
+.checkbox-field:checked + .checkbox-label::after{
+  transform: rotate(35deg) scale(1) ;
+  opacity: 1;
+}
+.beton_galochka{
+  width: 38px;
+height: 38px; 
+border-radius: 23px;
+position: absolute;
+top: 20px;
+right: 20px;
+}
+.beton_div{
+    width: 90%;
+    min-height:80vh ;
+    max-width: 1200px;
+    background: #F6F6F6; 
+    border-radius: 41px; 
+    border:1px solid #c2c1c1; 
+    padding: 20px 20px 30px 20px;
+  margin: auto;
+  }
+  @media (max-width:1024px) {
+    .beton_line{
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .beton_img{
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+      }
+  }
+  .beton_p1{
+    color: #939393;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal; 
+  margin-left: 25px;
+  margin-top: 20px;
+  }
+  .beton_div2{
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+   gap: 40px;
+  margin-top: 20px;
+  }
+  .beton_mini{
+    width: 258px;
+  height: 233px; 
+  border-radius: 41px;
+  border: 1px solid #FFCB13;
+  background: #FFF; 
+  position: relative; 
+  } 
+   .beton5_mini{
+    width: 28%;
+  border-radius: 41px;
+  border: 1px solid #FFCB13;
+  background: #FFF; 
+  position: relative; 
+  }
+  .beton_mini2{
+    width: 258px;
+  height: 233px; 
+  border-radius: 41px;
+  background: linear-gradient(144deg, #000 0%, #757575 100%);
+  position: relative;
+  }
+  .beton_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  .beton5_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  .beton5_img img{
+    width: 40%;
+  }
+  .beton_mini p{
+    color: #000;
+  text-align: center;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal; 
+  }
+  .beton5_mini p{
+    color: #000;
+  text-align: center;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1.7vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px; 
+  }
+  .beton_galochka{
+    width: 38px;
+  height: 38px; 
+  border-radius: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  }
+  .beton5_galochka{
+    width: 2.5vw;
+  height: 2.5vh; 
+  border-radius: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  }
+  .beton_p{
+    color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Inter Tight', sans-serif;
+  margin-top: 80px;
+  }
+  .beton_wrote{
+    color: #C3C3C3;
+  font-family: 'Inter Tight', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  .beton_line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top:35vh;
+  }
+  .beton_line p{
+    color: #939393;
+  text-align: right;
+  font-family: Montserrat Alternates;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  }
+  .beton_line span{
+    color: #939393;
+  font-family: Montserrat Alternates;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  }
+  .beton_lin2{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    max-width: 1029px;
+    background: #FFF;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.07);
+  margin-left: 20px;
+  
+  }
+  .beton_lin3{
+    width: 13%;
+    height: 10px;
+    border-radius: 10px;
+    background: #FFCB13; 
+  }
+  .beton_button1{
+    width: 117px;
+  height: 44px;
+  border-radius: 9px;
+  border: 1px solid #E93333;
+  color: #E93333;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000000;
+  }
+  .beton_button1 h3 {
+  margin-top: 8px;
+  margin-right: 6px;
+  }
+  .beton_button2{
+    width: 117px;
+  height: 44px;
+  border-radius: 9px;
+  border: 1px solid #E93333;
+  background: #E93333;
+  color: #FFF;
+  font-size: 16px;
+  font-family: 'Inter Tight', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .beton_button2 h3 {
+  margin-top: 8px;
+  margin-left: 6px;
+  }
+  .beton_but{
+    display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  }
+  .checkbox-field{
+    opacity: 0;
+  }
+  .checkbox-label{
+    font-size: 1.6em;
+    line-height: 1em;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .checkbox-label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5vw;
+    height: 2.5vw; 
+    border-radius: 100%;
+    background-color: #FFCB13;
+  }
+  .checkbox-label::after{
+    content: '';
+    position: absolute;
+    left: 23px;
+    top: 7px;
+    width: 1vw;
+    height: 4vh;
+  border: solid black;
+  border-width: 0 6px 6px 0;
+  transition: 0.2s ease;
+  }
+  .checkbox-field:not(:checked) + .checkbox-label::after{
+    transform: scale(0);
+    opacity: 0;
+
+  }
+  .checkbox-field:checked + .checkbox-label::after{
+    transform: rotate(35deg) scale(1) ;
+    opacity: 1;
+  }
+  .range-label{
+    display: block;
+    font-size: 2em;
+color: black; 
+
+}
+  .range-field{
+    outline: none;
+    width: 62%;
+    height: 6px; 
+    border-radius:20px;
+    background-color: #777777;
+box-shadow: inset 0 0 5px rgb(0, 0, 0);
+overflow: hidden;
+}
+.range-field::-webkit-slider-thumb {
+    -webkit-appearance: none;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: rgb(255, 0, 0);
+box-shadow: -410px 0 0 400px black;
+cursor: pointer;
+}
+#customers {
+    border-collapse: collapse;
+    width: 94%;
+    height: 60px; 
+}
+.beton2_table1{
+    width: 70%;
+    max-height: 380px;
+    overflow-y: scroll; 
+    scrollbar-width: thin;
+    scrollbar-color: #C3C3C3;
+}
+  #customers td {
+    padding: 10px;
+    border-left: 1px solid #E6E6E6;
+    color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+font-family: 'Nunito Sans', sans-serif;
+  }
+  #customers th {
+    padding: 10px;
+  }
+  .beton2_td{
+    color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+font-family: 'Nunito Sans', sans-serif;
+  }
+  #customers tr:hover {background-color: #ffffff;
+    border-radius: 12px; } 
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #939393;
+font-size: 20px;
+font-style: normal;
+font-weight: 550;
+line-height: normal;
+font-family: 'Inter Tight', sans-serif;
+  }
+  .beton2_range p{
+    color: #000;
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  .beton2_range2{
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+  }
+ 
+.beton_pagm{
+    display: flex;
+    margin-left: 30px;
+}
+.beton_sot1{
+    display: flex;
+align-items: center;
+}
+.beton_oq{
+    width: 24px;
+height: 24px; 
+margin-left: 20px;
+margin-left: 20px;
+
+font-family: Montserrat Alternates;
+  }
+
+  .beton2_da{
+    display: flex;
+  }
+  .beton2_da2{
+    display: flex;
+    align-items: center;
+  } #customers tr
+  {
+   height: 75px;
+  }
+.beton4_p{
+    color: #6A6A6A;
+font-family: Montserrat Alternates;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
