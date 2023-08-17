@@ -6,6 +6,7 @@ import './App.css';
 import News from './js/News';
 import Login from './js/Login';
 import Dobblock from './js/Dobblock';
+import Prozakaz from './js/Prozakaz';
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ render() {
 				<Route exact path='/Home' element={< Home />}></Route>
 				<Route export path='/Login' element={<Login/>}></Route>
 				<Route export path='/Dobblock' element={<Dobblock/>}></Route>
+				<Route export path='/Prozakaz' element={<Prozakaz/>}></Route>
 		</Routes>
 		</div>
 	</Router>
