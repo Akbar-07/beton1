@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.obman-glav{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+.obman-ichi-kettik{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.obman-ichi-kettik p{
+    font-family: Montserrat Alternates;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.obman-img-jo{
+    width: 200px;
+}
+.obman-ikki-pas-joy-icon{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allayvalay{
+    width: 200px;
+    height: 1px;
+
+}
+.obman-ikki-juda-pas-joy{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.obman-ikki-juda-pas-joy h1{
+    font-family: Montserrat Alternates;
+font-size: 30px;
+font-weight: 600;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: center;
+position: relative;
+left: 40px;
+}
+.obman-ikki-juda-pas-joy span{
+    color: #E93333;
+}
+.pasda-emoji-bor-ekan-ehtoyot-bolila{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+}
+.pasda-emoji-bor-ekan-ehtoyot-bolila img{
+    width: 98.28455991453737px;
+height: 89.30423623657877px;
+transform: rotate(60deg);
+position: relative;
+top: -40px;
+}
+.obmen-pasda-card-xaxa-bla-zaibal-nom-oylab-topuvurib{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.obmen-card-1-d_f{
+    width: 587px;
+height: 346px;
+border-radius: 41px;
+background-color: white;
+display: flex;
+align-items: center;
+}
+.obmen-card-img{
+    position: relative;
+    right: 60px;
+    width: 170px;
+}
+.obmen-card-text{
+    width: 374px;
+    height: 242.000732421875px;
+}
+.obmen-card-text h2{
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E93333;
+    margin-bottom: 20px;
+}
+.obmen-card-text p{
+    font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #6D6D6D;
+}
+
+
+.obmen-card-1-d_f1{
+    width: 587px;
+height: 346px;
+border-radius: 41px;
+background-color: white;
+display: flex;
+align-items: center;
+}
+.obmen-card-img1{
+    position: relative;
+    right: 30px;
+    width: 170px;
+}
+.obmen-card-text1{
+    width: 374px;
+    height: 242.000732421875px;
+}
+.obmen-card-text1 h2{
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E93333;
+    margin-bottom: 20px;
+}
+.obmen-card-text1 p{
+    font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #6D6D6D;
+}
+.obmen-card-img3{
+    position: relative;
+    right: 120px;
+    width: 170px;
+}
+.obmen-card-img4{
+    position: relative;
+    right: 80px;
+    width: 170px;
+}
+.obmen-pasda-card-xaxa-bla-zaibal-nom-oylab-topuvurib1{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+#tepaga-gomi{
+    position: relative;
+    top:80px;
+}
