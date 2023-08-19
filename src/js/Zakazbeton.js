@@ -93,15 +93,9 @@ function chiqaqol3(){
   }
 }
 export default function Zakazbeton() {
-  state={
-    page:0,
-    first_select:{}
-  }
-  first_button=()=>{
-if(this.state.first_select!=={}){
-this.setState({page:1})
-}}
+  
     const[page,setPage]=useState(0)
+    const [data,setData]=useState(0)
     const [data1,setData1]=useState([
       {
         title:"2,5м35",
@@ -129,7 +123,7 @@ this.setState({page:1})
     }
     return (
         <div>
-    <div className='beton1_kotta' >
+          {page===0?(<div className='beton1_kotta' >
     <div className='beton_div'  >
              <p className='beton_p1' >Что необходимо?</p>
        <div className="beton_div2">
@@ -180,8 +174,7 @@ this.setState({page:1})
            <button className="beton_button2"> <a onClick={()=>{this.first_button()}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
            </div>
-    </div>
-    <div className='beton2_kotta' >
+    </div>):(<div className='beton2_kotta' >
     <div className='beton_div'  >
              <p className='beton_p1' >Производитель </p>
        <div className="beton2_div2">
@@ -359,7 +352,7 @@ this.setState({page:1})
                                 <div className="akardon-pasdia-chiqadi-but4">
                                     <button>-5°C</button>
                                     <button>-10°C</button>
-                                    <button>--15°C</button>
+                                    <button>-15°C</button>
                                     <button>-20°C</button>
                                     <button>-25°C</button>
                                 </div>
@@ -385,7 +378,9 @@ this.setState({page:1})
            <button className="beton_button2"> <a onClick={()=>{this.first_button()}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
              </div>
-    </div>  
+    </div> )}
+    
+     
     <div className='beton3_kotta' >
     <div  className="beton3_div">
     <p className='beton3_p' >Количество</p>
