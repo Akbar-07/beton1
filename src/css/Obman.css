@@ -187,6 +187,7 @@ color: #6D6D6D;
     margin-bottom: 60px;
     border: 7px solid #FFFFFF;
     border-radius: 41px;
+    overflow: hidden;
 }
 
 .pasda-alert-text p{
@@ -224,4 +225,577 @@ line-height: 27px;
 letter-spacing: 0em;
 text-align: left;
 
+}
+@media (max-width:1335px) {
+    .obman-glav {
+        width: 1040px;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+.lalalalala1 {
+    width: 763px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+.lalasdadadasasdd {
+    width: 750px;
+    height: 81px;
+}
+
+.lalasdadadasasdd p {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.obmen-card-1-d_f {
+    width: 500px;
+    height: 346px;
+    border-radius: 41px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.obmen-card-1-d_f1 {
+    width: 500px;
+    height: 346px;
+    border-radius: 41px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.obmen-card-img {
+    position: relative;
+    right: 60px;
+    width: 110px;
+}
+.obmen-card-img img{
+    width: 190px;
+}
+.obmen-card-img1 {
+    position: relative;
+    right: 30px;
+    width: 120px;
+}
+.obmen-card-img1 img{
+    width: 150px;
+}
+.obmen-card-img3 {
+    position: relative;
+    right: 110px;
+    width: 100px;
+}
+.obmen-card-img3 img{
+    width: 210px;
+}
+.obmen-card-img4 {
+    position: relative;
+    right: 60px;
+    width: 120px;
+}
+.obmen-card-img4 img{
+    width: 180px;
+}
+}
+@media (max-width:1184px) {
+    .obman-glav {
+        width: 950px;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .obmen-card-1-d_f {
+        width: 450px;
+        height: 346px;
+        border-radius: 41px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+    .obmen-card-text p {
+        font-family: Gilroy;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #6D6D6D;
+    }
+    .obmen-card-1-d_f1 {
+        width: 450px;
+        height: 346px;
+        border-radius: 41px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    .obmen-card-img {
+        position: relative;
+        right: 100px;
+        width: 80px;
+    }
+    .obmen-card-img3 {
+        position: relative;
+        right: 110px;
+        width: 80px;
+    }
+    .obmen-card-img1 {
+        position: relative;
+        right: 60px;
+        width: 70px;
+        transform: rotate(40deg);
+    }
+    .obmen-card-img4 {
+        position: relative;
+        right: 70px;
+        width: 80px;
+        
+    }
+    .obmen-card-img4 img {
+        width: 150px;
+    }
+    .pasda-alert-img img{
+        width: 150px;
+    }
+    .lalalalala1 h2 {
+        color: #E93333;
+        font-family: Gilroy;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .lalasdadadasasdd p {
+        font-family: Gilroy;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .lalasdadadasasdd {
+        width: 700px;
+        height: 81px;
+    }
+}
+@media (max-width:1109px) {
+    .obmen-card-img3 img {
+        width: 190px;
+    }
+    .obmen-card-img3 {
+        position: relative;
+        right: 100px;
+        width: 80px;
+    }
+    .obmen-card-img img {
+        width: 180px;
+    }
+    .obmen-card-img {
+        position: relative;
+        right: 90px;
+        width: 80px;
+    }
+    
+}
+.obmen-pasda-card-xaxa-bla-zaibal-nom-oylab-topuvurib3{
+    width: 100%;
+    height: auto;
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+@media (max-width:1111px) {
+    .obmen-pasda-card-xaxa-bla-zaibal-nom-oylab-topuvurib {
+        display: none;
+        overflow: hidden;
+    }
+    .obmen-pasda-card-xaxa-bla-zaibal-nom-oylab-topuvurib1 {
+        display: none;
+        overflow: hidden;
+    }
+    .obmen-pasda-card-xaxa-bla-zaibal-nom-oylab-topuvurib3{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .center-obman-media{
+        display: block !important;
+
+    }
+    .obmen-card-1-d_f{
+        width: 587px;
+    height: 346px;
+    border-radius: 41px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+    .obmen-card-img{
+        position: relative;
+        right: 60px;
+        width: 170px;
+    }
+    .obmen-card-text{
+        width: 374px;
+        height: 242.000732421875px;
+    }
+    .obmen-card-img1{
+        position: relative;
+        right: 30px;
+        width: 170px;
+    }
+    .obmen-card-1-d_f1{
+        width: 587px;
+    height: 346px;
+    border-radius: 41px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+margin-bottom: 0;
+    }
+    .obmen-card-img img {
+        width: 220px;
+    }
+    .obmen-card-img1 img {
+        width: 200px;
+        transform: rotate(-20deg);
+    }
+    .obmen-card-img3{
+        position: relative;
+        right: 90px;
+        width: 170px;
+    }
+    .obmen-card-text{
+        width: 374px;
+        height: 242.000732421875px;
+    }
+    .obmen-card-img4{
+        position: relative;
+        right: 80px;
+        width: 170px;
+    }
+    .obmen-card-img3 img {
+        width: 240px;
+    }
+    .obmen-card-img4 {
+        position: relative;
+        right: 40px;
+        width: 170px;
+    }
+    .obmen-card-img4 img {
+        width: 200px;
+    }
+    #mojit-tepaga{
+        position: relative;
+        top: -60px;
+    }
+}
+@media (max-width:1004px) {
+    .obman-glav {
+        width: 850px;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .lalalalala1 {
+        width: 600px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    .lalasdadadasasdd {
+        width: 550px;
+        height: 81px;
+    }
+    .lalasdadadasasdd p {
+        font-family: Gilroy;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .obman-ichi-kettik p {
+        font-family: Montserrat Alternates;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    
+    .obman-ikki-juda-pas-joy h1 {
+        font-family: Montserrat Alternates;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 37px;
+        letter-spacing: 0em;
+        text-align: center;
+        position: relative;
+        left: 40px;
+    }    
+}
+@media (max-width:905px) {
+    .obman-glav {
+        width: 700px;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    .obman-ichi-kettik p {
+        font-family: Montserrat Alternates;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    
+    .lalalalala1 {
+        width: 500px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    
+    .lalalalala1 h2 {
+        color: #E93333;
+        font-family: Gilroy;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .lalasdadadasasdd {
+        width: 453px;
+        height: 81px;
+    }
+         #br-oc{
+            display: none;
+         }       
+}
+
+@media (max-width:810px) {
+    .obman-glav {
+        width: 600px;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    .obman-ichi-kettik p {
+        font-family: Montserrat Alternates;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .obman-img-jo img{
+        width: 150px;
+    }   
+     .obman-ikki-juda-pas-joy h1 {
+        font-family: Montserrat Alternates;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        position: relative;
+        left: 40px;
+    }
+    .lalalalala1 {
+        width: 400px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    
+    .lalasdadadasasdd {
+        width: 380px;
+        height: 81px;
+    }
+    .lalalalala1 h2 {
+    color: #E93333;
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 25px;
+}    
+    
+
+}
+@media (max-width:683px) {
+.obman-glav {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.obmen-card-1-d_f {
+    width: 510px;
+    height: 346px;
+    border-radius: 41px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.obmen-card-1-d_f1 {
+    width: 510px;
+    height: 346px;
+    border-radius: 41px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.obmen-card-img {
+    position: relative;
+    right: 60px;
+    width: 80px;
+}
+.obmen-card-img img {
+    width: 150px;
+}
+.obmen-card-img1 {
+    position: relative;
+    right: 40px;
+    width: 80px;
+}
+.obmen-card-img1 img {
+    width: 130px;
+    transform: rotate(-20deg);
+}
+.obmen-card-img3 {
+    position: relative;
+    right: 70px;
+    width: 80px;
+}
+.obmen-card-img3 img {
+    width: 160px;
+}
+.obmen-card-img4 {
+    position: relative;
+    right: 60px;
+    width: 80px;
+}
+.obmen-card-img4 img {
+    width: 140px;
+}
+.pasda-info-belgi-joy-oxirgi-keyn-media {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 60px;
+    border: 7px solid #FFFFFF;
+    border-radius: 41px;
+    overflow: hidden;
+    text-align: center;
+}
+.pasda-alert-text{
+    text-align: center;
+}
+.lalalalala1 {
+    text-align: center;
+    width: 90%;
+    height: 60px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 30px;
+}    .lalasdadadasasdd {
+text-align: center;
+    width: 90%;
+    height: 81px;
+    position: relative;
+    left: 30px;
+}
+
+
+}
+@media (max-width:596px) {
+    .obman-glav {
+        width: 400px;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .obmen-card-1-d_f {
+        width: 400px;
+        height: 346px;
+        border-radius: 41px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .obmen-card-1-d_f1 {
+        width: 400px;
+        height: 346px;
+        border-radius: 41px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }    
+    .obmen-card-text p {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #6D6D6D;
+    }
+    .lalasdadadasasdd p {
+        font-family: Gilroy;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .lalasdadadasasdd {
+        text-align: center;
+        width: 90%;
+        height: 81px;
+        position: relative;
+        left: 30px;
+        margin-bottom: 15px;
+    }
+    .obman-ichi-kettik p {
+        font-family: Montserrat Alternates;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .allayvalay {
+        width: 160px;
+        height: 1px;
+    }
+    .pasda-emoji-bor-ekan-ehtoyot-bolila img {
+        width: 98.28455991453737px;
+        height: 89.30423623657877px;
+        transform: rotate(60deg);
+        position: relative;
+        top: -10px;
+    }    
 }
