@@ -12,32 +12,34 @@ import {CgMenuLeft} from "react-icons/cg"
 import {CgMenuRight} from "react-icons/cg"
 import IMG1 from "../img/Слой_x0020_1.png"
 import IMG2 from "../img/Group 144.png"
+import IMG3 from "../img/Group 298.png"
 
 export default function Navbar() {
 
     function open_chap_nav(){
-        document.querySelector(".menu_chap").style = "left:0px"
+        document.querySelector(".menu_chap").style = "right:0px"
         document.querySelector(".black_chap").style = "display:block"
     }
     function block_chap_nav(){
         document.querySelector(".black_chap").style = "display:none"
-        document.querySelector(".menu_chap").style = "left:-350px"
+        document.querySelector(".menu_chap").style = "right:-425px"
     }
   return (
     <div>
         <div className="black_chap"></div>
         <div className="navbar">
+            
            <div className="navbar1">
-            <div className="nav_menu">
-                <CgMenuLeft onClick={()=>{open_chap_nav()}} className='icon_nav'/>
-            </div>
            <div className="nav_1">
                 <img src={IMG1} alt="" />
+            </div>
+            <div className="nav_1_1">
+                <img src={IMG3} alt="" />
             </div>
             <div className="nav_2">
                 <div className="nav_2_biri">
                     <div className="nav_2_page1">
-                        <HiNewspaper className='icon1'/>
+                        <HiNewspaper className='icon2'/>
                         <span className='s1'>Новости</span>
                     </div>
                     <div className="nav_2_page2">
@@ -74,17 +76,23 @@ export default function Navbar() {
             </div>
             <div className="nav_3">
                 <img src={IMG2} alt="" />
+
             </div>
+            <div className="kot">
             <div className="nav_2_page10">
-                    <button className='b22'><BiSolidUser/></button>
+                    <button className='b22'><BiSolidUser className='icon_nav'/></button>
                 </div>
+                <div className="nav_menu b22">
+                <CgMenuLeft onClick={()=>{open_chap_nav()}} className='icon_nav'/>
+            </div>
+            </div>
            </div>
 
 
 <div className="menu_chap">
             <div className="menu_chap1">
             <img className='beton_img' src={IMG1} alt="" />
-            <CgMenuRight onClick={()=>{block_chap_nav()}} className='icon_nav'/>
+            <CgMenuRight onClick={()=>{block_chap_nav()}} className='icon_nav1'/>
             </div>
            <div className="nav_2_biri">
                     <div className="n1">
