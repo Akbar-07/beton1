@@ -4,9 +4,7 @@
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto&display=swap');
-
 .butt2 {
     width: 210px;
     height: 40px;
@@ -22,7 +20,6 @@
     cursor: pointer;
     margin-top: 7px;
 }
-
 .butt1 {
     width: 210px;
     transition: .3s;
@@ -38,7 +35,6 @@
     border-radius: 10px;
     margin-top: 30px;
 }
-
 .footer_cards {
     display: flex;
     justify-content: space-around;
@@ -47,9 +43,7 @@
     margin: auto;
     padding: 15px;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-
 .footer_card1 h3 {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 18px;
@@ -65,7 +59,6 @@
     align-items: center;
     font-family: 'Montserrat Alternates', sans-serif;
 }
-
 .footer_card4 h4 {
     font-size: 18px;
     line-height: 45px;
@@ -87,11 +80,9 @@
     justify-content: center;
     align-items: center;
 }
-
 .iconss1 i {
     font-size: 30px;
 }
-
 .footer_card2 {
     display: flex;
     margin-left: 10%;
@@ -99,15 +90,12 @@
     justify-content: space-between;
     width: 110px;
 }
-
 .footer_card1 {
     margin-top: 100px;
 }
-
 .footer_card4 {
     margin-top: 237px;
 }
-
 @media(max-width:1100px) {
     .footer_card2 {
         margin-left: 10px;
@@ -177,7 +165,6 @@
         justify-content: center;
     }
 }
-
 .media_help {
     margin-top: 50px;
 }
@@ -200,55 +187,57 @@
     .footer_card4 {
         display: none;
     }
-
     .footer_card2 {
         margin: auto;
         margin-top: 50px;
     }
-
     .media_futer {
         width: auto;
         display: block;
     }
-
     .Footer_footer {
         display: block !important;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 40px;
     }
-
     .media_help {
         display: block;
     }
 }
-
+.footer_card4{
+    z-index: 100;
+}
 .Footer_footer h3 {
     color: #A0A0A0;
     font-weight: 500;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 14px;
 }
-
+.footer_card2{
+    z-index: 100;
+}
+.footer_card1{
+    z-index: 100;
+}
 .Footer_footer {
     display: none;
 }
-
+.footer_card{
+    z-index: 100;
+}
 .footer_img {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -10;
     width: 100%;
     height: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-
 .footer_cards {
     position: relative;
     overflow: hidden;
 }
-
 .footer_cards10 {
     position: relative;
     position: relative;
