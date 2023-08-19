@@ -60,13 +60,14 @@ export default function Login() {
               <p>Физическое лицо</p>
               <br />
               <div className="fizika-inputla">
-              <input type="text"  placeholder="Имя" required />
+                <form action="">
+                <input type="text"  placeholder="Имя" required />
               <input type="text"  placeholder="Фамилия" required />
               <input type="text"  placeholder="Отчество" required /> 
               <input type="phone"  placeholder="Телефон" required /> 
-              
               <input type="email"  placeholder="Email" /> <br />
               <button type='button' onClick={()=>setPage(8)} >Далее</button>
+                </form>
               </div>
             </div>
             
@@ -111,13 +112,13 @@ export default function Login() {
               <br />
                 <div className="page-6">
                     <form action="">
-                    <input type="text" placeholder='Имя' />
-                    <input type="text"   placeholder='Фамилия'/>
-                    <input type="text"   placeholder='Отчество'/>
-                    <input type="tel" placeholder='Телефон' />
-                    <input type="email" placeholder='Email' />
-                    <input type="text" placeholder='ИНН' />
-                    <input type="text" placeholder='Реквизиты' />
+                    <input type="text" placeholder='Имя' required />
+                    <input type="text"   placeholder='Фамилия' required/>
+                    <input type="text"   placeholder='Отчество' required/>
+                    <input type="tel" placeholder='Телефон' required />
+                    <input type="email" placeholder='Email' required />
+                    <input type="text" placeholder='ИНН' required />
+                    <input type="text" placeholder='Реквизиты' required />
                     </form>
                     <div className="rekvezit">
                       <div className="rekvezit-img">
@@ -168,13 +169,13 @@ export default function Login() {
               <h1>Регистрация</h1>
               <p>Водитель</p>
               <div className="page-7">
-                <input type="text" placeholder='Имя' />
-                <input type="text" placeholder='Фамилия' />
-                <input type="text" placeholder='Отчество' />
-                <input type="phone" placeholder='Телефон' />
-                <input type="email" placeholder='Email' />
-
-
+                <form action="">
+                <input type="text" placeholder='Имя' required />
+                <input type="text" placeholder='Фамилия' required />
+                <input type="text" placeholder='Отчество' required />
+                <input type="phone" placeholder='Телефон' required />
+                <input type="email" placeholder='Email' required />
+                </form>
 </div>
               <div className="rekvezit-kotta">
               <div className="rekvezit">
