@@ -17,17 +17,13 @@ import yengi from "../img/Screenshot_7_lmp3jpq1 1.png"
 import '../css/Zakazbeton.css';
 import cement from "../img/cement 1(1).png";
 import tosh from "../img/183973062b952e05464d21c9f08676f9 1.png"
-import fliev from "../img/fluent_arrow-fit-16-filled.png";
-import phu from "../img/ph_drop-fill.png";
-import shield from "../img/bxs_shield.png"
-import qor from "../img/Vector.png"
 import laptop from '../img/Laptop.png';
 import debil from '../img/Debit Card.png';
 import hand from '../img/Coin In Hand.png';
 import money from '../img/Money With Arrow.png'
 import  img from '../img/Group (4).png';
 import acardion from '../img/fluent_arrow-fit-16-filled.png'
-import acardion2 from '../img/Vector 11 .png'
+import acardion2 from '../img/Vector 11.png'
 import acardion3 from '../img/ph_drop-fill.png'
 import acardion5 from '../img/bxs_shield.png'
 import acardion6 from '../img/Vector.png'
@@ -97,11 +93,10 @@ function chiqaqol3(){
   }
 }
 export default function Zakazbeton() {
-    
- 
-    const[data,setData]=useState(0)
+  
+    const[page,setPage]=useState(0)
+    const [data,setData]=useState(0)
     const [data1,setData1]=useState([
- 
       {
         title:"2,5м35",
         img:'../img/Group (4).png'
@@ -120,18 +115,15 @@ export default function Zakazbeton() {
       },  
         {
         title:"9м3"
-     
       }
     ])
     function redcolor(key) {
-      
         document.querySelectorAll("h4")[key].style="color:red"
         document.querySelectorAll(".aa")[key].style="fill:red"
-     
     }
     return (
         <div>
-    <div className='beton1_kotta' >
+          {page===0?(<div className='beton1_kotta' >
     <div className='beton_div'  >
              <p className='beton_p1' >Что необходимо?</p>
        <div className="beton_div2">
@@ -182,8 +174,7 @@ export default function Zakazbeton() {
            <button className="beton_button2"> <a onClick={()=>{this.first_button()}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
            </div>
-    </div>
-    <div className='beton2_kotta' >
+    </div>):(<div className='beton2_kotta' >
     <div className='beton_div'  >
              <p className='beton_p1' >Производитель </p>
        <div className="beton2_div2">
@@ -272,59 +263,108 @@ export default function Zakazbeton() {
       </table>
       </div>
     
-      <div>
-    <div className="beton2_accordion">
-        {/* <Accordion classname="beton2_accordion" defaultActiveKey="0">
-            <Accordion.Item  eventKey="0">
-                <Accordion.Header>
-                <img src={fliev} alt="" /><p>Подвижность</p>
-                </Accordion.Header>
-                <Accordion.Body>
-            
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-                <Accordion.Header>
-            <img src={phu} alt="" />
-            <p>Гидрофобная добавка</p>
-                </Accordion.Header>
-                <Accordion.Body>
-                <div className="beton2_da">
-            <div className="beton2_da2">
-            <input type="radio" />
-        <p>Да</p>
-            </div>
-        <div className="beton2_da2">
-        <input type="radio" />
-        <p>Нет</p>
-        </div>
-                </div>
-        
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="2">
-                <Accordion.Header>
-                <img src={shield} alt="" />
-            <p>Фиброволокно</p>
-                </Accordion.Header>
-                <Accordion.Body>
-                
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="3">
-                <Accordion.Header>     <img src={qor} alt="" />
-            <p>Противоморозная 
-        добавка</p></Accordion.Header>
-                <Accordion.Body>
-                
-                </Accordion.Body>
-            </Accordion.Item>
-            </Accordion> */}
-    </div>
-        </div>
+     <div className="eng-kottade-ulani-ushab-turadi">
+                   
+                        <div className="eng-kotta-ong-tarap-acardion">
+                            <div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion} alt="" />
+                                </div>
+                                <div className="akardon-text-joyda" >
+<p onClick={()=>chiqaqol()}>Подвижность</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt="" onClick={()=>chiqaqol()} />
+                                </div>
+                            </div>
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="akardon-pasdia-chiqadi-but">
+                                    <button>П3</button>
+                                    <button>П4</button>
+                                </div>
+                            </div>
+                            <div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion3} alt="" />
+                                </div>
+                                <div className="akardon-text-joyda1"  >
+                                    <p onClick={()=>chiqaqol1()}>Гидрофобная добавка</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt="" onClick={()=>chiqaqol1()} />
+                                </div>
+                            </div>
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="alalalalallaalalalal">
+                                <div className="akardon-pasdia-chiqadi-but1">
+                                    <div className="ana-pachti-tugadi-inpu-radio">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Да</span>
+                                        </div>
+                                        <div className="ana-pachti-tugadi-inpu-radio1">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion5} alt="" id='nmagaaaa-unaqa' />
+                                </div>
+                                <div className="akardon-text-joyda2"  >
+                                    <p onClick={()=>chiqaqol2()}>Фиброволокно</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt=""   onClick={()=>chiqaqol2()} />
+                                </div>
+                            </div>
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="alalalalallaalalalal1">
+                                <div className="akardon-pasdia-chiqadi-but1">
+                                    <div className="ana-pachti-tugadi-inpu-radio">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Да</span>
+                                        </div>
+                                        <div className="ana-pachti-tugadi-inpu-radio1">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+<div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion6} alt="" id='nmagaaaa-unaqa' />
+                                </div>
+                                <div className="akardon-text-joyda3"  >
+                                    <p onClick={()=>chiqaqol3()}>Противоморозная  <br />
+добавка</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt="" onClick={()=>chiqaqol3()} />
+                                </div>
+                            </div>
+
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="axaxaxsaxasxasxasxasxs2">
+                                <div className="akardon-pasdia-chiqadi-but4">
+                                    <button>-5°C</button>
+                                    <button>-10°C</button>
+                                    <button>-15°C</button>
+                                    <button>-20°C</button>
+                                    <button>-25°C</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div> 
     
-    
     </div>
+  
+
     </div>
      
        <div className="beton_line">
@@ -338,7 +378,9 @@ export default function Zakazbeton() {
            <button className="beton_button2"> <a onClick={()=>{this.first_button()}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
              </div>
-    </div>  
+    </div> )}
+    
+     
     <div className='beton3_kotta' >
     <div  className="beton3_div">
     <p className='beton3_p' >Количество</p>
@@ -558,7 +600,6 @@ export default function Zakazbeton() {
      </div>
      </div>
 
-
 <div className='beton8_kotta' >
 <div className='beton8_div' >
       <p className='beton3_p' >Пожелания к заказу</p>
@@ -771,106 +812,6 @@ export default function Zakazbeton() {
   </div>
   
 </div>
-<div className="eng-kottade-ulani-ushab-turadi">
-                   
-                        <div className="eng-kotta-ong-tarap-acardion">
-                            <div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion} alt="" />
-                                </div>
-                                <div className="akardon-text-joyda" >
-<p onClick={()=>chiqaqol()}>Подвижность</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol()} />
-                                </div>
-                            </div>
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="akardon-pasdia-chiqadi-but">
-                                    <button>П3</button>
-                                    <button>П4</button>
-                                </div>
-                            </div>
-                            <div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion3} alt="" />
-                                </div>
-                                <div className="akardon-text-joyda1"  >
-                                    <p onClick={()=>chiqaqol1()}>Гидрофобная добавка</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol1()} />
-                                </div>
-                            </div>
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="alalalalallaalalalal">
-                                <div className="akardon-pasdia-chiqadi-but1">
-                                    <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Да</span>
-                                        </div>
-                                        <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Нет</span>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion5} alt="" id='nmagaaaa-unaqa' />
-                                </div>
-                                <div className="akardon-text-joyda2"  >
-                                    <p onClick={()=>chiqaqol2()}>Фиброволокно</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt=""   onClick={()=>chiqaqol2()} />
-                                </div>
-                            </div>
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="alalalalallaalalalal1">
-                                <div className="akardon-pasdia-chiqadi-but1">
-                                    <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Да</span>
-                                        </div>
-                                        <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Нет</span>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-<div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion6} alt="" id='nmagaaaa-unaqa' />
-                                </div>
-                                <div className="akardon-text-joyda3"  >
-                                    <p onClick={()=>chiqaqol3()}>Противоморозная  <br />
-добавка</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol3()} />
-                                </div>
-                            </div>
-
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="axaxaxsaxasxasxasxasxs2">
-                                <div className="akardon-pasdia-chiqadi-but4">
-                                    <button>-5°C</button>
-                                    <button>-10°C</button>
-                                    <button>--15°C</button>
-                                    <button>-20°C</button>
-                                    <button>-25°C</button>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        </div>
-
-
     </div>  
     )
   
