@@ -17,10 +17,6 @@ import yengi from "../img/Screenshot_7_lmp3jpq1 1.png"
 import '../css/Zakazbeton.css';
 import cement from "../img/cement 1(1).png";
 import tosh from "../img/183973062b952e05464d21c9f08676f9 1.png"
-import fliev from "../img/fluent_arrow-fit-16-filled.png";
-import phu from "../img/ph_drop-fill.png";
-import shield from "../img/bxs_shield.png"
-import qor from "../img/Vector.png"
 import laptop from '../img/Laptop.png';
 import debil from '../img/Debit Card.png';
 import hand from '../img/Coin In Hand.png';
@@ -105,10 +101,8 @@ export default function Zakazbeton() {
 if(this.state.first_select!=={}){
 this.setState({page:1})
 }}
- 
     const[page,setPage]=useState(0)
     const [data1,setData1]=useState([
- 
       {
         title:"2,5м35",
         img:'../img/Group (4).png'
@@ -127,14 +121,11 @@ this.setState({page:1})
       },  
         {
         title:"9м3"
-     
       }
     ])
     function redcolor(key) {
-      
         document.querySelectorAll("h4")[key].style="color:red"
         document.querySelectorAll(".aa")[key].style="fill:red"
-     
     }
     return (
         <div>
