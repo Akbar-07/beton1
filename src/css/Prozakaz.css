@@ -14,12 +14,12 @@
 }
 .zakaz-beton-glav{
     width: 1200px;
-    height: auto;
+    height: 2710px;
     background: #EEEEEE;
     border-radius: 41px;
-margin-bottom: 30px !important;
+margin-bottom: 50px !important;
 margin-top: 50px;
-min-height: 90%;
+min-height: 100%;
 }
 body{
     background: #f8f7f7ee;
@@ -967,4 +967,445 @@ display: none;
         position: relative;
         left: 30px;
     }
+}
+@media (max-width:722px) {
+    .zakaz-beton-media-glav-ashibka {
+        display: block;
+        width: 600px;
+        height: auto;
+        background: #EEEEEE;
+        border-radius: 41px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .media-beton-tepa {
+        width: 500px;
+        height: 121px;
+        margin-top: 20px;
+    }
+    .eng-kottade-scrol {
+        width: 80%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    
+    
+}
+@media (max-width:660px) {
+    #zakaz-bt {
+        background: #f8f7f7ee;
+        width: 100%;
+        height: 100vh;
+        max-width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+.pasqismi-kankulator{
+    width: 100%;
+    height: 205px;
+    margin-top: 20px;
+}
+.input-ranfe-vlaue-kankulator{
+width: 440px;
+height: 51px;
+}
+.input-ranfe-vlaue-kankulator input{
+    width: 100%;
+}
+
+.beton-range-value1{
+    width: 440px;
+height: 54px;
+margin-top: 15px;
+position: relative;
+top: 35px;
+}
+.tepa-qismi-metr1{
+    display: flex;
+    justify-content: space-between;
+}
+.tepa-qismi-metr1 p{
+    font-family: Montserrat Alternates;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+cursor: pointer;
+}
+.ana-beton-range-input1{
+    margin-top: 15px;
+}
+.ana-beton-range-input1 input{
+    width: 100%;
+    height: 3px;
+}
+
+.tak-pasda-koroc-kankularorbor{
+    display: flex;
+    justify-content: space-between;
+}
+.iyana-kankulator-boshqa-nom-yo{
+    width: 363px;
+height: 156px;
+border-radius: 27px;
+background: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.tipa-kankularorde{
+    width: 168px;
+height: 47px;
+border-radius: 9px;
+background: #FFCB13;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: Gilroy;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+gap: 10px;
+cursor: pointer;
+}
+.iyana-ichigakirdeik{
+    display: block; 
+}
+.iyana-ichigakirdeik h3{
+    font-family: Montserrat Alternates;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 5px;
+}
+.iyana-ichigakirdeik p{
+    font-family: Gilroy;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 10px;
+}
+.hop-tepasini-bitirdim-endi-uana-pasga{
+    width: 738px;
+    height: auto;
+}
+.kettik-pasga-juda-qziq{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.input-joyi-borkande-nmagaaaa{
+    display: flex;
+    align-items: end;
+}
+.input-joyi-borkande-nmagaaaa input{
+    width: 541px;
+height: 47px;
+border-radius: 12px;
+outline: none;
+border: none;
+box-shadow: 0px 4px 4px 0px #0000000D;
+}
+.input-joyi-borkande-nmagaaaa input[placeholder]{
+    font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+padding-left: 20px;
+color: #707070;
+}
+.input-joyi-borkande-nmagaaaa button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    right: 40px;
+    top: -10px;
+    background: none;
+}
+.karta-joyi-bor-ekand{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+}
+.karta-joyi-bor-ekand span{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+cursor: pointer;
+}
+.karta-joyi-bor-ekand img{
+    cursor:pointer;
+}
+.kilometr-joy-hop{
+    width: 530px;
+    height:50px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.kilomert-ichidagi-text{
+    width: 251px;
+height: auto;
+
+}
+.kilomert-ichidagi-text p{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.kilomert-ichidagi-text1{
+    width: 251px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.kilomert-ichidagi-text1 p{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.laslasdldlflflfaawadsda{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.kilometr-ichi-input-ran p{
+    font-family: Montserrat Alternates;
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: Montserrat Alternates;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #6A6A6A;
+cursor: pointer;
+}
+.kikmoletr-test-page-input{
+    display: block;
+}
+.kikmoletr-test-page-input{
+    width: 300px;
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+.kikmoletr-test-page-input input{
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+}
+.kilomert-ichidagi-text input{
+    width: 20px;
+height: 20px;
+border-radius: 4px;
+box-shadow: 0px 4px 5px 0px #00000021;
+border: none !important;
+outline: none !important;
+}
+.kilomert-ichidagi-text{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.kilomert-ichidagi-text span{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.kilometr-joy-hop1{
+    width: 700px;
+    height:20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.tarif-joyi-ekan-tez-ql{
+    width: 100%;
+    height: 121px;
+}
+.all-tarif-btn-joy{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.beton-blcok5{
+    width: 230px;
+height: 69px;
+border-radius: 7px;
+background-color: white;
+text-align: center;
+/* border: 1px solid #FFCB13; */
+cursor: pointer;
+transition: 0.2s ;
+border: 1px solid white;
+}
+.beton-blcok5:hover{
+    border: 1.5px solid #FFCB13;
+}
+.sariqblaaa5{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+.beton-blcok6{
+    width: 230px;
+height: 69px;
+border-radius: 7px;
+background-color: white;
+text-align: center;
+/* border: 1px solid #FFCB13; */
+cursor: pointer;
+transition: 0.2s ;
+border: 1px solid white;
+}
+.beton-blcok6:hover{
+    border: 1.5px solid #FFCB13;
+}
+.sariqblaaa6{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+
+.beton-blcok7{
+    width: 230px;
+height: 69px;
+border-radius: 7px;
+background-color: white;
+text-align: center;
+/* border: 1px solid #FFCB13; */
+cursor: pointer;
+transition: 0.2s ;
+border: 1px solid white;
+}
+.beton-blcok7:hover{
+    border: 1.5px solid #FFCB13;
+}
+.sariqblaaa7{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+.kogda-tois-datatime-joy{
+    width: 639px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px;
+    margin-top: 20px;
+}
+.kogda-ichi-buton-vibr{
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+.btn-kogda1{
+    width: Hug (227px);
+height: Hug (50px);
+padding: 15px 38px 15px 38px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border-image-source: linear-gradient(112.72deg, #000000 11.86%, #474747 102.17%);
+border: 1px solid black; 
+cursor: pointer;
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.btn-kogda2{
+    width: Hug (140px);
+    height: Hug (50px);
+    padding: 15px 38px 15px 38px;
+    border-radius: 12px;
+    gap: 10px;
+border-image-source: linear-gradient(112.72deg, #000000 11.86%, #474747 102.17%);
+border: 1px solid black; 
+cursor: pointer;
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.btn-kogda3{
+    width: Hug (140px);
+    height: Hug (50px);
+    padding: 15px 38px 15px 38px;
+    border-radius: 12px;
+    gap: 10px;
+border-image-source: linear-gradient(112.72deg, #000000 11.86%, #474747 102.17%);
+border: 1px solid black; 
+cursor: pointer;
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
 }
