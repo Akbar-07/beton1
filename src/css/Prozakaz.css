@@ -2,23 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto+Condensed&family=Rubik&display=swap');
 
 
-
+#zakaz-bt{
+    background: #f8f7f7ee;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
 .zakaz-beton-glav{
     width: 1200px;
     height: auto;
     background: #EEEEEE;
     border-radius: 41px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+margin-bottom: 30px !important;
+margin-top: 50px;
+min-height: 90%;
 }
-#zakaz-bt{
+body{
     background: #f8f7f7ee;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  
 }
+
 .zakaz-beton-ichi{
     width: 1086px;
     height: 100px;
@@ -331,10 +337,634 @@ right: 10px;
 .eng-kottade-scrol::-webkit-scrollbar {
     width: 5px; /* в основном для вертикальных полос прокрутки */
     height: auto; /* в основном для горизонтальных полос прокрутки */
+    cursor: pointer;
   }
   .eng-kottade-scrol::-webkit-scrollbar-thumb { /* плашка-бегунок */
  background: #C3C3C3;
+ cursor: pointer;
   }
   .eng-kottade-scrol::-webkit-scrollbar-track { /* фон */
  background: #E6E6E6;
+ cursor: pointer;
   }
+  .eng-kottade-ulani-ushab-turadi{
+    display: flex;
+  }
+  .eng-kotta-ong-tarap-acardion{
+    width: 300px;
+    height: auto;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: block;
+  }
+  .akardion-pro-zakazz{
+    width: 100%;
+    margin-bottom: 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+.akardon-text-joyda{
+    width: 200px;
+    height: auto;
+}
+.akardon-text-joyda p{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+cursor: pointer;
+user-select: none;
+}
+.akardion-img-joyda{
+    width: 40px;
+    height: auto;
+    position: relative;
+}
+.akardion-oxiri-keyin-chop{
+    width: 45px;
+    height: auto;
+    text-align: end;
+}
+.akardion-oxiri-keyin-chop img{
+    cursor: pointer;
+}
+.akardion-pasida-chiqadi-bosilganda{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.akardon-pasdia-chiqadi-but button{
+    width: Hug (54px);
+    height: Hug (40px);
+    padding: 11px 17px 9px 17px;
+    border-radius: 12px;
+    border: 1px;
+    gap: 10px;
+border: 1px solid #E0E0E0;
+outline: none;
+cursor: pointer;
+transition: 0.4s;
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.akardon-pasdia-chiqadi-but button:hover{
+background-color: white;
+color: #E93333;
+
+}
+.akardon-pasdia-chiqadi-but {
+    width: 150px;
+    height: auto;
+    display: none;
+    position: relative;
+    left: 40px;
+}
+.akardon-pasdia-chiqadi-but1 {
+    width: 150px;
+    height: auto;
+    position: relative;
+    left: 40px;
+    display: flex;
+    gap: 15px;
+}
+.akardon-pasdia-chiqadi-but1 input{
+    width: 21px;
+    height: 21px;
+}
+.akardon-pasdia-chiqadi-but1 input[radio]{
+    background-color: #E93333 !important;
+}
+#yes1{
+    border:2px solid white !important;
+    box-shadow:0 0 0 1px #E93333;
+    appearance:none;
+    border-radius:50%;
+    background-color:#fff;
+    transition:all ease-in 0.2s;
+    cursor: pointer;
+  }
+  #yes1:checked{
+    background-color:#E93333;
+  }
+  .ana-pachti-tugadi-inpu-radio{
+    width: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ana-pachti-tugadi-inpu-radio1{
+    width: 55px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.akardon-pasdia-chiqadi-but1 span{
+    cursor: pointer;
+}
+.akardon-text-joyda1{
+    width: 200px;
+    height: auto;
+}
+.akardon-text-joyda1 p{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+cursor: pointer;
+user-select: none;
+}
+.alalalalallaalalalal{
+    display: none;
+}
+#nmagaaaa-unaqa{
+    position: relative;
+    left: 5px;
+}
+.alalalalallaalalalal1{
+    display: none;
+}
+.akardon-text-joyda2{
+    width: 200px;
+    height: auto;
+}
+.akardon-text-joyda2 p{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+cursor: pointer;
+user-select: none;
+}
+.akardon-pasdia-chiqadi-but4 button{
+    width: Hug (69px);
+    height: Hug (40px);
+    padding: 11px 17px 9px 17px;
+    border-radius: 12px;
+    border: 1px;
+    gap: 10px;
+    border: 1px solid #E0E0E0;
+    color: #606060;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.akardon-pasdia-chiqadi-but4 button:hover{
+    background: #FFFFFF;
+    color: #E93333;
+}
+.akardon-pasdia-chiqadi-but4{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+display: flex;
+gap: 3px;
+}
+.axaxaxsaxasxasxasxasxs2{
+    display: none;
+}
+.akardon-text-joyda3{
+    width: 200px;
+    height: auto;
+}
+.akardon-text-joyda3 p{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+cursor: pointer;
+user-select: none;
+}
+.ana-tepaniyam-tugaim-oldim-xaxa{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+
+/* Kamentariya */  /* Kamentariya */    /* Kamentariya */
+
+.ana-kamentariya-joyiborekan{
+    width: 502px;
+height: 230px;
+border: 1px;
+background: #FFCB13;
+border-radius: 27px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ichi-zaib-boldim-nomtopishga{
+    width: 90%;
+    height: 80%;
+}
+.ichi-zaib-boldim-nomtopishga h2{
+    font-family: Montserrat Alternates;
+font-size: 19px;
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+color: black;
+margin-bottom: 10px;
+}
+.ichi-zaib-boldim-nomtopishga p{
+    font-family: Gilroy;
+font-size: 16px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: center;
+color: black;
+margin-bottom: 20px;
+}
+.ichi-zaib-boldim-nomtopishga textarea{
+    width: 96%;
+position: relative;
+left: 2px;
+outline: none;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px 0px #0000000D;
+height: 90px !important;
+border-radius: 12px;
+border: 1px;
+padding-left: 15px;
+padding-top: 20px;
+}
+.ichi-zaib-boldim-nomtopishga textarea[placeholder]{
+    font-family: Montserrat Alternates;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+color: #00000080;
+}
+.onasini-emsin-shu-mediani{
+    display: none;
+}
+.zakaz-beton-media-glav-ashibka{
+    display: none;
+}
+@media (max-width:1215px) {
+    .zakaz-beton-glav{
+display: none;
+    }
+    .zakaz-beton-media-glav-ashibka{
+        display: block;
+        width:900px;
+        height: auto;
+        background: #EEEEEE;
+        border-radius: 41px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        min-height: 90%;
+    }
+    .media-beton-tepa{
+        width: 800px;
+        height: 121px;
+        margin-top: 20px;
+    }
+    .tepa-qismi-media-df{
+        display: flex;
+        justify-content: center;
+    }
+    .media-beton-tepa h3{
+    font-family: Montserrat Alternates;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #939393;
+
+}
+.all-buton-media-tanlidi{
+    margin-top: 20px;
+    display: flex;
+justify-content: space-between;
+}
+.beton-blcok {
+    width: 170px;
+    height: 57px;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+    /* border: 1px solid #FFCB13; */
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid white;
+}
+.beton-blcok2{
+    width: 170px;;
+height: 57px;
+border-radius: 7px;
+background-color: white;
+text-align: center;
+/* border: 1px solid #FFCB13; */
+cursor: pointer;
+transition: 0.2s ;
+border: 1px solid white;
+}
+.beton-blcok3{
+    width: 180px;
+height: 57px;
+border-radius: 7px;
+background-color: white;
+text-align: center;
+/* border: 1px solid #FFCB13; */
+cursor: pointer;
+transition: 0.2s ;
+border: 1px solid white;
+}
+.beton-rasm-img-text span {
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.beton-blcok1{
+    width: 180px;
+height: 57px;
+border-radius: 7px;
+background: linear-gradient(110.56deg, #080808 -15.64%, #707070 115.25%);
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: Gilroy;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+cursor: pointer;
+}
+.beton-rasm-patom-text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 60%;
+    gap: 10px;
+    padding-left: 15px;
+}
+.razmer-joy-pas-media-zaibal-joy{
+    margin-top: 30px;
+}
+.razmer-joy-pas-media-zaibal-joy h2{
+    font-family: Montserrat Alternates;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #939393;
+cursor: pointer;
+}
+.beton-range-value {
+    width: 400px;
+    height: 54px;
+    margin-top: 15px;
+}
+.tepa-qismi-metr p {
+    font-family: Montserrat Alternates;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+.eng-kotta-ong-tarap-acardion{
+    width: 300px;
+    height: auto;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media (max-width:921px) {
+    .zakaz-beton-media-glav-ashibka{
+        display: block;
+        width:800px;
+        height: auto;
+        background: #EEEEEE;
+        border-radius: 41px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        min-height: 90%;
+    }
+
+    .media-beton-tepa {
+        width: 700px;
+        height: 121px;
+        margin-top: 20px;
+    }
+    .beton-blcok {
+        width: 150px;
+        height: 57px;
+        border-radius: 7px;
+        background-color: white;
+        text-align: center;
+        /* border: 1px solid #FFCB13; */
+        cursor: pointer;
+        transition: 0.2s;
+        border: 1px solid white;
+    }
+    .beton-blcok2 {
+        width: 150px;
+        height: 57px;
+        border-radius: 7px;
+        background-color: white;
+        text-align: center;
+        /* border: 1px solid #FFCB13; */
+        cursor: pointer;
+        transition: 0.2s;
+        border: 1px solid white;
+    }
+    .beton-blcok1 {
+        width: 150px;
+        height: 57px;
+        border-radius: 7px;
+        background: linear-gradient(110.56deg, #080808 -15.64%, #707070 115.25%);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .eng-kottade-scrolqw{
+        width: 700px;
+        height: auto;
+        overflow: hidden;
+    }
+    .pasqismi-text-mmm {
+        width: 150px;
+        text-align: center;
+    }
+    .pasqismi-opessaniya {
+        width: 230px;
+    }
+    .pasqismi-narx-joy-zz {
+        width: 150px;
+        display: flex;
+        justify-content:center;
+        position: relative;
+        right: 10px;
+    }
+}
+.yana-kotta-scrol-no-mediada{
+    display: none;
+}
+
+@media (max-width:818px) {
+    .zakaz-beton-media-glav-ashibka {
+        display: block;
+        width: 700px;
+        height: auto;
+        background: #EEEEEE;
+        border-radius: 41px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .media-beton-tepa {
+        width: 600px;
+        height: 121px;
+        margin-top: 20px;
+    }
+    .all-buton-media-tanlidi{
+        flex-wrap: wrap;
+    }
+    .beton-blcok {
+        width: 150px;
+        height: 57px;
+        border-radius: 7px;
+        background-color: white;
+        text-align: center;
+        /* border: 1px solid #FFCB13; */
+        cursor: pointer;
+        transition: 0.2s;
+        border: 1px solid white;
+        margin-bottom: 15px;
+    }
+    /* .pasqismi-uji-img-joy{
+        width: 0;
+    position: relative;
+    left: 10px;
+    }
+    .pasqismi-text-mmm {
+        width: 0;
+        text-align: center;
+    }
+    .pasqismi-opessaniya {
+        width: 0;
+    }
+    .pasqismi-narx-joy-zz {
+        width: 0;
+        display: flex;
+        justify-content:center;
+        position: relative;
+        right: 10px;
+    } */
+    .eng-kottade-scrolqw {
+display: none;
+    }
+    .yana-kotta-scrol-no-mediada{
+        display: block;
+        width: 600px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .yebat-boshim-bla-ax-suka-qotib-qoldi{
+        width: 600px;
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 10px;
+    }
+    .qaytatan-yozvomman-bla-bu-tepa p{
+        cursor: pointer;
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Merriweather', serif;
+        font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #939393;
+    
+    }
+    .eng-kottade-scrol{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .pasqismi-text-mmm p {
+        font-size: 15px;
+    }
+    .pasqismi-opessaniya p {
+        font-size: 15px;
+    }
+    .qaytatan-yozvomman-bla-bu-tepa{
+        width: 110%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .pasqismi-text-mmm1{
+        width: 320px;
+        position: relative;
+        left: 60px;
+    }
+    .pasqismi-opessaniya1{
+        width: 380px;
+    }
+    .pasqismi-narx-joy-zz1{
+        position: relative;
+        left: 30px;
+    }
+}
