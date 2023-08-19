@@ -145,6 +145,18 @@ export default function Obman() {
                     </div>
              </div>
         </div>
+        <div className="obman-kopiya-men">
+          <div className="obman-pasda-media-aaaa">
+          <div className="tepadagi-sozla-media-500">
+          <h3>Главная | <span>Калькулятор</span></h3>
+          </div>
+          <div className="tepagadi-sozla-media-h3">
+            <h3>В современном строительстве, 
+при поставке бетона, иногда возникают проблемы, связанные 
+с недобросовестностью поставщиков. </h3>
+          </div>
+          </div>
+        </div>
     </div>
   )
 }
