@@ -65,6 +65,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import Footer from './Footer'
 // import Zakazbeton from './Zakazbeton'
 
 export default function Home() {
@@ -699,8 +700,9 @@ function sariq2(){
                 <img src={IMG28} alt="" />
             </div>
 
-
+<Footer/>
         </div>
+                   
         </div>
   )
 }
