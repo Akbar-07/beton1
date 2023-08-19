@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router,Routes, Route, } from 'react-router-dom';
 import Zakazbeton from '../src/js/Zakazbeton'
-import Home from './js/Home';
+import Home from './js/Home.js';
 import './App.css';
 import News from './js/News';
 import Login from './js/Login';
