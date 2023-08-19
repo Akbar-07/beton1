@@ -7,6 +7,7 @@ import yiglama from '../img/yiglama.png'
 import  malatok from '../img/malatok.png'
 import  buloq from '../img/bloq.png'
 import  kamaz from '../img/kamaz.png'
+import  alert from '../img/Alert.png'
 
 export default function Obman() {
   return (
@@ -77,6 +78,21 @@ export default function Obman() {
                 </div>
               </div>
               
+             </div>
+             <div className="pasda-info-belgi-joy-oxirgi-keyn-media">
+                    <div className="pasda-alert-img">
+                      <img src={alert} alt="" />
+                    </div>
+                    <div className="pasda-alert-text">
+                      <div className="lalalalala1">
+                      <h2>Используя эти рекомендации, вы сможете снизить риски обмана при поставке бетона 
+и обеспечить выполнение строительных работ с высоким качеством и надежностью. </h2>
+                      </div>
+                      <div className="lalasdadadasasdd">
+                      <p>Обеспечить стабильные поставки высококачественного бетона, без сбоев и задержек сегодня предлагает наш сервис, известный, как надежный поставщик не только в регионе, <br />
+но и далеко за его пределами.</p>
+                      </div>
+                    </div>
              </div>
         </div>
     </div>
