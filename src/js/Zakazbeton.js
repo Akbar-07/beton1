@@ -174,7 +174,7 @@ export default function Zakazbeton() {
            <button className="beton_button2"> <a onClick={()=>{setPage(1)}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
            </div>
-    </div>):(<div className='beton2_kotta' >
+    </div>):(page===1?(<div className='beton2_kotta' >
     <div className='beton_div'  >
              <p className='beton_p1' >Производитель </p>
        <div className="beton2_div2">
@@ -374,14 +374,11 @@ export default function Zakazbeton() {
        </div>
      </div>
        <div className="beton_but">
-           <button className="beton_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setData(1)}}> Назад</a></button>
-           <button className="beton_button2"> <a onClick={()=>{setData(2)}} >Далее </a><h3><BsArrowRight/></h3></button>
+           <button className="beton_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setPage(0)}}> Назад</a></button>
+           <button className="beton_button2"> <a onClick={()=>{setPage(2)}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
              </div>
-    </div> )}
-    
-     
-    <div className='beton3_kotta' >
+    </div> ):(page===2?(<div className='beton3_kotta' >
     <div  className="beton3_div">
     <p className='beton3_p' >Количество</p>
     <div className='beton3_jk' >
@@ -403,13 +400,12 @@ export default function Zakazbeton() {
        </div>
     
        <div className="beton3_but">
-        <button className="beton3_button1"> <h3><BsArrowLeft/></h3> <a > Назад</a></button>
-        <button className="beton3_button2"> <a >Далее </a><h3><BsArrowRight/></h3></button>
+        <button className="beton3_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setPage(1)}}> Назад</a></button>
+        <button className="beton3_button2"> <a onClick={()=>{setPage(3)}}>Далее </a><h3><BsArrowRight/></h3></button>
        </div>
     
         </div>
-    </div>
-    <div className='beton4_kotta' >
+    </div>):(page===3?(<div className='beton4_kotta' >
     <div className='beton4_div' >
     
     <p className='beton3_p' >Куда?</p>
@@ -454,12 +450,11 @@ export default function Zakazbeton() {
        </div>
     
        <div className="beton4_but">
-        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a > Назад</a></button>
-        <button className="beton4_button2"> <a >Далее </a><h3><BsArrowRight/></h3></button>
+        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setPage(2)}}> Назад</a></button>
+        <button className="beton4_button2"> <a onClick={()=>{setPage(4)}}>Далее </a><h3><BsArrowRight/></h3></button>
        </div>
                    </div>
-    </div>
-    <div className='beton5_kotta' >
+    </div>):(page===4?(<div className='beton5_kotta' >
       <div className='beton5_div' >
       <p className='beton3_p' >Тариф</p>
      <div className="beton5_phu1">
@@ -515,15 +510,14 @@ export default function Zakazbeton() {
        </div>
     
        <div className="beton4_but">
-        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a > Назад</a></button>
-        <button className="beton4_button2"> <a >Далее </a><h3><BsArrowRight/></h3></button>
+        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setPage(3)}}> Назад</a></button>
+        <button className="beton4_button2"> <a onClick={()=>{setPage(5)}}>Далее </a><h3><BsArrowRight/></h3></button>
        </div>
     
       </div>
     
     
-    </div>
-<div className='beton7_kotta' >
+    </div>):(page===5?(<div className='beton7_kotta' >
 <div className='beton7_div' >
       <p className='beton3_p' >Способ оплаты</p>
       <div className='beton7_dov' >
@@ -594,13 +588,11 @@ export default function Zakazbeton() {
        </div>
     
        <div className="beton4_but">
-        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a > Назад</a></button>
-        <button className="beton4_button2"> <a >Далее </a><h3><BsArrowRight/></h3></button>
+        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setPage(4)}}> Назад</a></button>
+        <button className="beton4_button2"> <a onClick={()=>{setPage(6)}}>Далее </a><h3><BsArrowRight/></h3></button>
        </div>
      </div>
-     </div>
-
-<div className='beton8_kotta' >
+     </div>):(<div className='beton8_kotta' >
 <div className='beton8_div' >
       <p className='beton3_p' >Пожелания к заказу</p>
 <div className='beton8_davay' >
@@ -721,12 +713,20 @@ export default function Zakazbeton() {
        </div>
        </div>
        <div className="beton4_but">
-        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a > Назад</a></button>
+        <button className="beton4_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setPage(5)}}> Назад</a></button>
         <button className="beton4_button2"> <a >Далее </a><h3><BsArrowRight/></h3></button>
        </div>
     
       </div>
-</div>
+</div>) ) ) ) ))}
+    
+     
+    
+    
+    
+
+
+
 <div className='beton9_kotta' >
 
   <div className='beton9_div' >
