@@ -7,6 +7,8 @@ import News from './js/News';
 import Login from './js/Login';
 import Dobblock from './js/Dobblock';
 import Prozakaz from './js/Prozakaz';
+import Footer from './js/Footer'
+import Obman from './js/Obman';
 
 
 class App extends Component {
@@ -22,6 +24,8 @@ render() {
 				<Route export path='/Login' element={<Login/>}></Route>
 				<Route export path='/Dobblock' element={<Dobblock/>}></Route>
 				<Route export path='/Prozakaz' element={<Prozakaz/>}></Route>
+				<Route export path='/Footer' element={<Footer/>}></Route>
+				<Route export path='/Obman' element={<Obman/>}></Route>
 		</Routes>
 		</div>
 	</Router>

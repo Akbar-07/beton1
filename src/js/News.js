@@ -8,6 +8,7 @@ import mask1 from "../img/Mask group (1).png"
 import arrow from '../img/Arrow 3.png'
 import group101 from '../img/Group 101.png'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default function News() {
   return (
@@ -116,6 +117,8 @@ export default function News() {
                 <img className='news_page_2_card_img' src={group101} alt="" />
             </div>
         </div>
-    </div></>
+    </div>
+    <Footer/>
+    </>
   )
 }
