@@ -170,8 +170,8 @@ export default function Zakazbeton() {
        </div>
        </div>
        <div className="beton_but">
-           <button className="beton_button1"> <h3><BsArrowLeft/></h3> <a > Назад</a></button>
-           <button className="beton_button2"> <a onClick={()=>{this.first_button()}} >Далее </a><h3><BsArrowRight/></h3></button>
+           <button className="beton_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setPage(0)}}> Назад</a></button>
+           <button className="beton_button2"> <a onClick={()=>{setPage(1)}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
            </div>
     </div>):(<div className='beton2_kotta' >
@@ -374,8 +374,8 @@ export default function Zakazbeton() {
        </div>
      </div>
        <div className="beton_but">
-           <button className="beton_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{this.setState({page:0})}}> Назад</a></button>
-           <button className="beton_button2"> <a onClick={()=>{this.first_button()}} >Далее </a><h3><BsArrowRight/></h3></button>
+           <button className="beton_button1"> <h3><BsArrowLeft/></h3> <a onClick={()=>{setData(1)}}> Назад</a></button>
+           <button className="beton_button2"> <a onClick={()=>{setData(2)}} >Далее </a><h3><BsArrowRight/></h3></button>
           </div>
              </div>
     </div> )}
