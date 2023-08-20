@@ -53,6 +53,7 @@
 }
 .footer_card1 h3:hover {
     color: red;
+    transition: 0.5s;
 }
 .footer_flex {
     display: flex;
@@ -69,6 +70,7 @@
 }
 .footer_card4 h4:hover{
     color: red;
+    transition: 0.5s;
 }
 .iconss1 {
     width: 48px;
