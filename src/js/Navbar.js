@@ -15,10 +15,16 @@ import IMG2 from "../img/Group 144.png"
 import IMG3 from "../img/Group 298.png"
 
 export default function Navbar() {
-
+    function open_lichka(){
+            document.querySelector("#helo").style = "background:#E75858;"
+            document.querySelector("#helo1").style = "color:white;"
+    }
+    
     function open_chap_nav(){
         document.querySelector(".menu_chap").style = "right:0px"
         document.querySelector(".black_chap").style = "display:block"
+        document.querySelector(".b23").style = "background-color:#E75858;"
+        document.querySelector(".icon_nav1").style = "color:white;"
     }
     function block_chap_nav(){
         document.querySelector(".black_chap").style = "display:none"
@@ -80,7 +86,7 @@ export default function Navbar() {
             </div>
             <div className="kot">
             <div className="nav_2_page10">
-                    <button className='b22'><BiSolidUser className='icon_nav'/></button>
+                    <button onClick={()=>{open_lichka()}} className='b22' id='helo'><BiSolidUser id='helo1' className='icon_nav'/></button>
                 </div>
                 <div className="nav_menu b22">
                 <CgMenuLeft onClick={()=>{open_chap_nav()}} className='icon_nav'/>
@@ -92,7 +98,7 @@ export default function Navbar() {
 <div className="menu_chap">
             <div className="menu_chap1">
             <img className='beton_img' src={IMG1} alt="" />
-            <CgMenuRight onClick={()=>{block_chap_nav()}} className='icon_nav1'/>
+            <button className='b23'> <CgMenuRight onClick={()=>{block_chap_nav()}} className='icon_nav1'/></button>
             </div>
            <div className="nav_2_biri">
                     <div className="n1">
