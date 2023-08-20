@@ -1,0 +1,44 @@
+.aa1 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+}
+span{
+    color: #E93333;
+}
+.bid_header{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.Article_cards{
+    width: 100%;
+    background-color: #FFF;
+    height: 1000px;
+    border-radius: 40px;
+}
+.Article_card{
+    display: flex;
+    align-items: center;
+}
+.Article_card h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.Article_card h4{
+    color: #BFBFBF;
+}
+.article_card {
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.article_card p{
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.article_card h4{
+    margin-top: 20px;
+}
