@@ -31,7 +31,7 @@ body {
     max-width: 1200px;
     height: 369px;
     background-color: #FFF;
-    border-radius: 40px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,6 +55,7 @@ body {
     font-weight: 600;
     color: #E93333;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .news_card_p {
@@ -95,9 +96,14 @@ body {
 
 @media(max-width:480px) {
     .news_card {
-        border-top-right-radius: 190px;
+        border-top-right-radius: 50px;
     }
-
+    .media_mask{
+        display: flex !important;
+    }
+    .media_mask1{
+        display: none;
+    }
     .news_card_p h3 {
         font-size: 20px;
     }
@@ -280,4 +286,7 @@ width: 70%;
     .news_page_3{
         margin-top: 0px;
     }
+}
+.media_mask{
+    display: none;
 }
