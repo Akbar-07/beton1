@@ -851,6 +851,8 @@ text-align: center;
         height:auto;
         margin: auto;
         margin-top: 20px;
+        margin: auto;
+        text-align: center;
     }
     .obman-kopiya-men{
         
@@ -892,5 +894,215 @@ line-height: 20px;
 letter-spacing: 0em;
 text-align: center;
 color: black    ;
+    }
+    .tepadigi-sozla-pas-qismi-emoji{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .img-tepadagi-koroc-d_f img{
+        width: 80.940283958487846px;
+height: 80.37213064754274px;
+transform: rotate(60deg);
+    }
+    .img-tepadagi-koroc-d_f1 img{
+        width: 70.940283958487846px;
+        height: 70.37213064754274px;
+        transform: rotate(-10deg);  
+        position: relative;
+        top: 20px;
+    }
+    .tepadagi-sozla-yana-pasqismi{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .tepadagi-sozla-yana-pasqismi h2{
+        font-family: Montserrat Alternates;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+
+    }
+    .nmaga-swiper-joy-bor-aa{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .mySwiper5{
+        width:  450px !important; 
+        height: 400px !important;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    .nedoliv{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        
+
+    }
+    .nedoliv-text{
+padding-left: 20px;
+padding-top: 40px;
+width: 90%;
+height: auto;
+    }
+    .nedoliv-text h2{
+        font-family: Montserrat Alternates;
+font-size: 25px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #E93333;
+margin-bottom: 40px;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        background: #E93333;
+
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        margin-bottom: 10px;
+    }
+    .ana-swiper-pasiga-keldi{
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .oxiri-qoldi-davayyyy{
+        width: 450px;
+height: 407px;
+border-radius: 20px;
+border: 7px solid #FFFFFF;
+text-align: center;
+    }
+    .alert-uchun-aloxida-joy{
+        display: flex;
+        text-align: left;
+        position: relative;
+        top: -50px;
+    }
+    .alert-uchun-aloxida-joy img{
+        width: 130px;
+height: 130px;
+    }
+    .oxiri--qoldi-text{
+        width: 100%;
+        height: auto;
+    }
+    .oxiri--qoldi-text h4{
+        font-family: Gilroy;
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: center;
+color: #E93333;
+margin-bottom: 15px;
+    }
+    .xiriri-text-pp p{
+        font-family: Gilroy;
+font-size: 15px;
+font-weight: 500;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+
+    }
+    .xiriri-text-pp{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media (max-width:497px) {
+    .mySwiper5{
+        width:  400px !important; 
+        height: 400px !important;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    .oxiri-qoldi-davayyyy {
+        width: 400px;
+        height: 407px;
+        border-radius: 20px;
+        border: 7px solid #FFFFFF;
+        text-align: center;
+    }
+}
+@media (max-width:440px) {
+    .mySwiper5{
+        width:  360px !important; 
+        height: 450px !important;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    .oxiri-qoldi-davayyyy {
+        width: 360px;
+        height: 407px;
+        border-radius: 20px;
+        border: 7px solid #FFFFFF;
+        text-align: center;
+    }
+    .oxiri--qoldi-text h4 {
+        font-family: Gilroy;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #E93333;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:397px) {
+    .mySwiper5{
+        width:  320px !important; 
+        height: 530px !important;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    .oxiri-qoldi-davayyyy {
+        width: 320px;
+        height: 407px;
+        border-radius: 20px;
+        border: 7px solid #FFFFFF;
+        text-align: center;
+    }
+}
+@media (max-width:350px) {
+    .mySwiper5{
+        width:  290px !important; 
+        height: 530px !important;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    .oxiri-qoldi-davayyyy {
+        width: 290px;
+        height: 430px;
+        border-radius: 20px;
+        border: 7px solid #FFFFFF;
+        text-align: center;
     }
 }
