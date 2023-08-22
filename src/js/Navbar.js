@@ -37,7 +37,7 @@ export default function Navbar() {
             
            <div className="navbar1">
            <div className="nav_1">
-                <img src={IMG1} alt="" />
+                <img onClick={()=> window.location="/"} src={IMG1} alt="" />
             </div>
             <div className="nav_1_1">
                 <img src={IMG3} alt="" />
@@ -45,8 +45,8 @@ export default function Navbar() {
             <div className="nav_2">
                 <div className="nav_2_biri">
                     <div className="nav_2_page1">
-                        <HiNewspaper className='icon2'/>
-                        <span className='s1'>Новости</span>
+                        <HiNewspaper onClick={()=> window.location="/News"} className='icon2'/>
+                        <span onClick={()=> window.location="/News"} className='s1'>Новости</span>
                     </div>
                     <div className="nav_2_page2">
                     <FaCalculator className='icon11'/>

@@ -4,19 +4,22 @@
     font-weight: 600;
     margin-top: 30px;
 }
-.spanga_class_berrr{
+    
+.span1{
     color: #E93333;
 }
 .bid_header{
     max-width: 1200px;
     width: 100%;
     margin: auto;
+    padding: 15px;
+    width: 96vw;
 }
 .Article_cards{
-    width: 100%;
     background-color: #FFF;
-    height: 1000px;
-    border-radius: 40px;
+    min-height: 800px;
+    border-radius: 55px;
+    padding-bottom: 80px;
 }
 .Article_card{
     display: flex;
@@ -31,8 +34,8 @@
 }
 .article_card {
     width: 40%;
-    margin-right: 5%;
-    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .article_card p{
     line-height: 26px;
@@ -42,4 +45,99 @@
 }
 .article_card h4{
     margin-top: 20px;
+}
+span{
+    cursor: pointer;
+}
+.Article_bottom_p{
+    max-width: 997px;
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    line-height: 25px;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: #E93333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+.circle_div h3{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.circle_div{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans:wght@500&family=Roboto&display=swap');
+@media(max-width:1024px){
+    .Article_card{
+        display: block;
+    }
+    .Article_bottom_p{
+        margin-top: 40px;
+    }
+    .Article_card img{
+        width: 100%;
+    }
+    .Article_card h3 {
+    padding-right: 18px;
+    }
+    .Article_card1{
+        display: flex;
+        justify-content: center;
+    }
+    .Article_cards{
+        border-top-right-radius: 400px;
+    }
+    .article_card{
+        width: 96%;
+        padding-left: 20px;
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+    .article_card p{
+        padding-right: 6%;
+    }
+    .articles_p{
+        padding: 20px;
+    }
+    
+}
+@media(max-width:600px){
+    .Article_cards {
+        border-top-right-radius: 300px;
+    }
+}
+@media(max-width:480px){
+    .Article_cards {
+        border-top-right-radius: 55px;
+    }
+    .Article_card h3{
+        font-size: 25px;
+    }
+    .news_page_2 h2{
+        font-size: 30px;
+    }
+    .article_card p {
+        line-height: 20px !important;
+        font-weight: 400;
+        font-size: 14px !important;
+        margin-top: 20px;
+    }
+}
+@media(max-width:650px){
+    .bid_header{
+        width: 92vw;
+    }
 }

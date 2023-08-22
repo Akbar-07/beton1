@@ -9,6 +9,7 @@ import arrow from '../img/Arrow 3.png'
 import group101 from '../img/Group 101.png'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import mediamask from '../img/media_mask.png'
 
 export default function News() {
   return (
@@ -25,11 +26,12 @@ export default function News() {
         </div>
         <div className="news_cards">
             <div className="news_card">
-                <img src={mask} alt="" />
+                <img className='media_mask' src={mediamask} alt="" />
+                <img className='media_mask1' src={mask} alt="" />
                 <div className="news_card_p">
                 <h3>Новая марка бетона уже доступна</h3>
                 <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
-                <h2>Читать новость</h2>
+                <h2 onClick={()=> window.location="/Article"}>Читать новость</h2>
                 </div>
             </div>
         </div></div></div>

@@ -53,7 +53,7 @@
 }
 .footer_card1 h3:hover {
     color: red;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .footer_flex {
     display: flex;
@@ -69,8 +69,8 @@
     font-family: 'Montserrat Alternates', sans-serif;
 }
 .footer_card4 h4:hover{
-    color: red;
-    transition: 0.5s;
+    color: black;
+    transition: 0.3s;
 }
 .iconss1 {
     width: 48px;
