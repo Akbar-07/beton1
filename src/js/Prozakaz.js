@@ -18,7 +18,14 @@ import mini from '../img/mini-kamaz.png'
 import js from '../img/jk.png'
 import standart from '../img/standart.png'
 import primi from '../img/primi.png'
-
+import komp from '../img/Laptop.png'
+import qol from '../img/Coin In Hand.png'
+import card from '../img/Debit Card.png'
+import money from '../img/Money With Arrow.png'
+import zakazbeton from '../img/Group (15).png'
+import zakazbeton1 from '../img/Group (16).png'
+import iconbla from '../img/Group 301.png'
+import prima from '../img/Group 201.png'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -73,7 +80,7 @@ function chiqaqol(){
     }else{
        document.querySelector(".akardon-text-joyda p").style.color="black";
     }
-    
+    document.querySelector(".zakaz-beton-glav").style=`    height: 2500px;`
 }
 function chiqaqol1(){
     var y= document.querySelector(".alalalalallaalalalal").style.display;
@@ -89,7 +96,7 @@ function chiqaqol1(){
     }else{
        document.querySelector(".akardon-text-joyda1 p").style.color="black";
     }
-    
+
 }
 
 function chiqaqol2(){
@@ -106,7 +113,7 @@ function chiqaqol2(){
     }else{
        document.querySelector(".akardon-text-joyda2 p").style.color="black";
     }
-    
+    document.querySelector(".zakaz-beton-glav").style=`    height: 2550px;`
 }
 function chiqaqol3(){
     var y= document.querySelector(".axaxaxsaxasxasxasxasxs2").style.display;
@@ -122,6 +129,7 @@ function chiqaqol3(){
     }else{
        document.querySelector(".akardon-text-joyda3 p").style.color="black";
     }
+    document.querySelector(".zakaz-beton-glav").style=`    height: 2680px;`
 }
 
 function pastarap(){
@@ -159,17 +167,95 @@ function buton(){
 
     document.querySelector(".btn-kogda2").style=`background:none;border: 1px solid black;color:black`
     document.querySelector(".btn-kogda3").style=`background:none;border: 1px solid black;color:black`
+
+    document.querySelector(".salom1-tezroq").style=`display:block`
+    document.querySelector(".salom1-bugun").style=`display:none`
+    document.querySelector(".salom1-keyin").style=`display:none`
+
+    document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
+    top: -90px;`
 }
 function buton1(){
     document.querySelector(".btn-kogda1").style=`background:none;border: 1px solid black;color:black`
     document.querySelector(".btn-kogda3").style=`background:none;border: 1px solid black;color:black`
     document.querySelector(".btn-kogda2").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%);color:white`
+
+    document.querySelector(".salom1-tezroq").style=`display:none`
+    document.querySelector(".salom1-bugun").style=`display:block`
+    document.querySelector(".salom1-keyin").style=`display:none`
+
+        document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
+    top: -90px;`
 }
 
 function buton2(){
     document.querySelector(".btn-kogda1").style=`background:none;border: 1px solid black;color:black`
     document.querySelector(".btn-kogda2").style=`background:none;border: 1px solid black;color:black`
     document.querySelector(".btn-kogda3").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%);color:white`
+
+    document.querySelector(".salom1-bugun").style=`display:none`
+    document.querySelector(".salom1-keyin").style=`display:block`
+    document.querySelector(".salom1-tezroq").style=`display:none`
+
+    document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
+    top: -90px;`
+}
+function pastarapOP(){
+    document.querySelector(".beton-blcok8").style=`border:1.5px solid  #FFCB13`
+    document.querySelector(".sariqblaaa10").style=`background: #FFCB13;`
+
+    document.querySelector(".beton-blcok9").style=`border:1.5px solid  #white`
+    document.querySelector(".sariqblaaa11").style=`background: white;`
+
+    document.querySelector(".beton-blcok10").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa12").style=`background: white;`
+
+        document.querySelector(".beton-blco11").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa13").style=`background: white;`
+}
+function pastarapOP2(){
+    document.querySelector(".beton-blcok9").style=`border:1.5px solid  #FFCB13`
+    document.querySelector(".sariqblaaa11").style=`background: #FFCB13;`
+
+    document.querySelector(".beton-blcok8").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa10").style=`background: white;`
+    
+    document.querySelector(".beton-blcok10").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa12").style=`background: white;`
+
+    document.querySelector(".beton-blco11").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa13").style=`background: white;`
+}
+function pastarapOP3(){
+    document.querySelector(".beton-blcok10").style=`border:1.5px solid  #FFCB13`
+    document.querySelector(".sariqblaaa12").style=`background: #FFCB13;`
+
+    document.querySelector(".beton-blcok9").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa11").style=`background: white;`
+
+    document.querySelector(".beton-blcok8").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa10").style=`background: white;`
+
+    document.querySelector(".beton-blco11").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa13").style=`background: white;`
+}
+function pastarapOP4(){
+    document.querySelector(".beton-blco11").style=`border:1.5px solid  #FFCB13`
+    document.querySelector(".sariqblaaa13").style=`background: #FFCB13;`
+
+    document.querySelector(".beton-blcok10").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa12").style=`background: white;`
+
+        document.querySelector(".beton-blcok8").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa10").style=`background: white;`
+
+    document.querySelector(".beton-blcok9").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa11").style=`background: white;`
+
+    document.querySelector(".beton-blcok10").style=`border:1.5px solid  white`
+    document.querySelector(".sariqblaaa12").style=`background: white;`
+
+
 }
 
 
@@ -178,6 +264,7 @@ const [data,setData] =useState(0)
 const [data1,setData1] =useState(0)
 const [data2,setData2] =useState(0)
 const [data3,setData3] =useState(0)
+const [page,setPage] = useState(1)
   return (
 <div>
     <Navbar/>
@@ -238,75 +325,39 @@ const [data3,setData3] =useState(0)
                         </div>
                         <div className="eng-kottade-ulani-ushab-turadi">
                         <div className="eng-kottade-scrol">
-                        <div className="yebat-boshim-bla-ax-suka-qotib-qoldi">
-                            <div className="qaytatan-yozvomman-bla-bu-tepa">
-                                <div className="pasqismi-uji-img-joy">
-                                <p>Производитель</p>
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                <p>Марка</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                     <p>Опции</p>
-                                </div>
-                               
-                                <div className="pasqismi-narx-joy-zz">
-                                <p >Цена</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="pasqismi-beton-info-joy">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={kkk} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="pasqismi-beton-info-joy1">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={logo} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="pasqismi-beton-info-joy2">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={logo1} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
+                        <table>
+                            <thead>
+                            <tr>
+                            <th className='ana-atble-qildik-p'>Производитель</th>
+                            <th className='ana-atble-qildik-p'>Марка</th>
+                            <th className='ana-atble-qildik-p'>Опции</th>
+                            <th className='ana-atble-qildik-p'>Цена</th>
+                            </tr>
+                            </thead>
+
+          <tbody>
+            <tr>
+              <th><img src={kkk} alt="" /></th>
+              <th className='pasqismi-narx-joy-zz'>М200</th>
+              <th className='pasqismi-opessaniya'>Наименование опции</th>
+              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
+            </tr>
+            <tr>
+              <th><img src={logo} alt="" /></th>
+              <th className='pasqismi-narx-joy-zz'>М200</th>
+              <th className='pasqismi-opessaniya'>Наименование опции</th>
+              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
+            </tr>
+            <tr>
+              <th><img src={logo1} alt="" /></th>
+              <th className='pasqismi-narx-joy-zz'>М200</th>
+              <th className='pasqismi-opessaniya'>Наименование опции</th>
+              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
+            </tr>
+
+          </tbody>
+        </table>
+
                         </div>
                         <div className="eng-kotta-ong-tarap-acardion">
                             <div className="akardion-pro-zakazz">
@@ -406,6 +457,101 @@ const [data3,setData3] =useState(0)
                         
                         </div>
                         <div className="ana-tepaniyam-tugaim-oldim-xaxa">
+                        <div className="eng-kotta-ong-tarap-acardion" id='hashasddd'>
+                            <div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion} alt="" />
+                                </div>
+                                <div className="akardon-text-joyda" >
+                                    <p onClick={()=>chiqaqol()}>Подвижность</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt="" onClick={()=>chiqaqol()} />
+                                </div>
+                            </div>
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="akardon-pasdia-chiqadi-but">
+                                    <button>П3</button>
+                                    <button>П4</button>
+                                </div>
+                            </div>
+                            <div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion3} alt="" />
+                                </div>
+                                <div className="akardon-text-joyda1"  >
+                                    <p onClick={()=>chiqaqol1()}>Гидрофобная добавка</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt="" onClick={()=>chiqaqol1()} />
+                                </div>
+                            </div>
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="alalalalallaalalalal">
+                                <div className="akardon-pasdia-chiqadi-but1">
+                                    <div className="ana-pachti-tugadi-inpu-radio">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Да</span>
+                                        </div>
+                                        <div className="ana-pachti-tugadi-inpu-radio1">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion5} alt="" id='nmagaaaa-unaqa' />
+                                </div>
+                                <div className="akardon-text-joyda2"  >
+                                    <p onClick={()=>chiqaqol2()}>Фиброволокно</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt=""   onClick={()=>chiqaqol2()} />
+                                </div>
+                            </div>
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="alalalalallaalalalal1">
+                                <div className="akardon-pasdia-chiqadi-but1">
+                                    <div className="ana-pachti-tugadi-inpu-radio">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Да</span>
+                                        </div>
+                                        <div className="ana-pachti-tugadi-inpu-radio1">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div className="akardion-pro-zakazz">
+                                <div className="akardion-img-joyda">
+                                    <img src={acardion6} alt="" id='nmagaaaa-unaqa' />
+                                </div>
+                                <div className="akardon-text-joyda3"  >
+                                    <p onClick={()=>chiqaqol3()}>Противоморозная  <br />
+добавка</p>
+                                </div>
+                                <div className="akardion-oxiri-keyin-chop">
+                                    <img src={acardion2} alt="" onClick={()=>chiqaqol3()} />
+                                </div>
+                            </div>
+
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="axaxaxsaxasxasxasxasxs2">
+                                <div className="akardon-pasdia-chiqadi-but4">
+                                    <button>-5°C</button>
+                                    <button>-10°C</button>
+                                    <button>--15°C</button>
+                                    <button>-20°C</button>
+                                    <button>-25°C</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                             <div className="ana-kamentariya-joyiborekan">
                                 <div className="ichi-zaib-boldim-nomtopishga">
                                     <h2>Требуются специализированные добавки?</h2>
@@ -442,7 +588,7 @@ const [data3,setData3] =useState(0)
                                 <div className="input-joyi-borkande-nmagaaaa">
                                     <input type="text" placeholder='Введите адрес' /><button><box-icon name='search' color='#6a6a6a' ></box-icon></button>
                                     <div className="karta-joyi-bor-ekand">
-                                        <img src={js} alt="" /><span>Открыть карту</span>
+                                        <img src={js} alt="" onClick={()=>window.location="https://www.google.com/maps?output=classic"} /><span onClick={()=>window.location="https://www.google.com/maps?output=classic"}>Открыть карту</span>
                                     </div>
                                 </div>
                             </div>
@@ -544,7 +690,182 @@ const [data3,setData3] =useState(0)
                                     <button className='btn-kogda1' onClick={()=>buton()}>Как можно быстрее</button>
                                     <button className='btn-kogda2' onClick={()=>buton1()}>Сегодня</button>
                                     <button className='btn-kogda3' onClick={()=>buton2()}>Предварительный заказ</button>
+                                    <div className="razbit-zakaz-na-chasti">
+                                        <input type="checkbox"  /><span>Разбить заказ <br id='yematbla' /> на части</span>
+                                    </div>
                                 </div>
+                                <div className="bugun-erta-kichkina-joyla">
+                                    <div className="salom1-tezroq">
+                                    <div className="dasdasdddsaderwrew">
+                                        <button>9:00 - 16:00</button>
+                                        <button>12:00-15:00</button>
+                                        <button>13:00-18:00</button>
+                                        <button>18:00-21:00</button>
+                                        </div>
+                                    </div>
+                                    <div className="salom1-bugun">
+                                        <div className="dasdasdddsaderwrew">
+                                        <button>9:00 - 12:00</button>
+                                        <button>12:00-15:00</button>
+                                        <button>15:00-18:00</button>
+                                        <button>18:00-21:00</button>
+                                        </div>
+                                    </div>
+                                    <div className="salom1-keyin">
+                                    <div className="dasdasdddsaderwrew">
+                                        <button>10:00 - 12:00</button>
+                                        <button>12:00-15:00</button>
+                                        <button>20:00-22:00</button>
+                                        <button>19:00-21:00</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="kalendar-joy-justify-end">
+                                <input type="date" name="" id="" />
+                            </div>
+                            <div className="sposib-oplati-prozakaz">
+                            <div className="tarif-joyi-ekan-tez-ql1">
+                                <h2>Способ оплаты</h2>
+                                <div className="all-tarif-btn-joy">
+
+                                <div className="beton-blcok8" onClick={()=>pastarapOP()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa10"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size1">
+                                    <img src={komp} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Онлайн</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok9" onClick={()=>pastarapOP2()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa11"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size1">
+                                    <img src={card} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Перевод на карту</span></div>
+                            </div>
+                        </div>
+
+                        <div className="beton-blcok10" onClick={()=>pastarapOP3()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa12"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size1">
+                                    <img src={qol} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Наличные</span></div>
+                            </div>
+                        </div>
+                        
+                        <div className="beton-blco11" onClick={()=>pastarapOP4()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa13"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size1">
+                                    <img src={money} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Предоплата</span></div>
+                            </div>
+                        </div>
+                                </div>
+                            </div>  
+                            </div>
+                            <div className="sdacha-na-zakaz">
+                                <h4>С какой купюры потребуется сдача?</h4>
+                                <div className="sdacha-input-text">
+                                    <div className="sdacha-input">
+                                        <input type="text" placeholder='Поле для ввода' />
+                                    </div>
+                                    <div className="sdacha-text">
+                                        <p>Если сумма заказа <span>превышает 150000</span>  <br id='syebalsa' />
+может потребоваться  <span>предоплата в 5000 рублей.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="jelaniya-pozakazu">
+                                <h2>Пожелания к заказу</h2>
+                                <br />
+                                <br />
+                                <p>Увеличение стоимости</p>
+                                <br />
+                                <div className="sdacha-input">
+                                        <input type="text" placeholder='Поле для ввода' />
+                                    </div>
+                                    <div className="jalab-kamazlani-turi-bor-ekan">
+                                        <div className="lalala-nom-yo-bunga-prosta-p">
+                                        <p>Если вам требуется доставка <br id='syebalsa'  /> определенными машинами, <br id='syebalsa' /> укажите какими:</p>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi">
+                                            <button><span>2,5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>3м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>7м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button>
+                                        </div>
+                                        
+                                    </div>
+                                    <div className="kamazla-media-suka-blat">
+                                            <button><span>2,5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>3м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>7м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button>
+                                    </div>
+                                    <div className="jalab-kamazlani-turi-bor-ekan1">
+                                        <div className="lalala-nom-yo-bunga-prosta-p">
+                                            <p>Швинг</p>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi">
+                                            <button><span>15м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>21м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>30м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>40м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>57м</span><img src={zakazbeton1} alt="" /></button>
+                                        </div>
+                                    </div>
+                                    <div className="kamazla-media-suka-blat">
+                                            <button><span>15м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>21м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>30м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>40м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>57м</span><img src={zakazbeton1} alt="" /></button>
+                                    </div>
+                                    <div className="jalab-kamazlani-turi-bor-ekan2">
+                                        <div className="lalala-nom-yo-bunga-prosta-p1">
+                                            <p>Время работы швинга</p><br />
+                                            <div className="lalala-nom-zaibal">
+                                            <input type="checkbox" /><span>Пусковая смесь</span>
+                                            </div>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi1">
+                                            <input type="number" />
+                                            <p>Минимальное время работы - 3ч</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="jalab-kamazlani-turi-bor-ekan6">
+                                        <div className="lalala-nom-yo-bunga-prosta-p1">
+                                            <p>Интервал подачи машин:</p>
+                                            <br />
+                                            <div className="lalala-nom-zaibal">
+                                            <input type="checkbox" /><span>Требуется подвоз воды на участок</span>
+                                            </div>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi">
+                                            <button><span>30мин</span></button>
+                                            <button><span>1 час</span></button>
+                                            <button><span>1.5 часа</span></button>
+                                            <button><span>2 часа</span></button>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -556,319 +877,90 @@ const [data3,setData3] =useState(0)
                 
             </div>
         </div>
-        <div className="zakaz-beton-media-glav-ashibka">
-            <div className="tepa-qismi-media-df">
-            <div className="media-beton-tepa">
-                <h3>Что необходимо?</h3>
-                <div className="all-buton-media-tanlidi">
-                    
-                <div className="beton-blcok" onClick={()=>sariqyon()}>
-                            <div className="sasriq-narsa-yonadi">
-                                <div className="sariqblaaa"></div>
-                            </div>
-                            <div className="beton-rasm-patom-text">
-                                <div className="beton-rasm-img-size">
-                                    <img src={m350} alt="" />
-                                </div>
-                                <div className="beton-rasm-img-text"><span>Бетон</span></div>
-                            </div>
-                        </div>
-
-                        <div className="beton-blcok2" onClick={()=>sariqyon1()}>
-                            <div className="sasriq-narsa-yonadi1">
-                                <div className="sariqblaaa1"></div>
-                            </div>
-                            <div className="beton-rasm-patom-text">
-                                <div className="beton-rasm-img-size">
-                                    <img src={qum} alt="" />
-                                </div>
-                                <div className="beton-rasm-img-text"><span>Пескобетон</span></div>
-                            </div>
-                        </div>
-
-                        <div className="beton-blcok3" onClick={()=>sariqyon2()}>
-                            <div className="sasriq-narsa-yonadi1">
-                                <div className="sariqblaaa2"></div>
-                            </div>
-                            <div className="beton-rasm-patom-text">
-                                <div className="beton-rasm-img-size">
-                                    <img src={bilmadim} alt="" />
-                                </div>
-                                <div className="beton-rasm-img-text"><span>Строительный <br />
-раствор</span></div>
-                            </div>
-                        </div>
-                        <div className="beton-blcok1"><p>Специальный бетон</p></div>
-                </div>
-                <div className="razmer-joy-pas-media-zaibal-joy">
-                    <h2>
-                    Производитель
-                    </h2>
-                <div className="beton-range-value">
-                            <div className="tepa-qismi-metr">
-                                <p>М50</p>
-                                <p>М200</p>
-                                <p>М400</p>
-                            </div>
-                            <div className="ana-beton-range-input">
-                                <input type="range" name="" id="" />
-                            </div>
-                        </div>
-                        
-                        <div className="eng-kottade-ulani-ushab-turadi">
-                        <div className="eng-kottade-scrolqw">
-                        <div className="yebat-boshim-bla-ax-suka-qotib-qoldi">
-                            <div className="qaytatan-yozvomman-bla-bu-tepa">
-                                <div className="pasqismi-uji-img-joy">
-                                <p>Производитель</p>
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                <p>Марка</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                     <p>Опции</p>
-                                </div>
-                               
-                                <div className="pasqismi-narx-joy-zz">
-                                <p >Цена</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="pasqismi-beton-info-joy">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={kkk} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="pasqismi-beton-info-joy1">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={logo} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="pasqismi-beton-info-joy2">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={logo1} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                        </div>
-                        
-                        </div>
-                        <div className="yana-kotta-scrol-no-mediada">
-                        <div className="eng-kottade-ulani-ushab-turadi">
-                        <div className="eng-kottade-scrol">
-                        <div className="yebat-boshim-bla-ax-suka-qotib-qoldi">
-                            <div className="qaytatan-yozvomman-bla-bu-tepa">
-                                <div className="pasqismi-uji-img-joy">
-                                <p>Производитель</p>
-                                </div>
-                                <div className="pasqismi-text-mmm1">
-                                <p>Марка</p>
-                                </div>
-                                <div className="pasqismi-opessaniya1">
-                                     <p>Опции</p>
-                                </div>
-                               
-                                <div className="pasqismi-narx-joy-zz1">
-                                <p >Цена</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="pasqismi-beton-info-joy">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={kkk} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="pasqismi-beton-info-joy1">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={logo} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="pasqismi-beton-info-joy2">
-                            <div className="pasqismi-uji-nom-yo">
-                                <div className="pasqismi-uji-img-joy">
-                                    <img src={logo1} alt="" />
-                                </div>
-                                <div className="pasqismi-text-mmm">
-                                    <p>М200</p>
-                                </div>
-                                <div className="pasqismi-opessaniya">
-                                    <p>Наименование опции</p>
-                                </div>
-                                <div className="pasqismi-narx-joy-zz">
-                                    <p>2 000 ₽</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                        </div>
-                        </div>
-                        </div>
-                        <div className="eng-kotta-ong-tarap-acardion">
-                            <div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion} alt="" />
-                                </div>
-                                <div className="akardon-text-joyda" >
-                                    <p onClick={()=>chiqaqol()}>Подвижность</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol()} />
-                                </div>
-                            </div>
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="akardon-pasdia-chiqadi-but">
-                                    <button>П3</button>
-                                    <button>П4</button>
-                                </div>
-                            </div>
-                            <div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion3} alt="" />
-                                </div>
-                                <div className="akardon-text-joyda1"  >
-                                    <p onClick={()=>chiqaqol1()}>Гидрофобная добавка</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol1()} />
-                                </div>
-                            </div>
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="alalalalallaalalalal">
-                                <div className="akardon-pasdia-chiqadi-but1">
-                                    <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Да</span>
-                                        </div>
-                                        <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Нет</span>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion5} alt="" id='nmagaaaa-unaqa' />
-                                </div>
-                                <div className="akardon-text-joyda2"  >
-                                    <p onClick={()=>chiqaqol2()}>Фиброволокно</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt=""   onClick={()=>chiqaqol2()} />
-                                </div>
-                            </div>
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="alalalalallaalalalal1">
-                                <div className="akardon-pasdia-chiqadi-but1">
-                                    <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Да</span>
-                                        </div>
-                                        <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
-                                        <span>Нет</span>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-                            <div className="akardion-pro-zakazz">
-                                <div className="akardion-img-joyda">
-                                    <img src={acardion6} alt="" id='nmagaaaa-unaqa' />
-                                </div>
-                                <div className="akardon-text-joyda3"  >
-                                    <p onClick={()=>chiqaqol3()}>Противоморозная  <br />
-добавка</p>
-                                </div>
-                                <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol3()} />
-                                </div>
-                            </div>
-
-                            <div className="akardion-pasida-chiqadi-bosilganda">
-                                <div className="axaxaxsaxasxasxasxasxs2">
-                                <div className="akardon-pasdia-chiqadi-but4">
-                                    <button>-5°C</button>
-                                    <button>-10°C</button>
-                                    <button>--15°C</button>
-                                    <button>-20°C</button>
-                                    <button>-25°C</button>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-
-                </div>
-            </div>
-            </div>
-        </div>
         
     </div>
+   {/* <div className="samiy-pasledniy-joy-oplata">
+    <div className="letsgo-oplata-ye">
+        <div className="bla-arrowe-ichi-endi">
+            <h2>Заказ</h2>
+            <div className="zakaz-img-info-joi">
+                <div className="zakaz-img-info-img">
+                    <img src={iconbla} alt="" />
+                </div>
+                <div className="zakaz-img-info-text">
+                    <h4>Гравийный бетон М150 B12,5 F100 W4</h4>
+                    <p>Наименование опции, наименование опции, наименование опции </p>
+                </div>
+            </div>
+            <div className="zakaz-line-info"></div>
+            <div className="stoimas-betona">
+                <div className="buyagaona-nax">
+                <div className="stoimas-bet-block1">
+                    <h5>Стоимость бетона:</h5>
+                    <p>5 000 ₽</p>
+                </div>
+                <div className="stoimas-bet-block1">
+                    <h5>Стоимость бетона:</h5>
+                    <p>5 000 ₽</p>
+                </div>
+                <div className="stoimas-bet-block1">
+                    <h5>Стоимость бетона:</h5>
+                    <p>5 000 ₽</p>
+                </div>
+                </div>
+                <div className="stoimas-bet-block2">
+                    <h5>Итого:</h5>
+                    <p>5 000 ₽</p>
+                    <h5 id='sitr'>Итого с учетом бонусов/скидки:</h5>
+                    <p id='sitr2'>5 000 ₽</p>
+                </div>
+            </div>
+            <div className="bonus-i-oplata-joy-ga-keldi">
+                <div className="binusinput-block1">
+                    <div className="sika_f">
+                    <p>Бонусы:</p>
+                    <p>Списать бонусов: </p>
+                    </div>
+                    <div className="binus-block-inp-g_l">
+                        <div className="blc_ino">
+                            <button><img src={prima} alt="" />12 000 бонусов</button>
+                        </div>
+                        <div className="blc_ino1">
+                        <input type="number" />
+                        </div>
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <button>Списать бонусы</button>
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <input type="number" placeholder='Код из смс' />
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
+                        <p><a href="#">Отправить повторно</a></p>
+                    </div>
+                </div>
+                <div className="binus-davam-left-tarap">
+                <div className="sika_f1">
+                    <p>Промокод</p>
+                    </div>
+                    <div className="yana-inp-bla-zaib0suk">
+                        <input type="number"  placeholder='Поле для ввода'/>
+                    </div>
+                </div>
+                <div className="binus-davam-left-tarap">
+                    <div className="oxiri-qoldi-bla-nu-tugadi">
+                        <img src={prima} alt="" /><span>будет начислено бонусов: <br />
+(2% от суммы)</span>
+                    </div>
+                    <div className="bla-pasda-sotvolish-btn">
+                        <button>Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> */}
 </div>
   )
 }
-
-// <h2 className='numbervalue'>{data}м3</h2>
-// <input type="range"  min="0" max="100" step="10" value={data} onChange={(e)=>setData(e.target.value)} />
