@@ -11,7 +11,7 @@ export default function Article() {
         <Navbar/>
         <div className="bid_header">
 <div className="Article_header">
-        <p className='aa1'>Главная | Новости | <span>Статья</span>  </p>
+        <p className='aa1'>Главная | Новости | <span className='spanga_class_berrr'>Статья</span>  </p>
         </div>
         <div className="news_page">
             <img src={start} alt="" />

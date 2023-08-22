@@ -10,27 +10,28 @@ import Prozakaz from './js/Prozakaz';
 import Footer from './js/Footer'
 import Obman from './js/Obman';
 import Article from './js/Article';
-
+import Programma from "./js/Programma_L"
 
 class App extends Component {
 render() {
 	return (
-	<Router>
-		<div className="App">
-		<Routes>
-				<Route exact path='/' element={< Home />}></Route>
-				<Route exact path='/Zakazbeton' element={< Zakazbeton />}></Route>
-				<Route exact path='/News' element={< News />}></Route>
-				<Route exact path='/Home' element={< Home />}></Route>
-				<Route export path='/Login' element={<Login/>}></Route>
-				<Route export path='/Dobblock' element={<Dobblock/>}></Route>
-				<Route export path='/Prozakaz' element={<Prozakaz/>}></Route>
-				<Route export path='/Footer' element={<Footer/>}></Route>
-				<Route export path='/Article' element={<Article/>}></Route>
-				<Route export path='/Obman' element={<Obman/>}></Route>
-		</Routes>
-		</div>
-	</Router>
+	// <Router>
+	// 	<div className="App">
+	// 	<Routes>
+	// 			<Route exact path='/' element={< Home />}></Route>
+	// 			<Route exact path='/Zakazbeton' element={< Zakazbeton />}></Route>
+	// 			<Route exact path='/News' element={< News />}></Route>
+	// 			<Route exact path='/Home' element={< Home />}></Route>
+	// 			<Route export path='/Login' element={<Login/>}></Route>
+	// 			<Route export path='/Dobblock' element={<Dobblock/>}></Route>
+	// 			<Route export path='/Prozakaz' element={<Prozakaz/>}></Route>
+	// 			<Route export path='/Footer' element={<Footer/>}></Route>
+	// 			<Route export path='/Article' element={<Article/>}></Route>
+	// 			<Route export path='/Obman' element={<Obman/>}></Route>
+	// 	</Routes>
+	// 	</div>
+	// </Router>
+	<Programma/>
 );
 }
 }
