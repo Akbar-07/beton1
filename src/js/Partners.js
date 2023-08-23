@@ -15,18 +15,17 @@ import noviy_beton1 from '../img/noviy_beton1.png'
 import mask6 from '../img/mask6.png'
 import sement from '../img/sement_beton.png'
 import right_arrow_png from '../img/right-arrow_png.png'
+import swiper_right from '../img/swiper_right.png'
 
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/free-mode';
 
-
-// import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
 
 
 export default function Partners() {
@@ -97,9 +96,8 @@ export default function Partners() {
                 <div className="for_hidden">
                     <div className="header_images">
                         <Swiper slidesPerView={3}
-                            spaceBetween={30}
-                            freeMode={true}
-                            modules={[FreeMode, Pagination]} className="mySwiper" id="swipers">
+                        
+                            spaceBetween={30} className="mySwiper" id="swipers">
                             <SwiperSlide><div className="partner_card">
                                 <img onClick={() => fabrika2()} src={fabrika} alt="" /></div></SwiperSlide>
                             <SwiperSlide><div className="partner_card">
@@ -124,7 +122,9 @@ export default function Partners() {
                     </div></div>
                 <div className="Header_cards">
                     <div className="for_flex">
+                        <div className="heders_img">
                         <img className='headerimg' src={fabrika} alt="" />
+                        </div>
                         <div className="Header_card">
                             <p>С другой стороны постоянный количественный рост и сфера нашей активности требуют от нас анализа соответствующий условий активизации. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности играет важную роль в формировании форм развития. Равным образом укрепление и развитие структуры представляет...</p>
                             <div className="header_flex">
@@ -135,20 +135,35 @@ export default function Partners() {
                                 <h3>#своя_лаборатория</h3>
                                 <h3>#автоматизированный_завод</h3>
                                 <h3>#несколько_заводов</h3>
-                                <h3>#несколько_заводов</h3>
-                            </div></div></div>
-                    <div className="mask6">
+                            </div>
+                            <div className="mask6">
                         <Swiper slidesPerView={3}
                             spaceBetween={30}
-                            pagination={{
-                                clickable: true,
-                            }} className="mySwiper" id="swipers">
+                            breakpoints={{
+                                320: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                  },
+                                640: {
+                                  slidesPerView: 2,
+                                  spaceBetween: 20,
+                                },
+                                800: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20,
+                                  },
+                              }}navigation={true} modules={[Navigation]}
+                            
+                            className="mySwiper" id="swipers">
                             <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
                             <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
                             <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
                             <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
                         </Swiper>
                     </div>
+                            </div>
+                            </div>
+                    
 
                 </div>
 
