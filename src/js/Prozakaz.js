@@ -26,6 +26,7 @@ import zakazbeton from '../img/Group (15).png'
 import zakazbeton1 from '../img/Group (16).png'
 import iconbla from '../img/Group 301.png'
 import prima from '../img/Group 201.png'
+import wal from '../img/Group 100.png'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -258,6 +259,40 @@ function pastarapOP4(){
 
 }
 
+function mediayon(){
+    document.querySelector(".beton-blcok-media").style=`border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media").style=`background: #FFCB13;`
+
+    document.querySelector(".beton-blcok-media2").style=`border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media2").style=`background: white;`
+
+    document.querySelector(".beton-blcok-media3").style=`border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media3").style=`background: white;`
+}
+function mediayon1(){
+    document.querySelector(".beton-blcok-media2").style=`border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media2").style=`background: #FFCB13;`
+
+    document.querySelector(".beton-blcok-media").style=`border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media").style=`background: white;`
+
+    document.querySelector(".beton-blcok-media3").style=`border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media3").style=`background: white;`
+}
+
+function mediayon2(){
+
+    document.querySelector(".beton-blcok-media").style=`border: 1px solid  white;`
+    document.querySelector(".sariqblaaa-media").style=`background: white;`
+
+    document.querySelector(".beton-blcok-media3").style=`border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media3").style=`background: #FFCB13;`
+
+
+    document.querySelector(".beton-blcok-media2").style=`border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media2").style=`background: white;`
+
+}
 
 export default function Prozakaz() {
 const [data,setData] =useState(0)
@@ -878,6 +913,80 @@ const [page,setPage] = useState(1)
             </div>
         </div>
         
+    </div>
+    <div className="zakaz-btn-media">
+        <div className="zakaz-btn-media-ichi">
+            <div className="zakaz-btn-naz">
+                <img src={wal} alt="" /><span>Заказ бетона</span>
+            </div>
+            <div className="chto-neobhadimo-eto-media">
+                <div className="hmmmmmm-block-holat">
+                    <h3>Что необходимо?</h3>
+                <div className="buni-ichidan-ochish-kerak-media">
+                <div className="beton-blcok-media"  onClick={()=>mediayon()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={m350} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Бетон</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media2" onClick={()=>mediayon1()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media2"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={qum} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Пескобетон</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media3" onClick={()=>mediayon2()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media3"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={bilmadim} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Строительный <br id='syebalsyaa' />
+раствор</span></div>
+                            </div>
+                        </div>
+                        <div className="bir-button-aralash-bla">
+                        Специальный бетон
+                        </div>
+                </div>
+                
+                </div>
+            </div>
+            <div className="proizvaditel-media">
+                <div className="va-yanabiz-90">
+                    <h4>Производитель</h4>
+                    <div className="metr-kub-sm-inp">
+                        <div className="nom-oylab-sm-topish-kere">
+                            <div className="kakakakakakakaakkk">
+                            <p>М50</p>
+                            <p>М200</p>
+                            <p>М400</p>
+                            </div>
+                            <div className="nom-kooc-inp-range">
+                                <input type="range"  />
+                            </div>
+                            <div className="media-select-bossa-chiqadi">
+                                <div className="select-opticon-med-block1">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
    {/* <div className="samiy-pasledniy-joy-oplata">
     <div className="letsgo-oplata-ye">

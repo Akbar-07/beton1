@@ -2200,8 +2200,219 @@ cursor: pointer;
     width: 235px;
 }
 }
+.zakaz-btn-media{
+    display: none;
+}
 @media (max-width:723px) {
     #zakaz-bt{
         display: none;
+    }
+    .zakaz-btn-media{
+        display: flex;
+        justify-content: center;
+        width: 81%;
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+    .zakaz-btn-media-ichi{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .zakaz-btn-naz{
+        width: 100%;
+        height: auto;
+        display: flex;
+        text-align: left;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .zakaz-btn-naz span{
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Merriweather', serif;
+        font-family: 'Roboto', sans-serif;
+font-size: 30px;
+font-weight: 600;
+line-height: 37px;
+letter-spacing: 0em;
+    }
+    .chto-neobhadimo-eto-media{
+        width: 100%;
+        height: 400px;
+        background-color: #F1F1F1;
+        border-radius: 12px;
+        text-align: left;
+        padding-top: 30px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .buni-ichidan-ochish-kerak-media{
+        width: 100%;
+        height: auto;
+    }
+    .hmmmmmm-block-holat{
+        display: block;
+        text-align: left;
+        width: 90%;
+        height: auto;
+    }
+    .hmmmmmm-block-holat h3{
+        font-family: Montserrat Alternates;
+font-size: 18px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #939393;
+margin-bottom: 20px;
+    }
+    .beton-blcok-media{
+        width: 100%;
+    height: 62px;
+    border-radius: 9px;
+    background-color: white;
+    text-align: center;
+    /* border: 1px solid #FFCB13; */
+    cursor: pointer;
+    transition: 0.2s ;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    }
+    .beton-blcok-media:hover{
+        border: 1px solid #FFCB13;
+    }
+    .beton-rasm-patom-text-media{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        height: 60%;
+        gap: 34px;
+        padding-left: 10px;
+    }
+    .sariqblaaa-media{
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: white;
+    }
+    .beton-blcok-media2{
+        width: 100%;
+    height: 62px;
+    border-radius: 9px;
+    background-color: white;
+    text-align: center;
+    /* border: 1px solid #FFCB13; */
+    cursor: pointer;
+    transition: 0.2s ;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    }
+    .beton-blcok-media2:hover{
+        border: 1px solid #FFCB13;
+    }
+    .sariqblaaa-media2{
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: white;
+    }
+    
+    .beton-blcok-media3{
+        width: 100%;
+    height: 62px;
+    border-radius: 9px;
+    background-color: white;
+    text-align: center;
+    /* border: 1px solid #FFCB13; */
+    cursor: pointer;
+    transition: 0.2s ;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    }
+    .beton-blcok-media3:hover{
+        border: 1px solid #FFCB13;
+    }
+    .sariqblaaa-media3{
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: white;
+    }
+    #syebalsyaa{
+        display: none;
+    }
+    .bir-button-aralash-bla{
+        width: 100%;
+height: 62px;
+border-radius: 9px;
+background: linear-gradient(110.56deg, #080808 -15.64%, #707070 115.25%);
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+    }
+    .proizvaditel-media{
+        width: 100%;
+        height: auto;
+        background-color: #F1F1F1;
+        border-radius: 12px;
+    }
+    .va-yanabiz-90{
+        width: 90%;
+        margin: auto;
+        padding-top: 25px;   
+        text-align: left !important;
+        height: 609px;
+        margin-bottom: 20px;
+    }
+    .va-yanabiz-90 h4{
+        font-family: Montserrat Alternates;
+font-size: 18px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+color: #939393;
+margin-bottom: 30px;
+    }
+    .metr-kub-sm-inp{
+        display: block !important;
+    }
+    .kakakakakakakaakkk{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .nom-oylab-sm-topish-kere{
+        width: 100%;
+        height: auto;
+    }
+    .nom-kooc-inp-range input{
+        width: 100%;
+        height: 3px;
+    }
+    .nom-kooc-inp-range{
+        margin-bottom: 20px;
+    }
+    .media-select-bossa-chiqadi{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px !important;
+    }
+    .select-opticon-med-block1{
+        width: 100%;
+height: 36px;
+border-radius: 9px;
+border: 1px;
+border: 1px solid #000000;
+margin-bottom: 10px;
     }
 }
