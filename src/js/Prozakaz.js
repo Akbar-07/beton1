@@ -27,6 +27,10 @@ import zakazbeton1 from '../img/Group (16).png'
 import iconbla from '../img/Group 301.png'
 import prima from '../img/Group 201.png'
 import wal from '../img/Group 100.png'
+import mediaicon1 from '../img/497ab60ab79f80d6177faa511e5df442 2 (1).png'
+import betonmedia from '../img/logo (2).png'
+import betonmedia1 from '../img/logop(1).png'
+import betonmedia2 from '../img/Screenshot_7_lmp3jpq1 1.png'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -99,7 +103,6 @@ function chiqaqol1(){
     }
 
 }
-
 function chiqaqol2(){
     var y= document.querySelector(".alalalalallaalalalal1").style.display;
     if(y=="none"){
@@ -132,7 +135,6 @@ function chiqaqol3(){
     }
     document.querySelector(".zakaz-beton-glav").style=`    height: 2680px;`
 }
-
 function pastarap(){
     document.querySelector(".beton-blcok5").style=`border:1.5px solid  #FFCB13`
     document.querySelector(".sariqblaaa5").style=`background: #FFCB13;`
@@ -188,7 +190,6 @@ function buton1(){
         document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
     top: -90px;`
 }
-
 function buton2(){
     document.querySelector(".btn-kogda1").style=`background:none;border: 1px solid black;color:black`
     document.querySelector(".btn-kogda2").style=`background:none;border: 1px solid black;color:black`
@@ -258,7 +259,6 @@ function pastarapOP4(){
 
 
 }
-
 function mediayon(){
     document.querySelector(".beton-blcok-media").style=`border: 1px solid #FFCB13;`
     document.querySelector(".sariqblaaa-media").style=`background: #FFCB13;`
@@ -293,7 +293,121 @@ function mediayon2(){
     document.querySelector(".sariqblaaa-media2").style=`background: white;`
 
 }
+function tex(){
+    var y= document.querySelector(".akardon-pasdia-chiqadi-but-media").style.display;
+    if(y=="none"){
+    document.querySelector(".akardon-pasdia-chiqadi-but-media").style.display="block";
+    }else{
+       document.querySelector(".akardon-pasdia-chiqadi-but-media").style.display="none";
+    }
+}
+function tex1(){
+    var y= document.querySelector(".alalalalallaalalalal-media").style.display;
+    if(y=="none"){
+    document.querySelector(".alalalalallaalalalal-media").style.display="block";
+    }else{
+       document.querySelector(".alalalalallaalalalal-media").style.display="none";
+    }
+}
+function tex2(){
+    var y= document.querySelector(".alalalalallaalalalal12").style.display;
+    if(y=="none"){
+    document.querySelector(".alalalalallaalalalal12").style.display="block";
+    }else{
+       document.querySelector(".alalalalallaalalalal12").style.display="none";
+    }
+}
+function tex3(){
+    var y= document.querySelector(".axaxaxsaxasxasxasxasxs2-media").style.display;
+    if(y=="none"){
+    document.querySelector(".axaxaxsaxasxasxasxasxs2-media").style.display="block";
+    }else{
+       document.querySelector(".axaxaxsaxasxasxasxasxs2-media").style.display="none";
+    }
+}
+function kompaniya(){
+    document.querySelector(".beton-blcok-media-kom").style=`border: 1.5px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media-kom").style=`background:#FFCB13;`
 
+    document.querySelector(".beton-blcok-media-kom1").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom1").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom2").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom2").style=`background:white;`
+
+        document.querySelector(".beton-blcok-media-kom3").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom3").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom4").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom4").style=`background:white;`
+}
+function kompaniya1(){
+    document.querySelector(".beton-blcok-media-kom1").style=`border: 1.5px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media-kom1").style=`background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media-kom").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom").style=`background:white;`
+
+        document.querySelector(".beton-blcok-media-kom2").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom2").style=`background:white;`
+
+        document.querySelector(".beton-blcok-media-kom3").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom3").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom4").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom4").style=`background:white;`
+}
+
+function kompaniya2(){
+    document.querySelector(".beton-blcok-media-kom2").style=`border: 1.5px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media-kom2").style=`background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media-kom1").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom1").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom").style=`background:white;`
+    
+    document.querySelector(".beton-blcok-media-kom3").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom3").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom4").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom4").style=`background:white;`
+
+}
+function kompaniya3(){
+    document.querySelector(".beton-blcok-media-kom2").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom2").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom1").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom1").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom3").style=`border: 1.5px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media-kom3").style=`background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media-kom4").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom4").style=`background:white;`
+}
+function kompaniya4(){
+    document.querySelector(".beton-blcok-media-kom2").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom2").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom1").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom1").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom3").style=`border: 1.5px solid white;`
+    document.querySelector(".sariqblaaa-media-kom3").style=`background:white;`
+
+    document.querySelector(".beton-blcok-media-kom4").style=`border: 1.5px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media-kom4").style=`background:#FFCB13;`
+}
+// axaxaxsaxasxasxasxasxs2
 export default function Prozakaz() {
 const [data,setData] =useState(0)
 const [data1,setData1] =useState(0)
@@ -979,9 +1093,167 @@ const [page,setPage] = useState(1)
                             </div>
                             <div className="media-select-bossa-chiqadi">
                                 <div className="select-opticon-med-block1">
-
+                                    <div className="select-opticon-med-ich" >
+                                        <div className="select-opc-img" ><img src={acardion} alt="" /> <span  onClick={()=>tex()}>Подвижность</span> </div>
+                                        <div className="select-opc-text"><img src={acardion2} alt=""  onClick={()=>tex()}/></div>
+                                    </div>
+                                    <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="akardon-pasdia-chiqadi-but-media">
+                                    <button>П3</button>
+                                    <button id='sysysy'>П4</button>
                                 </div>
                             </div>
+                                </div>
+                                <div className="select-opticon-med-block1">
+                                    <div className="select-opticon-med-ich" >
+                                        <div className="select-opc-img1" ><img src={acardion3} alt="" /> <span  onClick={()=>tex1()}>Гидрофобная добавка</span> </div>
+                                        <div className="select-opc-text"><img src={acardion2} alt=""  onClick={()=>tex1()}/></div>
+                                    </div>
+                                    <div className="akardion-pasida-chiqadi-bosilganda">
+                            <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="alalalalallaalalalal-media">
+                                <div className="akardon-pasdia-chiqadi-but12">
+                                    <div className="ana-pachti-tugadi-inpu-radio">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Да</span>
+                                        </div>
+                                        <div className="ana-pachti-tugadi-inpu-radio1">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                                </div>
+                                <div className="select-opticon-med-block1">
+                                    <div className="select-opticon-med-ich" >
+                                        <div className="select-opc-img1" ><img src={acardion5} alt="" /> <span  onClick={()=>tex2()}>Фиброволокно</span> </div>
+                                        <div className="select-opc-text"><img src={acardion2} alt=""  onClick={()=>tex2()}/></div>
+                                    </div>
+                                    <div className="akardion-pasida-chiqadi-bosilganda">
+                                    <div className="alalalalallaalalalal12">
+                                    <div className="akardon-pasdia-chiqadi-but12">
+                                    <div className="ana-pachti-tugadi-inpu-radio">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Да</span>
+                                        </div>
+                                        <div className="ana-pachti-tugadi-inpu-radio1">
+                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <span>Нет</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                                </div>
+                                <div className="select-opticon-med-block1">
+                                    <div className="select-opticon-med-ich" >
+                                        <div className="select-opc-img1" ><img src={acardion6} alt="" /> <span  onClick={()=>tex3()}>Противоморозная добавка</span> </div>
+                                        <div className="select-opc-text"><img src={acardion2} alt=""  onClick={()=>tex3()}/></div>
+                                    </div>
+                                    <div className="akardion-pasida-chiqadi-bosilganda">
+                                    <div className="akardion-pasida-chiqadi-bosilganda">
+                                <div className="axaxaxsaxasxasxasxasxs2-media">
+                                <div className="akardon-pasdia-chiqadi-but4">
+                                    <button>-5°C</button>
+                                    <button>-10°C</button>
+                                    <button>--15°C</button>
+                                    <button>-20°C</button>
+                                    <button>-25°C</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                                </div>
+                            </div>
+                            <div className="kampaniya-cardla-prozaakz">
+                            <div className="beton-blcok-media-kom" onClick={()=>kompaniya()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media-kom"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size1">
+                                    <img src={kkk} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"></div>
+                            </div>
+                            <div className="marxi-prozakaz-kom"><h3>2 000 ₽</h3></div>
+                        </div>
+                        <div className="beton-blcok-media-kom1" onClick={()=>kompaniya1()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media-kom1"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size2">
+                                    <img src={mediaicon1} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"></div>
+                            </div>
+                            <div className="marxi-prozakaz-kom"><h3>2 000 ₽</h3></div>
+                        </div>
+                        <div className="beton-blcok-media-kom2" onClick={()=>kompaniya2()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media-kom2"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size2">
+                                    <img src={betonmedia} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"></div>
+                            </div>
+                             <div className="marxi-prozakaz-kom"><h3>2 000 ₽</h3></div>
+                        </div>
+                        <div className="beton-blcok-media-kom3" onClick={()=>kompaniya3()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media-kom3"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size2">
+                                    <img src={betonmedia1} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"></div>
+                            </div>
+                             <div className="marxi-prozakaz-kom"><h3>2 000 ₽</h3></div>
+                        </div>
+                        <div className="beton-blcok-media-kom4" onClick={()=>kompaniya4()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media-kom4"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text">
+                                <div className="beton-rasm-img-size2">
+                                    <img src={betonmedia2} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"></div>
+                            </div>
+                             <div className="marxi-prozakaz-kom"><h3>2 000 ₽</h3></div>
+                        </div>
+                            </div>
+                            <div className="kampaniya-tepadagiselect-boldi-endi-pasga-texg">
+                                <h4>Требуются <br />
+специализированные добавки?</h4>
+<button>Добавить комментарий для технолога</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div className="kampaniya-kolichestvo-sm">
+                <div className="kampashka-ichidan-oldik-kolicestvo">
+                    <h4>Количество</h4>
+                    <div className="kankulator-kampashka">
+                        <h3><span>{data}</span>м3</h3>
+                        <div className="kankulator-kampashka-inp">
+                        <input type="range"  min="0" max="100" step="10" value={data} onChange={(e)=>setData(e.target.value)} />
+                        </div>
+                    </div>
+                    <div className="kampashka-kankulator-xm">
+                        <div className="kammpash">
+                            <h4>Не знаете количество?</h4>
+                            <p>Рассчитайте онлайн в калькуляторе</p>
+                            <button>Калькулятор</button>
                         </div>
                     </div>
                 </div>
