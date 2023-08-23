@@ -149,7 +149,11 @@ body {
     .news_page_2_card {
         display: block;
     }
-
+    .aa1{
+        display: flex !important;
+        justify-content: space-between;
+        width: 170px;
+    }
     .news_page_2_card img {
         width: 100%;
     }

@@ -18,6 +18,8 @@ export default function News() {
     <div className='News'>
         
         <div>
+        <p style={{display:"none"}} className='aa1'><span onClick={()=> window.location="/"}>Главная</span>  | <span onClick={()=> window.location="/News"}>Новости</span> </p>
+
             <div style={{display:"flex",justifyContent:"center"}} className="div_news">
        
        <div> <div className="news_page">
