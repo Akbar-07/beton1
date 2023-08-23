@@ -191,6 +191,139 @@ font-family: 'Montserrat Alternates', sans-serif;
     }
     
 }
+.beton_uxshad{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .beton_yemad{
+    width: 18px;
+height: 18px; 
+margin-top: -20px;
+margin-left: 10px;
+  }
+.beton_kamaz{
+    margin-top: -20px;
+    margin-right: 20px;
+}
+.beton_kamaz1{
+    margin-top: -40px;
+    margin-right: 20px;
+}
+.beton_phu1{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+}
+.beton_phu12{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.beton_bot{
+    display: inline-flex;
+padding: 15px 38px;
+justify-content: center;
+align-items: center;
+gap: 10px; 
+border-radius: 12px; 
+background-color: white;
+color: #000;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border: 1px solid black;
+margin-left: 5px;
+
+}
+.beton_bot2{
+    display: inline-flex;
+padding: 15px 38px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 12px;
+background: linear-gradient(162deg, #000 0%, #606060 100%);
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 5px;
+}
+.beton_bot3{
+    display: inline-flex;
+padding: 15px 38px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 12px; 
+color: #000;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+background-color: white ;
+border: 1px solid black;
+margin-left: 5px;
+
+}
+.beton_hot{
+    color: #606060;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+width: 123px;
+height: 40px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 12px;
+border: 1px solid #E0E0E0;
+margin-left: 5px;
+
+}
+.beton_sot2{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.beton_page6{
+    display: flex;
+}
+.beton_razbit{
+    color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 10px;
+}
+.beton_pagm{
+    display: flex;
+    margin-left: 30px;
+}
+.beton_sot1{
+    display: flex;
+align-items: center;
+}
+.beton_oq{
+    width: 24px;
+height: 24px; 
+margin-left: 20px
+
+}
 .beton_z{
     width: 100%;
     margin-top: 100px;

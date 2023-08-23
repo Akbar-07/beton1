@@ -10,7 +10,7 @@ import Prozakaz from './js/Prozakaz';
 import Footer from './js/Footer'
 import Obman from './js/Obman';
 import Article from './js/Article';
-
+import Loyalnost from "./js/Programma_L"
 
 class App extends Component {
 render() {
@@ -28,6 +28,7 @@ render() {
 				<Route export path='/Footer' element={<Footer/>}></Route>
 				<Route export path='/Article' element={<Article/>}></Route>
 				<Route export path='/Obman' element={<Obman/>}></Route>
+				<Route export path='/Loyalnost' element={<Loyalnost/>}></Route>
 		</Routes>
 		</div>
 	</Router>
