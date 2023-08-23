@@ -25,10 +25,12 @@ export default function Navbar() {
         document.querySelector(".black_chap").style = "display:block"
         document.querySelector(".b23").style = "background-color:#E75858;"
         document.querySelector(".icon_nav1").style = "color:white;"
+        document.querySelector("body").style = "overflow: hidden;"
     }
     function block_chap_nav(){
         document.querySelector(".black_chap").style = "display:none"
         document.querySelector(".menu_chap").style = "right:-425px"
+        document.querySelector("body").style = "overflow: scroll;"
     }
   return (
     <div>

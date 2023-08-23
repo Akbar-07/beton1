@@ -13,6 +13,8 @@ import Article from './js/Article';
 import Partners from './js/Partners';
 
 
+import Loyalnost from "./js/Programma_L"
+
 class App extends Component {
 render() {
 	return (
@@ -30,6 +32,7 @@ render() {
 				<Route export path='/Article' element={<Article/>}></Route>
 				<Route export path='/Obman' element={<Obman/>}></Route>
 				<Route export path='/Partner' element={<Partners/>}></Route>
+				<Route export path='/Loyalnost' element={<Loyalnost/>}></Route>
 		</Routes>
 		</div>
 	</Router>

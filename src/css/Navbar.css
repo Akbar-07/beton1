@@ -493,7 +493,7 @@ cursor: pointer;
         background-color: #EAEAEA;
         border-radius: 2px;
         transition: .4s;
-        z-index: 10;
+        z-index: 10002;
     }
     .nav_2_biri{
         width: 100vw !important;
@@ -642,7 +642,7 @@ cursor: pointer;
         width: 150px;
     margin-top: 0px;
     position: relative;
-    right: 50px;
+    right: 0px;
 
 
 }
@@ -661,6 +661,7 @@ cursor: pointer;
         top: 0px;
         position: fixed;
         display: none;
+        z-index: 209;
     }
 }
 @media(max-width:430px){
@@ -737,12 +738,15 @@ cursor: pointer;
     }
     .nav_1_1 img{
         width: 120px;
+       
     }
     .nav_1{
         width: 100px;
+
     }
     .nav_1 img{
         width: 100px;
+        
     }
     .nav_but{
         width: 425px;
@@ -762,7 +766,7 @@ cursor: pointer;
         background-color: #EAEAEA;
         border-radius: 2px;
         transition: .4s;
-        z-index: 10;
+        z-index: 1000;
     }
     .nav_2_biri{
   position: relative;
@@ -876,7 +880,7 @@ cursor: pointer;
         background-color: #EAEAEA;
         border-radius: 2px;
         transition: .4s;
-        z-index: 10;
+        z-index: 1001;
     }
     .nav_2_biri{
   position: relative;
@@ -1134,7 +1138,7 @@ cursor: pointer;
             display: block;
             position: fixed;
             top: 0px;
-            right: -350px;
+            right: -370px;
             background-color: #EAEAEA;
             border-radius: 2px;
             transition: .4s;
@@ -1387,7 +1391,7 @@ cursor: pointer;
             display: block;
             position: fixed;
             top: 0px;
-            right: -320px;
+            right: -350px;
             background-color: #EAEAEA;
             border-radius: 2px;
             transition: .4s;
