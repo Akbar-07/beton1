@@ -56,7 +56,7 @@ export default function Navbar() {
                     </div>
                     <div className="nav_2_page3">
                       <FaHandsHelping className='icon1'/>
-                        <span className='s1'>Партнеры</span>
+                        <span onClick={()=>window.location="/Partner"}  className='s1'>Партнеры</span>
                     </div>
                     <div className="nav_2_page4">
                   <RiFileCopy2Fill className='icon1'/>
@@ -64,7 +64,7 @@ export default function Navbar() {
                     </div>
                     <div className="nav_2_page5">
                     <MdOutlineLoyalty className='icon1'/>
-                        <span className='s1'>Программа лояльности</span>
+                        <span onClick={()=>window.location="/Loyalnost"} className='s1'>Программа лояльности</span>
                     </div>
                 </div>
                 <div className="nav_2_ikki">
