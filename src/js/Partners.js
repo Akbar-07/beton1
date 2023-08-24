@@ -15,7 +15,9 @@ import noviy_beton1 from '../img/noviy_beton1.png'
 import mask6 from '../img/mask6.png'
 import sement from '../img/sement_beton.png'
 import right_arrow_png from '../img/right-arrow_png.png'
-import swiper_right from '../img/swiper_right.png'
+import ekskavator from '../img/media_ekskavator.png'
+import c from '../img/for_c.png'
+import white1 from '../img/white.png'
 
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
@@ -171,9 +173,13 @@ export default function Partners() {
                     <img style={{zIndex:"10"}} src={sement} alt="" />
                     <div className="yellow_p">
                         <div className="left_card"></div>
+                        <img className='white_c' style={{display:"none"}} src={white1} alt="" />
                         <h3>С нами работают только супер крутые и самые самые, бетоны
                             с подворотни не возим</h3>
                         <p>Стань нашим партнером!</p>
+                        <div className="for_e">
+                        <img className='media_e' src={ekskavator} alt="" />
+                        </div>
                         <div className="right_card"><img src={right_arrow_png} alt="" /></div>
                     </div>
                 </div>
