@@ -14,6 +14,7 @@ import Partners from './js/Partners';
 
 
 import Loyalnost from "./js/Programma_L"
+import Garantiya from './js/Garantiya';
 
 class App extends Component {
 render() {
@@ -33,6 +34,7 @@ render() {
 				<Route export path='/Obman' element={<Obman/>}></Route>
 				<Route export path='/Partner' element={<Partners/>}></Route>
 				<Route export path='/Loyalnost' element={<Loyalnost/>}></Route>
+				<Route export path='/Garantiya' element={<Garantiya/>}></Route>
 		</Routes>
 		</div>
 	</Router>

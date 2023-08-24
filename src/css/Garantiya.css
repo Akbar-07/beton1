@@ -1,0 +1,239 @@
+.garantiya-page{
+    width: 1200px;
+    height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+margin-top: 30px;
+}
+.garantiya-icon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.garantiya-icon span{
+    font-family: Montserrat Alternates;
+font-size: 35px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+.garantiya-oqta-page{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 100px;
+}
+.garantiya-ichi{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.oyaoya {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat Alternates;
+font-size: 18px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: center;
+background-color: #9DE386;
+border-radius: 20px;
+}
+.garantiya-oldi-text h4{
+    font-family: Montserrat Alternates;
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 20px;
+}
+.garantiya-oldi-text p{
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.garantiya-sapn{
+    font-family: Montserrat Alternates;
+font-size: 16px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+}
+.garantiya-oldi-text{
+    width: 100%;
+    height: auto;
+}
+@media (max-width:1234px) {
+    .garantiya-page {
+        width: 1100px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .garantiya-oldi-img img{
+        width: 450px;
+    }
+}
+@media (max-width:1182px) {
+    .garantiya-page {
+        width: 1000px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .garantiya-oldi-img img{
+        width: 400px;
+    }
+}
+@media (max-width:1101px) {
+    .garantiya-oldi-text h4 {
+        font-size: 14px;
+    }
+    .oyaoya {
+        font-size: 14px;
+    }    
+    .garantiya-oldi-text p {
+        font-size: 13px;
+    }
+    .garantiya-sapn {
+        font-size: 13px;
+    }
+    .garantiya-page {
+        width: 84%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .garantiya-icon span {
+        font-family: Montserrat Alternates;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+@media (max-width:859px) {
+    .oyaoya {
+        font-size: 13px;
+    }
+    .garantiya-oldi-text h4 {
+        font-size: 13px;
+    }
+    .garantiya-oldi-text p {
+        font-size: 12px;
+    }
+    .garantiya-sapn {
+        font-size: 12px;
+    }
+    .garantiya-oldi-img img {
+        width: 350px;
+    }
+    .garantiya-oqta-page {
+        position: relative;
+        right: 69px;
+    }
+    
+    
+}
+@media (max-width:776px) {
+    .garantiya-oldi-img img {
+        width: 300px;
+    }
+    .garantiya-oqta-page {
+        position: relative;
+        right: 50px;
+    }
+}
+.garant-pas-block-page-card{
+    width: 100%;
+    height: auto;
+    
+}
+.garant-pas-block-page-card h3{
+    font-family: Montserrat Alternates;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.garand-block{
+    width: 100%;
+    height: auto;
+    border-radius: 41px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+.yashil-garand{
+    width: 96px !important;
+height: 89px !important;
+border-radius: 41px 0px 41px 0px;
+background: #9DE386;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: Montserrat Alternates;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.bla-zabil-koota-div-qoyish{
+display: flex;
+gap: 15px;
+}
+.yashil-text-garand{
+    width: 90%;
+    height: auto;
+    margin-top: 60px;
+}
+.yashil-text-garand p{
+    font-family: Montserrat Alternates;
+font-size: 17px;
+font-weight: 500;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 30px;
+}
+.yashil-text-garand span{
+    font-family: Montserrat Alternates;
+font-size: 17px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+}
