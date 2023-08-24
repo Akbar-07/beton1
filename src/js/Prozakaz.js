@@ -31,6 +31,7 @@ import mediaicon1 from '../img/497ab60ab79f80d6177faa511e5df442 2 (1).png'
 import betonmedia from '../img/logo (2).png'
 import betonmedia1 from '../img/logop(1).png'
 import betonmedia2 from '../img/Screenshot_7_lmp3jpq1 1.png'
+import otkritkartu from '../img/Group 344.png'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -1251,9 +1252,51 @@ const [page,setPage] = useState(1)
                     </div>
                     <div className="kampashka-kankulator-xm">
                         <div className="kammpash">
-                            <h4>Не знаете количество?</h4>
+                            <div className="kammmpash-ves">
+                            <h2>Не знаете количество?</h2>
                             <p>Рассчитайте онлайн в калькуляторе</p>
-                            <button>Калькулятор</button>
+                            <button><img src={canculator} alt="" /><span>Калькулятор</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="qatga-yetkazib-berish-media-kompashka">
+                <div className="qatga-yetkazib-berish-media-ichi">
+                    <h4>Куда привезти</h4>
+                    <div className="qatga-inputga-kompashka">
+                        <input type="text"  placeholder='Введите адрес'/><button><box-icon name='search' color="#939393"></box-icon></button>
+                    </div>
+                    <div className="ski-karta-kompashka">
+                    <img src={otkritkartu} alt="" />
+                    </div>
+                    <div className="nechikm-joy-kompashka">
+                        <h3>В скольки километрах от дороги  <br />
+находится Ваш участок?</h3>
+                    </div>
+                    <div className="zaibal-nom-oylab-topuvurib-inp-kompashka">
+                        <div className="tepa-qsmi-zaib-kampashka">
+                            <p>{data1}км</p>
+                            <p>10км</p>
+                        </div>
+                        <div className="bu-pasqismi-inp-joy-kompashka-d_f">
+                        <input type="range"  min="0" max="10" step="1" value={data1} onChange={(e)=>setData1(e.target.value)} />
+                        </div>
+                        <div className="buyam-pasqismi-inp-kompashak-check">
+                            <div className="chdbsdnajhjsjdsjdnaaa">
+                                <input type="checkbox"  />
+                            </div>
+                            <div className="buyma-zaiba-text-opaa">
+                                <p>Имеются ли препятствия для <br /> большой машины  на пути подъезда <br /> к вашему участку?</p>
+                            </div>
+                        </div>
+                        <h4 id='paspaspasaps'>Ширина проезда (м)</h4>
+                        <div className="tepa-qsmi-zaib-kampashka" id='syebalsaaxx'>
+                            <p>0м</p>
+                            <p>10км</p>
+                        </div>
+                        <div className="bu-pasqismi-inp-joy-kompashka-d_f">
+                        <input type="range"  min="0" max="10" step="1" value={data1} onChange={(e)=>setData1(e.target.value)} />
                         </div>
                     </div>
                 </div>
