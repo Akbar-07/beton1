@@ -45,7 +45,7 @@ export default function Garantiya() {
                     <div className="yashil-text-garand"><p>Дополнительная страховка от сервиса доставки бетона «Бетон такси» демонстрирует нашу <span>полную ответственность, связанную с качеством продукции. </span> Мы понимаем, что для вас важно иметь уверенность в том, что каждая поставка бетона будет выполнена с максимальной ответственностью и соответствием установленным стандартам и требованиям заказчика.</p></div>
                     </div>
                 </div>
-                <div className="garand-block">
+                <div className="garand-block" id='korqaq-botton'>
                     <div className="bla-zabil-koota-div-qoyish">
                     <div className="yashil-garand">
                         3
@@ -53,6 +53,24 @@ export default function Garantiya() {
                     <div className="yashil-text-garand"><p>Наше сотрудничество со страховой компанией РЕСО-гарантия подчеркивает, что мы  <span>не просто "сервис по доставке бетона", 
 а надежный сервис, который заботится о своих клиентах</span> и готов взять на себя ответственность за качество поставленного материала. Мы уверены, что это дополнительное преимущество поможет вам принять решение в пользу нашего сервиса и даст вам полную уверенность в безопасности и надежности каждой поставки.</p></div>
                     </div>
+                </div>
+                <div className="sms-kotta-yashil-xa-df">
+                <div className="sms-yashil-pasda-sms">
+                    <div className="sms-triugolnik"></div>
+                    <div className="buni-ichi-kirdik-sms-kotta">
+                        <div className="garant-ax-oxiri">
+                            <div className="gardn-img">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="gardn-text">
+                                <p>Выбирая наш сервис доставки бетона, вы получаете 
+не только удобство и экономию времени, 
+но и  <span>дополнительную гарантию качества, 
+подкрепленную страховкой от РЕСО-гарантия.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

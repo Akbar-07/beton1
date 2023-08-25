@@ -237,3 +237,65 @@ line-height: 28px;
 letter-spacing: 0em;
 text-align: left;
 }
+.sms-yashil-pasda-sms{
+    width: 780px;
+height: 244px;
+background-color: #EAEAEA;
+margin-bottom: 30px;
+border-radius: 41px;
+}
+.sms-kotta-yashil-xa-df{
+    display: flex;
+    justify-content: center;
+}
+.sms-triugolnik{
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #EAEAEA;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: relative;
+    top: -20px;
+    left: 150px;
+}
+#korqaq-botton{
+    margin-bottom: 60px;
+}
+.garant-ax-oxiri{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gardn-img img{
+    width: 222px;
+height: 222px;
+}
+.gardn-text {
+    width: 80% ;
+    height: auto;
+}
+.gardn-text p{
+font-family: Montserrat Alternates;
+font-size: 16px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.gardn-text span{
+    font-family: Montserrat Alternates;
+font-size: 16px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+}
+@media (max-width:883px) {
+    .garantiya-oldi-text p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}

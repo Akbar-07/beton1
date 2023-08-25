@@ -408,12 +408,48 @@ function kompaniya4(){
     document.querySelector(".beton-blcok-media-kom4").style=`border: 1.5px solid #FFCB13;`
     document.querySelector(".sariqblaaa-media-kom4").style=`background:#FFCB13;`
 }
+
+function mediayon3(){
+    document.querySelector(".beton-blcok-media4").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media4").style=` background: #FFCB13;`
+
+        document.querySelector(".beton-blcok-media5").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media5").style=` background: white;`
+
+    
+    document.querySelector(".beton-blcok-media6").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media6").style=` background: white;`
+}
+function mediayon4(){
+    document.querySelector(".beton-blcok-media4").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media4").style=` background: white;`
+
+    document.querySelector(".beton-blcok-media5").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media5").style=` background: #FFCB13;`
+
+    document.querySelector(".beton-blcok-media6").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media6").style=` background: white;`
+}
+
+function mediayon5(){
+    document.querySelector(".beton-blcok-media4").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media4").style=` background: white;`
+
+    document.querySelector(".beton-blcok-media5").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media5").style=` background: white;`
+
+    document.querySelector(".beton-blcok-media6").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media6").style=` background: #FFCB13;`
+}
+
 // axaxaxsaxasxasxasxasxs2
 export default function Prozakaz() {
 const [data,setData] =useState(0)
 const [data1,setData1] =useState(0)
 const [data2,setData2] =useState(0)
 const [data3,setData3] =useState(0)
+const [data4,setData4] =useState(0)
+const [data5,setData5] =useState(0)
 const [page,setPage] = useState(1)
   return (
 <div>
@@ -1068,8 +1104,7 @@ const [page,setPage] = useState(1)
                                 <div className="beton-rasm-img-size">
                                     <img src={bilmadim} alt="" />
                                 </div>
-                                <div className="beton-rasm-img-text"><span>Строительный <br id='syebalsyaa' />
-раствор</span></div>
+                                <div className="beton-rasm-img-text"><span>Строительный раствор</span></div>
                             </div>
                         </div>
                         <div className="bir-button-aralash-bla">
@@ -1292,15 +1327,67 @@ const [page,setPage] = useState(1)
                         </div>
                         <h4 id='paspaspasaps'>Ширина проезда (м)</h4>
                         <div className="tepa-qsmi-zaib-kampashka" id='syebalsaaxx'>
-                            <p>0м</p>
+                            <p>{data4}м</p>
                             <p>10км</p>
                         </div>
                         <div className="bu-pasqismi-inp-joy-kompashka-d_f">
-                        <input type="range"  min="0" max="10" step="1" value={data1} onChange={(e)=>setData1(e.target.value)} />
+                        <input type="range"  min="0" max="10000" step="1" value={data4} onChange={(e)=>setData4(e.target.value)} />
+                        </div>
+
+                        <h4 id='paspaspasaps'>Ограничения по высоте (м)</h4>
+                        <div className="tepa-qsmi-zaib-kampashka" id='syebalsaaxx'>
+                            <p>{data5}м</p>
+                            <p>7км</p>
+                        </div>
+                        <div className="bu-pasqismi-inp-joy-kompashka-d_f">
+                        <input type="range"  min="0" max="7000" step="1" value={data5} onChange={(e)=>setData5(e.target.value)} />
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="tarif-media-kamzla">
+                <div className="tarif-media-kamzla-ichi">
+                    <h4>Тариф</h4>
+                    <div className="kamzala-block-pitaniya-media">
+                    <div className="buni-ichidan-ochish-kerak-media">
+                <div className="beton-blcok-media4"  onClick={()=>mediayon3()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media4"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={mini} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Эконом</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media5" onClick={()=>mediayon4()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media5"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={standart} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Стандарт</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media6" onClick={()=>mediayon5()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media6"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={primi} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Экспресс</span></div>
+                            </div>
+                        </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
    {/* <div className="samiy-pasledniy-joy-oplata">
