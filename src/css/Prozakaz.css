@@ -3051,4 +3051,236 @@ margin-bottom: 15px;
 .beton-blcok-media6:hover{
     border: 1px solid #FFCB13;
 }
+.qachon-media-kamzla{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background-color: #F1F1F1;
+    margin-bottom: 30px;
+}
+.qachon-media-ka-zl-ichi{
+        width: 90%;
+        margin: auto;
+        padding-top: 25px;   
+        text-align: left !important;
+        height: auto;
+        margin-bottom: 40px; 
+    
+}
+.qachon-media-ka-zl-ichi h4{
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #939393;
+}
+.qachon-media-ka-zl{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.all-button-qachon-ka{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px !important ;
+}
+.btn-btn1-qachon{
+    width: 100%;
+height: 40px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border: 1px solid #000000;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+cursor: pointer;
+}
+.btn-btn1-qachon p{
+    font-family: Gilroy;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+}
+.btn-btn1-qachon1{
+    width: 100%;
+height: 40px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border: 1px solid #000000;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+cursor: pointer;
+}
+.btn-btn1-qachon1 p{
+    font-family: Gilroy;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+}
+.btn-btn1-qachon2{
+    width: 100%;
+height: 40px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border: 1px solid #000000;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+cursor: pointer;
+}
+.btn-btn1-qachon2 p{
+    font-family: Gilroy;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+}
+.page1-bosa-bubosin-naxuy{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.tez-bosa-boldi-nx{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tez-bosa-boldi-nx button{
+    width: Hug (121px);
+height: Hug (40px);
+padding: 11px 17px 9px 17px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border: 1px solid #E0E0E0;
+cursor: pointer;
+margin-bottom: 10px;
+}
+.tez-bosa-boldi-nx{
+    display: none;
+}
+
+.bugun-bosa-boldi-nx{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bugun-bosa-boldi-nx button{
+    width: Hug (121px);
+height: Hug (40px);
+padding: 11px 17px 9px 17px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border: 1px solid #E0E0E0;
+cursor: pointer;
+margin-bottom: 10px;
+}
+.bugun-bosa-boldi-nx{
+    display: none;
+}
+
+.keyn-bosa-boldi-nx{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.keyn-bosa-boldi-nx button{
+    width: Hug (121px);
+height: Hug (40px);
+padding: 11px 17px 9px 17px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border: 1px solid #E0E0E0;
+cursor: pointer;
+margin-bottom: 10px;
+}
+.keyn-bosa-boldi-nx{
+   display: none;
+}
+
+.nmagaaaaaaa-input-data-qolda{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 20px;
+}
+.exxxxxxxxxx-inputttt-ichi{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+.bu-chap-tarap-sana{
+    display: block;
+}
+.exxxxxxxxxx-inputttt-ichi{
+    width: 60px;
+    height: 195px;
+    overflow-y: scroll;
+}
+.exxxxxxxxxx-inputttt-ichi::-webkit-scrollbar {
+    width: 0px !important;
+}
+.bu-chap-1{
+width: 100%;
+height: 30px;
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 0em;
+color: #A6A6A6;
+display: flex;
+align-items: center;
+justify-content: center;
+border-top: 1px solid #CBCBCB;
+border-bottom: 1px solid #CBCBCB;
+margin-bottom: 10px;
+}
+.bu-chap-2{
+    width: 100%;
+    height: 30px;
+        font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: #A6A6A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+    margin-bottom: 10px;
+}
+.bu-chap-3{
+    width: 100%;
+    height: 30px;
+        font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: #A6A6A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+    margin-bottom: 10px;
+}
+
 }
