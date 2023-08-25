@@ -441,7 +441,36 @@ function mediayon5(){
     document.querySelector(".beton-blcok-media6").style=` border: 1px solid #FFCB13;`
     document.querySelector(".sariqblaaa-media6").style=` background: #FFCB13;`
 }
+function qoraaaaa(){
+    document.querySelector(".btn-btn1-qachon").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%); color:white`;
 
+    document.querySelector(".btn-btn1-qachon1").style=`background:none; color:black`;
+    document.querySelector(".btn-btn1-qachon2").style=`background:none; color:black`;
+
+    document.querySelector(".tez-bosa-boldi-nx").style=`display:block`
+    document.querySelector(".bugun-bosa-boldi-nx").style=`display:none`
+    document.querySelector(".keyn-bosa-boldi-nx").style=`display:none`
+}
+function qoraaaaa1(){
+    document.querySelector(".btn-btn1-qachon1").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%); color:white`;
+
+    document.querySelector(".btn-btn1-qachon").style=`background:none; color:black`;
+    document.querySelector(".btn-btn1-qachon2").style=`background:none; color:black`;
+
+    document.querySelector(".bugun-bosa-boldi-nx").style=`display:block`
+        document.querySelector(".tez-bosa-boldi-nx").style=`display:none`
+    document.querySelector(".keyn-bosa-boldi-nx").style=`display:none`
+
+}
+function qoraaaaa2(){
+    document.querySelector(".btn-btn1-qachon2").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%); color:white`;
+    document.querySelector(".btn-btn1-qachon").style=`background:none; color:black`;
+    document.querySelector(".btn-btn1-qachon1").style=`background:none; color:black`;
+
+    document.querySelector(".keyn-bosa-boldi-nx").style=`display:block`
+    document.querySelector(".bugun-bosa-boldi-nx").style=`display:none`
+    document.querySelector(".tez-bosa-boldi-nx").style=`display:none`
+}
 // axaxaxsaxasxasxasxasxs2
 export default function Prozakaz() {
 const [data,setData] =useState(0)
@@ -1384,6 +1413,83 @@ const [page,setPage] = useState(1)
                             </div>
                         </div>
                 </div>
+                    </div>
+                </div>
+            </div>
+            <div className="qachon-media-kamzla">
+                <div className="qachon-media-ka-zl-ichi">
+                    <h4>Когда?</h4>
+                    <div className="qachon-media-ka-zl">
+                        <div className="all-button-qachon-ka">
+                            <div className="btn-btn1-qachon" onClick={()=>qoraaaaa()}>
+                                <p>Как можно быстрее</p>
+                            </div>
+                            <div className="btn-btn1-qachon1" onClick={()=>qoraaaaa1()}>
+                                <p>Сегодня</p>
+                            </div>
+                            <div className="btn-btn1-qachon2" onClick={()=>qoraaaaa2()}>
+                                <p>Предварительный заказ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="page1-bosa-bubosin-naxuy">
+                        <div className="tez-bosa-boldi-nx">
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                        </div>
+                        <div className="bugun-bosa-boldi-nx">
+                            <button>9:00 - 12:00</button>
+                            <button>8:00 - 17:00</button>
+                            <button>9:00 - 13:00</button>
+                            <button>9:00 - 12:00</button>
+                        </div>
+                        <div className="keyn-bosa-boldi-nx">
+                            <button>9:00 - 12:00</button>
+                            <button>11:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 15:00</button>
+                        </div>
+                    </div>
+                    <div className="nmagaaaaaaa-input-data-qolda">
+                        <div className="exxxxxxxxxx-inputttt-ichi">
+                            <div className="bu-chap-tarap-sana"> 
+                            <div className="bu-chap-1">1</div>
+                            <div className="bu-chap-2">2</div>
+                            <div className="bu-chap-3">3</div>
+                            <div className="bu-chap-4">4</div>
+                            <div className="bu-chap-5">5</div>
+                            <div className="bu-chap-6">6</div>
+                            <div className="bu-chap-7">7</div>
+                            <div className="bu-chap-8">8</div>
+                            <div className="bu-chap-9">9</div>
+                            <div className="bu-chap-10">10</div>
+                            <div className="bu-chap-11">11</div>
+                            <div className="bu-chap-12">12</div>
+                            <div className="bu-chap-13">13</div>
+                            <div className="bu-chap-14">14</div>
+                            <div className="bu-chap-15">15</div>
+                            <div className="bu-chap-16">16</div>
+                            <div className="bu-chap-17">17</div>
+                            <div className="bu-chap-18">18</div>
+                            <div className="bu-chap-19">19</div>
+                            <div className="bu-chap-20">20</div>
+                            <div className="bu-chap-21">21</div>
+                            <div className="bu-chap-22">22</div>
+                            <div className="bu-chap-23">23</div>
+                            <div className="bu-chap-24">24</div>
+                            <div className="bu-chap-25">25</div>
+                            <div className="bu-chap-26">26</div>
+                            <div className="bu-chap-27">27</div>
+                            <div className="bu-chap-28">28</div>
+                            <div className="bu-chap-29">29</div>
+                            <div className="bu-chap-30">30</div>
+                            <div className="bu-chap-31">31</div>
+                            </div>
+                            <div className="bu-orta-tarap-oy"></div>
+                            <div className="ong-orta-tarap-yil"></div>
+                        </div>
                     </div>
                 </div>
             </div>
