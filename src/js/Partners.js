@@ -91,6 +91,7 @@ export default function Partners() {
         <div>
             <Navbar />
             <div className="Partners">
+            <p style={{display:"none"}} className='aa1'><span style={{marginRight:"7px"}} onClick={()=> window.location="/"}>Главная</span>  | <span style={{marginLeft:"7px"}} onClick={()=> window.location="/News"}>Партнеры</span> </p>
                 <div className="news_page">
                     <img src={start} alt="" />
                     <h2>Партнеры</h2>

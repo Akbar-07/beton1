@@ -117,7 +117,8 @@ body {
     }
 
     .news_page h2 {
-        font-size: 28px;
+        font-size: 23px;
+    margin-left: 10px;
     }
 
     .news_page_2 h2 {
@@ -151,8 +152,6 @@ body {
     }
     .aa1{
         display: flex !important;
-        justify-content: space-between;
-        width: 170px;
     }
     .news_page_2_card img {
         width: 100%;

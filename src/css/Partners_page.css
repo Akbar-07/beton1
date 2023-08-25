@@ -1,0 +1,26 @@
+.Partners_page{
+    max-width: 1200px;
+    margin: auto;
+    padding: 3vw;
+}
+.for_orta{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    margin-top: 80px;
+}
+.for_orta p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.for_orta h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #E93333;
+}
+.arrow_pas{
+    font-size: 30px;
+    color: #E93333;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
