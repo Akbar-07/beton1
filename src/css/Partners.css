@@ -8,6 +8,9 @@
     justify-content: space-between;
     width: 900px;
 }
+.yellow_p{
+    width: 40%;
+}
 .partner_card{
     width: 170px;
     height: 65px;
