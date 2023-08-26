@@ -32,6 +32,11 @@ import betonmedia from '../img/logo (2).png'
 import betonmedia1 from '../img/logop(1).png'
 import betonmedia2 from '../img/Screenshot_7_lmp3jpq1 1.png'
 import otkritkartu from '../img/Group 344.png'
+import money1 from '../img/Coin In Hand.png'
+import nout from '../img/Laptop.png'
+import moneyy from '../img/Money With Arrow.png'
+import karta from '../img/Debit Card (1).png'
+import alert from '../img/Alert.png'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -86,7 +91,6 @@ function chiqaqol(){
     }else{
        document.querySelector(".akardon-text-joyda p").style.color="black";
     }
-    document.querySelector(".zakaz-beton-glav").style=`    height: 2500px;`
 }
 function chiqaqol1(){
     var y= document.querySelector(".alalalalallaalalalal").style.display;
@@ -118,7 +122,6 @@ function chiqaqol2(){
     }else{
        document.querySelector(".akardon-text-joyda2 p").style.color="black";
     }
-    document.querySelector(".zakaz-beton-glav").style=`    height: 2550px;`
 }
 function chiqaqol3(){
     var y= document.querySelector(".axaxaxsaxasxasxasxasxs2").style.display;
@@ -134,7 +137,7 @@ function chiqaqol3(){
     }else{
        document.querySelector(".akardon-text-joyda3 p").style.color="black";
     }
-    document.querySelector(".zakaz-beton-glav").style=`    height: 2680px;`
+  
 }
 function pastarap(){
     document.querySelector(".beton-blcok5").style=`border:1.5px solid  #FFCB13`
@@ -472,6 +475,62 @@ function qoraaaaa2(){
     document.querySelector(".tez-bosa-boldi-nx").style=`display:none`
 }
 // axaxaxsaxasxasxasxasxs2
+
+function eeeeee(){
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media9").style=` background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media10").style=` background:white;`
+
+      document.querySelector(".beton-blcok-media11").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media11").style=` background:white;`
+
+          document.querySelector(".beton-blcok-media12").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media12").style=` background:white;`
+}
+function eeeeee1(){
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media10").style=` background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media9").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media11").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media11").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media12").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media12").style=` background:white;`
+}
+function eeeeee2(){
+    document.querySelector(".beton-blcok-media11").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media11").style=` background:#FFCB13;`
+
+    
+    document.querySelector(".beton-blcok-media12").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media12").style=` background:white;`
+    
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media9").style=` background:white;`
+
+       
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media10").style=` background:white;`
+}
+function eeeeee3(){
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media9").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media12").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media12").style=` background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media10").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media11").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media11").style=` background:white;`
+}
+
 export default function Prozakaz() {
 const [data,setData] =useState(0)
 const [data1,setData1] =useState(0)
@@ -1493,7 +1552,94 @@ const [page,setPage] = useState(1)
                     </div>
                 </div>
             </div>
-            
+            <div className="tarif-media-kamzla1">
+                <div className="tarif-media-kamzla-ichi">
+                    <h4>Способ оплаты</h4>
+                    <div className="kamzala-block-pitaniya-media">
+                    <div className="buni-ichidan-ochish-kerak-media1">
+                <div className="beton-blcok-media9"  onClick={()=>eeeeee()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media9"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={nout} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Онлайн</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media10" onClick={()=>eeeeee1()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media10"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={karta} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Перевод на карту</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media11" onClick={()=>eeeeee2()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media11"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={money1} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Наличные</span></div>
+                            </div>
+                        </div>
+                            <div className="beton-blcok-media12" onClick={()=>eeeeee3()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media12"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={moneyy} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Предоплата</span></div>
+                            </div>
+                        </div>
+                </div>
+                <div className="bittaa-divda-ekanuuu-bula">
+                <h4 className='buni-qora-qilsih-kerer'>С какой купюры потребуется сдача?</h4>
+                <input type="number" placeholder='Поле для ввода' />
+                </div>
+                    <div className="error-aler-div">
+                        <div className="eerrror-aler-kottasi">
+                            <div className="error-alert-img">
+                                <img src={alert} alt="" />
+                            </div>
+                            <div className="error-alert-text">
+                                <p>Если сумма заказа <span>превышает 150000 </span>
+может потребоваться <span>предоплата 
+в 5000 рублей.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="tarif-media-kamzla2">
+                <div className="tarif-media-kamzla-ichi">
+                    <h4>Опции</h4>
+                    <div className="uslugi-nax-nujni">
+                        <input type="checkbox"  /> <span>Услуга: Все включено</span>
+                    </div>
+                    <p>Если вам требуется доставка определенными машинами,
+укажите какими:</p> 
+                    <div className="slect-joyi-media-ddd">
+                    <select id="singleSelection" data-te-select-init>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+</select>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
    {/* <div className="samiy-pasledniy-joy-oplata">
@@ -1556,6 +1702,26 @@ const [page,setPage] = useState(1)
                         <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
                         <p><a href="#">Отправить повторно</a></p>
                     </div>
+                    <div className="lalalala-nom-oylab-topishi-ozi-azobbbb">
+                    <div className="sika_f1">
+                    <p>Промокод</p>
+                    </div>
+                    <div className="yana-inp-bla-zaib0suk">
+                        <input type="number"  placeholder='Поле для ввода'/>
+                    </div>
+                    
+                    <div className="oxiri-qoldi-bla-nu-tugadi">
+                        <div className="alsdasdsadasdsadsadsa">
+                        <img src={prima} alt="" /><span>будет начислено бонусов: <br />
+(2% от суммы)</span>
+                        </div>
+<div className="bla-pasda-sotvolish-btn">
+                        <button>Заказать</button>
+                    </div>
+                    </div>
+                
+                    </div>
+                    
                 </div>
                 <div className="binus-davam-left-tarap">
                 <div className="sika_f1">
