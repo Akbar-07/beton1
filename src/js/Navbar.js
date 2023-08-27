@@ -56,15 +56,15 @@ export default function Navbar() {
                     </div>
                     <div className="nav_2_page3">
                       <FaHandsHelping className='icon1'/>
-                        <span className='s1'>Партнеры</span>
+                        <span onClick={()=>window.location="/Partner"}  className='s1'>Партнеры</span>
                     </div>
-                    <div className="nav_2_page4">
+                    <div onClick={()=>window.location="/Partners_page"} className="nav_2_page4">
                   <RiFileCopy2Fill className='icon1'/>
                         <span className='s1'>Стать партнером</span>
                     </div>
                     <div className="nav_2_page5">
                     <MdOutlineLoyalty className='icon1'/>
-                        <span className='s1'>Программа лояльности</span>
+                        <span onClick={()=>window.location="/Loyalnost"} className='s1'>Программа лояльности</span>
                     </div>
                 </div>
                 <div className="nav_2_ikki">
@@ -99,14 +99,14 @@ export default function Navbar() {
 
 <div className="menu_chap">
             <div className="menu_chap1">
-            <img className='beton_img' src={IMG1} alt="" />
+            <img onClick={()=> window.location="/"} className='beton_img' src={IMG1} alt="" />
             <button className='b23'> <CgMenuRight onClick={()=>{block_chap_nav()}} className='icon_nav1'/></button>
             </div>
            <div className="nav_2_biri">
                     <div className="n1">
                     <div className="nav_2_page1">
                         <HiNewspaper className='icon1'/>
-                        <span className='s1'>Новости</span>
+                        <span onClick={()=> window.location="/News"} className='s1'>Новости</span>
                     </div>
                     </div>
                    <div className="n1">
@@ -118,19 +118,19 @@ export default function Navbar() {
                     <div className="n1">
                     <div className="nav_2_page3">
                       <FaHandsHelping className='icon1'/>
-                        <span className='s1'>Партнеры</span>
+                        <span onClick={()=> window.location="/Partner"} className='s1'>Партнеры</span>
                     </div>
                     </div>
                     <div className="n1">
                     <div className="nav_2_page4">
                   <RiFileCopy2Fill className='icon1'/>
-                        <span className='s1'>Стать партнером</span>
+                        <span onClick={()=> window.location="/Partners_page"} className='s1'>Стать партнером</span>
                     </div>
                     </div>
                    <div className="n1">
                    <div className="nav_2_page5">
                     <MdOutlineLoyalty className='icon1'/>
-                        <span className='s1'>Программа лояльности</span>
+                        <span onClick={()=>window.location="/Loyalnost"} className='s1'>Программа лояльности</span>
                     </div>
                    </div>
                 </div>

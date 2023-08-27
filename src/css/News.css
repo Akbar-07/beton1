@@ -117,7 +117,8 @@ body {
     }
 
     .news_page h2 {
-        font-size: 28px;
+        font-size: 23px;
+    margin-left: 10px;
     }
 
     .news_page_2 h2 {
@@ -149,7 +150,9 @@ body {
     .news_page_2_card {
         display: block;
     }
-
+    .aa1{
+        display: flex !important;
+    }
     .news_page_2_card img {
         width: 100%;
     }

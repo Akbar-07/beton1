@@ -10,8 +10,11 @@ import Prozakaz from './js/Prozakaz';
 import Footer from './js/Footer'
 import Obman from './js/Obman';
 import Article from './js/Article';
+import Partners from './js/Partners';
 import Loyalnost from "./js/Programma_L"
 import Kankulyator from './js/Kankulyator';
+import Garantiya from './js/Garantiya';
+import Partners_page from './js/Partners_page';
 
 class App extends Component {
 render() {
@@ -29,12 +32,14 @@ render() {
 				<Route export path='/Footer' element={<Footer/>}></Route>
 				<Route export path='/Article' element={<Article/>}></Route>
 				<Route export path='/Obman' element={<Obman/>}></Route>
+				<Route export path='/Partner' element={<Partners/>}></Route>
 				<Route export path='/Loyalnost' element={<Loyalnost/>}></Route>
 				<Route export path='/Kankulyator' element={<Kankulyator/>}></Route>
+				<Route export path='/Garantiya' element={<Garantiya/>}></Route>
+				<Route export path='/Partners_page' element={<Partners_page/>}></Route>
 		</Routes>
 		</div>
 	</Router>
-	// <Kankulyator/>
 );
 }
 }

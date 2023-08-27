@@ -31,6 +31,12 @@ import mediaicon1 from '../img/497ab60ab79f80d6177faa511e5df442 2 (1).png'
 import betonmedia from '../img/logo (2).png'
 import betonmedia1 from '../img/logop(1).png'
 import betonmedia2 from '../img/Screenshot_7_lmp3jpq1 1.png'
+import otkritkartu from '../img/Group 344.png'
+import money1 from '../img/Coin In Hand.png'
+import nout from '../img/Laptop.png'
+import moneyy from '../img/Money With Arrow.png'
+import karta from '../img/Debit Card (1).png'
+import alert from '../img/Alert.png'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -85,7 +91,6 @@ function chiqaqol(){
     }else{
        document.querySelector(".akardon-text-joyda p").style.color="black";
     }
-    document.querySelector(".zakaz-beton-glav").style=`    height: 2500px;`
 }
 function chiqaqol1(){
     var y= document.querySelector(".alalalalallaalalalal").style.display;
@@ -117,7 +122,6 @@ function chiqaqol2(){
     }else{
        document.querySelector(".akardon-text-joyda2 p").style.color="black";
     }
-    document.querySelector(".zakaz-beton-glav").style=`    height: 2550px;`
 }
 function chiqaqol3(){
     var y= document.querySelector(".axaxaxsaxasxasxasxasxs2").style.display;
@@ -133,7 +137,7 @@ function chiqaqol3(){
     }else{
        document.querySelector(".akardon-text-joyda3 p").style.color="black";
     }
-    document.querySelector(".zakaz-beton-glav").style=`    height: 2680px;`
+  
 }
 function pastarap(){
     document.querySelector(".beton-blcok5").style=`border:1.5px solid  #FFCB13`
@@ -407,12 +411,133 @@ function kompaniya4(){
     document.querySelector(".beton-blcok-media-kom4").style=`border: 1.5px solid #FFCB13;`
     document.querySelector(".sariqblaaa-media-kom4").style=`background:#FFCB13;`
 }
+
+function mediayon3(){
+    document.querySelector(".beton-blcok-media4").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media4").style=` background: #FFCB13;`
+
+        document.querySelector(".beton-blcok-media5").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media5").style=` background: white;`
+
+    
+    document.querySelector(".beton-blcok-media6").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media6").style=` background: white;`
+}
+function mediayon4(){
+    document.querySelector(".beton-blcok-media4").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media4").style=` background: white;`
+
+    document.querySelector(".beton-blcok-media5").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media5").style=` background: #FFCB13;`
+
+    document.querySelector(".beton-blcok-media6").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media6").style=` background: white;`
+}
+
+function mediayon5(){
+    document.querySelector(".beton-blcok-media4").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media4").style=` background: white;`
+
+    document.querySelector(".beton-blcok-media5").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media5").style=` background: white;`
+
+    document.querySelector(".beton-blcok-media6").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media6").style=` background: #FFCB13;`
+}
+function qoraaaaa(){
+    document.querySelector(".btn-btn1-qachon").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%); color:white`;
+
+    document.querySelector(".btn-btn1-qachon1").style=`background:none; color:black`;
+    document.querySelector(".btn-btn1-qachon2").style=`background:none; color:black`;
+
+    document.querySelector(".tez-bosa-boldi-nx").style=`display:block`
+    document.querySelector(".bugun-bosa-boldi-nx").style=`display:none`
+    document.querySelector(".keyn-bosa-boldi-nx").style=`display:none`
+}
+function qoraaaaa1(){
+    document.querySelector(".btn-btn1-qachon1").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%); color:white`;
+
+    document.querySelector(".btn-btn1-qachon").style=`background:none; color:black`;
+    document.querySelector(".btn-btn1-qachon2").style=`background:none; color:black`;
+
+    document.querySelector(".bugun-bosa-boldi-nx").style=`display:block`
+        document.querySelector(".tez-bosa-boldi-nx").style=`display:none`
+    document.querySelector(".keyn-bosa-boldi-nx").style=`display:none`
+
+}
+function qoraaaaa2(){
+    document.querySelector(".btn-btn1-qachon2").style=`background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%); color:white`;
+    document.querySelector(".btn-btn1-qachon").style=`background:none; color:black`;
+    document.querySelector(".btn-btn1-qachon1").style=`background:none; color:black`;
+
+    document.querySelector(".keyn-bosa-boldi-nx").style=`display:block`
+    document.querySelector(".bugun-bosa-boldi-nx").style=`display:none`
+    document.querySelector(".tez-bosa-boldi-nx").style=`display:none`
+}
 // axaxaxsaxasxasxasxasxs2
+
+function eeeeee(){
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media9").style=` background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media10").style=` background:white;`
+
+      document.querySelector(".beton-blcok-media11").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media11").style=` background:white;`
+
+          document.querySelector(".beton-blcok-media12").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media12").style=` background:white;`
+}
+function eeeeee1(){
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media10").style=` background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media9").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media11").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media11").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media12").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media12").style=` background:white;`
+}
+function eeeeee2(){
+    document.querySelector(".beton-blcok-media11").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media11").style=` background:#FFCB13;`
+
+    
+    document.querySelector(".beton-blcok-media12").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media12").style=` background:white;`
+    
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media9").style=` background:white;`
+
+       
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media10").style=` background:white;`
+}
+function eeeeee3(){
+    document.querySelector(".beton-blcok-media9").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media9").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media12").style=` border: 1px solid #FFCB13;`
+    document.querySelector(".sariqblaaa-media12").style=` background:#FFCB13;`
+
+    document.querySelector(".beton-blcok-media10").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media10").style=` background:white;`
+
+    document.querySelector(".beton-blcok-media11").style=` border: 1px solid white;`
+    document.querySelector(".sariqblaaa-media11").style=` background:white;`
+}
+
 export default function Prozakaz() {
 const [data,setData] =useState(0)
 const [data1,setData1] =useState(0)
 const [data2,setData2] =useState(0)
 const [data3,setData3] =useState(0)
+const [data4,setData4] =useState(0)
+const [data5,setData5] =useState(0)
 const [page,setPage] = useState(1)
   return (
 <div>
@@ -1067,8 +1192,7 @@ const [page,setPage] = useState(1)
                                 <div className="beton-rasm-img-size">
                                     <img src={bilmadim} alt="" />
                                 </div>
-                                <div className="beton-rasm-img-text"><span>Строительный <br id='syebalsyaa' />
-раствор</span></div>
+                                <div className="beton-rasm-img-text"><span>Строительный раствор</span></div>
                             </div>
                         </div>
                         <div className="bir-button-aralash-bla">
@@ -1251,10 +1375,268 @@ const [page,setPage] = useState(1)
                     </div>
                     <div className="kampashka-kankulator-xm">
                         <div className="kammpash">
-                            <h4>Не знаете количество?</h4>
+                            <div className="kammmpash-ves">
+                            <h2>Не знаете количество?</h2>
                             <p>Рассчитайте онлайн в калькуляторе</p>
-                            <button>Калькулятор</button>
+                            <button><img src={canculator} alt="" /><span>Калькулятор</span></button>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="qatga-yetkazib-berish-media-kompashka">
+                <div className="qatga-yetkazib-berish-media-ichi">
+                    <h4>Куда привезти</h4>
+                    <div className="qatga-inputga-kompashka">
+                        <input type="text"  placeholder='Введите адрес'/><button><box-icon name='search' color="#939393"></box-icon></button>
+                    </div>
+                    <div className="ski-karta-kompashka">
+                    <img src={otkritkartu} alt="" />
+                    </div>
+                    <div className="nechikm-joy-kompashka">
+                        <h3>В скольки километрах от дороги  <br />
+находится Ваш участок?</h3>
+                    </div>
+                    <div className="zaibal-nom-oylab-topuvurib-inp-kompashka">
+                        <div className="tepa-qsmi-zaib-kampashka">
+                            <p>{data1}км</p>
+                            <p>10км</p>
+                        </div>
+                        <div className="bu-pasqismi-inp-joy-kompashka-d_f">
+                        <input type="range"  min="0" max="10" step="1" value={data1} onChange={(e)=>setData1(e.target.value)} />
+                        </div>
+                        <div className="buyam-pasqismi-inp-kompashak-check">
+                            <div className="chdbsdnajhjsjdsjdnaaa">
+                                <input type="checkbox"  />
+                            </div>
+                            <div className="buyma-zaiba-text-opaa">
+                                <p>Имеются ли препятствия для <br /> большой машины  на пути подъезда <br /> к вашему участку?</p>
+                            </div>
+                        </div>
+                        <h4 id='paspaspasaps'>Ширина проезда (м)</h4>
+                        <div className="tepa-qsmi-zaib-kampashka" id='syebalsaaxx'>
+                            <p>{data4}м</p>
+                            <p>10км</p>
+                        </div>
+                        <div className="bu-pasqismi-inp-joy-kompashka-d_f">
+                        <input type="range"  min="0" max="10000" step="1" value={data4} onChange={(e)=>setData4(e.target.value)} />
+                        </div>
+
+                        <h4 id='paspaspasaps'>Ограничения по высоте (м)</h4>
+                        <div className="tepa-qsmi-zaib-kampashka" id='syebalsaaxx'>
+                            <p>{data5}м</p>
+                            <p>7км</p>
+                        </div>
+                        <div className="bu-pasqismi-inp-joy-kompashka-d_f">
+                        <input type="range"  min="0" max="7000" step="1" value={data5} onChange={(e)=>setData5(e.target.value)} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="tarif-media-kamzla">
+                <div className="tarif-media-kamzla-ichi">
+                    <h4>Тариф</h4>
+                    <div className="kamzala-block-pitaniya-media">
+                    <div className="buni-ichidan-ochish-kerak-media">
+                <div className="beton-blcok-media4"  onClick={()=>mediayon3()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media4"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={mini} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Эконом</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media5" onClick={()=>mediayon4()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media5"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={standart} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Стандарт</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media6" onClick={()=>mediayon5()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media6"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={primi} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Экспресс</span></div>
+                            </div>
+                        </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div className="qachon-media-kamzla">
+                <div className="qachon-media-ka-zl-ichi">
+                    <h4>Когда?</h4>
+                    <div className="qachon-media-ka-zl">
+                        <div className="all-button-qachon-ka">
+                            <div className="btn-btn1-qachon" onClick={()=>qoraaaaa()}>
+                                <p>Как можно быстрее</p>
+                            </div>
+                            <div className="btn-btn1-qachon1" onClick={()=>qoraaaaa1()}>
+                                <p>Сегодня</p>
+                            </div>
+                            <div className="btn-btn1-qachon2" onClick={()=>qoraaaaa2()}>
+                                <p>Предварительный заказ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="page1-bosa-bubosin-naxuy">
+                        <div className="tez-bosa-boldi-nx">
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                        </div>
+                        <div className="bugun-bosa-boldi-nx">
+                            <button>9:00 - 12:00</button>
+                            <button>8:00 - 17:00</button>
+                            <button>9:00 - 13:00</button>
+                            <button>9:00 - 12:00</button>
+                        </div>
+                        <div className="keyn-bosa-boldi-nx">
+                            <button>9:00 - 12:00</button>
+                            <button>11:00 - 12:00</button>
+                            <button>9:00 - 12:00</button>
+                            <button>9:00 - 15:00</button>
+                        </div>
+                    </div>
+                    <div className="nmagaaaaaaa-input-data-qolda">
+                        <div className="exxxxxxxxxx-inputttt-ichi">
+                            <div className="bu-chap-tarap-sana"> 
+                            <div className="bu-chap-1">1</div>
+                            <div className="bu-chap-2">2</div>
+                            <div className="bu-chap-3">3</div>
+                            <div className="bu-chap-4">4</div>
+                            <div className="bu-chap-5">5</div>
+                            <div className="bu-chap-6">6</div>
+                            <div className="bu-chap-7">7</div>
+                            <div className="bu-chap-8">8</div>
+                            <div className="bu-chap-9">9</div>
+                            <div className="bu-chap-10">10</div>
+                            <div className="bu-chap-11">11</div>
+                            <div className="bu-chap-12">12</div>
+                            <div className="bu-chap-13">13</div>
+                            <div className="bu-chap-14">14</div>
+                            <div className="bu-chap-15">15</div>
+                            <div className="bu-chap-16">16</div>
+                            <div className="bu-chap-17">17</div>
+                            <div className="bu-chap-18">18</div>
+                            <div className="bu-chap-19">19</div>
+                            <div className="bu-chap-20">20</div>
+                            <div className="bu-chap-21">21</div>
+                            <div className="bu-chap-22">22</div>
+                            <div className="bu-chap-23">23</div>
+                            <div className="bu-chap-24">24</div>
+                            <div className="bu-chap-25">25</div>
+                            <div className="bu-chap-26">26</div>
+                            <div className="bu-chap-27">27</div>
+                            <div className="bu-chap-28">28</div>
+                            <div className="bu-chap-29">29</div>
+                            <div className="bu-chap-30">30</div>
+                            <div className="bu-chap-31">31</div>
+                            </div>
+                            <div className="bu-orta-tarap-oy"></div>
+                            <div className="ong-orta-tarap-yil"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="tarif-media-kamzla1">
+                <div className="tarif-media-kamzla-ichi">
+                    <h4>Способ оплаты</h4>
+                    <div className="kamzala-block-pitaniya-media">
+                    <div className="buni-ichidan-ochish-kerak-media1">
+                <div className="beton-blcok-media9"  onClick={()=>eeeeee()}>
+                            <div className="sasriq-narsa-yonadi">
+                                <div className="sariqblaaa-media9"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={nout} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Онлайн</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media10" onClick={()=>eeeeee1()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media10"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={karta} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Перевод на карту</span></div>
+                            </div>
+                        </div>
+                        <div className="beton-blcok-media11" onClick={()=>eeeeee2()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media11"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={money1} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Наличные</span></div>
+                            </div>
+                        </div>
+                            <div className="beton-blcok-media12" onClick={()=>eeeeee3()}>
+                            <div className="sasriq-narsa-yonadi1">
+                                <div className="sariqblaaa-media12"></div>
+                            </div>
+                            <div className="beton-rasm-patom-text-media">
+                                <div className="beton-rasm-img-size">
+                                    <img src={moneyy} alt="" />
+                                </div>
+                                <div className="beton-rasm-img-text"><span>Предоплата</span></div>
+                            </div>
+                        </div>
+                </div>
+                <div className="bittaa-divda-ekanuuu-bula">
+                <h4 className='buni-qora-qilsih-kerer'>С какой купюры потребуется сдача?</h4>
+                <input type="number" placeholder='Поле для ввода' />
+                </div>
+                    <div className="error-aler-div">
+                        <div className="eerrror-aler-kottasi">
+                            <div className="error-alert-img">
+                                <img src={alert} alt="" />
+                            </div>
+                            <div className="error-alert-text">
+                                <p>Если сумма заказа <span>превышает 150000 </span>
+может потребоваться <span>предоплата 
+в 5000 рублей.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="tarif-media-kamzla2">
+                <div className="tarif-media-kamzla-ichi">
+                    <h4>Опции</h4>
+                    <div className="uslugi-nax-nujni">
+                        <input type="checkbox"  /> <span>Услуга: Все включено</span>
+                    </div>
+                    <p>Если вам требуется доставка определенными машинами,
+укажите какими:</p> 
+                    <div className="slect-joyi-media-ddd">
+                    <select id="singleSelection" data-te-select-init>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+</select>
                     </div>
                 </div>
             </div>
@@ -1320,6 +1702,26 @@ const [page,setPage] = useState(1)
                         <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
                         <p><a href="#">Отправить повторно</a></p>
                     </div>
+                    <div className="lalalala-nom-oylab-topishi-ozi-azobbbb">
+                    <div className="sika_f1">
+                    <p>Промокод</p>
+                    </div>
+                    <div className="yana-inp-bla-zaib0suk">
+                        <input type="number"  placeholder='Поле для ввода'/>
+                    </div>
+                    
+                    <div className="oxiri-qoldi-bla-nu-tugadi">
+                        <div className="alsdasdsadasdsadsadsa">
+                        <img src={prima} alt="" /><span>будет начислено бонусов: <br />
+(2% от суммы)</span>
+                        </div>
+<div className="bla-pasda-sotvolish-btn">
+                        <button>Заказать</button>
+                    </div>
+                    </div>
+                
+                    </div>
+                    
                 </div>
                 <div className="binus-davam-left-tarap">
                 <div className="sika_f1">
