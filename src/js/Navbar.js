@@ -51,8 +51,8 @@ export default function Navbar() {
                         <span onClick={()=> window.location="/News"} className='s1'>Новости</span>
                     </div>
                     <div className="nav_2_page2">
-                    <FaCalculator className='icon11'/>
-                        <span className='s1'>Калькуляторы</span>
+                    <FaCalculator onClick={()=> window.location="/Kankulyator"} className='icon11'/>
+                        <span onClick={()=> window.location="/Kankulyator"} className='s1'>Калькуляторы</span>
                     </div>
                     <div className="nav_2_page3">
                       <FaHandsHelping className='icon1'/>

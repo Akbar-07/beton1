@@ -6,6 +6,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+.seriy .navbar{
+    background-color: #f4f2f2;
 }
 .navbar1{
     width: 1450px;
@@ -471,7 +475,7 @@ cursor: pointer;
         height: 40px;
         border: none;
         color: black;
-        background-color: white;
+        background-color: #f4f2f2;
         display: flex;
         cursor: pointer;
         justify-content: space-around;
@@ -994,7 +998,7 @@ cursor: pointer;
         background-color: #EAEAEA;
         border-radius: 2px;
         transition: .4s;
-        z-index: 10;
+        z-index: 1000;
     }
     .nav_2_biri{
   position: relative;
@@ -1142,6 +1146,7 @@ cursor: pointer;
             background-color: #EAEAEA;
             border-radius: 2px;
             transition: .4s;
+            z-index: 1001;
         }
         .nav_2_biri{
             width: 320px;
@@ -1395,6 +1400,7 @@ cursor: pointer;
             background-color: #EAEAEA;
             border-radius: 2px;
             transition: .4s;
+            z-index: 10001;
         }
         .nav_2_biri{
             width: 320px;

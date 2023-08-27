@@ -90,7 +90,7 @@ function sariq2(){
   return (
     <div>
         <div className="seriy">
-        <Navbar/>
+        <Navbar />
         <div className="rek">
             <img src={IMG1} alt="" />
         </div>

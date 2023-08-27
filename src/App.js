@@ -11,6 +11,7 @@ import Footer from './js/Footer'
 import Obman from './js/Obman';
 import Article from './js/Article';
 import Loyalnost from "./js/Programma_L"
+import Kankulyator from './js/Kankulyator';
 
 class App extends Component {
 render() {
@@ -29,9 +30,11 @@ render() {
 				<Route export path='/Article' element={<Article/>}></Route>
 				<Route export path='/Obman' element={<Obman/>}></Route>
 				<Route export path='/Loyalnost' element={<Loyalnost/>}></Route>
+				<Route export path='/Kankulyator' element={<Kankulyator/>}></Route>
 		</Routes>
 		</div>
 	</Router>
+	// <Kankulyator/>
 );
 }
 }
