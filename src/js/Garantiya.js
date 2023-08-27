@@ -79,7 +79,7 @@ export default function Garantiya() {
         <div className="garantiya-media-d1">
             <div className="garantiya-media-d2">
                 <div className="garantiay-blockmediad-d3">
-                    <h4>Главная | <span> Расширенная гарантия</span></h4>
+                    <h4>  Главная | <span> Расширенная гарантия</span></h4>
                     <div className="garantiay-media-img-sapn">
                         <img src={img} alt="" /> <span>Гарантия</span>
                     </div>

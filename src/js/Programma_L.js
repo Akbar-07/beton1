@@ -55,7 +55,7 @@ export default function Programma_L() {
         <Navbar/>
 
         <div className="otkizish">
-          <span className='s_1'>Главная | <span className='s_2'>Программа лояльности</span></span>
+          <span className='s_1'><span onClick={()=>window.location="/home"}>Главная</span> | <span className='s_2'>Программа лояльности</span></span>
         </div>
 
         <div className="program_h1">

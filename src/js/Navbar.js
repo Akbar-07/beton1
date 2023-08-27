@@ -69,7 +69,7 @@ export default function Navbar() {
                 </div>
                 <div className="nav_2_ikki">
                 <div className="nav_2_page6">
-                    <span className='s2'>Гарантия</span>
+                    <span onClick={()=>window.location="/Garantiya"}  className='s2'>Гарантия</span>
                 </div>
                 <div className="nav_2_page7">
                     <span className='s2 s22'>Оставить претензию</span>
@@ -112,7 +112,7 @@ export default function Navbar() {
                    <div className="n1">
                    <div className="nav_2_page2">
                     <FaCalculator className='icon11'/>
-                        <span className='s1'>Калькуляторы</span>
+                        <span onClick={()=> window.location="/kankulyator"} className='s1'>Калькуляторы</span>
                     </div>
                    </div>
                     <div className="n1">
@@ -137,12 +137,12 @@ export default function Navbar() {
                 <div className="nav_2_ikki">
                 <div className="n1">
                 <div className="nav_2_page6">
-                    <span className='s2'>Гарантия</span>
+                    <span onClick={()=>window.location="/Garantiya"}  className='s2'>Гарантия</span>
                 </div>
                 </div>
                <div className="n1">
                <div className="nav_2_page7">
-                    <span className='s2 s22'>Оставить претензию</span>
+                    <span onClick={()=>window.location="/"}  className='s2 s22'>Оставить претензию</span>
                 </div>
                </div>
                 <div className="nav_but">
