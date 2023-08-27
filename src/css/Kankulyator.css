@@ -718,6 +718,37 @@ transition:.3s ;
 .kal_inp2_2{
     margin-top: 25px !important;
 }
+.select_yangi{
+    width: 230px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 9px 9px #00000021;
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+}
+.select_yangi1{
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 9px 9px #00000021;
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+}   
 @media(max-width:1540px){
     .kal_header{
         width: 900px;
@@ -1269,6 +1300,37 @@ transition:.3s ;
         position: relative;
         top: 0px;
     }
+    .select_yangi{
+        width: 300px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: white;
+        box-shadow: 0 9px 9px #00000021;
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+        
+    }
+    .select_yangi1{
+        width: 300px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 9px 9px #00000021;
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
 }
 @media(max-width:360px){
     .kal_inp1_div_kopiya_rig {
@@ -1529,6 +1591,37 @@ transition:.3s ;
         border-radius: 15px;
         border: none;
         background-color: white;
+        box-shadow: 0 9px 9px #00000021;
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+    .select_yangi{
+        width: 280px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: white;
+        box-shadow: 0 9px 9px #00000021;
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+        
+    }
+    .select_yangi1{
+        width: 280px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
         box-shadow: 0 9px 9px #00000021;
         padding-left: 10px;
         margin-top: 10px;
