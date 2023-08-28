@@ -18,42 +18,6 @@ import {BiChevronDown} from "react-icons/bi"
 import {BiRightArrowAlt} from "react-icons/bi"
 
 export default function Kankulyator() {
-    function acordion(){
-        document.querySelector(".kal_inp1_div1").style = "display:block"
-        document.querySelector(".kal_inp1_div11").style = "display:block"
-        document.querySelector(".kal_header2_1").style = " align-items: start;"
-        // document.querySelector(".div_icons1").style = "transform: rotate(180deg);"
-    }
-    function acordion1(){
-        var as = document.querySelector(".acar_span").innerHTML
-        document.querySelector(".kal_inp1_div").innerHTML = as 
-        document.querySelector(".kal_inp1_div1").style = "display:none"
-        document.querySelector(".kal_inp1_div11").style = "display:none"
-    }
-    function acordion2(){
-        var as = document.querySelector(".acar_span1").innerHTML
-        document.querySelector(".kal_inp1_div").innerHTML = as
-        document.querySelector(".kal_inp1_div1").style = "display:none"
-        document.querySelector(".kal_inp1_div11").style = "display:none"
-    }
-    function bolid(){
-        document.querySelector(".kal_inp1_div1_kop_rig").style = "display:block"
-        document.querySelector(".kal_inp1_div11_kop_rig").style = "display:block"
-        document.querySelector(".kal_header2_1").style = " align-items: start;"
-        // document.querySelector(".div_icons1").style = "transform: rotate(180deg);"
-    }
-    function bolid1(){
-        var as = document.querySelector(".lobi_span").innerHTML
-        document.querySelector(".kal_inp1_div_kopiya_rig").innerHTML = as 
-        document.querySelector(".kal_inp1_div1_kop_rig").style = "display:none"
-        document.querySelector(".kal_inp1_div11_kop_rig").style = "display:none"
-    }
-    function bolid2(){
-        var as = document.querySelector(".lobi_span1").innerHTML
-        document.querySelector(".kal_inp1_div_kopiya_rig").innerHTML = as
-        document.querySelector(".kal_inp1_div1_kop_rig").style = "display:none"
-        document.querySelector(".kal_inp1_div11_kop_rig").style = "display:none"
-    }
     const [kanmap, setKanmap] = useState([
         {
             img : IMG2,
@@ -117,6 +81,28 @@ export default function Kankulyator() {
     function glavaga(){
         window.location="/home"
     }
+    const [sel, setSel] = useState([
+        {
+            title : "salom",
+        },
+        {
+            title : "salom1",
+        },
+        {
+            title : "salom2",
+        }
+    ])
+    const [sel1, setSel1] = useState([
+        {
+            title : "salom",
+        },
+        {
+            title : "salom1",
+        },
+        {
+            title : "salom2",
+        }
+    ])
   return (
     <div>
         <Navbar/>
@@ -171,17 +157,13 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <div onClick={()=>{acordion()}} className="kal_inp1_div">
-                            <span className='kal_inp1_div_span1'>Наименование</span> <BiChevronDown className='div_icons1'/>
-                        </div>
-                         <Fade bottom cascade>
-                         <div onClick={()=>{acordion1()}} className="kal_inp1_div1">
-                            <span className='acar_span'>salom</span>
-                        </div>
-                        <div onClick={()=>{acordion2()}} className="kal_inp1_div11">
-                            <span className='acar_span1'>salom1234567</span>
-                        </div>
-                         </Fade>
+                        <select className='select_yangi'>
+                            {sel.map((item,key)=>{
+                                return <option key={key} value="1">{item.title}</option>,
+                                <option key={key} value="2">{item.title}</option>,
+                                <option key={key} value="3">{item.title}</option>
+                            })}
+                        </select>
                        
                     </div>
                 </div> : ""}
@@ -200,32 +182,23 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Пескобетон,кг:</span><br />
-                        <div onClick={()=>{bolid()}} className="kal_inp1_div_kopiya_rig">
-                            <span className='kal_inp1_div_span1_kopiya_rig'>40</span> <BiChevronDown className='div_icons1'/>
-                        </div>
-                         <Fade bottom cascade>
-                         <div onClick={()=>{bolid1()}} className="kal_inp1_div1_kop_rig">
-                            <span className='lobi_span'>salom</span>
-                        </div>
-                        <div onClick={()=>{bolid2()}} className="kal_inp1_div11_kop_rig">
-                            <span className='lobi_span1'>salom1234567</span>
-                        </div>
-                         </Fade>
-                       
+                        <select className='select_yangi1'>
+                            {sel1.map((item,key)=>{
+                                return <option key={key} value="1">{item.title}</option>,
+                                <option key={key} value="2">{item.title}</option>,
+                                <option key={key} value="3">{item.title}</option>
+                            })}
+                        </select>
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <div onClick={()=>{acordion()}} className="kal_inp1_div">
-                            <span className='kal_inp1_div_span1'>Наименование</span> <BiChevronDown className='div_icons1'/>
-                        </div>
-                         <Fade bottom cascade>
-                         <div onClick={()=>{acordion1()}} className="kal_inp1_div1">
-                            <span className='acar_span'>salom</span>
-                        </div>
-                        <div onClick={()=>{acordion2()}} className="kal_inp1_div11">
-                            <span className='acar_span1'>salom1234567</span>
-                        </div>
-                         </Fade>
+                        <select className='select_yangi'>
+                            {sel.map((item,key)=>{
+                                return <option key={key} value="1">{item.title}</option>,
+                                <option key={key} value="2">{item.title}</option>,
+                                <option key={key} value="3">{item.title}</option>
+                            })}
+                        </select>
                        
                     </div>
                 </div> : ""}
@@ -249,17 +222,13 @@ export default function Kankulyator() {
                     <div className="lobila">
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <div onClick={()=>{acordion()}}  className="kal_inp1_div">
-                            <span className='kal_inp1_div_span1'>Наименование</span> <BiChevronDown className='div_icons1'/>
-                        </div>
-                         <Fade bottom cascade>
-                         <div onClick={()=>{acordion1()}} className="kal_inp1_div1">
-                            <span className='acar_span'>salom</span>
-                        </div>
-                        <div onClick={()=>{acordion2()}} className="kal_inp1_div11">
-                            <span className='acar_span1'>salom1234567</span>
-                        </div>
-                         </Fade>
+                        <select className='select_yangi'>
+                            {sel.map((item,key)=>{
+                                return <option key={key} value="1">{item.title}</option>,
+                                <option key={key} value="2">{item.title}</option>,
+                                <option key={key} value="3">{item.title}</option>
+                            })}
+                        </select>
                        
                     </div>
                     <div className="kal_inp1 kal_inp2_2">
@@ -283,17 +252,13 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <div onClick={()=>{acordion()}} className="kal_inp1_div">
-                            <span className='kal_inp1_div_span1'>Наименование</span> <BiChevronDown className='div_icons1'/>
-                        </div>
-                         <Fade bottom cascade>
-                         <div onClick={()=>{acordion1()}} className="kal_inp1_div1">
-                            <span className='acar_span'>salom</span>
-                        </div>
-                        <div onClick={()=>{acordion2()}} className="kal_inp1_div11">
-                            <span className='acar_span1'>salom1234567</span>
-                        </div>
-                         </Fade>
+                        <select className='select_yangi'>
+                            {sel.map((item,key)=>{
+                                return <option key={key} value="1">{item.title}</option>,
+                                <option key={key} value="2">{item.title}</option>,
+                                <option key={key} value="3">{item.title}</option>
+                            })}
+                        </select>
                        
                     </div>
                 </div> : ""}
