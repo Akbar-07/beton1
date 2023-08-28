@@ -37,6 +37,7 @@ import nout from '../img/Laptop.png'
 import moneyy from '../img/Money With Arrow.png'
 import karta from '../img/Debit Card (1).png'
 import alert from '../img/Alert.png'
+import nazad from '../img/Group 200.png'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -1630,19 +1631,56 @@ const [page,setPage] = useState(1)
                     <p>Если вам требуется доставка определенными машинами,
 укажите какими:</p> 
                     <div className="slect-joyi-media-ddd">
+                        <div className="img-select-qoyilmadi">
+                            <img src={zakazbeton} alt="" />
+                        </div>
                     <select id="singleSelection" data-te-select-init>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-  <option value="4">Four</option>
-  <option value="5">Five</option>
-</select>
+                    <option className='opticonn' value="1">2,5м3 </option>
+  <option className='opticonn'  value="2">3м3</option>
+  <option className='opticonn' value="3">5м3</option>
+  <option className='opticonn' value="4">7м3</option>
+  <option className='opticonn' value="5">9м3</option>
+                   </select>
+                    </div>
+
+                    <p className='xajonivorxaa'>Швинг</p> 
+                    <div className="slect-joyi-media-ddd" >
+                        <div className="img-select-qoyilmadi">
+                            <img src={zakazbeton1} alt="" />
+                        </div>
+                    <select id="singleSelection" data-te-select-init>
+                    <option className='opticonn' value="1">15м </option>
+  <option className='opticonn'  value="2">21м</option>
+  <option className='opticonn' value="3">30м</option>
+  <option className='opticonn' value="4">40м</option>
+  <option className='opticonn' value="5">57м</option>
+                   </select>
+                    </div>
+                    <div className="ana-tugabam-qoldi-xaxa-yebo">
+                        <p>Время работы швинга</p>
+                        <div className="kamazlaga-keldi-endi-shu-qoldi2">
+                            <input type="number" />
+                            <p>Минимальное время работы  - 3ч</p>
+                        </div>
+                    </div>
+                    <div className="uslugi-nax-nujni">
+                        <input type="checkbox"  /> <span>Пусковая смесь</span>
+                    </div>
+                    <div className="qanqadir-interval-padacha-ma">
+                            <div className="btn-qanaqard">
+                                <button>30мин</button>
+                                <button>1 час</button>
+                                <button>1.5 часа</button>
+                                <button>2 часа</button>
+                                <button>2.5 часа</button>
+                            </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-   {/* <div className="samiy-pasledniy-joy-oplata">
+   <div className="samiy-pasledniy-joy-oplata">
     <div className="letsgo-oplata-ye">
         <div className="bla-arrowe-ichi-endi">
             <h2>Заказ</h2>
@@ -1742,8 +1780,100 @@ const [page,setPage] = useState(1)
                 </div>
             </div>
         </div>
+        <div className="zakaz-futer-mobil-versia">
+            <div className="zakaz-futer-ichi">
+                <div className="zakaz-nazadd">
+                    <img src={nazad} alt="" /><span>Назад</span>
+                </div>
+                <h4>Заказ</h4>
+                <div className="zakaz-futer-info-block1">
+                    <div className="zakaz-img-foter">
+                        <img src={iconbla} alt="" />
+                    </div>
+                    <div className="zaazk-text-foter">
+                    <p>Гравийный бетон  <br /> М150 B12,5 F100 W4</p>
+                    </div>
+                </div>
+                <div className="neroshiltalsao">
+                    <p>Наименование опции, наименование опции</p>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="zaakz-narxla-joy-xz">
+                    <div className="zakaz-blockkk-1-pitaniya">
+                        <div className="narxla-bilan-tanishib-cqasmi">
+                            <p>Стоимость бетона:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                        <div className="narxla-bilan-tanishib-cqasmi">
+                            <p>Стоимость бетона:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                        <div className="narxla-bilan-tanishib-cqasmi">
+                            <p>Стоимость бетона:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                    </div>
+                    <div className="zakaz-blockkk-2-pitaniya">
+                    <div className="narxla-bilan-tanishib-cqasmi1">
+                            <p>Итого:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="qanqadir-bonus-bor-elan-zakaz">
+                    <div className="qanasdsdsds-img">
+                        <img src={prima} alt="" />
+                    </div>
+                    <div className="qanqqdqqwwq-text">
+                        <p>будет начислено бонусов: <br />
+<span>(2% от суммы)</span></p>
+                    </div>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="zakaz-promakod">
+                    <h3>Промокод</h3>
+                    <div className="zakaz-promakod-inpu">
+                        <input type="number" placeholder='Поле для ввода' />
+                    </div>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="yana-qanaqadir-skitkalabor">
+                    <div className="bu-tepa-qismi-skitkala">
+                        <p>Бонусы</p>
+                        <div className="asmdalmfalkmfkldfl">
+                            <img src={prima} alt="" /><span>12 000 <br />
+бонусов</span>
+                        </div>
+                    </div>
+                    <div className="bonus-yechsa-bolarkan-vay">
+                        <p>Списать бонусов: </p>
+                        <div className="dsadasdasdasdasdasd">
+                            <input type="number" />
+                        </div>
+                    </div>
+                </div>
+                <div className="yangi-batton-btn1">
+                    <button>Списать бонусы</button>
+                </div>
+                <div className="pasroda-oplt-ino">
+                        <input type="number" placeholder='Код из смс' />
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
+                        <p><a href="#">Отправить повторно</a></p>
+                    </div>
+                    <div className="zakaz-line-info" id='laadassadsadsa'></div>
+                    <div className="oxirrriirirri">
+                        <p>Итого с учетом бонусов/скидки:</p>
+                        <h4>5 000 ₽</h4>
+
+                        <button>Заказать</button>
+                    </div>
+            </div>
+        </div>
     </div>
-   </div> */}
+   </div>
 </div>
   )
 }

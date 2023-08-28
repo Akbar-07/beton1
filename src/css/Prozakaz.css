@@ -2448,10 +2448,21 @@ letter-spacing: 0em;
 .zakaz-btn-media{
     display: none;
 }
+.zakaz-futer-mobil-versia{
+    display: none;
+}
 @media (max-width:723px) {
-    .samiy-pasledniy-joy-oplata{
+    .bla-arrowe-ichi-endi {
         display: none;
-    }
+    } 
+    .zakaz-futer-mobil-versia{
+        
+        width: 90%;
+        height: auto;
+        padding-top: 30px;
+        display: flex;
+        justify-content: left;
+    }   
     .letsgo-oplata-ye{
         width: 83%;
     height: 850px;
@@ -2485,6 +2496,7 @@ letter-spacing: 0em;
         display: block;
         width: 100%;
         height: auto;
+        margin-top: 20px;
     }
     .zakaz-btn-naz{
         width: 100%;
@@ -3694,7 +3706,7 @@ text-align: left;
 }
 .tarif-media-kamzla2{
     width: 100%;
-    height: 600px;
+    height: auto;
     background: #F1F1F1;
     border-radius: 12px;
     margin-bottom: 30px;
@@ -3718,16 +3730,484 @@ color: black !important;
 }
 .tarif-media-kamzla-ichi p{
     color:  black !important;
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 .slect-joyi-media-ddd{
-    margin-top: 20px;
     width: 100%;
     height:auto;
 }
 #singleSelection{
     width: 100%;
-    height: 30px;
+    height: 50px;
     outline: none;
     border: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 13px;
+    background: none;
+    padding-left:20px;
+    display: block; 
+font-size: 16px; 
+font-family: sans-serif; 
+font-weight: 700; 
+color: #444; 
+line-height: 1.3; 
+padding: .6em 1.4em .5em .8em; 
+box-sizing: border-box; 
+margin: 0; 
+border-radius: .5em;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ appearance: none;
+ background-image: url("https://static-00.iconduck.com/assets.00/chevron-down-icon-512x295-bevh3bbj.png");
+background-repeat: no-repeat, repeat;
+background-position: right .7em top 50%, 0 0;
+background-size: .65em auto, 100%; 
+}
+.slect-joyi-media-ddd option{
+    padding: 10px;
+}
+#singleSelection::-ms-expand { display: none; } 
+#singleSelection:hover { border-color: #888; } 
+#singleSelection:focus { border-color: #aaa; 
+box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+box-shadow: 0 0 0 3px -moz-mac-focusring; 
+color: #222;
+outline: none; 
+} 
+#singleSelection option { font-weight:normal; } 
+*[dir="rtl"] #singleSelection, :root:lang(ar) #singleSelection, :root:lang(iw) #singleSelection { 
+background-position: left .7em top 50%, 0 0; 
+padding: .6em .8em .5em 1.4em; 
+}
+.img-select-qoyilmadi{
+    position: relative;
+    left: 70px;
+    top: 38px;
+}
+.xajonivorxaa{
+    padding-top: 10px;
+    position: relative;
+    top: 10px;
+}
+.ana-tugabam-qoldi-xaxa-yebo{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+.ana-tugabam-qoldi-xaxa-yebo p{
+    margin-bottom: 15px;
+}
+.kamazlaga-keldi-endi-shu-qoldi2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.kamazlaga-keldi-endi-shu-qoldi2 input{
+    width: 104px;
+    height: 45px !important;
+    border-radius: 12px;
+    border: 1px;
+    gap: 10px;
+    outline: none;
+    border: 1px solid #E0E0E0;
+    background: none;
+}
+.kamazlaga-keldi-endi-shu-qoldi2 p{
+    position: relative;
+    top: 5px;
+}
+.uslugi-nax-nujni span{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+.btn-qanaqard button{
+    width: Hug (82px);
+height: Hug (40px);
+padding: 11px 17px 9px 17px;
+border-radius: 12px;
+border: 1px;
+gap: 10px;
+border: 1px solid #E0E0E0;
+background: none;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.4s;
+margin-bottom: 20px;
+}
+
+.qanqadir-interval-padacha-ma{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.btn-qanaqard{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px ;
+}
+.btn-qanaqard button:hover{
+    background-color: white;
+    color: #E93333;
+    border: 1px solid white;
+}
+.zakaz-futer-mobil-versia{
+    width: 90%;
+    height: auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: left;
+} 
+.zakaz-futer-ichi {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.zakaz-nazadd{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+.zakaz-nazadd span{
+    font-family: Montserrat Alternates;
+font-size: 18px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+color: white;
+cursor: pointer;
+}
+.zakaz-futer-ichi h4{
+    font-family: Montserrat Alternates;
+font-size: 26px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #939393;
+}
+.zakaz-futer-info-block1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 23px;
+    gap: 10px;
+    align-items: center;
+}
+.zaazk-text-foter p{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+.neroshiltalsao{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.neroshiltalsao p{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: #BEBEBE;
+}
+.zaakz-narxla-joy-xz{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.zakaz-blockkk-1-pitaniya{
+    display: block;
+}
+.narxla-bilan-tanishib-cqasmi{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.narxla-bilan-tanishib-cqasmi p{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: #BEBEBE;
+margin-bottom: 10px;
+}
+.narxla-bilan-tanishib-cqasmi h3{
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #e6e4e4;
+}
+
+.narxla-bilan-tanishib-cqasmi1{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.narxla-bilan-tanishib-cqasmi1 p{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+.narxla-bilan-tanishib-cqasmi1 h3{
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.qanqadir-bonus-bor-elan-zakaz{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.qanasdsdsds-img img{
+    width: 35px;
+height: 35px;
+}
+.qanqadir-bonus-bor-elan-zakaz{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.qanqqdqqwwq-text p{
+font-family: Gilroy;
+font-size: 18px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #BEBEBE;
+}
+.qanqqdqqwwq-text span{
+    font-family: Gilroy;
+font-size:20px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+}
+.zakaz-promakod h3{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+.zakaz-promakod-inpu{
+    width: 100%;
+    height: auto;
+}
+.zakaz-promakod{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.zakaz-promakod-inpu input{
+width: 99%;
+height: 41px;
+border-radius: 12px;
+box-shadow: 0px 4px 4px 0px #0000000D;
+border: none;
+outline: none;
+}
+.zakaz-promakod-inpu input[placeholder]{
+    padding-left: 12px;
+    font-family: Gilroy;
+font-size: 16px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: #00000080;
+}
+.bu-tepa-qismi-skitkala{
+    width: 100%;
+    height: auto;
+}
+.asmdalmfalkmfkldfl{
+    width: 140px;
+height: 45px;
+border-radius: 12px;
+background: #FFFFFF1F;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+.bu-tepa-qismi-skitkala p{
+    margin-bottom: 10px;
+}
+.asmdalmfalkmfkldfl img{
+    width: 35px;
+    height: 35px;
+}
+.asmdalmfalkmfkldfl span{
+    font-family: Gilroy;
+font-size: 16px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+.bu-tepa-qismi-skitkala p{
+    font-family: Gilroy;
+font-size: 20px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+.dsadasdasdasdasdasd{
+    width: 100%;
+    height: auto;
+}
+.dsadasdasdasdasdasd input{
+    width: 200px;
+    height: 45px;
+    border: 1px solid #FFFFFF5E;
+    background: none;
+    border-radius: 12px;
+    outline: none;
+    color: white;
+}
+.yana-qanaqadir-skitkalabor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+.bonus-yechsa-bolarkan-vay p{
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+     margin-bottom: 10px;
+}
+.yangi-batton-btn1{
+    width: 100%;
+    height: auto;
+}
+.yangi-batton-btn1 button{
+    width: 100%;
+height: 45px;
+border-radius: 12px;
+outline: none;
+border: none;
+background-color: #FFCB13;
+font-family: Gilroy;
+font-size: 19px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+cursor: pointer;
+}
+.samiy-pasledniy-joy-oplata {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.letsgo-oplata-ye {
+    width: 83%;
+    height: 1170px;
+    background: linear-gradient(117.94deg, #000000 -14.33%, #787878 96.29%);
+    box-shadow: 0px 12px 19px 0px #0000001C;
+    border-radius: 41px;
+    display: flex;
+    justify-content: center;
+}
+#laadassadsadsa{
+    margin-top: 30px;
+}
+.oxirrriirirri{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.oxirrriirirri p{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+margin-bottom: 10px;
+}
+.oxirrriirirri h4{
+    font-family: Gilroy;
+font-size: 35px;
+font-weight: 700;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: left;
+color: #F45959 !important ;
+margin-bottom: 20px;
+}
+.oxirrriirirri button{
+    width: 100%;
+    height: 55px;
+    border-radius: 9px;
+    background: linear-gradient(109.98deg, #E93333 1.02%, #ED5D5D 103.52%);
+color: white;
+font-family: Gilroy;
+font-size: 20px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+border: none;
+outline: none;
+cursor: pointer;
 }
 }
