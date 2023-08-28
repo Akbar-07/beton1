@@ -8,6 +8,8 @@ import white1 from '../img/white.png'
 import right_arrow_png from '../img/right-arrow_png.png'
 import ekskavator from '../img/media_ekskavator.png'
 import {GoArrowDown} from 'react-icons/go'
+import IMG2 from "../img/Group 365.png"
+import IMG3 from "../img/Group 384.png"
 
 export default function Partners_page() {
   return (
@@ -92,7 +94,14 @@ export default function Partners_page() {
                       <p>для покрытия возможных непредвиденных расходов из-за некачественного поставленного бетона, если таковой будет иметь место.</p>
                       </div>
                   </div>
+                  <div className="orta_card_img1">
+                    <img className='orta_card_img1_2' src={IMG2} alt="" />
+                    <img className='orta_card_img1_1' src={IMG3} alt="" />
+                  </div>
                 </div>
+
+
+
 </div>
         <Footer/>
     </div>

@@ -65,6 +65,53 @@
 .glavaga_ot{
     display: none;
 }
+.orta_card_img1_1{
+    display: none;
+}
+@media(max-width:1240px){
+  .orta_card_img1_2{
+    height: 270px;
+  }  
+}
+@media(max-width:1040px){
+    .orta_card_img1_2{
+      height: 220px;
+    }  
+  }
+  @media(max-width:880px){
+    .orta_card_img1{
+        width: max-content;
+        margin: auto;
+    }
+    .orta_card_img1_2{
+      height: 220px;
+    }  
+    .orta_card {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+  }
+  @media(max-width:550px){
+    .orta_card_img1{
+        width: max-content;
+        margin: auto;
+    }
+    .orta_card_img1_2{
+      height: 220px;
+      display: none;
+    }  
+    .orta_card {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .orta_card_img1_1{
+        display: block;
+    }
+  }
 @media(max-width:430px){
     .ssd_fa{
         position: relative;
@@ -83,7 +130,7 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
     .for_tor {
         width: 40px;
@@ -95,6 +142,12 @@
         border-radius: 11px;
         font-size: 24px;
         color: white;
+    }
+    .orta_card_img1_1{
+        display: block;
+        height: 320px;
+        position: relative;
+        bottom: 20px;
     }
 }
 @media(max-width:350px){
