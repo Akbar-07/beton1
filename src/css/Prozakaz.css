@@ -936,7 +936,7 @@ text-align: center;
 
 }
 .salom1-tezroq{
-    display: none;
+   display: block;
 }
 .salom1-bugun{
     display: none;
@@ -1202,6 +1202,7 @@ align-items: center;
 justify-content: center;
 cursor: pointer;
 transition: 0.5s;
+
 }
 .kamazlaga-keldi-endi-shu-qoldi span{
     color: #606060;
@@ -1211,7 +1212,7 @@ font-weight: 700;
 line-height: 20px;
 letter-spacing: 0em;
 text-align: center;
-
+transition: 0.5s;
 }
 .kamazlaga-keldi-endi-shu-qoldi{
     display: flex;
@@ -1219,6 +1220,10 @@ height:40.56px;
 gap: 7px;
 
 }
+/* .zaybal_nomer22:hover{
+    scale: .9;
+    border: 2px solid  white;
+} */
 .kamazlaga-keldi-endi-shu-qoldi button:hover{
     background-color: white;
 }
@@ -1369,7 +1374,7 @@ color: #939393;
 
 .samiy-pasledniy-joy-oplata{
     width: 100%;
-    height: 67vh;
+    height:70vh;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1746,7 +1751,7 @@ cursor: pointer;
 @media (max-width:1221px) {
     .zakaz-beton-glav {
         width: 1100px;
-        height: 2500px;
+        height: auto;
         background: #EEEEEE;
         border-radius: 41px;
         margin-bottom: 50px !important;
@@ -1807,7 +1812,7 @@ cursor: pointer;
 @media (max-width:1121px) {
     .zakaz-beton-glav {
         width: 1000px;
-        height: 2500px;
+        height: auto;
         background: #EEEEEE;
         border-radius: 41px;
         margin-bottom: 50px !important;
@@ -1911,6 +1916,7 @@ height: 45px;
     border-radius: 41px;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
     }
         .bla-arrowe-ichi-endi {
         width: 800px;
@@ -1940,12 +1946,17 @@ height: 45px;
     }
     .zakaz-beton-glav {
         width: 900px;
-        height: 2500px;
-        background: #EEEEEE;
-        border-radius: 41px;
-        margin-bottom: 50px !important;
-        margin-top: 50px;
+        height: auto;
     }
+    #zakaz-bt {
+        background: #f8f7f7ee;
+        width: 100%;
+        height: 2650px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
     .zakaz-beton-ichi {
         width: 800px;
         height: 100px;
@@ -2137,7 +2148,7 @@ letter-spacing: 0em;
 }
     .zakaz-beton-glav {
         width: 800px;
-        height: 2900px;
+        height: auto !important;
         background: #EEEEEE;
         border-radius: 41px;
         margin-bottom: 50px !important;
@@ -2262,10 +2273,6 @@ letter-spacing: 0em;
     .sdacha-text p {
         font-size: 15px;
     }
-    .zakaz-beton-glav {
-        width: 800px;
-        height: 2700px;
-    }
     #zakaz-bt{
         background: #f8f7f7ee;
         width: 100%;
@@ -2359,7 +2366,8 @@ letter-spacing: 0em;
     }
     .zakaz-beton-glav {
         width: 700px;
-        height: 2700px;
+        height: 2730px !important;
+        border-radius: 12px !important;
     }
     .zakaz-beton-ichi {
     width: 600px;
@@ -2491,12 +2499,14 @@ letter-spacing: 0em;
         height: auto;
         text-align: center;
         margin: auto;
+        overflow: hidden !important;
     }
     .zakaz-btn-media-ichi{
         display: block;
         width: 100%;
         height: auto;
         margin-top: 20px;
+        overflow: hidden !important;
     }
     .zakaz-btn-naz{
         width: 100%;
@@ -2512,7 +2522,7 @@ letter-spacing: 0em;
         font-family: 'Inter', sans-serif;
         font-family: 'Merriweather', serif;
         font-family: 'Roboto', sans-serif;
-font-size: 30px;
+font-size: 24px;
 font-weight: 600;
 line-height: 37px;
 letter-spacing: 0em;
@@ -4210,4 +4220,393 @@ border: none;
 outline: none;
 cursor: pointer;
 }
+.btn-qanaqard button{
+    cursor: pointer;
+}
+}
+@media (max-width:517px) {
+    .kammmpash-ves h2{
+        font-size: 18px;
+    }
+    .kammmpash-ves p {
+        font-size: 15.7px;
+    }
+    .tarif-media-kamzla-ichi h4 {
+        font-size: 16px;
+    }
+    .tarif-media-kamzla-ichi p {
+        font-size: 16px;
+    }
+    .kamazlaga-keldi-endi-shu-qoldi2 p{
+        font-size: 15px;
+    }
+}
+@media (max-width:508px) {
+    .beton-blcok-media-kom {
+        width: 100px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom1 {
+        width: 100px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom2 {
+        width: 100px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom3 {
+        width: 100px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom4 {
+        width: 100px;
+        height: 48px;
+    }
+    .kampaniya-tepadagiselect-boldi-endi-pasga-texg h4 {
+        font-size: 16px;
+    }
+    .nechikm-joy-kompashka h3 {
+        font-size: 16px;
+    }
+    .buyma-zaiba-text-opaa p {
+        font-size: 14px;
+    }
+    .qatga-yetkazib-berish-media-ichi h4 {
+        font-size: 16px;
+    }
+    .tarif-media-kamzla-ichi h4 {
+        font-size: 15px;
+    }
+    .zakaz-futer-ichi h4 {
+        font-size: 20px;
+    }
+    .zaazk-text-foter p {
+        font-size: 15px;
+    }
+    .zakaz-img-foter img{
+        width: 100px;
+    }
+    .neroshiltalsao p {
+        font-size: 16px;
+    }
+    .narxla-bilan-tanishib-cqasmi1 p {
+        font-size: 16px;
+    }
+    .narxla-bilan-tanishib-cqasmi1 h3 {
+        font-size: 25px;
+    }
+    .qanqqdqqwwq-text p {
+        font-size: 16px;
+    }
+    .qanqqdqqwwq-text span {
+        font-size: 18px;
+    }
+    .bu-tepa-qismi-skitkala p {
+        font-size: 17px;
+    }
+    .bonus-yechsa-bolarkan-vay p {
+        font-size: 17px;
+    }
+    .asmdalmfalkmfkldfl span {
+        font-size: 13px;
+    }
+    .yangi-batton-btn1 button {
+        font-size: 17px;
+    }
+    .pasroda-oplt-ino p {
+        font-size: 14px;
+    }
+    .pasroda-oplt-ino a {
+        font-size: 14px;
+    }
+    .oxirrriirirri p {
+        font-size: 16px;
+    }
+    .oxirrriirirri button {
+        height: 45px;
+        font-size: 18px;
+    }
+}
+@media (max-width:478px) {
+    .dsadasdasdasdasdasd input {
+        width: 160px;
+        height: 45px;
+    }
+    .pasroda-oplt-ino input[placeholder] {
+        padding-left: 11px;
+    }
+}
+@media (max-width:435px) {
+    .marxi-prozakaz-kom {
+        width: 80px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .beton-blcok-media-kom {
+        width: 90px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom1 {
+        width: 90px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom2 {
+        width: 90px;
+        height: 48px;
+    }
+    .kampaniya-cardla-prozaakz {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+}
+@media (max-width:415px) {
+    .beton-blcok-media-kom {
+        width: 80px;
+        height: 48px;
+    }
+    .beton-rasm-img-size2 img {
+        width: 60px;
+        height: 21px;
+        position: relative;
+        top: -3px;
+        right: 5px;
+    }
+    .marxi-prozakaz-kom {
+        width: 80px;
+        height: 50px;
+        position: relative;
+        left: 5px;
+    }
+    .select-opticon-med-block1 {
+        width: 92%;
+        height: auto;
+        border-radius: 9px;
+        border: 1px;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .kampaniya-tepadagiselect-boldi-endi-pasga-texg button {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .boldi-endi-pasga-texg h4 {
+        font-size: 15px;
+    }
+    .buyma-zaiba-text-opaa p {
+        font-size: 13px;
+    }
+    .qatga-yetkazib-berish-media-ichi h4 {
+        font-size: 14px;
+    }
+    .tarif-media-kamzla-ichi p {
+        font-size: 13px;
+    }
+    .btn-qanaqard {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .zakaz-futer-ichi h4 {
+        font-size: 19px;
+    }
+    .neroshiltalsao p {
+        font-size: 15px;
+    }
+    .narxla-bilan-tanishib-cqasmi h3 {
+        font-size: 20px;;
+    }
+    .narxla-bilan-tanishib-cqasmi p {
+        font-family: Gilroy;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #BEBEBE;
+        margin-bottom: 10px;
+    }
+    .dsadasdasdasdasdasd input {
+        width: 140px;
+        height: 45px;
+    }
+}
+@media (max-width:395px) {
+    .kampaniya-cardla-prozaakz {
+        gap: 5px;
+    }
+    .beton-blcok-media-kom4 {
+        width: 90px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom3 {
+        width: 90px;
+        height: 48px;
+    }
+    .kampaniya-tepadagiselect-boldi-endi-pasga-texg h4 {
+        font-size: 14px;
+    }
+    .kammmpash-ves p {
+        font-size: 13.7px;
+    }
+    .nechikm-joy-kompashka h3 {
+        font-size: 14px;
+    }
+    .uslugi-nax-nujni input {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        background: white;
+    }
+
+}
+@media (max-width:376px) {
+    .kampaniya-cardla-prozaakz {
+        gap: 5px;
+    }
+    .select-opc-img1 span {
+        font-size: 14px;
+    }
+    .beton-rasm-patom-text-media {
+        gap: 14px;
+        padding-left: 10px;
+    }
+}
+@media (max-width:392px) {
+    .asmdalmfalkmfkldfl {
+        width: 110px;
+        height: 45px;
+    }
+    
+    
+}
+@media (max-width:389px) {
+    .kammmpash-ves p {
+        font-size: 11.7px;
+    }
+    .beton-blcok-media-kom {
+        width: 80px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom1 {
+        width: 80px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom2 {
+        width: 80px;
+        height: 48px;
+    }
+}
+@media (max-width:353px) {
+    .marxi-prozakaz-kom h3 {
+        font-size: 14px;
+    }
+    .kampaniya-cardla-prozaakz {
+        flex-wrap: wrap;
+    }
+    .beton-blcok-media-kom2{
+        display:none;
+    }
+    .beton-blcok-media-kom {
+        width: 100px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom1 {
+        width: 110px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom3 {
+        width: 100px;
+        height: 48px;
+    }
+    .beton-blcok-media-kom4 {
+        width: 110px;
+        height: 48px;
+    }
+    .kampaniya-cardla-prozaakz {
+        gap: 10px;
+    }
+}
+@media (max-width:466px) {
+    .zakaz-btn-naz span {
+        font-size: 20px;
+    }
+}
+@media (max-width:385px) {
+    .kammmpash-ves h2 {
+        font-size: 16px;
+    }
+    .kammmpash-ves button span {
+        font-size: 16px;
+    }
+}
+@media (max-width:356px) {
+    .bu-tepa-qismi-skitkala p {
+        font-size: 14px;
+    }
+    .bonus-yechsa-bolarkan-vay p {
+    font-size: 14px;
+}
+.dsadasdasdasdasdasd input {
+    width: 120px;
+    height: 45px;
+}
+.pasroda-oplt-ino input {
+    width: 95.5%;
+    height: 45px;
+}
+.pasroda-oplt-ino p {
+    font-size: 12px;
+}
+.pasroda-oplt-ino a {
+    font-size: 12px;
+}
+.zakaz-promakod-inpu input {
+    width: 96%;
+}
+}
+@media (max-width:329px) {
+    .select-opc-img span {
+        font-size: 12px;
+    }
+    .select-opc-img1 span {
+        font-size: 12px;
+    }
+}
+@media (max-width:345px) {
+    .beton-rasm-img-text span {
+        font-size: 13px;
+    }
+    .kammmpash-ves h2 {
+        font-size: 14px;
+    }
+    .kammmpash-ves p {
+        font-size: 10.7px;
+    }
+    .btn-qanaqard button {
+        padding: 10px 17px 9px 13px;
+    }
+}
+@media (max-width:329px) {
+    .btn-qanaqard button {
+        padding: 10px 17px 9px 11px;
+    }
 }

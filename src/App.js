@@ -15,9 +15,11 @@ import Loyalnost from "./js/Programma_L"
 import Kankulyator from './js/Kankulyator';
 import Garantiya from './js/Garantiya';
 import Partners_page from './js/Partners_page';
+import Pamit from './js/Pamit'
+import User from './js/User';
 import Layfxak from './js/Layfxak';
 
-class App extends Component {
+export default class App extends Component {
 render() {
 	return (
 	<Router>
@@ -38,6 +40,8 @@ render() {
 				<Route export path='/Kankulyator' element={<Kankulyator/>}></Route>
 				<Route export path='/Garantiya' element={<Garantiya/>}></Route>
 				<Route export path='/Partners_page' element={<Partners_page/>}></Route>
+				<Route export path='/Pamit' element={<Pamit/>}></Route>
+				<Route export path='/User' element={<User/>}></Route>
 				<Route export path='/Layfxak' element={<Layfxak/>}></Route>
 		</Routes>
 		</div>
@@ -46,4 +50,3 @@ render() {
 }
 }
 
-export default App;

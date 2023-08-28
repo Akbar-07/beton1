@@ -39,6 +39,7 @@ import karta from '../img/Debit Card (1).png'
 import alert from '../img/Alert.png'
 import nazad from '../img/Group 200.png'
 
+
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
     document.querySelector(".sariqblaaa1").style=`background: white;`
@@ -92,6 +93,7 @@ function chiqaqol(){
     }else{
        document.querySelector(".akardon-text-joyda p").style.color="black";
     }
+    document.querySelector("#zakaz-bt").style.height="2600px";
 }
 function chiqaqol1(){
     var y= document.querySelector(".alalalalallaalalalal").style.display;
@@ -107,6 +109,8 @@ function chiqaqol1(){
     }else{
        document.querySelector(".akardon-text-joyda1 p").style.color="black";
     }
+
+    document.querySelector("#zakaz-bt").style.height="2680px";
 
 }
 function chiqaqol2(){
@@ -138,7 +142,7 @@ function chiqaqol3(){
     }else{
        document.querySelector(".akardon-text-joyda3 p").style.color="black";
     }
-  
+    document.querySelector("#zakaz-bt").style.height="2930px";
 }
 function pastarap(){
     document.querySelector(".beton-blcok5").style=`border:1.5px solid  #FFCB13`
@@ -182,6 +186,8 @@ function buton(){
 
     document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
     top: -90px;`
+
+
 }
 function buton1(){
     document.querySelector(".btn-kogda1").style=`background:none;border: 1px solid black;color:black`
@@ -194,6 +200,7 @@ function buton1(){
 
         document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
     top: -90px;`
+ 
 }
 function buton2(){
     document.querySelector(".btn-kogda1").style=`background:none;border: 1px solid black;color:black`
@@ -206,6 +213,7 @@ function buton2(){
 
     document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
     top: -90px;`
+
 }
 function pastarapOP(){
     document.querySelector(".beton-blcok8").style=`border:1.5px solid  #FFCB13`
@@ -1107,7 +1115,7 @@ const [page,setPage] = useState(1)
                                         </div>
                                     </div>
                                     <div className="kamazla-media-suka-blat">
-                                            <button><span>15м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button className='zaybal_nomer2'><span className='seks_1'>15м</span><img src={zakazbeton1} alt="" /></button>
                                             <button><span>21м</span><img src={zakazbeton1} alt="" /></button>
                                             <button><span>30м</span><img src={zakazbeton1} alt="" /></button>
                                             <button><span>40м</span><img src={zakazbeton1} alt="" /></button>
@@ -1874,6 +1882,7 @@ const [page,setPage] = useState(1)
         </div>
     </div>
    </div>
+
 </div>
   )
 }
