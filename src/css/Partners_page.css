@@ -62,3 +62,140 @@
 .mini_card{
     width: 290px;
 }
+.glavaga_ot{
+    display: none;
+}
+@media(max-width:430px){
+    .ssd_fa{
+        position: relative;
+        right: 10px;
+    }
+    .glavaga_ot{
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .glavaga_ot2{
+        color: #E93333;
+    }
+    .orta_card {
+        width: 340px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .for_tor {
+        width: 40px;
+        height: 40px;
+        background-color: #E93333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 11px;
+        font-size: 24px;
+        color: white;
+    }
+}
+@media(max-width:350px){
+    .glavaga_ot{
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .glavaga_ot2{
+        color: #E93333;
+    }
+    .orta_card {
+        width: 310px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .for_tor {
+        width: 40px;
+        height: 40px;
+        background-color: #E93333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 11px;
+        font-size: 24px;
+        color: white;
+    }
+    .ssd_fa{
+        position: relative;
+        right: 20px;
+    }
+}
+@media(max-width:325px){
+    body{
+        overflow-x: hidden;
+    }
+    .glavaga_ot{
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .glavaga_ot2{
+        color: #E93333;
+    }
+    .orta_card {
+        width: 300px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .for_tor {
+        width: 40px;
+        height: 40px;
+        background-color: #E93333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 11px;
+        font-size: 24px;
+        color: white;
+    }
+    .ssd_fa{
+        position: relative;
+        right: 40px;
+    }
+}
+@media(max-width:325px){
+    body{
+        overflow-x: hidden;
+    }
+    .glavaga_ot{
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .glavaga_ot2{
+        color: #E93333;
+    }
+    .orta_card {
+        width: 290px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .for_tor {
+        width: 40px;
+        height: 40px;
+        background-color: #E93333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 11px;
+        font-size: 24px;
+        color: white;
+    }
+    .ssd_fa{
+        position: relative;
+        right: 40px;
+    }
+}

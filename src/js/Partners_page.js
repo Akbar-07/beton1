@@ -13,7 +13,11 @@ export default function Partners_page() {
   return (
     <div>
         <Navbar/>
+        
 <div className="Partners_page">
+<div className="glavaga_ot">
+          <span className='glavaga_ot1'><span onClick={()=>window.location="/home"}>Главная</span> | <span className='glavaga_ot2'>Калькулятор</span></span>
+        </div>
 <div className="news_page">
                     <img src={start} alt="" />
                     <h2>Стать партнером</h2>
@@ -36,7 +40,7 @@ export default function Partners_page() {
 но для того чтобы мы рассмотрели вашу заявку,</p>
 <GoArrowDown className='arrow_pas'/>
 <h3>ваше производство должно обладать 
-несколькими важными характеристиками:</h3>
+несколькими важными <span className='ssd_fa'>характеристиками:</span></h3>
                 </div>
                 <div className="for_orta1">
                   <div className="orta_card">
