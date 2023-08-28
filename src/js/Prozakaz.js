@@ -746,10 +746,10 @@ const [page,setPage] = useState(1)
                                     <img src={acardion} alt="" />
                                 </div>
                                 <div className="akardon-text-joyda" >
-                                    <p onClick={()=>chiqaqol()}>Подвижность</p>
+                                    <p >Подвижность</p>
                                 </div>
                                 <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol()} />
+                                    <img src={acardion2} alt=""  />
                                 </div>
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
@@ -763,10 +763,10 @@ const [page,setPage] = useState(1)
                                     <img src={acardion3} alt="" />
                                 </div>
                                 <div className="akardon-text-joyda1"  >
-                                    <p onClick={()=>chiqaqol1()}>Гидрофобная добавка</p>
+                                    <p >Гидрофобная добавка</p>
                                 </div>
                                 <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol1()} />
+                                    <img src={acardion2} alt=""  />
                                 </div>
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
@@ -789,10 +789,10 @@ const [page,setPage] = useState(1)
                                     <img src={acardion5} alt="" id='nmagaaaa-unaqa' />
                                 </div>
                                 <div className="akardon-text-joyda2"  >
-                                    <p onClick={()=>chiqaqol2()}>Фиброволокно</p>
+                                    <p >Фиброволокно</p>
                                 </div>
                                 <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt=""   onClick={()=>chiqaqol2()} />
+                                    <img src={acardion2} alt=""    />
                                 </div>
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
@@ -815,11 +815,11 @@ const [page,setPage] = useState(1)
                                     <img src={acardion6} alt="" id='nmagaaaa-unaqa' />
                                 </div>
                                 <div className="akardon-text-joyda3"  >
-                                    <p onClick={()=>chiqaqol3()}>Противоморозная  <br />
+                                    <p >Противоморозная  <br />
 добавка</p>
                                 </div>
                                 <div className="akardion-oxiri-keyin-chop">
-                                    <img src={acardion2} alt="" onClick={()=>chiqaqol3()} />
+                                    <img src={acardion2} alt=""  />
                                 </div>
                             </div>
 

@@ -11,7 +11,7 @@
     background: linear-gradient(148.88deg, #000000 -1.04%, #787878 143.56%);
     box-shadow: 0px 12px 19px 0px #0000001C;
     border-radius: 41px;
-    overflow: hidden;
+    display: flex;
 }
 .user-ichi-odamcha1{
     width: 153px;
@@ -26,25 +26,124 @@ align-items: center;
 justify-content: center;
 z-index: 10;
 }
-.user-ichi-odamcha{
-    display: flex;
-}
 .user-ichi-odamcha2{
     width: 187px;
 height: 187px;
 background: #FFFFFF1F;
 border-radius: 50%;
 position: relative;
-right: 200px;
-top: -55px;
+top: -210px;
+right: 50px;
 }
 .user-ichi-odamcha1 img{
     position: relative;
     left: 13px;
     top: 15px;
 }
+.user-ichi-odamcha{
+    width: 170px;
+    height: 100%;
+}
+.user-ong-tarap-malumotla{
+    width: 80%;
+    height: auto;
+    padding-top: 20px;
+}
+.user-ism{
+    width: 100%;
+    height: auto;
+    display: flex;
+justify-content: space-between;
+margin-bottom: 40px;
+}
+.img-user h3 {
+    font-family: Montserrat Alternates;
+font-size: 30px;
+font-weight: 600;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+}
+.user-status-block h4{
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+color: #787878;  
+margin-bottom: 5px;  
+}
+.user-status-block p{
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+color: #D6D6D6;    
+}
 .user-malumotla-kotta{
-    width: 85%;
-    height: 100px;
-    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.dumoloni-ischida-zakaztiy{
+    width: 25px;
+height: 25px;
+background: linear-gradient(137.96deg, #FFCB13 -8.95%, #F49B0C 107.36%);
+box-shadow: 0px 4px 4px 0px #00000040;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.zalaztoy-parknoy{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 30px;
+}
+.zalaztoy-parknoy span{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+color: #D6D6D6;
+}
+.zalaztoy-manetaa{
+    width: 199px;
+height: 45px;
+border-radius: 12px;
+background: #FFFFFF1F;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+cursor: pointer;
+}
+.zalaztoy-parknoy1{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 10px;
+}
+.zalaztoy-manetaa img{
+    width: 35px;
+height: 35px;
+position: relative;
+top: 3px;
+}
+.zalaztoy-manetaa span{
+    font-family: Gilroy;
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+color: #D6D6D6;
 }
