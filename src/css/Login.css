@@ -77,8 +77,8 @@ transition: 0.4s;
 }
 @media (max-width:665px) {
     .teper-login {
-        width: 80%;
-        height: 400px;
+        width: 100%;
+        height: 100%;
         border-radius: 35px;
         background-color: #ffffff;
         display: flex;
@@ -111,13 +111,91 @@ transition: 0.4s;
     }
 
     .teper-login1{
-        width: 90% !important;
-    height: 460px;
-    border-radius: 35px;
+        width: 100% !important;
+    height: 100%  !important;
+    border-radius: 0 !important;
     background-color: #ffffff;
-    
     text-align: center;
+    margin: auto;
     }
+    .page2-ichi{
+        position: relative;
+        top: 180px;
+    }
+    .page3-ichi{
+        position: relative;
+        top: 180px;
+    }
+    .teper-login5 {
+        width: 627px;
+        height: 649px;
+        border-radius: 35px;
+        background-color: #ffffff;
+    }
+    .teper-login5 {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+        background-color: #ffffff;
+    }
+    .fizika-litso {
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: -90px;
+    }
+    .login-img {
+        position: relative;
+        right: 0 !important; 
+         top: 0 !important;
+    }
+    .login-kotta {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .teper-login6 {
+        width: 100% !important;
+        height: 100%  !important;
+        border-radius: 0 !important;
+        background-color: #ffffff;
+    }
+    .login-img1 {
+        position: relative;
+        top: 0 !important;
+        right: 0 !important;
+    }
+    #juda-kotta {
+    width: 100%;
+    min-height: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teper-login7 {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    background-color: #ffffff;
+}
+.login-img2 {
+    position: relative;
+    top: 0 !important;
+    right: 0 !important;
+}
+.teper-login10 {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    background-color: #ffffff;
+    text-align: center;
+}
+.login-10-sozla{
+    position: relative;
+    top: 250px !important;
+}
 }
 @media (max-width:516px) {
     .teper-login h1 {
@@ -739,7 +817,7 @@ transition: 0.4s;
 
 .teper-login10{
     width: 627px;
-height: 347px;
+height: 300px !important;
 border-radius: 35px;
 background-color: #ffffff;
 text-align: center;
@@ -1275,4 +1353,12 @@ letter-spacing: 0em;
 text-align: left;
 cursor: pointer;
 }
+}
+.teper-login11{
+    width: 627px;
+height:600px ;
+border-radius: 35px;
+background-color: #ffffff;
+text-align: center;
+
 }
