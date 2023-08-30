@@ -18,6 +18,7 @@ import Partners_page from './js/Partners_page';
 import Pamit from './js/Pamit'
 import User from './js/User';
 import Layfxak from './js/Layfxak';
+import Error from './js/Error';
 
 export default class App extends Component {
 render() {
@@ -43,6 +44,7 @@ render() {
 				<Route export path='/Pamit' element={<Pamit/>}></Route>
 				<Route export path='/User' element={<User/>}></Route>
 				<Route export path='/Layfxak' element={<Layfxak/>}></Route>
+				<Route export path='/Error' element={<Error/>}></Route>
 		</Routes>
 		</div>
 	</Router>
