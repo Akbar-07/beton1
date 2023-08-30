@@ -1,4 +1,3 @@
-
 .pamat_main{
   
   width: 70%;
@@ -12,26 +11,31 @@
 .pamat_zaliv2{
   display: flex;
   justify-content: space-around;
-  width:  50%;
+  width:  43%;
+  margin-bottom: 20px;
+
 }
 .pamat_zaliv2 img{
-  padding-top: 35px;
+
   height: 20px;
 
 }
+.pamat_zaliv{
+  margin-bottom: 30px;
+}
 .pamat_zaliv2 h1{
+  margin-top: 35px;
   font-size: 33px;
-
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: 600;
-line-height: normal;
+  font-family: 'Montserrat', sans-serif;
 
 }
 .pamat_zal1 p{
 font-size: 20px;
+width: 500px;
 
 }
 .pamat_zal1{
+  
   width: 50%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 19px;
@@ -98,7 +102,8 @@ padding-top: 7px;
   font-weight: 500;
   }
 
-                    .main_opt2{
+
+.main_opt2{
                       justify-content: space-around;
                       flex-wrap: wrap !important;
                       
@@ -164,10 +169,7 @@ padding-top: 7px;
                             width: 35%;
                           }
                           
-                          .op4_img{
-
-
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                          .op4_img{box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                             background-color: #FFCB13;
                             border-radius: 30px;
                             text-align: center;
@@ -203,7 +205,9 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                               .op5_text{
                                 width: 85%;
                               }
-                              .op5_text span{
+
+
+.op5_text span{
                                 font-weight: 1000;}
                                 .op6_df{
                                   display: flex;
@@ -249,10 +253,7 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                                       padding-top: 7px;
                                       }
                                       .op7_text{
-                                        width: 85%;
-
-
-}
+                                        width: 85%;}
                                       .op7_text span{
                                         font-weight: 1000;}
                                         .op8_df{
@@ -281,7 +282,9 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                                             font-weight: 1000;}
                                             .op9_df{
                                               display: flex;
-                                              flex-wrap: wrap;
+
+
+flex-wrap: wrap;
                                               justify-content: space-around;
                                               }
                                               .op_9{
@@ -318,10 +321,7 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                                                     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                                                     background-color: #FFCB13;
                                                     border-radius: 30px;
-                                                    text-align: center;
-
-
-border: 2px solid white;
+                                                    text-align: center;border: 2px solid white;
                                                   }.op10_img img{
                                                   width: 70%;
                                                   padding-top: 7px;
@@ -346,7 +346,9 @@ border: 2px solid white;
                                                       border: 2px solid white;
                                                     }.op11_img img{
                                                     width: 70%;
-                                                    padding-top: 7px;
+
+
+padding-top: 7px;
                                                     }
                                                     .op1_text h5{
                                                       font-weight: 400;
@@ -372,44 +374,97 @@ border: 2px solid white;
                                                       font-weight: 400;
                                                     }  .op7_text h5{
                                                       font-weight: 400;
-                                                    }
-
-
-.op11_text{
+                                                    }.op11_text{
                  width: 85%;
                       }
                   
               .op10_text span{
        font-weight: 1000;}
-                    .pamat_warning{
+                    .pamata_jojo{
                       flex-wrap: wrap;
+                      
                       margin-top: 50px !important;
                       display: flex;
                       width: 90%;
                       border: 4px solid white;
                       margin: auto;
                       border-radius: 35px;                    }
-                  .pamat_warning img{
+                  .pamata_jojo img{
                     margin: auto;
                     width: 20%;
                   }
-                    .warred{
+                    .Jojo_J{
                       color: #E93333;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
-line-height: 20px;
+line-height: 30px;
+margin-bottom: 15px;
                     }
                   
-                    .warning_p{
+                    .War_stur{
+                      margin: auto;
+                      
                       width: 80%;
                     }
-                    .warblack{
+                    .kakyoin_K{
                       font-size: 17px;
-                      line-height: 20px;
+                      line-height: 30px;
+                    }
+                    @media(max-width:1800px){
+                      .main_opt6{
+                        padding-left: 85px  ;
+                      }
+                      .pamat_zaliv2{
+                        width: 510px;
+                      }
+                    }
+                    @media(max-width:1360px){
+                      .main_opt6{
+                        padding-left: 75px  ;
+                      }
+                     .op1_yt{
+                        margin-bottom: 10px;
+                      }
+                      .op2_yt{
+                        margin-bottom: 10px;
+                      } .op3_yt{
+                        margin-bottom: 10px;
+                      } .op4_yt{
+                        margin-bottom: 10px;
+                      } .op5_yt{
+                        margin-bottom: 10px;
+                      }
+                      .op6_yt{
+                        margin-bottom: 10px;
+                      }
+                      .op7_yt{
+                        margin-bottom: 10px;
+                      }
+                       .op8_yt{
+                        margin-bottom: 10px;
+                      }
+                       .op9_yt{
+                        margin-bottom: 10px;
+                      }
+                      .op10_yt{
+                        margin-bottom: 10px;
+                      }
+                       .op11_yt{
+                        margin-bottom: 10px;
+                      }
+                    }
+                    @media(max-width:1300px){
+                      .pamat_zaliv2 {
+                        width: 530px;
+                      }
                     }
                     @media(max-width:1050px){
+                      
+                      .pamat_zaliv2 img{
+                        margin-top: 15px;
+                      }
                       .pamat_zaliv2 h1{
                         margin-left: 10px;
                       }
@@ -417,11 +472,12 @@ line-height: 20px;
                         padding-left: 50px  ;
                       }
                       
-                      .warblack{
+                      .kakyoin_K{
                           font-size: 14px;
                       } 
-                                          .warred{
-                        font-size: 15px;
+                                          .Jojo_J{
+                                            padding: 1px;
+                        font-size: 19px;
                       }
                       .pamat_zaliv2 h1{
                         font-size: 30px;
@@ -435,40 +491,48 @@ line-height: 20px;
                       width: 500px;
                     }
                     .pamat_zal1 p{
-                      font-size: 20px;
+
+
+font-size: 20px;
                     }
+                  }
+                  @media(max-width:900px){
+                     .kakyoin_K{
+                      font-size: 14px;
+                     }
+                  }
 
 
-}
-
-                    @media(max-width:800px){
+@media(max-width:800px){
                       .pamat_zaliv{
                         
                         padding-left: 30px;
                       }
-                      .pamat_warning img{
+                      .pamata_jojo img{
                           width: 200px;
                       }
-                      .warblack{
+                      .kakyoin_K{
                         padding: 5px;
                         font-size: 17px;
                         line-height: none;
                       }
-                      .warred{
+                      .Jojo_J{
                         padding: 5px;
                         font-size:20px;
                       }
-                      .warning_p{
+                      .War_stur{
                         margin: auto;
                         width:400px;
                       }
                     }
                     @media(max-width:600px){
+                      
                       .pamat_zaliv2 img{
+                        margin-top: 15px;
                         width: 50px !important;
-                        height: 30px !important; 
+                        height:20px !important; 
                       }
-                      .pamat_warning{
+                      .pamata_jojo{
                         height: 310px !important;
                         padding: 5px;
                       }
@@ -524,16 +588,16 @@ padding-left: 0;
                         font-size: 30px;
                         margin-left: 10px;
                       }
-                    .pamat_warning{
+                    .pamata_jojo{
                       height: 400px;
                     }
-                    .pamat_warning img{
+                    .pamata_jojo img{
                       position: relative;
-                      right: 125px;
-                      bottom: 60px;
+                      right: 150px;
+                      bottom: 80px;
                       width: 130px;
                     }
-                    .warning_p{
+                    .War_stur{
                       position: relative;
                       bottom: 100px;
                     }
@@ -542,7 +606,25 @@ padding-left: 0;
                       .pamat_main{
                         width: 450px !important;
                       }
+                      .pamat_zaliv2{
+                        width: 420px;
+                      }
+                       .pamat_zaliv2 img{
+                        margin-top: 50px;
+height: 30px;
+                        width: 70px;
+                        padding-top:20px !important;
+                       }
+                       .pamata_jojo{
+                        margin-top: 70px !important;
+                       }
                     }
+                     .pamat_zaliv2 img{
+                        
+height: 30px;
+                        width: 70px;
+                        padding-top:40px;
+                      }
                     @media(max-width:450px){
                       .pamat_main{
                         width: 400px !important;
@@ -552,20 +634,25 @@ padding-left: 0;
                         font-size: 35px;
                         width:400px;
                       }
+                      .pamata_jojo img{
+                        position: relative;
+                        right: 125px;
+                      }
                       .pamat_zaliv2 img{
-                        height: 30px;
+                        
+height: 30px;
                         width: 70px;
-                        padding-top: 40px;
+                        padding-top:20px;
                       }
                       .pamat_zal1 p{
-                        line-height: 25px;
-                        width: 330px;
-
-
-font-size: 20px;
+                        line-height: 22px;
+                        width: 350px; font-size: 20px;
                       }
                     }
                     @media(max-width:400px){
+                      .pamat_zaliv2 {
+                        width: 350px;
+                      }
                       .pamat_zaliv2 h1{
                         font-size: 25px;
                       }
@@ -575,41 +662,103 @@ font-size: 20px;
                       .pamat_zaliv2 img{
                         height: 20px;
                         width: 40px;
-                        padding-top: 30px;
+                        padding-top: 5px !important;
                       }
                       .pamat_main{
-                        width: 360px !important;
+                        width: 350px !important;
+                        margin-top: 30px;
                       }
                       .op7_img{
                         width: 45px;
                       }
-                    /* .op7_text{
-                      width: 280px;
-                    } */
+                      .pamata_jojo img{
+                        position: relative;
+                        right: 100px;
+                      }
+                      .kakyoin_K{
+                        font-size: 15px;
+                      }
+                   .pamata_jojo{
+                    height: 340px !important;
+                   }
                     }
                          @media(max-width:350px){
+                          .op_2{
+                            margin-top: 20px;
+                          }
+                          .op_4{
+                            margin-top: 20px;
+                          }.op_6{
+                            margin-top: 20px;
+                          }.op_8{
+                            margin-top: 20px;
+                          }.op_10{
+                            margin-top: 20px;
+                          }
+                          .pamat_zaliv2 h1{
+                            font-size: 30px;
+                          }
                           .pamat_main{
-                            width: 300px !important;
+                            width: 320px !important;
+                          }
+                          .pamat_zaliv2{
+                            width: 310px !important;
+                            margin-left: 10px;
+                          }
+                          .pamat_zal1 p{
+                            font-size: 19px;
+                            width: 305px !important;
+                            margin-left: 10px;
+                          }
+                          .pamata_jojo img{
+                            position: relative;
+                            right: 90px;
+                            border-radius: 10px;
                           }
                           .op7_img{
-                           width: 40px;    }   
+                           width: 45px;    }   
                            .op8_img{
-                            width: 40px;    }     
+                            width: 45px;    }     
                             .op2_img{
-                              width: 40px;    }   
+                              width: 45px;    }   
                               .op3_img{
-                                width: 40px;    }   
+                                width: 45px;    }   
                                 .op4_img{
-                                  width: 40px;    }   
+                                  width: 45px;    }
+                                  .op1_text{
+                                    width: 250px;
+                                  }   .op2_text{
+                                    width: 250px;
+                                  }   .op3_text{
+                                    width: 250px;
+                                  }   
+                                  .op4_text{
+                                    width: 250px;
+                                  }   .op5_text{
+                                    width: 250px;
+                                  }   .op6_text{
+                                    width: 250px;
+                                  }   .op7_text{
+                                    width: 250px;
+                                  }   
+                                  .op8_text{
+                                    width: 250px;
+                                  }   .op9_text{
+                                    width: 250px;
+                                  }   .op10_text{
+                                    width: 250px;
+                                  } 
                                   
                                                                       }
                                                                       .op1_yt{
                                                                         width: 50px;
-                                                                        padding-top: 15px;
+                                                                        
+                                                                        
 
-                                                                      }
+
+}
      .op2_yt{
-      padding-top: 15px;
+  
         width: 50px;
        }
        .op1_img{
@@ -620,59 +769,62 @@ font-size: 20px;
         height: 45px;
        }
        .op3_yt{
-        padding-top: 15px;
+      
           width: 50px;
          }
          .op3_img{
           height: 45px;
          }
           .op4_yt{
-          padding-top: 15px;
+        
             width: 50px;
            }
            .op5_yt{
-            padding-top: 15px;
+          
               width: 50px;
              }
              .op5_img{
               height: 45px;
              }
              .op6_yt{
-              padding-top: 15px;
+            
                 width: 50px;
                }
                .op6_img{
                 height: 45px;
                }
                .op7_yt{
-                padding-top: 15px;
+              
                   width: 50px;
                  }
                  .op7_img{
                   height: 45px;
                  } .op8_yt{
-                  padding-top: 15px;
+                
                     width: 50px;
                    }
                    .op8_img{
                     height: 45px;
                    }
                    .op9_yt{
-                    padding-top: 15px;
+                  
                       width: 50px;
                      }
                      .op9_img{
                       height: 45px;
                      } .op10_yt{
-                      padding-top: 15px;
+                    
                         width: 50px;
                        }
                        .op10_img{
                         height: 45px;
                        } .op11_yt{
-                        padding-top: 15px;
+                        
                           width: 50px;
                          }
                          .op11_img{
                           height: 45px;
+                         }
+                         body{
+                          background-color: rgba(128, 128, 128, 0.308);
                          }

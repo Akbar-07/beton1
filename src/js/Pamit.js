@@ -186,11 +186,11 @@ export default function Pamatka() {
                 </div>
                 </div>
             </div>
-            <div className="pamat_warning">
+            <div className="pamata_jojo">
                 <img src={warn} alt="" />
-                <div className="warning_p">
-                <h5 className='warred'>Выполнение наших рекомендаций поможет уберечь бетон во время набора прочности, обеспечит долголетие конструкциям в вашем строительном проекте.</h5>
-                <h5 className='warblack'>Будьте уверенны, ваш дом простоит не один десяток лет!</h5></div>
+                <div className="War_stur">
+                <h5 className='Jojo_J'>Выполнение наших рекомендаций поможет уберечь бетон во время набора прочности, обеспечит долголетие конструкциям в вашем строительном проекте.</h5>
+                <h5 className='kakyoin_K'>Будьте уверенны, ваш дом простоит не один десяток лет!</h5></div>
             </div>
         </div>
         <Footer/>

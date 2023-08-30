@@ -61,10 +61,10 @@ export default function Login() {
               <br />
               <div className="fizika-inputla">
                 <form action="">
-                <input type="text"  placeholder="Имя" required />
-              <input type="text"  placeholder="Фамилия" required />
-              <input type="text"  placeholder="Отчество" required /> 
-              <input type="phone"  placeholder="Телефон" required /> 
+                <input type="text"  placeholder="Имя" required /> <br />
+              <input type="text"  placeholder="Фамилия" required /><br />
+              <input type="text"  placeholder="Отчество" required /> <br />
+              <input type="phone"  placeholder="Телефон" required /> <br />
               <input type="email"  placeholder="Email" /> <br />
               <button type='button' onClick={()=>setPage(8)} >Далее</button>
                 </form>
