@@ -67,11 +67,6 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Footer from './Footer'
 // import Zakazbeton
-import beton from "../img/m350 1.png";
-import cement from "../img/cement 1(1).png";
-import tosh from "../img/183973062b952e05464d21c9f08676f9 1.png"
-import { BsArrowLeft } from 'react-icons/bs';
-import {BsArrowRight} from 'react-icons/bs';
 
 export default function Home() {
 
@@ -102,65 +97,10 @@ function sariq2(){
         <SwiperSlide className='azx'><img src={IMG55} alt="" /></SwiperSlide>
       </Swiper>
         </div>
-        <div className="beton_z">
-            <div className="beton_sar">
+        <div className="beton_sar">
                 <img className='img1' src={IMG2} alt="" />
                 <span>Заказ бетона</span>
             </div>
-            <div className='beton_div'  >
-      <p className='beton_p1' >Что необходимо?</p>
-<div className="beton_div2">
-  <div className="beton_mini">
-    <div className="beton_galochka"> 
-    <input  type="checkbox" id="reading" className='checkbox-field' />
-  <label for="reading" className='checkbox-label' ></label></div>
-<div className="beton_img">
-<img src={beton} alt="" />
-</div>
-<p>Бетон</p>
-  </div>
-  <div className="beton_mini">
-      
-  <div className="beton_galochka"> 
-  <input  type="checkbox" id="writing" className='checkbox-field' />
-  <label for="writing" className='checkbox-label' ></label>
-  </div>
-<div className="beton_img">
-<img src={cement} alt="" />
-</div>
-<p>Пескобетон</p>
-    </div> 
-     <div className="beton_mini">
-      
-     <div className="beton_galochka"><input  type="checkbox" id="driwing" className='checkbox-field' />
-  <label for="driwing" className='checkbox-label' ></label> </div>
-     <div className="beton_img">
-<img src={tosh} alt="" />
-</div>
-<p>Строительный <br />раствор</p>
-    </div> 
-     <div className="beton_mini2">
-     <div className="beton_galochka">
-     <input  type="checkbox" id="opening" className='checkbox-field' />
-  <label for="opening" className='checkbox-label' ></label>
-       </div>
-<p className='beton_p' >Специальный бетон</p>
-<p className='beton_wrote' >Отправим ваш запрос <br />на все заводы</p>
-    </div>
-</div>
-<div className="beton_line">
-<p>1<span>/9</span></p>
-<div className="beton_lin2">
-  <div className="beton_lin3"></div>
-</div>
-</div>
-<div className="beton_but">
-  <button  className='beton_button1' > <h3><BsArrowLeft/></h3>Назад</button>
-  <button  className='beton_button2' >Далее<h3><BsArrowRight/></h3></button>
-
-</div>
-    </div>
-        </div>
         <div className="beton_z">
             <div className=" beton_sar1">
                 <img className='img1' src={IMG2} alt="" />
