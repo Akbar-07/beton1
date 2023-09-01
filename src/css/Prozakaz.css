@@ -232,7 +232,12 @@ text-align: left;
 
 .eng-kottade-scrol{
     width: 780px;
-    height: auto;
+    height: 240px;
+    overflow-y: auto;
+}
+
+.tr_1:hover{
+background-color: white;
 }
   .eng-kottade-ulani-ushab-turadi{
     display: flex;

@@ -9,6 +9,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     margin: auto;
     margin-top: 60px;
     cursor: pointer;
+    margin-bottom: 100px;
 }
 .rek img{
     width: 100%;
@@ -456,6 +457,9 @@ margin-left: 20px
         width: 40px;
     }
 }
+.beton_z{
+    margin-top: 50px !important;
+}
 .beton_sar1{
     width: 570px;
     display: flex;
@@ -481,9 +485,7 @@ margin-left: 20px
         position: relative;
         right: 235px;
         display: flex;
-
-
-justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 40px;
     }
