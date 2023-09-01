@@ -66,7 +66,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Footer from './Footer'
-// import Zakazbeton
+import Zakazbeton from  "./Zakazbeton"
 
 export default function Home() {
 
@@ -101,12 +101,13 @@ function sariq2(){
                 <img className='img1' src={IMG2} alt="" />
                 <span>Заказ бетона</span>
             </div>
+            <Zakazbeton/>
+            
         <div className="beton_z">
             <div className=" beton_sar1">
                 <img className='img1' src={IMG2} alt="" />
                 <span>О сервисе в  цифрах</span>
             </div>
-         
         </div>
         <div className="beton_z_span">
             <span>Убедительные факты и цифры говорят сами за себя. 
