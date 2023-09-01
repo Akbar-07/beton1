@@ -10,12 +10,12 @@
     user-select: none;
   
   }
-  .error img{
+  .eroor_404{
     width: 90%;
     margin-left: 5%;
     user-select: none;
   }
-  .error{
+  .error_err{
     overflow: hidden;
     display: block;
   }
