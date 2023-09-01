@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../js/Navbar'
-import '../css/User.css'
+import '../css/Mentor.css'
 import user from '../img/Vector (13).png'
 import qalam from '../img/qalam1.png'
 import zalatoy from '../img/Group 164.png'
@@ -33,35 +33,6 @@ export default function User() {
                 <div className='bir_div1'></div>
                 <div className='ikki_div2'></div>
                 <img className='user--img' src={user} alt="" />
-{/* <div className="kattas">
-<div className="user-tepa">
-<h1>Иванов Петр <br /> Михайлович</h1>
-<img src={qalam} alt="" />
-</div>
-
-<div className="cards_header">
-<div className="card_header">
-    <p>Статус:</p>
-    <h3>Пользователь</h3>
-</div>
-<div className="card_header">
-    <p>Статус:</p>
-    <h3>Пользователь</h3>
-</div>
-<div className="card_header">
-    <p>Статус:</p>
-    <h3>Пользователь</h3>
-</div>
-<div className="card_header">
-    <p>Статус:</p>
-    <h3>Пользователь</h3>
-</div>
-<div className="card_header">
-    <p>Статус:</p>
-    <h3>Пользователь</h3>
-</div>
-</div>
-</div> */}
 <div className="user-tepa-qismi">
     <div className="user-tepa-kotta">
     <div className="user-name"><h2>Иванов Петр <br /> Михайлович</h2></div>
@@ -227,10 +198,23 @@ export default function User() {
             </div>
          </div>
         </div>
-        <div className="user-vutton-btn">
-            <div className="udser-vtn-kotta">
-                <button >Существующие заказы</button>
-                <button>Сделать новый заказ</button>
+        <div className="mentor-kankulator">
+            <div className="mentor-ichi-kotta">
+                <div className="mentor-ichi-ichi">
+                    <div className="mentor-filter-select">
+                        <select >
+                            <option value="1">
+                            <p >Марка бетона</p>
+                            </option>
+                            <option value="2">
+                            <p>Марка бетона2</p>
+                            </option>
+                            <option value="2">
+                            <p>Марка бетона3</p>
+                            </option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
