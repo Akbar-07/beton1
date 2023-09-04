@@ -217,6 +217,35 @@ export default function User() {
                 </div>
             </div>
         </div>
+        <div className="mentor-tablitsa">
+            <div className="mentor-tablistsa-ichi">
+                <table>
+                    <tr>
+                        <th className='uiver'>Номер заказа</th>
+                        <th className='uiver' >Адрес</th>
+                        <th className='uiver'>Дата, время</th>
+                        <th className='uiver'>Марка</th>
+                        <th className='uiver'>Производитель</th>
+                        <th className='uiver'>Кол-во</th>
+                        <th className='uiver'>Дополнительные опции</th>
+                        <th className='uiver'>Стоимость</th>
+                        <th className='uiver'>Статус</th>
+                    </tr>
+                    <tr>
+                        <td className='uiver1'>230223 230223</td>
+                        <td className='table-ichi-td'>г. Воронеж ул.Стар..</td>
+                        <td className='table-ichi-td1'>23.02.23 <br />15:00-18:00</td>
+                        <td className='table-ichi-td'>бетон <br /><span>М200</span></td>
+                        <td>Производитель</td>
+                        <td>20 м3</td>
+                        <td>Дополнительная опция</td>
+                        <td>200 000 ₽</td>
+                        <td className='uiver2'>Выполнен</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
     </div>
   )
 }
