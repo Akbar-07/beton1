@@ -8,7 +8,9 @@ import {BsArrowLeftShort} from 'react-icons/bs'
 import group_80 from '../img/Group 80.png'
 import group_81 from '../img/Group 81.png'
 import mediamask from '../img/media_mask.png'
-
+import rasm1 from '../img/rasm1.png'
+import rasm2 from '../img/rasm2.png'
+import {HiArrowRight} from 'react-icons/hi'
 
 export default function Article() {
   return (
@@ -47,10 +49,18 @@ export default function Article() {
         <h3 onClick={()=> window.location="/News"}>Вернуться к новостям</h3>
         </div>
         <div style={{display:"flex",justifyContent:"center"}} className="div_news_2"><div className="news_page_2">
-            <h2>Смотри, что у нас нового!</h2>
+            {/* <h2>Смотри, что у нас нового!</h2> */}
             <div className="news_page_2_card">
-                <img src={group_80} alt="" />
-                <img className='news_page_2_card_img' src={group_81} alt="" />
+                <div className="rasm1_div">
+                    <h2>Новая марка бетона уже доступна на сайте</h2>
+                    <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
+                    <img src={rasm1} alt="" />
+                </div>
+                <div className="rasm1_div">
+                <h2>Новая марка бетона уже доступна на сайте</h2>
+                <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
+                    <img className='news_page_2_card_img' src={rasm2} alt="" />
+                </div>
             </div>
         </div></div>
         </div>

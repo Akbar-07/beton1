@@ -174,6 +174,7 @@ const [num, setNum] = useState(0)
 const [num1, setNum1] = useState(0)
 const [num2, setNum2] = useState(0)
 const [num3, setNum3] = useState(0)
+
 function check_ochil(id){
   for (let i = 0; i < document.querySelectorAll(".oplata_map_card_dumaloq").length; i++) {
     if(id === i){
@@ -186,7 +187,6 @@ function check_ochil(id){
     }
   }
 }
-
 
   return (
     <div>
@@ -536,6 +536,7 @@ function check_ochil(id){
         <span className='zakaz_kvadrat_span'>Когда?</span>
         </div>
 
+
         <div className="kogda_div">
           <div className="kogda_div1">
             <button className='kogda_div1_but1'>Как можно быстрее</button>
@@ -586,7 +587,6 @@ function check_ochil(id){
             </div>
           </div>
         </div>
-
         <div className="zakaz_kvadrat_zagruska zakaz_kvadrat_zagruska_kop">
           <span>6/9</span>
           <div className="zakaz_kvadrat_zagruska_ril">
