@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useEffect , useState} from 'react'
 import Navbar from '../js/Navbar'
 import '../css/Mentor.css'
 import user from '../img/Vector (13).png'
 import qalam from '../img/qalam1.png'
 import zalatoy from '../img/Group 164.png'
 import biladim from '../img/Group 201 (1).png'
+import { BiChevronDown } from 'react-icons/bi'
+
+
+
+
+
 
 function modalochil(){
     document.querySelector(".user-modal").style=`display:block`
@@ -22,8 +28,24 @@ function modalbonusyopil(){
     document.querySelector(".user-modal-bonus").style=`display:nonoe`
     document.querySelector("body").style=`overflow: scroll;`
 }
+function mentorzakaz(){
+    document.querySelector(".bupas-qismi-table-qolda").style=`display:block`
+    document.querySelector(".uiver1").style=`  border-bottom-left-radius: 0px;`
+    document.querySelector(".uiver2").style=`border-bottom-right-radius: 0px;`
+}
 
 export default function User() {
+const [countries, setCountries] = useState(null)
+const [selected, setSelected] = useState("")
+
+    useEffect(()=>{
+        fetch("https://restcountries.com/v2/all?fields=name")
+        .then((res)=> res.json())
+        .then((data)=> {
+            setCountries(data)
+        })
+    },[])
+    
   return (
     <div className='user'>
         <Navbar/>
@@ -202,7 +224,7 @@ export default function User() {
             <div className="mentor-ichi-kotta">
                 <div className="mentor-ichi-ichi">
                     <div className="mentor-filter-select">
-                        <select >
+                        {/* <select >
                             <option value="1">
                             <p >Марка бетона</p>
                             </option>
@@ -212,38 +234,22 @@ export default function User() {
                             <option value="2">
                             <p>Марка бетона3</p>
                             </option>
-                        </select>
+                        </select> */}
+                        <div className='w-72 font-medium h-80'>
+                            <div className='bg-white w-full p-2 flex items-center justify-between  rounded'>
+                                select country
+                                <BiChevronDown size={20} />
+                            </div>
+                            <ul className='bg-white mt-2 overflow-y-auto max-h-60'>
+                                {countries?.map(country=>(
+                                     <li key={country?.name} className='p-2 text-sm hover:bg-sky-600 hover:text-white' >{country?.name}</li>
+                                ))
+                                }
+                               
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div className="mentor-tablitsa">
-            <div className="mentor-tablistsa-ichi">
-                <table>
-                    <tr>
-                        <th className='uiver'>Номер заказа</th>
-                        <th className='uiver' >Адрес</th>
-                        <th className='uiver'>Дата, время</th>
-                        <th className='uiver'>Марка</th>
-                        <th className='uiver'>Производитель</th>
-                        <th className='uiver'>Кол-во</th>
-                        <th className='uiver'>Дополнительные опции</th>
-                        <th className='uiver'>Стоимость</th>
-                        <th className='uiver'>Статус</th>
-                    </tr>
-                    <tr>
-                        <td className='uiver1'>230223 230223</td>
-                        <td className='table-ichi-td'>г. Воронеж ул.Стар..</td>
-                        <td className='table-ichi-td1'>23.02.23 <br />15:00-18:00</td>
-                        <td className='table-ichi-td'>бетон <br /><span>М200</span></td>
-                        <td className='table-ichi-td'>Производитель</td>
-                        <td className='table-ichi-td1'>20 м3</td>
-                        <td  className='table-ichi-td'>Дополнительная опция</td>
-                        <td><span>200 000 ₽</span></td>
-                        <td className='uiver2'>Выполнен</td>
-                    </tr>
-                    
-                </table>
             </div>
         </div>
     </div>

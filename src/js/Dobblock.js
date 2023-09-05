@@ -13,6 +13,9 @@ import rasm1 from '../img/dob1.png'
 import rasm2 from '../img/Group 405.png'
 import rasm3 from '../img/Contract.png'
 import rasm4 from '../img/sheld27 1.png'
+import rasm5 from '../img/man_worker_12 1.png'
+import rasm6 from '../img/Contract.png'
+import rasm7 from '../img/sheld27 2.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -136,52 +139,68 @@ export default function Dobblock() {
         className="mySwiper7"
       >
         <SwiperSlide>
-            <div className="ozbekiskin-kon-naxuy">
-                <div className="ozb-ichi">
-                    <h3>Выезд специалиста.</h3>
+            <div className="bu-swiper-joy-media-dobblock">
+                <div className="bu-swiper-joy-mmm-sds">
+                    <div className="text-bu-swiper-joy-sw">
+                        <h3>Выезд специалиста.</h3>
+                    </div>
+                    <div className="img-bu-swiper-joy-sw">
+                        <img src={rasm5} alt="" />
+                    </div>
+                </div>
+                <div className="pas-qismi-text-swiper-slice">
                     <p>Специалист со строительным образованием будет приезжать на объект, где нужно выполнить работы. Наш сотрудник поможет выбрать оптимальную марку бетона для вашего строительного проекта. Он также произведет расчет необходимого количества бетона и составит подробную смету, чтобы избежать излишков или недостатков.</p>
                 </div>
             </div>
         </SwiperSlide>
+
         <SwiperSlide>
-        <div className="ozbekiskin-kon-naxuy">
-                <div className="ozb-ichi">
-                    <h3>Проверка качества</h3>
+        <div className="bu-swiper-joy-media-dobblock">
+                <div className="bu-swiper-joy-mmm-sds">
+                    <div className="text-bu-swiper-joy-sw">
+                        <h3>Проверка качества.</h3>
+                    </div>
+                    <div className="img-bu-swiper-joy-sw">
+                        <img src={rasm6} alt="" />
+                    </div>
+                </div>
+                <div className="pas-qismi-text-swiper-slice">
                     <p>При заливке бетона на объекте, наши сотрудники предоставят все необходимые паспорта и сертификаты качества и возьмут дополнительные образцы для лаборатории, аналогично требованиям для государственных объектов. Это гарантирует, что на объекте используется высококачественный бетон, который обладает необходимыми характеристиками.</p>
                 </div>
             </div>
         </SwiperSlide>
+
         <SwiperSlide>
-        <div className="ozbekiskin-kon-naxuy">
-                <div className="ozb-ichi">
-                    <h3>Услуга "все включено" предоставляется 
-по стоимости всего 5000 рублей.</h3>
-                    <p>При этом вы получаете гарантию того, что ваш объект сопровождается специалистом с большим опытом в заливке тысяч фундаментов. Даже если наши услуги заказывают небольшие компании или физические лица, каждый клиент может быть уверен, что уровень заливки фундаментов и других бетонных конструкций, будет таким же, как на государственных ответственных объектах.</p>
+        <div className="bu-swiper-joy-media-dobblock">
+                <div className="bu-swiper-joy-mmm-sds">
+                    <div className="text-bu-swiper-joy-sw">
+                        <h3>Контроль набора 
+прочности.</h3>
+                    </div>
+                    <div className="img-bu-swiper-joy-sw1">
+                        <img src={rasm7} alt="" />
+                    </div>
                 </div>
-            </div>
-          </SwiperSlide>
-        <SwiperSlide>
-        <div className="ozbekiskin-kon-naxuy">
-                <div className="ozb-ichi">
-                    <h3>Контроль набора прочности</h3>
+                <div className="pas-qismi-text-swiper-slice1">
                     <p>Специалисты с большим опытом в заливке фундаментов проконсультируют и могут проконтролировать процесс набора прочности, чтобы обеспечить долговечность и надежность вашего объекта. Через 28 дней после заливки бетона проведем проверку его качества методом неразрушающего контроля, что позволит убедиться в правильности выполненных работ и соответствии бетона требуемым стандартам.</p>
                 </div>
             </div>
-        </SwiperSlide>
+          </SwiperSlide>
       </Swiper>
             </div>
 
             <div className="ana-swiper-pasiga-keldi">
             <div className="oxiri-qoldi-davayyyy">
-              <div className="alert-uchun-aloxida-joy1">
-                <img src={lala} alt="" />
-              </div>
-              <div className="oxiri--qoldi-text">
-                <h4>Услуга "все включено" предоставляется по <br /> стоимости всего 5000 рублей. </h4>
-<div className="xiriri-text-pp">
-<p>При этом вы получаете гарантию того, 
-что ваш объект сопровождается специалистом с большим опытом в заливке тысяч фундаментов. Даже если наши услуги заказывают небольшие компании или физические лица, каждый клиент может быть уверен, что уровень заливки фундаментов и других бетонных конструкций, будет таким же, как на государственных ответственных объектах.</p></div>
-              </div>
+                <div className="oxiri-qolid-ichi-width">
+                    <div className="iimgggmggmgmgm-joy">
+                        <img src={lala} alt="" />
+                    </div>
+                    <div className="tetx-ozi-boru-img-vashekaneee">
+                        <h3>Услуга "все включено" предоставляется по стоимости всего 5000 рублей. </h3>
+                        <p>При этом вы получаете гарантию того, 
+что ваш объект сопровождается специалистом с большим опытом в заливке тысяч фундаментов. Даже если наши услуги заказывают небольшие компании или физические лица, каждый клиент может быть уверен, что уровень заливки фундаментов и других бетонных конструкций, будет таким же, как на государственных ответственных объектах.</p>
+                    </div>
+                </div>
             </div>
            </div>
         </div>
