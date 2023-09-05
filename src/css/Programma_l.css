@@ -1731,3 +1731,23 @@ font-weight: 600;
         left: 80px;
     }
 }
+.jelaniya-pozakazu_tegi span{
+font-weight: 600;
+font-size: 14px;
+}
+.jelaniya-pozakazu_tegi{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.undov{
+    height: 14px;
+    position: relative;
+    bottom: 10px;
+    right: 5px;
+}
+.checkbox12345{
+    width: 20px;
+    height: 20px;
+}

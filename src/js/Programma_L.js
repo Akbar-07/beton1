@@ -322,7 +322,6 @@ export default function Programma_L() {
         </div>
       </div>
 <Footer/>
-
           </div>
           )
 }

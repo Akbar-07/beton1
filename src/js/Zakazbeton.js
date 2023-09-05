@@ -24,6 +24,11 @@ import IMG11 from "../img/Debit Card.png"
 import IMG12 from "../img/Coin In Hand.png"
 import IMG13 from "../img/Money With Arrow.png"
 import IMG14 from "../img/Group (11).png"
+import nazad from '../img/Group 200.png'
+import prima from '../img/Group 201.png'
+import iconbla from '../img/Group 301.png'
+import zakazbeton from '../img/Group (15).png'
+import zakazbeton1 from '../img/Group (16).png'
 
 import {BsCheckLg} from "react-icons/bs"
 import {FaCalculator} from "react-icons/fa"
@@ -646,6 +651,204 @@ function check_ochil(id){
           <button onClick={()=>{setZag(8)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}   
+      {zag === 8 ? <div className="zakaz_kvadrat">
+        <div className="zakaz_kvadrat_div">
+        <span className='zakaz_kvadrat_span'>Пожелания к заказу</span>
+        </div>
+
+        <div className="jelaniya-pozakazu">
+                              <div className="jelaniya-pozakazu_tegi">
+                                <input className='checkbox12345' type="checkbox" name="" id="" />
+                                <span>Услуга: Все включено</span>
+                                <img className='undov' src={IMG14} alt="" />
+                              </div>
+                                    <div className="jalab-kamazlani-turi-bor-ekan">
+                                        <div className="lalala-nom-yo-bunga-prosta-p">
+                                        <p>Если вам требуется доставка <br id='syebalsa'  /> определенными машинами, <br id='syebalsa' /> укажите какими:</p>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi">
+                                            <button><span>2,5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>3м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>7м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button>
+                                        </div>
+                                        
+                                    </div>
+                                    <div className="kamazla-media-suka-blat">
+                                            <button><span>2,5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>3м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>5м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>7м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button>
+                                    </div>
+                                    <div className="jalab-kamazlani-turi-bor-ekan1">
+                                        <div className="lalala-nom-yo-bunga-prosta-p">
+                                            <p>Швинг</p>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi">
+                                            <button><span>15м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>21м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>30м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>40м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>57м</span><img src={zakazbeton1} alt="" /></button>
+                                        </div>
+                                    </div>
+                                    <div className="kamazla-media-suka-blat">
+                                            <button className='zaybal_nomer2'><span className='seks_1'>15м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>21м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>30м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>40м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>57м</span><img src={zakazbeton1} alt="" /></button>
+                                    </div>
+                                    <div className="jalab-kamazlani-turi-bor-ekan2">
+                                        <div className="lalala-nom-yo-bunga-prosta-p1">
+                                            <p>Время работы швинга</p><br />
+                                            <div className="lalala-nom-zaibal">
+                                            <input type="checkbox" /><span>Пусковая смесь</span>
+                                            </div>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi1">
+                                            <input type="number" />
+                                            <p>Минимальное время работы - 3ч</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="jalab-kamazlani-turi-bor-ekan6">
+                                        <div className="lalala-nom-yo-bunga-prosta-p1">
+                                            <p>Интервал подачи машин:</p>
+                                            <br />
+                                            <div className="lalala-nom-zaibal">
+                                            <input type="checkbox" /><span>Требуется подвоз воды на участок</span>
+                                            </div>
+                                        </div>
+                                        <div className="kamazlaga-keldi-endi-shu-qoldi">
+                                            <button><span>30мин</span></button>
+                                            <button><span>1 час</span></button>
+                                            <button><span>1.5 часа</span></button>
+                                            <button><span>2 часа</span></button>
+                                        </div>
+                                    </div>
+                            </div>
+      
+        <div className="zakaz_kvadrat_zagruska zakaz_kvadrat_zagruska_kop">
+          <span>8/9</span>
+          <div className="zakaz_kvadrat_zagruska_ril">
+            <div className="zakaz_kvadrat_zagruska_ril1"></div>
+          </div>
+        </div>
+        <div className="zakaz_kvadrat_tegi">
+          <button onClick={()=>{setZag(7)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
+          <button onClick={()=>{setZag(9)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          </div>
+        </div> : ""} 
+      {zag === 9 ? <div className="zakaz_kvadrat">
+        <div className="zakaz_kvadrat_div">
+        <span className='zakaz_kvadrat_span'>Заказ</span>
+        </div>
+        <div className="zakaz-futer-mobil-versia">
+            <div className="zakaz-futer-ichi">
+                <div className="zakaz-nazadd">
+                    <img src={nazad} alt="" /><span>Назад</span>
+                </div>
+                <h4>Заказ</h4>
+                <div className="zakaz-futer-info-block1">
+                    <div className="zakaz-img-foter">
+                        <img src={iconbla} alt="" />
+                    </div>
+                    <div className="zaazk-text-foter">
+                    <p>Гравийный бетон  <br /> М150 B12,5 F100 W4</p>
+                    </div>
+                </div>
+                <div className="neroshiltalsao">
+                    <p>Наименование опции, наименование опции</p>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="zaakz-narxla-joy-xz">
+                    <div className="zakaz-blockkk-1-pitaniya">
+                        <div className="narxla-bilan-tanishib-cqasmi">
+                            <p>Стоимость бетона:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                        <div className="narxla-bilan-tanishib-cqasmi">
+                            <p>Стоимость бетона:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                        <div className="narxla-bilan-tanishib-cqasmi">
+                            <p>Стоимость бетона:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                    </div>
+                    <div className="zakaz-blockkk-2-pitaniya">
+                    <div className="narxla-bilan-tanishib-cqasmi1">
+                            <p>Итого:</p>
+                            <h3>5 000 ₽</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="qanqadir-bonus-bor-elan-zakaz">
+                    <div className="qanasdsdsds-img">
+                        <img src={prima} alt="" />
+                    </div>
+                    <div className="qanqqdqqwwq-text">
+                        <p>будет начислено бонусов: <br />
+<span>(2% от суммы)</span></p>
+                    </div>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="zakaz-promakod">
+                    <h3>Промокод</h3>
+                    <div className="zakaz-promakod-inpu">
+                        <input type="number" placeholder='Поле для ввода' />
+                    </div>
+                </div>
+                <div className="zakaz-line-info"></div>
+                <div className="yana-qanaqadir-skitkalabor">
+                    <div className="bu-tepa-qismi-skitkala">
+                        <p>Бонусы</p>
+                        <div className="asmdalmfalkmfkldfl">
+                            <img src={prima} alt="" /><span>12 000 <br />
+бонусов</span>
+                        </div>
+                    </div>
+                    <div className="bonus-yechsa-bolarkan-vay">
+                        <p>Списать бонусов: </p>
+                        <div className="dsadasdasdasdasdasd">
+                            <input type="number" />
+                        </div>
+                    </div>
+                </div>
+                <div className="yangi-batton-btn1">
+                    <button>Списать бонусы</button>
+                </div>
+                <div className="pasroda-oplt-ino">
+                        <input type="number" placeholder='Код из смс' />
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
+                        <p><a href="#">Отправить повторно</a></p>
+                    </div>
+                    <div className="zakaz-line-info" id='laadassadsadsa'></div>
+                    <div className="oxirrriirirri">
+                        <p>Итого с учетом бонусов/скидки:</p>
+                        <h4>5 000 ₽</h4>
+
+                        <button>Заказать</button>
+                    </div>
+            </div>
+        </div>
+        <div className="zakaz_kvadrat_zagruska zakaz_kvadrat_zagruska_kop">
+          <span>9/9</span>
+          <div className="zakaz_kvadrat_zagruska_ril">
+            <div className="zakaz_kvadrat_zagruska_ril1"></div>
+          </div>
+        </div>
+        <div className="zakaz_kvadrat_tegi">
+          <button onClick={()=>{setZag(8)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
+          <button onClick={()=>{setZag(9)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          </div>
+        </div> : ""} 
       </div>
    
   )

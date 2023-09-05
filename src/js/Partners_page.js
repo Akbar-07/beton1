@@ -51,7 +51,7 @@ export default function Partners_page() {
                         <img className='white_c' style={{display:"none"}} src={white1} alt="" />
                         <h3>Мы ищем партнеров среди поставщиков бетона 
 в нашем городе</h3>
-                        <p>Стань нашим партнером!</p>
+                        <p className='kujyhtgrfedwertyui'>Стань нашим партнером!</p>
                         <div className="for_e">
                         <img className='media_e' src={ekskavator} alt="" />
                         </div>
