@@ -102,6 +102,36 @@ width: 100%;
         text-align: left;
         cursor: pointer;
     }
+    .doblock-qaytatan-yozib-chvq-bloc1 {
+        width: 480px !important;
+        height: 355px;
+    }
+    .doblock-qaytatan-yozib-chvq-bloc3 {
+        width: 480px !important;
+        height: 423px;
+    }
+    .doblock-qaytatan-yozib-chvq-bloc2 {
+        width: 480px !important;
+        height: 386px !important;
+        border-radius: 41px;
+        border: 7px solid #FFFFFF;
+    }
+    .dodcdcd-text p {
+        font-family: 'Alef', sans-serif;
+        font-size: 14px;
+    }
+    .dodcdcd-text h3 {
+        font-family: Montserrat Alternates;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #E93333;
+        margin-bottom: 15px;
+    }
+    
+    
 }
 @media (max-width:1060px) {
     .dobblock-mini-kotta{
@@ -359,7 +389,9 @@ body{
     display: block;
 }
 .dobblcok-img-pasda-kop{
-    padding-top: 70px;
+   padding-top: 100px;
+   margin-bottom: 100px;
+   display: block;
 }
 .db-zaib{
     display: flex;
@@ -410,56 +442,12 @@ body{
     display: none;
 }
 @media (max-width:1096px) {
-    .db-zaib1 img{
-        width: 600px;
-    }
-    .db-zaib2 img{
-        width: 600px;
-    }
     .db-zaib{
         display: flex;
         align-items: center !important;
         justify-content: center !important;
-        flex-wrap: wrap;
+        
         text-align: center;
-    }
-    #bla8{
-       position: relative;
-       right: 150px;
-    }
-    #bla0{
-        position: relative;
-        left: 150px;
-    }
-    #bla{
-        position: relative;
-        right: 250px;
-        width: 700px;
-        top: -20px;
-    }
-    #bla4{
-        position: relative;
-        left: 100px;
-    }
-    .dobblcok-img-pasda-kop{
-        display: none;
-    }
-    .rasmla-media-bobde{
-        display: block;
-        padding-top: 70px;
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-    #asdasdasdasd{
-        margin-bottom: 20px;
-    }
-    #asdddaasddsd{
-        position: relative;
-        top: 20px;
-    }
-    .blockkkkk-imggg img{
-        width: 80%;
     }
 }
 @media (max-width:435px) {
@@ -472,4 +460,253 @@ body{
         color: black;
         margin-bottom: 10px;
     }
+}
+.doblock-qaytatan-yozib-chvq-bloc1{
+    width: 587px;
+height: 355px;
+border-radius: 41px;
+background: #FFFFFF;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 40px;
+}
+.doblock-qaytatan-yozib-chvq-bloc2{
+    width: 587px;
+height: 377px;
+border-radius: 41px;
+border: 7px solid #FFFFFF;
+
+}
+.dodcdcd-igm{
+    position: relative;
+    top: -50px;
+    width: 120px;
+    right: 80px;
+}
+.dodcdcd-igm1{
+    position: relative;
+    top: -20px;
+    width: 120px;
+    right: 170px;
+}
+.dodcdcd-igm2{
+    position: relative;
+    width: 120px;
+    right: 80px;
+    top: -40px;
+}
+
+
+.dodcdcd-text{
+    width: 60%;
+}
+.dodcdcd-text h3{
+    font-family: Montserrat Alternates;
+font-size: 25px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: #E93333;
+margin-bottom: 15px;
+}
+.dodcdcd-text p{
+    font-family: 'Alef', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #6D6D6D;
+}
+.tepa-sozla-img-boruas{
+    display: flex;
+    width: 100%;
+gap: 20px;
+}
+.doblock-text-jou-keca-nmaa h3{
+    font-family: Montserrat Alternates;
+font-size:17px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: #E93333;
+margin-bottom: 15px;
+}
+.kottqorasdasdas{
+    width: 85%;
+    padding-top: 50px;
+    margin: auto;
+}
+.pasqismi-text-doblock-block2 p{
+    font-family: 'Alef', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color: #000;
+}
+.eng-kottatorta-div{
+    display: flex;
+    gap:30px;
+}
+.doblock-qaytatan-yozib-chvq-bloc3{
+    width: 613px;
+height: 423px;
+border-radius: 41px;
+background: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#pasggaaaaasas{
+    margin-top: 100px;
+}
+@media (max-width:1310px) {
+    .doblock-qaytatan-yozib-chvq-bloc1 {
+        width: 550px;
+        height: 355px;
+    }
+    
+    .doblock-qaytatan-yozib-chvq-bloc2 {
+        width: 550px;
+        height: 377px;
+        border-radius: 41px;
+        border: 7px solid #FFFFFF;
+    }
+    
+    .doblock-qaytatan-yozib-chvq-bloc3 {
+        width: 550px;
+        height: 423px;
+    }
+    
+    .pasqismi-text-doblock-block2 p {
+        font-family: 'Alef', sans-serif;
+        font-size: 15px;
+    }
+    .dodcdcd-text p {
+        font-family: 'Alef', sans-serif;
+        font-size: 15px;
+    }
+}
+@media (max-width:1262px) {
+    .dodcdcd-igm {
+        position: relative;
+        top: -50px;
+        width: 10px;
+        right: 80px;
+    }
+    .dodcdcd-igm img{
+        width: 240px;
+        height: 400px;
+    }
+    .dodcdcd-igm1 img{
+width: 380px;
+        height: 380px;
+    }
+    .dodcdcd-igm1 {
+        position: relative;
+        top: -20px;
+        width: 60px;
+        right: 170px;
+    }
+    .dodcdcd-igm2 img{
+        width: 160px;
+    }
+    .dodcdcd-igm2 {
+        position: relative;
+        width: 110px;
+        right: 65px;
+        top: -65px;
+    }
+    
+    
+}
+@media (max-width:1070px) {
+    .eng-kottatorta-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .doblock-qaytatan-yozib-chvq-bloc1 {
+        width: 100% !important;
+        height: 355px;
+    }
+    .doblock-qaytatan-yozib-chvq-bloc3 {
+        width: 100% !important;
+        height: 320px;
+    }
+    .doblock-qaytatan-yozib-chvq-bloc2 {
+        width: 100% !important;
+        height: 310px !important;
+        border-radius: 41px;
+        border: 7px solid #FFFFFF;
+    }
+    .tepa-sozla-img-boruas {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .dodcdcd-igm img {
+        width: 300px;
+        height: 400px;
+    }
+    
+    .pasqismi-text-doblock-block2 p {
+        font-family: 'Alef', sans-serif;
+        font-size: 16px;
+    }
+    .doblock-text-jou-keca-nmaa h3 {
+        font-family: Montserrat Alternates;
+        font-size: 18px;
+    }    
+    .dodcdcd-igm2 {
+        position: relative;
+        width: 119px;
+        right: 65px;
+        top: 0px;
+    }
+    
+    .dobblcok-img-pasda-kop {
+        padding-top: 20px;
+        margin-bottom: 0;
+        display: block;
+    }       
+}
+@media (max-width:774px) {
+    .doblock-qaytatan-yozib-chvq-bloc2 {
+        width: 100% !important;
+        height: 366px !important;
+        border-radius: 41px;
+        border: 7px solid #FFFFFF;
+    }
+    
+    
+}
+@media (max-width:630px) {
+    .doblock-qaytatan-yozib-chvq-bloc2 {
+        width: 100% !important;
+        height: 375px !important;
+        border-radius: 41px;
+        border: 7px solid #FFFFFF;
+    }
+    .doblock-qaytatan-yozib-chvq-bloc3 {
+        width: 100% !important;
+        height: 380px;
+    }
+    .dodcdcd-igm {
+        position: relative;
+        top: -50px;
+        width: 50px;
+        right: 80px;
+    }
+    
 }

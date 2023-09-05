@@ -236,10 +236,10 @@ export default function User() {
                         <td className='table-ichi-td'>г. Воронеж ул.Стар..</td>
                         <td className='table-ichi-td1'>23.02.23 <br />15:00-18:00</td>
                         <td className='table-ichi-td'>бетон <br /><span>М200</span></td>
-                        <td>Производитель</td>
-                        <td>20 м3</td>
-                        <td>Дополнительная опция</td>
-                        <td>200 000 ₽</td>
+                        <td className='table-ichi-td'>Производитель</td>
+                        <td className='table-ichi-td1'>20 м3</td>
+                        <td  className='table-ichi-td'>Дополнительная опция</td>
+                        <td><span>200 000 ₽</span></td>
                         <td className='uiver2'>Выполнен</td>
                     </tr>
                     

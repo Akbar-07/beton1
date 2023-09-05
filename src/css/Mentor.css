@@ -889,6 +889,15 @@ text-align: left;
 .uiver2{
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #1BAC43;
 }
 .table-ichi-td{
     font-family: 'Alef', sans-serif;
@@ -900,12 +909,14 @@ text-align: left;
 
 }
 .table-ichi-td1{
-    font-family: Gilroy;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    
 }
 .mentor-tablistsa-ichi table tr span{
     font-family: 'Noto Sans', sans-serif;
