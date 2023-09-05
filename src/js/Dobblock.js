@@ -9,7 +9,10 @@ import block2 from '../img/block-pas2.png'
 import block4 from '../img/block-pas4.png'
 import lala from '../img/Group 406.png'
 import Footer from '../js/Footer'
-
+import rasm1 from '../img/dob1.png'
+import rasm2 from '../img/Group 405.png'
+import rasm3 from '../img/Contract.png'
+import rasm4 from '../img/sheld27 1.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -37,19 +40,60 @@ export default function Dobblock() {
 мы предоставляем заказчикам?</h2>
                     </div>
                 </div>
-                <div className="dobblcok-img-pasda-kop">
-                    <div className="db-zaib">
-                        <div className="db-zaib1">
-                            <img src={block1} alt="" id="bla8" />
-                            <img src={block2} alt="" id="bla0" />
+                <div className="eng-kottatorta-div">
+                <div className="dobblcok-img-pasda-kop" id='pasggaaaaasas'>
+                    <div className="doblock-qaytatan-yozib-chvq-bloc1">
+                        <div className="dodcdcd-igm">
+                            <img src={rasm1} alt="" />
                         </div>
-                        <div className="db-zaib2">
-                            <img src={block3} alt="" id="bla" />
-                            <img src={block4} alt="" id="bla4" />
+                        <div className="dodcdcd-text">
+                            <h3>Выезд специалиста</h3>
+                            <p>Специалист со строительным образованием будет приезжать на объект, где нужно выполнить работы. Наш сотрудник поможет выбрать оптимальную марку бетона для вашего строительного проекта. Он также произведет расчет необходимого количества бетона и составит подробную смету, чтобы избежать излишков или недостатков.</p>
+                        </div>
+                    </div>
+                    <div className="doblock-qaytatan-yozib-chvq-bloc2">
+                        <div className="kottqorasdasdas">
+                        <div className="tepa-sozla-img-boruas">
+                            <div className="iamsdasfasfad">
+                                <img src={rasm2} alt="" />
+                            </div>
+                            <div className="doblock-text-jou-keca-nmaa">
+                                <h3>Услуга "все включено" предоставляется 
+по стоимости всего 5000 рублей.</h3>
+                            </div>
+                        </div>
+                        <div className="pasqismi-text-doblock-block2">
+                            <p>При этом вы получаете гарантию того, что ваш объект сопровождается специалистом с большим опытом в заливке тысяч фундаментов. Даже если наши услуги заказывают небольшие компании или физические лица, каждый клиент может быть уверен, что уровень заливки фундаментов и других бетонных конструкций, будет таким же, как на государственных ответственных объектах.</p>
+                        </div>
                         </div>
                     </div>
                 </div>
+                <div className="dobblcok-img-pasda-kop">
+                    <div className="doblock-qaytatan-yozib-chvq-bloc1">
+                        <div className="dodcdcd-igm1">
+                            <img src={rasm3} alt="" />
+                        </div>
+                        <div className="dodcdcd-text">
+                            <h3>Проверка качества</h3>
+                            <p>При заливке бетона на объекте, наши сотрудники предоставят все необходимые паспорта и сертификаты качества и возьмут дополнительные образцы для лаборатории, аналогично требованиям для государственных объектов. Это гарантирует, что на объекте используется высококачественный бетон, который обладает необходимыми характеристиками.</p>
+                        </div>
+                    </div>
+                    <div className="doblock-qaytatan-yozib-chvq-bloc3">
+                    <div className="dodcdcd-igm2">
+                            <img src={rasm4} alt="" />
+                        </div>
+                        <div className="dodcdcd-text">
+                            <h3>Контроль набора прочности</h3>
+                            <p>Специалисты с большим опытом в заливке фундаментов проконсультируют и могут проконтролировать процесс набора прочности, чтобы обеспечить долговечность и надежность вашего объекта. Через 28 дней после заливки бетона проведем проверку его качества методом неразрушающего контроля, что позволит убедиться в правильности выполненных работ и соответствии бетона требуемым стандартам.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
+
+
+
+            
             <div className="rasmla-media-bobde">
                 <div className="blockkkkk-imggg">
                     <img src={block1} alt="" />
