@@ -15,13 +15,56 @@ font-family: 'Montserrat Alternates', sans-serif;
 }
 .program_banner{
     width: 1200px;
+    height: 350px;
+    border-radius: 40px;
+    background: #FFCB13;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: auto;
     position: relative;
     margin-top: 60px;
+    overflow: hidden;
 }
+.program_banner_dumaloq{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: -130px;
+    top: 100px;
+    box-shadow: 0 0 35px #00000040;
+}
+.program_banner_img11{
+    position: relative;
+    right: 100px;
+}
+.program_banner_new{
+    width: 641px;
+    position: relative;
+    right: 20px;
+}
+.program_banner_new_h1{
+margin-bottom: 30px;
+}
+.h111111111111{
+    font-size: 55px;
+} span{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.pro_img_uch{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: 55px;
+}
+.program_banner_new
 .img__1{
     position: relative;
     top: 0px;
@@ -48,6 +91,9 @@ font-family: 'Montserrat Alternates', sans-serif;
 .program_banner_kopiya{
     display: none;
 }
+.wertuioplkjhgfd{
+    display: none;
+}
 @media(max-width:1540px){
     .program_banner{
         width: 1000px;
@@ -57,6 +103,71 @@ font-family: 'Montserrat Alternates', sans-serif;
         margin: auto;
         position: relative;
         margin-top: 60px;
+        
+    }
+    .program_banner_dumaloq{
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        left: -150px;
+        top: 100px;
+        box-shadow: 0 0 35px #00000040;
+    }
+    .program_banner_img11{
+        position: relative;
+        right: 0px;
+        height: 300px;
+    }
+    .program_banner_new{
+        width: 557px;
+        position: relative;
+        right: 85px;
+    }
+    .program_banner_new_h1{
+    margin-bottom: 25px;
+    }
+    .h111111111111{
+        font-size: 50px;
+    } span{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .pro_img_uch{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 130px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+   .pro_img_uch img{
+height: 50px;
+   }
+    .pro_img_uch
+    .program_banner_new
+    .img__1{
+        position: relative;
+        top: 0px;
+        z-index: 1;
+    }
+    .img__2{
+        position: absolute ;
+        top: 0px;
+        width: 100%;
+    }
+    .program_banner1{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 150px;
+        z-index: 2;
+        position: relative;
+        bottom: 70px;
+        right: 30px;
     }
     .img__1{
         z-index: 1;
@@ -89,6 +200,60 @@ font-family: 'Montserrat Alternates', sans-serif;
     }
 }
 @media(max-width:1150px){
+    .program_banner_dumaloq{
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        left: -150px;
+        top: 140px;
+        box-shadow: 0 0 35px #00000040;
+    }
+    .program_banner_img11{
+        position: relative;
+        right: 0px;
+        height: 260px;
+    }
+    .program_banner_new{
+        width: 457px;
+        position: relative;
+        right: 85px;
+    }
+    .program_banner_new_h1{
+    margin-bottom: 25px;
+    }
+    .h111111111111{
+        font-size: 45px;
+    } span{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .pro_img_uch{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 110px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+   .pro_img_uch img{
+height: 40px;
+   }
+    .pro_img_uch
+    .program_banner_new
+    .img__1{
+        position: relative;
+        top: 0px;
+        z-index: 1;
+    }
+    .img__2{
+        position: absolute ;
+        top: 0px;
+        width: 100%;
+    }
     .program_banner{
         width: 800px;
         display: flex;
@@ -132,13 +297,60 @@ font-family: 'Montserrat Alternates', sans-serif;
 @media(max-width:850px){
     .program_banner{
         width: 600px;
+        height: 700px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin: auto;
+        flex-wrap: wrap-reverse;
         position: relative;
         margin-top: 50px;
     }
+    .program_banner_dumaloq{
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background-color: #FFCB13;
+        position: absolute;
+        left: -50px;
+        top: 450px;
+        box-shadow: 0 0 35px #00000040;
+    }
+    .program_banner_img11{
+        position: relative;
+        right: 150px;
+        height: 300px;
+    }
+    .program_banner_new{
+        width: 357px;
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+        right: 0px;
+    }
+    .program_banner_new_h1{
+    margin-bottom: 25px;
+    }
+    .h111111111111{
+        font-size: 35px;
+    } span{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .pro_img_uch{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 120px;
+        position: absolute;
+        top: 500px;
+        right: 30px;
+    }
+   .pro_img_uch img{
+height: 60px;
+   }
+  
     .img__1{
         z-index: 1;
         position: relative;
@@ -171,6 +383,61 @@ font-family: 'Montserrat Alternates', sans-serif;
     
 }
 @media(max-width:650px){
+    .program_banner{
+        width: 430px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap-reverse;
+        position: relative;
+        margin-top: 50px;
+    }
+    .program_banner_dumaloq{
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background-color: #FFCB13;
+        position: absolute;
+        left: -60px;
+        top: 420px;
+        box-shadow: 0 0 35px #00000040;
+    }
+    .program_banner_img11{
+        position: relative;
+        right: 70px;
+        height: 300px;
+    }
+    .program_banner_new{
+        width: 357px;
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+        right: 0px;
+    }
+    .program_banner_new_h1{
+    margin-bottom: 25px;
+    }
+    .h111111111111{
+        font-size: 35px;
+    } span{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .pro_img_uch{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 110px;
+        position: absolute;
+        top: 500px;
+        right: -20px;
+    }
+   .pro_img_uch img{
+height: 45px;
+   }
     .otkizish{
         display: block;
         width: max-content;
@@ -188,16 +455,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     .s_2{
         color: #E93333;
     }
-    .program_banner{
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        position: relative;
-        margin-top: 50px;
-        display: none;
-    }
+ 
     .img__1{
         z-index: 1;
         position: relative;
@@ -235,6 +493,67 @@ font-family: 'Montserrat Alternates', sans-serif;
     }
 }
 @media(max-width:550px){
+    .wertuioplkjhgfd{
+        display: block;
+    }
+    .poiuytfdxbnm{
+        display: none;
+    }
+    .program_banner{
+        width: 320px;
+        height: 540px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap-reverse;
+        position: relative;
+        margin-top: 50px;
+    }
+    .program_banner_dumaloq{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background-color: #FFCB13;
+        position: absolute;
+        left: -70px;
+        top: 340px;
+        box-shadow: 0 0 35px #00000040;
+    }
+    .program_banner_img11{
+        position: relative;
+        right: 50px;
+        height: 250px;
+    }
+    .program_banner_new{
+        width: 290px;
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
+        right: 0px;
+    }
+    .program_banner_new_h1{
+    margin-bottom: 25px;
+    }
+    .h111111111111{
+        font-size: 35px;
+    } span{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .pro_img_uch{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 110px;
+        position: absolute;
+        top: 400px;
+        right: -20px;
+    }
+   .pro_img_uch img{
+height: 45px;
+   }
     .otkizish{
         display: block;
         width: max-content;
@@ -252,16 +571,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     .s_2{
         color: #E93333;
     }
-    .program_banner{
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        position: relative;
-        margin-top: 50px;
-        display: none;
-    }
+  
     .img__1{
         z-index: 1;
         position: relative;
@@ -319,16 +629,6 @@ font-family: 'Montserrat Alternates', sans-serif;
     }
     .s_2{
         color: #E93333;
-    }
-    .program_banner{
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        position: relative;
-        margin-top: 50px;
-        display: none;
     }
     .img__1{
         z-index: 1;
@@ -391,16 +691,6 @@ font-family: 'Montserrat Alternates', sans-serif;
     .s_2{
         color: #E93333;
     }
-    .program_banner{
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        position: relative;
-        margin-top: 50px;
-        display: none;
-    }
     .img__1{
         z-index: 1;
         position: relative;
@@ -449,6 +739,62 @@ font-family: 'Montserrat Alternates', sans-serif;
     }
 }
 @media(max-width:350px){
+    .program_banner{
+        width: 300px;
+        height: 540px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap-reverse;
+        position: relative;
+        margin-top: 50px;
+    }
+    .program_banner_dumaloq{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background-color: #FFCB13;
+        position: absolute;
+        left: -80px;
+        top: 340px;
+        box-shadow: 0 0 35px #00000040;
+    }
+    .program_banner_img11{
+        position: relative;
+        right: 50px;
+        height: 250px;
+    }
+    .program_banner_new{
+        width: 275px;
+        margin: auto;
+        margin-top: 35px;
+        position: relative;
+        right: 0px;
+    }
+    .program_banner_new_h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+    }
+    .h111111111111{
+        font-size: 30px;
+    } span{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    .pro_img_uch{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 110px;
+        position: absolute;
+        top: 400px;
+        right: -20px;
+    }
+   .pro_img_uch img{
+height: 45px;
+   }
     .otkizish{
         display: block;
         width: max-content;
@@ -465,16 +811,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     .s_2{
         color: #E93333;
     }
-    .program_banner{
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        position: relative;
-        margin-top: 50px;
-        display: none;
-    }
+   
     .img__1{
         z-index: 1;
         position: relative;

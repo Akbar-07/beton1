@@ -4,9 +4,9 @@ import Navbar from "../js/Navbar.js"
 import IMG1 from "../img/Group 100.png"
 import IMG2 from "../img/fire flame-png 1.png"
 import IMG3 from "../img/Group 146.png"
-import IMG4 from "../img/1 монет.png"
-import IMG5 from "../img/./3 монет.png"
-import IMG6 from "../img/./2 монет.png"
+import IMG20 from "../img/1 монет.png"
+import IMG21 from "../img/./3 монет.png"
+import IMG22 from "../img/./2 монет.png"
 import IMG7 from "../img/Group 302 (1).png"
 import IMG8 from "../img/уровень 1.png"
 import IMG9 from "../img/звезда 1.png"
@@ -19,6 +19,7 @@ import IMG15 from "../img/Без имени-1 1 (1).png"
 import IMG16 from "../img/Без имени-1 2.png"
 import IMG17 from "../img/айфон4 1.png"
 import IMG18 from "../img/Ellipse 4.png"
+import IMG19 from "../img/fire flame-png 1 (1).png"
 
 import {FiX} from "react-icons/fi"
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -64,19 +65,23 @@ export default function Programma_L() {
         </div>
 
         <div className="program_banner">
-          <img className='img__1' src={IMG2} alt="" />
-          <img className='img__2' src={IMG3} alt="" />
-          <div className="program_banner1">
-            <div className="pro_ban">
-              <img src={IMG4} alt="" />
-              <img src={IMG5} alt="" />
-            </div>
-            <img src={IMG6} alt="" />
-          </div>
+          <div className="program_banner_dumaloq"></div>
+        <img className='program_banner_img11' src={IMG19} alt="" />
+       <div className="program_banner_new">
+       <h1 className='program_banner_new_h1'><h1 className='h111111111111'>Кешбэк </h1> для новых пользователей</h1>
+        <span>
+          <span className='wertuioplkjhgfd'>Узнать свой статус в программе лояльности, оплатить поездку бонусами или поинтересоваться</span>
+        <span className='poiuytfdxbnm'>Узнать свой статус в программе лояльности, оплатить поездку бонусами или поинтересоваться, сколько единиц осталось на счету — можно прямо во время заказа у оператора.</span>
+        </span>
+       </div>
+       <div className="pro_img_uch">
+        <div className="pro_img_uch1">
+          <img src={IMG20} alt="" />
+          <img src={IMG21} alt="" />
         </div>
+        <img src={IMG22} alt="" />
+       </div>
 
-        <div className="program_banner_kopiya">
-          <img src={IMG7} alt="" />
         </div>
 
        
