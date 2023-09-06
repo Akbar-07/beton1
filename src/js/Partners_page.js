@@ -5,21 +5,20 @@ import Footer from './Footer'
 import start from "../img/Group 100.png"
 import sement from '../img/sement_beton.png'
 import white1 from '../img/white.png'
-import right_arrow_png from '../img/right-arrow_png.png'
 import ekskavator from '../img/media_ekskavator.png'
 import {GoArrowDown} from 'react-icons/go'
-import IMG2 from "../img/Group 365.png"
-import IMG3 from "../img/Group 384.png"
 import IMG4 from "../img/5285548 2.png"
 import IMG5 from "../img/Vector 20.png"
 import IMG6 from "../img/Vector 22.png"
-import IMG7 from "../img/Group 369.png"
 import IMG8 from "../img/Mask group (7).png"
 import IMG9 from "../img/2 1548993563 (1).png"
 import IMG10 from "../img/Group (3).png"
 import IMG11 from "../img/Group (16).png"
-import IMG12 from "../img/Group 376.png"
 import IMG13 from "../img/Mask group (8).png"
+import IMG15 from "../img/Man talking on phone.png"
+import IMG16 from "../img/Group 259 (1).png"
+import IMG17 from "../img/Location Pin.png"
+import IMG18 from "../img/Vector 22 (1).png"
 
 export default function Partners_page() {
   function radio_bol(id){
@@ -115,8 +114,13 @@ export default function Partners_page() {
                       </div>
                   </div>
                   <div className="orta_card_img1">
-                    <img className='orta_card_img1_2' src={IMG2} alt="" />
-                    <img className='orta_card_img1_1' src={IMG3} alt="" />
+                    <div className="z_img_img"></div>
+                    <img className='z_img_img_1' src={IMG15} alt="" />
+                    <div className="sdfgyuiopsefrty">
+                    <span className='z_img_span'><span className='z_img_span1'>Ах да,</span> чтобы наши клиенты не ждали часами решения своих вопросов связанных с заказами, 
+вы должны предоставить<span className='z_img_span2'> выделенного менеджера,</span> который будет всегда на связи 
+в рабочее время! И главное работоспособного!</span>
+                    </div>
                   </div>
                 </div>
 
@@ -157,7 +161,11 @@ export default function Partners_page() {
  <span className='voditel_text_span'>как со своим транспортом так и в наш автопарк.</span>
  </div>
   <div className="lopi_nax_xil">
-  <img className='voditel_text_img' src={IMG7} alt="" />
+    <div className="lopi_nax_xil_dumaloq"></div>
+    <img className='lopi_nax_xil_img11' src={IMG16} alt="" />
+  <div className="lopi_nax_xil_span11">
+  <span>Мы готовы к сотрудничеству с отдельными людьми владеющими миксерами и швингами, так и с компаниями предоставляющие свои услуги в этой сфере.</span>
+  </div>
   </div>
   
   <div className="rasmga_style">
@@ -290,7 +298,24 @@ export default function Partners_page() {
 </div>
 
 <div className="tugashga_rasm">
-  <img className='tugashga_rasm_img' src={IMG12} alt="" />
+<div className="tugashga_rasm_div1">
+  <div className="tugashga_rasm_div1_dumaloq"></div>
+  <img className='tugashga_rasm_div1_img' src={IMG17} alt="" />
+  <img className='tugashga_rasm_div1_img1' src={IMG18} alt="" />
+    <div className="asdfghjkl1">
+    <h1>Наш сервис работает не только в Иркутске!</h1><br />
+ <div className="asdfghjk1_span">
+ <span className='tugashga_rasm_div_span'>В ближайший месяц запускаемся 
+в Красноярске и в Улан-Удэ! </span>
+ </div>
+
+<div className="qwertyuiop_1"><br />
+<span className='tugashga_rasm_div_span1'>Ждем партнеров для создания <span className='zxcvbnm_kop'>уникального сервиса  
+по доставке бетона в России!</span></span>
+</div>
+    </div>
+
+  </div>
   <div className="tugashga_rasm_div">
     <div className="asdfghjkl">
     <h2>Наш сервис работает не только в Иркутске!</h2>
