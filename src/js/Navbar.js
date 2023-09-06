@@ -32,6 +32,24 @@ export default function Navbar() {
         document.querySelector(".menu_chap").style = "right:-425px"
         document.querySelector("body").style = "overflow: scroll;"
     }
+
+    function modalpritenziya(){
+        document.querySelector(".modal-navbar-joy").style=`display:block`
+        document.querySelector("body").style = "overflow: hidden;"
+    }
+
+    function yopilmodal(){
+        document.querySelector(".modal-navbar-joy").style=`display:none`
+        document.querySelector("body").style = "overflow: scroll;"
+    }
+
+    function modalpritenziya1(){
+        document.querySelector(".modal-navbar-joy").style=`display:block`
+        document.querySelector("body").style = "overflow: hidden;"
+        document.querySelector(".black_chap").style = "display:none"
+        document.querySelector(".menu_chap").style = "right:-425px"
+    }
+
   return (
     <div>
         <div className="black_chap"></div>
@@ -72,7 +90,7 @@ export default function Navbar() {
                     <span onClick={()=>window.location="/Garantiya"}  className='s2'>Гарантия</span>
                 </div>
                 <div className="nav_2_page7">
-                    <span className='s2 s22'>Оставить претензию</span>
+                    <span className='s2 s22' onClick={()=>modalpritenziya()}>Оставить претензию</span>
                 </div>
                 <div className="nav_2_page8">
                     <button className='b1'>  <BsTelephoneFill className='icon2'/>    Перезвоните мне</button>
@@ -142,13 +160,13 @@ export default function Navbar() {
                 </div>
                <div className="n1">
                <div className="nav_2_page7">
-                    <span onClick={()=>window.location="/"}  className='s2 s22'>Оставить претензию</span>
+                    <span onClick={()=>modalpritenziya1()} className='s2 s22' >Оставить претензию</span>
                 </div>
                </div>
                 <div className="nav_but">
                 <div className="nav_2_page8">
                   
-                  <button className='b1'>  <BsTelephoneFill className='icon2'/>    Перезвоните мне</button>
+                  <button className='b1'>  <BsTelephoneFill className='icon2'/> Перезвоните мне</button>
               </div>
               <div className="nav_2_page9">
                   <button className='b2'>  <BiSolidUser className='icon2'/>Личный кабинет</button>
@@ -162,6 +180,33 @@ export default function Navbar() {
 
         </div>
 
+<div className="modal-navbar-joy">
+<div className="login-kotta">
+            
+            <div className="teper-login13">
+              <div className="nazat" >
+              <box-icon name='x'  color="#ACACAC"  onClick={()=>yopilmodal()}  size="35px"></box-icon>
+              </div>
+              <div className="fizika-litso123">
+              <h1>Оставить претензию</h1>
+              <div className="FIZIKAAASDASSDAASD">
+              <p><span>Вас что-то не устроило? Возникли проблемы с заказом? </span> 
+Товар не соответствует описанию? Оставьте подробную претензию в этом окне, и она тут же окажется на столе генерального директора. Мы решим сложившуюся проблему максимально быстро и качественно!</p>
+              </div>
+              <br />
+              <div className="fizika-inputla122">
+              <form action="">
+                <input type="text"  placeholder='Имя' required/> 
+                <input type="phone"  placeholder='Телефон для связи'  required/>
+                <input type="email"  placeholder='Email' required/><br />
+                <textarea cols="30" placeholder='Текст сообщения' rows="10"></textarea>
+                <button>Отправить претензию</button>
+              </form>
+              </div>
+            </div>
+            </div>
+         </div>
+</div>
     </div>
   )
 }

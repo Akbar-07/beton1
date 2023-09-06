@@ -16,6 +16,7 @@ import rasm4 from '../img/sheld27 1.png'
 import rasm5 from '../img/man_worker_12 1.png'
 import rasm6 from '../img/Contract.png'
 import rasm7 from '../img/sheld27 2.png'
+import rasm9 from '../img/m001t0309_b_5_star_rating_30aug22 1.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -36,11 +37,20 @@ export default function Dobblock() {
             <h1>Все включено</h1>
             </div>
             <div className="dobblock-pas-qsmi">
-                <div className="dobblock-rasm-kotta">
-                    <img src={dobblock} alt="" />
-                    <div className="dobblock-img-pas-text">
-                        <h2>Что именно <br />
-мы предоставляем заказчикам?</h2>
+                <div className="dobblock-kotta-tape-qismi-img">
+                    <div className="bla-zaibal-div-ochuvurib">
+                    <div className="suka-ramsadasdasdasas">
+                    <div className="blockasjkdfbhsdvdsjhvsdfhk">
+                        <img src={rasm9} alt="" />
+                    </div>
+                    </div>
+                    <div className="dobblock-text-img-tepa-qismi">
+                        <p >Заказывая бетон через наш сервис, <br />
+каждый клиент может рассчитывать <br />
+на получение услуг в формате</p>
+<h1>«все включено»</h1>
+<span>*за дополнительную плату</span>
+                    </div>
                     </div>
                 </div>
                 <div className="eng-kottatorta-div">

@@ -12,6 +12,7 @@ import { BiChevronDown } from 'react-icons/bi'
 
 
 
+
 function modalochil(){
     document.querySelector(".user-modal").style=`display:block`
     document.querySelector("body").style=`overflow: hidden;`
@@ -224,18 +225,7 @@ const [selected, setSelected] = useState("")
             <div className="mentor-ichi-kotta">
                 <div className="mentor-ichi-ichi">
                     <div className="mentor-filter-select">
-                        {/* <select >
-                            <option value="1">
-                            <p >Марка бетона</p>
-                            </option>
-                            <option value="2">
-                            <p>Марка бетона2</p>
-                            </option>
-                            <option value="2">
-                            <p>Марка бетона3</p>
-                            </option>
-                        </select> */}
-                        <div className='w-72 font-medium h-80'>
+                        {/* <div className='w-72 font-medium h-80'>
                             <div className='bg-white w-full p-2 flex items-center justify-between  rounded'>
                                 select country
                                 <BiChevronDown size={20} />
@@ -247,11 +237,12 @@ const [selected, setSelected] = useState("")
                                 }
                                
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
   )
 }
