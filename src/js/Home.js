@@ -61,6 +61,7 @@ import IMG57 from "../img/m011t0344_a_pizza_21jun22 1.png"
 import IMG58 from "../img/Vector 7.png"
 import IMG59 from "../img/айфон3 1 (1).png"
 
+
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import {BsChevronUp} from "react-icons/bs"
 import {BsChevronRight} from "react-icons/bs"
@@ -95,6 +96,18 @@ function sariq2(){
            <div className="rek_h111">
            <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br /> как заказать пиццу</h1>
             <span className='rek_h111_span'>Скачивай наше приложение!</span>
+            <div className="rek_rasm_div">
+           <div className="rek_rasm_div1">
+           <img className='rek_img_s1' src={IMG23} alt="" />
+           <img className='rek_img_s1' src={IMG24} alt="" />
+           <img className='rek_img_s1' src={IMG25} alt="" />
+           </div>
+            <div className="rek_rasm_div2">
+            <img className='rek_img_s1' src={IMG26} alt="" />
+            <img className='rek_img_s1' src={IMG27} alt="" />
+            <img className='rek_img_s1' src={IMG28} alt="" />
+            </div>
+            </div>
            </div>
             <div className="rek_dumaloq1">
                 <div className="rek_dumaloq1_kichik"></div>
