@@ -655,13 +655,15 @@ function check_ochil(id){
         <div className="zakaz_kvadrat_div">
         <span className='zakaz_kvadrat_span'>Пожелания к заказу</span>
         </div>
-
         <div className="jelaniya-pozakazu">
-                              <div className="jelaniya-pozakazu_tegi">
-                                <input className='checkbox12345' type="checkbox" name="" id="" />
-                                <span>Услуга: Все включено</span>
-                                <img className='undov' src={IMG14} alt="" />
-                              </div>
+                                <h2>Пожелания к заказу</h2>
+                                <br />
+                                <br />
+                                <p>Увеличение стоимости</p>
+                                <br />
+                                <div className="sdacha-input">
+                                        <input type="text" placeholder='Поле для ввода' />
+                                    </div>
                                     <div className="jalab-kamazlani-turi-bor-ekan">
                                         <div className="lalala-nom-yo-bunga-prosta-p">
                                         <p>Если вам требуется доставка <br id='syebalsa'  /> определенными машинами, <br id='syebalsa' /> укажите какими:</p>
@@ -742,9 +744,105 @@ function check_ochil(id){
           <button onClick={()=>{setZag(9)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""} 
-      {zag === 9 ? <div className="zakaz_kvadrat">
-        <div className="zakaz_kvadrat_div">
-        <span className='zakaz_kvadrat_span'>Заказ</span>
+      {zag === 9 ?    <div className="samiy-pasledniy-joy-oplata">
+    <div className="letsgo-oplata-ye">
+        <div className="bla-arrowe-ichi-endi">
+            <h2>Заказ</h2>
+            <div className="zakaz-img-info-joi">
+                <div className="zakaz-img-info-img">
+                    <img src={iconbla} alt="" />
+                </div>
+                <div className="zakaz-img-info-text">
+                    <h4>Гравийный бетон М150 B12,5 F100 W4</h4>
+                    <p>Наименование опции, наименование опции, наименование опции </p>
+                </div>
+            </div>
+            <div className="zakaz-line-info"></div>
+            <div className="stoimas-betona">
+                <div className="buyagaona-nax">
+                <div className="stoimas-bet-block1">
+                    <h5>Стоимость бетона:</h5>
+                    <p>5 000 ₽</p>
+                </div>
+                <div className="stoimas-bet-block1">
+                    <h5>Стоимость бетона:</h5>
+                    <p>5 000 ₽</p>
+                </div>
+                <div className="stoimas-bet-block1">
+                    <h5>Стоимость бетона:</h5>
+                    <p>5 000 ₽</p>
+                </div>
+                </div>
+                <div className="stoimas-bet-block2">
+                    <h5>Итого:</h5>
+                    <p>5 000 ₽</p>
+                    <h5 id='sitr'>Итого с учетом бонусов/скидки:</h5>
+                    <p id='sitr2'>5 000 ₽</p>
+                </div>
+            </div>
+            <div className="bonus-i-oplata-joy-ga-keldi">
+                <div className="binusinput-block1">
+                    <div className="sika_f">
+                    <p>Бонусы:</p>
+                    <p>Списать бонусов: </p>
+                    </div>
+                    <div className="binus-block-inp-g_l">
+                        <div className="blc_ino">
+                            <button><img src={prima} alt="" />12 000 бонусов</button>
+                        </div>
+                        <div className="blc_ino1">
+                        <input type="number" />
+                        </div>
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <button>Списать бонусы</button>
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <input type="number" placeholder='Код из смс' />
+                    </div>
+                    <div className="pasroda-oplt-ino">
+                        <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
+                        <p><a href="#">Отправить повторно</a></p>
+                    </div>
+                    <div className="lalalala-nom-oylab-topishi-ozi-azobbbb">
+                    <div className="sika_f1">
+                    <p>Промокод</p>
+                    </div>
+                    <div className="yana-inp-bla-zaib0suk">
+                        <input type="number"  placeholder='Поле для ввода'/>
+                    </div>
+                    
+                    <div className="oxiri-qoldi-bla-nu-tugadi">
+                        <div className="alsdasdsadasdsadsadsa">
+                        <img src={prima} alt="" /><span>будет начислено бонусов: <br />
+(2% от суммы)</span>
+                        </div>
+<div className="bla-pasda-sotvolish-btn">
+                        <button>Заказать</button>
+                    </div>
+                    </div>
+                
+                    </div>
+                    
+                </div>
+                <div className="binus-davam-left-tarap">
+                <div className="sika_f1">
+                    <p>Промокод</p>
+                    </div>
+                    <div className="yana-inp-bla-zaib0suk">
+                        <input type="number"  placeholder='Поле для ввода'/>
+                    </div>
+                </div>
+                <div className="binus-davam-left-tarap">
+                    <div className="oxiri-qoldi-bla-nu-tugadi">
+                        <img src={prima} alt="" /><span>будет начислено бонусов: <br />
+(2% от суммы)</span>
+                    </div>
+                    <div className="bla-pasda-sotvolish-btn">
+                        <button>Заказать</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="zakaz-futer-mobil-versia">
             <div className="zakaz-futer-ichi">
@@ -838,17 +936,8 @@ function check_ochil(id){
                     </div>
             </div>
         </div>
-        <div className="zakaz_kvadrat_zagruska zakaz_kvadrat_zagruska_kop">
-          <span>9/9</span>
-          <div className="zakaz_kvadrat_zagruska_ril">
-            <div className="zakaz_kvadrat_zagruska_ril1"></div>
-          </div>
-        </div>
-        <div className="zakaz_kvadrat_tegi">
-          <button onClick={()=>{setZag(8)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(9)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
-          </div>
-        </div> : ""} 
+    </div>
+   </div> : ""} 
       </div>
    
   )
