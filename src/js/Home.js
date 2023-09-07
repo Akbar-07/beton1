@@ -56,7 +56,12 @@ import IMG52 from "../img/Screenshot_7_lmp3jpq12 1.png"
 import IMG53 from "../img/Frame 274.png"
 import IMG54 from "../img/Frame 275.png"
 import IMG55 from "../img/Frame 276.png"
+import IMG56 from "../img/m011t0344_a_pizza_21jun22 2.png"
+import IMG57 from "../img/m011t0344_a_pizza_21jun22 1.png"
+import IMG58 from "../img/Vector 7.png"
+import IMG59 from "../img/айфон3 1 (1).png"
 
+import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import {BsChevronUp} from "react-icons/bs"
 import {BsChevronRight} from "react-icons/bs"
 import Fade from 'react-reveal/Fade';       
@@ -87,7 +92,24 @@ function sariq2(){
         <div className="seriy">
         <Navbar />
         <div className="rek">
-            <img src={IMG1} alt="" />
+           <div className="rek_h111">
+           <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br /> как заказать пиццу</h1>
+            <span className='rek_h111_span'>Скачивай наше приложение!</span>
+           </div>
+            <div className="rek_dumaloq1">
+                <div className="rek_dumaloq1_kichik"></div>
+            </div>
+            <div className="rek_dumaloq1_tel">
+                <img src={IMG59} alt="" />
+            </div>
+            <div className="rek_dumaloq2">
+            <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
+                <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
+                <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
+            </div>
+            <div className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
         </div>
         <div className="rek1">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper sviperS">
