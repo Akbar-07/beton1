@@ -43,7 +43,7 @@ export default function Programma_L() {
     document.querySelector(".sviper_QTB").style = "height: 440px;"
     // document.querySelector(".sviper_QTB").style = "height:240px;"
   }
-  function okey1() {\
+  function okey1() {
     // document.querySelector(".sviper_QTB").style = "height: 440px;"
     document.querySelector(".sviper_QTB").style = "height:240px;"
   }
