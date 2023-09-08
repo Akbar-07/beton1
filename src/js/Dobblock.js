@@ -8,7 +8,7 @@ import block3 from '../img/block-pas3.png'
 import block2 from '../img/block-pas2.png'
 import block4 from '../img/block-pas4.png'
 import lala from '../img/Group 406.png'
-import Footer from '../js/Footer'
+
 import rasm1 from '../img/dob1.png'
 import rasm2 from '../img/Group 405.png'
 import rasm3 from '../img/Contract.png'
@@ -214,7 +214,7 @@ export default function Dobblock() {
             </div>
            </div>
         </div>
-        <Footer/>
+       
     </div>
     
   )

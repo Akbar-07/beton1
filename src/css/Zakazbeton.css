@@ -1601,3 +1601,174 @@ font-weight: 600;
     margin-bottom: 30px;
   }
 }
+.zakaz_kvadrat1{
+  width: 1150px;
+  height: auto;
+  border-radius: 40px;
+  padding: 50px;
+  margin: auto;
+  border: 2px solid #969696;
+  border-left: 2px solid #595959;
+  border-top: 2px solid #595959;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+@media (max-width:1305px) {
+  .zakaz_kvadrat1 {
+    width: 1050px;
+    height: auto;
+    border-radius: 40px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #969696;
+    border-left: 2px solid #595959;
+    border-top: 2px solid #595959;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+}
+@media (max-width:1185px) {
+  .zakaz_kvadrat1 {
+    width: 950px;
+    height: auto;
+    border-radius: 40px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #969696;
+    border-left: 2px solid #595959;
+    border-top: 2px solid #595959;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+}
+@media (max-width:1078px) {
+  .zakaz_kvadrat1 {
+    width: 850px;
+    height: auto;
+    border-radius: 40px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #969696;
+    border-left: 2px solid #595959;
+    border-top: 2px solid #595959;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+}
+@media (max-width:985px) {
+  .zakaz_kvadrat1 {
+    width: 770px;
+    height: auto;
+    border-radius: 40px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #969696;
+    border-left: 2px solid #595959;
+    border-top: 2px solid #595959;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.jalab-kamazlani-turi-bor-ekan6 {
+  width: 100% !important;
+  height: 60px;
+  display: flex;
+  margin-top: 40px;
+}
+}
+@media (max-width:959px) {
+  .jalab-kamazlani-turi-bor-ekan2 {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.jalab-kamazlani-turi-bor-ekan6 {
+  width: 100% !important;
+  height: 60px;
+  display: flex;
+  margin-top: 40px;
+}
+}
+@media (max-width:910px) {
+  .zakaz_kvadrat1 {
+    width: 680px;
+    height: auto;
+    border-radius: 40px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #969696;
+    border-left: 2px solid #595959;
+    border-top: 2px solid #595959;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.jalab-kamazlani-turi-bor-ekan {
+  width: 100% !important;
+  height: 30px;
+}
+.jalab-kamazlani-turi-bor-ekan1 {
+    width: 100% !important;
+    height: 30px;
+}
+}
+@media (max-width:827px) {
+  .zakaz_kvadrat1 {
+    width: 600px;
+    height: auto;
+    border-radius: 40px;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #969696;
+    border-left: 2px solid #595959;
+    border-top: 2px solid #595959;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+}
+@media (max-width:964px) {
+  .jalab-kamazlani-turi-bor-ekan2 {
+    width: 100% !important;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+}
+#iasdasdasd{
+  padding-top: 150px;
+}
+@media (max-width:730px) {
+#suasjdasdsajjsnd1{
+  display: none;
+}
+#suasjdasdsajjsnd2{
+  display: none;
+}
+#suasjdasdsajjsnd3{
+  display: none;
+}
+#suasjdasdsajjsnd4{
+  display: none;
+}
+#suasjdasdsajjsnd5{
+  display: none;
+}
+#suasjdasdsajjsnd6{
+  display: none;
+}
+#suasjdasdsajjsnd7{
+  display: none;
+}
+#suasjdasdsajjsnd8{
+  display: none;
+}
+}
+#gigigigi{
+  display: none !important;
+}
+@media (max-width:723px) {
+  #gigigigi{
+    display: flex !important;  
+  }
+}

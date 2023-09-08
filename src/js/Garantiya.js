@@ -3,7 +3,6 @@ import '../css/Garantiya.css'
 import Navbar from '../js/Navbar'
 import img from '../img/Group 100.png'
 import img1 from '../img/Group 399.png'
-import Footer from '../js/Footer'
 
 
 export default function Garantiya() {
@@ -151,7 +150,7 @@ export default function Garantiya() {
             </div>
         </div>
        </div>
-       <Footer/>
+      
     </div>
   )
 }

@@ -1,3 +1,4 @@
+
 import React, {useEffect , useState} from 'react'
 import Navbar from '../js/Navbar'
 import '../css/Mentor.css'
@@ -7,9 +8,13 @@ import zalatoy from '../img/Group 164.png'
 import biladim from '../img/Group 201 (1).png'
 import { BiChevronDown } from 'react-icons/bi'
 
+import skachat from '../img/material-symbols_download.png'
+import koment from '../img/Group 207.png'
 
+import {BsCheckLg} from "react-icons/bs"
 
-
+import data from '../js/Data'
+import Footer from './Footer'
 
 
 
@@ -26,18 +31,50 @@ function bonusmodal(){
     document.querySelector("body").style=`overflow: hidden;`
 }
 function modalbonusyopil(){
-    document.querySelector(".user-modal-bonus").style=`display:nonoe`
+    document.querySelector(".user-modal-bonus").style=`display:nono`
     document.querySelector("body").style=`overflow: scroll;`
 }
 function mentorzakaz(){
     document.querySelector(".bupas-qismi-table-qolda").style=`display:block`
+<<<<<<< Updated upstream
     document.querySelector(".uiver1").style=`  border-bottom-left-radius: 0px;`
+    document.querySelector(".uiver2").style=`border-bottom-right-radius: 0px;`
+}
+function galochka(){
+    var y= document.querySelector(".gakochka-och").style.display;
+    if(y=="none"){
+    document.querySelector(".gakochka-och").style.display="block";
+    }else{
+       document.querySelector(".gakochka-och").style.display="none";
+    }
+}
+
+function jonibek(params) {
+    for (let i = 0; i < document.querySelectorAll('.ddd').length; i++) {
+       if(i==params){
+        document.querySelectorAll('.ddd')[i].style="display:block; transition: 2s !important;"
+       }else{
+        document.querySelectorAll('.ddd')[i].style="display:none; transition: 2s !important;"
+       }
+        
+    }
+}
+
+
+
+export default function User() {
+const [countries, setCountries] = useState(null);
+const [selected, setSelected] = useState("");
+// console.log(data.productData);
+
+    document.querySelector(".uiver1").style=  `border-bottom-left-radius: 0px;`
     document.querySelector(".uiver2").style=`border-bottom-right-radius: 0px;`
 }
 
 export default function User() {
 const [countries, setCountries] = useState(null)
 const [selected, setSelected] = useState("")
+
 
     useEffect(()=>{
         fetch("https://restcountries.com/v2/all?fields=name")
@@ -47,6 +84,7 @@ const [selected, setSelected] = useState("")
         })
     },[])
     
+
   return (
     <div className='user'>
         <Navbar/>
@@ -125,9 +163,7 @@ const [selected, setSelected] = useState("")
             </div>
 
 
-
-
-        </div>
+</div>
         <div className="user-modal">
         <div className="login-kotta">
             
@@ -224,13 +260,122 @@ const [selected, setSelected] = useState("")
         <div className="mentor-kankulator">
             <div className="mentor-ichi-kotta">
                 <div className="mentor-ichi-ichi">
+
                     <div className="mentor-filter-select">
+                        <div className="selectla-uchun-alohida-joy">
+                        <select>
+                            <option value="1">Марка бетона</option>
+                            <option value="2">Марка бетона</option>
+                            <option value="3">Марка бетона</option>
+                        </select>
+                        <select>
+                            <option value="1">Производитель</option>
+                            <option value="2">Производитель</option>
+                            <option value="3">Производитель</option>
+                        </select>
+                        <select>
+                            <option value="1">Дополнительные опции</option>
+                            <option value="2">Дополнительные опции</option>
+                            <option value="3">Дополнительные опции</option>
+                        </select>
+                        <select>
+                            <option value="1">Статус заказа</option>
+                            <option value="2">Статус заказа</option>
+                            <option value="3">Статус заказа</option>
+                        </select>
+                        </div>
+                        <div className="select-pas-qismi-inputla">
+                            <div className="input-block-birr-sarvi">
+                                <span>Дата</span>
+                                <input type="number"  placeholder='ЧЧ.ММ.ГГ' />
+                            </div>
+                            <div className="input-block-birr-qanqa">
+                                <span>Номер заказа</span>
+                                <input type="number"  placeholder='Номер заказа' />
+                            </div>
+                            <div className="input-block-birr-qanqa-bilmadim">
+                                <span>Адрес</span>
+                                <input type="text"  placeholder='Введите адрес' />
+                            </div>
+                            <div className="input-block-birr-sarvi1">
+                                <span>Кол-во</span>
+                                <input type="number"  placeholder='0' />
+                            </div>
+                            <div className="filter-joy-bu-nmaga">
+                            <div className="filter-kichkina-tepa">
+                                <div className="filter-krug" onClick={()=>galochka()}>
+                                    <BsCheckLg  className='gakochka-och'/>
+                                </div>
+                                <div className="filter-text-joy">
+                                    <p>Применить фильтры</p>
+                                </div>
+                            </div>
+                            <div className="buniyam-bitta-divga-orimiz">
+                            <a href="#">Сбросить фильтры</a>
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="media-select-info-select">
+                        <div className="slect-flex-wrap">
+                        <select>
+                            <option value="1">Марка бетона</option>
+                            <option value="2">Марка бетона</option>
+                            <option value="3">Марка бетона</option>
+                        </select>
+                        <select>
+                            <option value="1">Производитель</option>
+                            <option value="2">Производитель</option>
+                            <option value="3">Производитель</option>
+                        </select>
+                        <select>
+                            <option value="1">Дополнительные опции</option>
+                            <option value="2">Дополнительные опции</option>
+                            <option value="3">Дополнительные опции</option>
+                        </select>
+                        <select>
+                            <option value="1">Статус заказа</option>
+                            <option value="2">Статус заказа</option>
+                            <option value="3">Статус заказа</option>
+                        </select>
+                        </div>
+                        <div className="input-form-zapros-keldi-bac-zaib">
+                            <form action="">
+                                <input type="text" placeholder='ДД.ММ.ГГ' required /> <br />
+                                <input type="number" placeholder='Номер заказа' required /><br />
+                                <input type="text" placeholder='Адрес' required /><br />
+                                <input type="number"   placeholder='Кол-во' required/><br />
+                                <button>Применить фильтры</button>
+                                <div className="buniyam-bitta-divga-orimiz1">
+                            <a href="#">Сбросить фильтры</a>
+                            </div>
+                            </form>
+                        </div>
+=======
+
+
+<div className="mentor-filter-select">
+                        {/* <select >
+                            <option value="1">
+                            <p >Марка бетона</p>
+                            </option>
+                            <option value="2">
+                            <p>Марка бетона2</p>
+                            </option>
+                            <option value="2">
+                            <p>Марка бетона3</p>
+                            </option>
+                        </select> */}
                         {/* <div className='w-72 font-medium h-80'>
                             <div className='bg-white w-full p-2 flex items-center justify-between  rounded'>
                                 select country
                                 <BiChevronDown size={20} />
                             </div>
                             <ul className='bg-white mt-2 overflow-y-auto max-h-60'>
+                                <div>
+                                    <input type="text"  placeholder='Enter your country' className='placeholder:text-gray-700 p-2 outline-none'/>
+                                </div>
                                 {countries?.map(country=>(
                                      <li key={country?.name} className='p-2 text-sm hover:bg-sky-600 hover:text-white' >{country?.name}</li>
                                 ))
@@ -238,11 +383,173 @@ const [selected, setSelected] = useState("")
                                
                             </ul>
                         </div> */}
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="table">
+            <div className="table-tepa-qismi">
+                <p className='datasdaljdad'>Номер заказа</p>
+                <p className='adres-left-position'>Адрес</p>
+                <p className='data-vreminiya-db'>Дата, время</p>
+                <p className='data-marka-dbb'>Марка</p>
+                <p className='data-privodsta-amma'>Производитель</p>
+                <p className='data-kalitestvo'>Кол-во</p>
+                <p className='data-dopoliteer'>Дополнительные опции</p> 
+                <p className='data-stoimas'>Стоимость</p>
+                <p className='data-status'>Статус</p>
+            </div>
+{data.productData.map((item,key)=>{
+    return(
         
+        <div onClick={()=>jonibek(key)} class="tr">
+    <div class="tepa_td">
+    <div class="td" ><span className='td_data'>230223 230223</span></div>
+    <div class="td" ><span className='td_addres'>{item.address}</span></div>
+    <div class="td"><span className='td_data1'>{item.date} <br /> {item.date1} </span></div>
+    <div class="td">
+    <p className='td_beton'>бетон</p>
+    <span className='yd_marka'>{item.marka}</span></div>
+    <div class="td"><span className='td_beton'>Производитель</span></div>
+    <div class="td"><span className='td_beton'>20 м3</span></div>
+    <div class="td"><span className='td_beton'>Дополнительная опция</span></div>
+    <div class="td"><h4 className='yd_marka'>200 000 ₽</h4></div>
+    <div class="td"><p className='td_yoldami'>Выполнен</p></div>
+    </div>
+    <div class="ddd">
+        <div class="past_td">
+            <div className="oplata-blocc">
+                <p>Оплата:</p>
+                <h4>Наличные</h4>
+            </div>
+            <div className="oplata-blocc">
+                <p>Машина:</p>
+                <h4>3м3</h4>
+            </div>
+            <div className="oplata-blocc">
+                <p>Швинг:</p>
+                <h4>15м</h4>
+            </div>
+                <div className="oplata-blocc">
+                <p>Время работы швинга:</p>
+                <h4>3 часа</h4>
+            </div>
+            <div className="oplata-blocc">
+                <p>Интервал подачи машин:</p>
+                <h4>3 часа</h4>
+            </div>
+            <div className="oplata-blocc">
+                <p>Доп:</p>
+                <p>Пусковая смесь, подвоз на участок</p>
+            </div>
+            <div className="izmenit-zakaz-but">
+                <div className="dumoloadasad">
+                   <img src={qalam} alt="" /> 
+                </div>
+                <p>Изменить <br />
+заказ</p>
+            </div>
+        </div>
+        <div class="past_td1">
+            <div className="oplata-blocc">
+                <p>Стоимость бетона:</p>
+                <h4>5 000 ₽</h4>
+            </div>
+            <div className="oplata-blocc">
+                <p>Стоимость доставки:</p>
+                <h4>5 000 ₽</h4>
+            </div>
+            <div className="oplata-blocc">
+                <p>Стоимость доп.услуг:</p>
+                <h4>5 000 ₽</h4>
+            </div>
+                <div className="oplata-blocc">
+                <p>Итого:</p>
+                <h4>5 000 ₽</h4>
+            </div>
+            <div className="oplata-button-xzxz">
+                <img src={biladim} alt="" /><span>12 000 бонусов начисленно</span>
+            </div>
+            <div className="skachat-cjekk">
+                <img src={skachat} alt="" /><span>Скачать чек</span>
+            </div>
+        </div>
+        <div className="button-asdasabjdfsdgsf">
+                <button>Отменить заказ</button>
+                <button>Оставить претензию</button>
+                <button>Связаться с водителем</button>
+                <button>Связаться с логистом</button>
+                <div className="logogogogogsa">
+                    <div className="dumoasdasdsada">
+                    <img src={koment} alt="" />
+                    </div>
+                    <span>Оставить отзыв</span>
+                    
+                </div>
+            </div>
+        {/* <div class="past_td">
+            <div class="td">
+            <p>Стоимость бетона:</p>
+            <h1>5 000 ₽</h1></div>
+            <div class="td">
+            <p>Стоимость доставки:</p>
+            <h1>5 000 ₽</h1></div>
+            <div class="td">
+            <p>Стоимость доп.услуг:</p>
+            <h1>5 000 ₽</h1></div>
+            <div class="td">
+            <p>Итого:</p>
+            <h1>5 000 ₽</h1></div>
+            <div class="td">
+            <h1>12 000 бонусов начисленно</h1></div>
+        </div>
+        <div class="button_c">
+            <button>Отменить заказ</button>
+            <button>Оставить претензию</button>
+            <button>Связаться с водителем</button>
+            <button>Связаться с логистом</button>
+           <div style={{display:"flex"}}> <button>Оставить отзыв</button>
+            <div ></div></div>
+        </div> */}
+    </div>
+    </div>
+        
+    )
+})}
+</div>
+<div className="tablemedia-mentor">
+    <div className="table-media-ichi">
+        <div className="oq-fon-media-bla">
+            <div className="oq-oeoe">
+            <div className="oq-ran-chap-tarap-text">
+                <p>Номер заказа</p>
+                <p>Адрес</p>
+                <p>Дата, время</p>
+                <p>Марка</p>
+                <p>Производитель</p>
+                <p>Кол-во</p>
+                <p>Доп. опции</p>
+                <p>Стоимость</p>
+                <p>Статус</p>
+                </div>
+                <div className="oq-ran-ong-tarap-text">
+                <p>230223 230223</p>
+                <p>г. Воронеж, ул. Старая, д. 62</p>
+                <p>23.02.23   13:00-16:00</p>
+                <p>Бетон М300</p>
+                <p>Производитель</p>
+                <p>20шт.</p>
+                <p>Дополнительные опции</p>
+                <p>200 000 ₽</p>
+                <p>Выполнен</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<Footer/>
     </div>
   )
 }

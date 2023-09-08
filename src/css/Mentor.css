@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 
 
@@ -164,6 +165,20 @@ cursor: pointer;
     color: #D6D6D6;
 }
 @media (max-width:1236px) {
+    .mentor-ichi-kotta {
+        width: 1100px;
+        height: 169px;
+        border-radius: 12px;
+        background: #EAEAEA;
+    }
+    .input-block-birr-qanqa {
+        width: 190px !important;
+    }
+    .input-block-birr-qanqa-bilmadim {
+    width: 254px;
+}
+
+
     .user-ichi {
         width: 1100px;
         height: 260px;
@@ -184,8 +199,31 @@ cursor: pointer;
         margin-bottom: 15px;
     }
 
+
 }
 @media (max-width:1123px) {
+    .mentor-ichi-kotta {
+        width: 1000px;
+        height: 169px;
+        border-radius: 12px;
+        background: #EAEAEA;
+    }
+    .selectla-uchun-alohida-joy {
+        width: 85% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .input-block-birr-qanqa-bilmadim {
+        width: 214px !important;
+    }
+    
+    .input-block-birr-qanqa {
+        width: 150px !important;
+    }
+    
+    
+    
+    
     .user-ichi {
         width: 1000px;
         height: 240px;
@@ -226,6 +264,12 @@ cursor: pointer;
 
 }
 @media (max-width:1023px) {
+    .mentor-ichi-kotta {
+        width: 900px;
+        height: 169px;
+        border-radius: 12px;
+        background: #EAEAEA;
+    }    
     .user-ichi {
         width: 900px;
         height: 240px;
@@ -253,6 +297,76 @@ cursor: pointer;
 
 }
 @media (max-width:920px) {
+    .mentor-ichi-kotta {
+        width: 800px;
+        height: 169px;
+        border-radius: 12px;
+        background: #EAEAEA;
+    }
+    .selectla-uchun-alohida-joy {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .mentor-filter-select select {
+        font-size: 16px;
+    }
+    .input-block-birr-sarvi {
+        width: 100px;
+    }
+    .input-block-birr-sarvi input {
+        font-size: 13px !important;
+    }
+    
+    .input-block-birr-qanqa input {
+        font-size: 13px !important;
+    }
+    .input-block-birr-qanqa span {
+        font-size: 14px !important;
+    }
+    .input-block-birr-sarvi span{
+        font-size: 14px !important;
+    }
+    .input-block-birr-qanqa-bilmadim span{
+        font-size: 14px !important;   
+    }
+    .input-block-birr-qanqa-bilmadim input{
+        font-size: 13px !important;   
+    }
+    .input-block-birr-sarvi1 span{
+        font-size: 14px !important;   
+    }
+    .input-block-birr-sarvi1 input{
+        font-size: 13px !important;   
+    }
+    .input-block-birr-qanqa-bilmadim {
+    width: 150px !important;
+}
+.input-block-birr-sarvi {
+    width: 100px !important;
+}
+.filter-text-joy p {
+    font-size: 15px !important;
+}
+
+.buniyam-bitta-divga-orimiz a {
+    font-size: 14px !important;
+}
+.input-block-birr-sarvi1 {
+    width: 83px !important;
+}
+.buniyam-bitta-divga-orimiz {
+    width: 89% !important;
+    display: flex;
+    justify-content: end;
+    padding-top: 15px;
+}
+
+.mentor-filter-select select {
+    font-size: 15px !important;
+}
+
     .user-ichi {
         width: 800px;
         height: 210px;
@@ -286,6 +400,50 @@ cursor: pointer;
 
 }
 @media (max-width:820px) {
+    .mentor-ichi-kotta {
+        width: 700px;
+        height: 169px;
+        border-radius: 12px;
+        background: #EAEAEA;
+    }
+    .mentor-filter-select select {
+        font-size: 13px !important;
+    }
+    .input-block-birr-sarvi input {
+        width: 100%;
+        height: 30px !important;
+        border-radius: 12px;     
+           font-size: 11px !important;
+    }
+    .input-block-birr-qanqa input {
+        width: 97%;
+        height: 30px !important;
+        padding-left: 11px !important;
+        font-size: 11px !important;
+    }
+    .input-block-birr-sarvi span {
+        font-size: 12px !important;
+    }
+    .input-block-birr-qanqa span {
+        font-size: 12px !important;
+    }
+    .input-block-birr-qanqa-bilmadim span {
+        font-size: 12px !important;
+    }
+    .input-block-birr-qanqa-bilmadim input {
+        width: 97%;
+        height: 30px !important; 
+        padding-left: 11px !important;
+        font-size: 11px !important;
+    }
+    .input-block-birr-sarvi1 span {
+        font-size: 12px !important;
+    }
+    .input-block-birr-sarvi1 input {
+        width: 100%;
+        height: 30px !important;
+        font-size: 11px !important;
+    }
     .user-ichi {
         width: 700px;
         height: 210px;
@@ -301,14 +459,183 @@ cursor: pointer;
         margin-left: 14.5%;
         width: 80%;
     }
-
-
+    .input-block-birr-qanqa {
+        width: 120px !important;
+    }
+    .input-block-birr-qanqa-bilmadim {
+        width: 120px !important;
+    }
+    .filter-krug {
+        width: 28.000000000000117px !important; 
+        height: 28.000000000000117px !important; 
+    }
+    .filter-text-joy p {
+        font-size: 13px !important;
+    }
+    .buniyam-bitta-divga-orimiz a {
+        font-size: 13px !important;
+    }
+    .buniyam-bitta-divga-orimiz {
+        width: 85%;
+        display: flex;
+        justify-content: end;
+        padding-top: 10px !important;
+    }
 
 }
 .user-media{
     display: none;
 }
+.media-select-info-select{
+    display: none;
+}
+.tablemedia-mentor{
+    display: none;
+ }
 @media (max-width:715px) {
+    .oq-ran-chap-tarap-text p{
+        margin-top: 15px;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+    .oq-oeoe{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .tablemedia-mentor{
+        display: block;
+        width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+     }
+     .table-media-ichi{
+        width: 80%;
+     }
+     .oq-fon-media-bla{
+        width: 100%;
+        height: 310px;
+        background: #ffffff;
+        border-radius: 12px;
+     }
+     .oq-oeoe{
+        width: 90%;
+        margin: auto;
+        padding-top: 15px;
+     }
+
+     .table{
+        display: none !important;
+     }
+    .mentor-filter-select{
+        display: none !important;
+    }
+    .media-select-info-select{
+        display: block;
+    }
+    .slect-flex-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        gap:15px !important;
+        margin-bottom: 20px;
+    }
+    .slect-flex-wrap select{
+        border: none !important;
+        outline: none !important;
+        background: none !important;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+    font-size: 17px ;
+    font-weight: 400 ;
+    line-height: 19px ; 
+    letter-spacing: 0em ;
+    text-align: left;
+    }
+    .input-form-zapros-keldi-bac-zaib{
+        width: 100%;
+    }
+.input-form-zapros-keldi-bac-zaib input{
+    width: 97.5%;
+    height: 41px;
+    border: 1px solid #979797 !important;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding-left: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 17px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.input-form-zapros-keldi-bac-zaib  button{
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+    border-radius: 12px;
+    gap: 10px;
+    border: none;
+    outline: none;
+    margin-bottom:15px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+cursor: pointer;
+transition: 0.4s;
+}
+.input-form-zapros-keldi-bac-zaib   button:hover{
+    background-color: #FFCB13;
+}
+.buniyam-bitta-divga-orimiz1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 34px;
+  }
+  .buniyam-bitta-divga-orimiz1 a{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 17px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #B0B0B0;
+  }
+    .mentor-ichi-kotta {
+        width: 80% !important;
+        height: auto !important;
+        border-radius: 12px;
+        background: #EAEAEA;
+        margin-bottom: 20px;
+    }
     .user-ichi {
         width: 80%;
         height: 450px;
@@ -459,7 +786,9 @@ color: #D6D6D6;
         border-radius: 0 !important;
         background-color: #ffffff;
         text-align: center;
+        z-index: 1212 !important;
     }
+
 
 }
 @media (max-width:570px) {
@@ -570,13 +899,13 @@ color: #D6D6D6;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 0 !important;
     background-color: rgb(0, 0, 0, 0.667);
-    z-index: 100;
+    z-index: 140 !important;
+    display: block;
+    bottom: 0 !important;
     display: none;
 }
-
-
 
 
 .input-user-form{
@@ -649,6 +978,7 @@ height: 550px;
 border-radius: 35px;
 background-color: #ffffff;
 text-align: center;
+z-index: 100;
 }
 @media (max-width:715px) {
     .teper-login33 {
@@ -821,5 +1151,1383 @@ color: #1BAC43;
     width: 90%;
     margin: auto;
     padding-top: 20px;
+
+}
+.mentor-filter-select select{
+    border: none !important;
+    outline: none !important;
+    background: none !important;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 17px ;
+font-weight: 400 ;
+line-height: 19px ; 
+letter-spacing: 0em ;
+text-align: left;
+
+}
+.selectla-uchun-alohida-joy{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.select-pas-qismi-inputla{
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+.input-block-birr-sarvi{
+    width: 130px;
+}
+.input-block-birr-sarvi input{
+    width: 100%;
+height: 39px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #979797 !important;
+border: none;
+outline: none;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+background: none;
+color: #979797;
+margin-top: 5px;
+}
+.input-block-birr-sarvi span{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+.input-block-birr-qanqa{
+    width: 233px;
+}
+.input-block-birr-qanqa input{
+    width: 97%;
+height: 39px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #979797 !important;
+border: none;
+outline: none;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+background: none;
+color: #979797;
+margin-top: 5px;
+padding-left: 15px;
+}
+.input-block-birr-qanqa span{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.input-block-birr-qanqa-bilmadim{
+    width: 314px;
+}
+.input-block-birr-qanqa-bilmadim input{
+    width: 97%;
+height: 39px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #979797 !important;
+border: none;
+outline: none;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+background: none;
+color: #979797;
+margin-top: 5px;
+padding-left: 15px;
+}
+.input-block-birr-qanqa-bilmadim span{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+
+.input-block-birr-sarvi1{
+    width: 94px;
+}
+.input-block-birr-sarvi1 input{
+    width: 100%;
+height: 39px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #979797 !important;
+border: none;
+outline: none;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+background: none;
+color: #979797;
+margin-top: 5px;
+padding-left: 15px;
+}
+.input-block-birr-sarvi1 span{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+.input-block-birr-sarvi1 input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .input-block-birr-sarvi input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .input-block-birr-qanqa input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .filter-joy-bu-nmaga{
+width: 239px;
+position: relative;
+left: 20px;
+  }
+  .filter-krug{
+    width: 31.000000000000117px;
+height: 31.000000000000117px;
+border-radius: 50%;
+background: #FFCB13;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+  }
+  .gakochka-och{
+    display: none ;
+  }
+  .filter-kichkina-tepa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .filter-text-joy p{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left; 
+  }
+  .buniyam-bitta-divga-orimiz{
+    width: 85%;
+    display: flex;
+    justify-content: end;
+    padding-top: 15px;
+  }
+  .buniyam-bitta-divga-orimiz a{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #B0B0B0;
+  }
+  @media (max-width:556px) {
+    .slect-flex-wrap select {
+        border: none !important;
+        outline: none !important;
+        background: none !important;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .buniyam-bitta-divga-orimiz1 a {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #B0B0B0;
+    }
+    .input-form-zapros-keldi-bac-zaib input {
+    font-size: 15px;
+}
+  }
+  @media (max-width:465px) {
+    .slect-flex-wrap select {
+        border: none !important;
+        outline: none !important;
+        background: none !important;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .input-form-zapros-keldi-bac-zaib input {
+        width: 95.5%;
+        height: 41px;
+        border: 1px solid #979797 !important;
+        background: none;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        margin-top: 12px;
+        padding-left: 12px;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .input-form-zapros-keldi-bac-zaib button {
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 12px;
+        gap: 10px;
+        border: none;
+        outline: none;
+        margin-bottom: 15px;
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Merriweather', serif;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .buniyam-bitta-divga-orimiz1 a {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #B0B0B0;
+    }
+  }
+  @media (max-width:444px) {
+    .slect-flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px !important;
+        margin-bottom: 20px;
+    }
+    .slect-flex-wrap select {
+        border: none !important;
+        outline: none !important;
+        background: none !important;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+  }
+
+
+
+
+
+  .table{
+    display: block;
+    width: 1400px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.table .tr{
+   background: #ffffff;
+    margin-top: 20px;
+width: 100%;
+border-radius: 12px;
+
+}
+.tepa_td{
+    display: flex;
+    align-items: center;
+justify-content: space-around;
+}
+
+.button_c{
+    display: flex;
+    justify-content: space-around;
+}
+.ddd{
+    width: 100%;
+    display: none;
+   
+}
+.tepa_td{
+    width: 100%;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.table-tepa-qismi{
+    display: flex;
+    width: 95%; 
+margin: auto;  
+justify-content: space-between;
+margin-bottom: 40px;
+}
+.td_data{
+    font-family: Gilroy;
+font-size: 17px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.td_addres{
+    font-family: 'Alef', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.td_data1{
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left; 
+}
+.td_beton{
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left; 
+}
+.yd_marka{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 21px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+}
+.td_yoldami{
+    font-family: 'Alef', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #1BAC43;
+}
+.table-tepa-qismi p{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 17px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.past_td{
+    width: 94%;
+    margin: auto;
+    height: 70px;
+border-bottom: 2px dashed  #E6E6E6;
+border-top: 2px dashed  #E6E6E6;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.dumoloadasad{
+    width: 31.000000000000117px;
+height: 31.000000000000117px;
+background: #000000;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.dumoloadasad img{
+    width: 14px;
+height: 14px;
+cursor: pointer;
+}
+.izmenit-zakaz-but{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.oplata-blocc p{
+    font-family: 'Alef', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 5px;
+}
+.oplata-blocc h4{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 20px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+}
+.izmenit-zakaz-but p{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 600;
+
+letter-spacing: 0em;
+text-align: left;
+}
+
+.past_td1{
+    width: 94%;
+    margin: auto;
+    height: 70px;
+border-bottom: 2px dashed  #E6E6E6;
+border-top: 2px dashed  #E6E6E6;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.oplata-button-xzxz{
+    width: 307px;
+height: 45px;
+border-radius: 12px;
+background: #F6F6F6;
+display: flex;
+align-items: center;
+gap: 10px;
+justify-content: center;
+}
+.skachat-cjekk {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.skachat-cjekk span{
+    font-family: 'Alef', sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #E93333;
+}
+.button-asdasabjdfsdgsf button{
+    width: 270px;
+height: 51px;
+border-radius: 12px;
+background: linear-gradient(0deg, #E2E2E2, #E2E2E2),
+linear-gradient(0deg, #F4F4F4, #F4F4F4);
+border: 1px solid #E2E2E2;
+border: none;
+outline: none;
+font-family: Montserrat Alternates;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+cursor: pointer;
+}
+.button-asdasabjdfsdgsf{
+    width: 94%;
+    margin: auto;
+    height: 90px;
+border-top: 2px dashed  #E6E6E6;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.button-asdasabjdfsdgsf button:hover{
+    background: #E93333 !important;
+    color: white;
+}
+.dumoasdasdsada{
+    width: 31.000000000000117px;
+height: 31.000000000000117px;
+border-radius: 50%;
+background-color: #E93333;
+display: flex;
+align-items: center;
+justify-content: center ;
+}
+.logogogogogsa span{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+font-size: 16px;
+font-weight: 600;
+
+letter-spacing: 0em;
+text-align: left;
+}
+.logogogogogsa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ .adres-left-position{
+    position: relative;
+    right: 19px;
+ }
+ .data-vreminiya-db{
+    position: relative;
+    left: 82px;
+ }
+ .data-marka-dbb{
+    position: relative;
+    left: 56px;
+ }
+ .data-privodsta-amma{
+    position: relative;
+    left: 55px;
+ }
+ .data-kalitestvo{
+    position: relative;
+    left: 30px;
+ }
+ .data-dopoliteer{
+    position: relative;
+    left: 10px;
+ }
+ .data-stoimas{
+    position: relative;
+    right: 25px;
+ }
+ .data-status{
+    position: relative;
+    right: 18px;
+ }
+ @media (max-width:1446px) {
+    .table {
+        display: block;
+        width: 1300px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    /* .logogogogogsa span {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    } */
+    .button-asdasabjdfsdgsf button {
+        width: 240px;
+        height: 51px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, #E2E2E2, #E2E2E2), linear-gradient(0deg, #F4F4F4, #F4F4F4);
+        border: 1px solid #E2E2E2;
+        border: none;
+        outline: none;
+        font-family: Montserrat Alternates;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+ }
+ @media (max-width:1337px) {
+    .table {
+        display: block;
+        width: 1200px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .table-tepa-qismi p {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_data {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_addres {
+        font-family: 'Alef', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_data1 {
+        font-family: Gilroy;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_beton {
+        font-family: Gilroy;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .yd_marka {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_yoldami {
+        font-family: 'Alef', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1BAC43;
+    }
+    .button-asdasabjdfsdgsf button {
+        width: 200px;
+        height: 51px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, #E2E2E2, #E2E2E2), linear-gradient(0deg, #F4F4F4, #F4F4F4);
+        border: 1px solid #E2E2E2;
+        border: none;
+        outline: none;
+        font-family: Montserrat Alternates;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .oplata-blocc p {
+        font-family: 'Alef', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .oplata-blocc h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .izmenit-zakaz-but p {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .skachat-cjekk span {
+        font-family: 'Alef', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #E93333;
+    }
+    .logogogogogsa span {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .adres-left-position {
+        position: relative;
+        right: 24px;
+    }
+    .data-vreminiya-db {
+        position: relative;
+        left: 63px;
+    }
+    .data-marka-dbb {
+        position: relative;
+        left: 46px;
+    }
+ }
+ @media (max-width:1241px) {
+    .table {
+        display: block;
+        width: 1100px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .table-tepa-qismi p {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .data-vreminiya-db {
+        position: relative;
+        left: 58px;
+    }
+    .data-marka-dbb {
+        position: relative;
+        left: 46px;
+    }
+    .data-privodsta-amma {
+    position: relative;
+    left: 43px;
+}
+.data-kalitestvo {
+    position: relative;
+    left: 22px;
+}
+.data-dopoliteer {
+    position: relative;
+    left: 5px;
+}
+#ooossss{
+    display: none;
+}
+ }
+ @media (max-width:1125px) {
+    .table {
+        display: block;
+        width: 1000px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .table-tepa-qismi p {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_data {
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.td_addres {
+    font-family: 'Alef', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.td_data1 {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.td_beton {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.yd_marka {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.button-asdasabjdfsdgsf button {
+    width: 170px;
+    height: 45px;
+    border-radius: 12px;
+    background: linear-gradient(0deg, #E2E2E2, #E2E2E2), linear-gradient(0deg, #F4F4F4, #F4F4F4);
+    border: 1px solid #E2E2E2;
+    border: none;
+    outline: none;
+    font-family: Montserrat Alternates;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+.oplata-button-xzxz {
+    width: 267px;
+    height: 45px;
+    border-radius: 12px;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.oplata-blocc h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.oplata-blocc p {
+    font-family: 'Alef', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.data-dopoliteer {
+    position: relative;
+    left: -1px;
+}
+.data-kalitestvo {
+    position: relative;
+    left: 18px;
+}
+.data-privodsta-amma {
+    position: relative;
+    left: 33px;
+}
+.data-marka-dbb {
+    position: relative;
+    left: 40px;
+}
+ }
+ @media (max-width:1024px) {
+    .table {
+        display: block;
+        width: 900px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .oplata-blocc h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .oplata-button-xzxz {
+        width: 247px;
+        height: 45px;
+        border-radius: 12px;
+        background: #F6F6F6;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .button-asdasabjdfsdgsf button {
+        width: 160px;
+        height: 45px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, #E2E2E2, #E2E2E2), linear-gradient(0deg, #F4F4F4, #F4F4F4);
+        border: 1px solid #E2E2E2;
+        border: none;
+        outline: none;
+        font-family: Montserrat Alternates;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .izmenit-zakaz-but p {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .logogogogogsa span {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .data-privodsta-amma {
+        position: relative;
+        left: 30px;
+    }
+    .table-tepa-qismi p {
+        font-size: 12px;
+    }
+    .data-vreminiya-db {
+        position: relative;
+        left: 50px;
+    }
+    .data-marka-dbb {
+        position: relative;
+        left: 35px;
+    }
+    .data-privodsta-amma {
+        position: relative;
+        left: 26px;
+    }
+    .data-kalitestvo {
+        position: relative;
+        left: 15px;
+    }
+    .data-dopoliteer {
+        position: relative;
+        left: -5px;
+    }
+    .data-stoimas {
+        position: relative;
+        right: 19px;
+    }
+ }
+ @media (max-width:925px) {
+    .table {
+        display: block;
+        width: 870px;
+        margin: auto;
+        margin-top: 40px;
+    }
+ }
+ @media (max-width:905px) {
+    .yd_marka {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_yoldami {
+        font-family: 'Alef', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1BAC43;
+    } 
+    .td_addres {
+        font-family: 'Alef', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .oplata-blocc p {
+        font-family: 'Alef', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .oplata-button-xzxz {
+        width: 237px;
+        height: 45px;
+        border-radius: 12px;
+        background: #F6F6F6;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .logogogogogsa span {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .skachat-cjekk span {
+        font-family: 'Alef', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #E93333;
+    }
+    .izmenit-zakaz-but p {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .table {
+        display: block;
+        width: 800px;
+        margin: auto;
+        margin-top: 40px;
+        overflow: auto;
+    }
+    .data-marka-dbb {
+        position: relative;
+        left: 40px;
+    }
+    .adres-left-position {
+        position: relative;
+        right: 0;
+        left: -20px;
+    }
+    .datasdaljdad{
+        position: relative;
+        right:15px;
+    }
+    .table-tepa-qismi p {
+        font-size: 11px;
+    }
+    .td_data1 {
+        font-family: Gilroy;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 10px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .button-asdasabjdfsdgsf button {
+        width: 140px;
+        height: 45px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, #E2E2E2, #E2E2E2), linear-gradient(0deg, #F4F4F4, #F4F4F4);
+        border: 1px solid #E2E2E2;
+        border: none;
+        outline: none;
+        font-family: Montserrat Alternates;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .oplata-blocc p {
+        font-family: 'Alef', sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .oplata-blocc h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .oplata-button-xzxz {
+        width: 217px;
+        height: 45px;
+        border-radius: 12px;
+        background: #F6F6F6;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    span {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+ }
+ @media (max-width:825px) {
+    .td_data {
+        font-family: Gilroy;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_addres {
+        font-family: 'Alef', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_data1 {
+        font-family: Gilroy;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 5px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_beton {
+        font-family: Gilroy;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .yd_marka {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .td_yoldami {
+        font-family: 'Alef', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1BAC43;
+    }
+    .table-tepa-qismi p {
+        font-size: 10px;
+    }
+    .table {
+        display: block;
+        width: 749px;
+        margin: auto;
+        margin-top: 40px;
+
+    }
+    .oplata-button-xzxz {
+        width: 197px;
+        height: 45px;
+        border-radius: 12px;
+        background: #F6F6F6;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .oplata-blocc h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .button-asdasabjdfsdgsf button {
+        width: 130px;
+        height: 45px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, #E2E2E2, #E2E2E2), linear-gradient(0deg, #F4F4F4, #F4F4F4);
+        border: 1px solid #E2E2E2;
+        border: none;
+        outline: none;
+        font-family: Montserrat Alternates;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+ }
+ @media (max-width:763px) {
+    .table {
+        display: block;
+        width: 700px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .dumoloadasad {
+        width: 25.000000000000117px;
+        height: 25.000000000000117px;
+        background: #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .oplata-button-xzxz {
+display: none;
+    }
+    .button-asdasabjdfsdgsf button {
+        width: 120px;
+        height: 45px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, #E2E2E2, #E2E2E2), linear-gradient(0deg, #F4F4F4, #F4F4F4);
+        border: 1px solid #E2E2E2;
+        border: none;
+        outline: none;
+        font-family: Montserrat Alternates;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .oplata-blocc p {
+        font-family: 'Alef', sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+ }
+
 }
 

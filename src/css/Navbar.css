@@ -202,9 +202,7 @@ cursor: pointer;
 .nav_1 img{
     cursor: pointer;
 }
-.nav_3 img{
-    cursor: pointer;
-}
+
 .nav_menu{
     display: none;
 }
@@ -1953,4 +1951,8 @@ padding-top: 25px;
     .FIZIKAAASDASSDAASD span {
         font-size: 3.5vw;
     }
+}
+.nav_2_page8 a{
+    list-style: none !important;
+    text-decoration: none !important;
 }

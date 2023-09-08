@@ -93,7 +93,7 @@ export default function Navbar() {
                     <span className='s2 s22' onClick={()=>modalpritenziya()}>Оставить претензию</span>
                 </div>
                 <div className="nav_2_page8">
-                    <button className='b1'>  <BsTelephoneFill className='icon2'/>    Перезвоните мне</button>
+                   <a href="tel:998997185110"> <button className='b1'>  <BsTelephoneFill className='icon2'/>    Перезвоните мне</button></a>
                 </div>
                 <div className="nav_2_page9">
                     <button className='b2'>  <BiSolidUser className='icon2'/>Личный кабинет</button>
