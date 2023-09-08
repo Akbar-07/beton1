@@ -1,6 +1,11 @@
 
 import Navbar from './Navbar'
 import "../css/Home.css"
+import fabrika from '../img/fabrika_betona3.png'
+import betonshik1 from '../img/betonshik1.png'
+import sibavisastroy from '../img/sibavisastroy.png'
+import more_betona1 from '../img/more_betona1.png'
+import noviy_beton1 from '../img/noviy_beton1.png'
 import IMGG1 from "../img/Ellipse 10.png"
 import IMGG2 from "../img/7911246 1.png"
 import IMGG3 from "../img/5285548 1.png"
@@ -101,7 +106,66 @@ function sariq2(){
     document.querySelector("#al1").style = "background-color:#FFCB13;"
     document.querySelector("#al2").style = "background-color:#EBEBEB;"
 }
-
+function fabrika2() {
+    document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".fabrikaimg").style="display:none"
+    document.querySelector(".fabrikaimg1").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function betonshik2() {
+    document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".betonshikimg").style="display:none"
+    document.querySelector(".betonshikimg1").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function sibavisastroy2() {
+    document.querySelector(".sibavisastroyimg1").style="display:none"
+    document.querySelector(".sibavisastroyimg").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function more_betona2() {
+    document.querySelector(".more_betonimg").style="display:none"
+    document.querySelector(".more_betonimg1").style="display:flex"
+    document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function noviy_beton2() {
+    document.querySelector(".noviy_betonimg").style="display:none"
+    document.querySelector(".noviy_betonimg1").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
+    document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+}
 
   return (
     <div>
@@ -442,19 +506,19 @@ function sariq2(){
 
         <div className="beton_homiy1">
            <div className="beton_homiy1_img">
-           <div className="img5"><img src={IMG10} alt="" /></div>
+           <div className="img5"><img onClick={()=>fabrika2()} className='fabrikaimg' src={IMG10} alt="" /><img style={{display:"none"}} className='fabrikaimg1' src={fabrika} alt="" /></div>
            </div>
            <div className="beton_homiy1_img">
-            <img src={IMG11} alt="" />
+            <img src={IMG11} alt="" className='betonshikimg' onClick={()=>betonshik2()} /><img src={betonshik1} style={{display:"none"}} className='betonshikimg1' alt="" />
            </div>
            <div className="beton_homiy1_img">
-             <img src={IMG12} alt="" />
+             <img className='sibavisastroyimg' src={IMG12} alt="" /><img onClick={()=>sibavisastroy2()} className='sibavisastroyimg1' style={{display:"none"}} src={sibavisastroy} alt="" />
            </div>
            <div className="beton_homiy1_img">
-            <img src={IMG13} alt="" />
+            <img onClick={()=>more_betona2()} src={IMG13} className='more_betonimg' alt="" /><img style={{display:"none"}} className='more_betonimg1' src={more_betona1} alt="" />
            </div>
            <div className="beton_homiy1_img">
-             <div className="img4"><img src={IMG14} alt="" /></div>
+             <div className="img4"><img className='noviy_betonimg' onClick={()=>noviy_beton2()} src={IMG14} alt="" /> <img style={{display:"none"}} className='noviy_betonimg1' src={noviy_beton1} alt="" /></div>
            </div>
         </div>
 

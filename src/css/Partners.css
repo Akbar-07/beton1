@@ -21,6 +21,9 @@
     align-items: center;
     cursor: pointer;
 }
+.fabrika1{
+    width: 60%;
+}
 .Header_cards{
     width: 100%;
     background-color: white;

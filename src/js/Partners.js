@@ -4,6 +4,7 @@ import start from "../img/Group 100.png"
 import Navbar from './Navbar'
 import Footer from './Footer'
 import fabrika from '../img/fabrika_betona3.png'
+import fabrika1 from "../img/Mask group (2).png"
 import betonshik from '../img/betonshik.png'
 import betonshik1 from '../img/betonshik1.png'
 import sibavisastroy from '../img/sibavisastroy.png'
@@ -50,6 +51,8 @@ export default function Partners() {
         document.querySelector(".more_betona1").style = "display:none"
         document.querySelector(".noviy_beton").style = "display:flex"
         document.querySelector(".noviy_beton1").style = "display:none"
+        document.querySelector(".fabrika1").style = "display:flex"
+        document.querySelector(".fabrika").style = "display:none"
     }
     function sibavisastroy2() {
         document.querySelector(".headerimg").src = sibavisastroy1
@@ -61,6 +64,8 @@ export default function Partners() {
         document.querySelector(".more_betona1").style = "display:none"
         document.querySelector(".noviy_beton").style = "display:flex"
         document.querySelector(".noviy_beton1").style = "display:none"
+        document.querySelector(".fabrika1").style = "display:flex"
+        document.querySelector(".fabrika").style = "display:none"
     }
     function more_betona2() {
         document.querySelector(".headerimg").src = more_betona1
@@ -72,11 +77,15 @@ export default function Partners() {
         document.querySelector(".sibavisastroy1").style = "display:none"
         document.querySelector(".noviy_beton").style = "display:flex"
         document.querySelector(".noviy_beton1").style = "display:none"
+        document.querySelector(".fabrika1").style = "display:flex"
+        document.querySelector(".fabrika").style = "display:none"
     }
     function noviy_beton2() {
         document.querySelector(".headerimg").src = noviy_beton1
         document.querySelector(".noviy_beton1").style = "display:flex"
         document.querySelector(".noviy_beton").style = "display:none"
+        document.querySelector(".fabrika1").style = "display:flex"
+        document.querySelector(".fabrika").style = "display:none"
         document.querySelector(".more_betona").style = "display:flex"
         document.querySelector(".more_betona1").style = "display:none"
         document.querySelector(".betonshik").style = "display:flex"
@@ -94,6 +103,8 @@ export default function Partners() {
         document.querySelector(".betonshik1").style = "display:none"
         document.querySelector(".sibavisastroy").style = "display:flex"
         document.querySelector(".sibavisastroy1").style = "display:none"
+        document.querySelector(".fabrika").style = "display:flex"
+        document.querySelector(".fabrika1").style = "display:none"
     }
     return (
 
@@ -127,7 +138,7 @@ export default function Partners() {
             },
           }} className="mySwiper" id="swipers">
                             <SwiperSlide><div className="partner_card">
-                                <img onClick={() => fabrika2()} src={fabrika} alt="" /></div></SwiperSlide>
+                                <img onClick={() => fabrika2()} src={fabrika} alt="" className='fabrika' /> <img style={{display:"none"}} onClick={() => fabrika2()} src={fabrika1} className='fabrika1'  alt="" /> </div></SwiperSlide>
                             <SwiperSlide><div className="partner_card">
                                 <img onClick={() => betonshik2()} className='betonshik' src={betonshik} alt="" /><img style={{ display: "none" }} className='betonshik1' src={betonshik1} alt="" /></div></SwiperSlide>
                             <SwiperSlide><div className="partner_card">
