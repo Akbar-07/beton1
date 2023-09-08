@@ -8,12 +8,13 @@ import biladim from '../img/Group 201 (1).png'
 import { BiChevronDown } from 'react-icons/bi'
 import skachat from '../img/material-symbols_download.png'
 import koment from '../img/Group 207.png'
+import skachat2 from '../img/Vector (2).png'
 
 import {BsCheckLg} from "react-icons/bs"
 
 import data from '../js/Data'
 import Footer from './Footer'
-
+import mediarasm from '../img/Mask group112.png'
 
 function modalochil(){
     document.querySelector(".user-modal").style=`display:block`
@@ -56,6 +57,15 @@ function jonibek(params) {
     }
 }
 
+function pasgatext(){
+    document.querySelector(".kotta-ichi-iassdk-asdd").style=`display:block;`
+    document.querySelector(".bitta-krug-qlilife").style=`display:none`
+}
+
+function textyopil(){
+    document.querySelector(".kotta-ichi-iassdk-asdd").style=`display:none;`
+    document.querySelector(".bitta-krug-qlilife").style=`display:block`
+}
 
 
 export default function User() {
@@ -476,7 +486,7 @@ const [selected, setSelected] = useState("");
 </div>
 <div className="tablemedia-mentor">
     <div className="table-media-ichi">
-        <div className="oq-fon-media-bla">
+        <div className="oq-fon-media-bla" >
             <div className="oq-oeoe">
             <div className="oq-ran-chap-tarap-text">
                 <p>Номер заказа</p>
@@ -486,20 +496,110 @@ const [selected, setSelected] = useState("");
                 <p>Производитель</p>
                 <p>Кол-во</p>
                 <p>Доп. опции</p>
+                <p>Стоимость</p>
                 <p>Статус</p>
                 </div>
                 <div className="oq-ran-ong-tarap-text">
                 <p>230223 230223</p>
-                <p>Адрес</p>
-                <p>Дата, время</p>
-                <p>Марка</p>
+                <p>г. Воронеж, ул. Старая, д. 62</p>
+                <p>23.02.23 13:00-16:00</p>
+                <p>Бетон М300</p>
                 <p>Производитель</p>
-                <p>Кол-во</p>
-                <p>Доп. опции</p>
-                <p>Статус</p>
+                <p>20шт.</p>
+                <p>Дополнительные опции</p>
+                <p>200 000 ₽</p>
+                <p className='bajarilddiddi'>Выполнен</p>
                 </div>
             </div>
+            <div className="pastarapiadta-pasga-koroc">
+                <div className="bitta-krug-qlilife" onClick={()=>pasgatext()}>
+                <box-icon name='down-arrow-alt' color="white" ></box-icon>
+                </div>
+            </div>
+<div className="kotta-ichi-iassdk-asdd">
+                <div className="oq-fon-line"></div>
+            <div className="oq-oeoe">
+            <div className="oq-ran-chap-tarap-text">
+                <p>Оплата</p>
+                <p>Тариф</p>
+                <p>Машина</p>
+                <p>Швинг</p>
+                <p>Время шв.</p>
+                <p>Интервал</p>
+                <p>Доп. опции</p>
+                </div>
+                <div className="oq-ran-ong-tarap-text">
+                <p>Наличные</p>
+                <p>Эконом</p>
+                <p>3м3</p>
+                <p>15м</p>
+                <p>3 часа</p>
+                <p>3 часа   </p>
+                <p>Дополнительные опции</p>
+                </div>
+                
+            </div>
+            <div className="izmenit-zakaz-but23">
+                <div className="dumoloadasad22">
+                   <img src={qalam} alt="" /> 
+                </div>
+                <p>Изменить 
+заказ</p>
+            </div>
+            <div className="oq-fon-line"></div>
+            <div className="mayli-qolda-yozarkanmande-bla">
+                <div className="bitta-kotta-mayli-bla">
+                    <div className="bitta-block-page">
+                        <div className="bblllfla">
+                            <p>Стоимость бетона:</p>
+                            <h4>5 000 ₽</h4>
+                        </div>
+                        <div className="bblllfla">
+                            <p>Стоимость доставки:</p>
+                            <h4>5 000 ₽</h4>
+                        </div>
+                        <div className="bblllfla">
+                            <p>Стоимость доп.услуг:</p>
+                            <h4>5 000 ₽</h4>
+                        </div>
+                    </div>
+                    <div className="bitta-block-page2">
+                    <div className="bblllfla">
+                            <p>Итого:</p>
+                            <h4 className='qizilchekkk'>5 000 ₽</h4>
+                        </div>
+                    </div>
+                 
+                </div>
+                <div className="oplata-button-xzxz11">
+                <img src={biladim} alt="" /><p>12 000 бонусов начисленно</p>
+            </div>
+            <div className="skachat-cjekk">
+                <div className="asdasdsaadss"><img src={skachat2} alt="" /></div><p className='asdasajsdsasd'>Скачать чек</p>
+            </div>
+            </div>
+            <div className="oq-fon-line"></div>
+            <div className="buttonla-kopde-juda-koppp">
+                <button>Оставить претензию</button> <br />
+                <button>Связаться с водителем</button> <br />
+                <button>Связаться с логистом</button><br />
+                <button>Отменить заказ</button><br />
+            </div>
+            <div className="logogogogogsa">
+                    <div className="dumoasdasdsada">
+                    <img src={koment} alt="" />
+                    </div>
+                    <p>Оставить отзыв</p>
+                    
+                </div>
+                <div className="pastarapiadta-pasga-koroc1">
+                <div className="bitta-krug-qlilife12" onClick={()=>textyopil()}>
+                <box-icon name='down-arrow-alt' rotate='180' color="white" ></box-icon>
+                </div>
+            </div>
+</div>
         </div>
+        
     </div>
 </div>
 <Footer/>

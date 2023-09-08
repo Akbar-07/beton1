@@ -96,7 +96,7 @@ export default function Navbar() {
                    <a href="tel:998997185110"> <button className='b1'>  <BsTelephoneFill className='icon2'/>    Перезвоните мне</button></a>
                 </div>
                 <div className="nav_2_page9">
-                    <button className='b2'>  <BiSolidUser className='icon2'/>Личный кабинет</button>
+                    <button className='b2' onClick={()=> window.location="/mentor"}>  <BiSolidUser className='icon2'/>Личный кабинет</button>
                 </div>
                 </div>
             </div>

@@ -2536,6 +2536,9 @@ letter-spacing: 0em;
     display: none;
 }
 @media (max-width:723px) {
+    .beton_sar{
+        display: none;
+    }
     .bla-arrowe-ichi-endi {
         display: none;
     } 

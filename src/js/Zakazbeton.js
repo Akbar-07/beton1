@@ -1776,7 +1776,7 @@ function check_ochil(id){
             </div>
         </div>
     </div>
-    <div className="samiy-pasledniy-joy-oplata" id='gigigigi'>
+    {/* <div className="samiy-pasledniy-joy-oplata" id='gigigigi'>
     <div className="letsgo-oplata-ye">
         <div className="bla-arrowe-ichi-endi">
             <h2>Заказ</h2>
@@ -1969,7 +1969,7 @@ function check_ochil(id){
             </div>
         </div>
     </div>
-   </div>
+   </div> */}
       </div>
    
   )
