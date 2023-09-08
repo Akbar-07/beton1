@@ -29,6 +29,15 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 
+// Import Swiper styles
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { FreeMode, Pagination } from 'swiper/modules';
+
+
 
 export default function Partners() {
     function betonshik2() {
@@ -46,7 +55,7 @@ export default function Partners() {
         document.querySelector(".headerimg").src = sibavisastroy1
         document.querySelector(".betonshik").style = "display:flex"
         document.querySelector(".betonshik1").style = "display:none"
-        document.querySelector(".sibavisastroy1").style = "display:flex"
+        document.querySelector(".sibavisastroy1").style = "display:flex !important"
         document.querySelector(".sibavisastroy").style = "display:none"
         document.querySelector(".more_betona").style = "display:flex"
         document.querySelector(".more_betona1").style = "display:none"
@@ -98,9 +107,25 @@ export default function Partners() {
                 </div>
                 <div className="for_hidden">
                     <div className="header_images">
-                        <Swiper slidesPerView={3}
-                        
-                            spaceBetween={30} className="mySwiper" id="swipers">
+                        <Swiper slidesPerView={5}
+        spaceBetween={30}
+        freeMode={true}
+        modules={[FreeMode, Pagination]} breakpoints={{
+            // when window width is >= 640px
+            320: {
+              slidesPerView: 2,
+            },
+            580: {
+                slidesPerView: 3,
+              },
+            800: {
+                slidesPerView: 4,
+              },
+            // when window width is >= 768px
+            1000: {
+              slidesPerView: 5,
+            },
+          }} className="mySwiper" id="swipers">
                             <SwiperSlide><div className="partner_card">
                                 <img onClick={() => fabrika2()} src={fabrika} alt="" /></div></SwiperSlide>
                             <SwiperSlide><div className="partner_card">
@@ -112,16 +137,7 @@ export default function Partners() {
                             <SwiperSlide><div className="partner_card">
                                 <img onClick={() => noviy_beton2()} className='noviy_beton' src={noviy_beton} alt="" /><img style={{ display: "none" }} className='noviy_beton1' src={noviy_beton1} alt="" /></div></SwiperSlide>
                         </Swiper>
-                        <div className="partner_card">
-                            <img onClick={() => fabrika2()} src={fabrika} alt="" /></div>
-                        <div className="partner_card">
-                            <img onClick={() => betonshik2()} id='betonshik' className='betonshik' src={betonshik} alt="" /><img style={{ display: "none" }} id='betonshik1' className='betonshik1' src={betonshik1} alt="" /></div>
-                        <div className="partner_card">
-                            <img onClick={() => sibavisastroy2()} className='sibavisastroy' src={sibavisastroy} alt="" /><img className='sibavisastroy1' style={{ display: "none" }} src={sibavisastroy1} alt="" /></div>
-                        <div className="partner_card">
-                            <img onClick={() => more_betona2()} className='more_betona' src={more_betona} alt="" /><img className='more_betona1' style={{ display: "none" }} src={more_betona1} alt="" /></div>
-                        <div className="partner_card">
-                            <img onClick={() => noviy_beton2()} className='noviy_beton' src={noviy_beton} alt="" /><img style={{ display: "none" }} className='noviy_beton1' src={noviy_beton1} alt="" /></div>
+                       
                     </div></div>
                 <div className="Header_cards">
                     <div className="for_flex">
