@@ -203,7 +203,7 @@ function noviy_beton2() {
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
         </div>
-        <div className="rek rek_orig">
+        {/* <div className="rek rek_orig">
         <div className="rek_dumaloq_keyin_1">
                 </div>
                 <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir' src={IMGG8} alt="" />
@@ -229,7 +229,7 @@ function noviy_beton2() {
         <div className="rek_dumaloq3">
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
-        </div>
+        </div> */}
         <div className="rek1">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper sviperS">
         <SwiperSlide className='azx'>  <div className="rek">
