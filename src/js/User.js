@@ -1,10 +1,44 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import Navbar from '../js/Navbar'
 import '../css/User.css'
 import user from '../img/Vector (13).png'
 import qalam from '../img/qalam1.png'
 import zalatoy from '../img/Group 164.png'
 import biladim from '../img/Group 201 (1).png'
+import IMG1 from "../img/m350 1.png"
+import IMG2 from "../img/cement 1 (1).png"
+import IMG3 from "../img/183973062b952e05464d21c9f08676f9 1.png"
+import IMG5 from "../img/Group (5).png"
+import IMG6 from "../img/Group (6).png"
+import IMG7 from "../img/Group (7).png"
+import IMG8 from "../img/Group (8).png"
+import IMG9 from "../img/Group (9).png"
+import IMG10 from "../img/Laptop.png"
+import IMG11 from "../img/Debit Card.png"
+import IMG12 from "../img/Coin In Hand.png"
+import IMG13 from "../img/Money With Arrow.png"
+import IMG14 from "../img/Group (11).png"
+import {BsCheckLg} from "react-icons/bs"
+import {BsArrowLeft} from "react-icons/bs"
+import {BsArrowRight} from "react-icons/bs"
+
+function yoqil(id){
+    for (let i = 0; i < document.querySelectorAll(".card_ptich_dumaloq_ptich").length; i++) {
+      if(id === i){
+        document.querySelectorAll(".card_ptich_dumaloq_ptich")[i].style = "display:block;" 
+        document.querySelectorAll(".zakaz_kvadrat_map_card")[i].style = "border:1px solid #FFCB13;"
+      }
+      else{
+     document.querySelectorAll(".card_ptich_dumaloq_ptich")[i].style = "display:none;" 
+     if(i!==3){
+      document.querySelectorAll(".zakaz_kvadrat_map_card")[i].style = "border:1px solid #FFCB13;"
+     }
+      }
+    }
+  }
+  function global2(){
+  
+   }
 
 function modalochil(){
     document.querySelector(".user-modal").style=`display:block`
@@ -23,7 +57,47 @@ function modalbonusyopil(){
     document.querySelector("body").style=`overflow: scroll;`
 }
 
+function buoyna1(){
+
+}
+function buoyna2(){
+
+}
+
 export default function User() {
+    const [zag, setZag] = useState(1)
+    const [zol, setZol] = useState([
+        {
+          img : IMG1,
+          name : "Бетон"
+        },
+        {
+          img : IMG2,
+          name : "Пескобетон"
+        },
+        {
+          img : IMG3,
+          name : "Строительный раствор"
+        },
+      ])
+      const [zol1, setZol1] = useState([
+        {
+          img : IMG10,
+          name : "Онлайн"
+        },
+        {
+          img : IMG11,
+          name : "Перевод на карту"
+        },
+        {
+          img : IMG12,
+          name : "Наличные"
+        },
+        {
+          img : IMG13,
+          name : "Предоплата"
+        },
+      ])
   return (
     <div className='user'>
         <Navbar/>
@@ -229,9 +303,51 @@ export default function User() {
         </div>
         <div className="user-vutton-btn">
             <div className="udser-vtn-kotta">
-                <button >Существующие заказы</button>
-                <button>Сделать новый заказ</button>
+                <button  onClick={()=>buoyna1()}>Существующие заказы</button>
+                <button onClick={()=>buoyna2()}>Сделать новый заказ</button>
             </div>
+            
+        </div>
+        <div className="zakaz_kvadrat">
+        <div className="zakaz_kvadrat_div">
+        <span className='zakaz_kvadrat_span'>Что необходимо?</span>
+        </div>
+        <div className="zakaz_kvadrat_map">
+          {zol.map((item,key)=>{
+            return <div key={key} className="zakaz_kvadrat_map_card">
+              <div className="card_ptich">
+                <div onClick={()=>{yoqil(key)}} className="card_ptich_dumaloq">
+                  <BsCheckLg className='card_ptich_dumaloq_ptich'/>
+                </div>
+              </div>
+              <img src={item.img} alt="" /><br />
+            <div className="wwse">
+            <span className='map_span'>{item.name}</span>
+            </div>
+            </div>
+          })}
+         <div className="zakaz_kvadrat_map_card1">
+              <div className="card_ptich">
+                <div onClick={()=>{yoqil(3)}} className="card_ptich_dumaloq">
+                  <BsCheckLg className='card_ptich_dumaloq_ptich'/>
+                </div>
+              </div>
+             <div className="jklo">
+             <span className='map_span1'>Специальный бетон</span><br />
+             </div>
+              <span className='map_span11'>Отправим ваш запрос <br /> на все заводы</span>
+            </div>
+        </div>
+        <div className="zakaz_kvadrat_zagruska">
+          <span>1/9</span>
+          <div className="zakaz_kvadrat_zagruska_ril">
+            <div className="zakaz_kvadrat_zagruska_ril1"></div>
+          </div>
+        </div>
+        <div className="zakaz_kvadrat_tegi">
+          <button onClick={()=>window.location="/home"} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
+          <button onClick={()=>{global2()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          </div>
         </div>
     </div>
   )

@@ -15,7 +15,7 @@ import noga from '../pages/maki_shoe.png'
 import warn from '../pages/Alert (1).png'
 import '../css/Pamyatka.css'
 import Navbar from './Navbar'
-import Footer from './Footer'
+
 export default function Pamatka() {
   return (
     <div>
@@ -193,7 +193,7 @@ export default function Pamatka() {
                 <h5 className='kakyoin_K'>Будьте уверенны, ваш дом простоит не один десяток лет!</h5></div>
             </div>
         </div>
-        <Footer/>
+       
     </div>
   )
 }

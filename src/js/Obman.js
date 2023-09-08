@@ -18,7 +18,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import Footer from './Footer'
+
 
 
 
@@ -246,7 +246,7 @@ export default function Obman() {
            </div>
           </div>
         </div>
-        <Footer/>
+     
     </div>
   )
 }

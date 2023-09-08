@@ -1954,3 +1954,7 @@ padding-top: 25px;
         font-size: 3.5vw;
     }
 }
+.nav_2_page8 a{
+    list-style: none !important;
+    text-decoration: none !important;
+}
