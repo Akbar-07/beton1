@@ -33,6 +33,8 @@ import zakazbeton1 from '../img/Group (16).png'
 import {BsCheckLg} from "react-icons/bs"
 import {FaCalculator} from "react-icons/fa"
 import {BiSearch} from "react-icons/bi"
+import DatePicker from 'react-datepicker'
+import "react-datepicker/dist/react-datepicker.css";
 
 import wal1 from '../img/Group 100.png'
 import mediaicon1 from '../img/497ab60ab79f80d6177faa511e5df442 2 (1).png'
@@ -324,6 +326,7 @@ function eeeeee3(){
 }
 
 export default function Zakazbeton() {
+  const [startDate, setStartDate] = useState(new Date());
   function chiqaqol(){
     var y= document.querySelector(".akardon-pasdia-chiqadi-but").style.display;
     if(y==="none"){
@@ -882,7 +885,11 @@ function check_ochil(id){
               </div>
              </div>
               <div className="kogda_div2_2_calendari">
-              <div class="calendar"></div>
+              <DatePicker
+      selected={startDate}
+      onChange={(date) => setStartDate(date)}
+      inline
+    />
               </div>
             </div>
           </div>
