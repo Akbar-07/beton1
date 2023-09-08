@@ -37,7 +37,7 @@ export default function Partners_page() {
         
 <div className="Partners_page">
 <div className="glavaga_ot">
-          <span className='glavaga_ot1'><span onClick={()=>window.location="/home"}>Главная</span> | <span className='glavaga_ot2'>Калькулятор</span></span>
+          <span className='glavaga_ot1'><span onClick={()=>window.location="/home"}>Главная</span> |  <span className='glavaga_ot2'>Стать партнером</span></span>
         </div>
 <div className="news_page">
                     <img src={start} alt="" />
