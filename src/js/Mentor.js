@@ -1,3 +1,4 @@
+
 import React, {useEffect , useState} from 'react'
 import Navbar from '../js/Navbar'
 import '../css/Mentor.css'
@@ -6,6 +7,7 @@ import qalam from '../img/qalam1.png'
 import zalatoy from '../img/Group 164.png'
 import biladim from '../img/Group 201 (1).png'
 import { BiChevronDown } from 'react-icons/bi'
+
 import skachat from '../img/material-symbols_download.png'
 import koment from '../img/Group 207.png'
 
@@ -13,6 +15,7 @@ import {BsCheckLg} from "react-icons/bs"
 
 import data from '../js/Data'
 import Footer from './Footer'
+
 
 
 function modalochil(){
@@ -28,11 +31,12 @@ function bonusmodal(){
     document.querySelector("body").style=`overflow: hidden;`
 }
 function modalbonusyopil(){
-    document.querySelector(".user-modal-bonus").style=`display:nonoe`
+    document.querySelector(".user-modal-bonus").style=`display:nono`
     document.querySelector("body").style=`overflow: scroll;`
 }
 function mentorzakaz(){
     document.querySelector(".bupas-qismi-table-qolda").style=`display:block`
+<<<<<<< Updated upstream
     document.querySelector(".uiver1").style=`  border-bottom-left-radius: 0px;`
     document.querySelector(".uiver2").style=`border-bottom-right-radius: 0px;`
 }
@@ -63,6 +67,15 @@ const [countries, setCountries] = useState(null);
 const [selected, setSelected] = useState("");
 // console.log(data.productData);
 
+    document.querySelector(".uiver1").style=  `border-bottom-left-radius: 0px;`
+    document.querySelector(".uiver2").style=`border-bottom-right-radius: 0px;`
+}
+
+export default function User() {
+const [countries, setCountries] = useState(null)
+const [selected, setSelected] = useState("")
+
+
     useEffect(()=>{
         fetch("https://restcountries.com/v2/all?fields=name")
         .then((res)=> res.json())
@@ -71,7 +84,7 @@ const [selected, setSelected] = useState("");
         })
     },[])
     
-    
+
   return (
     <div className='user'>
         <Navbar/>
@@ -150,9 +163,7 @@ const [selected, setSelected] = useState("");
             </div>
 
 
-
-
-        </div>
+</div>
         <div className="user-modal">
         <div className="login-kotta">
             
@@ -249,6 +260,7 @@ const [selected, setSelected] = useState("");
         <div className="mentor-kankulator">
             <div className="mentor-ichi-kotta">
                 <div className="mentor-ichi-ichi">
+
                     <div className="mentor-filter-select">
                         <div className="selectla-uchun-alohida-joy">
                         <select>
@@ -340,10 +352,43 @@ const [selected, setSelected] = useState("");
                             </div>
                             </form>
                         </div>
+=======
+
+
+<div className="mentor-filter-select">
+                        {/* <select >
+                            <option value="1">
+                            <p >Марка бетона</p>
+                            </option>
+                            <option value="2">
+                            <p>Марка бетона2</p>
+                            </option>
+                            <option value="2">
+                            <p>Марка бетона3</p>
+                            </option>
+                        </select> */}
+                        {/* <div className='w-72 font-medium h-80'>
+                            <div className='bg-white w-full p-2 flex items-center justify-between  rounded'>
+                                select country
+                                <BiChevronDown size={20} />
+                            </div>
+                            <ul className='bg-white mt-2 overflow-y-auto max-h-60'>
+                                <div>
+                                    <input type="text"  placeholder='Enter your country' className='placeholder:text-gray-700 p-2 outline-none'/>
+                                </div>
+                                {countries?.map(country=>(
+                                     <li key={country?.name} className='p-2 text-sm hover:bg-sky-600 hover:text-white' >{country?.name}</li>
+                                ))
+                                }
+                               
+                            </ul>
+                        </div> */}
+
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="table">
             <div className="table-tepa-qismi">
                 <p className='datasdaljdad'>Номер заказа</p>
