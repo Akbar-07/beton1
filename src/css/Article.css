@@ -4,7 +4,11 @@
     font-weight: 600;
     margin-top: 30px;
 }
-    
+    @media(max-width:430px){
+        .aa1{
+            display: flex !important;
+        }
+    }
 .span1{
     color: #E93333;
 }

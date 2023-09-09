@@ -21,9 +21,7 @@ export default function Pamatka() {
     <div>
         <Navbar/>
         <div className="pamat_main">
-        <div className="kan_glava1">
-            <span className='kan_glava1_span'><span onClick={()=>{window.location="/"}}>Главная</span> | <span className='kan_glava1_span1'>Памятка</span></span>
-        </div>
+        <p style={{display:"none"}} className='aa1'><span style={{marginRight:"7px"}} onClick={()=> window.location="/"}>Главная</span>  | <span style={{marginLeft:"7px",color:"red"}} >Памятка</span> </p>
             <div className="pamat_zaliv">
             <div className="news_page">
             <img src={chb} alt="" />
