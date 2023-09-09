@@ -1017,7 +1017,7 @@ function noviy_beton2() {
            <img className='img7' src={IMG22} alt="" />
            </div>
             <div className="prilosheniya">
-                <h1>Скачать приложение</h1>
+                <h1 style={{cursor:"pointer"}}>Скачать приложение</h1>
             </div>
             <div className="hom_img">
                 <img src={IMG23} alt="" />

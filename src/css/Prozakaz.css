@@ -2618,6 +2618,7 @@ letter-spacing: 0em;
         height: auto;
         display: flex;
         text-align: left;
+        align-items: center;
         gap: 20px;
         margin-bottom: 30px;
     }

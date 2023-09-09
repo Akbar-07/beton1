@@ -228,9 +228,6 @@
     }
  }
  @media(max-width:600px){
-    .partner_card {
-    width: 150px;
-    }
     .right_card{
         display: none;
     }

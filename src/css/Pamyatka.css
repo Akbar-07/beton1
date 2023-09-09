@@ -1,831 +1,1135 @@
-.pamat_main{
-  
-  width: 70%;
+.pamat_main {
+  width: 96%;
+  max-width: 1200px;
   margin: auto;
-  padding: 30px;
+}
 
-}
-.pamat_zaliv{
-  padding-left: 100px;
-}
-.pamat_zaliv2{
+.pamat_zaliv2 {
   display: flex;
   justify-content: space-around;
-  width:  43%;
+  width: 43%;
   margin-bottom: 20px;
 
 }
-.pamat_zaliv2 img{
+
+.pamit_cardd p {
+  margin-left: 30px;
+  line-height: 26px;
+}
+
+.pamit_images img {
+  width: 30px;
+}
+
+.pamit_images {
+  width: 60px;
+  height: 60px;
+  background-color: #FFCB13;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.pamit_cardd {
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.pamit_for_flex {
+  display: flex;
+}
+
+.pami_cardss {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.pamat_zaliv2 img {
 
   height: 20px;
 
 }
-.pamat_zaliv{
+
+.pamat_zaliv {
   margin-bottom: 30px;
 }
-.pamat_zaliv2 h1{
+
+.pamat_zaliv2 h1 {
   margin-top: 35px;
   font-size: 33px;
   font-family: 'Montserrat', sans-serif;
 
 }
-.pamat_zal1 p{
-font-size: 20px;
-width: 500px;
+
+.pamat_zal1 h3 {
+  font-size: 18px;
+  width: 500px;
+  font-family: 'Montserrat Alternates', sans-serif;
 
 }
-.pamat_zal1{
-  
+
+.pamat_zal1 {
+
   width: 50%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 19px;
 }
-.main_opt1{
+
+.main_opt1 {
   justify-content: space-around;
   flex-wrap: wrap !important;
-  
-  padding-bottom: 30px;
-  display: flex ;
 
-}.op1_df{
+  padding-bottom: 30px;
+  display: flex;
+
+}
+
+.op1_df {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  }
-  .op_1{
-    width: 35%;
-  }
-  
-  .op1_img{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #FFCB13;
-    border-radius: 30px;
-    text-align: center;
-    border: 2px solid white;
-  }.op1_img img{
-  width: 70%;
-  padding-top: 7px;
-  }
-  .op1_text{
-    width: 85%;
-  }
-  .op1_text span{
-    font-weight: 1000;}
-    .op2_text h5{
-    font-weight: 500;
-    }
-.op2_df{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
 }
 
-.op_2{
+.op_1 {
   width: 35%;
 }
-.op2_text{
+
+.op1_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op1_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op1_text {
   width: 85%;
 }
-.op2_img{
+
+.pamit_cardd span {
+  font-weight: 1000;
+}
+
+.op2_text h5 {
+  font-weight: 500;
+}
+
+.op2_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_2 {
+  width: 35%;
+}
+
+.op2_text {
+  width: 85%;
+}
+
+.op2_img {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #FFCB13 !important;
   border-radius: 30px;
   text-align: center;
   border: 2px solid white;
-}.op2_img img{
-width: 70%;
-padding-top: 7px;
 }
-.op2_text span{
-  font-weight: 1000;}
-  .op2_text h5{
+
+.op2_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op2_text span {
+  font-weight: 1000;
+}
+
+.op2_text h5 {
   font-weight: 500;
+}
+
+
+.main_opt2 {
+  justify-content: space-around;
+  flex-wrap: wrap !important;
+
+  padding-bottom: 30px;
+  display: flex !important;
+
+}
+
+.main_opt3 {
+  justify-content: space-around;
+  flex-wrap: wrap !important;
+
+  padding-bottom: 30px;
+  display: flex !important;
+
+}
+
+.main_opt4 {
+  justify-content: space-around;
+  flex-wrap: wrap !important;
+
+  padding-bottom: 30px;
+  display: flex !important;
+
+}
+
+.main_opt5 {
+  justify-content: space-around;
+  flex-wrap: wrap !important;
+
+  padding-bottom: 30px;
+  display: flex !important;
+
+}
+
+.op3_df {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_3 {
+  width: 35%;
+}
+
+.op3_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op3_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op3_text {
+  width: 85%;
+}
+
+.op3_text span {
+  font-weight: 1000;
+}
+
+.op4_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_4 {
+  width: 35%;
+}
+
+.op4_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op4_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op4_text {
+  width: 85%;
+}
+
+.op4_text span {
+  font-weight: 1000;
+}
+
+.op5_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_5 {
+  width: 35%;
+}
+
+.op5_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op5_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op5_text {
+  width: 85%;
+}
+
+
+.op5_text span {
+  font-weight: 1000;
+}
+
+.op6_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_6 {
+  width: 35%;
+}
+
+.op6_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op6_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op6_text {
+  width: 85%;
+}
+
+.op6_text span {
+  font-weight: 1000;
+}
+
+.op7_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_7 {
+  width: 35%;
+}
+
+.op7_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op7_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op7_text {
+  width: 85%;
+}
+
+.op7_text span {
+  font-weight: 1000;
+}
+
+.op8_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_8 {
+  width: 35%;
+}
+
+.op8_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op8_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op8_text {
+  width: 85%;
+}
+
+.op8_text span {
+  font-weight: 1000;
+}
+
+.op9_df {
+  display: flex;
+
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_9 {
+  width: 35%;
+}
+
+.op9_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op9_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op9_text {
+  width: 85%;
+}
+
+.op9_text span {
+  font-weight: 1000;
+}
+
+.op10_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_10 {
+  width: 35%;
+}
+
+.main_opt6 {
+  padding-left: 100px;
+}
+
+.op10_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op10_img img {
+  width: 70%;
+  padding-top: 7px;
+}
+
+.op10_text {
+  width: 85%;
+}
+
+.op11_df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.op_11 {
+  width: 35%;
+}
+
+.op11_img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #FFCB13;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.op11_img img {
+  width: 70%;
+
+
+  padding-top: 7px;
+}
+
+.op1_text h5 {
+  font-weight: 400;
+}
+
+.op2_text h5 {
+  font-weight: 400;
+}
+
+.op3_text h5 {
+  font-weight: 400;
+}
+
+.op4_text h5 {
+  font-weight: 400;
+}
+
+.op5_text h5 {
+  font-weight: 400;
+}
+
+.op6_text h5 {
+  font-weight: 400;
+}
+
+.op11_text h5 {
+  font-weight: 400;
+}
+
+.op10_text h5 {
+  font-weight: 400;
+}
+
+.op9_text h5 {
+  font-weight: 400;
+}
+
+.op8_text h5 {
+  font-weight: 400;
+}
+
+.op7_text h5 {
+  font-weight: 400;
+}
+
+.op11_text {
+  width: 85%;
+}
+
+.op10_text span {
+  font-weight: 1000;
+}
+
+.pamata_jojo {
+  flex-wrap: wrap;
+
+  margin-top: 50px !important;
+  display: flex;
+  width: 90%;
+  border: 4px solid white;
+  margin: auto;
+  border-radius: 35px;
+}
+
+.pamata_jojo img {
+  margin: auto;
+  width: 20%;
+}
+
+.Jojo_J {
+  color: #E93333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.War_stur {
+  margin: auto;
+
+  width: 80%;
+}
+
+.kakyoin_K {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+@media(max-width:1800px) {
+  .main_opt6 {
+    padding-left: 85px;
   }
 
+  .pamat_zaliv2 {
+    width: 510px;
+  }
+}
 
-.main_opt2{
-                      justify-content: space-around;
-                      flex-wrap: wrap !important;
-                      
-                      padding-bottom: 30px;
-                      display: flex !important;
-                    
-                    }
-                    .main_opt3{
-                      justify-content: space-around;
-                      flex-wrap: wrap !important;
-                      
-                      padding-bottom: 30px;
-                      display: flex !important;
-                    
-                    }
-                    .main_opt4{
-                      justify-content: space-around;
-                      flex-wrap: wrap !important;
-                      
-                      padding-bottom: 30px;
-                      display: flex !important;
-                    
-                    }
-                    .main_opt5{
-                      justify-content: space-around;
-                      flex-wrap: wrap !important;
-                      
-                      padding-bottom: 30px;
-                      display: flex !important;
-                    
-                    } 
-                    .op3_df{
-                      
-                      display: flex;
-                      flex-wrap: wrap;
-                      justify-content: space-around;
-                      }
-                      .op_3{
-                        width: 35%;
-                      }
-                      
-                      .op3_img{
-                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                        background-color: #FFCB13;
-                        border-radius: 30px;
-                        text-align: center;
-                        border: 2px solid white;
-                      }.op3_img img{
-                      width: 70%;
-                      padding-top: 7px;
-                      }
-                      .op3_text{
-                        width: 85%;
-                      }
-                      .op3_text span{
-                        font-weight: 1000;}
-                    .op4_df{
-                          display: flex;
-                          flex-wrap: wrap;
-                          justify-content: space-around;
-                          }
-                          .op_4{
-                            width: 35%;
-                          }
-                          
-                          .op4_img{box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                            background-color: #FFCB13;
-                            border-radius: 30px;
-                            text-align: center;
-                            border: 2px solid white;
-                          }.op4_img img{
-                          width: 70%;
-                          padding-top: 7px;
-                          }
-                          .op4_text{
-                            width: 85%;
-                          }
-                          .op4_text span{
-                            font-weight: 1000;}
-                            .op5_df{
-                              display: flex;
-                              flex-wrap: wrap;
-                              justify-content: space-around;
-                              }
-                              .op_5{
-                                width: 35%;
-                              }
-                              
-                              .op5_img{
-                                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
-                                background-color: #FFCB13;
-                                border-radius: 30px;
-                                text-align: center;
-                                border: 2px solid white;
-                              }.op5_img img{
-                              width: 70%;
-                              padding-top: 7px;
-                              }
-                              .op5_text{
-                                width: 85%;
-                              }
+@media(max-width:1360px) {
+  .main_opt6 {
+    padding-left: 75px;
+  }
+
+  .op1_yt {
+    margin-bottom: 10px;
+  }
+
+  .op2_yt {
+    margin-bottom: 10px;
+  }
+
+  .op3_yt {
+    margin-bottom: 10px;
+  }
+
+  .op4_yt {
+    margin-bottom: 10px;
+  }
+
+  .op5_yt {
+    margin-bottom: 10px;
+  }
+
+  .op6_yt {
+    margin-bottom: 10px;
+  }
+
+  .op7_yt {
+    margin-bottom: 10px;
+  }
+
+  .op8_yt {
+    margin-bottom: 10px;
+  }
+
+  .op9_yt {
+    margin-bottom: 10px;
+  }
+
+  .op10_yt {
+    margin-bottom: 10px;
+  }
+
+  .op11_yt {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:1300px) {
+  .pamat_zaliv2 {
+    width: 530px;
+  }
+}
+
+@media(max-width:1050px) {
+
+  .pamat_zaliv2 img {
+    margin-top: 15px;
+  }
+
+  .pamat_zaliv2 h1 {
+    margin-left: 10px;
+  }
+
+  .main_opt6 {
+    padding-left: 50px;
+  }
+
+  .kakyoin_K {
+    font-size: 14px;
+  }
+
+  .Jojo_J {
+    padding: 1px;
+    font-size: 19px;
+  }
+
+  .pamat_zaliv2 h1 {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+
+  .pamat_zaliv2 {
+    display: flex;
+    width: 470px;
+  }
+
+  .pamat_zal1 {
+    width: 500px;
+  }
+
+  .pamat_zal1 p {
 
 
-.op5_text span{
-                                font-weight: 1000;}
-                                .op6_df{
-                                  display: flex;
-                                  flex-wrap: wrap;
-                                  justify-content: space-around;
-                                  }
-                                  .op_6{
-                                    width: 35%;
-                                  }
-                                  
-                                  .op6_img{
-                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                    background-color: #FFCB13;
-                                    border-radius: 30px;
-                                    text-align: center;
-                                    border: 2px solid white;
-                                  }.op6_img img{
-                                  width: 70%;
-                                  padding-top: 7px;
-                                  }
-                                  .op6_text{
-                                    width: 85%;
-                                  }
-                                  .op6_text span{
-                                    font-weight: 1000;}
-                                    .op7_df{
-                                      display: flex;
-                                      flex-wrap: wrap;
-                                      justify-content: space-around;
-                                      }
-                                      .op_7{
-                                        width: 35%;
-                                      }
-                                      
-                                      .op7_img{
-                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                        background-color: #FFCB13;
-                                        border-radius: 30px;
-                                        text-align: center;
-                                        border: 2px solid white;
-                                      }.op7_img img{
-                                      width: 70%;
-                                      padding-top: 7px;
-                                      }
-                                      .op7_text{
-                                        width: 85%;}
-                                      .op7_text span{
-                                        font-weight: 1000;}
-                                        .op8_df{
-                                          display: flex;
-                                          flex-wrap: wrap;
-                                          justify-content: space-around;
-                                          }
-                                          .op_8{
-                                            width: 35%;
-                                          }
-                                          
-                                          .op8_img{
-                                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                            background-color: #FFCB13;
-                                            border-radius: 30px;
-                                            text-align: center;
-                                            border: 2px solid white;
-                                          }.op8_img img{
-                                          width: 70%;
-                                          padding-top: 7px;
-                                          }
-                                          .op8_text{
-                                            width: 85%;
-                                          }
-                                          .op8_text span{
-                                            font-weight: 1000;}
-                                            .op9_df{
-                                              display: flex;
+    font-size: 20px;
+  }
+}
+
+@media(max-width:900px) {
+  .kakyoin_K {
+    font-size: 14px;
+  }
+
+  .pamit_cardd p {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .pamit_cardd {
+    width: 94%;
+  }
+}
 
 
-flex-wrap: wrap;
-                                              justify-content: space-around;
-                                              }
-                                              .op_9{
-                                                width: 35%;
-                                              }
-                                              
-                                              .op9_img{
-                                                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                                background-color: #FFCB13;
-                                                border-radius: 30px;
-                                                text-align: center;
-                                                border: 2px solid white;
-                                              }.op9_img img{
-                                              width: 70%;
-                                              padding-top: 7px;
-                                              }
-                                              .op9_text{
-                                                width: 85%;
-                                              }
-                                              .op9_text span{
-                                                font-weight: 1000;}
-                                                .op10_df{
-                                                  display: flex;
-                                                  flex-wrap: wrap;
-                                                  justify-content: space-around;
-                                                  }
-                                                  .op_10{
-                                                    width: 35%;
-                                                  }
-                                                  .main_opt6{
-                                                    padding-left: 100px;
-                                                  }
-                                                  .op10_img{
-                                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                                    background-color: #FFCB13;
-                                                    border-radius: 30px;
-                                                    text-align: center;border: 2px solid white;
-                                                  }.op10_img img{
-                                                  width: 70%;
-                                                  padding-top: 7px;
-                                                  }
-                                                  .op10_text{
-               width: 85%;
-                                                  }
-                                                  .op11_df{
-                                                    display: flex;
-                                                    flex-wrap: wrap;
-                                                    justify-content: space-around;
-                                                    }
-                                                    .op_11{
-                                                      width: 35%;
-                                                    }
-                                                    
-                                                    .op11_img{
-                                                      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                                      background-color: #FFCB13;
-                                                      border-radius: 30px;
-                                                      text-align: center;
-                                                      border: 2px solid white;
-                                                    }.op11_img img{
-                                                    width: 70%;
+@media(max-width:800px) {
+
+  .pamat_zaliv {
+
+    padding-left: 30px;
+  }
+
+  .pamata_jojo img {
+    width: 200px;
+  }
+
+  .kakyoin_K {
+    padding: 5px;
+    font-size: 17px;
+    line-height: none;
+  }
+
+  .Jojo_J {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .War_stur {
+    margin: auto;
+    width: 400px;
+  }
+}
+
+@media(max-width:600px) {
+
+  .pamat_zaliv2 img {
+    margin-top: 15px;
+    width: 50px !important;
+    height: 20px !important;
+  }
+
+  .pamata_jojo {
+    height: 310px !important;
+    padding: 5px;
+  }
+
+  .main_opt5 {
+    display: block !important;
+  }
+
+  .op_9 {
+    width: 100%;
+  }
+
+  .op_1 {
+    width: 100%;
+  }
+
+  .op_2 {
+    width: 100%;
+  }
+
+  .op_3 {
+    width: 100%;
+  }
+
+  .op_4 {
+    width: 100%;
+  }
+
+  .op_5 {
+    width: 100%;
+  }
+
+  .op_6 {
+    width: 100%;
+  }
+
+  .op_7 {
+    width: 100%;
+  }
+
+  .op_8 {
+    width: 100%;
+  }
+
+  .op_10 {
+    width: 100%;
+  }
+
+  .op_11 {
+
+    width: 100%;
+  }
+
+  .main_opt6 {
+    padding-left: 0px;
+  }
+
+  .pamat_zaliv {
+    padding-left: 0;
+  }
+
+  .pamat_zaliv2 h1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .pamata_jojo {
+    height: 400px;
+  }
+
+  .pamata_jojo img {
+    position: relative;
+    right: 150px;
+    bottom: 80px;
+    width: 130px;
+  }
+
+  .War_stur {
+    position: relative;
+    bottom: 100px;
+  }
+}
+
+@media(max-width:494px) {
+  .pamat_main {
+    width: 450px !important;
+  }
+
+  .pamat_zaliv2 {
+    width: 420px;
+  }
+
+  .pamat_zaliv2 img {
+    margin-top: 50px;
+    height: 30px;
+    width: 70px;
+    padding-top: 20px !important;
+  }
+
+  .pamata_jojo {
+    margin-top: 70px !important;
+  }
+}
+
+.pamat_zaliv2 img {
+
+  height: 30px;
+  width: 70px;
+  padding-top: 40px;
+}
+
+@media(max-width:450px) {
+  .pamat_main {
+    width: 400px !important;
+  }
+
+  .pamat_zaliv2 h1 {
+    padding-top: 0;
+    font-size: 35px;
+    width: 400px;
+  }
+
+  .pamata_jojo img {
+    position: relative;
+    right: 125px;
+  }
+
+  .pamat_zaliv2 img {
+
+    height: 30px;
+    width: 70px;
+    padding-top: 20px;
+  }
+
+  .pamat_zal1 p {
+    line-height: 22px;
+    width: 350px;
+    font-size: 20px;
+  }
+}
+
+@media(max-width:400px) {
+  .pamat_zaliv2 {
+    width: 350px;
+  }
+
+  .pamat_zaliv2 h1 {
+    font-size: 25px;
+  }
+
+  .pamat_zal1 p {
+    font-size: 15px;
+  }
+
+  .pamat_zaliv2 img {
+    height: 20px;
+    width: 40px;
+    padding-top: 5px !important;
+  }
+
+  .pamat_main {
+    width: 330px !important;
+    margin-top: 30px;
+  }
+
+  .op7_img {
+    width: 45px;
+  }
+
+  .pamata_jojo img {
+    position: relative;
+    right: 100px;
+  }
+
+  .kakyoin_K {
+    font-size: 15px;
+  }
+
+  .pamata_jojo {
+    height: 340px !important;
+  }
+}
+
+@media(max-width:350px) {
+  .op_2 {
+    margin-top: 20px;
+  }
+
+  .op_4 {
+    margin-top: 20px;
+  }
+
+  .op_6 {
+    margin-top: 20px;
+  }
+
+  .op_8 {
+    margin-top: 20px;
+  }
+
+  .op_10 {
+    margin-top: 20px;
+  }
+
+  .pamat_zaliv2 h1 {
+    font-size: 30px;
+  }
+
+  .pamat_main {
+    width: 305px !important;
+  }
+
+  .pamat_zaliv2 {
+    width: 310px !important;
+    margin-left: 10px;
+  }
+
+  .pamat_zal1 p {
+    font-size: 19px;
+    width: 305px !important;
+    margin-left: 10px;
+  }
+
+  .pamata_jojo img {
+    position: relative;
+    right: 90px;
+    border-radius: 10px;
+  }
+
+  .op7_img {
+    width: 45px;
+  }
+
+  .op8_img {
+    width: 45px;
+  }
+
+  .op2_img {
+    width: 45px;
+  }
+
+  .op3_img {
+    width: 45px;
+  }
+
+  .op4_img {
+    width: 45px;
+  }
+
+  .op1_text {
+    width: 250px;
+  }
+
+  .op2_text {
+    width: 250px;
+  }
+
+  .op3_text {
+    width: 250px;
+  }
+
+  .op4_text {
+    width: 250px;
+  }
+
+  .op5_text {
+    width: 250px;
+  }
+
+  .op6_text {
+    width: 250px;
+  }
+
+  .op7_text {
+    width: 250px;
+  }
+
+  .op8_text {
+    width: 250px;
+  }
+
+  .op9_text {
+    width: 250px;
+  }
+
+  .op10_text {
+    width: 250px;
+  }
+
+}
+
+.op1_yt {
+  width: 50px;
 
 
-padding-top: 7px;
-                                                    }
-                                                    .op1_text h5{
-                                                      font-weight: 400;
-                                                    }
-                                                    .op2_text h5{
-                                                      font-weight: 400;
-                                                    }  .op3_text h5{
-                                                      font-weight: 400;
-                                                    }  .op4_text h5{
-                                                      font-weight: 400;
-                                                    }  .op5_text h5{
-                                                      font-weight: 400;
-                                                    }  .op6_text h5{
-                                                      font-weight: 400;
-                                                    }
-                                                    .op11_text h5{
-                                                      font-weight: 400;
-                                                    }  .op10_text h5{
-                                                      font-weight: 400;
-                                                    }  .op9_text h5{
-                                                      font-weight: 400;
-                                                    }  .op8_text h5{
-                                                      font-weight: 400;
-                                                    }  .op7_text h5{
-                                                      font-weight: 400;
-                                                    }.op11_text{
-                 width: 85%;
-                      }
-                  
-              .op10_text span{
-       font-weight: 1000;}
-                    .pamata_jojo{
-                      flex-wrap: wrap;
-                      
-                      margin-top: 50px !important;
-                      display: flex;
-                      width: 90%;
-                      border: 4px solid white;
-                      margin: auto;
-                      border-radius: 35px;                    }
-                  .pamata_jojo img{
-                    margin: auto;
-                    width: 20%;
-                  }
-                    .Jojo_J{
-                      color: #E93333;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px;
-margin-bottom: 15px;
-                    }
-                  
-                    .War_stur{
-                      margin: auto;
-                      
-                      width: 80%;
-                    }
-                    .kakyoin_K{
-                      font-size: 17px;
-                      line-height: 30px;
-                    }
-                    @media(max-width:1800px){
-                      .main_opt6{
-                        padding-left: 85px  ;
-                      }
-                      .pamat_zaliv2{
-                        width: 510px;
-                      }
-                    }
-                    @media(max-width:1360px){
-                      .main_opt6{
-                        padding-left: 75px  ;
-                      }
-                     .op1_yt{
-                        margin-bottom: 10px;
-                      }
-                      .op2_yt{
-                        margin-bottom: 10px;
-                      } .op3_yt{
-                        margin-bottom: 10px;
-                      } .op4_yt{
-                        margin-bottom: 10px;
-                      } .op5_yt{
-                        margin-bottom: 10px;
-                      }
-                      .op6_yt{
-                        margin-bottom: 10px;
-                      }
-                      .op7_yt{
-                        margin-bottom: 10px;
-                      }
-                       .op8_yt{
-                        margin-bottom: 10px;
-                      }
-                       .op9_yt{
-                        margin-bottom: 10px;
-                      }
-                      .op10_yt{
-                        margin-bottom: 10px;
-                      }
-                       .op11_yt{
-                        margin-bottom: 10px;
-                      }
-                    }
-                    @media(max-width:1300px){
-                      .pamat_zaliv2 {
-                        width: 530px;
-                      }
-                    }
-                    @media(max-width:1050px){
-                      
-                      .pamat_zaliv2 img{
-                        margin-top: 15px;
-                      }
-                      .pamat_zaliv2 h1{
-                        margin-left: 10px;
-                      }
-                      .main_opt6{
-                        padding-left: 50px  ;
-                      }
-                      
-                      .kakyoin_K{
-                          font-size: 14px;
-                      } 
-                                          .Jojo_J{
-                                            padding: 1px;
-                        font-size: 19px;
-                      }
-                      .pamat_zaliv2 h1{
-                        font-size: 30px;
-                        padding-top: 10px;
-                      }
-                    .pamat_zaliv2{
-                      display: flex;
-                      width: 470px;
-                    }
-                    .pamat_zal1{
-                      width: 500px;
-                    }
-                    .pamat_zal1 p{
-
-
-font-size: 20px;
-                    }
-                  }
-                  @media(max-width:900px){
-                     .kakyoin_K{
-                      font-size: 14px;
-                     }
-                  }
-
-
-@media(max-width:800px){
-                      .pamat_zaliv{
-                        
-                        padding-left: 30px;
-                      }
-                      .pamata_jojo img{
-                          width: 200px;
-                      }
-                      .kakyoin_K{
-                        padding: 5px;
-                        font-size: 17px;
-                        line-height: none;
-                      }
-                      .Jojo_J{
-                        padding: 5px;
-                        font-size:20px;
-                      }
-                      .War_stur{
-                        margin: auto;
-                        width:400px;
-                      }
-                    }
-                    @media(max-width:600px){
-                      
-                      .pamat_zaliv2 img{
-                        margin-top: 15px;
-                        width: 50px !important;
-                        height:20px !important; 
-                      }
-                      .pamata_jojo{
-                        height: 310px !important;
-                        padding: 5px;
-                      }
-                      .pamat_main{
-                        width: 500px;
-                        padding: 0;
-                        margin: none;
-                      }
-                      .main_opt5{
-                        display: block !important;
-                      }
-                      .op_9{
-                        width: 100%;
-                      }
-                      .op_1{
-                        width: 100%;
-                      }
-                      .op_2{
-                        width: 100%;
-                      }
-                      .op_3{
-                        width: 100%;
-                      }
-                      .op_4{
-                        width: 100%;
-                      }
-                      .op_5{
-                        width: 100%;
-                      }
-                      .op_6{
-                        width: 100%;
-                      }
-                      .op_7{
-                        width: 100%;
-                      }
-                      .op_8{
-                        width: 100%;
-                      }
-                      .op_10{
-                        width: 100%;
-                      }
-                      .op_11{
- 
-                          width: 100%;
-                      }
-                      .main_opt6{
-padding-left: 0px;
-                      }
-                      .pamat_zaliv{
-padding-left: 0;
-                      }
-                      .pamat_zaliv2 h1{
-                        font-size: 30px;
-                        margin-left: 10px;
-                      }
-                    .pamata_jojo{
-                      height: 400px;
-                    }
-                    .pamata_jojo img{
-                      position: relative;
-                      right: 150px;
-                      bottom: 80px;
-                      width: 130px;
-                    }
-                    .War_stur{
-                      position: relative;
-                      bottom: 100px;
-                    }
-                    }
-                    @media(max-width:494px){
-                      .pamat_main{
-                        width: 450px !important;
-                      }
-                      .pamat_zaliv2{
-                        width: 420px;
-                      }
-                       .pamat_zaliv2 img{
-                        margin-top: 50px;
-height: 30px;
-                        width: 70px;
-                        padding-top:20px !important;
-                       }
-                       .pamata_jojo{
-                        margin-top: 70px !important;
-                       }
-                    }
-                     .pamat_zaliv2 img{
-                        
-height: 30px;
-                        width: 70px;
-                        padding-top:40px;
-                      }
-                    @media(max-width:450px){
-                      .pamat_main{
-                        width: 400px !important;
-                      }
-                      .pamat_zaliv2 h1{
-                        padding-top: 0;
-                        font-size: 35px;
-                        width:400px;
-                      }
-                      .pamata_jojo img{
-                        position: relative;
-                        right: 125px;
-                      }
-                      .pamat_zaliv2 img{
-                        
-height: 30px;
-                        width: 70px;
-                        padding-top:20px;
-                      }
-                      .pamat_zal1 p{
-                        line-height: 22px;
-                        width: 350px; font-size: 20px;
-                      }
-                    }
-                    @media(max-width:400px){
-                      .pamat_zaliv2 {
-                        width: 350px;
-                      }
-                      .pamat_zaliv2 h1{
-                        font-size: 25px;
-                      }
-                      .pamat_zal1 p{
-                        font-size: 15px;
-                      }
-                      .pamat_zaliv2 img{
-                        height: 20px;
-                        width: 40px;
-                        padding-top: 5px !important;
-                      }
-                      .pamat_main{
-                        width: 350px !important;
-                        margin-top: 30px;
-                      }
-                      .op7_img{
-                        width: 45px;
-                      }
-                      .pamata_jojo img{
-                        position: relative;
-                        right: 100px;
-                      }
-                      .kakyoin_K{
-                        font-size: 15px;
-                      }
-                   .pamata_jojo{
-                    height: 340px !important;
-                   }
-                    }
-                         @media(max-width:350px){
-                          .op_2{
-                            margin-top: 20px;
-                          }
-                          .op_4{
-                            margin-top: 20px;
-                          }.op_6{
-                            margin-top: 20px;
-                          }.op_8{
-                            margin-top: 20px;
-                          }.op_10{
-                            margin-top: 20px;
-                          }
-                          .pamat_zaliv2 h1{
-                            font-size: 30px;
-                          }
-                          .pamat_main{
-                            width: 320px !important;
-                          }
-                          .pamat_zaliv2{
-                            width: 310px !important;
-                            margin-left: 10px;
-                          }
-                          .pamat_zal1 p{
-                            font-size: 19px;
-                            width: 305px !important;
-                            margin-left: 10px;
-                          }
-                          .pamata_jojo img{
-                            position: relative;
-                            right: 90px;
-                            border-radius: 10px;
-                          }
-                          .op7_img{
-                           width: 45px;    }   
-                           .op8_img{
-                            width: 45px;    }     
-                            .op2_img{
-                              width: 45px;    }   
-                              .op3_img{
-                                width: 45px;    }   
-                                .op4_img{
-                                  width: 45px;    }
-                                  .op1_text{
-                                    width: 250px;
-                                  }   .op2_text{
-                                    width: 250px;
-                                  }   .op3_text{
-                                    width: 250px;
-                                  }   
-                                  .op4_text{
-                                    width: 250px;
-                                  }   .op5_text{
-                                    width: 250px;
-                                  }   .op6_text{
-                                    width: 250px;
-                                  }   .op7_text{
-                                    width: 250px;
-                                  }   
-                                  .op8_text{
-                                    width: 250px;
-                                  }   .op9_text{
-                                    width: 250px;
-                                  }   .op10_text{
-                                    width: 250px;
-                                  } 
-                                  
-                                                                      }
-                                                                      .op1_yt{
-                                                                        width: 50px;
-                                                                        
-                                                                        
 
 
 }
-     .op2_yt{
-  
-        width: 50px;
-       }
-       .op1_img{
-        height: 45px;
-       } .op2_img{
-        height: 45px;
-       } .op4_img{
-        height: 45px;
-       }
-       .op3_yt{
-      
-          width: 50px;
-         }
-         .op3_img{
-          height: 45px;
-         }
-          .op4_yt{
-        
-            width: 50px;
-           }
-           .op5_yt{
-          
-              width: 50px;
-             }
-             .op5_img{
-              height: 45px;
-             }
-             .op6_yt{
-            
-                width: 50px;
-               }
-               .op6_img{
-                height: 45px;
-               }
-               .op7_yt{
-              
-                  width: 50px;
-                 }
-                 .op7_img{
-                  height: 45px;
-                 } .op8_yt{
-                
-                    width: 50px;
-                   }
-                   .op8_img{
-                    height: 45px;
-                   }
-                   .op9_yt{
-                  
-                      width: 50px;
-                     }
-                     .op9_img{
-                      height: 45px;
-                     } .op10_yt{
-                    
-                        width: 50px;
-                       }
-                       .op10_img{
-                        height: 45px;
-                       } .op11_yt{
-                        
-                          width: 50px;
-                         }
-                         .op11_img{
-                          height: 45px;
 
-                         }
+.op2_yt {
 
-               
+  width: 50px;
+}
 
+.op1_img {
+  height: 45px;
+}
+
+.op2_img {
+  height: 45px;
+}
+
+.op4_img {
+  height: 45px;
+}
+
+.op3_yt {
+
+  width: 50px;
+}
+
+.op3_img {
+  height: 45px;
+}
+
+.op4_yt {
+
+  width: 50px;
+}
+
+.op5_yt {
+
+  width: 50px;
+}
+
+.op5_img {
+  height: 45px;
+}
+
+.op6_yt {
+
+  width: 50px;
+}
+
+.op6_img {
+  height: 45px;
+}
+
+.op7_yt {
+
+  width: 50px;
+}
+
+.op7_img {
+  height: 45px;
+}
+
+.op8_yt {
+
+  width: 50px;
+}
+
+.op8_img {
+  height: 45px;
+}
+
+.op9_yt {
+
+  width: 50px;
+}
+
+.op9_img {
+  height: 45px;
+}
+
+.op10_yt {
+
+  width: 50px;
+}
+
+.op10_img {
+  height: 45px;
+}
+
+.op11_yt {
+
+  width: 50px;
+}
+
+.op11_img {
+  height: 45px;
+
+}
+@media(max-width:750px){
+  .pami_cardss{
+    grid-template-columns: auto;
+  }
+  .pamit_cardd {
+    width: 100%;
+  }
+  .pamat_main {
+    width: 94%;
+    overflow: hidden;
+  }
+  .pamit_images{
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -13,7 +13,7 @@ body {
 .news_page h2 {
     font-size: 40px;
     font-weight: 600;
-    margin-left: 5%;
+    margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -508,5 +508,10 @@ width: 70%;
         width: 270px;
         bottom: 20px !important;
         margin-bottom: 0px;
+    }
+}
+@media(max-width:420px){
+    .newss h3 {
+        font-size: 18px;
     }
 }
