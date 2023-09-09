@@ -21,10 +21,14 @@ export default function Pamatka() {
     <div>
         <Navbar/>
         <div className="pamat_main">
+        <div className="kan_glava1">
+            <span className='kan_glava1_span'><span onClick={()=>{window.location="/"}}>Главная</span> | <span className='kan_glava1_span1'>Памятка</span></span>
+        </div>
             <div className="pamat_zaliv">
-               <div className="pamat_zaliv2">
-                <img src={chb} alt="" />
-                <h1>Памятка по заливке бетона</h1></div>
+            <div className="news_page">
+            <img src={chb} alt="" />
+            <h2>Памятка по заливке бетона</h2>
+        </div>
                  <div className="pamat_zal1">
                 <p>Практические рекомендации по уходу за бетоном 
 включают в себя следующие действия:</p></div>
