@@ -42,6 +42,7 @@ import Datepicker from "react-datepicker"
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker.module.css";
+import bmw from '../img/Group 269.png'
 
 
 function sariqyon(){  
@@ -677,11 +678,11 @@ const [page,setPage] = useState(1)
                                 <div className="alalalalallaalalalal">
                                 <div className="akardon-pasdia-chiqadi-but1">
                                     <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -775,11 +776,11 @@ const [page,setPage] = useState(1)
                                 <div className="alalalalallaalalalal">
                                 <div className="akardon-pasdia-chiqadi-but1">
                                     <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -1686,7 +1687,8 @@ const [page,setPage] = useState(1)
             </div>
         </div>
     </div>
-   <div className="samiy-pasledniy-joy-oplata">
+   
+{page===1?(<div><div className="samiy-pasledniy-joy-oplata">
     <div className="letsgo-oplata-ye">
         <div className="bla-arrowe-ichi-endi">
             <h2>Заказ</h2>
@@ -1760,7 +1762,7 @@ const [page,setPage] = useState(1)
 (2% от суммы)</span>
                         </div>
 <div className="bla-pasda-sotvolish-btn">
-                        <button>Заказать</button>
+                        <button onClick={()=>setPage(2)}>Заказать</button>
                     </div>
                     </div>
                 
@@ -1781,7 +1783,7 @@ const [page,setPage] = useState(1)
 (2% от суммы)</span>
                     </div>
                     <div className="bla-pasda-sotvolish-btn">
-                        <button>Заказать</button>
+                        <button onClick={()=>setPage(2)}>Заказать</button>
                     </div>
                 </div>
             </div>
@@ -1874,13 +1876,28 @@ const [page,setPage] = useState(1)
                         <p>Итого с учетом бонусов/скидки:</p>
                         <h4>5 000 ₽</h4>
 
-                        <button>Заказать</button>
+                        <button onClick={()=>setPage(2)}>Заказать</button>
                     </div>
             </div>
         </div>
     </div>
-   </div>
-
+   </div></div>):(page===2?(<div>
+     <div className="samiy-pasledniy-joy-oplata5">
+        <div className="letsgo-oplata-ye12">
+            <div className="bla-arrowe-ichi-endiii">
+                <div className="zarabotuuuuuu">
+                    <h3>Спасибо за заказ!</h3>
+                    <p>Уже начали обработку.</p>
+                    <button>Заказать еще</button>
+                </div>
+                <div className="kamazzzz-yeditttt-russin">
+                    <img src={bmw} alt="" />
+                </div>
+            </div>
+        </div>
+     </div>
+   </div>):(""))}
+  
 </div>
   )
 }
