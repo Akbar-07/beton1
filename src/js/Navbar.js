@@ -18,6 +18,7 @@ export default function Navbar() {
     function open_lichka(){
             document.querySelector("#helo").style = "background:#E75858;"
             document.querySelector("#helo1").style = "color:white;"
+            window.location="./user"
     }
     
     function open_chap_nav(){
@@ -94,7 +95,7 @@ export default function Navbar() {
                    <a href="tel:998997185110"> <button className='b1'>  <BsTelephoneFill className='icon2'/>    Перезвоните мне</button></a>
                 </div>
                 <div className="nav_2_page9">
-                    <button className='b2' onClick={()=> window.location="/mentor"}>  <BiSolidUser className='icon2'/>Личный кабинет</button>
+                    <button className='b2' onClick={()=> window.location="/user"}>  <BiSolidUser className='icon2'/>Личный кабинет</button>
                 </div>
                 </div>
             </div>
@@ -164,10 +165,10 @@ export default function Navbar() {
                 <div className="nav_but">
                 <div className="nav_2_page8">
                   
-                  <button className='b1'>  <BsTelephoneFill className='icon2'/> Перезвоните мне</button>
+                  <a href="tel:998997185110"><button className='b1'>  <BsTelephoneFill className='icon2'/> Перезвоните мне</button></a> 
               </div>
               <div className="nav_2_page9">
-                  <button className='b2'>  <BiSolidUser className='icon2'/>Личный кабинет</button>
+                  <button onClick={()=> window.location="/user"} className='b2' >  <BiSolidUser className='icon2'/>Личный кабинет</button>
               </div>
                 </div>
                 </div>
@@ -179,7 +180,7 @@ export default function Navbar() {
         </div>
 
 <div className="modal-navbar-joy">
-<div className="login-kotta">
+<div className="login-kotta55">
             
             <div className="teper-login13">
               <div className="nazat" >

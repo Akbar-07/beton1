@@ -80,6 +80,11 @@ import IMG56 from "../img/m011t0344_a_pizza_21jun22 2.png"
 import IMG57 from "../img/m011t0344_a_pizza_21jun22 1.png"
 import IMG58 from "../img/Vector 7.png"
 import IMG59 from "../img/айфон3 1 (1).png"
+import IMGG17 from "../img/2 1548993562.png"
+import IMGG20promax from "../img/valentin3 1.png"
+import IMGGmonet1 from "../img/1 монет.png"
+import IMGGmonet2 from "../img/3 монет.png"
+import IMGGmonet3 from "../img/2 монет.png"
 
 
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
@@ -203,6 +208,20 @@ function noviy_beton2() {
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
         </div>
+         {/* <div className="rek rek_orig">
+          <div className="dumaloq_12343">
+
+          </div>
+          <img className='beton_taksi1' src={IMGG17} alt="" />
+          <div className="beton_taksi1_sozi">
+            <h1 className='beton_taksi1_sozi1'>
+            Только <span className='beton_taksi1_sozi2'>проверенные</span> поставщики бетона в одном месте!
+            </h1>
+          </div>
+            <div className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div> */}
         {/* <div className="rek rek_orig">
         <div className="rek_dumaloq_keyin_1">
                 </div>
@@ -292,65 +311,34 @@ function noviy_beton2() {
             </div>
         </div></SwiperSlide>
         <SwiperSlide className='azx'>  <div className="rek">
-           <div className="rek_h111">
-           <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11'/> как заказать пиццу</h1>
-            <span className='rek_h111_span'>Скачивай наше приложение!</span>
-            <div className="rek_rasm_div">
-           <div className="rek_rasm_div1">
-           <img className='rek_img_s1' src={IMG23} alt="" />
-           <img className='rek_img_s1' src={IMG24} alt="" />
-           <img className='rek_img_s1' src={IMG25} alt="" />
-           </div>
-            <div className="rek_rasm_div2">
-            <img className='rek_img_s1' src={IMG26} alt="" />
-            <img className='rek_img_s1' src={IMG27} alt="" />
-            <img className='rek_img_s1' src={IMG28} alt="" />
-            </div>
-            </div>
-           </div>
-            <div className="rek_dumaloq1">
-                <div className="rek_dumaloq1_kichik"></div>
-            </div>
-            <div className="rek_dumaloq1_tel">
-                <img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
-            </div>
-            <div className="rek_dumaloq2">
-            <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
-                <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
-                <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
-            </div>
+          <div className="dumaloq_12343">
+
+          </div>
+          <img className='beton_taksi1' src={IMGG17} alt="" />
+          <div className="beton_taksi1_sozi">
+            <h1 className='beton_taksi1_sozi1'>
+            Только <span className='beton_taksi1_sozi2'>проверенные</span> поставщики бетона в одном месте!
+            </h1>
+          </div>
             <div className="rek_dumaloq3">
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
         </div></SwiperSlide>
         <SwiperSlide className='azx'>  <div className="rek">
-           <div className="rek_h111">
-           <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11'/> как заказать пиццу</h1>
-            <span className='rek_h111_span'>Скачивай наше приложение!</span>
-            <div className="rek_rasm_div">
-           <div className="rek_rasm_div1">
-           <img className='rek_img_s1' src={IMG23} alt="" />
-           <img className='rek_img_s1' src={IMG24} alt="" />
-           <img className='rek_img_s1' src={IMG25} alt="" />
-           </div>
-            <div className="rek_rasm_div2">
-            <img className='rek_img_s1' src={IMG26} alt="" />
-            <img className='rek_img_s1' src={IMG27} alt="" />
-            <img className='rek_img_s1' src={IMG28} alt="" />
-            </div>
-            </div>
-           </div>
-            <div className="rek_dumaloq1">
-                <div className="rek_dumaloq1_kichik"></div>
-            </div>
-            <div className="rek_dumaloq1_tel">
-                <img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
-            </div>
-            <div className="rek_dumaloq2">
-            <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
-                <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
-                <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
-            </div>
+        <div className="rek_ohirgi_baneer">
+            <h1 className='rek_ohirgi_baneer_sozi'><span className='beton_taksi1_sozi2'>1000 бонусов</span> за регистрацию и первый заказ по промокоду <span className='beton_taksi1_sozi2'>“START”</span></h1>
+        </div>
+       <div className="rek_dumaloq_zay_nab11"></div>
+       <div className="rek_dumaloq_zay_nab1"></div>
+       <div className="rek_dumaloq_zay_nab1_1"></div>
+       <img className='promax_onas' src={IMGG20promax} alt="" />
+       <div className="monet_z">
+        <div className="monet_z1">
+            <img src={IMGGmonet1} alt="" />
+            <img src={IMGGmonet2} alt="" />
+        </div>
+        <img src={IMGGmonet3} alt="" />
+       </div>
             <div className="rek_dumaloq3">
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
@@ -688,7 +676,7 @@ function noviy_beton2() {
                             <img src={IMG30} alt="" />
                         </div>
                         <div className="bit_kent2_sozi">
-                        <div className="bit_kent_ideya">
+                        <div className="bit_kent_ideya bit_kent_ideya2132354">
                         <img src={IMG30} alt="" />
                             <h3>Гарантированное качество.</h3>
                         </div>
@@ -992,7 +980,7 @@ function noviy_beton2() {
                     <div className="hed_2_span">
                     <span>В любое время в приложении можно сделать заказ на поставку бетона, задать вопрос консультанту, посмотреть историю заказов, оставить отзыв и многое другое.</span>
                     </div>
-                    <div className="hed_2_div1">
+                    <div className="hed_2_div1 hed_2_div1_kopiya">
                         <span>Большой выбор опций и услуг при оформлении заказа</span>
                     </div>
                    <div className="hed_2_span">

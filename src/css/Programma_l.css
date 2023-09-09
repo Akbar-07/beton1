@@ -779,7 +779,7 @@ height: 45px;
     }
     .h111111111111{
         font-size: 30px;
-    } .duvay1{
+    } span{
         font-size: 14px;
         font-weight: 600;
         line-height: 25px;
@@ -978,7 +978,7 @@ font-weight: 600;
     border-radius: 12px;
     position: relative;
     right: 10px;
-    bottom: 30px;
+    bottom: 10px;
     cursor: pointer;
     transition: .3s;
 }
@@ -1026,7 +1026,45 @@ font-weight: 600;
         right: 20px;
     }
 }
-@media(max-width:1200px){
+@media(max-width:1440px){
+    .prim_1{
+        width: 280px;
+        height: 200px;
+        border-radius: 40px;
+        background: linear-gradient(130deg, #000000, #787878);
+    }
+    .prim_11{
+        width: 275px;
+        height: 350px;
+    }
+    .prim_img{
+        height: 80px;
+    }
+    .prim_img111 {
+        height: 80px;
+    }
+    .prim_1_img{
+        height: 120px;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .img_4{
+        height: 75px;
+    }
+
+    .img__4{
+        height: 35px;
+    }
+    .img___4{
+        height: 55px;
+        position: relative;
+        right: 20px;
+    }
+}
+@media(max-width:1300px){
     .prim_1{
         width: 250px;
         height: 180px;
@@ -1034,8 +1072,8 @@ font-weight: 600;
         background: linear-gradient(130deg, #000000, #787878);
     }
     .prim_11{
-        width: 250px;
-        height: 325px;
+        width: 245px;
+        height: 350px;
     }
     .prim_img{
         height: 65px;
@@ -1085,7 +1123,7 @@ font-weight: 600;
         font-size: 14px;
     }
 }
-@media(max-width:1000px){
+@media(max-width:1200px){
     .primushestva{
         width: 350px;
         display: flex;

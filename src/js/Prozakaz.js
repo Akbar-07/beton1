@@ -38,6 +38,11 @@ import moneyy from '../img/Money With Arrow.png'
 import karta from '../img/Debit Card (1).png'
 import alert from '../img/Alert.png'
 import nazad from '../img/Group 200.png'
+import Datepicker from "react-datepicker"
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css";
+import "react-datepicker/dist/react-datepicker.module.css";
+import bmw from '../img/Group 269.png'
 
 
 function sariqyon(){  
@@ -93,7 +98,7 @@ function chiqaqol(){
     }else{
        document.querySelector(".akardon-text-joyda p").style.color="black";
     }
-    document.querySelector("#zakaz-bt").style.height="2600px";
+
 }
 function chiqaqol1(){
     var y= document.querySelector(".alalalalallaalalalal").style.display;
@@ -110,7 +115,7 @@ function chiqaqol1(){
        document.querySelector(".akardon-text-joyda1 p").style.color="black";
     }
 
-    document.querySelector("#zakaz-bt").style.height="2680px";
+
 
 }
 function chiqaqol2(){
@@ -142,7 +147,7 @@ function chiqaqol3(){
     }else{
        document.querySelector(".akardon-text-joyda3 p").style.color="black";
     }
-    document.querySelector("#zakaz-bt").style.height="2930px";
+    document.querySelector("#zakaz-bt").style.height="3100px";
 }
 function pastarap(){
     document.querySelector(".beton-blcok5").style=`border:1.5px solid  #FFCB13`
@@ -184,8 +189,7 @@ function buton(){
     document.querySelector(".salom1-bugun").style=`display:none`
     document.querySelector(".salom1-keyin").style=`display:none`
 
-    document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
-    top: -90px;`
+
 
 
 }
@@ -198,8 +202,7 @@ function buton1(){
     document.querySelector(".salom1-bugun").style=`display:block`
     document.querySelector(".salom1-keyin").style=`display:none`
 
-        document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
-    top: -90px;`
+       
  
 }
 function buton2(){
@@ -211,8 +214,7 @@ function buton2(){
     document.querySelector(".salom1-keyin").style=`display:block`
     document.querySelector(".salom1-tezroq").style=`display:none`
 
-    document.querySelector(".kalendar-joy-justify-end").style=`    position: relative;
-    top: -90px;`
+
 
 }
 function pastarapOP(){
@@ -541,6 +543,7 @@ function eeeeee3(){
 }
 
 export default function Prozakaz() {
+      const [startDate, setStartDate] = useState(new Date());
 const [data,setData] =useState(0)
 const [data1,setData1] =useState(0)
 const [data2,setData2] =useState(0)
@@ -675,11 +678,11 @@ const [page,setPage] = useState(1)
                                 <div className="alalalalallaalalalal">
                                 <div className="akardon-pasdia-chiqadi-but1">
                                     <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -773,11 +776,11 @@ const [page,setPage] = useState(1)
                                 <div className="alalalalallaalalalal">
                                 <div className="akardon-pasdia-chiqadi-but1">
                                     <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="blaa"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -858,7 +861,7 @@ const [page,setPage] = useState(1)
                                     <div className="iyana-ichigakirdeik">
                                     <h3>Не знаете количество?</h3>
                                     <p>Рассчитайте онлайн в калькуляторе</p>
-                                    <div className="tipa-kankularorde">
+                                    <div className="tipa-kankularorde" onClick={()=>window.location="/Kankulyator"}>
                                         <img src={canculator} alt="" />Калькулятор
                                     </div>
                                     </div>
@@ -1005,7 +1008,39 @@ const [page,setPage] = useState(1)
                                 </div>
                             </div>
                             <div className="kalendar-joy-justify-end">
-                                <input type="date" name="" id="" />
+                                <div className="kotta-data-vremiyanaa">
+                                <div className="xaxa-skfkdkf">
+                                    <div className="data-srokkkk">
+                                        <p>06.07.23</p>
+                                    </div>
+                                    <div className="data-srokkkk">
+                                        <select>
+                                            <option value="">20м3</option>
+                                            <option value="">40м3</option>
+                                            <option value="">30м3</option>
+                                        </select>
+                                        </div>
+                                        
+                                </div>
+                                <div className="xaxa-skfkdkf">
+                                    <div className="data-srokkkk">
+                                        <p>06.07.23</p>
+                                    </div>
+                                    <div className="data-srokkkk">
+                                        <select>
+                                            <option value="">20м3</option>
+                                            <option value="">40м3</option>
+                                            <option value="">30м3</option>
+                                        </select>
+                                        </div>
+                                        
+                                </div>
+                                </div>
+                            <DatePicker
+      selected={startDate}
+      onChange={(date) => setStartDate(date)}
+      inline
+    />
                             </div>
                             <div className="sposib-oplati-prozakaz">
                             <div className="tarif-joyi-ekan-tez-ql1">
@@ -1521,43 +1556,7 @@ const [page,setPage] = useState(1)
                         </div>
                     </div>
                     <div className="nmagaaaaaaa-input-data-qolda">
-                        <div className="exxxxxxxxxx-inputttt-ichi">
-                            <div className="bu-chap-tarap-sana"> 
-                            <div className="bu-chap-1">1</div>
-                            <div className="bu-chap-2">2</div>
-                            <div className="bu-chap-3">3</div>
-                            <div className="bu-chap-4">4</div>
-                            <div className="bu-chap-5">5</div>
-                            <div className="bu-chap-6">6</div>
-                            <div className="bu-chap-7">7</div>
-                            <div className="bu-chap-8">8</div>
-                            <div className="bu-chap-9">9</div>
-                            <div className="bu-chap-10">10</div>
-                            <div className="bu-chap-11">11</div>
-                            <div className="bu-chap-12">12</div>
-                            <div className="bu-chap-13">13</div>
-                            <div className="bu-chap-14">14</div>
-                            <div className="bu-chap-15">15</div>
-                            <div className="bu-chap-16">16</div>
-                            <div className="bu-chap-17">17</div>
-                            <div className="bu-chap-18">18</div>
-                            <div className="bu-chap-19">19</div>
-                            <div className="bu-chap-20">20</div>
-                            <div className="bu-chap-21">21</div>
-                            <div className="bu-chap-22">22</div>
-                            <div className="bu-chap-23">23</div>
-                            <div className="bu-chap-24">24</div>
-                            <div className="bu-chap-25">25</div>
-                            <div className="bu-chap-26">26</div>
-                            <div className="bu-chap-27">27</div>
-                            <div className="bu-chap-28">28</div>
-                            <div className="bu-chap-29">29</div>
-                            <div className="bu-chap-30">30</div>
-                            <div className="bu-chap-31">31</div>
-                            </div>
-                            <div className="bu-orta-tarap-oy"></div>
-                            <div className="ong-orta-tarap-yil"></div>
-                        </div>
+       
                     </div>
                 </div>
             </div>
@@ -1688,7 +1687,8 @@ const [page,setPage] = useState(1)
             </div>
         </div>
     </div>
-   <div className="samiy-pasledniy-joy-oplata">
+   
+{page===1?(<div><div className="samiy-pasledniy-joy-oplata">
     <div className="letsgo-oplata-ye">
         <div className="bla-arrowe-ichi-endi">
             <h2>Заказ</h2>
@@ -1762,7 +1762,7 @@ const [page,setPage] = useState(1)
 (2% от суммы)</span>
                         </div>
 <div className="bla-pasda-sotvolish-btn">
-                        <button>Заказать</button>
+                        <button onClick={()=>setPage(2)}>Заказать</button>
                     </div>
                     </div>
                 
@@ -1783,7 +1783,7 @@ const [page,setPage] = useState(1)
 (2% от суммы)</span>
                     </div>
                     <div className="bla-pasda-sotvolish-btn">
-                        <button>Заказать</button>
+                        <button onClick={()=>setPage(2)}>Заказать</button>
                     </div>
                 </div>
             </div>
@@ -1876,13 +1876,28 @@ const [page,setPage] = useState(1)
                         <p>Итого с учетом бонусов/скидки:</p>
                         <h4>5 000 ₽</h4>
 
-                        <button>Заказать</button>
+                        <button onClick={()=>setPage(2)}>Заказать</button>
                     </div>
             </div>
         </div>
     </div>
-   </div>
-
+   </div></div>):(page===2?(<div>
+     <div className="samiy-pasledniy-joy-oplata5">
+        <div className="letsgo-oplata-ye12">
+            <div className="bla-arrowe-ichi-endiii">
+                <div className="zarabotuuuuuu">
+                    <h3>Спасибо за заказ!</h3>
+                    <p>Уже начали обработку.</p>
+                    <button>Заказать еще</button>
+                </div>
+                <div className="kamazzzz-yeditttt-russin">
+                    <img src={bmw} alt="" />
+                </div>
+            </div>
+        </div>
+     </div>
+   </div>):(""))}
+  
 </div>
   )
 }
