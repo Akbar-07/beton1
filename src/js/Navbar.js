@@ -18,6 +18,7 @@ export default function Navbar() {
     function open_lichka(){
             document.querySelector("#helo").style = "background:#E75858;"
             document.querySelector("#helo1").style = "color:white;"
+            window.location="./user"
     }
     
     function open_chap_nav(){

@@ -18,7 +18,6 @@ font-family: 'Montserrat Alternates', sans-serif;
     overflow: hidden;
 }
 .beton_homiy1_img img {
-    width: 130px;
 }
 .rek_dumaloq3{
 width: 200px;
@@ -1016,7 +1015,7 @@ font-family: 900;
     }
 
 }
-@media(max-width:390px){
+@media(max-width:410px){
     .rek{
         width: 320px;
         position: relative;
@@ -1030,7 +1029,7 @@ font-family: 900;
         color: #E93333;
         line-height: 18px;
         font-size: 14px;
-        font-family: 900;
+        font-family: 900 !important;
     }.ertyuioylgkjhgfszhyjg {
         position: absolute;
         top: 165px;
@@ -1048,8 +1047,25 @@ font-family: 900;
     .sviperS{
         height: 600px;
     }
-
-    
+    .rek_h111 {
+        width: 340px;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+    }
+    .h1111111111111111111 {
+        font-size: 28px;
+    }
+    .rek_h1_kop {
+        color: #E93333;
+        font-size: 28px;
+    }
+    .rek_h111 {
+        width: 300px;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+    }
 }
 @media(max-width:360px){
     .rek_dumaloq_keyin_1_img1 {
@@ -2942,7 +2958,7 @@ font-size: 14px;
     .bet_mash2_kopiya{
         margin: auto;
         width: 310px;
-        height: 760px;
+        height: 780px;
         background-color: #FFCB13;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 40px;
@@ -2983,7 +2999,7 @@ font-size: 14px;
     .bet_mash2{
         width: 320px;
         margin: auto;
-        height: 290px;
+        height: 300px !important;
         background-color: #FFCB13;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -3257,8 +3273,8 @@ margin-left: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 160px;
-        height: 70px;
+        width: 150px;
+        height: 65px;
         border-radius: 10px;
         background-color: #EFEFEF;
         margin: auto;
@@ -4381,7 +4397,7 @@ width: 410px;
         
     }
     #al1{
-        width: 170px;
+        width: 171px;
         height: 45px;
         border-radius: 30px;
         background-color: #EBEBEB;
@@ -4395,7 +4411,7 @@ width: 410px;
         cursor: pointer;
     }
     .b3{
-        width: 170px;
+        width: 171px;
         height: 45px;
         border-radius: 30px;
         background-color: #FFCB13;
@@ -4403,7 +4419,7 @@ width: 410px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 13.5px;
         cursor: pointer;
         color: black;
         font-weight: 600;
@@ -4417,7 +4433,7 @@ width: 410px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 13.5px;
         color: black;
         font-weight: 600;
         cursor: pointer;
@@ -4592,7 +4608,7 @@ width: 410px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 13px;
+        font-size: 13.5px;
         cursor: pointer;
         color: black;
         font-weight: 600;
@@ -4606,7 +4622,7 @@ width: 410px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 13px;
+        font-size: 13.5px;
         color: black;
         font-weight: 600;
         cursor: pointer;
@@ -5637,3 +5653,770 @@ width: 410px;
   }
   
 
+  @media(max-width:430px){
+    .bit_kent_ideya2132354{
+        position: relative;
+        bottom: 20px !important;
+    }
+    .rating_kop:not(:checked) > label {
+        float: right;
+        cursor: pointer;
+        font-size: 20px !important;
+        color: #666;
+      }
+      .rating1:not(:checked) > label {
+        float: right;
+        cursor: pointer;
+        font-size: 20px !important;
+        color: #666;
+      }
+      .s3 {
+        font-size: 14px !important;
+        font-weight: 600;
+        position: relative;
+        top: 2px;
+    }
+  }
+  @media(max-width:390px){
+    .hed_2_div1_kopiya{
+        height: 50px !important;
+    }
+    .bit_kent_ideya2132354{
+        position: relative;
+        bottom: 10px !important;
+    }
+    .rating_kop:not(:checked) > label {
+        float: right;
+        cursor: pointer;
+        font-size: 20px !important;
+        color: #666;
+      }
+      .rating1:not(:checked) > label {
+        float: right;
+        cursor: pointer;
+        font-size: 20px !important;
+        color: #666;
+      }
+      .s3 {
+        font-size: 14px !important;
+        font-weight: 600;
+        position: relative;
+        top: 2px;
+    }
+  }
+  @media(max-width:370px){
+    .bit_kent2_sozi {
+        width: 230px;
+        position: relative;
+        top: 30px !important;
+    }
+  }
+.dumaloq_12343{
+    width:400px;
+    height:400px; 
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: -40px;
+    left: -60px;   
+}
+.beton_taksi1{
+    position: absolute;
+    bottom: 40px;
+    left: 90px;
+    z-index: 13;
+}
+.beton_taksi1_sozi{
+    width: 480px;
+    position: absolute;
+    left: 550px;
+    top: 80px;
+}
+.beton_taksi1_sozi1{
+    font-size: 40px;
+}
+.beton_taksi1_sozi2{
+    color: #E93333;
+    font-size: 40px;
+}
+@media(max-width:1100px){
+    .beton_taksi1{
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+        z-index: 13;
+        height: 300px;
+    }
+    .dumaloq_12343{
+        width:300px;
+        height:300px; 
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        bottom: -40px;
+        left: -60px;   
+    }
+    .beton_taksi1_sozi{
+        width: 350px;
+        position: absolute;
+        left: 350px;
+        top: 70px;
+    }
+    .beton_taksi1_sozi1{
+        font-size: 34px;
+    }
+    .beton_taksi1_sozi2{
+        color: #E93333;
+        font-size: 34px;
+    }
+}
+@media(max-width:750px){
+    .beton_taksi1{
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+        z-index: 13;
+        height: 300px;
+    }
+    .dumaloq_12343{
+        width:300px;
+        height:300px; 
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        bottom: -40px;
+        left: -60px;   
+    }
+    .beton_taksi1_sozi{
+        width: 400px;
+        position: absolute;
+        left: 40px;
+        top: 60px;
+    }
+    .beton_taksi1_sozi1{
+        font-size: 34px;
+    }
+    .beton_taksi1_sozi2{
+        color: #E93333;
+        font-size: 34px;
+    }
+}
+@media(max-width:500px){
+    .beton_taksi1{
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+        z-index: 13;
+        height: 300px;
+    }
+    .dumaloq_12343{
+        width:300px;
+        height:300px; 
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        bottom: -40px;
+        left: -60px;   
+    }
+    .beton_taksi1_sozi{
+        width: 350px;
+        position: absolute;
+        left: 40px;
+        top: 30px;
+    }
+    .beton_taksi1_sozi1{
+        font-size: 34px;
+    }
+    .beton_taksi1_sozi2{
+        color: #E93333;
+        font-size: 34px;
+    }
+}
+@media(max-width:430px){
+    .beton_taksi1{
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+        z-index: 13;
+        height: 300px;
+    }
+    .dumaloq_12343{
+        width:300px;
+        height:300px; 
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        bottom: -40px;
+        left: -60px;   
+    }
+    .beton_taksi1_sozi{
+        width: 320px;
+        position: absolute;
+        left: 40px;
+        top: 30px;
+    }
+    .beton_taksi1_sozi1{
+        font-size: 30px;
+    }
+    .beton_taksi1_sozi2{
+        color: #E93333;
+        font-size: 30px;
+    }
+}
+@media(max-width:410px){
+    .beton_taksi1{
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+        z-index: 13;
+        height: 300px;
+    }
+    .dumaloq_12343{
+        width:300px;
+        height:300px; 
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        bottom: -40px;
+        left: -60px;   
+    }
+    .beton_taksi1_sozi{
+        width: 320px;
+        position: absolute;
+        left: 25px !important;
+        top: 30px;
+    }
+    .beton_taksi1_sozi1{
+        font-size: 30px;
+    }
+    .beton_taksi1_sozi2{
+        color: #E93333;
+        font-size: 30px;
+    }
+}
+@media(max-width:360px){
+    .beton_taksi1{
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+        z-index: 13;
+        height: 250px;
+    }
+    .dumaloq_12343{
+        width:300px;
+        height:300px; 
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        bottom: -50px;
+        left: -70px;   
+    }
+    .beton_taksi1_sozi{
+        width: 240px;
+        position: absolute;
+        left: 20px !important;
+        top: 30px;
+    }
+    .beton_taksi1_sozi1{
+        font-size: 28px;
+    }
+    .beton_taksi1_sozi2{
+        color: #E93333;
+        font-size: 28px;
+    }
+}
+.rek_ohirgi_baneer{
+        width: 680px;
+        position: absolute;
+        top: 80px;
+        right: 100px;
+}
+.rek_ohirgi_baneer_sozi{
+    font-size: 40px;
+}
+.rek_dumaloq_zay_nab11{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    position: absolute;
+    bottom: -50px;
+    left:-50px;
+    z-index: 2;
+    background-color: #FFCB13;
+}
+.rek_dumaloq_zay_nab1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    background-color: white;
+    position: absolute;
+    top: -50px;
+    left:-50px;
+    z-index: 3;
+}
+.rek_dumaloq_zay_nab1_1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    background-color: white;
+    position: absolute;
+    bottom: -90px;
+    left:230px;
+}
+.promax_onas{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 14;
+}
+.monet_z{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    z-index: 15;
+    position: absolute;
+    top: 170px;
+    left: 220px;
+}
+@media(max-width:1540px){
+    .rek_ohirgi_baneer{
+        width: 580px;
+        position: absolute;
+        top: 80px;
+        right: 60px;
+}
+.rek_ohirgi_baneer_sozi{
+    font-size: 40px;
+}
+}
+@media(max-width:1100px){
+    .rek_ohirgi_baneer{
+        width: 580px;
+        position: absolute;
+        top: 80px;
+        right: 60px;
+}
+.rek_ohirgi_baneer_sozi{
+    font-size: 40px;
+}
+.rek_dumaloq_zay_nab1_1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    background-color: white;
+    position: absolute;
+    bottom: 100px;
+    left:650px;
+}
+.rek_dumaloq_zay_nab1{
+    width: 180px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    background-color: white;
+    position: absolute;
+    top: 230px;
+    left:-80px;
+    z-index: 3;
+}
+.rek_dumaloq_zay_nab11{
+    width: 340px;
+    height: 290px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    position: absolute;
+    bottom: -60px;
+    left:-120px;
+    z-index: 2;
+    background-color: #FFCB13;
+}
+.promax_onas{
+    height: 280px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    z-index: 14;
+}
+.monet_z{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    z-index: 15;
+    position: absolute;
+    top: 200px;
+    left: 140px;
+}
+.monet_z img{
+    height: 50px;
+}
+.rek_ohirgi_baneer{
+    width: 380px;
+    position: absolute;
+    top: 70px;
+    right: 35px;
+}
+.rek_h1_kop {
+    color: #E93333;
+    font-size: 30px;
+}
+
+.rek_ohirgi_baneer_sozi{
+font-size: 35px;
+}
+}
+@media(max-width:750px){
+ 
+.rek_ohirgi_baneer_sozi{
+    font-size: 35px;
+}
+.rek_dumaloq_zay_nab1_1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    background-color: white;
+    position: absolute;
+    bottom: 150px;
+    left:440px;
+}
+.rek_dumaloq_zay_nab1{
+    width: 190px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    background-color: white;
+    position: absolute;
+    top: 400px;
+    left:-60px;
+    z-index: 3;
+}
+.rek_dumaloq_zay_nab11{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00000040;
+    position: absolute;
+    bottom: -90px;
+    left:-120px;
+    z-index: 2;
+    background-color: #FFCB13;
+}
+.promax_onas{
+    height: 280px;
+    position: absolute;
+    top: 273px;
+    left: 30px;
+    z-index: 14;
+}
+.monet_z{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    z-index: 15;
+    position: absolute;
+    top: 400px;
+    left: 140px;
+}
+.monet_z img{
+    height: 50px;
+}
+.rek_ohirgi_baneer{
+    width: 380px;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+.rek_h1_kop {
+    color: #E93333;
+    font-size: 30px;
+}
+
+
+}
+@media(max-width:500px){
+ 
+    .rek_ohirgi_baneer_sozi{
+        font-size: 35px;
+    }
+    .rek_dumaloq_zay_nab1_1{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 0 40px #00000040;
+        background-color: white;
+        position: absolute;
+        bottom: 150px;
+        left:340px;
+    }
+    .rek_dumaloq_zay_nab1{
+        width: 190px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 40px #00000040;
+        background-color: white;
+        position: absolute;
+        top: 400px;
+        left:-60px;
+        z-index: 3;
+    }
+    .rek_dumaloq_zay_nab11{
+        width: 340px;
+        height: 340px;
+        border-radius: 50%;
+        box-shadow: 0 0 40px #00000040;
+        position: absolute;
+        bottom: -90px;
+        left:-120px;
+        z-index: 2;
+        background-color: #FFCB13;
+    }
+    .promax_onas{
+        height: 280px;
+        position: absolute;
+        top: 273px;
+        left: 30px;
+        z-index: 14;
+    }
+    .monet_z{
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        z-index: 15;
+        position: absolute;
+        top: 400px;
+        left: 140px;
+    }
+    .monet_z img{
+        height: 50px;
+    }
+    .rek_ohirgi_baneer{
+        width: 320px;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+    }
+    .rek_h1_kop {
+        color: #E93333;
+        font-size: 30px;
+    }
+    
+    
+    }
+    @media(max-width:430px){
+ 
+        .rek_ohirgi_baneer_sozi{
+            font-size: 30px;
+        }
+        .rek_dumaloq_zay_nab1_1{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 40px #00000040;
+            background-color: white;
+            position: absolute;
+            bottom: 150px;
+            left:290px;
+        }
+        .rek_dumaloq_zay_nab1{
+            width: 190px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 40px #00000040;
+            background-color: white;
+            position: absolute;
+            top: 400px;
+            left:-60px;
+            z-index: 3;
+        }
+        .rek_dumaloq_zay_nab11{
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            box-shadow: 0 0 40px #00000040;
+            position: absolute;
+            bottom: -90px;
+            left:-120px;
+            z-index: 2;
+            background-color: #FFCB13;
+        }
+        .promax_onas{
+            height: 280px;
+            position: absolute;
+            top: 273px;
+            left: 30px;
+            z-index: 14;
+        }
+        .monet_z{
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            z-index: 15;
+            position: absolute;
+            top: 400px;
+            left: 140px;
+        }
+        .monet_z img{
+            height: 50px;
+        }
+        .rek_ohirgi_baneer{
+            width: 320px;
+            position: absolute;
+            top: 40px;
+            right: 8px;
+        }
+        .rek_h1_kop {
+            color: #E93333;
+            font-size: 30px;
+        }
+        
+        
+        }
+        @media(max-width:410px){
+ 
+            .rek_ohirgi_baneer_sozi{
+                font-size: 30px;
+            }
+            .rek_dumaloq_zay_nab1_1{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                box-shadow: 0 0 40px #00000040;
+                background-color: white;
+                position: absolute;
+                bottom: 160px;
+                left:260px;
+            }
+            .rek_dumaloq_zay_nab1{
+                width: 190px;
+                height: 200px;
+                border-radius: 50%;
+                box-shadow: 0 0 40px #00000040;
+                background-color: white;
+                position: absolute;
+                top: 400px;
+                left:-60px;
+                z-index: 3;
+            }
+            .rek_dumaloq_zay_nab11{
+                width: 340px;
+                height: 340px;
+                border-radius: 50%;
+                box-shadow: 0 0 40px #00000040;
+                position: absolute;
+                bottom: -90px;
+                left:-120px;
+                z-index: 2;
+                background-color: #FFCB13;
+            }
+            .promax_onas{
+                height: 280px;
+                position: absolute;
+                top: 273px;
+                left: 30px;
+                z-index: 14;
+            }
+            .monet_z{
+                width: 130px;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                z-index: 15;
+                position: absolute;
+                top: 400px;
+                left: 140px;
+            }
+            .monet_z img{
+                height: 50px;
+            }
+            .rek_ohirgi_baneer{
+                width: 290px;
+                position: absolute;
+                top: 40px;
+                right: 8px;
+            }
+            .rek_h1_kop {
+                color: #E93333;
+                font-size: 30px;
+            }
+            
+            
+            }
+            @media(max-width:360px){
+ 
+                .rek_ohirgi_baneer_sozi{
+                    font-size: 28px;
+                }
+                .rek_dumaloq_zay_nab1_1{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 40px #00000040;
+                    background-color: white;
+                    position: absolute;
+                    bottom: 180px;
+                    left:225px;
+                }
+                .rek_dumaloq_zay_nab1{
+                    width: 190px;
+                    height: 200px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 40px #00000040;
+                    background-color: white;
+                    position: absolute;
+                    top: 380px;
+                    left:-60px;
+                    z-index: 3;
+                }
+                .rek_dumaloq_zay_nab11{
+                    width: 340px;
+                    height: 340px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 40px #00000040;
+                    position: absolute;
+                    bottom: -90px;
+                    left:-120px;
+                    z-index: 2;
+                    background-color: #FFCB13;
+                }
+                .promax_onas{
+                    height: 280px;
+                    position: absolute;
+                    top: 233px;
+                    left: 20px;
+                    z-index: 14;
+                }
+                .monet_z{
+                    width: 115px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    z-index: 15;
+                    position: absolute;
+                    top: 360px;
+                    left: 140px;
+                }
+                .monet_z img{
+                    height: 44px;
+                }
+                .rek_ohirgi_baneer{
+                    width: 250px;
+                    position: absolute;
+                    top: 30px;
+                    right: 12px;
+                }
+                .rek_h1_kop {
+                    color: #E93333;
+                    font-size: 30px;
+                }
+                
+                
+                }
