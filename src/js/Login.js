@@ -273,14 +273,28 @@ export default function Login() {
          </div>):("")))}
       </>)}</>)}</>)}{page2===10?(<div>
 
-
-<div className="login-kotta">
+{/* <div className="login-kotta">
             
             <div className="teper-login10">
             <div className="nazat" >
               
               </div>
                   <div className="login-10-sozla">
+                    <h1>Вы успешно  <br />
+зарегистрировались</h1>
+<p>Зайдите в сервис используя свой логин и пароль.</p>
+<button>Войти в личный кабинет</button>
+                  </div>
+            </div>
+         </div>  */}
+
+                 <div className="login-kotta">
+            
+            <div className="teper-login122">
+            <div className="nazat" >
+              
+              </div>
+                  <div className="login-10-sozla12">
                     <h1>Вы успешно  <br />
 зарегистрировались</h1>
 <p>Зайдите в сервис используя свой логин и пароль.</p>
