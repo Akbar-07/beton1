@@ -1126,6 +1126,7 @@ color: #D6D6D6;
     top: 0;
     background-color: rgb(0, 0, 0, 0.667);
     display: none;
+    z-index: 400;
 }
 .user-modal-bonus{
     width: 100%;
@@ -1133,7 +1134,7 @@ color: #D6D6D6;
     position: absolute;
     top: 0 !important;
     background-color: rgb(0, 0, 0, 0.667);
-    z-index: 140 !important;
+    z-index: 400;
     display: block;
     bottom: 0 !important;
     display: none;

@@ -24,7 +24,7 @@ import IMG11 from "../img/Debit Card.png"
 import IMG12 from "../img/Coin In Hand.png"
 import IMG13 from "../img/Money With Arrow.png"
 import IMG14 from "../img/Group (11).png"
-
+import wal from '../img/Group 100.png'
 import prima from '../img/Group 201.png'
 import iconbla from '../img/Group 301.png'
 import zakazbeton from '../img/Group (15).png'
@@ -1255,7 +1255,7 @@ function check_ochil(id){
    <div className="zakaz-btn-media">
         <div className="zakaz-btn-media-ichi">
             <div className="zakaz-btn-naz">
-                <img src={wal1} alt="" /><span>Заказ бетона</span>
+                <img src={wal} alt="" /><span>Заказ бетона</span>
             </div>
             <div className="chto-neobhadimo-eto-media">
                 <div className="hmmmmmm-block-holat">
@@ -1611,43 +1611,7 @@ function check_ochil(id){
                         </div>
                     </div>
                     <div className="nmagaaaaaaa-input-data-qolda">
-                        <div className="exxxxxxxxxx-inputttt-ichi">
-                            <div className="bu-chap-tarap-sana"> 
-                            <div className="bu-chap-1">1</div>
-                            <div className="bu-chap-2">2</div>
-                            <div className="bu-chap-3">3</div>
-                            <div className="bu-chap-4">4</div>
-                            <div className="bu-chap-5">5</div>
-                            <div className="bu-chap-6">6</div>
-                            <div className="bu-chap-7">7</div>
-                            <div className="bu-chap-8">8</div>
-                            <div className="bu-chap-9">9</div>
-                            <div className="bu-chap-10">10</div>
-                            <div className="bu-chap-11">11</div>
-                            <div className="bu-chap-12">12</div>
-                            <div className="bu-chap-13">13</div>
-                            <div className="bu-chap-14">14</div>
-                            <div className="bu-chap-15">15</div>
-                            <div className="bu-chap-16">16</div>
-                            <div className="bu-chap-17">17</div>
-                            <div className="bu-chap-18">18</div>
-                            <div className="bu-chap-19">19</div>
-                            <div className="bu-chap-20">20</div>
-                            <div className="bu-chap-21">21</div>
-                            <div className="bu-chap-22">22</div>
-                            <div className="bu-chap-23">23</div>
-                            <div className="bu-chap-24">24</div>
-                            <div className="bu-chap-25">25</div>
-                            <div className="bu-chap-26">26</div>
-                            <div className="bu-chap-27">27</div>
-                            <div className="bu-chap-28">28</div>
-                            <div className="bu-chap-29">29</div>
-                            <div className="bu-chap-30">30</div>
-                            <div className="bu-chap-31">31</div>
-                            </div>
-                            <div className="bu-orta-tarap-oy"></div>
-                            <div className="ong-orta-tarap-yil"></div>
-                        </div>
+       
                     </div>
                 </div>
             </div>

@@ -298,7 +298,7 @@ export default function Login() {
                     <h1>Вы успешно  <br />
 зарегистрировались</h1>
 <p>Зайдите в сервис используя свой логин и пароль.</p>
-<button>Войти в личный кабинет</button>
+<button onClick={()=>window.location='/user'}>Войти в личный кабинет</button>
                   </div>
             </div>
          </div>

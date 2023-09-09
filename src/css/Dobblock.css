@@ -282,6 +282,11 @@ left: 80px;
     display: none;
 }
 @media (max-width:610px) {
+    .pasda-qanqadir-img-dobblock img{
+        height: 20px;
+        position: relative;
+        top: 8px;
+    }
     .img-bu-swiper-joy-sw img{
         width: 136px;
         height: 126px;
@@ -333,7 +338,7 @@ color: #000;
 .doblock-media-center h3{
     font-family: Gilroy;
 font-size: 18px;
-font-weight: 500;
+font-weight: 600;
 line-height: 27px;
 letter-spacing: 0em;
 text-align: left;
@@ -341,6 +346,7 @@ color: #CDCDCD;
 }
 .doblock-media-center span{
     color: #E93333;
+    font-weight: 600;
 }
 .pasda-qanqadir-img-dobblock{
     display: flex;
