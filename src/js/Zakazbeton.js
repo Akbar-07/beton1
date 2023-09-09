@@ -326,7 +326,9 @@ function eeeeee3(){
 }
 
 export default function Zakazbeton() {
+
   const [startDate, setStartDate] = useState(new Date());
+  
   function chiqaqol(){
     var y= document.querySelector(".akardon-pasdia-chiqadi-but").style.display;
     if(y==="none"){

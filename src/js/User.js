@@ -25,7 +25,8 @@ import data from '../js/Data'
 import skachat from '../img/material-symbols_download.png'
 import koment from '../img/Group 207.png'
 import skachat2 from '../img/Vector (2).png'
-
+import Footer from '../js/Footer'
+import Zakazbeton from "./Zakazbeton"
 function yoqil(id){
     for (let i = 0; i < document.querySelectorAll(".card_ptich_dumaloq_ptich").length; i++) {
       if(id === i){
@@ -57,14 +58,25 @@ function bonusmodal(){
     document.querySelector("body").style=`overflow: hidden;`
 }
 function modalbonusyopil(){
-    document.querySelector(".user-modal-bonus").style=`display:nonoe`
+    document.querySelector(".user-modal-bonus").style=`display:none`
     document.querySelector("body").style=`overflow: scroll;`
 }
 
 function buoyna1(){
-
+// document.querySelector(".bubosa-bubosindedi").style=`display:block`
+document.querySelector(".btn-mmmm-1").style=`  background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%);color:white`
+  document.querySelector(".btn-mmmm-2").style=`  border: 1px solid black; color:black`
+  document.querySelector(".bubosa-bubosindedi").style=`display:block`
+    document.querySelector(".asdasdsahdasds").style=`display:none`
 }
 function buoyna2(){
+    // document.querySelector(".bubosa-bubosindedi").style=`display:none`
+    document.querySelector(".btn-mmmm-2").style=`  background: linear-gradient(98.15deg, #000000 0.07%, #606060 120.91%);color:white`
+    document.querySelector(".btn-mmmm-1").style=`  border: 1px solid black; color:black`
+    document.querySelector(".bubosa-bubosindedi").style=`display:none`
+    // bubosa-buboissdad
+    document.querySelector(".bubosa-buboissdad").style=`display:block`
+    document.querySelector(".asdasdsahdasds").style=`display:block`
 
 }
 function pasgatext(){
@@ -335,12 +347,13 @@ export default function User() {
         </div>
         <div className="user-vutton-btn">
             <div className="udser-vtn-kotta">
-                <button  onClick={()=>buoyna1()}>Существующие заказы</button>
-                <button onClick={()=>buoyna2()}>Сделать новый заказ</button>
+                <button   className='btn-mmmm-1' onClick={()=>buoyna1()}>Существующие заказы</button>
+                <button  className='btn-mmmm-2' onClick={()=>buoyna2()}>Сделать новый заказ</button>
             </div>
             
         </div>
-        <div class="table">
+      <div className="bubosa-bubosindedi">
+      <div class="table">
             <div className="table-tepa-qismi">
                 <p className='datasdaljdad'>Номер заказа</p>
                 <p className='adres-left-position'>Адрес</p>
@@ -470,6 +483,13 @@ export default function User() {
     )
 })}
 </div>
+      </div>
+     <div className="bubosa-buboissdad">
+     <div className="asdasdsahdasds">
+     <Zakazbeton/>
+     </div>
+     </div>
+     
 <div className="tablemedia-mentor">
     <div className="table-media-ichi">
         <div className="oq-fon-media-bla" >
@@ -588,6 +608,7 @@ export default function User() {
         
     </div>
 </div>
+<Footer/>
     </div>
   )
 }

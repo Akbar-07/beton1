@@ -69,16 +69,11 @@ function textyopil(){
 
 
 export default function User() {
-const [countries, setCountries] = useState(null);
-const [selected, setSelected] = useState("");
+// const [countries, setCountries] = useState(null);
+// const [selected, setSelected] = useState("");
 // console.log(data.productData);
 
     useEffect(()=>{
-        fetch("https://restcountries.com/v2/all?fields=name")
-        .then((res)=> res.json())
-        .then((data)=> {
-            setCountries(data)
-        })
     },[])
     
     

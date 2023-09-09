@@ -35,7 +35,6 @@ export default function Navbar() {
 
     function modalpritenziya(){
         document.querySelector(".modal-navbar-joy").style=`display:block`
-        document.querySelector("body").style = "overflow: hidden;"
     }
 
     function yopilmodal(){
@@ -45,7 +44,6 @@ export default function Navbar() {
 
     function modalpritenziya1(){
         document.querySelector(".modal-navbar-joy").style=`display:block`
-        document.querySelector("body").style = "overflow: hidden;"
         document.querySelector(".black_chap").style = "display:none"
         document.querySelector(".menu_chap").style = "right:-425px"
     }
