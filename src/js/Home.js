@@ -91,13 +91,14 @@ import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import {BsChevronUp} from "react-icons/bs"
 import {BsChevronRight} from "react-icons/bs"
 import Fade from 'react-reveal/Fade';       
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Footer from './Footer'
 import Zakazbeton from  "./Zakazbeton"
+import axios from "axios"
 
 export default function Home() {
 
@@ -171,12 +172,27 @@ function noviy_beton2() {
     document.querySelector(".fabrikaimg1").style="display:none"
     document.querySelector(".fabrikaimg").style="display:flex"
 }
+const [data1, setData1] = useState([])
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/homeiy').then(res=>{
+        setData1(res.data)
+    }).catch(err=>{
+        alert("xato back")
+    })
+},[])
 
+const [sliv, setSliv] = useState(1)
   return (
     <div>
         <div className="seriy">
         <Navbar />
-        <div className="rek rek_orig">
+{data1.map((item,key)=>{
+    return <div key={key} className="api_get">
+        <img src={item.image} alt="" />
+    </div>
+})}
+
+{sliv === 1 ?  <div className="rek rek_orig">
            <div className="rek_h111">
            <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11'/> как заказать пиццу</h1>
             <span className='rek_h111_span'>Скачивай наше приложение!</span>
@@ -204,11 +220,11 @@ function noviy_beton2() {
                 <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
                 <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
             </div>
-            <div className="rek_dumaloq3">
+            <div onClick={()=>{setSliv(2)}} className="rek_dumaloq3">
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
-        </div>
-         {/* <div className="rek rek_orig">
+        </div> : ""}
+      {sliv === 2 ? <div className="rek rek_orig">
           <div className="dumaloq_12343">
 
           </div>
@@ -218,11 +234,11 @@ function noviy_beton2() {
             Только <span className='beton_taksi1_sozi2'>проверенные</span> поставщики бетона в одном месте!
             </h1>
           </div>
-            <div className="rek_dumaloq3">
+            <div onClick={()=>{setSliv(3)}} className="rek_dumaloq3">
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
-        </div> */}
-        {/* <div className="rek rek_orig">
+        </div> : ""} 
+        {sliv === 3 ? <div className="rek rek_orig">
         <div className="rek_dumaloq_keyin_1">
                 </div>
                 <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir' src={IMGG8} alt="" />
@@ -245,10 +261,31 @@ function noviy_beton2() {
                  <img className='phone_2' src={IMGG10} alt="" />
                 </div>
             </div>
-        <div className="rek_dumaloq3">
+        <div onClick={()=>{setSliv(4)}} className="rek_dumaloq3">
                 <HiOutlineArrowNarrowRight className='icon_z'/>
             </div>
-        </div> */}
+        </div> : ""} 
+        {sliv === 4 ? <div className="rek rek_orig">
+        <div className="rek_ohirgi_baneer">
+            <h1 className='rek_ohirgi_baneer_sozi'><span className='beton_taksi1_sozi2'>1000 бонусов</span> за регистрацию и первый заказ по промокоду <span className='beton_taksi1_sozi2'>“START”</span></h1>
+        </div>
+       <div className="rek_dumaloq_zay_nab11"></div>
+       <div className="rek_dumaloq_zay_nab1"></div>
+       <div className="rek_dumaloq_zay_nab1_1"></div>
+       <img className='promax_onas' src={IMGG20promax} alt="" />
+       <div className="monet_z">
+        <div className="monet_z1">
+            <img src={IMGGmonet1} alt="" />
+            <img src={IMGGmonet2} alt="" />
+        </div>
+        <img src={IMGGmonet3} alt="" />
+       </div>
+            <div onClick={()=>{setSliv(1)}} className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div> : ""} 
+    
+        
         <div className="rek1">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper sviperS">
         <SwiperSlide className='azx'>  <div className="rek">
