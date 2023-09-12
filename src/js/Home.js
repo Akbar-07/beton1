@@ -172,10 +172,10 @@ function noviy_beton2() {
     document.querySelector(".fabrikaimg1").style="display:none"
     document.querySelector(".fabrikaimg").style="display:flex"
 }
-const [data1, setData1] = useState([])
+const [data11, setData11] = useState([])
 useEffect(()=>{
     axios.get('https://dastafka-back.onrender.com/api/homeiy').then(res=>{
-        setData1(res.data)
+        setData11(res.data)
     }).catch(err=>{
         alert("xato back")
     })
@@ -186,12 +186,6 @@ const [sliv, setSliv] = useState(1)
     <div>
         <div className="seriy">
         <Navbar />
-{data1.map((item,key)=>{
-    return <div key={key} className="api_get">
-        <img src={item.image} alt="" />
-    </div>
-})}
-
 {sliv === 1 ?  <div className="rek rek_orig">
            <div className="rek_h111">
            <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11'/> как заказать пиццу</h1>
@@ -529,7 +523,7 @@ const [sliv, setSliv] = useState(1)
             <h1>Наши партнеры</h1>
         </div>
 
-        <div className="beton_homiy1">
+        {/* <div className="beton_homiy1">
            <div className="beton_homiy1_img">
            <div className="img5"><img onClick={()=>fabrika2()} className='fabrikaimg' src={IMG10} alt="" /><img style={{display:"none"}} className='fabrikaimg1' src={fabrika} alt="" /></div>
            </div>
@@ -545,13 +539,19 @@ const [sliv, setSliv] = useState(1)
            <div className="beton_homiy1_img">
              <div className="img4"><img className='noviy_betonimg' onClick={()=>noviy_beton2()} src={IMG14} alt="" /> <img style={{display:"none"}} className='noviy_betonimg1' src={noviy_beton1} alt="" /></div>
            </div>
-        </div>
+        </div> */}
 
         <div className="beton_homiy1_kopiya">
-           <div className="beton_homiy1_img">
-           <div><img src={IMG48} alt="" /></div>
-           </div>
-           <div className="beton_homiy1_img">
+            {data11.map((item,key)=>{
+                return (<div className="beton_homiy1_img">
+                    <img key={key} src={item.image} alt="" />
+                </div>)
+            })}
+           {/* <div className="beton_homiy1_img">
+          <img src={IMG48} alt="" />
+           </div> */}
+
+           {/* <div className="beton_homiy1_img">
             <img src={IMG49} alt="" />
            </div>
            <div className="beton_homiy1_img">
@@ -562,7 +562,7 @@ const [sliv, setSliv] = useState(1)
            </div>
            <div className="beton_homiy1_img">
              <div className="img4"><img src={IMG52} alt="" /></div>
-           </div>
+           </div> */}
         </div>
 
         <div className="beton_analiz">
