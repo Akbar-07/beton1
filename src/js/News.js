@@ -204,34 +204,17 @@ export default function News() {
         
       <div className="for_swip2" style={{display:"none"}}>
       <Swiper  id='myswip' style={{width:"1200px"}} slidesPerView={1} navigation={true}  modules={[Navigation]} className="mySwiper">
-        <SwiperSlide><div className="rasm1_div">
+      {aksiya.map(item=>{
+            return(
+                <SwiperSlide><div className="rasm1_div">
                 <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='for_swip_r' style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute'}} src={qiz1} alt="" />
+                    <h2 style={{zIndex:"11",color:"black"}} onClick={()=>{window.location="/Aksiya";localStorage.setItem("AksiyaId",item.id)}}>{item.title}</h2>
+                    <div style={{zIndex:"12"}} className="arrow_div" onClick={()=>{window.location="/Aksiya";localStorage.setItem("AksiyaId",item.id)}}><HiArrowRight className='arrow_left'/></div>
+                    <img style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
+                    <img id='rasm5' style={{position:'absolute'}} src={item.image} alt="" />
                 </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='for_swip_r' style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute'}} src={qiz1} alt="" />
-                </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='for_swip_r' style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute',height:"100%"}} src={qiz1} alt="" />
-                </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='for_swip_r' style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute',height:"100%"}} src={qiz1} alt="" />
-                </div></SwiperSlide>
+            )
+        })}
       </Swiper>
       </div>
       

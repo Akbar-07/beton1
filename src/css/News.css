@@ -98,6 +98,10 @@ body {
     width: 100%;
 }
 @media(max-width:480px) {
+    .arrow_div {
+        width: 100px !important;
+        height: 100px !important;
+    }
     .fort_new_img{
         width: 100%;
         max-width: 600px;
