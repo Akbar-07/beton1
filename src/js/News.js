@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/News.css'
 import start from "../img/Group 100.png"
 import mask from "../img/Mask group.png"
@@ -16,6 +16,7 @@ import {HiArrowRight} from 'react-icons/hi'
 import rasmm1 from "../img/Rectangle 32.png"
 import qiz1 from "../img/qiz1.png"
 import mediamask from '../img/media_mask.png'
+import url from './Host'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -27,8 +28,21 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+import axios from 'axios'
 
 export default function News() {
+    const [news,setNews] = useState([])
+    const [aksiya,setAksiya] = useState([])
+
+    useEffect(() => {
+    axios.get(`${url}/api/news`).then(res=>{
+        setNews(res.data)
+    })
+    axios.get(`${url}/api/aksiya`).then(res=>{
+        setAksiya(res.data)
+    })
+    }, [])
+    
   return (
     <>
     <Navbar/>
@@ -44,60 +58,60 @@ export default function News() {
         </div>
         <div className="news_cards">
             <div className="news_card">
-            <img className='media_mask' src={mediamask} alt="" />
-                <img className='media_mask1' src={mask} alt="" />
+                {news.map((item,key)=>{
+                    if(key<1){
+                      return(
+                        <>
+                        <div className="fort_new_img">
+                <img className='media_mask1' src={item.image} alt="" />
+                </div>
+                        </>
+                    )  
+                    }
+                    
+                })}
+            
                 <div className="news_card_p">
-                <h3>Новая марка бетона уже доступна</h3>
-                <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
-                <h2 onClick={()=>window.location="Article"}>Читать новость</h2>
+                    
+                
+                {news.map((item,key)=>{
+                        if(key<1){
+                    return(<>
+                        <h3>{item.title}</h3>
+                            <p>{item.min_description}</p>
+                            <h2 onClick={()=>{window.location="Article";localStorage.setItem("NewsId",item.id)}}>Читать новость</h2></>
+                        )
+                        }
+                        
+                    })}
+                
                 </div>
             </div>
         </div></div></div><h2 className='swiph2'>Смотри, что у нас нового!</h2>
         <div className="for_swip3">
         <Swiper id='myes' style={{width:"92vw",maxWidth:"1200px"}} slidesPerView={2} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide><div className="rasm1_div">
-                    <h2>Новая марка бетона уже доступна на сайте</h2>
-                    <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img src={rasm1} alt="" />
+          {news.map(item=>{
+            return(
+              <SwiperSlide><div className="rasm1_div">
+                    <h2 onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}>{item.title}</h2>
+                    <div className="arrow_div" onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}><HiArrowRight className='arrow_left'/></div>
+                    <img src={item.image} alt="" />
                 </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h2>Новая марка бетона уже доступна на сайте</h2>
-                <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='news_page_2_card_img' src={rasm2} alt="" />
-                </div></SwiperSlide>
-                <SwiperSlide><div className="rasm1_div">
-                    <h2>Новая марка бетона уже доступна на сайте</h2>
-                    <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img src={rasm1} alt="" />
-                </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h2>Новая марка бетона уже доступна на сайте</h2>
-                <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='news_page_2_card_img' src={rasm2} alt="" />
-                </div></SwiperSlide>
+            )
+          })}
       </Swiper></div>
       <div className="for_swip4" style={{display:"none"}}>
         <Swiper id='myes' style={{width:"92vw",maxWidth:"1200px"}} slidesPerView={1} navigation={true} spaceBetween={30} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide><div className="rasm1_div">
-                    <h2>Новая марка бетона уже доступна на сайте</h2>
-                    <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img src={rasm1} alt="" />
+        
+        {news.map(item=>{
+            return(
+              <SwiperSlide><div className="rasm1_div">
+                    <h2 onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}>{item.title}</h2>
+                    <div className="arrow_div" onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}><HiArrowRight className='arrow_left'/></div>
+                    <img src={item.image} alt="" />
                 </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h2>Новая марка бетона уже доступна на сайте</h2>
-                <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='news_page_2_card_img' src={rasm2} alt="" />
-                </div></SwiperSlide>
-                <SwiperSlide><div className="rasm1_div">
-                    <h2>Новая марка бетона уже доступна на сайте</h2>
-                    <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img src={rasm1} alt="" />
-                </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h2>Новая марка бетона уже доступна на сайте</h2>
-                <div className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img className='news_page_2_card_img' src={rasm2} alt="" />
-                </div></SwiperSlide>
+            )
+          })}
       </Swiper></div>
         <div id='div1' style={{display:"flex",justifyContent:"center"}} className="div_news_3"><div className="news_page_3">
             <div className="news_page_3_cards">
@@ -175,34 +189,17 @@ export default function News() {
             
         </div>
         <div className="for_swip1"><Swiper id='myswip' style={{width:"1200px"}}  slidesPerView={2}  modules={[Navigation]} className="mySwiper">
-        <SwiperSlide><div className="rasm1_div">
+        {aksiya.map(item=>{
+            return(
+                <SwiperSlide><div className="rasm1_div">
                 <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
+                    <h2 style={{zIndex:"11",color:"black"}} onClick={()=>{window.location="/Aksiya";localStorage.setItem("AksiyaId",item.id)}}>{item.title}</h2>
+                    <div style={{zIndex:"12"}} className="arrow_div" onClick={()=>{window.location="/Aksiya";localStorage.setItem("AksiyaId",item.id)}}><HiArrowRight className='arrow_left'/></div>
                     <img style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute'}} src={qiz1} alt="" />
+                    <img id='rasm5' style={{position:'absolute'}} src={item.image} alt="" />
                 </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute'}} src={qiz1} alt="" />
-                </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute'}} src={qiz1} alt="" />
-                </div></SwiperSlide>
-        <SwiperSlide><div className="rasm1_div">
-                <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
-                    <h2 style={{zIndex:"11",color:"black"}}>Новая акция партии бетона</h2>
-                    <div style={{zIndex:"12"}} className="arrow_div"><HiArrowRight className='arrow_left'/></div>
-                    <img style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
-                    <img id='rasm5' style={{position:'absolute'}} src={qiz1} alt="" />
-                </div></SwiperSlide>
+            )
+        })}
       </Swiper></div>
         
       <div className="for_swip2" style={{display:"none"}}>

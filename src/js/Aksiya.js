@@ -26,10 +26,13 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
 export default function Article() {
-
   const [news,setNews] = useState([])
+  const [aksiya,setAksiya] = useState([])
 
   useEffect(() => {
+    axios.get(`${url}/api/aksiya`).then(res=>{
+        setAksiya(res.data)
+    })
     axios.get(`${url}/api/news`).then(res=>{
         setNews(res.data)
     })
@@ -39,14 +42,14 @@ export default function Article() {
         <Navbar/>
         <div className="bid_header">
 <div className="Article_header">
-        <p className='aa1'><span onClick={()=> window.location="/"}>Главная</span>  | <span onClick={()=> window.location="/News"}>Новости</span>  | <span className='span1'>Статья</span>  </p>
+        <p className='aa1'><span onClick={()=> window.location="/"}>Главная</span>  | <span className='span1' onClick={()=> window.location="/Aksiya"}>акции</span> </p>
         </div>
         <div className="news_page">
             <img src={start} alt="" />
-            <h2>Новости</h2>
+            <h2>Акции</h2>
         </div>
-        {news.map(item=>{
-          if(item.id==localStorage.getItem("NewsId")){
+        {aksiya.map(item=>{
+          if(item.id==localStorage.getItem("AksiyaId")){
             return(
             <div className="Article_cards">
           <div className="Article_card1">

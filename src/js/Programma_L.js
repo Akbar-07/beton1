@@ -52,7 +52,7 @@ export default function Programma_L() {
 
 
   return (
-    <div>
+    <div className='for_Programma'>
       <Navbar />
 
       <div className="otkizish">
