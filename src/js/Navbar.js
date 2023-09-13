@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/Navbar.css'
 import {HiNewspaper} from "react-icons/hi"
 import {FaCalculator} from "react-icons/fa"
@@ -13,6 +13,7 @@ import {CgMenuRight} from "react-icons/cg"
 import IMG1 from "../img/Слой_x0020_1.png"
 import IMG2 from "../img/Group 144.png"
 import IMG3 from "../img/Group 298.png"
+import axios from 'axios'
 
 export default function Navbar() {
     function open_lichka(){
@@ -49,6 +50,14 @@ export default function Navbar() {
         document.querySelector(".menu_chap").style = "right:-425px"
     }
 
+    const [company, setCompany] = useState([])
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/compony').then(res=>{
+        setCompany(res.data)
+    }).catch(err=>{
+        alert("xato back")
+    })
+},[])
   return (
     <div>
         <div className="black_chap"></div>
@@ -56,7 +65,10 @@ export default function Navbar() {
             
            <div className="navbar1">
            <div className="nav_1">
-                <img onClick={()=> window.location="/"} src={IMG1} alt="" />
+            {company.map(item=>{
+                return  <img className='z_IMG1' onClick={()=> window.location="/"} src={item.logo} alt="" />
+            })}
+               
             </div>
             <div className="nav_1_1">
                 <img src={IMG3} alt="" />
