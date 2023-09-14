@@ -3144,7 +3144,6 @@ margin-left: 15px;
     margin: auto;
     margin-top: 50px;
     flex-wrap: wrap;
-    display: none;
     text-align: center !important;
 }
 @media(max-width:1100px){
@@ -6422,4 +6421,10 @@ font-size: 35px;
                 }
                 
                 
+                }
+                .yellow_star{
+                    color: #FFCB13;
+                }
+                .white_stat{
+                    color: gray;
                 }

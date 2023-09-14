@@ -58,7 +58,6 @@ export default function Partners() {
                 const Filter=res.data.filter(item=>item.id==id)
                 setPartner1(Filter)
             })
-            
         }
     return (
 
