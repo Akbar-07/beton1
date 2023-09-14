@@ -31,6 +31,9 @@ export default function Partners_page() {
       
     }
   }
+  function postData(){
+    var newPostData = new FormData()
+  }
   return (
     <div>
         <Navbar/>
@@ -256,12 +259,12 @@ export default function Partners_page() {
         <span className='kel_card2_radio_1_span'>Физ.лицо</span>
       </div>
     </div>
-    <input className='kel_card2_inp' id='1z' type="text" placeholder='Наименование организации'/><br />
-    <input className='kel_card2_inp' id='2z' type="text" placeholder='ИНН'/><br />
-    <input className='kel_card2_inp' id='3z' type="text" placeholder='Контактное лицо'/><br />
-    <input className='kel_card2_inp' id='4z' type="number" placeholder='Телефон'/><br />
-    <input className='kel_card2_inp' id='5z' type="text" placeholder='Сайт'/><br />
-    <input className='kel_card2_inp' id='6z' type="email" placeholder='Email'/><br />
+    <input className='kel_card2_inp' id='11z' type="text" placeholder='Наименование организации'/><br />
+    <input className='kel_card2_inp' id='22z' type="text" placeholder='ИНН'/><br />
+    <input className='kel_card2_inp' id='33z' type="text" placeholder='Контактное лицо'/><br />
+    <input className='kel_card2_inp' id='44z' type="number" placeholder='Телефон'/><br />
+    <input className='kel_card2_inp' id='55z' type="text" placeholder='Сайт'/><br />
+    <input className='kel_card2_inp' id='66z' type="email" placeholder='Email'/><br />
     <div className="vash_trans">
       <span className='vash_trans_span'>Ваш транспорт:</span>
       <div className="vash_trans1">
