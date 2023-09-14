@@ -554,7 +554,7 @@ const [sliv, setSliv] = useState(1)
         </div> */}
 
         <div className="beton_homiy1_kopiya">
-            {data11.map((item,key)=>{
+            {data11.map(item=>{
                 return (
                 <div className="beton_homiy1_img">
                     <img onClick={()=>partner2(item.id)} src={item.image} alt="" />
