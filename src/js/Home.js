@@ -37,6 +37,8 @@ import IMG13 from "../img/Mask group (4).png"
 import IMG14 from "../img/Mask group (5).png"
 import IMG15 from "../img/2GIS_logo 1.png"
 import IMG16 from "../img/Слой_x0020_1.png"
+import {BsStarFill} from "react-icons/bs"
+import {BsStar} from "react-icons/bs"
 import IMG17 from "../img/101 1.png"
 import IMG18 from "../img/Phone Location.png"
 import IMG19 from "../img/AdobeStock_70069013 1.png"
@@ -99,6 +101,7 @@ import { Pagination } from 'swiper/modules';
 import Footer from './Footer'
 import Zakazbeton from  "./Zakazbeton"
 import axios from "axios"
+import url from './Host'
 
 export default function Home() {
 
@@ -173,13 +176,22 @@ function noviy_beton2() {
     document.querySelector(".fabrikaimg").style="display:flex"
 }
 const [data11, setData11] = useState([])
+const [data111, setData111] = useState([])
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/homeiy').then(res=>{
+    axios.get(`${url}/api/homeiy`).then(res=>{
         setData11(res.data)
-    }).catch(err=>{
-        alert("xato back")
+        setData111(res.data)
     })
+    
+    
 },[])
+
+function partner2(id) {
+    axios.get(`${url}/api/homeiy`).then(res=>{
+        const Filter=res.data.filter(item=>item.id==id)
+        setData111(Filter)
+    })
+}
 
 const [sliv, setSliv] = useState(1)
   return (
@@ -543,8 +555,9 @@ const [sliv, setSliv] = useState(1)
 
         <div className="beton_homiy1_kopiya">
             {data11.map((item,key)=>{
-                return (<div className="beton_homiy1_img">
-                    <img key={key} src={item.image} alt="" />
+                return (
+                <div className="beton_homiy1_img">
+                    <img onClick={()=>partner2(item.id)} src={item.image} alt="" />
                 </div>)
             })}
            {/* <div className="beton_homiy1_img">
@@ -565,26 +578,18 @@ const [sliv, setSliv] = useState(1)
            </div> */}
         </div>
 
-        <div className="beton_analiz">
+            {data111.map((item,key)=>{
+                if(key<1){
+                    return(
+<div className="beton_analiz">
             <div className="bet_ana1">
                 <div className="bet_ana11">
                     <img src={IMG15} alt="" />
 
 
 <div className="bet_ana_1">
-                        <span className='s3'>4,8</span>
-                        <div class="rating1">
-  <input value="5" name="rate" id="star5" type="radio"/>
-  <label  className='label10' title="text" for="star5"></label>
-  <input value="4" name="rate" id="star4" type="radio"/>
-  <label  className='label9' title="text" for="star4"></label>
-  <input value="3" name="rate" id="star3" type="radio" checked=""/>
-  <label  className='label8' title="text" for="star3"></label>
-  <input value="2" name="rate" id="star2" type="radio"/>
-  <label  className='label7' title="text" for="star2"></label>
-  <input value="1" name="rate" id="star1" type="radio"/>
-  <label  className='label6' title="text" for="star1"></label>
-</div>
+                        <span className='s3'>{item.gis_mark}</span>
+                        {item.gis_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.gis_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
                     </div>
 
                 </div>
@@ -592,32 +597,15 @@ const [sliv, setSliv] = useState(1)
                     <img src={IMG16} alt="" />
 
                     <div className="bet_ana_1">
-                        <span className='s3'>4,8</span>
-                        <div class="rating_kop">
-  <input value="5" name="rate" id="star5" type="radio"/>
-  <label className='label5' title="text" for="star5"></label>
-  <input value="4" name="rate" id="star4" type="radio"/>
-  <label  className='label4' title="text" for="star4"></label>
-  <input value="3" name="rate" id="star3" type="radio" checked=""/>
-  <label  className='label3' title="text" for="star3"></label>
-  <input value="2" name="rate" id="star2" type="radio"/>
-  <label  className='label2' title="text" for="star2"></label>
-  <input value="1" name="rate" id="star1" type="radio"/>
-  <label className='label1' title="text" for="star1"></label>
-</div>
+                        <span className='s3'>{item.betomtaxi_mark}</span>
+                        {item.betomtaxi_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
                     </div>
 
                 </div>
                 
             </div>
             <div className="bet_ana2">
-                <span className='s4'>С другой стороны постоянный количественный рост и сфера 
-                    нашей активности требуют от нас анализа соответствующий 
-                    условий активизации. Повседневная практика показывает,
-                     что постоянный количественный рост и сфера нашей активности
-                      играет важную роль в формировании форм развития<div className="br"></div>
-                       Равным образом укрепление и развитие структуры
-                        представляет </span>
+                <span className='s4'>{item.description}</span>
 
                <div className="bet_ana22">
                 <span>#245 заводов</span>
@@ -627,6 +615,11 @@ const [sliv, setSliv] = useState(1)
                 </div>         
             </div>
         </div>
+                )
+                }
+                
+            })}
+        
        </div>
         <div className="seriy">
 
