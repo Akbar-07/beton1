@@ -21,7 +21,6 @@
 }
 .Article_cards{
     background-color: #FFF;
-    min-height: 800px;
     border-radius: 55px;
     padding-bottom: 80px;
 }
@@ -80,10 +79,34 @@
     align-items: center;
     margin-top: 60px;
 }
+.aa1 span{
+    padding: 0px 5px;
+}
+.rasm1_div{
+    cursor: pointer;
+}
+.rasm1_div .arrow_div{
+    cursor: pointer;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans:wght@500&family=Roboto&display=swap');
 @media(max-width:1024px){
     .Article_card{
         display: block;
+        
+    }
+    .Article_cards{
+        padding-bottom: 40px;
+    }
+    .fort_new_img {
+        width: 100%;
+        max-width: 100%;
+        height: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 50px;
+        border-top-right-radius: 50%;
     }
     .Article_bottom_p{
         margin-top: 40px;
@@ -121,11 +144,19 @@
     }
 }
 @media(max-width:480px){
+    .article_card h4 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .Article_bottom_p{
+        font-size: 14px;
+    }
     .Article_cards {
         border-top-right-radius: 55px;
     }
     .Article_card h3{
-        font-size: 25px;
+        font-size: 20px;
     }
     .news_page_2 h2{
         font-size: 30px;

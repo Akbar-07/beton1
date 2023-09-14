@@ -20,6 +20,7 @@ import User from './js/User';
 import Layfxak from './js/Layfxak';
 import Error from './js/Error';
 import Mentor from './js/Mentor';
+import Aksiya from './js/Aksiya';
 
 export default class App extends Component {
 render() {
@@ -47,6 +48,7 @@ render() {
 				<Route export path='/Layfxak' element={<Layfxak/>}></Route>
 				<Route export path='/Error' element={<Error/>}></Route>
 				<Route export path='/Mentor' element={<Mentor/>}></Route>
+				<Route export path='/Aksiya' element={<Aksiya/>}></Route>
 		</Routes>
 		</div>
 	</Router>
