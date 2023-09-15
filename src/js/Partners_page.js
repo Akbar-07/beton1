@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/Partners_page.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -19,6 +19,8 @@ import IMG15 from "../img/Man talking on phone.png"
 import IMG16 from "../img/Group 259 (1).png"
 import IMG17 from "../img/Location Pin.png"
 import IMG18 from "../img/Vector 22 (1).png"
+import axios from 'axios'
+import url from './Host'
 
 export default function Partners_page() {
   function radio_bol(id){
@@ -30,11 +32,97 @@ export default function Partners_page() {
       }
       
     }
+    console.log(id)
   }
+
+  const [post1, setPost1] = useState([{}])
   function postData(){
     var newPostData = new FormData()
-    newPostData.append("")
+    newPostData.append("type",1)
+    newPostData.append("organizatsiya",document.querySelector("#organizatsiya").value)
+    newPostData.append("inn",document.querySelector("#inn").value)
+    newPostData.append("liso_contact",document.querySelector("#liso_contact").value)
+    newPostData.append("phone",document.querySelector("#phone").value)
+    newPostData.append("sayt",document.querySelector("#sayt").value)
+    newPostData.append("email",document.querySelector("#email").value)
+    axios.post(`${url}/api/work`,newPostData).then(res=>{
+      alert("saqlandi")
+    })
+    axios.get(`${url}/api/work`).then(res=>{
+      setPost1(res.data)
+      console.log(res.data);
+    }).catch(err=>{
+      alert("qoshilmadi")
+    })
   }
+  const [post2, setPost2] = useState([{}])
+
+  let son = radio_bol(1)
+
+
+  function postData1(id){
+    // var rad_1 = document.getElementById("radio_post1")
+    // var rad_2 = document.getElementById("radio_post2")
+    
+ if(id === 2){
+  var newPostData1 = new FormData()
+  newPostData1.append("type",2)
+  newPostData1.append("organizatsiya",document.querySelector("#organizatsiya1").value)
+  newPostData1.append("inn",document.querySelector("#inn1").value)
+  newPostData1.append("liso_contact",document.querySelector("#liso_contact1").value)
+  newPostData1.append("phone",document.querySelector("#phone1").value)
+  newPostData1.append("sayt",document.querySelector("#sayt1").value)
+  newPostData1.append("email",document.querySelector("#email1").value)
+  newPostData1.append("mashina",id)
+  newPostData1.append("shving",id)
+  axios.post(`${url}/api/work`,newPostData1).then(res=>{
+    alert("saqlandi")
+  })
+  axios.get(`${url}/api/work`).then(res=>{
+    setPost2(res.data)
+    console.log(res.data);
+  }).catch(err=>{
+    alert("qoshilmadi")
+  })
+ }else if(id === 3){
+  var newPostData2 = new FormData()
+  newPostData2.append("type",3)
+  newPostData2.append("organizatsiya",document.querySelector("#organizatsiya1").value)
+  newPostData2.append("inn",document.querySelector("#inn1").value)
+  newPostData2.append("liso_contact",document.querySelector("#liso_contact1").value)
+  newPostData2.append("phone",document.querySelector("#phone1").value)
+  newPostData2.append("sayt",document.querySelector("#sayt1").value)
+  newPostData2.append("email",document.querySelector("#email1").value)
+  newPostData2.append("mashina",id)
+  newPostData2.append("shving",id)
+  axios.post(`${url}/api/work`,newPostData2).then(res=>{
+    alert("saqlandi")
+  })
+  axios.get(`${url}/api/work`).then(res=>{
+    setPost2(res.data)
+    console.log(res.data);
+  }).catch(err=>{
+    alert("qoshilmadi")
+  })
+ }
+  }
+
+  const [shving3, setShving3] = useState([])
+  useEffect(()=>{
+    axios.get(`${url}/api/shving`).then(res=>{
+      setShving3(res.data)
+    }).catch(err=>{
+      alert("b1")
+    })
+  },[])
+  const [shving4, setShving4] = useState([])
+  useEffect(()=>{
+    axios.get(`${url}/api/mashina`).then(res=>{
+      setShving4(res.data)
+    }).catch(err=>{
+      alert("b1")
+    })
+  },[])
   return (
     <div>
         <Navbar/>
@@ -146,13 +234,13 @@ export default function Partners_page() {
     </div>
   </div>
   <div className="kel_card2">
-    <input className='kel_card2_inp' id='1z' type="text" placeholder='Наименование организации'/><br />
-    <input className='kel_card2_inp' id='2z' type="text" placeholder='ИНН'/><br />
-    <input className='kel_card2_inp' id='3z' type="text" placeholder='Контактное лицо'/><br />
-    <input className='kel_card2_inp' id='4z' type="number" placeholder='Телефон'/><br />
-    <input className='kel_card2_inp' id='5z' type="text" placeholder='Сайт'/><br />
-    <input className='kel_card2_inp' id='6z' type="email" placeholder='Email'/><br />
-    <button className='kel_card2_but'>Отправить запрос</button>
+    <input className='kel_card2_inp' id='organizatsiya' type="text" placeholder='Наименование организации'/><br />
+    <input className='kel_card2_inp' id='inn' type="text" placeholder='ИНН'/><br />
+    <input className='kel_card2_inp' id='liso_contact' type="text" placeholder='Контактное лицо'/><br />
+    <input className='kel_card2_inp' id='phone' type="number" placeholder='Телефон'/><br />
+    <input className='kel_card2_inp' id='sayt' type="text" placeholder='Сайт'/><br />
+    <input className='kel_card2_inp' id='email' type="email" placeholder='Email'/><br />
+    <button onClick={()=>{postData()}} className='kel_card2_but'>Отправить запрос</button>
   </div>
 </div>
 
@@ -252,33 +340,40 @@ export default function Partners_page() {
   <div className="kel_card2">
     <div className="kel_card2_radio">
       <div className="kel_card2_radio_1">
-        <input onClick={()=>{radio_bol(0)}} className='radio_part_inp' type="radio" name="" id="" />
+        <input onClick={()=>{radio_bol(0)}} className='radio_part_inp' type="radio" name="" id="radio_post1" />
         <span>Компания</span>
       </div>
       <div className="kel_card2_radio_1">
-      <input onClick={()=>{radio_bol(1)}} className='radio_part_inp' type="radio" name="" id="" />
+      <input onClick={()=>{radio_bol(1)}} className='radio_part_inp' type="radio" name="" id="radio_post2" />
         <span className='kel_card2_radio_1_span'>Физ.лицо</span>
       </div>
     </div>
-    <input className='kel_card2_inp' id='11z' type="text" placeholder='Наименование организации'/><br />
-    <input className='kel_card2_inp' id='22z' type="text" placeholder='ИНН'/><br />
-    <input className='kel_card2_inp' id='33z' type="text" placeholder='Контактное лицо'/><br />
-    <input className='kel_card2_inp' id='44z' type="number" placeholder='Телефон'/><br />
-    <input className='kel_card2_inp' id='55z' type="text" placeholder='Сайт'/><br />
-    <input className='kel_card2_inp' id='66z' type="email" placeholder='Email'/><br />
+    <input className='kel_card2_inp' id='organizatsiya1' type="text" placeholder='Наименование организации'/><br />
+    <input className='kel_card2_inp' id='inn1' type="text" placeholder='ИНН'/><br />
+    <input className='kel_card2_inp' id='liso_contact1' type="text" placeholder='Контактное лицо'/><br />
+    <input className='kel_card2_inp' id='phone1' type="number" placeholder='Телефон'/><br />
+    <input className='kel_card2_inp' id='sayt1' type="text" placeholder='Сайт'/><br />
+    <input className='kel_card2_inp' id='email1' type="email" placeholder='Email'/><br />
     <div className="vash_trans">
       <span className='vash_trans_span'>Ваш транспорт:</span>
       <div className="vash_trans1">
         <span className='vash_trans1_span'>Машины:</span><br />
         <div className="vash_trans1_patok1">
           <div className="lnnk">
-          <button className='vash_trans1_patok1_but'>2,5м3 <img className='lnnk11_img' src={IMG10} alt="" /></button>
-          <button className='vash_trans1_patok1_but'>3м3 <img className='lnnk11_img' src={IMG10} alt="" /></button>
-          <button className='vash_trans1_patok1_but'>5м3 <img className='lnnk11_img' src={IMG10} alt="" /></button>
+          {shving4.map((item,key)=>{
+              return(
+                <div>
+           <button key={key} id={item.id} className='vash_trans1_patok1_but'>{item.m3}m <img className='lnnk11_img' src={item.image} alt="" /></button>
+                </div>
+              )
+            })}
+         
+          {/* <button className='vash_trans1_patok1_but'>3м3 <img className='lnnk11_img' src={IMG10} alt="" /></button>
+          <button className='vash_trans1_patok1_but'>5м3 <img className='lnnk11_img' src={IMG10} alt="" /></button> */}
           </div>
           <div className="lnnk1">
-          <button className='vash_trans1_patok1_but'>7м3 <img className='lnnk11_img' src={IMG10} alt="" /></button>
-          <button className='vash_trans1_patok1_but'>9м3 <img className='lnnk11_img' src={IMG10} alt="" /></button>
+          {/* <button className='vash_trans1_patok1_but'>7м3 <img className='lnnk11_img' src={IMG10} alt="" /></button>
+          <button className='vash_trans1_patok1_but'>9м3 <img className='lnnk11_img' src={IMG10} alt="" /></button> */}
           </div>
         </div>
       </div>
@@ -286,18 +381,25 @@ export default function Partners_page() {
         <span className='vash_trans1_span'>Швинги:</span><br />
         <div className="vash_trans1_patok1">
           <div className="lnnk11">
-          <button className='vash_trans1_patok1_but1'>2,5м3 <img className='lnnk11_img' src={IMG11} alt="" /></button>
+            {shving3.map((item,key)=>{
+              return(
+                <div>
+          <button key={key} id={item.id} className='vash_trans1_patok1_but1'>{item.m}m<img className='lnnk11_img' src={item.image} alt="" /></button>
+                </div>
+              )
+            })}
+          {/* <button className='vash_trans1_patok1_but1'>2,5м3 <img className='lnnk11_img' src={IMG11} alt="" /></button>
           <button className='vash_trans1_patok1_but1'>3м3 <img className='lnnk11_img' src={IMG11} alt="" /></button>
-          <button className='vash_trans1_patok1_but1'>5м3 <img className='lnnk11_img' src={IMG11} alt="" /></button>
+          <button className='vash_trans1_patok1_but1'>5м3 <img className='lnnk11_img' src={IMG11} alt="" /></button> */}
           </div>
           <div className="lnnk111">
-          <button className='vash_trans1_patok1_but1'>7м3 <img className='lnnk11_img' src={IMG11} alt="" /></button>
-          <button className='vash_trans1_patok1_but1'>9м3 <img className='lnnk11_img' src={IMG11} alt="" /></button>
+          {/* <button className='vash_trans1_patok1_but1'>7м3 <img className='lnnk11_img' src={IMG11} alt="" /></button>
+          <button className='vash_trans1_patok1_but1'>9м3 <img className='lnnk11_img' src={IMG11} alt="" /></button> */}
           </div>
         </div>
       </div>
     </div>
-    <button className='kel_card2_but'>Отправить запрос</button>
+    <button onClick={()=>{postData1(!(son) ? 2:3)}} className='kel_card2_but'>Отправить запрос</button>
   </div>
 </div>
 

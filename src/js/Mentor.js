@@ -16,6 +16,7 @@ import data from '../js/Data'
 import Footer from './Footer'
 import mediarasm from '../img/Mask group112.png'
 import axios from 'axios'
+import url from './Host'
 
 function modalochil(){
     document.querySelector(".user-modal").style=`display:block`
@@ -99,6 +100,14 @@ useEffect(()=>{
       console.log(err); 
     })
   }
+  const [marka1, setMarka1] = useState([])
+useEffect(()=>{
+    axios.get(`${url}/api/marka`).then(res=>{
+        setMarka1(res.data)
+    }).catch(err=>{
+        alert("vbnm")
+    })
+},[])
     
   return (
     <div className='user'>
@@ -411,6 +420,13 @@ useEffect(()=>{
                     <div className="media-select-info-select">
                         <div className="slect-flex-wrap">
                         <select>
+                        {marka1.map(item=>{
+                return(
+                    <div>
+                         <option value="1">{item.title}</option>
+                    </div>
+                )
+            })}
                             <option value="1">Марка бетона</option>
                             <option value="2">Марка бетона</option>
                             <option value="3">Марка бетона</option>

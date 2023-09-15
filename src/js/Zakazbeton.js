@@ -58,6 +58,9 @@ import mini from '../img/mini-kamaz.png'
 import m350 from '../img/m350 1.png'
 import { useEffect } from 'react'
 import axios from 'axios'
+import url from './Host'
+
+
 
 function mediayon(){
   document.querySelector(".beton-blcok-media").style=`border: 1px solid #FFCB13;`
@@ -511,6 +514,22 @@ useEffect(()=>{
         alert(".xatolar")
     })
 })
+const [marka1, setMarka1] = useState([])
+useEffect(()=>{
+    axios.get(`${url}/api/marka`).then(res=>{
+        setMarka1(res.data)
+    }).catch(err=>{
+        alert("vbnm")
+    })
+},[])
+const [mashina3, setMashina3] = useState([])
+useEffect(()=>{
+    axios.get(`${url}/api/mashina`).then(res=>{
+        setMashina3(res.data)
+    }).catch(err=>{
+        alert("popi")
+    })
+})
   return (
     <div>
       {zag === 1 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd1'>
@@ -560,9 +579,16 @@ useEffect(()=>{
         </div>
         <div className="zagrus_1">
           <div className="zagrus_1_sozi">
-            <span>М50</span>
-            <span>М200</span>
-            <span>М400</span>
+            {marka1.map(item=>{
+                return(
+                    <div>
+                        <span>{item.title}</span> 
+                    </div>
+                )
+            })}
+           
+            {/* <span>М200</span>
+            <span>М400</span> */}
           </div>
           <input min={1} max={3} className='range1' type="range" name="" id="" />
         </div>
@@ -994,20 +1020,34 @@ useEffect(()=>{
                                         <p>Если вам требуется доставка <br id='syebalsa'  /> определенными машинами, <br id='syebalsa' /> укажите какими:</p>
                                         </div>
                                         <div className="kamazlaga-keldi-endi-shu-qoldi">
-                                            <button><span>2,5м3</span><img src={zakazbeton} alt="" /></button>
-                                            <button><span>3м3</span><img src={zakazbeton} alt="" /></button>
+                                            {mashina3.map((item,key)=>{
+                                                return(
+                                                    <div>
+                                                     <button><span>{item.m3}</span><img src={item.image} alt="" /></button>   
+                                                    </div>
+                                                )
+                                            })}
+                                            
+                                            {/* <button><span>3м3</span><img src={zakazbeton} alt="" /></button>
                                             <button><span>5м3</span><img src={zakazbeton} alt="" /></button>
                                             <button><span>7м3</span><img src={zakazbeton} alt="" /></button>
-                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button> */}
                                         </div>
                                         
                                     </div>
                                     <div className="kamazla-media-suka-blat">
-                                            <button><span>2,5м3</span><img src={zakazbeton} alt="" /></button>
+                                    {mashina3.map((item,key)=>{
+                                                return(
+                                                    <div>
+                                                     <button><span>{item.m3}</span><img src={item.image} alt="" /></button>   
+                                                    </div>
+                                                )
+                                            })}
+                                            {/* <button><span>2,5м3</span><img src={zakazbeton} alt="" /></button>
                                             <button><span>3м3</span><img src={zakazbeton} alt="" /></button>
                                             <button><span>5м3</span><img src={zakazbeton} alt="" /></button>
                                             <button><span>7м3</span><img src={zakazbeton} alt="" /></button>
-                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button>
+                                            <button><span>9м3</span><img src={zakazbeton} alt="" /></button> */}
                                     </div>
                                     <div className="jalab-kamazlani-turi-bor-ekan1">
                                         <div className="lalala-nom-yo-bunga-prosta-p">
@@ -1328,9 +1368,16 @@ useEffect(()=>{
                     <div className="metr-kub-sm-inp">
                         <div className="nom-oylab-sm-topish-kere">
                             <div className="kakakakakakakaakkk">
-                            <p>М50</p>
+                            {marka1.map(item=>{
+                return(
+                    <div>
+                        <p>{item.title}</p> 
+                    </div>
+                )
+            })}
+                            {/* <p>М50</p>
                             <p>М200</p>
-                            <p>М400</p>
+                            <p>М400</p> */}
                             </div>
                             <div className="nom-kooc-inp-range">
                                 <input type="range"  />
@@ -1720,11 +1767,14 @@ useEffect(()=>{
                             <img src={zakazbeton} alt="" />
                         </div>
                     <select id="singleSelection" data-te-select-init>
-                    <option className='opticonn' value="1">2,5м3 </option>
-  <option className='opticonn'  value="2">3м3</option>
+                        {mashina3.map(item=>{
+                            return <option className='opticonn' value="1">{item.m3} </option>  
+                        })}
+                   
+  {/* <option className='opticonn'  value="2">3м3</option>
   <option className='opticonn' value="3">5м3</option>
   <option className='opticonn' value="4">7м3</option>
-  <option className='opticonn' value="5">9м3</option>
+  <option className='opticonn' value="5">9м3</option> */}
                    </select>
                     </div>
 
@@ -1735,9 +1785,7 @@ useEffect(()=>{
                         </div>
                     <select id="singleSelection" data-te-select-init>
                     {shving.map((item,key)=>{
-                             return <div>
-                                <option className='opticonn' value="1">{item.m}м </option>
-                             </div>
+                             return <option className='opticonn' value="1">{item.m}м </option>
                             })}
                     {/* <option className='opticonn' value="1">15м </option>
   <option className='opticonn'  value="2">21м</option>

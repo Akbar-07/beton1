@@ -16,6 +16,9 @@ import Fade from 'react-reveal/Fade';
 import {BsCheckLg} from "react-icons/bs" 
 import {BiChevronDown} from "react-icons/bi"
 import {BiRightArrowAlt} from "react-icons/bi"
+import { useEffect } from 'react'
+import axios from 'axios'
+import url from './Host'
 
 export default function Kankulyator() {
     const [kanmap, setKanmap] = useState([
@@ -82,16 +85,13 @@ export default function Kankulyator() {
         window.location="/home"
     }
     const [sel, setSel] = useState([
-        {
-            title : "salom",
-        },
-        {
-            title : "salom1",
-        },
-        {
-            title : "salom2",
-        }
+       
     ])
+    useEffect(()=>{
+        axios.get(`${url}/api/marka`).then(res=>{
+            setSel(res.data)
+        })
+    })
     const [sel1, setSel1] = useState([
         {
             title : "salom",
@@ -103,6 +103,7 @@ export default function Kankulyator() {
             title : "salom2",
         }
     ])
+    
   return (
     <div>
         <Navbar/>
@@ -159,9 +160,8 @@ export default function Kankulyator() {
                         <span>Марка бетона:</span><br />
                         <select className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>,
-                                <option key={key} value="2">{item.title}</option>,
-                                <option key={key} value="3">{item.title}</option>
+                                return <option key={key} value="1">{item.title}</option>
+                              
                             })}
                         </select>
                        
@@ -194,9 +194,8 @@ export default function Kankulyator() {
                         <span>Марка бетона:</span><br />
                         <select className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>,
-                                <option key={key} value="2">{item.title}</option>,
-                                <option key={key} value="3">{item.title}</option>
+                                return <option key={key} value="1">{item.title}</option>
+                             
                             })}
                         </select>
                        
@@ -224,9 +223,8 @@ export default function Kankulyator() {
                         <span>Марка бетона:</span><br />
                         <select className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>,
-                                <option key={key} value="2">{item.title}</option>,
-                                <option key={key} value="3">{item.title}</option>
+                                return <option key={key} value="1">{item.title}</option>
+                           
                             })}
                         </select>
                        
@@ -254,9 +252,8 @@ export default function Kankulyator() {
                         <span>Марка бетона:</span><br />
                         <select className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>,
-                                <option key={key} value="2">{item.title}</option>,
-                                <option key={key} value="3">{item.title}</option>
+                                return <option key={key} value="1">{item.title}</option>
+                                
                             })}
                         </select>
                        
