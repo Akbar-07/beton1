@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useEffect, useState} from 'react'
 import Navbar from '../js/Navbar'
 import '../css/User.css'
 import user from '../img/Vector (13).png'
@@ -27,6 +27,8 @@ import koment from '../img/Group 207.png'
 import skachat2 from '../img/Vector (2).png'
 import Footer from '../js/Footer'
 import Zakazbeton from "./Zakazbeton"
+import axios from 'axios'
+
 function yoqil(id){
     for (let i = 0; i < document.querySelectorAll(".card_ptich_dumaloq_ptich").length; i++) {
       if(id === i){
@@ -108,8 +110,18 @@ function galochka(){
   }
 }
 
+
+
+
 export default function User() {
+    const [data1,setData1]=useState([])
     const [zag, setZag] = useState(1)
+
+
+    const [name5,setName5]=useState([])
+    const [phone5,setPhone5]=useState([])
+    const [email2,setEmail5]=useState([])
+
     const [zol, setZol] = useState([
         {
           img : IMG1,
@@ -142,6 +154,31 @@ export default function User() {
           name : "Предоплата"
         },
       ])
+
+      useEffect(()=>{
+        axios.get(`https://dastafka-back.onrender.com/auth/oneuser`,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+            setData1(res.data)
+            console.log(res.data)
+        }).catch((err)=>{
+            
+        })
+        
+      },[])
+
+      function usermalumotozgartirish(){
+        var data=new FormData()
+        data.append("username",document.querySelector("#user-name").value)
+        data.append("phone",document.querySelector("#user-phone").value)
+        data.append("email",document.querySelector("#user-email").value)    
+        data.append("surname",document.querySelector("#user-surname").value)    
+        axios.put(`https://dastafka-back.onrender.com/auth/users/header/${data1[0].id}`,data,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+            alert("Ваша информация была изменена")
+            window.location.reload()
+        }).catch(err=>{
+          console.log(err); 
+        })
+      }
+      
   return (
     <div className='user'>
         <Navbar/>
@@ -182,7 +219,17 @@ export default function User() {
 </div> */}
 <div className="user-tepa-qismi">
     <div className="user-tepa-kotta">
-    <div className="user-name"><h2>Иванов Петр <br /> Михайлович</h2></div>
+    <div className="user-name">
+    {data1.map((item)=>{
+            return(
+               <div>
+                 <h2>{item.username} <br /> {item.surname} </h2> 
+                
+               </div>
+            )
+        })}
+        
+        </div>
     <div className="user-qalam"><img onClick={()=>modalochil()} src={qalam} alt="" /></div>
     </div>
 </div>
@@ -193,11 +240,21 @@ export default function User() {
 </div>
 <div className="user_header">
     <p>Телефон:</p>
-    <h3>8 900 800 90 80</h3>
+    {data1.map((item)=>{
+        return(
+             <h3 className='phone-userrr'>{item.phone}</h3>
+        )
+    })}
+   
 </div>
 <div className="user_header">
     <p>Email:</p>
-    <h3>pochtabeton.ru</h3>
+    {data1.map((item)=>{
+        return(
+            <h3>{item.email}</h3>
+        )
+    })}
+   
 </div>
 <div className="user-zalatoy" id='lalaalsyebalsa'>
 <div className="yashokalatni-zayets">
@@ -206,15 +263,26 @@ export default function User() {
 </div>
 <div className="user-zalatoy">
 <div className="yashokalatni-zayets1" onClick={()=>bonusmodal()}>
-    <img src={biladim} alt="" /><span>12 000 бонусов</span>
+{data1.map((item)=>{
+        return (
+           <div className='iiisis'><img src={biladim} alt="" /><span>{item.bonus}  бонусов</span>  </div>
+        )
+    })}
+ 
 </div>
 </div>
 </div>
 <div className="user-media">
     <div className="user-media-tepa">
         <div className="user-media-name">
-            <h2>Иванов Петр <br />
-Михайлович</h2>
+        {data1.map((item)=>{
+            return(
+               <div>
+                 <h2>{item.username} <br /> {item.surname} </h2> 
+                
+               </div>
+            )
+        })}
         </div>
         <div className="user-media-qalam">
             <img onClick={()=>modalochil()} src={qalam} alt="" />
@@ -226,10 +294,18 @@ export default function User() {
             <p>Статус:</p> <span>Пользователь</span>
         </div>
                 <div className="user-status-media">
-            <p>Телефон:</p> <span>8 900 800 90 80</span>
+            <p>Телефон:</p> <span className='phone-userrr'>    {data1.map((item)=>{
+        return(
+            <span className='phone-userrr'>{item.phone}</span>  
+        )
+    })}</span>
         </div>
         <div className="user-status-media">
-            <p>Email:</p> <span>pochtabeton.ru</span>
+            <p>Email:</p> <span>  {data1.map((item)=>{
+        return(
+            <span>{item.email}</span>
+        )
+    })}</span>
         </div>
     </div>
         <div className="user-media-line"></div>
@@ -241,7 +317,12 @@ export default function User() {
 </div>
 <div className="user-zalatoy">
 <div className="yashokalatni-zayets1"  onClick={()=>bonusmodal()}>
-    <img src={biladim} alt="" /><span>12 000 бонусов</span>
+    {/* <img src={biladim} alt="" /><span>12 000 бонусов</span> */}
+    {data1.map((item)=>{
+        return (
+           <div className='iiisis'><img src={biladim} alt="" /><span>{item.bonus} бонусов</span>  </div>
+        )
+    })}
 </div>
 </div>
         </div>
@@ -264,13 +345,15 @@ export default function User() {
               <br />
               <div className="input-user-form">
                 <form action="">
-                    <label>ФИО</label> <br />
-                    <input type="text" placeholder='Имя' required /> <br />
+                    <label>Surname</label> <br />
+                    <input type="text" placeholder='Surname' required id='user-surname' /> <br />
+                    <label>username</label> <br />
+                    <input type="text" placeholder='Имя' required id='user-name' /> <br />
                     <label>Телефон</label>
-                    <input type="number" placeholder='Телефон' required /> <br />
+                    <input type="number" placeholder='Телефон' required id='user-phone' /> <br />
                     <label>Email</label>
-                    <input type="email" placeholder='Email' required /> <br />
-                    <button>Сохранить изменения</button>
+                    <input type="email" placeholder='Email' required  id='user-email'/> <br />
+                    <button type='button' onClick={()=>usermalumotozgartirish()}>Сохранить изменения</button>
                 </form>
               </div>
             </div>

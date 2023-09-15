@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { BrowserRouter as Router,Routes, Route, } from 'react-router-dom';
 import Zakazbeton from '../src/js/Zakazbeton'
 import Home from './js/Home.js';
@@ -24,6 +24,7 @@ import Aksiya from './js/Aksiya';
 
 export default class App extends Component {
 render() {
+	const[token,setToken]= useState()
 	return (
 	<Router>
 		<div className="App">
@@ -55,4 +56,6 @@ render() {
 );
 }
 }
+
+
 

@@ -15,6 +15,7 @@ import {BsCheckLg} from "react-icons/bs"
 import data from '../js/Data'
 import Footer from './Footer'
 import mediarasm from '../img/Mask group112.png'
+import axios from 'axios'
 
 function modalochil(){
     document.querySelector(".user-modal").style=`display:block`
@@ -69,13 +70,35 @@ function textyopil(){
 
 
 export default function User() {
+    const [data2,setData2]=useState([])
 // const [countries, setCountries] = useState(null);
 // const [selected, setSelected] = useState("");
 // console.log(data.productData);
 
-    useEffect(()=>{
-    },[])
+useEffect(()=>{
+    axios.get(`https://dastafka-back.onrender.com/auth/oneuser`,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+        setData2(res.data)
+        console.log(res.data)
+    }).catch((err)=>{
+        
+    })
     
+  },[])
+    
+  
+  function usermalumotozgartirish(){
+    var data=new FormData()
+    data.append("username",document.querySelector("#user-name").value)
+    data.append("phone",document.querySelector("#user-phone").value)
+    data.append("email",document.querySelector("#user-email").value)    
+    data.append("surname",document.querySelector("#user-surname").value)    
+    axios.put(`https://dastafka-back.onrender.com/auth/users/header/${data2[0].id}`,data,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+        alert("Ваша информация была изменена")
+        window.location.reload()
+    }).catch(err=>{
+      console.log(err); 
+    })
+  }
     
   return (
     <div className='user'>
@@ -86,9 +109,48 @@ export default function User() {
                 <div className='bir_div1'></div>
                 <div className='ikki_div2'></div>
                 <img className='user--img' src={user} alt="" />
+{/* <div className="kattas">
+<div className="user-tepa">
+<h1>Иванов Петр <br /> Михайлович</h1>
+<img src={qalam} alt="" />
+</div>
+
+<div className="cards_header">
+<div className="card_header">
+    <p>Статус:</p>
+    <h3>Пользователь</h3>
+</div>
+<div className="card_header">
+    <p>Статус:</p>
+    <h3>Пользователь</h3>
+</div>
+<div className="card_header">
+    <p>Статус:</p>
+    <h3>Пользователь</h3>
+</div>
+<div className="card_header">
+    <p>Статус:</p>
+    <h3>Пользователь</h3>
+</div>
+<div className="card_header">
+    <p>Статус:</p>
+    <h3>Пользователь</h3>
+</div>
+</div>
+</div> */}
 <div className="user-tepa-qismi">
     <div className="user-tepa-kotta">
-    <div className="user-name"><h2>Иванов Петр <br /> Михайлович</h2></div>
+    <div className="user-name">
+    {data2.map((item)=>{
+            return(
+               <div>
+                 <h2>{item.username} <br /> {item.surname} </h2> 
+                
+               </div>
+            )
+        })}
+        
+        </div>
     <div className="user-qalam"><img onClick={()=>modalochil()} src={qalam} alt="" /></div>
     </div>
 </div>
@@ -99,11 +161,21 @@ export default function User() {
 </div>
 <div className="user_header">
     <p>Телефон:</p>
-    <h3>8 900 800 90 80</h3>
+    {data2.map((item)=>{
+        return(
+             <h3 className='phone-userrr'>{item.phone}</h3>
+        )
+    })}
+   
 </div>
 <div className="user_header">
     <p>Email:</p>
-    <h3>pochtabeton.ru</h3>
+    {data2.map((item)=>{
+        return(
+            <h3>{item.email}</h3>
+        )
+    })}
+   
 </div>
 <div className="user-zalatoy" id='lalaalsyebalsa'>
 <div className="yashokalatni-zayets">
@@ -112,15 +184,26 @@ export default function User() {
 </div>
 <div className="user-zalatoy">
 <div className="yashokalatni-zayets1" onClick={()=>bonusmodal()}>
-    <img src={biladim} alt="" /><span>12 000 бонусов</span>
+{data2.map((item)=>{
+        return (
+           <div className='iiisis'><img src={biladim} alt="" /><span>{item.bonus}  бонусов</span>  </div>
+        )
+    })}
+ 
 </div>
 </div>
 </div>
 <div className="user-media">
     <div className="user-media-tepa">
         <div className="user-media-name">
-            <h2>Иванов Петр <br />
-Михайлович</h2>
+        {data2.map((item)=>{
+            return(
+               <div>
+                 <h2>{item.username} <br /> {item.surname} </h2> 
+                
+               </div>
+            )
+        })}
         </div>
         <div className="user-media-qalam">
             <img onClick={()=>modalochil()} src={qalam} alt="" />
@@ -132,10 +215,18 @@ export default function User() {
             <p>Статус:</p> <span>Пользователь</span>
         </div>
                 <div className="user-status-media">
-            <p>Телефон:</p> <span>8 900 800 90 80</span>
+            <p>Телефон:</p> <span className='phone-userrr'>    {data2.map((item)=>{
+        return(
+            <span className='phone-userrr'>{item.phone}</span>  
+        )
+    })}</span>
         </div>
         <div className="user-status-media">
-            <p>Email:</p> <span>pochtabeton.ru</span>
+            <p>Email:</p> <span>  {data2.map((item)=>{
+        return(
+            <span>{item.email}</span>
+        )
+    })}</span>
         </div>
     </div>
         <div className="user-media-line"></div>
@@ -147,7 +238,12 @@ export default function User() {
 </div>
 <div className="user-zalatoy">
 <div className="yashokalatni-zayets1"  onClick={()=>bonusmodal()}>
-    <img src={biladim} alt="" /><span>12 000 бонусов</span>
+    {/* <img src={biladim} alt="" /><span>12 000 бонусов</span> */}
+    {data2.map((item)=>{
+        return (
+           <div className='iiisis'><img src={biladim} alt="" /><span>{item.bonus} бонусов</span>  </div>
+        )
+    })}
 </div>
 </div>
         </div>
@@ -170,13 +266,15 @@ export default function User() {
               <br />
               <div className="input-user-form">
                 <form action="">
-                    <label>ФИО</label> <br />
-                    <input type="text" placeholder='Имя' required /> <br />
+                    <label>Surname</label> <br />
+                    <input type="text" placeholder='Surname' required id='user-surname' /> <br />
+                    <label>username</label> <br />
+                    <input type="text" placeholder='Имя' required id='user-name' /> <br />
                     <label>Телефон</label>
-                    <input type="number" placeholder='Телефон' required /> <br />
+                    <input type="number" placeholder='Телефон' required id='user-phone' /> <br />
                     <label>Email</label>
-                    <input type="email" placeholder='Email' required /> <br />
-                    <button>Сохранить изменения</button>
+                    <input type="email" placeholder='Email' required  id='user-email'/> <br />
+                    <button type='button' onClick={()=>usermalumotozgartirish()} >Сохранить изменения</button>
                 </form>
               </div>
             </div>
@@ -349,6 +447,7 @@ export default function User() {
                 </div>
             </div>
         </div>
+
         <div class="table">
             <div className="table-tepa-qismi">
                 <p className='datasdaljdad'>Номер заказа</p>
@@ -368,7 +467,7 @@ export default function User() {
     <div class="tepa_td">
     <div class="td" ><span className='td_data'>230223 230223</span></div>
     <div class="td" ><span className='td_addres'>{item.address}</span></div>
-    <div class="td"><span className='td_data1'>{item.date} <br /> {item.date1} </span></div>
+    <div class="td"><span className='td_data2'>{item.date} <br /> {item.date1} </span></div>
     <div class="td">
     <p className='td_beton'>бетон</p>
     <span className='yd_marka'>{item.marka}</span></div>
