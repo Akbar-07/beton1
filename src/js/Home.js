@@ -94,6 +94,7 @@ import { BsChevronRight } from "react-icons/bs"
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import Fade from 'react-reveal/Fade';       
 import { useEffect, useState } from 'react'
+import {AiFillStar} from "react-icons/ai"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -640,7 +641,7 @@ const [mark, setMark] = useState([])
 
 <div className="beton_analiz">
             <div className="bet_ana1">
-                {/* {mark.map(item=>{
+                {mark.map(item=>{
                     return(
                          <div className="bet_ana11">
                     <img src={IMG15} alt="" />
@@ -655,9 +656,9 @@ const [mark, setMark] = useState([])
 
                 </div>
                     )
-                })} */}
+                })}
                
-                {/* {mark.map(item=>{
+                {mark.map(item=>{
                             return(
                 <div className="bet_ana11">
                     <img src={IMG16} alt="" />
@@ -672,7 +673,7 @@ const [mark, setMark] = useState([])
                     </div>
 
                 </div>)
-                        })} */}
+                        })}
                 
             </div>
             <div className="bet_ana2">

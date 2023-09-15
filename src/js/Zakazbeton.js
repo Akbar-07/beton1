@@ -402,20 +402,14 @@ const [data2,setData2] =useState(0)
 const [data3,setData3] =useState(0)
 const [data4,setData4] =useState(0)
 const [data5,setData5] =useState(0)
-  const [zol, setZol] = useState([
-    {
-      img : IMG1,
-      name : "Бетон"
-    },
-    {
-      img : IMG2,
-      name : "Пескобетон"
-    },
-    {
-      img : IMG3,
-      name : "Строительный раствор"
-    },
-  ])
+  const [zol, setZol] = useState([{}])
+  useEffect(()=>{
+    axios.get(`${url}/api/category`).then(res=>{
+        setZol(res.data)
+    }).catch(err=>{
+    
+    })
+  },[])
   const [zol1, setZol1] = useState([
     {
       img : IMG10,
@@ -447,10 +441,8 @@ const [data5,setData5] =useState(0)
         document.querySelectorAll(".zakaz_kvadrat_map_card")[i].style = "border:1px solid #FFCB13;"
       }
       else{
+        document.querySelectorAll(".zakaz_kvadrat_map_card")[i].style = "border:none;"
      document.querySelectorAll(".card_ptich_dumaloq_ptich")[i].style = "display:none;" 
-     if(i!==3){
-      document.querySelectorAll(".zakaz_kvadrat_map_card")[i].style = "border:1px solid #FFCB13;"
-     }
       }
     }
   }
@@ -544,13 +536,14 @@ useEffect(()=>{
                   <BsCheckLg className='card_ptich_dumaloq_ptich'/>
                 </div>
               </div>
-              <img src={item.img} alt="" /><br />
+              <img className='dsfghjklikujyht' src={item.image} alt="" /><br />
             <div className="wwse">
-            <span className='map_span'>{item.name}</span>
+            <span className='map_span'>{item.title}</span>
+            <span className='map_span11'>{item.description}</span>
             </div>
             </div>
           })}
-         <div className="zakaz_kvadrat_map_card1">
+         {/* <div className="zakaz_kvadrat_map_card1">
               <div className="card_ptich">
                 <div onClick={()=>{yoqil(3)}} className="card_ptich_dumaloq">
                   <BsCheckLg className='card_ptich_dumaloq_ptich'/>
@@ -559,8 +552,8 @@ useEffect(()=>{
              <div className="jklo">
              <span className='map_span1'>Специальный бетон</span><br />
              </div>
-              <span className='map_span11'>Отправим ваш запрос <br /> на все заводы</span>
-            </div>
+             
+            </div> */}
         </div>
         <div className="zakaz_kvadrat_zagruska">
           <span>1/9</span>
