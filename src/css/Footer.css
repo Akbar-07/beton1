@@ -4,6 +4,9 @@
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
 }
+.a_1_1{
+    cursor: pointer;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto&display=swap');
 .butt2 {
     width: 210px;
@@ -81,9 +84,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-.iconss1 i {
+.ahref_1{
+    list-style: none !important;
+    text-decoration: none;
+}
+.ahref_1 i {
     font-size: 30px;
+    color: black !important;
 }
 .footer_card2 {
     display: flex;

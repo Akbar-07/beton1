@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/Prozakaz.css'
 import Navbar from './Navbar'
 import m350 from '../img/m350 1.png'
@@ -43,6 +43,7 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker.module.css";
 import bmw from '../img/Group 269.png'
+import axios from 'axios'
 
 
 function sariqyon(){  
@@ -551,6 +552,22 @@ const [data3,setData3] =useState(0)
 const [data4,setData4] =useState(0)
 const [data5,setData5] =useState(0)
 const [page,setPage] = useState(1)
+const [gradus, setGradus] = useState([{}])
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/sovuqlik').then(res=>{
+    setGradus(res.data)
+}).catch(err=>{
+    alert("xato")
+})
+},[])
+const [shving, senShving] = useState([{}])
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/shving').then(res=>{
+        senShving(res.data)
+    }).catch(err=>{
+        alert(".xatolar")
+    })
+})
   return (
 <div>
     <Navbar/>
@@ -731,11 +748,13 @@ const [page,setPage] = useState(1)
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="axaxaxsaxasxasxasxasxs2">
                                 <div className="akardon-pasdia-chiqadi-but4">
-                                    <button>-5°C</button>
-                                    <button>-10°C</button>
-                                    <button>--15°C</button>
-                                    <button>-20°C</button>
-                                    <button>-25°C</button>
+                                {gradus.map((item,key)=>{
+                                        return (<div>
+                                             <button key={key}>-{item.gradus}C</button>
+                                        </div>
+                                            
+                                             ) 
+                                    })}
                                 </div>
                                 </div>
                             </div>
@@ -829,11 +848,12 @@ const [page,setPage] = useState(1)
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="axaxaxsaxasxasxasxasxs2">
                                 <div className="akardon-pasdia-chiqadi-but4">
-                                    <button>-5°C</button>
-                                    <button>-10°C</button>
-                                    <button>--15°C</button>
-                                    <button>-20°C</button>
-                                    <button>-25°C</button>
+                                     {gradus.map((item,key)=>{
+                                        return (<div>
+                                             <button key={key}>-{item.gradus}C`</button>
+                                        </div>
+                                             ) 
+                                    })}
                                 </div>
                                 </div>
                             </div>
@@ -1142,19 +1162,25 @@ const [page,setPage] = useState(1)
                                             <p>Швинг</p>
                                         </div>
                                         <div className="kamazlaga-keldi-endi-shu-qoldi">
-                                            <button><span>15м</span><img src={zakazbeton1} alt="" /></button>
-                                            <button><span>21м</span><img src={zakazbeton1} alt="" /></button>
-                                            <button><span>30м</span><img src={zakazbeton1} alt="" /></button>
-                                            <button><span>40м</span><img src={zakazbeton1} alt="" /></button>
-                                            <button><span>57м</span><img src={zakazbeton1} alt="" /></button>
+                                        {shving.map((item,key)=>{
+                                            return <div>
+                                                 <button><span>{item.m}м</span><img src={item.image} alt="" /></button>
+                                            </div>
+                                        })}
+                                            
                                         </div>
                                     </div>
                                     <div className="kamazla-media-suka-blat">
-                                            <button className='zaybal_nomer2'><span className='seks_1'>15м</span><img src={zakazbeton1} alt="" /></button>
+                                        {shving.map((item,key)=>{
+                                            return <div>
+                                                 <button><span>{item.m}м</span><img src={item.image} alt="" /></button>
+                                            </div>
+                                        })}
+                                            {/* <button className='zaybal_nomer2'><span className='seks_1'>15м</span><img src={zakazbeton1} alt="" /></button>
                                             <button><span>21м</span><img src={zakazbeton1} alt="" /></button>
                                             <button><span>30м</span><img src={zakazbeton1} alt="" /></button>
                                             <button><span>40м</span><img src={zakazbeton1} alt="" /></button>
-                                            <button><span>57м</span><img src={zakazbeton1} alt="" /></button>
+                                            <button><span>57м</span><img src={zakazbeton1} alt="" /></button> */}
                                     </div>
                                     <div className="jalab-kamazlani-turi-bor-ekan2">
                                         <div className="lalala-nom-yo-bunga-prosta-p1">
@@ -1323,11 +1349,13 @@ const [page,setPage] = useState(1)
                                     <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="axaxaxsaxasxasxasxasxs2-media">
                                 <div className="akardon-pasdia-chiqadi-but4">
-                                    <button>-5°C</button>
-                                    <button>-10°C</button>
-                                    <button>--15°C</button>
-                                    <button>-20°C</button>
-                                    <button>-25°C</button>
+                                {gradus.map((item,key)=>{
+                                        return (<div>
+                                             <button key={key}>-{item.gradus}C</button>
+                                        </div>
+                                            
+                                             ) 
+                                    })}
                                 </div>
                                 </div>
                             </div>
@@ -1656,11 +1684,16 @@ const [page,setPage] = useState(1)
                             <img src={zakazbeton1} alt="" />
                         </div>
                     <select id="singleSelection" data-te-select-init>
-                    <option className='opticonn' value="1">15м </option>
-  <option className='opticonn'  value="2">21м</option>
-  <option className='opticonn' value="3">30м</option>
-  <option className='opticonn' value="4">40м</option>
-  <option className='opticonn' value="5">57м</option>
+                         {shving.map((item,key)=>{
+                                    return <div>
+                                         <option key={key} className='opticonn' value="1">{item.m}м </option>
+                                    </div>
+                                })}
+{/*                    
+                        <option className='opticonn'  value="2">21м</option>
+                        <option className='opticonn' value="3">30м</option>
+                        <option className='opticonn' value="4">40м</option>
+                        <option className='opticonn' value="5">57м</option> */}
                    </select>
                     </div>
                     <div className="ana-tugabam-qoldi-xaxa-yebo">
@@ -1675,6 +1708,7 @@ const [page,setPage] = useState(1)
                     </div>
                     <div className="qanqadir-interval-padacha-ma">
                             <div className="btn-qanaqard">
+                               
                                 <button>30мин</button>
                                 <button>1 час</button>
                                 <button>1.5 часа</button>

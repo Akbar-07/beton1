@@ -6,8 +6,22 @@ import {BsTelephoneFill} from "react-icons/bs"
 import Footerimg from "../img/footer_img.png"
 import transform from '../img/transform.png'
 import mediafooter from '../img/media_img.png'
+import axios from 'axios'
+import { useState } from 'react'
+import { useEffect } from 'react'
+
+
 
 export default function Footer() {
+  const [company1, setCompany1] = useState([{}])
+useEffect(()=>{
+  axios.get('https://dastafka-back.onrender.com/api/compony').then(res=>{
+    setCompany1(res.data)
+  }).catch(err=>{
+    alert("salom")
+  })
+},[])
+
   return (
     <div className='media_help'>
       <div className="footer_cards10"> 
@@ -32,8 +46,8 @@ export default function Footer() {
                   <h4>Оставить претензию</h4>
                 </div>
             <div className="footer_card2">
-              <div className="iconss1"><i class='bx bxl-telegram' ></i></div>
-              <div className="iconss1"><i class='bx bxl-whatsapp'></i></div>
+            <a className='ahref_1' href={company1[0].telegram}><div className="iconss1"><i class='bx bxl-telegram' ></i></div></a>
+            <a className='ahref_1' href={company1[0].whatsapp}> <div className="iconss1"><i class='bx bxl-whatsapp'></i></div></a>
             </div>
            
         </div></div>
@@ -43,7 +57,7 @@ export default function Footer() {
         <div id='futer2' className="footer_cards">
        
           <div className="mediaa_help">
-            <div className="footer_card">
+            <div  className="footer_card">
                 <img src={footerimg} alt="" />
                 <h2>zakaz@beton-taxi.ru</h2>
                 <button className='butt1'>  <BiSolidUser style={{fontSize:"22px"}} className='iconss'/>Личный кабинет</button>
@@ -63,8 +77,9 @@ export default function Footer() {
                   <h4 onClick={()=>window.location="/Loyalnost"}>Оставить претензию</h4>
                 </div>
             <div className="footer_card2">
-              <div className="iconss1"><i class='bx bxl-telegram' ></i></div>
-              <div className="iconss1"><i class='bx bxl-whatsapp'></i></div>
+              <a className='ahref_1' href={company1[0].telegram}><div className="iconss1"><i class='bx bxl-telegram' ></i></div></a>
+           
+             <a className='ahref_1' href={company1[0].whatsapp}> <div className="iconss1"><i class='bx bxl-whatsapp'></i></div></a>
             </div>
             </div>
             </div>

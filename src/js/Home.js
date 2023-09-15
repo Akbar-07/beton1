@@ -37,6 +37,8 @@ import IMG13 from "../img/Mask group (4).png"
 import IMG14 from "../img/Mask group (5).png"
 import IMG15 from "../img/2GIS_logo 1.png"
 import IMG16 from "../img/Слой_x0020_1.png"
+import {BsStarFill} from "react-icons/bs"
+import {BsStar} from "react-icons/bs"
 import IMG17 from "../img/101 1.png"
 import IMG18 from "../img/Phone Location.png"
 import IMG19 from "../img/AdobeStock_70069013 1.png"
@@ -85,21 +87,30 @@ import IMGG20promax from "../img/valentin3 1.png"
 import IMGGmonet1 from "../img/1 монет.png"
 import IMGGmonet2 from "../img/3 монет.png"
 import IMGGmonet3 from "../img/2 монет.png"
-
-
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
 import { BsChevronUp } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
 import Fade from 'react-reveal/Fade';
 import { useState } from 'react'
+import {HiOutlineArrowNarrowRight} from "react-icons/hi"
+import {BsChevronUp} from "react-icons/bs"
+import {BsChevronRight} from "react-icons/bs"
+import Fade from 'react-reveal/Fade';       
+import { useEffect, useState } from 'react'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Footer from './Footer'
 import Zakazbeton from "./Zakazbeton"
-import axios from 'axios'
+
 import { useEffect } from 'react'
+
+import Zakazbeton from  "./Zakazbeton"
+import axios from "axios"
+import url from './Host'
+
 
 export default function Home() {
     const [data, setData] = useState([]);
@@ -196,6 +207,7 @@ export default function Home() {
             alert("err")
         })
 
+
         axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
             const Filter=res.data.filter(item=>item.liso!=="y")
             nashaData(Filter)
@@ -242,47 +254,7 @@ export default function Home() {
                         <HiOutlineArrowNarrowRight className='icon_z' />
                     </div>
                 </div>
-                {/* <div className="rek rek_orig">
-          <div className="dumaloq_12343">
-
-          </div>
-          <img className='beton_taksi1' src={IMGG17} alt="" />
-          <div className="beton_taksi1_sozi">
-            <h1 className='beton_taksi1_sozi1'>
-            Только <span className='beton_taksi1_sozi2'>проверенные</span> поставщики бетона в одном месте!
-            </h1>
-          </div>
-            <div className="rek_dumaloq3">
-                <HiOutlineArrowNarrowRight className='icon_z'/>
-            </div>
-        </div> */}
-                {/* <div className="rek rek_orig">
-        <div className="rek_dumaloq_keyin_1">
-                </div>
-                <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir' src={IMGG8} alt="" />
-            <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir1' src={IMGG14} alt="" />
-            <div className="rek_dumaloq_keyin_2">
-            </div>
-            <img className='img_qilomagan_1 img_qilomagan_1_kopiy' src={IMGG11} alt="" />
-            <img className='img_qilomagan_1 img_qilomagan_2' src={IMGG15} alt="" />
-            <div className="ertyuioylgkjhgfszhyjg">
-            <img className='galati_rasm1' src={IMGG12} alt="" />
-            <img className='galati_rasm2 galati_rasm_gnjiogggf' src={IMGG13} alt="" />
-            <img className='galati_rasm2 galati_rasm2_kop' src={IMGG12} alt="" />
-            </div>
-            <span className='rotate1'>мне срочно нужен бетон!</span>
-            
-            <div className="rek_gapi_5">
-                <h2>Все просто! Звони!</h2>
-                <div className="rek_gapi_5_tegi">
-                 <img className='phone_1' src={IMGG9} alt="" />
-                 <img className='phone_2' src={IMGG10} alt="" />
-                </div>
-            </div>
-        <div className="rek_dumaloq3">
-                <HiOutlineArrowNarrowRight className='icon_z'/>
-            </div>
-        </div> */}
+    
                 <div className="rek1">
                     <Swiper pagination={true} modules={[Pagination]} className="mySwiper sviperS">
                         <SwiperSlide className='azx'>  <div className="rek">
@@ -378,6 +350,65 @@ export default function Home() {
                             </div>
                         </div></SwiperSlide>
                     </Swiper>
+
+        </div> : ""} 
+        {sliv === 4 ? <div className="rek rek_orig">
+        <div className="rek_ohirgi_baneer">
+            <h1 className='rek_ohirgi_baneer_sozi'><span className='beton_taksi1_sozi2'>1000 бонусов</span> за регистрацию и первый заказ по промокоду <span className='beton_taksi1_sozi2'>“START”</span></h1>
+        </div>
+       <div className="rek_dumaloq_zay_nab11"></div>
+       <div className="rek_dumaloq_zay_nab1"></div>
+       <div className="rek_dumaloq_zay_nab1_1"></div>
+       <img className='promax_onas' src={IMGG20promax} alt="" />
+       <div className="monet_z">
+        <div className="monet_z1">
+            <img src={IMGGmonet1} alt="" />
+            <img src={IMGGmonet2} alt="" />
+        </div>
+        <img src={IMGGmonet3} alt="" />
+       </div>
+            <div onClick={()=>{setSliv(1)}} className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div> : ""} 
+    
+        
+        <div className="rek1">
+        <Swiper pagination={true} modules={[Pagination]} className="mySwiper sviperS">
+        <SwiperSlide className='azx'>  <div className="rek">
+           <div className="rek_h111">
+           <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11'/> как заказать пиццу</h1>
+            <span className='rek_h111_span'>Скачивай наше приложение!</span>
+            <div className="rek_rasm_div">
+           <div className="rek_rasm_div1">
+           <img className='rek_img_s1' src={IMG23} alt="" />
+           <img className='rek_img_s1' src={IMG24} alt="" />
+           <img className='rek_img_s1' src={IMG25} alt="" />
+           </div>
+            <div className="rek_rasm_div2">
+            <img className='rek_img_s1' src={IMG26} alt="" />
+            <img className='rek_img_s1' src={IMG27} alt="" />
+            <img className='rek_img_s1' src={IMG28} alt="" />
+            </div>
+            </div>
+           </div>
+            <div className="rek_dumaloq1">
+                <div className="rek_dumaloq1_kichik"></div>
+            </div>
+            <div className="rek_dumaloq1_tel">
+                <img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
+            </div>
+            <div className="rek_dumaloq2">
+            <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
+                <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
+                <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
+            </div>
+            <div className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div></SwiperSlide>
+        <SwiperSlide className='azx'>  <div className="rek">
+        <div className="rek_dumaloq_keyin_1">
                 </div>
                 <div className="beton_sar">
                     <img className='img1' src={IMG2} alt="" />
@@ -395,6 +426,7 @@ export default function Home() {
                     <span>Убедительные факты и цифры говорят сами за себя.
                         Вот лишь несколько примеров:</span>
                 </div>
+
 
                 <div className="biton_hed">
                     <div className="bit_hed1">
@@ -415,6 +447,135 @@ export default function Home() {
                             <img className='dumaloq_tochka' src={IMGG1} alt="" />
                             <h2 className='bit_hed1_com1_h2'>Более<span className='bit_hed1_com1_h22'> 500 м3 бетона </span>доставляем в день</h2>
                             <span className='bit_hed1_con_span'>Ежедневно доставляем не менее 500 м3 бетона, что служит показателем оптимизации и высокой производительности нашего сервиса.Поэтому, вне зависимости от масштабов реализуемого проекта, вы можете положиться на нас при заказе нужного количества бетона.</span>
+
+            </div>
+        </div> : <div className="beton_mashina_kopiya">
+            <div className="bet_mashina1_kopiya">
+                <div className="bet_mash1_kopiya">
+                    <div className="bet_mash11_kopiya">
+                    <h1>Немного 
+                        о нас</h1>
+                    </div>
+                </div>
+                <div className="bet_mash2_kopiya">
+                    <h3 className='p'>О сервисе </h3>
+                    <p className='p1 pink2'>Сервис «БЕТОН ТАКСИ» предоставляет вам ряд уникальных преимуществ. Во-первых, это обеспечение оперативной поставки бетона, позволяющей сэкономить время и деньги без отставания от графика строительства. Во-вторых, это гарантия высокого качества бетона, поскольку поставки осуществляются только с заводов проверенных поставщиков.
+Что делает наш сервис более удобным? Это, прежде всего, простой и интуитивно понятный процесс заказа, который можно осуществить через мобильное приложение или интернет-браузер. При оформлении достаточно выбрать нужный объем бетона и время доставки, а об остальном позаботимся мы. 
+Если нет электронного устройства, то и это не проблема – свяжитесь с нами по телефону 505-505, и оператор примет ваш заказ.
+Наша задача – сделать ваш процесс строительства проще 
+и эффективнее. Мы берем на себя ответственность за поставку и качество бетона, а вы можете сосредоточиться на главных задачах своего строительного проекта.
+Мы гарантируем стабильное и безупречное исполнение каждой поставки, поскольку ценим ваше время и спокойствие!</p>
+                    <p onClick={()=>{setMashina(1)}} className='t2'>Свернуть <BsChevronUp className='pp2'/></p>
+                </div>
+            </div>
+        </div>}
+        
+        
+        
+       <div className="seriy1">
+       <div className="beton_homiy">
+            <h1>Наши партнеры</h1>
+        </div>
+
+        {/* <div className="beton_homiy1">
+           <div className="beton_homiy1_img">
+           <div className="img5"><img onClick={()=>fabrika2()} className='fabrikaimg' src={IMG10} alt="" /><img style={{display:"none"}} className='fabrikaimg1' src={fabrika} alt="" /></div>
+           </div>
+           <div className="beton_homiy1_img">
+            <img src={IMG11} alt="" className='betonshikimg' onClick={()=>betonshik2()} /><img src={betonshik1} style={{display:"none"}} className='betonshikimg1' alt="" />
+           </div>
+           <div className="beton_homiy1_img">
+             <img className='sibavisastroyimg' src={IMG12} alt="" /><img onClick={()=>sibavisastroy2()} className='sibavisastroyimg1' style={{display:"none"}} src={sibavisastroy} alt="" />
+           </div>
+           <div className="beton_homiy1_img">
+            <img onClick={()=>more_betona2()} src={IMG13} className='more_betonimg' alt="" /><img style={{display:"none"}} className='more_betonimg1' src={more_betona1} alt="" />
+           </div>
+           <div className="beton_homiy1_img">
+             <div className="img4"><img className='noviy_betonimg' onClick={()=>noviy_beton2()} src={IMG14} alt="" /> <img style={{display:"none"}} className='noviy_betonimg1' src={noviy_beton1} alt="" /></div>
+           </div>
+        </div> */}
+
+        <div className="beton_homiy1_kopiya">
+            {data11.map(item=>{
+                return (
+                <div className="beton_homiy1_img">
+                    <img onClick={()=>partner2(item.id)} src={item.image} alt="" />
+                </div>)
+            })}
+           {/* <div className="beton_homiy1_img">
+          <img src={IMG48} alt="" />
+           </div> */}
+
+           {/* <div className="beton_homiy1_img">
+            <img src={IMG49} alt="" />
+           </div>
+           <div className="beton_homiy1_img">
+             <img src={IMG50} alt="" />
+           </div>
+           <div className="beton_homiy1_img">
+            <img src={IMG51} alt="" />
+           </div>
+           <div className="beton_homiy1_img">
+             <div className="img4"><img src={IMG52} alt="" /></div>
+           </div> */}
+        </div>
+
+            {data111.map((item,key)=>{
+                if(key<1){
+                    return(
+<div className="beton_analiz">
+            <div className="bet_ana1">
+                <div className="bet_ana11">
+                    <img src={IMG15} alt="" />
+
+
+<div className="bet_ana_1">
+                        <span className='s3'>{item.gis_mark}</span>
+                        {item.gis_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.gis_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
+                    </div>
+
+                </div>
+                <div className="bet_ana11">
+                    <img src={IMG16} alt="" />
+
+                    <div className="bet_ana_1">
+                        <span className='s3'>{item.betomtaxi_mark}</span>
+                        {item.betomtaxi_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
+                    </div>
+
+                </div>
+                
+            </div>
+            <div className="bet_ana2">
+                <span className='s4'>{item.description}</span>
+
+               <div className="bet_ana22">
+                <span>#245 заводов</span>
+                <span className='s5'>#своя аттестованная лаборатория</span><br className='br2'/>
+                <span className='s6'>#свой транспорт</span><br className='br1'/>
+                <span>#свои швинги</span>
+                </div>         
+            </div>
+        </div>
+                )
+                }
+                
+            })}
+        
+       </div>
+        <div className="seriy">
+
+            {bir === 1 ? <div className="biton_klent">
+                <div className="bit_kent1">
+                    <img className='img6' src={IMG17} alt="" />
+                </div>
+                <div className="bit_kent2">
+                    <div className="bit_kent_1">
+                        <h1>Наши приемущества</h1>
+                        <div className="bit_kent_but">
+                            <button className='b3'>Для физических лиц</button>
+                            <button onClick={()=>{sariq1(); setBir(2)}} className='b4'>Для юридических лиц</button>
+
                         </div>
                     </div>
                     <div className="bit_hed2">

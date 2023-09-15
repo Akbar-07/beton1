@@ -20,38 +20,42 @@ import User from './js/User';
 import Layfxak from './js/Layfxak';
 import Error from './js/Error';
 import Mentor from './js/Mentor';
+import Aksiya from './js/Aksiya';
 
-
-export default function App() {
+export default class App extends Component {
+render() {
 	const[token,setToken]= useState()
-  return (
-	<div>
-		 	<Router>
- 		<div className="App">
- 		<Routes>
- 				<Route exact path='/' element={< Home />}></Route>
- 				<Route exact path='/Zakazbeton' element={< Zakazbeton />}></Route>
- 				<Route exact path='/News' element={< News />}></Route>
- 				<Route exact path='/Home' element={< Home />}></Route>
- 				<Route export path='/Login' element={<Login/>}></Route>
- 				<Route export path='/Dobblock' element={<Dobblock/>}></Route>
- 				<Route export path='/Prozakaz' element={<Prozakaz/>}></Route>
- 				<Route export path='/Footer' element={<Footer/>}></Route>
- 				<Route export path='/Article' element={<Article/>}></Route>
- 				<Route export path='/Obman' element={<Obman/>}></Route>
- 				<Route export path='/Partner' element={<Partners/>}></Route>
- 				<Route export path='/Loyalnost' element={<Loyalnost/>}></Route>
- 				<Route export path='/Kankulyator' element={<Kankulyator/>}></Route>
- 				<Route export path='/Garantiya' element={<Garantiya/>}></Route>
- 				<Route export path='/Partners_page' element={<Partners_page/>}></Route>
- 				<Route export path='/Pamit' element={<Pamit/>}></Route>
- 				<Route export path='/User' element={<User/>}></Route>
- 				<Route export path='/Layfxak' element={<Layfxak/>}></Route>
- 				<Route export path='/Error' element={<Error/>}></Route>
- 				<Route export path='/Mentor' element={<Mentor/>}></Route>
- 		</Routes>
- 		</div>
- 	</Router>
-	</div>
-  )
+	return (
+	<Router>
+		<div className="App">
+		<Routes>
+				<Route exact path='/' element={< Home />}></Route>
+				<Route exact path='/Zakazbeton' element={< Zakazbeton />}></Route>
+				<Route exact path='/News' element={< News />}></Route>
+				<Route exact path='/Home' element={< Home />}></Route>
+				<Route export path='/Login' element={<Login/>}></Route>
+				<Route export path='/Dobblock' element={<Dobblock/>}></Route>
+				<Route export path='/Prozakaz' element={<Prozakaz/>}></Route>
+				<Route export path='/Footer' element={<Footer/>}></Route>
+				<Route export path='/Article' element={<Article/>}></Route>
+				<Route export path='/Obman' element={<Obman/>}></Route>
+				<Route export path='/Partner' element={<Partners/>}></Route>
+				<Route export path='/Loyalnost' element={<Loyalnost/>}></Route>
+				<Route export path='/Kankulyator' element={<Kankulyator/>}></Route>
+				<Route export path='/Garantiya' element={<Garantiya/>}></Route>
+				<Route export path='/Partners_page' element={<Partners_page/>}></Route>
+				<Route export path='/Pamit' element={<Pamit/>}></Route>
+				<Route export path='/User' element={<User/>}></Route>
+				<Route export path='/Layfxak' element={<Layfxak/>}></Route>
+				<Route export path='/Error' element={<Error/>}></Route>
+				<Route export path='/Mentor' element={<Mentor/>}></Route>
+				<Route export path='/Aksiya' element={<Aksiya/>}></Route>
+		</Routes>
+		</div>
+	</Router>
+);
 }
+}
+
+
+

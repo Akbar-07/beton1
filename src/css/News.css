@@ -94,13 +94,25 @@ body {
         padding: 15px;
     }
 }
-
+.media_mask1{
+    width: 100%;
+}
 @media(max-width:480px) {
-    .media_mask1{
-        display: none;
+    .arrow_div {
+        width: 100px !important;
+        height: 100px !important;
     }
-    .media_mask{
-        display: flex !important;
+    .fort_new_img{
+        width: 100%;
+        max-width: 600px;
+        height: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 50px;
+        border-bottom-right-radius: 50% !important;
+        border-top-right-radius: 50px !important;
     }
     .news_card {
         border-top-right-radius: 50px;
@@ -406,6 +418,7 @@ width: 70%;
 }
 .media_mask{
     display: none;
+    width: 100%;
 }
 .rasm1_div h3{
     position: absolute;
@@ -514,4 +527,15 @@ width: 70%;
     .newss h3 {
         font-size: 18px;
     }
+}
+.fort_new_img{
+    width: 100%;
+    max-width: 600px;
+    height: 369px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50px;
+    border-top-right-radius: 50%;
 }

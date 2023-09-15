@@ -169,7 +169,7 @@ align-items: center;
     transform: rotate(-0.04turn);
 color: #E93333;
 font-size: 22px;
-font-family: 900;
+font-weight: 900;
 }
 
 .phone_1{
@@ -253,7 +253,7 @@ font-family: 900;
         transform: rotate(-0.04turn);
     color: #E93333;
     font-size: 22px;
-    font-family: 900;
+    font-weight: 900;
     }
     .ertyuioylgkjhgfszhyjg{
         position: absolute;
@@ -489,7 +489,7 @@ font-family: 900;
         transform: rotate(-0.04turn);
     color: #E93333;
     font-size: 19px;
-    font-family: 900;
+    font-weight: 900;
     }
     .galati_rasm_gnjiogggf{
         display: none !important;
@@ -745,7 +745,7 @@ font-family: 900;
         transform: rotate(-0.04turn);
         color: #E93333;
         font-size: 19px;
-        font-family: 900;
+        font-weight: 900;
     }
     .rek_gapi_5{
         position: absolute;
@@ -866,7 +866,7 @@ font-family: 900;
         color: #E93333;
         line-height: 20px;
         font-size: 15px;
-        font-family: 900;
+        font-weight: 900;
     }
     .galati_rasm1 {
         height: 45px;
@@ -1116,7 +1116,7 @@ font-family: 900;
         color: #E93333;
         line-height: 18px;
         font-size: 14px;
-        font-family: 900;
+        font-weight: 900;
     }
     .h1111111111111111111{
         font-size: 28px;
@@ -3137,14 +3137,13 @@ margin-left: 15px;
     margin-top: 80px;
 }
 .beton_homiy1_kopiya{
-    width: 350px;
+    width: 850px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     margin-top: 50px;
     flex-wrap: wrap;
-    display: none;
     text-align: center !important;
 }
 @media(max-width:1100px){
@@ -6422,4 +6421,10 @@ font-size: 35px;
                 }
                 
                 
+                }
+                .yellow_star{
+                    color: #FFCB13;
+                }
+                .white_stat{
+                    color: gray;
                 }
