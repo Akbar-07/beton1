@@ -23,7 +23,9 @@ import axios from 'axios'
 import url from './Host'
 
 export default function Partners_page() {
+  const [ son, setSon] = useState(0)
   function radio_bol(id){
+    setSon(id)
     for (let i = 0; i < document.querySelectorAll(".radio_part_inp").length; i++) {
       if(id === i){
         document.querySelectorAll(".radio_part_inp")[i].style = "background: #FFCB13;"
@@ -57,7 +59,6 @@ export default function Partners_page() {
   }
   const [post2, setPost2] = useState([{}])
 
-  let son = radio_bol(1)
 
 
   function postData1(id){
@@ -399,7 +400,7 @@ export default function Partners_page() {
         </div>
       </div>
     </div>
-    <button onClick={()=>{postData1(!(son) ? 2:3)}} className='kel_card2_but'>Отправить запрос</button>
+    <button onClick={()=>{postData1(son===0?2:3)}} className='kel_card2_but'>Отправить запрос</button>
   </div>
 </div>
 
