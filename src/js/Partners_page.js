@@ -33,6 +33,7 @@ export default function Partners_page() {
   }
   function postData(){
     var newPostData = new FormData()
+    newPostData.append("")
   }
   return (
     <div>
