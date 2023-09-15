@@ -996,7 +996,7 @@ useEffect(()=>{
                                 <div className="all-tarif-btn-joy">
                                     {tarif.map((item)=>{
                                         return(  <div>
-                                             <div className="beton-blcok5">
+                                             <div onClick={()=>{console.log(item.id);sessionStorage.setItem("tarif",item.id)}} className="beton-blcok5">
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa5"></div>
                             </div>
