@@ -87,14 +87,10 @@ import IMGG20promax from "../img/valentin3 1.png"
 import IMGGmonet1 from "../img/1 монет.png"
 import IMGGmonet2 from "../img/3 монет.png"
 import IMGGmonet3 from "../img/2 монет.png"
-import { HiOutlineArrowNarrowRight } from "react-icons/hi"
+
 import { BsChevronUp } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
-import Fade from 'react-reveal/Fade';
-import { useState } from 'react'
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
-import {BsChevronUp} from "react-icons/bs"
-import {BsChevronRight} from "react-icons/bs"
 import Fade from 'react-reveal/Fade';       
 import { useEffect, useState } from 'react'
 
@@ -104,253 +100,182 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Footer from './Footer'
 import Zakazbeton from "./Zakazbeton"
-
-import { useEffect } from 'react'
-
-import Zakazbeton from  "./Zakazbeton"
 import axios from "axios"
 import url from './Host'
 
 
 export default function Home() {
-    const [data, setData] = useState([]);
-    const [data1, nashaData] = useState([]);
-    const [bir, setBir] = useState(1)
-    const [mashina, setMashina] = useState(1)
-    function sariq1() {
-        axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
-            const Filter=res.data.filter(item=>item.liso=="y")
-            nashaData(Filter)
-            console.log(res.data)
-        }).catch((err) => {
-            alert("err")
-        })
-        document.querySelector(".b4").style = "background-color:#FFCB13;"
-        document.querySelector(".b3").style = "background-color:#EBEBEB;"
-    }
-    function sariq2() {
-        axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
-            const Filter=res.data.filter(item=>item.liso!=="y")
-            nashaData(Filter)
-            console.log(res.data)
-        }).catch((err) => {
-            alert("err")
-        })
-        document.querySelector("#al1").style = "background-color:#FFCB13;"
-        document.querySelector("#al2").style = "background-color:#EBEBEB;"
-    }
-    function fabrika2() {
-        document.querySelector(".sibavisastroyimg").style = "display:none"
-        document.querySelector(".sibavisastroyimg1").style = "display:flex"
-        document.querySelector(".fabrikaimg").style = "display:none"
-        document.querySelector(".fabrikaimg1").style = "display:flex"
-        document.querySelector(".betonshikimg1").style = "display:none"
-        document.querySelector(".betonshikimg").style = "display:flex"
-        document.querySelector(".more_betonimg1").style = "display:none"
-        document.querySelector(".more_betonimg").style = "display:flex"
-        document.querySelector(".noviy_betonimg1").style = "display:none"
-        document.querySelector(".noviy_betonimg").style = "display:flex"
-    }
-    function betonshik2() {
-        document.querySelector(".sibavisastroyimg").style = "display:none"
-        document.querySelector(".sibavisastroyimg1").style = "display:flex"
-        document.querySelector(".betonshikimg").style = "display:none"
-        document.querySelector(".betonshikimg1").style = "display:flex"
-        document.querySelector(".fabrikaimg1").style = "display:none"
-        document.querySelector(".fabrikaimg").style = "display:flex"
-        document.querySelector(".more_betonimg1").style = "display:none"
-        document.querySelector(".more_betonimg").style = "display:flex"
-        document.querySelector(".noviy_betonimg1").style = "display:none"
-        document.querySelector(".noviy_betonimg").style = "display:flex"
-    }
-    function sibavisastroy2() {
-        document.querySelector(".sibavisastroyimg1").style = "display:none"
-        document.querySelector(".sibavisastroyimg").style = "display:flex"
-        document.querySelector(".betonshikimg1").style = "display:none"
-        document.querySelector(".betonshikimg").style = "display:flex"
-        document.querySelector(".fabrikaimg1").style = "display:none"
-        document.querySelector(".fabrikaimg").style = "display:flex"
-        document.querySelector(".more_betonimg1").style = "display:none"
-        document.querySelector(".more_betonimg").style = "display:flex"
-        document.querySelector(".noviy_betonimg1").style = "display:none"
-        document.querySelector(".noviy_betonimg").style = "display:flex"
-    }
-    function more_betona2() {
-        document.querySelector(".more_betonimg").style = "display:none"
-        document.querySelector(".more_betonimg1").style = "display:flex"
-        document.querySelector(".sibavisastroyimg").style = "display:none"
-        document.querySelector(".sibavisastroyimg1").style = "display:flex"
-        document.querySelector(".betonshikimg1").style = "display:none"
-        document.querySelector(".betonshikimg").style = "display:flex"
-        document.querySelector(".fabrikaimg1").style = "display:none"
-        document.querySelector(".fabrikaimg").style = "display:flex"
-        document.querySelector(".noviy_betonimg1").style = "display:none"
-        document.querySelector(".noviy_betonimg").style = "display:flex"
-    }
-    function noviy_beton2() {
-        document.querySelector(".noviy_betonimg").style = "display:none"
-        document.querySelector(".noviy_betonimg1").style = "display:flex"
-        document.querySelector(".more_betonimg1").style = "display:none"
-        document.querySelector(".more_betonimg").style = "display:flex"
-        document.querySelector(".sibavisastroyimg").style = "display:none"
-        document.querySelector(".sibavisastroyimg1").style = "display:flex"
-        document.querySelector(".betonshikimg1").style = "display:none"
-        document.querySelector(".betonshikimg").style = "display:flex"
-        document.querySelector(".fabrikaimg1").style = "display:none"
-        document.querySelector(".fabrikaimg").style = "display:flex"
-    }
-    useEffect(() => {
-        axios.get(`https://dastafka-back.onrender.com/api/skachat_pridlachenu`).then(res => {
-            setData(res.data)
-            console.log(res.data)
-        }).catch((err) => {
-            alert("err")
-        })
+   
+
+const [bir, setBir] = useState(1)
+
+const [mashina,setMashina] = useState(1)
+
+function sariq1(){
+    document.querySelector(".b4").style = "background-color:#FFCB13;"
+    document.querySelector(".b3").style = "background-color:#EBEBEB;"
+}
+function sariq2(){
+    document.querySelector("#al1").style = "background-color:#FFCB13;"
+    document.querySelector("#al2").style = "background-color:#EBEBEB;"
+}
+function fabrika2() {
+    document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".fabrikaimg").style="display:none"
+    document.querySelector(".fabrikaimg1").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function betonshik2() {
+    document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".betonshikimg").style="display:none"
+    document.querySelector(".betonshikimg1").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function sibavisastroy2() {
+    document.querySelector(".sibavisastroyimg1").style="display:none"
+    document.querySelector(".sibavisastroyimg").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function more_betona2() {
+    document.querySelector(".more_betonimg").style="display:none"
+    document.querySelector(".more_betonimg1").style="display:flex"
+    document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+    document.querySelector(".noviy_betonimg1").style="display:none"
+    document.querySelector(".noviy_betonimg").style="display:flex"
+}
+function noviy_beton2() {
+    document.querySelector(".noviy_betonimg").style="display:none"
+    document.querySelector(".noviy_betonimg1").style="display:flex"
+    document.querySelector(".more_betonimg1").style="display:none"
+    document.querySelector(".more_betonimg").style="display:flex"
 
 
-        axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
-            const Filter=res.data.filter(item=>item.liso!=="y")
-            nashaData(Filter)
-            console.log(res.data)
-        }).catch((err) => {
-            alert("err")
-        })
+document.querySelector(".sibavisastroyimg").style="display:none"
+    document.querySelector(".sibavisastroyimg1").style="display:flex"
+    document.querySelector(".betonshikimg1").style="display:none"
+    document.querySelector(".betonshikimg").style="display:flex"
+    document.querySelector(".fabrikaimg1").style="display:none"
+    document.querySelector(".fabrikaimg").style="display:flex"
+}
+const [data11, setData11] = useState([])
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/homeiy').then(res=>{
+        setData11(res.data)
+    }).catch(err=>{
+        alert("xato back")
+    })
+},[])
 
-    },[])
+const [sliv, setSliv] = useState(1)
+const [mark, setMark] = useState([])
+// useEffect(()=>{
+// axios.get(`${url}/api/homeiy`).then(res=>{
+//     setMark(res.data)
+// }).catch(err=>{
 
-    return (
-        <div>
-            <div className="seriy">
-                <Navbar />
-                <div className="rek rek_orig">
-                    <div className="rek_h111">
-                        <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11' /> как заказать пиццу</h1>
-                        <span className='rek_h111_span'>Скачивай наше приложение!</span>
-                        <div className="rek_rasm_div">
-                            <div className="rek_rasm_div1">
-                                <img className='rek_img_s1' src={IMG23} alt="" />
-                                <img className='rek_img_s1' src={IMG24} alt="" />
-                                <img className='rek_img_s1' src={IMG25} alt="" />
-                            </div>
-                            <div className="rek_rasm_div2">
-                                <img className='rek_img_s1' src={IMG26} alt="" />
-                                <img className='rek_img_s1' src={IMG27} alt="" />
-                                <img className='rek_img_s1' src={IMG28} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="rek_dumaloq1">
-                        <div className="rek_dumaloq1_kichik"></div>
-                    </div>
-                    <div className="rek_dumaloq1_tel">
-                        <img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
-                    </div>
-                    <div className="rek_dumaloq2">
-                        <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
-                        <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
-                        <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
-                    </div>
-                    <div className="rek_dumaloq3">
-                        <HiOutlineArrowNarrowRight className='icon_z' />
-                    </div>
+// })
+// },[])
+  return (
+    <div>
+        <div className="seriy">
+        <Navbar />
+{sliv === 1 ?  <div className="rek rek_orig">
+           <div className="rek_h111">
+           <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11'/> как заказать пиццу</h1>
+            <span className='rek_h111_span'>Скачивай наше приложение!</span>
+            <div className="rek_rasm_div">
+           <div className="rek_rasm_div1">
+           <img className='rek_img_s1' src={IMG23} alt="" />
+           <img className='rek_img_s1' src={IMG24} alt="" />
+           <img className='rek_img_s1' src={IMG25} alt="" />
+           </div>
+            <div className="rek_rasm_div2">
+            <img className='rek_img_s1' src={IMG26} alt="" />
+            <img className='rek_img_s1' src={IMG27} alt="" />
+            <img className='rek_img_s1' src={IMG28} alt="" />
+            </div>
+            </div>
+           </div>
+            <div className="rek_dumaloq1">
+                <div className="rek_dumaloq1_kichik"></div>
+            </div>
+            <div className="rek_dumaloq1_tel">
+                <img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
+            </div>
+            <div className="rek_dumaloq2">
+            <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
+                <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
+                <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
+            </div>
+            <div onClick={()=>{setSliv(2)}} className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div> : ""}
+      {sliv === 2 ? <div className="rek rek_orig">
+          <div className="dumaloq_12343">
+
+
+</div>
+          <img className='beton_taksi1' src={IMGG17} alt="" />
+          <div className="beton_taksi1_sozi">
+            <h1 className='beton_taksi1_sozi1'>
+            Только <span className='beton_taksi1_sozi2'>проверенные</span> поставщики бетона в одном месте!
+            </h1>
+          </div>
+            <div onClick={()=>{setSliv(3)}} className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div> : ""} 
+        {sliv === 3 ? <div className="rek rek_orig">
+        <div className="rek_dumaloq_keyin_1">
                 </div>
-    
-                <div className="rek1">
-                    <Swiper pagination={true} modules={[Pagination]} className="mySwiper sviperS">
-                        <SwiperSlide className='azx'>  <div className="rek">
-                            <div className="rek_h111">
-                                <h1 className='h1111111111111111111'><span className='rek_h1_kop'>Купить бетон</span> также просто, <br className='br_11' /> как заказать пиццу</h1>
-                                <span className='rek_h111_span'>Скачивай наше приложение!</span>
-                                <div className="rek_rasm_div">
-                                    <div className="rek_rasm_div1">
-                                        <img className='rek_img_s1' src={IMG23} alt="" />
-                                        <img className='rek_img_s1' src={IMG24} alt="" />
-                                        <img className='rek_img_s1' src={IMG25} alt="" />
-                                    </div>
-                                    <div className="rek_rasm_div2">
-                                        <img className='rek_img_s1' src={IMG26} alt="" />
-                                        <img className='rek_img_s1' src={IMG27} alt="" />
-                                        <img className='rek_img_s1' src={IMG28} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rek_dumaloq1">
-                                <div className="rek_dumaloq1_kichik"></div>
-                            </div>
-                            <div className="rek_dumaloq1_tel">
-                                <img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
-                            </div>
-                            <div className="rek_dumaloq2">
-                                <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
-                                <img className='rek_dumaloq2_img2' src={IMG57} alt="" />
-                                <img className='rek_dumaloq2_img3' src={IMG56} alt="" />
-                            </div>
-                            <div className="rek_dumaloq3">
-                                <HiOutlineArrowNarrowRight className='icon_z' />
-                            </div>
-                        </div></SwiperSlide>
-                        <SwiperSlide className='azx'>  <div className="rek">
-                            <div className="rek_dumaloq_keyin_1">
-                            </div>
-                            <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir' src={IMGG8} alt="" />
-                            <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir1' src={IMGG14} alt="" />
-                            <div className="rek_dumaloq_keyin_2">
-                            </div>
-                            <img className='img_qilomagan_1 img_qilomagan_1_kopiy' src={IMGG11} alt="" />
-                            <img className='img_qilomagan_1 img_qilomagan_2' src={IMGG15} alt="" />
-                            <div className="ertyuioylgkjhgfszhyjg">
-                                <img className='galati_rasm1' src={IMGG12} alt="" />
-                                <img className='galati_rasm2 galati_rasm_gnjiogggf' src={IMGG13} alt="" />
-                                <img className='galati_rasm2 galati_rasm2_kop' src={IMGG12} alt="" />
-                            </div>
-                            <span className='rotate1'>мне срочно нужен бетон!</span>
-
-                            <div className="rek_gapi_5">
-                                <h2>Все просто! Звони!</h2>
-                                <div className="rek_gapi_5_tegi">
-                                    <img className='phone_1' src={IMGG9} alt="" />
-                                    <img className='phone_2' src={IMGG10} alt="" />
-                                </div>
-                            </div>
-                            <div className="rek_dumaloq3">
-                                <HiOutlineArrowNarrowRight className='icon_z' />
-                            </div>
-                        </div></SwiperSlide>
-                        <SwiperSlide className='azx'>  <div className="rek">
-                            <div className="dumaloq_12343">
-
-                            </div>
-                            <img className='beton_taksi1' src={IMGG17} alt="" />
-                            <div className="beton_taksi1_sozi">
-                                <h1 className='beton_taksi1_sozi1'>
-                                    Только <span className='beton_taksi1_sozi2'>проверенные</span> поставщики бетона в одном месте!
-                                </h1>
-                            </div>
-                            <div className="rek_dumaloq3">
-                                <HiOutlineArrowNarrowRight className='icon_z' />
-                            </div>
-                        </div></SwiperSlide>
-                        <SwiperSlide className='azx'>  <div className="rek">
-                            <div className="rek_ohirgi_baneer">
-                                <h1 className='rek_ohirgi_baneer_sozi'><span className='beton_taksi1_sozi2'>1000 бонусов</span> за регистрацию и первый заказ по промокоду <span className='beton_taksi1_sozi2'>“START”</span></h1>
-                            </div>
-                            <div className="rek_dumaloq_zay_nab11"></div>
-                            <div className="rek_dumaloq_zay_nab1"></div>
-                            <div className="rek_dumaloq_zay_nab1_1"></div>
-                            <img className='promax_onas' src={IMGG20promax} alt="" />
-                            <div className="monet_z">
-                                <div className="monet_z1">
-                                    <img src={IMGGmonet1} alt="" />
-                                    <img src={IMGGmonet2} alt="" />
-                                </div>
-                                <img src={IMGGmonet3} alt="" />
-                            </div>
-                            <div className="rek_dumaloq3">
-                                <HiOutlineArrowNarrowRight className='icon_z' />
-                            </div>
-                        </div></SwiperSlide>
-                    </Swiper>
-
+                <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir' src={IMGG8} alt="" />
+            <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir1' src={IMGG14} alt="" />
+            <div className="rek_dumaloq_keyin_2">
+            </div>
+            <img className='img_qilomagan_1 img_qilomagan_1_kopiy' src={IMGG11} alt="" />
+            <img className='img_qilomagan_1 img_qilomagan_2' src={IMGG15} alt="" />
+            <div className="ertyuioylgkjhgfszhyjg">
+            <img className='galati_rasm1' src={IMGG12} alt="" />
+            <img className='galati_rasm2 galati_rasm_gnjiogggf' src={IMGG13} alt="" />
+            <img className='galati_rasm2 galati_rasm2_kop' src={IMGG12} alt="" />
+            </div>
+            <span className='rotate1'>мне срочно нужен бетон!</span>
+            
+            <div className="rek_gapi_5">
+                <h2>Все просто! Звони!</h2>
+                <div className="rek_gapi_5_tegi">
+                 <img className='phone_1' src={IMGG9} alt="" />
+                 <img className='phone_2' src={IMGG10} alt="" />
+                </div>
+            </div>
+        <div onClick={()=>{setSliv(4)}} className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
         </div> : ""} 
         {sliv === 4 ? <div className="rek rek_orig">
         <div className="rek_ohirgi_baneer">
@@ -396,7 +321,9 @@ export default function Home() {
                 <div className="rek_dumaloq1_kichik"></div>
             </div>
             <div className="rek_dumaloq1_tel">
-                <img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
+
+
+<img className='rek_dumaloq1_kichik_img' src={IMG59} alt="" />
             </div>
             <div className="rek_dumaloq2">
             <img className='rek_dumaloq2_img1' src={IMG58} alt="" />
@@ -410,43 +337,188 @@ export default function Home() {
         <SwiperSlide className='azx'>  <div className="rek">
         <div className="rek_dumaloq_keyin_1">
                 </div>
-                <div className="beton_sar">
-                    <img className='img1' src={IMG2} alt="" />
-                    <span>Заказ бетона</span>
+                <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir' src={IMGG8} alt="" />
+            <img className='rek_dumaloq_keyin_1_img1 rek_dumaloq_keyin_1_img1_ochir1' src={IMGG14} alt="" />
+            <div className="rek_dumaloq_keyin_2">
+            </div>
+            <img className='img_qilomagan_1 img_qilomagan_1_kopiy' src={IMGG11} alt="" />
+            <img className='img_qilomagan_1 img_qilomagan_2' src={IMGG15} alt="" />
+            <div className="ertyuioylgkjhgfszhyjg">
+            <img className='galati_rasm1' src={IMGG12} alt="" />
+            <img className='galati_rasm2 galati_rasm_gnjiogggf' src={IMGG13} alt="" />
+            <img className='galati_rasm2 galati_rasm2_kop' src={IMGG12} alt="" />
+            </div>
+            <span className='rotate1'>мне срочно нужен бетон!</span>
+            
+            <div className="rek_gapi_5">
+                <h2>Все просто! Звони!</h2>
+                <div className="rek_gapi_5_tegi">
+                 <img className='phone_1' src={IMGG9} alt="" />
+                 <img className='phone_2' src={IMGG10} alt="" />
                 </div>
-                <Zakazbeton />
+            </div>
+        <div className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div></SwiperSlide>
+        <SwiperSlide className='azx'>  <div className="rek">
+          <div className="dumaloq_12343">
 
-                <div className="beton_z">
-                    <div className=" beton_sar1">
-                        <img className='img1' src={IMG2} alt="" />
-                        <span>О сервисе в  цифрах</span>
+
+</div>
+          <img className='beton_taksi1' src={IMGG17} alt="" />
+          <div className="beton_taksi1_sozi">
+            <h1 className='beton_taksi1_sozi1'>
+            Только <span className='beton_taksi1_sozi2'>проверенные</span> поставщики бетона в одном месте!
+            </h1>
+          </div>
+            <div className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div></SwiperSlide>
+        <SwiperSlide className='azx'>  <div className="rek">
+        <div className="rek_ohirgi_baneer">
+            <h1 className='rek_ohirgi_baneer_sozi'><span className='beton_taksi1_sozi2'>1000 бонусов</span> за регистрацию и первый заказ по промокоду <span className='beton_taksi1_sozi2'>“START”</span></h1>
+        </div>
+       <div className="rek_dumaloq_zay_nab11"></div>
+       <div className="rek_dumaloq_zay_nab1"></div>
+       <div className="rek_dumaloq_zay_nab1_1"></div>
+       <img className='promax_onas' src={IMGG20promax} alt="" />
+       <div className="monet_z">
+        <div className="monet_z1">
+            <img src={IMGGmonet1} alt="" />
+            <img src={IMGGmonet2} alt="" />
+        </div>
+        <img src={IMGGmonet3} alt="" />
+       </div>
+            <div className="rek_dumaloq3">
+                <HiOutlineArrowNarrowRight className='icon_z'/>
+            </div>
+        </div></SwiperSlide>
+      </Swiper>
+        </div>
+        <div className="beton_sar">
+                <img className='img1' src={IMG2} alt="" />
+                <span>Заказ бетона</span>
+            </div>
+            <Zakazbeton/>
+            
+        <div className="beton_z">
+            <div className=" beton_sar1">
+                <img className='img1' src={IMG2} alt="" />
+                <span>О сервисе в  цифрах</span>
+            </div>
+        </div>
+        <div className="beton_z_span">
+            <span>Убедительные факты и цифры говорят сами за себя. 
+                    Вот лишь несколько примеров:</span>
+        </div>
+
+        <div className="biton_hed">
+            <div className="bit_hed1">
+             <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG2} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'><span className='bit_hed1_com1_h22'>5 проверенных <br /> поставщиков</span> бетона – ваша надежность и уверенность в качестве</h2>
+                <span className='bit_hed1_con_span'>Сотрудничаем только с ведущими поставщиками бетона, имеющими автоматизированное производство и собственные аттестованные лаборатории для контроля качества. Не работаем с ненадежными заводами, поскольку применение бетона без технологического и лабораторного контроля чревато непредсказуемыми последствиями.</span>
+             </div>
+             <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG3} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Более <span className='bit_hed1_com1_h22'>3500 клиентов </span>уже выбрали нас</h2>
+                <span className='bit_hed1_con_span'>Именно столько человек уже воспользовались преимуществами нашего сервиса доставки бетона. Постоянное расширение клиентской базы позволяет нам гордиться, что нас выбирает большое количество людей. Мы благодарны за оказываемое доверие и непрерывно развиваемся для того, чтобы выполнять все поставки на самом высоком уровне.</span>
+             </div>
+             <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG4} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Более<span className='bit_hed1_com1_h22'> 500 м3 бетона </span>доставляем в день</h2>
+
+
+<span className='bit_hed1_con_span'>Ежедневно доставляем не менее 500 м3 бетона, что служит показателем оптимизации и высокой производительности нашего сервиса.Поэтому, вне зависимости от масштабов реализуемого проекта, вы можете положиться на нас при заказе нужного количества бетона.</span>
+             </div>
+            </div>
+            <div className="bit_hed2">
+            <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi dumaloq_tochka_ichi1' src={IMGG5} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Мощный автопарк: <br /><span className='bit_hed1_com1_h22'> 180+ миксеров <br />  <span className='bit_hed1_com1_h2'>и</span> 27+ бетононасосов</span></h2>
+                <span className='bit_hed1_con_span'>Собственный автопарк – это наше преимущество и гарантия оперативной доставки бетона на вашу строительную площадку. Имеющиеся в наличии миксеры (свыше 180 ед.) вмещают различный объем бетона – от 2.5 до 12 м3. Более 27 ед. наших бетононасосов доставляют бетон на высоту от 21 до 76 метров. Все это обеспечивает надежность и своевременность каждой доставки.</span>
+             </div>
+              <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG6} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Надежность и удовлетворенность: более <span className='bit_hed1_com1_h22'>98% клиентов</span> полностью довольны нашим сервисом!</h2>
+                <span className='bit_hed1_con_span'>Мы гордимся тем, что наш сервис поставки бетона отличается в высшей степени надежностью и качеством. Подтверждение этому – отзывы 98% благодарных клиентов. Наша цель заключается в доверии заказчиков и поддержке наивысшего стандарта обслуживания, поэтому мы оперативно реагируем на каждое пожелание заказчиков.</span>
+             </div>
+             <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG7} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Более сотни<span className='bit_hed1_com1_h22'> 25-этажных </span>домов можно построить из проданного через наш сервис бетона</h2>
+                <span className='bit_hed1_con_span'>Мы гордимся тем, что продали свыше 40.000 м3 бетона за последний год. Его достаточно для заливки 14,2 футбольных полей или постройки более сотни 25-этажных домов. Быстрая доставка, надежный и качественный материал от ключевых поставщиков нашего города позволяют реализовывать самые амбициозные строительные проекты в кратчайшие сроки.</span>
+             </div>
+            </div>
+        </div>
+
+
+<Swiper pagination={true} modules={[Pagination]} className="mySwiper mySvip1">
+        <SwiperSlide className='slide1'>   <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG2} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'><span className='bit_hed1_com1_h22'>5 проверенных <br /> поставщиков</span> бетона – ваша надежность и уверенность в качестве</h2>
+                <span className='bit_hed1_con_span'>Сотрудничаем только с ведущими поставщиками бетона, имеющими автоматизированное производство и собственные аттестованные лаборатории для контроля качества. Не работаем с ненадежными заводами, поскольку применение бетона без технологического и лабораторного контроля чревато непредсказуемыми последствиями.</span>
+             </div></SwiperSlide>
+        <SwiperSlide className='slide1'><div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG3} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Более <span className='bit_hed1_com1_h22'>3500 клиентов </span>уже выбрали нас</h2>
+                <span className='bit_hed1_con_span'>Именно столько человек уже воспользовались преимуществами нашего сервиса доставки бетона. Постоянное расширение клиентской базы позволяет нам гордиться, что нас выбирает большое количество людей. Мы благодарны за оказываемое доверие и непрерывно развиваемся для того, чтобы выполнять все поставки на самом высоком уровне.</span>
+             </div></SwiperSlide>
+        <SwiperSlide className='slide1'> <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG4} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Более<span className='bit_hed1_com1_h22'> 500 м3 бетона </span>доставляем в день</h2>
+                <span className='bit_hed1_con_span'>Ежедневно доставляем не менее 500 м3 бетона, что служит показателем оптимизации и высокой производительности нашего сервиса.Поэтому, вне зависимости от масштабов реализуемого проекта, вы можете положиться на нас при заказе нужного количества бетона.</span>
+             </div></SwiperSlide>
+        <SwiperSlide className='slide1'>  <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi dumaloq_tochka_ichi1' src={IMGG5} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Мощный автопарк: <br /><span className='bit_hed1_com1_h22'> 180+ миксеров <br />  <span className='bit_hed1_com1_h2'>и</span> 27+ бетононасосов</span></h2>
+                <span className='bit_hed1_con_span'>Собственный автопарк – это наше преимущество и гарантия оперативной доставки бетона на вашу строительную площадку. Имеющиеся в наличии миксеры (свыше 180 ед.) вмещают различный объем бетона – от 2.5 до 12 м3. Более 27 ед. наших бетононасосов доставляют бетон на высоту от 21 до 76 метров. Все это обеспечивает надежность и своевременность каждой доставки.</span>
+             </div></SwiperSlide>
+        <SwiperSlide className='slide1'> <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG6} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Надежность и удовлетворенность: более <span className='bit_hed1_com1_h22'>98% клиентов</span> полностью довольны нашим сервисом!</h2>
+                <span className='bit_hed1_con_span'>Мы гордимся тем, что наш сервис поставки бетона отличается в высшей степени надежностью и качеством. Подтверждение этому – отзывы 98% благодарных клиентов. Наша цель заключается в доверии заказчиков и поддержке наивысшего стандарта обслуживания, поэтому мы оперативно реагируем на каждое пожелание заказчиков.</span>
+             </div></SwiperSlide>
+
+
+<SwiperSlide className='slide1'> <div className="bit_hed1_com1">
+                <img className='dumaloq_tochka_ichi' src={IMGG7} alt="" />
+                <img className='dumaloq_tochka' src={IMGG1} alt="" />
+                <h2 className='bit_hed1_com1_h2'>Более сотни<span className='bit_hed1_com1_h22'> 25-этажных </span>домов можно построить из проданного через наш сервис бетона</h2>
+                <span className='bit_hed1_con_span'>Мы гордимся тем, что продали свыше 40.000 м3 бетона за последний год. Его достаточно для заливки 14,2 футбольных полей или постройки более сотни 25-этажных домов. Быстрая доставка, надежный и качественный материал от ключевых поставщиков нашего города позволяют реализовывать самые амбициозные строительные проекты в кратчайшие сроки.</span>
+             </div></SwiperSlide>
+      </Swiper>
+
+        </div>
+
+        {mashina === 1 ? <div className="beton_mashina">
+            <div className="bet_mashina1">
+                <div className="bet_mash1">
+                    <div className="bet_mash11">
+                    <h1>Немного 
+                        о нас</h1>
                     </div>
                 </div>
-                <div className="beton_z_span">
-                    <span>Убедительные факты и цифры говорят сами за себя.
-                        Вот лишь несколько примеров:</span>
+                <div className="bet_mash2">
+                    <h3 className='p'>О сервисе</h3>
+                    <p className='p1'>Сервис «БЕТОН ТАКСИ» предоставляет вам ряд уникальных преимуществ. Во-первых, это обеспечение оперативной поставки бетона, позволяющей сэкономить время и деньги без отставания от графика строительства. Во-вторых, это гарантия высокого качества бетона, поскольку поставки осуществляются только с заводов проверенных поставщиков.</p>
+                    <p onClick={()=>{setMashina(2)}} className='p2'>Читать полностью <BsChevronRight className='pp2'/></p>
                 </div>
-
-
-                <div className="biton_hed">
-                    <div className="bit_hed1">
-                        <div className="bit_hed1_com1">
-                            <img className='dumaloq_tochka_ichi' src={IMGG2} alt="" />
-                            <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                            <h2 className='bit_hed1_com1_h2'><span className='bit_hed1_com1_h22'>5 проверенных <br /> поставщиков</span> бетона – ваша надежность и уверенность в качестве</h2>
-                            <span className='bit_hed1_con_span'>Сотрудничаем только с ведущими поставщиками бетона, имеющими автоматизированное производство и собственные аттестованные лаборатории для контроля качества. Не работаем с ненадежными заводами, поскольку применение бетона без технологического и лабораторного контроля чревато непредсказуемыми последствиями.</span>
-                        </div>
-                        <div className="bit_hed1_com1">
-                            <img className='dumaloq_tochka_ichi' src={IMGG3} alt="" />
-                            <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                            <h2 className='bit_hed1_com1_h2'>Более <span className='bit_hed1_com1_h22'>3500 клиентов </span>уже выбрали нас</h2>
-                            <span className='bit_hed1_con_span'>Именно столько человек уже воспользовались преимуществами нашего сервиса доставки бетона. Постоянное расширение клиентской базы позволяет нам гордиться, что нас выбирает большое количество людей. Мы благодарны за оказываемое доверие и непрерывно развиваемся для того, чтобы выполнять все поставки на самом высоком уровне.</span>
-                        </div>
-                        <div className="bit_hed1_com1">
-                            <img className='dumaloq_tochka_ichi' src={IMGG4} alt="" />
-                            <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                            <h2 className='bit_hed1_com1_h2'>Более<span className='bit_hed1_com1_h22'> 500 м3 бетона </span>доставляем в день</h2>
-                            <span className='bit_hed1_con_span'>Ежедневно доставляем не менее 500 м3 бетона, что служит показателем оптимизации и высокой производительности нашего сервиса.Поэтому, вне зависимости от масштабов реализуемого проекта, вы можете положиться на нас при заказе нужного количества бетона.</span>
+            </div>
+            <div className="bet_mash3">
+            <img className='img3' src={IMG9} alt="" />
 
             </div>
         </div> : <div className="beton_mashina_kopiya">
@@ -477,7 +549,8 @@ export default function Home() {
             <h1>Наши партнеры</h1>
         </div>
 
-        {/* <div className="beton_homiy1">
+
+{/* <div className="beton_homiy1">
            <div className="beton_homiy1_img">
            <div className="img5"><img onClick={()=>fabrika2()} className='fabrikaimg' src={IMG10} alt="" /><img style={{display:"none"}} className='fabrikaimg1' src={fabrika} alt="" /></div>
            </div>
@@ -496,10 +569,9 @@ export default function Home() {
         </div> */}
 
         <div className="beton_homiy1_kopiya">
-            {data11.map(item=>{
-                return (
-                <div className="beton_homiy1_img">
-                    <img onClick={()=>partner2(item.id)} src={item.image} alt="" />
+            {data11.map((item,key)=>{
+                return (<div className="beton_homiy1_img">
+                    <img key={key} src={item.image} alt="" />
                 </div>)
             })}
            {/* <div className="beton_homiy1_img">
@@ -520,34 +592,51 @@ export default function Home() {
            </div> */}
         </div>
 
-            {data111.map((item,key)=>{
-                if(key<1){
-                    return(
-<div className="beton_analiz">
+        <div className="beton_analiz">
             <div className="bet_ana1">
-                <div className="bet_ana11">
+                {/* {mark.map(item=>{
+                    return(
+                         <div className="bet_ana11">
                     <img src={IMG15} alt="" />
 
 
 <div className="bet_ana_1">
-                        <span className='s3'>{item.gis_mark}</span>
-                        {item.gis_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.gis_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
+                        <span className='s3'>4,8</span>
+                        <>
+                                {item.betomtaxi_mark==1?(<><AiFillStar/></>):(item.betomtaxi_mark==2?(<><AiFillStar/><AiFillStar/></>):(item.betomtaxi_mark==3?(<><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.betomtaxi_mark==4?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.gis_mark == 5?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/>  </>):(<></>)))))}
+                                </>
                     </div>
 
                 </div>
+                    )
+                })} */}
+               
+                {/* {mark.map(item=>{
+                            return(
                 <div className="bet_ana11">
                     <img src={IMG16} alt="" />
 
-                    <div className="bet_ana_1">
-                        <span className='s3'>{item.betomtaxi_mark}</span>
-                        {item.betomtaxi_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
+
+<div className="bet_ana_1">
+                        <span className='s3'>4,8</span>
+                        
+                                <>
+                                {item.gis_mark==1?(<><AiFillStar/></>):(item.gis_mark==2?(<><AiFillStar/><AiFillStar/></>):(item.gis_mark==3?(<><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.gis_mark==4?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.gis_mark == 5?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/>  </>):(<></>)))))}
+                                </>
                     </div>
 
-                </div>
+                </div>)
+                        })} */}
                 
             </div>
             <div className="bet_ana2">
-                <span className='s4'>{item.description}</span>
+                <span className='s4'>С другой стороны постоянный количественный рост и сфера 
+                    нашей активности требуют от нас анализа соответствующий 
+                    условий активизации. Повседневная практика показывает,
+                     что постоянный количественный рост и сфера нашей активности
+                      играет важную роль в формировании форм развития<div className="br"></div>
+                       Равным образом укрепление и развитие структуры
+                        представляет </span>
 
                <div className="bet_ana22">
                 <span>#245 заводов</span>
@@ -557,15 +646,11 @@ export default function Home() {
                 </div>         
             </div>
         </div>
-                )
-                }
-                
-            })}
-        
        </div>
         <div className="seriy">
 
-            {bir === 1 ? <div className="biton_klent">
+
+{bir === 1 ? <div className="biton_klent">
                 <div className="bit_kent1">
                     <img className='img6' src={IMG17} alt="" />
                 </div>
@@ -575,254 +660,25 @@ export default function Home() {
                         <div className="bit_kent_but">
                             <button className='b3'>Для физических лиц</button>
                             <button onClick={()=>{sariq1(); setBir(2)}} className='b4'>Для юридических лиц</button>
-
                         </div>
                     </div>
-                    <div className="bit_hed2">
-                        <div className="bit_hed1_com1">
-                            <img className='dumaloq_tochka_ichi dumaloq_tochka_ichi1' src={IMGG5} alt="" />
-                            <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                            <h2 className='bit_hed1_com1_h2'>Мощный автопарк: <br /><span className='bit_hed1_com1_h22'> 180+ миксеров <br />  <span className='bit_hed1_com1_h2'>и</span> 27+ бетононасосов</span></h2>
-                            <span className='bit_hed1_con_span'>Собственный автопарк – это наше преимущество и гарантия оперативной доставки бетона на вашу строительную площадку. Имеющиеся в наличии миксеры (свыше 180 ед.) вмещают различный объем бетона – от 2.5 до 12 м3. Более 27 ед. наших бетононасосов доставляют бетон на высоту от 21 до 76 метров. Все это обеспечивает надежность и своевременность каждой доставки.</span>
+                    <Fade bottom>
+                    <div className="bit_kent_2">
+                        <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq dumaloq11">
+                            <img src={IMG18} alt="" />
                         </div>
-                        <div className="bit_hed1_com1">
-                            <img className='dumaloq_tochka_ichi' src={IMGG6} alt="" />
-                            <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                            <h2 className='bit_hed1_com1_h2'>Надежность и удовлетворенность: более <span className='bit_hed1_com1_h22'>98% клиентов</span> полностью довольны нашим сервисом!</h2>
-                            <span className='bit_hed1_con_span'>Мы гордимся тем, что наш сервис поставки бетона отличается в высшей степени надежностью и качеством. Подтверждение этому – отзывы 98% благодарных клиентов. Наша цель заключается в доверии заказчиков и поддержке наивысшего стандарта обслуживания, поэтому мы оперативно реагируем на каждое пожелание заказчиков.</span>
+                        <div className="bit_kent2_sozi">
+                           <div className="bit_kent_ideya">
+                           <img src={IMG18} alt="" />
+                           <h3>Заказ без забот.</h3>
+                           </div>
+                            <span>Наш сервис доставки бетона предлагает ту же простоту и удобство взаимодействия, как и заказ пиццы по телефону. Это максимально легкий и быстрый процесс.</span>
                         </div>
-                        <div className="bit_hed1_com1">
-                            <img className='dumaloq_tochka_ichi' src={IMGG7} alt="" />
-                            <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                            <h2 className='bit_hed1_com1_h2'>Более сотни<span className='bit_hed1_com1_h22'> 25-этажных </span>домов можно построить из проданного через наш сервис бетона</h2>
-                            <span className='bit_hed1_con_span'>Мы гордимся тем, что продали свыше 40.000 м3 бетона за последний год. Его достаточно для заливки 14,2 футбольных полей или постройки более сотни 25-этажных домов. Быстрая доставка, надежный и качественный материал от ключевых поставщиков нашего города позволяют реализовывать самые амбициозные строительные проекты в кратчайшие сроки.</span>
                         </div>
                     </div>
-                </div>
-
-                <Swiper pagination={true} modules={[Pagination]} className="mySwiper mySvip1">
-                    <SwiperSlide className='slide1'>   <div className="bit_hed1_com1">
-                        <img className='dumaloq_tochka_ichi' src={IMGG2} alt="" />
-                        <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                        <h2 className='bit_hed1_com1_h2'><span className='bit_hed1_com1_h22'>5 проверенных <br /> поставщиков</span> бетона – ваша надежность и уверенность в качестве</h2>
-                        <span className='bit_hed1_con_span'>Сотрудничаем только с ведущими поставщиками бетона, имеющими автоматизированное производство и собственные аттестованные лаборатории для контроля качества. Не работаем с ненадежными заводами, поскольку применение бетона без технологического и лабораторного контроля чревато непредсказуемыми последствиями.</span>
-                    </div></SwiperSlide>
-                    <SwiperSlide className='slide1'><div className="bit_hed1_com1">
-                        <img className='dumaloq_tochka_ichi' src={IMGG3} alt="" />
-                        <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                        <h2 className='bit_hed1_com1_h2'>Более <span className='bit_hed1_com1_h22'>3500 клиентов </span>уже выбрали нас</h2>
-                        <span className='bit_hed1_con_span'>Именно столько человек уже воспользовались преимуществами нашего сервиса доставки бетона. Постоянное расширение клиентской базы позволяет нам гордиться, что нас выбирает большое количество людей. Мы благодарны за оказываемое доверие и непрерывно развиваемся для того, чтобы выполнять все поставки на самом высоком уровне.</span>
-                    </div></SwiperSlide>
-                    <SwiperSlide className='slide1'> <div className="bit_hed1_com1">
-                        <img className='dumaloq_tochka_ichi' src={IMGG4} alt="" />
-                        <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                        <h2 className='bit_hed1_com1_h2'>Более<span className='bit_hed1_com1_h22'> 500 м3 бетона </span>доставляем в день</h2>
-                        <span className='bit_hed1_con_span'>Ежедневно доставляем не менее 500 м3 бетона, что служит показателем оптимизации и высокой производительности нашего сервиса.Поэтому, вне зависимости от масштабов реализуемого проекта, вы можете положиться на нас при заказе нужного количества бетона.</span>
-                    </div></SwiperSlide>
-                    <SwiperSlide className='slide1'>  <div className="bit_hed1_com1">
-                        <img className='dumaloq_tochka_ichi dumaloq_tochka_ichi1' src={IMGG5} alt="" />
-                        <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                        <h2 className='bit_hed1_com1_h2'>Мощный автопарк: <br /><span className='bit_hed1_com1_h22'> 180+ миксеров <br />  <span className='bit_hed1_com1_h2'>и</span> 27+ бетононасосов</span></h2>
-                        <span className='bit_hed1_con_span'>Собственный автопарк – это наше преимущество и гарантия оперативной доставки бетона на вашу строительную площадку. Имеющиеся в наличии миксеры (свыше 180 ед.) вмещают различный объем бетона – от 2.5 до 12 м3. Более 27 ед. наших бетононасосов доставляют бетон на высоту от 21 до 76 метров. Все это обеспечивает надежность и своевременность каждой доставки.</span>
-                    </div></SwiperSlide>
-                    <SwiperSlide className='slide1'> <div className="bit_hed1_com1">
-                        <img className='dumaloq_tochka_ichi' src={IMGG6} alt="" />
-                        <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                        <h2 className='bit_hed1_com1_h2'>Надежность и удовлетворенность: более <span className='bit_hed1_com1_h22'>98% клиентов</span> полностью довольны нашим сервисом!</h2>
-                        <span className='bit_hed1_con_span'>Мы гордимся тем, что наш сервис поставки бетона отличается в высшей степени надежностью и качеством. Подтверждение этому – отзывы 98% благодарных клиентов. Наша цель заключается в доверии заказчиков и поддержке наивысшего стандарта обслуживания, поэтому мы оперативно реагируем на каждое пожелание заказчиков.</span>
-                    </div></SwiperSlide>
-                    <SwiperSlide className='slide1'> <div className="bit_hed1_com1">
-                        <img className='dumaloq_tochka_ichi' src={IMGG7} alt="" />
-                        <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                        <h2 className='bit_hed1_com1_h2'>Более сотни<span className='bit_hed1_com1_h22'> 25-этажных </span>домов можно построить из проданного через наш сервис бетона</h2>
-                        <span className='bit_hed1_con_span'>Мы гордимся тем, что продали свыше 40.000 м3 бетона за последний год. Его достаточно для заливки 14,2 футбольных полей или постройки более сотни 25-этажных домов. Быстрая доставка, надежный и качественный материал от ключевых поставщиков нашего города позволяют реализовывать самые амбициозные строительные проекты в кратчайшие сроки.</span>
-                    </div></SwiperSlide>
-                </Swiper>
-
-            </div>
-
-
-            {mashina === 1 ? <div className="beton_mashina">
-                <div className="bet_mashina1">
-                    <div className="bet_mash1">
-                        <div className="bet_mash11">
-                            <h1>Немного
-                                о нас</h1>
-                        </div>
-                    </div>
-                    <div className="bet_mash2">
-                        <h3 className='p'>О сервисе</h3>
-                        <p className='p1'>Сервис «БЕТОН ТАКСИ» предоставляет вам ряд уникальных преимуществ. Во-первых, это обеспечение оперативной поставки бетона, позволяющей сэкономить время и деньги без отставания от графика строительства. Во-вторых, это гарантия высокого качества бетона, поскольку поставки осуществляются только с заводов проверенных поставщиков.</p>
-                        <p onClick={() => { setMashina(2) }} className='p2'>Читать полностью <BsChevronRight className='pp2' /></p>
-                    </div>
-                </div>
-                <div className="bet_mash3">
-                    <img className='img3' src={IMG9} alt="" />
-
-                </div>
-            </div> : <div className="beton_mashina_kopiya">
-                <div className="bet_mashina1_kopiya">
-                    <div className="bet_mash1_kopiya">
-                        <div className="bet_mash11_kopiya">
-                            <h1>Немного
-                                о нас</h1>
-                        </div>
-                    </div>
-                    <div className="bet_mash2_kopiya">
-                        <h3 className='p'>О сервисе </h3>
-                        <p className='p1 pink2'>Сервис «БЕТОН ТАКСИ» предоставляет вам ряд уникальных преимуществ. Во-первых, это обеспечение оперативной поставки бетона, позволяющей сэкономить время и деньги без отставания от графика строительства. Во-вторых, это гарантия высокого качества бетона, поскольку поставки осуществляются только с заводов проверенных поставщиков.
-                            Что делает наш сервис более удобным? Это, прежде всего, простой и интуитивно понятный процесс заказа, который можно осуществить через мобильное приложение или интернет-браузер. При оформлении достаточно выбрать нужный объем бетона и время доставки, а об остальном позаботимся мы.
-                            Если нет электронного устройства, то и это не проблема – свяжитесь с нами по телефону 505-505, и оператор примет ваш заказ.
-                            Наша задача – сделать ваш процесс строительства проще
-                            и эффективнее. Мы берем на себя ответственность за поставку и качество бетона, а вы можете сосредоточиться на главных задачах своего строительного проекта.
-                            Мы гарантируем стабильное и безупречное исполнение каждой поставки, поскольку ценим ваше время и спокойствие!</p>
-                        <p onClick={() => { setMashina(1) }} className='t2'>Свернуть <BsChevronUp className='pp2' /></p>
-                    </div>
-                </div>
-            </div>}
-
-
-
-            <div className="seriy1">
-                <div className="beton_homiy">
-                    <h1>Наши партнеры</h1>
-                </div>
-
-                <div className="beton_homiy1">
-                    <div className="beton_homiy1_img">
-                        <div className="img5"><img onClick={() => fabrika2()} className='fabrikaimg' src={IMG10} alt="" /><img style={{ display: "none" }} className='fabrikaimg1' src={fabrika} alt="" /></div>
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <img src={IMG11} alt="" className='betonshikimg' onClick={() => betonshik2()} /><img src={betonshik1} style={{ display: "none" }} className='betonshikimg1' alt="" />
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <img className='sibavisastroyimg' src={IMG12} alt="" /><img onClick={() => sibavisastroy2()} className='sibavisastroyimg1' style={{ display: "none" }} src={sibavisastroy} alt="" />
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <img onClick={() => more_betona2()} src={IMG13} className='more_betonimg' alt="" /><img style={{ display: "none" }} className='more_betonimg1' src={more_betona1} alt="" />
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <div className="img4"><img className='noviy_betonimg' onClick={() => noviy_beton2()} src={IMG14} alt="" /> <img style={{ display: "none" }} className='noviy_betonimg1' src={noviy_beton1} alt="" /></div>
-                    </div>
-                </div>
-
-                <div className="beton_homiy1_kopiya">
-                    <div className="beton_homiy1_img">
-                        <div><img src={IMG48} alt="" /></div>
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <img src={IMG49} alt="" />
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <img src={IMG50} alt="" />
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <img src={IMG51} alt="" />
-                    </div>
-                    <div className="beton_homiy1_img">
-                        <div className="img4"><img src={IMG52} alt="" /></div>
-                    </div>
-                </div>
-
-                <div className="beton_analiz">
-                    <div className="bet_ana1">
-                        <div className="bet_ana11">
-                            <img src={IMG15} alt="" />
-
-
-                            <div className="bet_ana_1">
-                                <span className='s3'>4,8</span>
-                                <div class="rating1">
-                                    <input value="5" name="rate" id="star5" type="radio" />
-                                    <label className='label10' title="text" for="star5"></label>
-                                    <input value="4" name="rate" id="star4" type="radio" />
-                                    <label className='label9' title="text" for="star4"></label>
-                                    <input value="3" name="rate" id="star3" type="radio" checked="" />
-                                    <label className='label8' title="text" for="star3"></label>
-                                    <input value="2" name="rate" id="star2" type="radio" />
-                                    <label className='label7' title="text" for="star2"></label>
-                                    <input value="1" name="rate" id="star1" type="radio" />
-                                    <label className='label6' title="text" for="star1"></label>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="bet_ana11">
-                            <img src={IMG16} alt="" />
-
-                            <div className="bet_ana_1">
-                                <span className='s3'>4,8</span>
-                                <div class="rating_kop">
-                                    <input value="5" name="rate" id="star5" type="radio" />
-                                    <label className='label5' title="text" for="star5"></label>
-                                    <input value="4" name="rate" id="star4" type="radio" />
-                                    <label className='label4' title="text" for="star4"></label>
-                                    <input value="3" name="rate" id="star3" type="radio" checked="" />
-                                    <label className='label3' title="text" for="star3"></label>
-                                    <input value="2" name="rate" id="star2" type="radio" />
-                                    <label className='label2' title="text" for="star2"></label>
-                                    <input value="1" name="rate" id="star1" type="radio" />
-                                    <label className='label1' title="text" for="star1"></label>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div className="bet_ana2">
-                        <span className='s4'>С другой стороны постоянный количественный рост и сфера
-                            нашей активности требуют от нас анализа соответствующий
-                            условий активизации. Повседневная практика показывает,
-                            что постоянный количественный рост и сфера нашей активности
-                            играет важную роль в формировании форм развития<div className="br"></div>
-                            Равным образом укрепление и развитие структуры
-                            представляет </span>
-
-                        <div className="bet_ana22">
-                            <span>#245 заводов</span>
-                            <span className='s5'>#своя аттестованная лаборатория</span><br className='br2' />
-                            <span className='s6'>#свой транспорт</span><br className='br1' />
-                            <span>#свои швинги</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="seriy">
-
-                {bir === 1 ? <div className="biton_klent">
-                    <div className="bit_kent1">
-                        <img className='img6' src={IMG17} alt="" />
-                    </div>
-                    <div className="bit_kent2">
-                        <div className="bit_kent_1">
-                            <h1>Наши приемущества</h1>
-                            <div className="bit_kent_but">
-                                <button className='b3'>Для физических лиц</button>
-                                <button onClick={() => { sariq1(); setBir(2) }} className='b4'>Для юридических лиц</button>
-                            </div>
-                        </div>
-                        {data1.map((item) => {
-                            return (
-                                <Fade bottom>
-                                    <div className="bit_kent_2">
-                                        <div className="bit_kent_22">
-                                            <div className="bit_kent_dumaloq dumaloq11">
-                                                <img src={item.image} alt="" />
-                                            </div>
-                                            <div className="bit_kent2_sozi">
-                                                <div className="bit_kent_ideya">
-                                                    <img src={IMG18} alt="" />
-                                                    <h3>{item.title}</h3>
-                                                </div>
-                                                <span>{item.description}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Fade>
-                            )
-                        })}
-
-                        {/* <Fade bottom>
+                    </Fade>
+                    <Fade bottom>
                     <div className="bit_kent_2">
                     <div className="bit_kent_22">
                         <div className="bit_kent_dumaloq dumaloq1">
@@ -871,7 +727,9 @@ export default function Home() {
                     </div>
                     </Fade>
                     <Fade>
-                    <div className="bit_kent_2">
+
+
+<div className="bit_kent_2">
                     <div className="bit_kent_22">
                         <div className="bit_kent_dumaloq dumaloq1">
                             <img src={IMG30} alt="" />
@@ -943,7 +801,9 @@ export default function Home() {
                         <div className="bit_kent2_sozi">
                       <div className="bit_kent_ideya">
                       <img src={IMG34} alt="" />
-                            <h3>Круглосуточная работа.</h3>
+
+
+<h3>Круглосуточная работа.</h3>
                       </div>
                             <span>Доступность сервиса 24/7 позволяет сделать заказ в любое удобное время. Консультации, расчеты и обработка заказов производятся ежедневно с 8-00 до 19-00 ч. по местному времени. </span>
                         </div>
@@ -965,242 +825,228 @@ export default function Home() {
                         </div>
                         </div>
                     </div>
-                    </Fade> */}
-                        <div className="bit_kent_tegi">
-                            <p>Мы понимаем, что многие люди считают бетон одинаковым везде. Но с нашим сервисом вы увидите разницу. Доверьтесь нам, и мы сделаем вашу покупку бетона <span className='bet_tegi_span'>простой, надежной и выгодной!</span></p>
-                        </div>
+                    </Fade>
+                    <div className="bit_kent_tegi">
+                        <p>Мы понимаем, что многие люди считают бетон одинаковым везде. Но с нашим сервисом вы увидите разницу. Доверьтесь нам, и мы сделаем вашу покупку бетона <span className='bet_tegi_span'>простой, надежной и выгодной!</span></p>
                     </div>
-
-
-                </div> : <div className="biton_klent">
-                    <div className="bit_kent1">
-                        <img className='img6' src={IMG36} alt="" />
-                    </div>
-                    <div className="bit_kent2">
-                        <div className="bit_kent_1">
-                            <h1>Наши приемущества</h1>
-                            <div className="bit_kent_but">
-                                <button onClick={() => { sariq2(); setBir(1) }} id="al1">Для физических лиц</button>
-                                <button id="al2">Для юридических лиц</button>
-                            </div>
-                        </div>
-
-                        {data1.map((item) => {
-                            return (
-                                <Fade bottom>
-                                    <div className="bit_kent_2">
-                                        <div className="bit_kent_22">
-                                            <div className="bit_kent_dumaloq dumaloq11">
-                                                <img src={item.image} alt="" />
-                                            </div>
-                                            <div className="bit_kent2_sozi">
-                                                <div className="bit_kent_ideya">
-                                                    <img src={IMG18} alt="" />
-                                                    <h3>{item.title}</h3>
-                                                </div>
-                                                <span>{item.description}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Fade>
-                            )
-                        })}
-                        {/* <Fade bottom>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq dumaloq1">
-                                        <img src={IMG38} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG38} alt="" />
-                                            <h3>Полный контроль.</h3>
-                                        </div>
-                                        <span>Полностью контролируем процесс выполнения заказа по поставке бетона. Вы можете следить за поставкой в режиме онлайн, ходом работ, включая заливку, и быть уверены в том, что заказ будет выполнен в полном объеме.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade bottom>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq">
-                                        <img src={IMG39} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG39} alt="" />
-                                            <h3>Полный контроль.</h3>
-                                        </div>
-
-                                        <span>При больших объемах заливки и одновременной подаче нескольких десятков машин у вас есть возможность точно регулировать время доставки бетона. Мы предоставляем гибкость и адаптируемся к вашим требованиям.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq ">
-                                        <img src={IMG40} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG40} alt="" />
-                                            <h3>Удобство заказа и дозаказа.</h3>
-                                        </div>
-
-                                        <span>Если вам потребуется дополнительный объем бетона в ближайшее время, вы всегда можете осуществить дозаказ и быть уверены в своевременной доставке.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq dumaloq1">
-                                        <img src={IMG41} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG41} alt="" />
-                                            <h3>Полная документация.</h3>
-                                        </div>
-
-                                        <span>Мы предоставляем вам онлайн доступ к паспортам качества и сертификацию на каждую партию отгруженного бетона. Вы можете быть уверены в качестве поставляемой продукции и иметь все необходимые документы для отчетности в личном кабинете. Если нужны оригиналы документов, то вы можете их заказать.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq">
-                                        <img src={IMG42} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG42} alt="" />
-                                            <h3>Гарантия качества.</h3>
-                                        </div>
-
-                                        <span>Вся наша продукция проходит строгие проверки в аттестованных лабораториях. Мы гарантируем высокое качество поставляемого бетона, чтобы вы могли быть уверены в долговечности и надежности ваших строительных конструкций.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq dumaloq1">
-                                        <img src={IMG43} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG43} alt="" />
-                                            <h3>Работа с определенными производителями.</h3>
-                                        </div>
-                                        <span>Мы предлагаем вам возможность работать с выбранными производителями бетона через наш сервис. Это дает вам дополнительные преимущества, такие как особые условия цен, высокий уровень качества и удобства при использовании нашего сервиса.</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq">
-                                        <img src={IMG44} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG44} alt="" />
-                                            <h3>Доставка специальных составов с различными опциями.</h3>
-                                        </div>
-
-                                        <span>Мы готовы предложить вам разнообразные варианты составов бетона и по запросу внести необходимые дополнения. </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq">
-                                        <img src={IMG45} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG45} alt="" />
-                                            <h3>Приоритетная обработка заказов.</h3>
-                                        </div>
-
-                                        <span>Все ваши заказы выполняются приоритетно и в согласованные сроки. Мы понимаем, как важно для вас время, поэтому наш сервис обеспечивает полный контроль и оперативность при каждой поставке бетона. </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade>
-                            <div className="bit_kent_2">
-                                <div className="bit_kent_22">
-                                    <div className="bit_kent_dumaloq">
-                                        <img src={IMG46} alt="" />
-                                    </div>
-                                    <div className="bit_kent2_sozi">
-                                        <div className="bit_kent_ideya">
-                                            <img src={IMG46} alt="" />
-                                            <h3>Индивидуальный менеджер.</h3>
-                                        </div>
-
-                                        <span>Рассчитывать на личного менеджера, который всегда готов предоставить индивидуальную консультацию и оказать помощь, подготовить сопроводительные документы, акт сверки и другие важные документы.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade> */}
-                        <div className="bit_kent_tegi">
-                            <p>Мы понимаем, что многие люди считают бетон одинаковым везде. Но с нашим сервисом вы увидите разницу. Доверьтесь нам, и мы сделаем вашу покупку бетона <span className='bet_tegi_span'>простой, надежной и выгодной!</span></p>
-                        </div>
-                    </div>
-
-
-                </div>}
-
-
-
-
-                <div className="click">
-                    <h1>Чего же еще не хватает, все учтено и вы сейчас можете воспользоваться <span className='s7'>лучшим сервисом в городе!</span></h1>
                 </div>
 
-                <div className="header_1">
-                    <div className="hed_1">
-                        <div className="hed_11">
-                            {data.map((item) => {
-                                return (
-                                    <div>
-                                        <img src={item.image} alt="" />
-                                    </div>
-                                )
-                            })}
 
+            </div> : <div className="biton_klent">
+                <div className="bit_kent1">
+                    <img className='img6' src={IMG36} alt="" />
+                </div>
+                <div className="bit_kent2">
+                    <div className="bit_kent_1">
+                        <h1>Наши приемущества</h1>
+                        <div className="bit_kent_but">
+                            <button onClick={()=>{sariq2(); setBir(1)}} id="al1">Для физических лиц</button>
+                            <button id="al2">Для юридических лиц</button>
                         </div>
                     </div>
-                    <div className="hed_2">
-                        {data.map((item) => {
-                            return (
-                                <div>
-                                    <div className="hed_2_div">
-                                        <span>{item.title}</span>
-                                    </div>
-                                    <div className="hed_2_span">
-                                        <span>{item.deskription}</span>
-                                    </div>
-                                </div>
-                            )
-                        })}
+                    
+                    <Fade bottom>
+                    <div className="bit_kent_2">
+                        <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq dumaloq11">
+                            <img src={IMG37} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+                        <img src={IMG37} alt="" />
+                            <h3>Заказ без забот.</h3>
+                        </div>
+                            <span>Наш сервис доставки бетона предлагает ту же простоту и удобство взаимодействия, как и заказ пиццы по телефону. Это максимально легкий и быстрый процесс.</span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade bottom>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq dumaloq1">
+                            <img  src={IMG38} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+                        <img  src={IMG38} alt="" />
+                            <h3>Полный контроль.</h3>
+                        </div>
+                            <span>Полностью контролируем процесс выполнения заказа по поставке бетона. Вы можете следить за поставкой в режиме онлайн, ходом работ, включая заливку, и быть уверены в том, что заказ будет выполнен в полном объеме.</span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade bottom>
 
 
-                        {/* <div className="hed_2_div1 hed_2_div1_kopiya">
+<div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq">
+                            <img src={IMG39} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+                        <img src={IMG39} alt="" />
+                        <h3>Полный контроль.</h3>
+                        </div>
+                            
+                            <span>При больших объемах заливки и одновременной подаче нескольких десятков машин у вас есть возможность точно регулировать время доставки бетона. Мы предоставляем гибкость и адаптируемся к вашим требованиям.</span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq ">
+                            <img src={IMG40} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+                        <img src={IMG40} alt="" />
+                        <h3>Удобство заказа и дозаказа.</h3>
+                        </div>
+                            
+                            <span>Если вам потребуется дополнительный объем бетона в ближайшее время, вы всегда можете осуществить дозаказ и быть уверены в своевременной доставке.</span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq dumaloq1">
+                            <img src={IMG41} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+                        <img src={IMG41} alt="" />
+                        <h3>Полная документация.</h3>
+                        </div>
+                            
+                            <span>Мы предоставляем вам онлайн доступ к паспортам качества и сертификацию на каждую партию отгруженного бетона. Вы можете быть уверены в качестве поставляемой продукции и иметь все необходимые документы для отчетности в личном кабинете. Если нужны оригиналы документов, то вы можете их заказать.</span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq">
+                            <img src={IMG42} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+                        <img src={IMG42} alt="" />
+                        <h3>Гарантия качества.</h3>
+                        </div>
+                            
+                            <span>Вся наша продукция проходит строгие проверки в аттестованных лабораториях. Мы гарантируем высокое качество поставляемого бетона, чтобы вы могли быть уверены в долговечности и надежности ваших строительных конструкций.</span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq dumaloq1">
+                            <img src={IMG43} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+
+
+<img src={IMG43} alt="" />
+                        <h3>Работа с определенными производителями.</h3>
+                        </div>
+                           <span>Мы предлагаем вам возможность работать с выбранными производителями бетона через наш сервис. Это дает вам дополнительные преимущества, такие как особые условия цен, высокий уровень качества и удобства при использовании нашего сервиса.</span>
+                        </div>
+                           
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq">
+                            <img src={IMG44} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                        <div className="bit_kent_ideya">
+                        <img src={IMG44} alt="" />
+                        <h3>Доставка специальных составов с различными опциями.</h3>
+                        </div>
+                            
+                            <span>Мы готовы предложить вам разнообразные варианты составов бетона и по запросу внести необходимые дополнения. </span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq">
+                            <img src={IMG45} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                            <div className="bit_kent_ideya">
+                            <img src={IMG45} alt="" />
+                                   <h3>Приоритетная обработка заказов.</h3>
+                            </div>
+                         
+                            <span>Все ваши заказы выполняются приоритетно и в согласованные сроки. Мы понимаем, как важно для вас время, поэтому наш сервис обеспечивает полный контроль и оперативность при каждой поставке бетона. </span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className="bit_kent_2">
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq">
+                            <img src={IMG46} alt="" />
+                        </div>
+                        <div className="bit_kent2_sozi">
+                            <div className="bit_kent_ideya">
+                            <img src={IMG46} alt="" />
+                                 <h3>Индивидуальный менеджер.</h3>
+                            </div>
+                           
+                            <span>Рассчитывать на личного менеджера, который всегда готов предоставить индивидуальную консультацию и оказать помощь, подготовить сопроводительные документы, акт сверки и другие важные документы.</span>
+                        </div>
+                        </div>
+                    </div>
+                    </Fade>
+                    <div className="bit_kent_tegi">
+                        <p>Мы понимаем, что многие люди считают бетон одинаковым везде. Но с нашим сервисом вы увидите разницу. Доверьтесь нам, и мы сделаем вашу покупку бетона <span className='bet_tegi_span'>простой, надежной и выгодной!</span></p>
+                    </div>
+                </div>
+
+
+            </div>}
+            
+            
+
+
+            <div className="click">
+                <h1>Чего же еще не хватает, все учтено и вы сейчас можете воспользоваться <span className='s7'>лучшим сервисом в городе!</span></h1>
+            </div>
+
+
+<div className="header_1">
+               <div className="hed_1">
+               <div className="hed_11">
+                    <img src={IMG21} alt="" />
+                    </div>
+               </div>
+                <div className="hed_2">
+                    <div className="hed_2_div">
+                        <span>Доступно 24/7</span>
+                    </div>
+                    <div className="hed_2_span">
+                    <span>В любое время в приложении можно сделать заказ на поставку бетона, задать вопрос консультанту, посмотреть историю заказов, оставить отзыв и многое другое.</span>
+                    </div>
+                    <div className="hed_2_div1 hed_2_div1_kopiya">
                         <span>Большой выбор опций и услуг при оформлении заказа</span>
                     </div>
                    <div className="hed_2_span">
@@ -1217,28 +1063,28 @@ export default function Home() {
                     </div>
                     <div className="hed_2_span"> 
                         <span> На каждую отгруженную поставку начисляются бонусы, которые можно использовать для оплаты последующих заказов, получая тем самым прекрасную возможность для экономии.</span>
-                    </div> */}
                     </div>
                 </div>
-
-                <div className="strelka">
-                    <img className='img7' src={IMG22} alt="" />
-                </div>
-                <div className="prilosheniya">
-                    <h1 style={{ cursor: "pointer" }}>Скачать приложение</h1>
-                </div>
-                <div className="hom_img">
-                    <img src={IMG23} alt="" />
-                    <img src={IMG24} alt="" />
-                    <img src={IMG25} alt="" />
-                    <img src={IMG26} alt="" />
-                    <img src={IMG27} alt="" />
-                    <img src={IMG28} alt="" />
-                </div>
-
-                <Footer />
             </div>
 
+           <div className="strelka">
+           <img className='img7' src={IMG22} alt="" />
+           </div>
+            <div className="prilosheniya">
+                <h1 style={{cursor:"pointer"}}>Скачать приложение</h1>
+            </div>
+            <div className="hom_img">
+                <img src={IMG23} alt="" />
+                <img src={IMG24} alt="" />
+                <img src={IMG25} alt="" />
+                <img src={IMG26} alt="" />
+                <img src={IMG27} alt="" />
+                <img src={IMG28} alt="" />
+            </div>
+
+<Footer/>
         </div>
-    )
+                   
+        </div>
+  )
 }

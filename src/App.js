@@ -24,7 +24,7 @@ import Aksiya from './js/Aksiya';
 
 export default class App extends Component {
 render() {
-	const[token,setToken]= useState()
+	
 	return (
 	<Router>
 		<div className="App">
@@ -59,3 +59,4 @@ render() {
 
 
 
+// const[token,setToken]= useState()
