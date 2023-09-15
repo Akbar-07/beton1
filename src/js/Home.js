@@ -88,6 +88,7 @@ import IMGGmonet1 from "../img/1 монет.png"
 import IMGGmonet2 from "../img/3 монет.png"
 import IMGGmonet3 from "../img/2 монет.png"
 
+
 import { BsChevronUp } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
@@ -114,10 +115,26 @@ const [mashina,setMashina] = useState(1)
 function sariq1(){
     document.querySelector(".b4").style = "background-color:#FFCB13;"
     document.querySelector(".b3").style = "background-color:#EBEBEB;"
+
+    axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
+        const Filter=res.data.filter(item=>item.liso=="y")
+        nashaData(Filter)
+        console.log(res.data)
+    }).catch((err) => {
+        alert("err")
+    })
 }
 function sariq2(){
-    document.querySelector("#al1").style = "background-color:#FFCB13;"
+    document.querySelector("#al1").style = "background-color:#red;"
     document.querySelector("#al2").style = "background-color:#EBEBEB;"
+
+    axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
+        const Filter=res.data.filter(item=>item.liso!=="y")
+        nashaData(Filter)
+        console.log(res.data)
+    }).catch((err) => {
+        alert("err")
+    })
 }
 function fabrika2() {
     document.querySelector(".sibavisastroyimg").style="display:none"
@@ -181,19 +198,41 @@ document.querySelector(".sibavisastroyimg").style="display:none"
     document.querySelector(".fabrikaimg1").style="display:none"
     document.querySelector(".fabrikaimg").style="display:flex"
 }
-const [data11, setData11] = useState([])
+const [data11, setData11] = useState([]);
+const [data353, setData25] = useState([]);
+const [data243, nashaData] = useState([]);
 useEffect(()=>{
     axios.get('https://dastafka-back.onrender.com/api/homeiy').then(res=>{
-        setData11(res.data)
+        setData11(res.data);
     }).catch(err=>{
         alert("xato back")
     })
 },[])
 
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/skachat_pridlachenu').then(res=>{
+        setData25(res.data);
+    }).catch(err=>{
+       
+    })
+},[])
+
+useEffect(()=>{
+    axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
+            const Filter=res.data.filter(item=>item.liso!=="y")
+            nashaData(Filter)
+            console.log(res.data)
+        }).catch((err) => {
+            alert("err")
+        })
+
+   
+},[])
+
 const [sliv, setSliv] = useState(1)
 const [mark, setMark] = useState([])
 // useEffect(()=>{
-// axios.get(`${url}/api/homeiy`).then(res=>{
+// axios.get(${url}/api/homeiy).then(res=>{
 //     setMark(res.data)
 // }).catch(err=>{
 
@@ -414,7 +453,8 @@ const [mark, setMark] = useState([])
                     Вот лишь несколько примеров:</span>
         </div>
 
-        <div className="biton_hed">
+
+<div className="biton_hed">
             <div className="bit_hed1">
              <div className="bit_hed1_com1">
                 <img className='dumaloq_tochka_ichi' src={IMGG2} alt="" />
@@ -453,7 +493,9 @@ const [mark, setMark] = useState([])
              <div className="bit_hed1_com1">
                 <img className='dumaloq_tochka_ichi' src={IMGG7} alt="" />
                 <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                <h2 className='bit_hed1_com1_h2'>Более сотни<span className='bit_hed1_com1_h22'> 25-этажных </span>домов можно построить из проданного через наш сервис бетона</h2>
+
+
+<h2 className='bit_hed1_com1_h2'>Более сотни<span className='bit_hed1_com1_h22'> 25-этажных </span>домов можно построить из проданного через наш сервис бетона</h2>
                 <span className='bit_hed1_con_span'>Мы гордимся тем, что продали свыше 40.000 м3 бетона за последний год. Его достаточно для заливки 14,2 футбольных полей или постройки более сотни 25-этажных домов. Быстрая доставка, надежный и качественный материал от ключевых поставщиков нашего города позволяют реализовывать самые амбициозные строительные проекты в кратчайшие сроки.</span>
              </div>
             </div>
@@ -488,7 +530,9 @@ const [mark, setMark] = useState([])
         <SwiperSlide className='slide1'> <div className="bit_hed1_com1">
                 <img className='dumaloq_tochka_ichi' src={IMGG6} alt="" />
                 <img className='dumaloq_tochka' src={IMGG1} alt="" />
-                <h2 className='bit_hed1_com1_h2'>Надежность и удовлетворенность: более <span className='bit_hed1_com1_h22'>98% клиентов</span> полностью довольны нашим сервисом!</h2>
+
+
+<h2 className='bit_hed1_com1_h2'>Надежность и удовлетворенность: более <span className='bit_hed1_com1_h22'>98% клиентов</span> полностью довольны нашим сервисом!</h2>
                 <span className='bit_hed1_con_span'>Мы гордимся тем, что наш сервис поставки бетона отличается в высшей степени надежностью и качеством. Подтверждение этому – отзывы 98% благодарных клиентов. Наша цель заключается в доверии заказчиков и поддержке наивысшего стандарта обслуживания, поэтому мы оперативно реагируем на каждое пожелание заказчиков.</span>
              </div></SwiperSlide>
 
@@ -520,7 +564,8 @@ const [mark, setMark] = useState([])
             <div className="bet_mash3">
             <img className='img3' src={IMG9} alt="" />
 
-            </div>
+
+</div>
         </div> : <div className="beton_mashina_kopiya">
             <div className="bet_mashina1_kopiya">
                 <div className="bet_mash1_kopiya">
@@ -592,7 +637,8 @@ const [mark, setMark] = useState([])
            </div> */}
         </div>
 
-        <div className="beton_analiz">
+
+<div className="beton_analiz">
             <div className="bet_ana1">
                 {/* {mark.map(item=>{
                     return(
@@ -662,23 +708,30 @@ const [mark, setMark] = useState([])
                             <button onClick={()=>{sariq1(); setBir(2)}} className='b4'>Для юридических лиц</button>
                         </div>
                     </div>
-                    <Fade bottom>
+                    {data243.map((item)=>{
+                        return(
+                            <div>
+                                 <Fade bottom>
                     <div className="bit_kent_2">
-                        <div className="bit_kent_22">
-                        <div className="bit_kent_dumaloq dumaloq11">
-                            <img src={IMG18} alt="" />
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq dumaloq1">
+                            <img  src={item.image} alt="" />
                         </div>
                         <div className="bit_kent2_sozi">
-                           <div className="bit_kent_ideya">
-                           <img src={IMG18} alt="" />
-                           <h3>Заказ без забот.</h3>
-                           </div>
-                            <span>Наш сервис доставки бетона предлагает ту же простоту и удобство взаимодействия, как и заказ пиццы по телефону. Это максимально легкий и быстрый процесс.</span>
+                            <div className="bit_kent_ideya">
+                            <img  src={item.image} alt="" />
+                            <h3>{item.title}</h3>
+                            </div>
+                            <span>{item.description}</span>
                         </div>
                         </div>
                     </div>
                     </Fade>
-                    <Fade bottom>
+                    <Fade bottom></Fade>
+                            </div>
+                        )
+                    })}
+                    {/* <Fade bottom>
                     <div className="bit_kent_2">
                     <div className="bit_kent_22">
                         <div className="bit_kent_dumaloq dumaloq1">
@@ -825,7 +878,7 @@ const [mark, setMark] = useState([])
                         </div>
                         </div>
                     </div>
-                    </Fade>
+                    </Fade> */}
                     <div className="bit_kent_tegi">
                         <p>Мы понимаем, что многие люди считают бетон одинаковым везде. Но с нашим сервисом вы увидите разницу. Доверьтесь нам, и мы сделаем вашу покупку бетона <span className='bet_tegi_span'>простой, надежной и выгодной!</span></p>
                     </div>
@@ -845,23 +898,30 @@ const [mark, setMark] = useState([])
                         </div>
                     </div>
                     
-                    <Fade bottom>
+                    {data243.map((item)=>{
+                        return(
+                            <div>
+                                 <Fade bottom>
                     <div className="bit_kent_2">
-                        <div className="bit_kent_22">
-                        <div className="bit_kent_dumaloq dumaloq11">
-                            <img src={IMG37} alt="" />
+                    <div className="bit_kent_22">
+                        <div className="bit_kent_dumaloq dumaloq1">
+                            <img  src={item.image} alt="" />
                         </div>
                         <div className="bit_kent2_sozi">
-                        <div className="bit_kent_ideya">
-                        <img src={IMG37} alt="" />
-                            <h3>Заказ без забот.</h3>
-                        </div>
-                            <span>Наш сервис доставки бетона предлагает ту же простоту и удобство взаимодействия, как и заказ пиццы по телефону. Это максимально легкий и быстрый процесс.</span>
+                            <div className="bit_kent_ideya">
+                            <img  src={item.image} alt="" />
+                            <h3>{item.title}</h3>
+                            </div>
+                            <span>{item.description}</span>
                         </div>
                         </div>
                     </div>
                     </Fade>
-                    <Fade bottom>
+                    <Fade bottom></Fade>
+                            </div>
+                        )
+                    })}
+                    {/* <Fade bottom>
                     <div className="bit_kent_2">
                     <div className="bit_kent_22">
                         <div className="bit_kent_dumaloq dumaloq1">
@@ -1016,7 +1076,7 @@ const [mark, setMark] = useState([])
                         </div>
                         </div>
                     </div>
-                    </Fade>
+                    </Fade> */}
                     <div className="bit_kent_tegi">
                         <p>Мы понимаем, что многие люди считают бетон одинаковым везде. Но с нашим сервисом вы увидите разницу. Доверьтесь нам, и мы сделаем вашу покупку бетона <span className='bet_tegi_span'>простой, надежной и выгодной!</span></p>
                     </div>
@@ -1036,17 +1096,25 @@ const [mark, setMark] = useState([])
 <div className="header_1">
                <div className="hed_1">
                <div className="hed_11">
-                    <img src={IMG21} alt="" />
+                   {data353.map((item)=>{
+                    return <div>
+                         <img src={item.image} alt="" />
+                    </div>
+                   })}
                     </div>
                </div>
                 <div className="hed_2">
-                    <div className="hed_2_div">
-                        <span>Доступно 24/7</span>
+                    {data353.map((item)=>{
+                        return <div>
+                             <div className="hed_2_div">
+                        <span>{item.title}</span>
                     </div>
                     <div className="hed_2_span">
-                    <span>В любое время в приложении можно сделать заказ на поставку бетона, задать вопрос консультанту, посмотреть историю заказов, оставить отзыв и многое другое.</span>
+                    <span>{item.deskription}</span>
                     </div>
-                    <div className="hed_2_div1 hed_2_div1_kopiya">
+                        </div>
+                    })}
+                    {/* <div className="hed_2_div1 hed_2_div1_kopiya">
                         <span>Большой выбор опций и услуг при оформлении заказа</span>
                     </div>
                    <div className="hed_2_span">
@@ -1063,7 +1131,7 @@ const [mark, setMark] = useState([])
                     </div>
                     <div className="hed_2_span"> 
                         <span> На каждую отгруженную поставку начисляются бонусы, которые можно использовать для оплаты последующих заказов, получая тем самым прекрасную возможность для экономии.</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

@@ -235,6 +235,9 @@ text-align: left;
     height: 240px;
     overflow-y: auto;
 }
+.eng-kottade-scrol::-webkit-scrollbar {
+    width: 0px !important;
+}
 
 .tr_1:hover{
 background-color: white;

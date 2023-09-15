@@ -553,11 +553,13 @@ const [data4,setData4] =useState(0)
 const [data5,setData5] =useState(0)
 const [page,setPage] = useState(1)
 const [gradus, setGradus] = useState([{}])
+const [tarif, setTarif] = useState([{}])
+const [product, setProduct] = useState([{}])
 useEffect(()=>{
     axios.get('https://dastafka-back.onrender.com/api/sovuqlik').then(res=>{
     setGradus(res.data)
 }).catch(err=>{
-    alert("xato")
+    
 })
 },[])
 const [shving, senShving] = useState([{}])
@@ -565,9 +567,26 @@ useEffect(()=>{
     axios.get('https://dastafka-back.onrender.com/api/shving').then(res=>{
         senShving(res.data)
     }).catch(err=>{
-        alert(".xatolar")
+       
     })
 })
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/tarif').then(res=>{
+        setTarif(res.data)
+    }).catch(err=>{
+       
+    })
+})
+
+useEffect(()=>{
+    axios.get('https://dastafka-back.onrender.com/api/product').then(res=>{
+        setProduct(res.data)
+    }).catch(err=>{
+       
+    })
+})
+
+
   return (
 <div>
     <Navbar/>
@@ -639,24 +658,19 @@ useEffect(()=>{
                             </thead>
 
           <tbody>
-            <tr>
-              <th><img src={kkk} alt="" /></th>
-              <th className='pasqismi-narx-joy-zz'>М200</th>
-              <th className='pasqismi-opessaniya'>Наименование опции</th>
-              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
+            {product.map((item)=>{
+                return(
+                    
+                         <tr>
+              <th><img src={item.allhomeiy&&item.allhomeiy.image?item.allhomeiy.image:"img not"}alt="" /></th>
+              <th className='pasqismi-narx-joy-zz'>{item.allmarka&&item.allmarka.title?item.allmarka.title:"not"}</th>
+              <th className='pasqismi-opessaniya'>{item.description}</th>
+              <th className='pasqismi-narx-joy-zz'>{item.s3_sena} ₽</th>
             </tr>
-            <tr>
-              <th><img src={logo} alt="" /></th>
-              <th className='pasqismi-narx-joy-zz'>М200</th>
-              <th className='pasqismi-opessaniya'>Наименование опции</th>
-              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
-            </tr>
-            <tr>
-              <th><img src={logo1} alt="" /></th>
-              <th className='pasqismi-narx-joy-zz'>М200</th>
-              <th className='pasqismi-opessaniya'>Наименование опции</th>
-              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
-            </tr>
+                   
+                )
+            })}
+           
 
           </tbody>
         </table>
@@ -676,8 +690,8 @@ useEffect(()=>{
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="akardon-pasdia-chiqadi-but">
-                                    <button>П3</button>
-                                    <button>П4</button>
+                                            <button>П3</button>
+                                        <button>П4</button>   
                                 </div>
                             </div>
                             <div className="akardion-pro-zakazz">
@@ -953,18 +967,23 @@ useEffect(()=>{
                             <div className="tarif-joyi-ekan-tez-ql">
                                 <h2>Тариф</h2>
                                 <div className="all-tarif-btn-joy">
-                                <div className="beton-blcok5" onClick={()=>pastarap()}>
+                                    {tarif.map((item)=>{
+                                        return(  <div>
+                                             <div className="beton-blcok5">
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa5"></div>
                             </div>
                             <div className="beton-rasm-patom-text">
                                 <div className="beton-rasm-img-size">
-                                    <img src={mini} alt="" />
+                                    <img src={item.image} alt="" />
                                 </div>
-                                <div className="beton-rasm-img-text"><span>Эконом</span></div>
+                                <div className="beton-rasm-img-text"><span>{item.title}</span></div>
                             </div>
                         </div>
-                        <div className="beton-blcok6" onClick={()=>pastarap1()}>
+                                            </div> )
+                                    })}
+
+                        {/* <div className="beton-blcok6" onClick={()=>pastarap1()}>
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa6"></div>
                             </div>
@@ -984,9 +1003,9 @@ useEffect(()=>{
                                 <div className="beton-rasm-img-size">
                                     <img src={primi} alt="" />
                                 </div>
-                                <div className="beton-rasm-img-text"><span>Эконом</span></div>
+                                <div className="beton-rasm-img-text"><span>Экспресс</span></div>
                             </div>
-                        </div>
+                        </div> */}
                         
                                 </div>
                             </div>
@@ -1450,7 +1469,7 @@ useEffect(()=>{
                             <div className="kammmpash-ves">
                             <h2>Не знаете количество?</h2>
                             <p>Рассчитайте онлайн в калькуляторе</p>
-                            <button><img src={canculator} alt="" /><span>Калькулятор</span></button>
+                            <button onClick={()=>window.location="/Kankulyator"}><img src={canculator} alt="" /><span>Калькулятор</span></button>
                             </div>
                         </div>
                     </div>
@@ -1510,18 +1529,20 @@ useEffect(()=>{
                     <h4>Тариф</h4>
                     <div className="kamzala-block-pitaniya-media">
                     <div className="buni-ichidan-ochish-kerak-media">
-                <div className="beton-blcok-media4"  onClick={()=>mediayon3()}>
+                        {tarif.map((item)=>{
+                                        return(                 <div className="beton-blcok-media4"  >
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa-media4"></div>
                             </div>
                             <div className="beton-rasm-patom-text-media">
                                 <div className="beton-rasm-img-size">
-                                    <img src={mini} alt="" />
+                                    <img src={item.image} alt="" />
                                 </div>
-                                <div className="beton-rasm-img-text"><span>Эконом</span></div>
+                                <div className="beton-rasm-img-text"><span>{item.title}</span></div>
                             </div>
-                        </div>
-                        <div className="beton-blcok-media5" onClick={()=>mediayon4()}>
+                        </div> )
+                                    })}
+                        {/* <div className="beton-blcok-media5" onClick={()=>mediayon4()}>
                             <div className="sasriq-narsa-yonadi1">
                                 <div className="sariqblaaa-media5"></div>
                             </div>
@@ -1542,7 +1563,7 @@ useEffect(()=>{
                                 </div>
                                 <div className="beton-rasm-img-text"><span>Экспресс</span></div>
                             </div>
-                        </div>
+                        </div> */}
                 </div>
                     </div>
                 </div>
