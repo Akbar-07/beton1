@@ -36,13 +36,13 @@ useEffect(()=>{
             </div>
             <div className="footer_card1">
                 <h3 onClick={()=>window.location="/News"}>Новости</h3>
-                <h3>Калькуляторы</h3>
+                <h3 onClick={()=>window.location="/Kankulyator"}>Калькуляторы</h3>
                 <h3 onClick={()=>window.location="/Partner"}>Партнеры</h3>
-                <h3>Стать партнером</h3>
+                <h3 onClick={()=>window.location="/Partners_page"}>Стать партнером</h3>
                 <h3 onClick={()=>window.location="/Loyalnost"}>Программа лояльности</h3>
                 </div>
                 <div className="footer_card4">
-                  <h4>Гарантия</h4>
+                  <h4 onClick={()=>window.location="/Garantiya"}>Гарантия</h4>
                   <h4>Оставить претензию</h4>
                 </div>
             <div className="footer_card2">
@@ -66,14 +66,14 @@ useEffect(()=>{
             <div className="media_futer">
             <div className="footer_card1">
                 <h3 onClick={()=>window.location="/News"}>Новости</h3>
-                <h3>Калькуляторы</h3>
+                <h3 onClick={()=>window.location="/Kankulyator"}>Калькуляторы</h3>
                 <h3 onClick={()=>window.location="/Partner"}>Партнеры</h3>
                 <h3 onClick={()=>window.location="/Partners_page"}>Стать партнером</h3>
                 <h3>Программа лояльности</h3>
                 </div>
                 <div className="footerss">
                 <div className="footer_card4">
-                  <h4>Гарантия</h4>
+                  <h4 onClick={()=>window.location="/Garantiya"}>Гарантия</h4>
                   <h4 onClick={()=>window.location="/Loyalnost"}>Оставить претензию</h4>
                 </div>
             <div className="footer_card2">
