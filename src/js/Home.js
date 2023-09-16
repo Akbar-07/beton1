@@ -196,11 +196,13 @@ document.querySelector(".sibavisastroyimg").style="display:none"
     document.querySelector(".fabrikaimg").style="display:flex"
 }
 const [data11, setData11] = useState([]);
+const [data111, setData111] = useState([])
 const [data353, setData25] = useState([]);
 const [data243, nashaData] = useState([]);
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/homeiy').then(res=>{
+    axios.get(`${url}/api/homeiy`).then(res=>{
         setData11(res.data);
+        setData111(res.data)
     }).catch(err=>{
         alert("xato back")
     })
@@ -225,16 +227,22 @@ useEffect(()=>{
 
    
 },[])
+function partner2(id) {
+    axios.get(`${url}/api/homeiy`).then(res=>{
+        const Filter=res.data.filter(item=>item.id==id)
+        setData111(Filter)
+    })
+}
 
 const [sliv, setSliv] = useState(1)
 const [mark, setMark] = useState([])
-// useEffect(()=>{
-// axios.get(${url}/api/homeiy).then(res=>{
-//     setMark(res.data)
-// }).catch(err=>{
+useEffect(()=>{
+axios.get(`${url}/api/homeiy`).then(res=>{
+    setMark(res.data)
+}).catch(err=>{
 
-// })
-// },[])
+})
+},[])
   return (
     <div>
         <div className="seriy">
@@ -611,9 +619,10 @@ const [mark, setMark] = useState([])
         </div> */}
 
         <div className="beton_homiy1_kopiya">
-            {data11.map((item,key)=>{
-                return (<div className="beton_homiy1_img">
-                    <img key={key} src={item.image} alt="" />
+            {data11.map(item=>{
+                return (
+                    <div className="beton_homiy1_img">
+                        <img onClick={()=>partner2(item.id)} src={item.image} alt="" />
                 </div>)
             })}
            {/* <div className="beton_homiy1_img">
@@ -634,53 +643,42 @@ const [mark, setMark] = useState([])
            </div> */}
         </div>
 
-
-<div className="beton_analiz">
+{data111.map((item,key)=>{
+    if(key<1){
+        return(
+        <div className="beton_analiz">
             <div className="bet_ana1">
-                {mark.map(item=>{
-                    return(
+                
+                    
                          <div className="bet_ana11">
                     <img src={IMG15} alt="" />
 
 
 <div className="bet_ana_1">
-                        <span className='s3'>4,8</span>
-                        <>
-                                {item.betomtaxi_mark==1?(<><AiFillStar/></>):(item.betomtaxi_mark==2?(<><AiFillStar/><AiFillStar/></>):(item.betomtaxi_mark==3?(<><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.betomtaxi_mark==4?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.gis_mark == 5?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/>  </>):(<></>)))))}
-                                </>
+<span className='s3'>{item.betomtaxi_mark}</span>
+                        {item.betomtaxi_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.betomtaxi_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
                     </div>
 
                 </div>
-                    )
-                })}
+                    
+                
                
-                {mark.map(item=>{
-                            return(
+                
+                            
                 <div className="bet_ana11">
                     <img src={IMG16} alt="" />
 
 
 <div className="bet_ana_1">
-                        <span className='s3'>4,8</span>
-                        
-                                <>
-                                {item.gis_mark==1?(<><AiFillStar/></>):(item.gis_mark==2?(<><AiFillStar/><AiFillStar/></>):(item.gis_mark==3?(<><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.gis_mark==4?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></>):(item.gis_mark == 5?(<><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/>  </>):(<></>)))))}
-                                </>
+<span className='s3'>{item.gis_mark}</span>
+                        {item.gis_mark==1?(<><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==2?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==3?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>):(item.gis_mark==4?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className='white_stat'/></>):(item.gis_mark==5?(<><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/><BsStarFill className="yellow_star"/></>):(<><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/><BsStarFill className='white_stat'/></>)))))}
                     </div>
 
-                </div>)
-                        })}
-                
+                </div>
+                      
             </div>
             <div className="bet_ana2">
-                <span className='s4'>С другой стороны постоянный количественный рост и сфера 
-                    нашей активности требуют от нас анализа соответствующий 
-                    условий активизации. Повседневная практика показывает,
-                     что постоянный количественный рост и сфера нашей активности
-                      играет важную роль в формировании форм развития<div className="br"></div>
-                       Равным образом укрепление и развитие структуры
-                        представляет </span>
-
+            <span className='s4'>{item.description}</span>
                <div className="bet_ana22">
                 <span>#245 заводов</span>
                 <span className='s5'>#своя аттестованная лаборатория</span><br className='br2'/>
@@ -689,6 +687,11 @@ const [mark, setMark] = useState([])
                 </div>         
             </div>
         </div>
+    )
+    }
+    
+})}
+
        </div>
         <div className="seriy">
 
