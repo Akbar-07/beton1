@@ -446,20 +446,7 @@ const [data5,setData5] =useState(0)
       }
     }
   }
-  const [kamaz, setKamaz] = useState([
-    {
-      img : IMG6,
-      name : "Эконом"
-    },
-    {
-      img : IMG7,
-      name : "Стандарт"
-    },
-    {
-      img : IMG8,
-      name : "Экспресс"
-    },
-  ])
+ 
 function bosilganda(id){
 for (let i = 0; i < document.querySelectorAll(".kvad_map_karoch_card1_dumaloq").length; i++) {
   if(id === i ){
@@ -520,6 +507,16 @@ useEffect(()=>{
         setMashina3(res.data)
     }).catch(err=>{
         alert("popi")
+    })
+})
+const [kamaz, setKamaz] = useState([
+
+  ])
+useEffect(()=>{
+    axios.get(`${url}/api/tarif`).then(res=>{
+        setKamaz(res.data)
+    }).catch(err=>{
+        alert("salommm")
     })
 })
   return (
@@ -860,9 +857,9 @@ useEffect(()=>{
               <BsCheckLg className='iconchek'/>
               </div>
             </div>
-            <img src={item.img} alt="" /><br />
+            <img className='lpplmn' src={item.image} alt="" /><br />
            <div className="lllllllllllllllllllllllll">
-           <span className='kvad_map_karoch_card_span'>{item.name}</span>
+           <span className='kvad_map_karoch_card_span'>{item.title}</span>
            </div>
           </div>
         })}
