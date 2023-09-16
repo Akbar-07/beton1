@@ -160,6 +160,9 @@ export default function User() {
             setData1(res.data)
             res.data.map(item=>{
                document.querySelector("#user-name").value=item.username 
+               document.querySelector("#user-surname").value=item.surname 
+               document.querySelector("#user-phone").value=item.phone 
+               document.querySelector("#user-email").value=item.email 
             })
             
             console.log(res.data)

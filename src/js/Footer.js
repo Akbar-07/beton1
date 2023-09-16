@@ -31,7 +31,7 @@ useEffect(()=>{
                 <img src={footerimg} alt="" />
                 <div className="footers_image"></div>
                 <h2>{company1[0].email}</h2>
-                <button className='butt1'>  <BiSolidUser style={{fontSize:"22px"}} className='iconss'/>Личный кабинет</button>
+                <button className='butt1' onClick={()=>window.location="/login"}>  <BiSolidUser style={{fontSize:"22px"}} className='iconss'/>Личный кабинет</button>
                 <button className='butt2'>  <BsTelephoneFill  className='iconss'/> <a  href="tel:998997185110"> Перезвоните мне</a></button>
             </div>
             <div className="footer_card1">
@@ -60,7 +60,7 @@ useEffect(()=>{
             <div  className="footer_card">
                 <img src={footerimg} alt="" />
                 <h2>{company1[0].email}</h2>
-                <button className='butt1'>  <BiSolidUser style={{fontSize:"22px"}} className='iconss'/>Личный кабинет</button>
+                <button className='butt1' onClick={()=>window.location="/login"}>  <BiSolidUser style={{fontSize:"22px"}} className='iconss' />Личный кабинет</button>
                 <button className='butt2'>  <BsTelephoneFill  className='iconss'/>     <a  href="tel:998997185110"> Перезвоните мне</a></button>
             </div></div>
             <div className="media_futer">
