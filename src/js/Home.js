@@ -87,17 +87,13 @@ import IMGG20promax from "../img/valentin3 1.png"
 import IMGGmonet1 from "../img/1 монет.png"
 import IMGGmonet2 from "../img/3 монет.png"
 import IMGGmonet3 from "../img/2 монет.png"
-
-
 import { BsChevronUp } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import Fade from 'react-reveal/Fade';       
 import { useEffect, useState } from 'react'
 import {AiFillStar} from "react-icons/ai"
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Footer from './Footer'

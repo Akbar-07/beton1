@@ -1578,7 +1578,8 @@ useEffect(()=>{
                     <div className="kamzala-block-pitaniya-media">
                     <div className="buni-ichidan-ochish-kerak-media">
                         {tarif.map((item)=>{
-                                        return(                 <div className="beton-blcok-media4"  >
+                                        return(              
+                         <div className="beton-blcok-media4"  >
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa-media4"></div>
                             </div>
