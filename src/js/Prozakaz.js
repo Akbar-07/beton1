@@ -1191,7 +1191,7 @@ useEffect(()=>{
                                         {mashina3.map((item,key)=>{
                                                 return(
                                                     <div>
-                                                      <button><span>{item.m3}</span><img src={item.image} alt="" /></button>
+                                                      <button><span>{item.m3}м3</span><img src={item.image} alt="" /></button>
                                                     </div>
                                                 )
                                             })}
@@ -1207,7 +1207,7 @@ useEffect(()=>{
                                     {mashina3.map((item,key)=>{
                                                 return(
                                                     <div>
-                                                      <button><span>{item.m3}</span><img src={item.image} alt="" /></button>
+                                                      <button><span>{item.m3}м3</span><img src={item.image} alt="" /></button>
                                                     </div>
                                                 )
                                             })}
@@ -1224,7 +1224,7 @@ useEffect(()=>{
                                         <div className="kamazlaga-keldi-endi-shu-qoldi">
                                         {shving.map((item,key)=>{
                                             return <div>
-                                                 <button><span>{item.m}м</span><img src={item.image} alt="" /></button>
+                                                 <button><span>{item.m}м3</span><img src={item.image} alt="" /></button>
                                             </div>
                                         })}
                                             
@@ -1741,7 +1741,7 @@ useEffect(()=>{
                         </div>
                     <select id="singleSelection" data-te-select-init>
                     {mashina3.map((item,key)=>{
-                                return(<option key={key} className='opticonn' value="1">{item.m3}</option>
+                                return(<option key={key} className='opticonn' value="1">{item.m3}м3</option>
                                 )
                                             })}
                     {/* 

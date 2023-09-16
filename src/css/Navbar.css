@@ -930,6 +930,9 @@ cursor: pointer;
     }
 }
 @media(max-width:430px){
+    .z_IMG1{
+        height: 30px;
+    }
     .nav_2_page1{ 
         width: 102px;    
         position: relative;
@@ -1275,6 +1278,9 @@ cursor: pointer;
     }
 }
 @media(max-width:370px){
+    .z_IMG1{
+        height: 25px;
+    }
     .icon_nav1{
         font-size: 18px;
     }
@@ -1287,11 +1293,11 @@ cursor: pointer;
         height: 35px;
     }
     .nav_1_1{
-        width: 100px;
+        width: 90px;
         display: block;
     }
     .nav_1_1 img{
-        width: 100px;
+        width: 90px;
     }
     .nav_1{
         width: 90px;

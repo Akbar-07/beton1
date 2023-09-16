@@ -1580,6 +1580,7 @@ align-items: center;
     font-weight: 600;
 }
 .vash_trans1{
+    
     margin-top: 15px;
 }
 .vash_trans1_span{
@@ -1592,26 +1593,22 @@ align-items: center;
     align-items: center;
     margin-bottom: 8px;
     margin-top: 5px;
+    flex-wrap: wrap;
 }
-.lnnk1{
-    width: 205px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-}
+
 .lnnk11{
-    width: 370px;
+    width: 390px ;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
     margin-top: 5px;
+    flex-wrap: wrap;
+    
 }
 .lnnk111{
     width: 245px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 8px;
 }
@@ -1629,6 +1626,7 @@ align-items: center;
     font-weight: 600;
     cursor: pointer;
     transition: .3s;
+    margin-bottom: 8px;
 }
 .vash_trans1_patok1_but:hover{
 border: 1px solid #E93333;
@@ -1636,6 +1634,7 @@ border: 1px solid #E93333;
 .vash_trans1_patok1_but1{
     width: 120px;
     padding: 10px;
+    margin: 3px;
     border-radius: 10px;
     border: 1px solid #E0E0E0;
     background-color: white;
@@ -1647,6 +1646,8 @@ border: 1px solid #E93333;
     font-weight: 600;
     cursor: pointer;
     transition: .3s;
+    margin-bottom: 8px;
+    position: relative;
 }
 .vash_trans1_patok1_but1:hover{
     border: 1px solid #E93333;
@@ -1665,24 +1666,16 @@ border: 1px solid #E93333;
         margin-bottom: 20px;
     }
     .lnnk{
-        width: 177.5px;
+        width: 250.5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 8px;
         margin-top: 5px;
     }
-    .lnnk1{
-        width: 116px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 8px;
-        position: relative;
-        top: 3px;
-    }
+
     .lnnk11{
-        width: 177.5px;
+        width: 250.5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -2071,7 +2064,7 @@ border: 1px solid #E93333;
     }
     .Partners_page h2{
         font-size: 20px;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 }
 @media(max-width:405px){

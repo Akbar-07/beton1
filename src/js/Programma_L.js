@@ -84,7 +84,6 @@ export default function Programma_L() {
 
       </div>
 
-
       <div className="primushestva">
         <Swiper
           slidesPerView={4}
@@ -96,72 +95,76 @@ export default function Programma_L() {
           modules={[Pagination]}
           className="mySwiper pri_Swip"
         >
-          {def === 1 ? <SwiperSlide onClick={() => { setDef(2) }} className='swip_class_1'><div className="prim_1">
+          {def === 1 ? <SwiperSlide onClick={() => { setDef(2); console.log(def);}} className='swip_class_1'><div className="prim_1">
             <img className='prim_img' src={IMG8} alt="" />
             <h2>Повышайте уровень</h2>
           </div>
-          </SwiperSlide> : <div className="kazir">
+          </SwiperSlide> : ""}
+          {def === 2 ? <div className="kazir">
             <SwiperSlide className='swip_class_1'><div className="prim_11">
               <div className="volt">
                 <img className='prim_img111' src={IMG8} alt="" />
-                <FiX onClick={() => { setDef(1) }} className='fa_icons' />
+                <FiX onClick={() => { setDef(1) ; console.log(def);}} className='fa_icons' />
               </div>
               <h2>Повышайте уровень</h2>
               <span className='duvay1'>Чем больше вы заказываете бетона - тем выше уровень, а с ним и больше привилегий.</span><br />
               <span className='duvay11'>Каждый месяц уровень пересчитывается. Поэтому если вы перестали заказывать, то уровень может упасть. </span>
 
             </div></SwiperSlide>
-          </div>}
-          {def1 === 1 ? <SwiperSlide onClick={() => { setDef1(2) }} className='swip_class_1'><div className="prim_1">
+          </div>:""}
+          {def1 === 1 ? <SwiperSlide onClick={() => { setDef1(2); console.log(def1);}} className='swip_class_1'><div className="prim_1">
             <img className='prim_img' src={IMG9} alt="" />
             <h2>Приветственные бонусы</h2>
           </div>
-          </SwiperSlide> : <div className="kazir">
+          </SwiperSlide> : ""}
+          {def1 === 2 ? <div className="kazir">
             <SwiperSlide className='swip_class_1'><div className="prim_11">
               <div className="volt">
                 <img className='prim_img111' src={IMG9} alt="" />
-                <FiX onClick={() => { setDef1(1) }} className='fa_icons' />
+                <FiX onClick={() => { setDef1(1); console.log(def1); }} className='fa_icons' />
               </div>
 
               <h2>Приветственные бонусы</h2>
               <span className='duvay1'>При регистрации в приложении (сохраняются если приложение стоит)</span>
             </div>
             </SwiperSlide>
-          </div>}
-          {def2 === 1 ? <SwiperSlide onClick={() => { setDef2(2) }} className='swip_class_1'>
+          </div> : ""}
+          {def2 === 1 ? <SwiperSlide onClick={() => { setDef2(2) ; console.log(def2);}} className='swip_class_1'>
             <div className="prim_1">
               <img className='prim_img' src={IMG10} alt="" />
               <h2>Кэшбэк за каждый заказ</h2>
             </div>
-          </SwiperSlide> : <div className="kazir">
+          </SwiperSlide> : ""}
+          {def2 === 2 ? <div className="kazir">
             <SwiperSlide className='swip_class_1'><div className="prim_11">
               <div className="volt">
                 <img className='prim_img111' src={IMG10} alt="" />
-                <FiX onClick={() => { setDef2(1) }} className='fa_icons' />
+                <FiX onClick={() => { setDef2(1); console.log(def2); }} className='fa_icons' />
               </div>
 
               <h2>Кэшбэк
                 за каждый заказ</h2>
               <span className='duvay1'>Получайте кешбэк за заказы через приложение: без ограничения по тарифам и расстоянию. Кешбэк будет приходить в ситибонусах, один ситибонус равен одному рублю.</span><br />
             </div></SwiperSlide>
-          </div>}
-          {def3 === 1 ? <SwiperSlide onClick={() => { setDef3(2) }} className='swip_class_1'>
+          </div> : ""}
+          {def3 === 1 ? <SwiperSlide onClick={() => { setDef3(2) ; console.log(def3);}} className='swip_class_1'>
             <div className="prim_1">
               <img className='prim_img' src={IMG11} alt="" />
               <h2>Оплачивайте бетон и доставку</h2>
             </div>
-          </SwiperSlide> : <div className="kazir">
+          </SwiperSlide> : ""}
+          {def3 === 2 ? <div className="kazir">
             <SwiperSlide className='swip_class_1'><div className="prim_11">
               <div className="volt">
                 <img className='prim_img111' src={IMG11} alt="" />
-                <FiX onClick={() => { setDef3(1) }} className='fa_icons' />
+                <FiX onClick={() => { setDef3(1) ; console.log(def3);}} className='fa_icons' />
               </div>
 
               <h2>Оплачивайте бетон и доставку</h2>
               <span className='duvay1'>ЧБонусами можно оплатить часть заказа бетона и доставки - чем больше уровень, тем больше эта часть.</span><br />
             </div></SwiperSlide>
-          </div>}
-          {def4 === 1 ? <SwiperSlide onClick={() => { setDef4(2) }} className='swip_class_1'>
+          </div> : ""}
+          {def4 === 1 ? <SwiperSlide onClick={() => { setDef4(2) ; console.log(def4);}} className='swip_class_1'>
             <div className="prim_1">
               <div className="prim_1_img">
                 <div className="prim_1_img1">
@@ -172,7 +175,8 @@ export default function Programma_L() {
               </div>
               <h2 className='h__2'>Кешбэк для новых пользователей</h2>
             </div>
-          </SwiperSlide> : <div className="kazir">
+          </SwiperSlide> : ""}
+          {def4 === 2 ? <div className="kazir">
             <SwiperSlide className='swip_class_1'><div className="prim_11">
               <div className="volt">
                 <div className="prim_1_img">
@@ -182,13 +186,13 @@ export default function Programma_L() {
                   </div>
                   <img className='img___4' src={IMG14} alt="" />
                 </div>
-                <FiX onClick={() => { setDef4(1) }} className='fa_icons' />
+                <FiX onClick={() => { setDef4(1); console.log(def4);}} className='fa_icons' />
               </div>
 
               <h2>Кешбэк для новых пользователей</h2>
               <span className='duvay1'>Бонусами можно оплатить часть заказа бетона и доставки - чем больше уровень, тем больше эта часть.</span><br />
             </div></SwiperSlide>
-          </div>}
+          </div> : ""}
 
         </Swiper>
       </div>
