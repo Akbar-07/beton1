@@ -87,8 +87,12 @@ height: 110px;
     margin-top: 40px;
     margin-bottom: 10px;
 }
+.poklmn{
+  width:80%;
+  margin:auto;
+}
 .map_span11{
-  font-size: 14px;
+  font-size: 15px;
   color: #C3C3C3;
 }
 .zakaz_kvadrat_zagruska{
@@ -1100,7 +1104,7 @@ font-weight: 600;
   align-items: center;
 }
 .kogda_div2_2{
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1306,6 +1310,14 @@ font-weight: 600;
   }
 }
 @media(max-width:1140px){
+  .oplkjnm{
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .kogda_div2_2_calendari{
+    margin: auto;
+  }
   .kogda_div{
     width: 100%;
     text-align: center;
@@ -1333,7 +1345,7 @@ font-weight: 600;
     font-weight: 600;
     background-color: transparent;
     transition: .3s;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .kogda_div1_but1:hover{
     background-color: #dcdcdc;
@@ -1356,7 +1368,7 @@ font-weight: 600;
     font-size: 15px;
     transition: .3s;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: transparent;
     background: linear-gradient(0.35turn,#000000,#606060);
   }
@@ -1374,7 +1386,7 @@ font-weight: 600;
     font-weight: 600;
     background-color: transparent;
     transition: .3s;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .kogda_div1_check{
     width: 245px;
@@ -1406,11 +1418,12 @@ font-weight: 600;
     margin: auto;
   }
   .kogda_div2_2{
-    width: 47%;
+    width: 45%;
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
   }
   .kogda_div2_1_voht{
     width: 150px;

@@ -539,8 +539,11 @@ useEffect(()=>{
               <img className='dsfghjklikujyht' src={item.image} alt="" /><br />
             <div className="wwse">
             <span className='map_span'>{item.title}</span>
-            <span className='map_span11'>{item.description}</span>
+         
             </div>
+           <div className="poklmn">
+           <span className='map_span11'>{item.description}</span>
+           </div>
             </div>
           })}
          {/* <div className="zakaz_kvadrat_map_card1">

@@ -95,7 +95,7 @@ export default function Programma_L() {
           modules={[Pagination]}
           className="mySwiper pri_Swip"
         >
-          {def === 1 ? <SwiperSlide onClick={() => { setDef(2); console.log(def);}} className='swip_class_1'><div className="prim_1">
+          {def === 1 ? <SwiperSlide onClick={() => { setDef(2); setDef1(1);  setDef2(1) ; setDef3(1) ;setDef4(1) ;console.log(def);}} className='swip_class_1'><div className="prim_1">
             <img className='prim_img' src={IMG8} alt="" />
             <h2>Повышайте уровень</h2>
           </div>
@@ -112,7 +112,7 @@ export default function Programma_L() {
 
             </div></SwiperSlide>
           </div>:""}
-          {def1 === 1 ? <SwiperSlide onClick={() => { setDef1(2); console.log(def1);}} className='swip_class_1'><div className="prim_1">
+          {def1 === 1 ? <SwiperSlide onClick={() => { setDef1(2); setDef(1); setDef2(1) ; setDef3(1) ;setDef4(1);console.log(def1);}} className='swip_class_1'><div className="prim_1">
             <img className='prim_img' src={IMG9} alt="" />
             <h2>Приветственные бонусы</h2>
           </div>
@@ -129,7 +129,7 @@ export default function Programma_L() {
             </div>
             </SwiperSlide>
           </div> : ""}
-          {def2 === 1 ? <SwiperSlide onClick={() => { setDef2(2) ; console.log(def2);}} className='swip_class_1'>
+          {def2 === 1 ? <SwiperSlide onClick={() => { setDef2(2); setDef1(1); setDef(1);  setDef3(1) ;setDef4(1); console.log(def2);}} className='swip_class_1'>
             <div className="prim_1">
               <img className='prim_img' src={IMG10} alt="" />
               <h2>Кэшбэк за каждый заказ</h2>
@@ -147,7 +147,7 @@ export default function Programma_L() {
               <span className='duvay1'>Получайте кешбэк за заказы через приложение: без ограничения по тарифам и расстоянию. Кешбэк будет приходить в ситибонусах, один ситибонус равен одному рублю.</span><br />
             </div></SwiperSlide>
           </div> : ""}
-          {def3 === 1 ? <SwiperSlide onClick={() => { setDef3(2) ; console.log(def3);}} className='swip_class_1'>
+          {def3 === 1 ? <SwiperSlide onClick={() => { setDef3(2) ; setDef1(1);setDef(1);setDef2(1);setDef4(1); console.log(def3);}} className='swip_class_1'>
             <div className="prim_1">
               <img className='prim_img' src={IMG11} alt="" />
               <h2>Оплачивайте бетон и доставку</h2>
@@ -164,7 +164,7 @@ export default function Programma_L() {
               <span className='duvay1'>ЧБонусами можно оплатить часть заказа бетона и доставки - чем больше уровень, тем больше эта часть.</span><br />
             </div></SwiperSlide>
           </div> : ""}
-          {def4 === 1 ? <SwiperSlide onClick={() => { setDef4(2) ; console.log(def4);}} className='swip_class_1'>
+          {def4 === 1 ? <SwiperSlide onClick={() => { setDef4(2) ;setDef(1);setDef1(1);setDef2(1);setDef3(1); console.log(def4);}} className='swip_class_1'>
             <div className="prim_1">
               <div className="prim_1_img">
                 <div className="prim_1_img1">
@@ -199,7 +199,7 @@ export default function Programma_L() {
 
 
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper sviper_QTB">
-        {def5 === 1 ? <SwiperSlide onClick={() => { setDef5(2); okey() }} className='suka'>
+        {def5 === 1 ? <SwiperSlide onClick={() => { setDef5(2);setDef6(1);setDef7(1);setDef8(1);setDef9(1); okey() }} className='suka'>
           <div className="prim_1">
             <img className='prim_img' src={IMG8} alt="" />
             <h2>Повышайте уровень</h2>
@@ -217,7 +217,7 @@ export default function Programma_L() {
           </div></SwiperSlide>
         </div>}
 
-        {def6 === 1 ? <SwiperSlide onClick={() => { setDef6(2); okey() }} className='suka'>
+        {def6 === 1 ? <SwiperSlide onClick={() => { setDef6(2);setDef5(1);setDef7(1);setDef8(1);setDef9(1); okey() }} className='suka'>
           <div className="prim_1">
             <img className='prim_img' src={IMG9} alt="" />
             <h2>Приветственные бонусы</h2>
@@ -234,7 +234,7 @@ export default function Programma_L() {
           </div>
           </SwiperSlide>
         </div>}
-        {def7 === 1 ? <SwiperSlide onClick={() => { setDef7(2); okey() }} className='suka'>
+        {def7 === 1 ? <SwiperSlide onClick={() => { setDef7(2);setDef8(1);setDef9(1); ;setDef6(1);setDef5(1);okey() }} className='suka'>
           <div className="prim_1">
             <img className='prim_img' src={IMG10} alt="" />
             <h2>Кэшбэк за каждый заказ</h2>
@@ -251,7 +251,7 @@ export default function Programma_L() {
             <span className='duvay1'>Получайте кешбэк за заказы через приложение: без ограничения по тарифам и расстоянию. Кешбэк будет приходить в ситибонусах, один ситибонус равен одному рублю.</span><br />
           </div></SwiperSlide>
         </div>}
-        {def8 === 1 ? <SwiperSlide onClick={() => { setDef8(2); okey() }} className='suka'>
+        {def8 === 1 ? <SwiperSlide onClick={() => { setDef8(2);setDef9(1);setDef7(1);setDef6(1);setDef5(1); okey() }} className='suka'>
           <div className="prim_1">
             <img className='prim_img' src={IMG11} alt="" />
             <h2>Оплачивайте бетон и доставку</h2>
@@ -267,7 +267,7 @@ export default function Programma_L() {
             <span className='duvay1'>ЧБонусами можно оплатить часть заказа бетона и доставки - чем больше уровень, тем больше эта часть.</span><br />
           </div></SwiperSlide>
         </div>}
-        {def9 === 1 ? <SwiperSlide onClick={() => { setDef9(2); okey() }} className='suka'>
+        {def9 === 1 ? <SwiperSlide onClick={() => { setDef9(2);;setDef6(1);setDef7(1);setDef8(1);setDef5(1); okey() }} className='suka'>
           <div className="prim_1">
             <div className="prim_1_img">
               <div className="prim_1_img1">
