@@ -18,7 +18,7 @@ useEffect(()=>{
   axios.get('https://dastafka-back.onrender.com/api/compony').then(res=>{
     setCompany1(res.data)
   }).catch(err=>{
-    alert("salom")
+    
   })
 },[])
 
@@ -30,9 +30,9 @@ useEffect(()=>{
             <div className="footer_card">
                 <img src={footerimg} alt="" />
                 <div className="footers_image"></div>
-                <h2>zakaz@beton-taxi.ru</h2>
+                <h2>{company1[0].email}</h2>
                 <button className='butt1'>  <BiSolidUser style={{fontSize:"22px"}} className='iconss'/>Личный кабинет</button>
-                <button className='butt2'>  <BsTelephoneFill  className='iconss'/>    Перезвоните мне</button>
+                <button className='butt2'>  <BsTelephoneFill  className='iconss'/> <a  href="tel:998997185110"> Перезвоните мне</a></button>
             </div>
             <div className="footer_card1">
                 <h3 onClick={()=>window.location="/News"}>Новости</h3>
@@ -59,9 +59,9 @@ useEffect(()=>{
           <div className="mediaa_help">
             <div  className="footer_card">
                 <img src={footerimg} alt="" />
-                <h2>zakaz@beton-taxi.ru</h2>
+                <h2>{company1[0].email}</h2>
                 <button className='butt1'>  <BiSolidUser style={{fontSize:"22px"}} className='iconss'/>Личный кабинет</button>
-                <button className='butt2'>  <BsTelephoneFill  className='iconss'/>    Перезвоните мне</button>
+                <button className='butt2'>  <BsTelephoneFill  className='iconss'/>     <a  href="tel:998997185110"> Перезвоните мне</a></button>
             </div></div>
             <div className="media_futer">
             <div className="footer_card1">
