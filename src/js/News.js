@@ -114,72 +114,75 @@ export default function News() {
           })}
       </Swiper></div>
         <div id='div1' style={{display:"flex",justifyContent:"center"}} className="div_news_3"><div className="news_page_3">
-            <div className="news_page_3_cards">
-                <div className="news_page_3_card">
-                <h2>Новая марка бетона уже доступна</h2>
-                <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
-            <img src={mask1} alt="" />
+            <div style={{display:"flex",alignItems:"center"}} className="news_page_3_cards">
+                
+                {news.map((item,key)=>{
+                    
+                    if(key<1){
+                       return(
+                        <div className="news_page_3_card">
+                            <div style={{cursor:"pointer",zIndex:"100000"}} className="arrow_div" onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}><HiArrowRight className='arrow_left'/></div>
+                <h2>{item.title}</h2>
+                <p>{item.min_description}</p>
+            <div className="forN_image"><img src={item.image} alt="" /></div>
             </div>
+                    ) 
+                    }
+                    
+                })}
+                
             </div>
-            <div className="news_page_3_cards">
-                <div className="news_page_3_card1">
+            <div style={{height:"650px",overflow:"hidden",overflowY:"scroll",paddingRight:"10px"}} className="news_page_3_cards">
+                {news.map((item,key)=>{
+                    
+return(
+                      <div className="news_page_3_card1">
                     <div className="newss">
-                    <h3>Новая марка бетона уже доступна на сайте</h3>
-                    <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения систем...</p>
+                    <h3>{item.title}</h3>
+                    <p>{item.min_description}</p>
                 </div>
-                <img src={arrow} className='news_icon' alt="" />
-                </div>
-                <div className="news_page_3_card1">
-                    <div className="newss">
-                    <h3>Новая марка бетона уже доступна на сайте</h3>
-                    <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения систем...</p>
-                </div>
-                    <img src={arrow} className='news_icon' alt="" />
-                </div>
-                <div className="news_page_3_card1">
-                    <div className="newss">
-                    <h3>Новая марка бетона уже доступна на сайте</h3>
-                    <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения систем...</p>
-                </div>
-                    <img src={arrow} className='news_icon' alt="" />
-                </div>
+                <img style={{cursor:"pointer"}} onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}} src={arrow} className='news_icon' alt="" />
+                </div>  
+                    )
+                    
+                    
+                })}
             </div>
         </div>
         </div>
 
 
 <div id='div2' style={{display:"flex",justifyContent:"center"}} className="div_news_3"><div className="news_page_3">
-            <div id='cards2' className="news_page_3_cards">
-                <div className="news_page_3_card">
-                <h2>Новая марка бетона уже доступна</h2>
-                <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
-            
+
+            <div style={{height:"480px",overflow:"hidden",overflowY:"scroll",paddingRight:"10px"}} className="news_page_3_cards">
+                {news.map(item=>{
+                    return(
+                        <div className="news_page_3_card1">
+                    <div className="newss">
+                    <h3>{item.title}</h3>
+                    <p>{item.min_description}</p>
+                </div>
+                    <img src={arrow} className='news_icon' alt="" />
+                </div>
+                    )
+                })}
             </div>
-            <div className="for_image"><img src={mask1} alt="" /></div>
-            
+            <div style={{display:"flex",alignItems:"center",borderRadius:"40px",marginTop:"50px"}} className="news_page_3_cards">
+                {news.map((item,key)=>{
+                    if(key<1){
+                       return(
+                        
+                        <div className="news_page_3_card">
+                            <div className="arrow_div" onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}><HiArrowRight className='arrow_left'/></div>
+                <h2>{item.title}</h2>
+                <p>{item.min_description}</p>
+            <div className="forN_image"><img src={item.image} alt="" /></div>
             </div>
-            <div  className="news_page_3_cards">
-                <div className="news_page_3_card1">
-                    <div className="newss">
-                    <h3>Новая марка бетона уже доступна на сайте</h3>
-                    <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения систем...</p>
-                </div>
-                    <img src={arrow} className='news_icon' alt="" />
-                </div>
-                <div className="news_page_3_card1">
-                    <div className="newss">
-                    <h3>Новая марка бетона уже доступна на сайте</h3>
-                    <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения систем...</p>
-                </div>
-                    <img src={arrow} className='news_icon' alt="" />
-                </div>
-                <div className="news_page_3_card1">
-                    <div className="newss">
-                    <h3>Новая марка бетона уже доступна на сайте</h3>
-                    <p>Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения систем...</p>
-                </div>
-                    <img src={arrow} className='news_icon' alt="" />
-                </div>
+                    ) 
+                    }
+                    
+                })}
+                
             </div>
         </div>
         </div>
@@ -207,10 +210,9 @@ export default function News() {
       {aksiya.map(item=>{
             return(
                 <SwiperSlide><div className="rasm1_div">
-                <h3 style={{zIndex:"11",color:"black"}}>2+1</h3>
                     <h2 style={{zIndex:"11",color:"black"}} onClick={()=>{window.location="/Aksiya";localStorage.setItem("AksiyaId",item.id)}}>{item.title}</h2>
                     <div style={{zIndex:"12"}} className="arrow_div" onClick={()=>{window.location="/Aksiya";localStorage.setItem("AksiyaId",item.id)}}><HiArrowRight className='arrow_left'/></div>
-                    <img style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
+                    <img className='mediafor1' style={{zIndex:'10',height:"auto",margin:"auto",marginBottom:"0px"}} src={rasmm1} alt="" />
                     <img id='rasm5' style={{position:'absolute'}} src={item.image} alt="" />
                 </div></SwiperSlide>
             )

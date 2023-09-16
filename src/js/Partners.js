@@ -137,10 +137,15 @@ export default function Partners() {
                               }}navigation={true} modules={[Navigation]}
                             
                             className="mySwiper" id="swipers">
-                            <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
-                            <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
-                            <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
-                            <SwiperSlide><div className="mask_img"><img src={mask6} alt="" /></div></SwiperSlide>
+                                {partner1.map(item=>{
+                                    return(
+                    <SwiperSlide>{item.imageall.map(item1=>{
+                        return(
+                            <div className="mask_img"><img src={item1.image} alt="" /></div>
+                        )
+                    })}</SwiperSlide>
+                                    )
+                                })}
                         </Swiper>
                     </div>
                             </div>

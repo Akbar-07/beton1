@@ -42,11 +42,11 @@ export default function Article() {
         <Navbar/>
         <div className="bid_header">
 <div className="Article_header">
-        <p className='aa1'><span onClick={()=> window.location="/"}>Главная</span>  | <span className='span1' onClick={()=> window.location="/Aksiya"}>акции</span> </p>
+        <p className='aa1'><span onClick={()=> window.location="/"}>Главная</span>  | <span className='span1' onClick={()=> window.location="/Aksiya"}>акция</span> </p>
         </div>
         <div className="news_page">
             <img src={start} alt="" />
-            <h2>Акции</h2>
+            <h2>Акция</h2>
         </div>
         {aksiya.map(item=>{
           if(item.id==localStorage.getItem("AksiyaId")){

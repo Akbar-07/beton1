@@ -89,7 +89,35 @@
    width: 300px !important; 
 } */
 .mask_img img{
+    height: 100%;
+    border-radius: 20px;
+}
+.mask_img{
     width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:430px){
+    .Partners .news_page{
+        width: 300px !important;
+    }
+}
+@media(max-width:640px){
+    .mask_img{
+        height: 240px !important;
+    }
+}
+@media(max-width:400px){
+    .mask_img{
+        height: 200px !important;
+    }
+}
+.mask6 .mySwiper{
+    width: 100% !important;
 }
 .for_flex {
     display: block;
@@ -202,6 +230,9 @@
     }
  }
  @media(max-width:950px){
+    .mask_img{
+        height: 180px;
+    }
     .Yellow_card img{
         display: none;
     }
