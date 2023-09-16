@@ -260,7 +260,7 @@ body {
     max-width: 1200px;
     width: 92vw;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 70px;
 }
 
 .news_page_3_cards {
@@ -344,7 +344,7 @@ width: 70%;
     }
     .news_page_3{
         display: block;
-        margin-top: 40px;
+        margin-top: 70px;
     }
     .newss h3{
         width: 95%;

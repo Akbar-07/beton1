@@ -90,7 +90,7 @@ export default function Partners() {
               slidesPerView: 5,
             },
           }} className="mySwiper" id="swipers">
-            {partner.map((item,key)=>{
+            {partner.map(item=>{
                 return(
                     <SwiperSlide><div onClick={()=>partner2(item.id)} className="partner_card">
                                 <img src={item.image} alt="" className='fabrika' />  </div></SwiperSlide>
