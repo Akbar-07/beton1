@@ -384,6 +384,7 @@ setPage(17)
               <div className="nazat" >
               <box-icon name='x'  color="#ACACAC" onClick={()=>setPage(1)}  size="35px"></box-icon>
               </div>
+              <div className="page-ijiii-media">
               <div className="page2-ichi">
                 <h1>Вход в личный кабинет</h1>
                 <div className="page2-login-inp">
@@ -399,6 +400,7 @@ setPage(17)
                   </div>
                 </div>
               </div>
+              </div>
             </div>
          </div>
          </div>):(page===3?(
@@ -408,7 +410,8 @@ setPage(17)
               <div className="nazat" >
               <box-icon name='x'  color="#ACACAC" onClick={()=>setPage(1)}  size="35px"></box-icon>
               </div>
-              <div className="page3-ichi">
+              <div className="page-ijiii-media">
+                              <div className="page3-ichi">
                 <h1>Регистрация</h1>
                 <div className="page3-form">
                   <div className="page_form-checboc">
@@ -433,6 +436,8 @@ setPage(17)
                 </div>
                 
               </div>
+              </div>
+
             </div>
          </div>
          </div>):("")))}

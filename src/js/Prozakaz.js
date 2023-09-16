@@ -683,7 +683,7 @@ useEffect(()=>{
                             <th className='ana-atble-qildik-p'>Цена</th>
                             </tr>
                             </thead>
-
+                            
           <tbody>
             {product.map((item)=>{
                 return(
@@ -1589,6 +1589,7 @@ useEffect(()=>{
                                 </div>
                                 <div className="beton-rasm-img-text"><span>{item.title}</span></div>
                             </div>
+                            sdgfsdhfdsh
                         </div> )
                                     })}
                         {/* <div className="beton-blcok-media5" onClick={()=>mediayon4()}>

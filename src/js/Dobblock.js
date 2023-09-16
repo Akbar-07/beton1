@@ -25,6 +25,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import Footer from '../js/Footer'
 
 export default function Dobblock() {
   return (
@@ -214,7 +215,7 @@ export default function Dobblock() {
             </div>
            </div>
         </div>
-       
+       <Footer/>
     </div>
     
   )
