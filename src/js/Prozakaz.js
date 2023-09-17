@@ -463,7 +463,7 @@ function qoraaaaa(){
     document.querySelector(".btn-btn1-qachon1").style=`background:none; color:black`;
     document.querySelector(".btn-btn1-qachon2").style=`background:none; color:black`;
 
-    document.querySelector(".tez-bosa-boldi-nx").style=`display:block`
+    document.querySelector(".tez-bosa-boldi-nx").style=`display:flex`
     document.querySelector(".bugun-bosa-boldi-nx").style=`display:none`
     document.querySelector(".keyn-bosa-boldi-nx").style=`display:none`
 }
@@ -473,7 +473,7 @@ function qoraaaaa1(){
     document.querySelector(".btn-btn1-qachon").style=`background:none; color:black`;
     document.querySelector(".btn-btn1-qachon2").style=`background:none; color:black`;
 
-    document.querySelector(".bugun-bosa-boldi-nx").style=`display:block`
+    document.querySelector(".bugun-bosa-boldi-nx").style=`display:flex`
         document.querySelector(".tez-bosa-boldi-nx").style=`display:none`
     document.querySelector(".keyn-bosa-boldi-nx").style=`display:none`
 
@@ -483,7 +483,7 @@ function qoraaaaa2(){
     document.querySelector(".btn-btn1-qachon").style=`background:none; color:black`;
     document.querySelector(".btn-btn1-qachon1").style=`background:none; color:black`;
 
-    document.querySelector(".keyn-bosa-boldi-nx").style=`display:block`
+    document.querySelector(".keyn-bosa-boldi-nx").style=`display:flex`
     document.querySelector(".bugun-bosa-boldi-nx").style=`display:none`
     document.querySelector(".tez-bosa-boldi-nx").style=`display:none`
 }
@@ -556,6 +556,7 @@ const [page,setPage] = useState(1)
 const [gradus, setGradus] = useState([{}])
 const [tarif, setTarif] = useState([{}])
 const [product, setProduct] = useState([{}])
+const [rasmal, setRasmmal] = useState([{}])
 useEffect(()=>{
     axios.get('https://dastafka-back.onrender.com/api/sovuqlik').then(res=>{
     setGradus(res.data)
@@ -577,7 +578,7 @@ useEffect(()=>{
     axios.get(`${url}/api/mashina`).then(res=>{
         setMashina3(res.data)
     }).catch(err=>{
-        alert("popi")
+        
     })
 })
 const [marka1, setMarka1] = useState([])
@@ -585,7 +586,7 @@ useEffect(()=>{
     axios.get(`${url}/api/marka`).then(res=>{
         setMarka1(res.data)
     }).catch(err=>{
-        alert("vbnm")
+      
     })
 },[])
 
@@ -604,7 +605,12 @@ useEffect(()=>{
        
     })
 })
-
+useEffect(()=>{
+    axios.get(`https://dastafka-back.onrender.com/api/homeiy`).then(res=>{
+        setRasmmal(res.data)
+    }).catch(err=>{
+    })
+    },[])
 
 
   return (
@@ -718,7 +724,7 @@ useEffect(()=>{
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="akardon-pasdia-chiqadi-but">
                                             <button>П3</button>
-                                        <button>П4</button>   
+                                        <button>П4</button>
                                 </div>
                             </div>
                             <div className="akardion-pro-zakazz">
@@ -1191,7 +1197,7 @@ useEffect(()=>{
                                         {mashina3.map((item,key)=>{
                                                 return(
                                                     <div>
-                                                      <button><span>{item.m3}м3</span><img src={item.image} alt="" /></button>
+                                                      <button onClick={()=>{console.log(item.id);sessionStorage.setItem("dastavka",item.id)}}><span>{item.m3}м3</span><img src={item.image} alt="" /></button>
                                                     </div>
                                                 )
                                             })}
@@ -1207,7 +1213,7 @@ useEffect(()=>{
                                     {mashina3.map((item,key)=>{
                                                 return(
                                                     <div>
-                                                      <button><span>{item.m3}м3</span><img src={item.image} alt="" /></button>
+                                                      <button onClick={()=>{console.log(item.id);sessionStorage.setItem("dastavka",item.id)}}><span>{item.m3}м3</span><img src={item.image} alt="" /></button>
                                                     </div>
                                                 )
                                             })}
@@ -1224,7 +1230,7 @@ useEffect(()=>{
                                         <div className="kamazlaga-keldi-endi-shu-qoldi">
                                         {shving.map((item,key)=>{
                                             return <div>
-                                                 <button><span>{item.m}м3</span><img src={item.image} alt="" /></button>
+                                                 <button onClick={()=>{console.log(item.id);sessionStorage.setItem("Швинг",item.id)}}><span>{item.m}м3</span><img src={item.image} alt="" /></button>
                                             </div>
                                         })}
                                             
@@ -1233,7 +1239,7 @@ useEffect(()=>{
                                     <div className="kamazla-media-suka-blat">
                                         {shving.map((item,key)=>{
                                             return <div>
-                                                 <button><span>{item.m}м</span><img src={item.image} alt="" /></button>
+                                                 <button onClick={()=>{console.log(item.id);sessionStorage.setItem("Швинг",item.id)}} ><span>{item.m}м</span><img src={item.image} alt="" /></button>
                                             </div>
                                         })}
                                             {/* <button className='zaybal_nomer2'><span className='seks_1'>15м</span><img src={zakazbeton1} alt="" /></button>
@@ -1396,11 +1402,11 @@ useEffect(()=>{
                                     <div className="alalalalallaalalalal12">
                                     <div className="akardon-pasdia-chiqadi-but12">
                                     <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="name"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input  id='yes1' type="radio"  value="#009900"  name="name"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -1430,19 +1436,23 @@ useEffect(()=>{
                                 </div>
                             </div>
                             <div className="kampaniya-cardla-prozaakz">
-                            <div className="beton-blcok-media-kom" onClick={()=>kompaniya()}>
-                            <div className="sasriq-narsa-yonadi">
-                                <div className="sariqblaaa-media-kom"></div>
-                            </div>
-                            <div className="beton-rasm-patom-text">
-                                <div className="beton-rasm-img-size1">
-                                    <img src={kkk} alt="" />
-                                </div>
-                                <div className="beton-rasm-img-text"></div>
-                            </div>
-                            <div className="marxi-prozakaz-kom"><h3>2 000 ₽</h3></div>
-                        </div>
-                        <div className="beton-blcok-media-kom1" onClick={()=>kompaniya1()}>
+                                {rasmal.map((item)=>{
+                                    return(
+                                        <div className="beton-blcok-media-kom">
+                                        <div className="sasriq-narsa-yonadi">
+                                            <div className="sariqblaaa-media-kom"></div>
+                                        </div>
+                                        <div className="beton-rasm-patom-text">
+                                            <div className="beton-rasm-img-size1">
+                                                <img className='saadsasdasasdsdsad' src={item.image} alt="" />
+                                            </div>
+                                            <div className="beton-rasm-img-text"></div>
+                                        </div>
+                                        <div className="marxi-prozakaz-kom"><h3></h3></div>
+                                    </div>
+                                    )
+                                })}
+                        {/* <div className="beton-blcok-media-kom1" onClick={()=>kompaniya1()}>
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa-media-kom1"></div>
                             </div>
@@ -1489,7 +1499,7 @@ useEffect(()=>{
                                 <div className="beton-rasm-img-text"></div>
                             </div>
                              <div className="marxi-prozakaz-kom"><h3>2 000 ₽</h3></div>
-                        </div>
+                        </div> */}
                             </div>
                             <div className="kampaniya-tepadagiselect-boldi-endi-pasga-texg">
                                 <h4>Требуются <br />
@@ -1579,7 +1589,7 @@ useEffect(()=>{
                     <div className="buni-ichidan-ochish-kerak-media">
                         {tarif.map((item)=>{
                                         return(              
-                         <div className="beton-blcok-media4"  >
+                         <div className="beton-blcok-media4" onClick={()=>{console.log(item.id);sessionStorage.setItem("tarif",item.id)}}  >
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa-media4"></div>
                             </div>
@@ -1589,7 +1599,7 @@ useEffect(()=>{
                                 </div>
                                 <div className="beton-rasm-img-text"><span>{item.title}</span></div>
                             </div>
-                            sdgfsdhfdsh
+                            
                         </div> )
                                     })}
                         {/* <div className="beton-blcok-media5" onClick={()=>mediayon4()}>
@@ -1740,9 +1750,9 @@ useEffect(()=>{
                         <div className="img-select-qoyilmadi">
                             <img src={zakazbeton} alt="" />
                         </div>
-                    <select id="singleSelection" data-te-select-init>
+                    <select onChange={(e)=>{console.log(e.target.value);sessionStorage.setItem("dastavka",e.target.value)}} id="singleSelection" data-te-select-init >
                     {mashina3.map((item,key)=>{
-                                return(<option key={key} className='opticonn' value="1">{item.m3}м3</option>
+                                return(<option   className='opticonn' value={item.id}>{item.m3}м3</option>
                                 )
                                             })}
                     {/* 
@@ -1758,9 +1768,9 @@ useEffect(()=>{
                         <div className="img-select-qoyilmadi">
                             <img src={zakazbeton1} alt="" />
                         </div>
-                    <select id="singleSelection" data-te-select-init>
+                    <select  onChange={(e)=>{console.log(e.target.value);sessionStorage.setItem("Швинг",e.target.value)}} id="singleSelection" data-te-select-init >
                          {shving.map((item,key)=>{
-                                    return <option key={key} className='opticonn' value="1">{item.m}м </option>
+                                    return <option  key={key} className='opticonn' value={item.id}>{item.m}м </option>
                                   
                                 })}
 {/*                    
