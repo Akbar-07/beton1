@@ -235,9 +235,6 @@ text-align: left;
     height: 240px;
     overflow-y: auto;
 }
-.eng-kottade-scrol::-webkit-scrollbar {
-    width: 0px !important;
-}
 
 .tr_1:hover{
 background-color: white;
@@ -4847,7 +4844,6 @@ cursor: pointer;
 position: relative;
 right: 20px;
 display: flex;
-gap: 10px;
 margin-bottom: 10px;
 }
 .kotta-data-vremiyanaa{
@@ -4891,7 +4887,7 @@ color:#000000;
 .data-srokkkk{
     border: none !important;
     outline: none !important;
-        width: 82px;
+        width: 100px;
 height: 42px;
 border-radius: 9px;
 background: #FFFFFF ;
@@ -4989,4 +4985,30 @@ cursor: pointer;
     justify-content: center;
     cursor: pointer;
 }
+}
+.xxxx-data{
+    position: relative;
+    left: 115px;
+    top: -9px;
+}
+
+.xxxx-data span{
+    cursor: pointer;
+}
+.data-pricers{
+    position: relative;
+    left: 10px;
+}
+
+.eng-kottade-scrol::-webkit-scrollbar {
+    width: 10px;
+    height: auto !important;
+}
+.eng-kottade-scrol::-webkit-scrollbar-track {
+   background-color: #E6E6E6; 
+    border-radius: 5px;
+}
+.eng-kottade-scrol::-webkit-scrollbar-thumb {
+    background:#C3C3C3; 
+    border-radius: 10px;
 }

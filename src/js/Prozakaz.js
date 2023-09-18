@@ -45,7 +45,7 @@ import "react-datepicker/dist/react-datepicker.module.css";
 import bmw from '../img/Group 269.png'
 import axios from 'axios'
 import url from './Host'
-
+import Calendar from 'react-calendar'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`
@@ -544,6 +544,13 @@ function eeeeee3(){
     document.querySelector(".sariqblaaa-media11").style=` background:white;`
 }
 
+function ochirday1(){
+document.querySelector("#day-1").style=`display:none`
+}
+function ochirday2(){
+    document.querySelector("#day-2").style=`display:none`
+}
+
 export default function Prozakaz() {
       const [startDate, setStartDate] = useState(new Date());
 const [data,setData] =useState(0)
@@ -612,7 +619,9 @@ useEffect(()=>{
     })
     },[])
 
-
+    const onChange = startDate =>{
+        setStartDate(startDate)
+    }
   return (
 <div>
     <Navbar/>
@@ -675,7 +684,7 @@ useEffect(()=>{
                                 <p>М400</p> */}
                             </div>
                             <div className="ana-beton-range-input">
-                                <input type="range" name="" id="" />
+                                <input type="range" step={50} />
                             </div>
                         </div>
                         <div className="eng-kottade-ulani-ushab-turadi">
@@ -1081,9 +1090,12 @@ useEffect(()=>{
                             </div>
                             <div className="kalendar-joy-justify-end">
                                 <div className="kotta-data-vremiyanaa">
-                                <div className="xaxa-skfkdkf">
+                                <div className="xaxa-skfkdkf" id='day-1'>
                                     <div className="data-srokkkk">
-                                        <p>06.07.23</p>
+                                        <p>{startDate.getDate()}.{startDate.getMonth()}.{startDate.getFullYear()}</p>
+                                    </div>
+                                    <div className="xxxx-data" onClick={()=>ochirday1()}>
+                                       <span>x</span>
                                     </div>
                                     <div className="data-srokkkk">
                                         <select>
@@ -1094,9 +1106,12 @@ useEffect(()=>{
                                         </div>
                                         
                                 </div>
-                                <div className="xaxa-skfkdkf">
+                                <div className="xaxa-skfkdkf" id='day-2'>
                                     <div className="data-srokkkk">
-                                        <p>06.07.23</p>
+                                        <p>{startDate.getDate()}.{startDate.getMonth()}.{startDate.getFullYear()}</p>
+                                    </div>
+                                    <div className="xxxx-data" onClick={()=>ochirday2()}>
+                                        <span>x</span>
                                     </div>
                                     <div className="data-srokkkk">
                                         <select>
@@ -1108,17 +1123,19 @@ useEffect(()=>{
                                         
                                 </div>
                                 </div>
-                            <DatePicker
+                                <div className="data-pricers">
+                                                                <DatePicker
       selected={startDate}
-      onChange={(date) => setStartDate(date)}
+      onChange={onChange}
+      value={startDate}
       inline
     />
+                                </div>
                             </div>
                             <div className="sposib-oplati-prozakaz">
                             <div className="tarif-joyi-ekan-tez-ql1">
                                 <h2>Способ оплаты</h2>
                                 <div className="all-tarif-btn-joy">
-
                                 <div className="beton-blcok8" onClick={()=>pastarapOP()}>
                             <div className="sasriq-narsa-yonadi">
                                 <div className="sariqblaaa10"></div>
