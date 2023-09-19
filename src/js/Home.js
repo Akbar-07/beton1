@@ -204,7 +204,7 @@ useEffect(()=>{
         setData11(res.data);
         setData111(res.data)
     }).catch(err=>{
-        alert("xato back")
+      
     })
 },[])
 
@@ -222,7 +222,7 @@ useEffect(()=>{
             nashaData(Filter)
             console.log(res.data)
         }).catch((err) => {
-            alert("err")
+           
         })
 
    
