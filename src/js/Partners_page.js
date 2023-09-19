@@ -364,7 +364,7 @@ export default function Partners_page() {
           {shving4.map((item,key)=>{
               return(
                 <div>
-           <button key={key} id={item.id} className='vash_trans1_patok1_but'>{item.m3}m <img className='lnnk11_img' src={item.image} alt="" /></button>
+           <button key={key} id={item.id} className='vash_trans1_patok1_but'>{item.m3}m3 <img className='lnnk11_img' src={item.image} alt="" /></button>
                 </div>
               )
             })}
@@ -385,7 +385,7 @@ export default function Partners_page() {
             {shving3.map((item,key)=>{
               return(
                 <div>
-          <button key={key} id={item.id} className='vash_trans1_patok1_but1'>{item.m}m3<img className='lnnk11_img' src={item.image} alt="" /></button>
+          <button key={key} id={item.id} className='vash_trans1_patok1_but1'>{item.m}m<img className='lnnk11_img' src={item.image} alt="" /></button>
                 </div>
               )
             })}

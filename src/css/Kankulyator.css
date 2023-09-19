@@ -670,6 +670,7 @@ transition:.3s ;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 .kal_header_narxi h2{
     color: #E93333;
@@ -683,9 +684,10 @@ transition:.3s ;
     height: 30px;
     border-radius: 50%;
     align-items: center;
+    box-shadow: 0 0 1px grey;
 }
 .icon_fifty{
-    color: white;
+    color: red;
     font-size: 22px;
 }
 .radio_inp{
