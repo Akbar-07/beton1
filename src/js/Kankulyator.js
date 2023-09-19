@@ -39,7 +39,7 @@ export default function Kankulyator() {
             name : "Монолитная плита фундамента"
         }
     ])
-    const [id1, setId1] = useState(1)
+    const [id1, setId1] = useState(0)
 
     let ozgar = (key)=>{
         if(key === 1){
@@ -49,6 +49,12 @@ export default function Kankulyator() {
         else if(key === 2){
             setId1(3)
             document.querySelector(".kal_header2").style ="width:900px"
+        }
+        else if(key === 3){
+            setId1(4)
+            document.querySelector(".kal_header2").style ="width:740px"
+            console.log(key);
+            console.log(id1);
         }
         else{
             setId1(1)
@@ -103,6 +109,56 @@ export default function Kankulyator() {
             title : "salom2",
         }
     ])
+    const [capitan2, setCapitan2] = useState([{id1:2}])
+    var otash1 = ()=>{
+        var a = capitan2
+        a.push({id1})
+        console.log(id1);
+        setCapitan2(a)
+    }
+    const [capitan1, setCapitan1] = useState([{id1:1}])
+    var otash = ()=>{
+        var a = capitan1
+        a.push({id1})
+        setCapitan1(a)
+        console.log(id1);
+    } 
+    const [capitan3, setCapitan3] = useState([{id1:3}])
+    var otash3 = ()=>{
+        var a = capitan3
+        a.push({id1})
+        setCapitan3(a)
+        console.log(id1);
+
+    } 
+    const [capitan4, setCapitan4] = useState([{id1:4}])
+    var otash4 = ()=>{
+        var a = capitan4
+        a.push({id1})
+        setCapitan4(a)
+        console.log(id1);
+
+    } 
+
+    const [hisob_masiv,setHisob_massiv] = useState([{}])
+    var kan_hisob = ()=>{
+        document.querySelector(".yoq_bol_span1").style = "display:none"
+        var b = hisob_masiv
+        console.log(b);
+        for (let i = 0; i <  1; i++) {
+        var inp1 = document.querySelector(".mlp1").value
+        var inp2 = document.querySelector(".mlp2").value
+        var inp3 = document.querySelector(".mlp3").value
+        var hisob=(inp1 * inp2 * inp3)
+        console.log(inp1);
+        } 
+         b.push({hisob})
+        setHisob_massiv(b)
+
+    }
+        const [key1,setKey1] = useState()
+        var kod = key1
+        
     
   return (
     <div>
@@ -125,8 +181,7 @@ export default function Kankulyator() {
         <div className="kal_header">
             <div className="kal_header1">
                 {kanmap.map((item,key)=>{
-                    return <div onClick={()=>{ruxsat(key);ozgar(key)}} key={key} className="kal_header_card" >
-                        {console.log(key)}
+                    return <div onClick={()=>{ruxsat(key);ozgar(key); setKey1(key)}} key={key} className="kal_header_card" >
                         <div className="kal_header_card1">
                             <img className='chek_info' src={IMG6} alt="" />
                             <div className="kal_header_card_dumaloq">
@@ -143,7 +198,10 @@ export default function Kankulyator() {
                 })}
             </div>
             <div className="kal_header2">
-                {id1 === 1 ? <div className="kal_header2_1">
+               {id1 === 1 ? <div className="kal_header2_map1">
+                {capitan1.map(item=>{
+                    return <>
+                    {id1 === item.id1 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,м:</span><br />
                     <input type="number" className='inp1_1' id="inp1" placeholder='6'/>
@@ -160,25 +218,34 @@ export default function Kankulyator() {
                         <span>Марка бетона:</span><br />
                         <select className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>
+                                return <option className='option1234' key={key} value="1">{item.title}</option>
                               
                             })}
                         </select>
                        
                     </div>
+                     </div>: ""}
+                    </>
+                })}
+                 <div className="kal_header3">
+                <img onClick={()=>{otash()}} src={IMG7} alt="" />
+            </div>
                 </div> : ""}
-                {id1 === 2 ? <div className="kal_header2_1">
+               {id1 === 2 ? <div className="kal_header2_map1">
+               {capitan2.map(item=>{
+                    return <>
+                    {id1 === item.id1 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,см:</span><br />
-                    <input type="number" className='inp1_1' id="inp1" placeholder='6'/>
+                    <input type="number" className='inp1_1 mlp1' id="inp1" placeholder='6'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Длина,см:</span><br />
-                    <input type="number" className='inp1_1' id="inp2" placeholder='8'/>
+                    <input type="number" className='inp1_1 mlp2' id="inp2" placeholder='8'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Толщина,см:</span><br />
-                    <input type="number" className='inp1_1' id="inp3" placeholder='2'/>
+                    <input type="number" className='inp1_1 mlp3' id="inp3" placeholder='2'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Пескобетон,кг:</span><br />
@@ -200,8 +267,17 @@ export default function Kankulyator() {
                         </select>
                        
                     </div>
-                </div> : ""}
-                {id1 === 3 ? <div className="kal_header2_1">
+                    </div> : ""}
+                    </>
+                })}
+                 <div className="kal_header3">
+                <img onClick={()=>{otash1()}} src={IMG7} alt="" />
+            </div>
+               </div> : ''}
+              {id1 === 3 ?  <div className="kal_header2_map1">
+               {capitan3.map(item=>{
+                    return <>
+                    {id1 === item.id1 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,м:</span><br />
                     <input type="number" className='inp1_1' id="inp1" placeholder='6'/>
@@ -235,7 +311,16 @@ export default function Kankulyator() {
                     </div>
                     </div>
                 </div> : ""}
-                {id1 === 4 ? <div className="kal_header2_1">
+                    </>
+                })}
+                 <div className="kal_header3 kal_header3_kop_1">
+                <img onClick={()=>{otash3()}} src={IMG7} alt="" />
+            </div>
+               </div> : ""}
+             {id1 === 4 ?  <div className="kal_header2_map1">
+              {capitan4.map(item=>{
+                    return <>
+                    {id1 === item.id4 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,м:</span><br />
                     <input type="number" className='inp1_1' id="inp1" placeholder='6'/>
@@ -259,10 +344,15 @@ export default function Kankulyator() {
                        
                     </div>
                 </div> : ""}
+                    </>
+                })}
+                 <div className="kal_header3">
+                <img onClick={()=>{otash4()}} src={IMG7} alt="" />
             </div>
-            <div className="kal_header3">
-                <img src={IMG7} alt="" />
+              </div> : ""}
+                
             </div>
+           
             <div className="kal_header4">
                 <div className="kal_header4_sar">
                     <span>Заложить потери:</span><img className='kal_header4_sar_img' src={IMG6} alt="" />
@@ -289,15 +379,22 @@ export default function Kankulyator() {
             </div>
             <div className="kal_header5">
                 <div className="kal_header_but">
-                <button>Рассчитать стоимость</button>
+                <button onClick={()=>{kan_hisob()}}>Рассчитать стоимость</button>
                 </div>
                 <div className="kal_header_span">
                     <span className='span707'>Кол-во м3:</span><br />
-                    <span className='span440'>20 000 м3</span>
+                    <span className='span440'><span className='yoq_bol_span1'>0,0 </span>
+                        {hisob_masiv.map(item=>{
+                            return <>
+                            {item.hisob}
+                            </>
+                        })}
+                          <span> м3</span>
+                    </span>
                 </div>
                 <div className="kal_header_vid">
                     <span className='span707'>Вид бетона:</span><br />
-                    <span className='span441'>Гравийный бетон <br /> М150 B12,5 F100 W4</span>
+                    <span className='span441'>{kod === 0 ? "Фундамент по своим размерам" : kod === 1 ? "Пескобетон на стяжку": kod === 2 ? "Ленточный фундамент" : kod === 3 ? "Монолитная плита фундамента":""} <br /> </span>
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
