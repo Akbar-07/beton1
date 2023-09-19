@@ -149,7 +149,6 @@ function chiqaqol3(){
     }else{
        document.querySelector(".akardon-text-joyda3 p").style.color="black";
     }
-    document.querySelector("#zakaz-bt").style.height="3100px";
 }
 function pastarap(){
     document.querySelector(".beton-blcok5").style=`border:1.5px solid  #FFCB13`
@@ -544,15 +543,14 @@ function eeeeee3(){
     document.querySelector(".sariqblaaa-media11").style=` background:white;`
 }
 
-function ochirday1(){
-document.querySelector("#day-1").style=`display:none`
-}
+
 function ochirday2(){
     document.querySelector("#day-2").style=`display:none`
 }
 
 export default function Prozakaz() {
-      const [startDate, setStartDate] = useState(new Date());
+      const [startDate, setStartDate] = useState([{date:new Date(),value:20}]);
+      const [startDate2, setStartDate2] =useState(new Date());
 const [data,setData] =useState(0)
 const [data1,setData1] =useState(0)
 const [data2,setData2] =useState(0)
@@ -579,7 +577,11 @@ useEffect(()=>{
        
     })
 })
-
+function ochirday1(key){
+var a=startDate
+a.splice(key,1)
+setStartDate(a)
+}
 const [mashina3, setMashina3] = useState([])
 useEffect(()=>{
     axios.get(`${url}/api/mashina`).then(res=>{
@@ -619,8 +621,11 @@ useEffect(()=>{
     })
     },[])
 
-    const onChange = startDate =>{
-        setStartDate(startDate)
+    const onChange = startDate1 =>{
+      var a=startDate
+console.log(startDate);
+      a.push({date:startDate1,value:20})
+        setStartDate(a)
     }
   return (
 <div>
@@ -1090,11 +1095,12 @@ useEffect(()=>{
                             </div>
                             <div className="kalendar-joy-justify-end">
                                 <div className="kotta-data-vremiyanaa">
-                                <div className="xaxa-skfkdkf" id='day-1'>
+                                    {startDate.map((item,key)=>{
+                                 return  <div key={key} className="xaxa-skfkdkf" id='day-1'>
                                     <div className="data-srokkkk">
-                                        <p>{startDate.getDate()}.{startDate.getMonth()}.{startDate.getFullYear()}</p>
+                                        <p>{item.date.getDate()}.{item.date.getMonth()}.{item.date.getFullYear()}</p>
                                     </div>
-                                    <div className="xxxx-data" onClick={()=>ochirday1()}>
+                                    <div className="xxxx-data" onClick={()=>ochirday1(key)}>
                                        <span>x</span>
                                     </div>
                                     <div className="data-srokkkk">
@@ -1105,29 +1111,16 @@ useEffect(()=>{
                                         </select>
                                         </div>
                                         
-                                </div>
-                                <div className="xaxa-skfkdkf" id='day-2'>
-                                    <div className="data-srokkkk">
-                                        <p>{startDate.getDate()}.{startDate.getMonth()}.{startDate.getFullYear()}</p>
-                                    </div>
-                                    <div className="xxxx-data" onClick={()=>ochirday2()}>
-                                        <span>x</span>
-                                    </div>
-                                    <div className="data-srokkkk">
-                                        <select>
-                                            <option value="">20м3</option>
-                                            <option value="">40м3</option>
-                                            <option value="">30м3</option>
-                                        </select>
-                                        </div>
-                                        
-                                </div>
+                                </div>      
+                                    })}
+                              
+                     
                                 </div>
                                 <div className="data-pricers">
                                                                 <DatePicker
-      selected={startDate}
+      selected={startDate2}
       onChange={onChange}
-      value={startDate}
+      value={startDate2}
       inline
     />
                                 </div>
@@ -1772,11 +1765,6 @@ useEffect(()=>{
                                 return(<option   className='opticonn' value={item.id}>{item.m3}м3</option>
                                 )
                                             })}
-                    {/* 
-  <option className='opticonn'  value="2">3м3</option>
-  <option className='opticonn' value="3">5м3</option>
-  <option className='opticonn' value="4">7м3</option>
-  <option className='opticonn' value="5">9м3</option> */}
                    </select>
                     </div>
 
@@ -1822,217 +1810,222 @@ useEffect(()=>{
             </div>
         </div>
     </div>
-   
-{page===1?(<div><div className="samiy-pasledniy-joy-oplata">
-    <div className="letsgo-oplata-ye">
-        <div className="bla-arrowe-ichi-endi">
-            <h2>Заказ</h2>
-            <div className="zakaz-img-info-joi">
-                <div className="zakaz-img-info-img">
-                    <img src={iconbla} alt="" />
-                </div>
-                <div className="zakaz-img-info-text">
-                    <h4>Гравийный бетон М150 B12,5 F100 W4</h4>
-                    <p>Наименование опции, наименование опции, наименование опции </p>
-                </div>
-            </div>
-            <div className="zakaz-line-info"></div>
-            <div className="stoimas-betona">
-                <div className="buyagaona-nax">
-                <div className="stoimas-bet-block1">
-                    <h5>Стоимость бетона:</h5>
-                    <p>5 000 ₽</p>
-                </div>
-                <div className="stoimas-bet-block1">
-                    <h5>Стоимость бетона:</h5>
-                    <p>5 000 ₽</p>
-                </div>
-                <div className="stoimas-bet-block1">
-                    <h5>Стоимость бетона:</h5>
-                    <p>5 000 ₽</p>
-                </div>
-                </div>
-                <div className="stoimas-bet-block2">
-                    <h5>Итого:</h5>
-                    <p>5 000 ₽</p>
-                    <h5 id='sitr'>Итого с учетом бонусов/скидки:</h5>
-                    <p id='sitr2'>5 000 ₽</p>
-                </div>
-            </div>
-            <div className="bonus-i-oplata-joy-ga-keldi">
-                <div className="binusinput-block1">
-                    <div className="sika_f">
-                    <p>Бонусы:</p>
-                    <p>Списать бонусов: </p>
-                    </div>
-                    <div className="binus-block-inp-g_l">
-                        <div className="blc_ino">
-                            <button><img src={prima} alt="" />12 000 бонусов</button>
-                        </div>
-                        <div className="blc_ino1">
-                        <input type="number" />
-                        </div>
-                    </div>
-                    <div className="pasroda-oplt-ino">
-                        <button>Списать бонусы</button>
-                    </div>
-                    <div className="pasroda-oplt-ino">
-                        <input type="number" placeholder='Код из смс' />
-                    </div>
-                    <div className="pasroda-oplt-ino">
-                        <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
-                        <p><a href="#">Отправить повторно</a></p>
-                    </div>
-                    <div className="lalalala-nom-oylab-topishi-ozi-azobbbb">
-                    <div className="sika_f1">
-                    <p>Промокод</p>
-                    </div>
-                    <div className="yana-inp-bla-zaib0suk">
-                        <input type="number"  placeholder='Поле для ввода'/>
-                    </div>
-                    
-                    <div className="oxiri-qoldi-bla-nu-tugadi">
-                        <div className="alsdasdsadasdsadsadsa">
-                        <img src={prima} alt="" /><span>будет начислено бонусов: <br />
-(2% от суммы)</span>
-                        </div>
-<div className="bla-pasda-sotvolish-btn">
-                        <button onClick={()=>setPage(2)}>Заказать</button>
-                    </div>
-                    </div>
-                
-                    </div>
-                    
-                </div>
-                <div className="binus-davam-left-tarap">
-                <div className="sika_f1">
-                    <p>Промокод</p>
-                    </div>
-                    <div className="yana-inp-bla-zaib0suk">
-                        <input type="number"  placeholder='Поле для ввода'/>
-                    </div>
-                </div>
-                <div className="binus-davam-left-tarap">
-                    <div className="oxiri-qoldi-bla-nu-tugadi">
-                        <img src={prima} alt="" /><span>будет начислено бонусов: <br />
-(2% от суммы)</span>
-                    </div>
-                    <div className="bla-pasda-sotvolish-btn">
-                        <button onClick={()=>setPage(2)}>Заказать</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="zakaz-futer-mobil-versia">
-            <div className="zakaz-futer-ichi">
-                <div className="zakaz-nazadd">
-                    <img src={nazad} alt="" /><span>Назад</span>
-                </div>
-                <h4>Заказ</h4>
-                <div className="zakaz-futer-info-block1">
-                    <div className="zakaz-img-foter">
-                        <img src={iconbla} alt="" />
-                    </div>
-                    <div className="zaazk-text-foter">
-                    <p>Гравийный бетон  <br /> М150 B12,5 F100 W4</p>
-                    </div>
-                </div>
-                <div className="neroshiltalsao">
-                    <p>Наименование опции, наименование опции</p>
-                </div>
-                <div className="zakaz-line-info"></div>
-                <div className="zaakz-narxla-joy-xz">
-                    <div className="zakaz-blockkk-1-pitaniya">
-                        <div className="narxla-bilan-tanishib-cqasmi">
-                            <p>Стоимость бетона:</p>
-                            <h3>5 000 ₽</h3>
-                        </div>
-                        <div className="narxla-bilan-tanishib-cqasmi">
-                            <p>Стоимость бетона:</p>
-                            <h3>5 000 ₽</h3>
-                        </div>
-                        <div className="narxla-bilan-tanishib-cqasmi">
-                            <p>Стоимость бетона:</p>
-                            <h3>5 000 ₽</h3>
-                        </div>
-                    </div>
-                    <div className="zakaz-blockkk-2-pitaniya">
-                    <div className="narxla-bilan-tanishib-cqasmi1">
-                            <p>Итого:</p>
-                            <h3>5 000 ₽</h3>
-                        </div>
-                    </div>
-                </div>
-                <div className="zakaz-line-info"></div>
-                <div className="qanqadir-bonus-bor-elan-zakaz">
-                    <div className="qanasdsdsds-img">
-                        <img src={prima} alt="" />
-                    </div>
-                    <div className="qanqqdqqwwq-text">
-                        <p>будет начислено бонусов: <br />
-<span>(2% от суммы)</span></p>
-                    </div>
-                </div>
-                <div className="zakaz-line-info"></div>
-                <div className="zakaz-promakod">
-                    <h3>Промокод</h3>
-                    <div className="zakaz-promakod-inpu">
-                        <input type="number" placeholder='Поле для ввода' />
-                    </div>
-                </div>
-                <div className="zakaz-line-info"></div>
-                <div className="yana-qanaqadir-skitkalabor">
-                    <div className="bu-tepa-qismi-skitkala">
-                        <p>Бонусы</p>
-                        <div className="asmdalmfalkmfkldfl">
-                            <img src={prima} alt="" /><span>12 000 <br />
-бонусов</span>
-                        </div>
-                    </div>
-                    <div className="bonus-yechsa-bolarkan-vay">
-                        <p>Списать бонусов: </p>
-                        <div className="dsadasdasdasdasdasd">
-                            <input type="number" />
-                        </div>
-                    </div>
-                </div>
-                <div className="yangi-batton-btn1">
-                    <button>Списать бонусы</button>
-                </div>
-                <div className="pasroda-oplt-ino">
-                        <input type="number" placeholder='Код из смс' />
-                    </div>
-                    <div className="pasroda-oplt-ino">
-                        <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
-                        <p><a href="#">Отправить повторно</a></p>
-                    </div>
-                    <div className="zakaz-line-info" id='laadassadsadsa'></div>
-                    <div className="oxirrriirirri">
-                        <p>Итого с учетом бонусов/скидки:</p>
-                        <h4>5 000 ₽</h4>
 
-                        <button onClick={()=>setPage(2)}>Заказать</button>
-                    </div>
-            </div>
-        </div>
+
+{page===1?(<div><div className="samiy-pasledniy-joy-oplata">
+   <div className="letsgo-oplata-ye">
+       <div className="bla-arrowe-ichi-endi">
+           <h2>Заказ</h2>
+           <div className="zakaz-img-info-joi">
+               <div className="zakaz-img-info-img">
+                   <img src={iconbla} alt="" />
+               </div>
+               <div className="zakaz-img-info-text">
+                   <h4>Гравийный бетон М150 B12,5 F100 W4</h4>
+                   <p>Наименование опции, наименование опции, наименование опции </p>
+               </div>
+           </div>
+           <div className="zakaz-line-info"></div>
+           <div className="stoimas-betona">
+               <div className="buyagaona-nax">
+               <div className="stoimas-bet-block1">
+                   <h5>Стоимость бетона:</h5>
+                   <p>5 000 ₽</p>
+               </div>
+               <div className="stoimas-bet-block1">
+                   <h5>Стоимость бетона:</h5>
+                   <p>5 000 ₽</p>
+               </div>
+               <div className="stoimas-bet-block1">
+                   <h5>Стоимость бетона:</h5>
+                   <p>5 000 ₽</p>
+               </div>
+               </div>
+               <div className="stoimas-bet-block2">
+                   <h5>Итого:</h5>
+                   <p>5 000 ₽</p>
+                   <h5 id='sitr'>Итого с учетом бонусов/скидки:</h5>
+                   <p id='sitr2'>5 000 ₽</p>
+               </div>
+           </div>
+           <div className="bonus-i-oplata-joy-ga-keldi">
+               <div className="binusinput-block1">
+                   <div className="sika_f">
+                   <p>Бонусы:</p>
+                   <p>Списать бонусов: </p>
+                   </div>
+                   <div className="binus-block-inp-g_l">
+                       <div className="blc_ino">
+                           <button><img src={prima} alt="" />12 000 бонусов</button>
+                       </div>
+                       <div className="blc_ino1">
+                       <input type="number" />
+                       </div>
+                   </div>
+                   <div className="pasroda-oplt-ino">
+                       <button>Списать бонусы</button>
+                   </div>
+                   <div className="pasroda-oplt-ino">
+                       <input type="number" placeholder='Код из смс' />
+                   </div>
+                   <div className="pasroda-oplt-ino">
+                       <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
+                       <p><a href="#">Отправить повторно</a></p>
+                   </div>
+                   <div className="lalalala-nom-oylab-topishi-ozi-azobbbb">
+                   <div className="sika_f1">
+                   <p>Промокод</p>
+                   </div>
+                   <div className="yana-inp-bla-zaib0suk">
+                       <input type="number"  placeholder='Поле для ввода'/>
+                   </div>
+                   
+                   <div className="oxiri-qoldi-bla-nu-tugadi">
+                       <div className="alsdasdsadasdsadsadsa">
+                       <img src={prima} alt="" /><span>будет начислено бонусов: <br />
+(2% от суммы)</span>
+                       </div>
+<div className="bla-pasda-sotvolish-btn">
+                       <button onClick={()=>setPage(2)}>Заказать</button>
+                   </div>
+                   </div>
+               
+                   </div>
+                   
+               </div>
+               <div className="binus-davam-left-tarap">
+               <div className="sika_f1">
+                   <p>Промокод</p>
+                   </div>
+                   <div className="yana-inp-bla-zaib0suk">
+                       <input type="number"  placeholder='Поле для ввода'/>
+                   </div>
+               </div>
+               <div className="binus-davam-left-tarap">
+                   <div className="oxiri-qoldi-bla-nu-tugadi">
+                       <img src={prima} alt="" /><span>будет начислено бонусов: <br />
+(2% от суммы)</span>
+
+</div>
+                   <div className="bla-pasda-sotvolish-btn">
+                       <button onClick={()=>setPage(2)}>Заказать</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div className="zakaz-futer-mobil-versia">
+           <div className="zakaz-futer-ichi">
+               <div className="zakaz-nazadd">
+                   <img src={nazad} alt="" /><span>Назад</span>
+               </div>
+               <h4>Заказ</h4>
+               <div className="zakaz-futer-info-block1">
+                   <div className="zakaz-img-foter">
+                       <img src={iconbla} alt="" />
+                   </div>
+                   <div className="zaazk-text-foter">
+                   <p>Гравийный бетон  <br /> М150 B12,5 F100 W4</p>
+                   </div>
+               </div>
+               <div className="neroshiltalsao">
+                   <p>Наименование опции, наименование опции</p>
+               </div>
+               <div className="zakaz-line-info"></div>
+               <div className="zaakz-narxla-joy-xz">
+                   <div className="zakaz-blockkk-1-pitaniya">
+                       <div className="narxla-bilan-tanishib-cqasmi">
+                           <p>Стоимость бетона:</p>
+                           <h3>5 000 ₽</h3>
+                       </div>
+                       <div className="narxla-bilan-tanishib-cqasmi">
+                           <p>Стоимость бетона:</p>
+                           <h3>5 000 ₽</h3>
+                       </div>
+                       <div className="narxla-bilan-tanishib-cqasmi">
+                           <p>Стоимость бетона:</p>
+                           <h3>5 000 ₽</h3>
+                       </div>
+                   </div>
+                   <div className="zakaz-blockkk-2-pitaniya">
+                   <div className="narxla-bilan-tanishib-cqasmi1">
+                           <p>Итого:</p>
+                           <h3>5 000 ₽</h3>
+                       </div>
+                   </div>
+               </div>
+               <div className="zakaz-line-info"></div>
+               <div className="qanqadir-bonus-bor-elan-zakaz">
+                   <div className="qanasdsdsds-img">
+                       <img src={prima} alt="" />
+                   </div>
+                   <div className="qanqqdqqwwq-text">
+                       <p>будет начислено бонусов: <br />
+<span>(2% от суммы)</span></p>
+                   </div>
+               </div>
+               <div className="zakaz-line-info"></div>
+               <div className="zakaz-promakod">
+                   <h3>Промокод</h3>
+                   <div className="zakaz-promakod-inpu">
+                       <input type="number" placeholder='Поле для ввода' />
+                   </div>
+               </div>
+               <div className="zakaz-line-info"></div>
+               <div className="yana-qanaqadir-skitkalabor">
+                   <div className="bu-tepa-qismi-skitkala">
+                       <p>Бонусы</p>
+                       <div className="asmdalmfalkmfkldfl">
+                           <img src={prima} alt="" /><span>12 000 <br />
+бонусов</span>
+                       </div>
+                   </div>
+                   <div className="bonus-yechsa-bolarkan-vay">
+                       <p>Списать бонусов: </p>
+                       <div className="dsadasdasdasdasdasd">
+                           <input type="number" />
+                       </div>
+                   </div>
+               </div>
+               <div className="yangi-batton-btn1">
+                   <button>Списать бонусы</button>
+               </div>
+               <div className="pasroda-oplt-ino">
+                       <input type="number" placeholder='Код из смс' />
+                   </div>
+                   <div className="pasroda-oplt-ino">
+                       <p>Отправлен на номер <span>+7 800 900 80 90</span></p>
+                       <p><a href="#">Отправить повторно</a></p>
+                   </div>
+
+
+<div className="zakaz-line-info" id='laadassadsadsa'></div>
+                   <div className="oxirrriirirri">
+                       <p>Итого с учетом бонусов/скидки:</p>
+                       <h4>5 000 ₽</h4>
+
+                       <button onClick={()=>setPage(2)}>Заказать</button>
+                   </div>
+           </div>
+       </div>
+   </div>
+  </div></div>):(page===2?(<div>
+    <div className="samiy-pasledniy-joy-oplata5">
+       <div className="letsgo-oplata-ye12">
+           <div className="bla-arrowe-ichi-endiii">
+               <div className="zarabotuuuuuu">
+                   <h3>Спасибо за заказ!</h3>
+                   <p>Уже начали обработку.</p>
+                   <button>Заказать еще</button>
+               </div>
+               <div className="kamazzzz-yeditttt-russin">
+                   <img src={bmw} alt="" />
+               </div>
+           </div>
+       </div>
     </div>
-   </div></div>):(page===2?(<div>
-     <div className="samiy-pasledniy-joy-oplata5">
-        <div className="letsgo-oplata-ye12">
-            <div className="bla-arrowe-ichi-endiii">
-                <div className="zarabotuuuuuu">
-                    <h3>Спасибо за заказ!</h3>
-                    <p>Уже начали обработку.</p>
-                    <button>Заказать еще</button>
-                </div>
-                <div className="kamazzzz-yeditttt-russin">
-                    <img src={bmw} alt="" />
-                </div>
-            </div>
-        </div>
-     </div>
-   </div>):(""))}
-  
+  </div>):(""))}
+
+
 </div>
   )
 }
