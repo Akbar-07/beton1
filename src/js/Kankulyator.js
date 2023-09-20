@@ -140,20 +140,22 @@ export default function Kankulyator() {
 
     } 
 
-    const [hisob_masiv,setHisob_massiv] = useState([{}])
+    const [hisob_masiv,setHisob_massiv] = useState(0)
     var kan_hisob = ()=>{
+        
         document.querySelector(".yoq_bol_span1").style = "display:none"
         var b = hisob_masiv
-        console.log(b);
-        for (let i = 0; i <  1; i++) {
-        var inp1 = document.querySelector(".mlp1").value
-        var inp2 = document.querySelector(".mlp2").value
-        var inp3 = document.querySelector(".mlp3").value
-        var hisob=(inp1 * inp2 * inp3)
-        console.log(inp1);
+        var hisob=0
+        for (let i=0; i < document.querySelectorAll(".mlp1").length; i++) {
+        var inp1 = document.querySelectorAll(".mlp1")[i].value
+        var inp2 = document.querySelectorAll(".mlp2")[i].value
+        var inp3 = document.querySelectorAll(".mlp3")[i].value
+          hisob=hisob+(inp1 * inp2 * inp3)
         } 
-         b.push({hisob})
-        setHisob_massiv(b)
+        b=[{}]
+        // var foiz =  (hisob * 3) / 100
+          b.push({hisob})
+        setHisob_massiv(hisob)
 
     }
         const [key1,setKey1] = useState()
@@ -204,21 +206,21 @@ export default function Kankulyator() {
                     {id1 === item.id1 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp1" placeholder='6'/>
+                    <input type="number" className='inp1_1 mlp1' id="inp1" placeholder='6'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Длина,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp2" placeholder='8'/>
+                    <input type="number" className='inp1_1 mlp2' id="inp2" placeholder='8'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Высота ленты,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp3" placeholder='2'/>
+                    <input type="number" className='inp1_1 mlp3' id="inp3" placeholder='2'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select className='select_yangi'>
+                        <select onChange={(e)=>{console.log(item.name);sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option className='option1234' key={key} value="1">{item.title}</option>
+                                return <option className='option1234' key={key} value={item.name}>{item.title}</option>
                               
                             })}
                         </select>
@@ -251,9 +253,8 @@ export default function Kankulyator() {
                         <span>Пескобетон,кг:</span><br />
                         <select className='select_yangi1'>
                             {sel1.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>,
-                                <option key={key} value="2">{item.title}</option>,
-                                <option key={key} value="3">{item.title}</option>
+                                return <option key={key} value="1">{item.title}</option>
+                                
                             })}
                         </select>
                     </div>
@@ -280,19 +281,19 @@ export default function Kankulyator() {
                     {id1 === item.id1 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp1" placeholder='6'/>
+                    <input type="number" className='inp1_1 mlp1' id="inp1" placeholder='6'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Длина,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp2" placeholder='8'/>
+                    <input type="number" className='inp1_1 mlp2' id="inp2" placeholder='8'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Подошва ленты,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp3" placeholder='2'/>
+                    <input type="number" className='inp1_1 mlp3' id="inp3" placeholder='2'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Высота ленты,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp5" placeholder='2'/>
+                    <input type="number" className='inp1_1 mlp4' id="inp5" placeholder='2'/>
                     </div>
                     <div className="lobila">
                     <div className="kal_inp1">
@@ -323,15 +324,15 @@ export default function Kankulyator() {
                     {id1 === item.id4 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp1" placeholder='6'/>
+                    <input type="number" className='inp1_1 mlp1' id="inp1" placeholder='6'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Длина,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp2" placeholder='8'/>
+                    <input type="number" className='inp1_1 mlp2' id="inp2" placeholder='8'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Высота ленты,м:</span><br />
-                    <input type="number" className='inp1_1' id="inp3" placeholder='2'/>
+                    <input type="number" className='inp1_1 mlp3' id="inp3" placeholder='2'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
@@ -383,18 +384,14 @@ export default function Kankulyator() {
                 </div>
                 <div className="kal_header_span">
                     <span className='span707'>Кол-во м3:</span><br />
-                    <span className='span440'><span className='yoq_bol_span1'>0,0 </span>
-                        {hisob_masiv.map(item=>{
-                            return <>
-                            {item.hisob}
-                            </>
-                        })}
+                    <span className='span440'><span className='yoq_bol_span1'> </span>
+                        {hisob_masiv}
                           <span> м3</span>
                     </span>
                 </div>
                 <div className="kal_header_vid">
                     <span className='span707'>Вид бетона:</span><br />
-                    <span className='span441'>{kod === 0 ? "Фундамент по своим размерам" : kod === 1 ? "Пескобетон на стяжку": kod === 2 ? "Ленточный фундамент" : kod === 3 ? "Монолитная плита фундамента":""} <br /> </span>
+                    <span className='span441'>{kod === 0 ? "Фундамент по своим размерам" : kod === 1 ? "Пескобетон на стяжку": kod === 2 ? "Ленточный фундамент" : kod === 3 ? "Монолитная плита фундамента":""} <br />{sessionStorage.getItem("Швинг")}</span>
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
