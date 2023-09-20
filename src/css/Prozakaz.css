@@ -5,7 +5,6 @@
 #zakaz-bt{
     background: #f8f7f7ee;
     width: 100%;
-    height: 2900px ;
     display: flex;
     justify-content: center;
 }
@@ -30,7 +29,6 @@ body{
 }
 .stage-1-zakaz{
     width: 100%;
-    height: 121px;
     margin-top: 30px;
 }
 .stage-1-zakaz h2{
@@ -164,7 +162,6 @@ color: black;
     }
     .biton-prizvoditel{
         width: 100%;
-        height: 319px;
         margin-top: 40px;
         margin-bottom: 20px;
     }
@@ -1826,7 +1823,6 @@ cursor: pointer;
     }
     .zakaz-beton-ichi {
         width: 1006px;
-        height: 100px;
         margin: auto;
     }
     .beton-blcok {
@@ -1905,7 +1901,6 @@ cursor: pointer;
     }
     .zakaz-beton-ichi {
         width: 900px;
-        height: 100px;
         margin: auto;
     }
     .beton-blcok8 {
@@ -2537,7 +2532,6 @@ letter-spacing: 0em;
     }
     .zakaz-beton-glav {
         width: 700px;
-        height: 3100px !important ;
         border-radius: 12px !important;
     }
     .zakaz-beton-ichi {
