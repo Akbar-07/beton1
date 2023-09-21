@@ -602,9 +602,9 @@ useEffect(()=>{
 useEffect(()=>{
     axios.get('http://siriyuuc.beget.tech/api/tarif').then(res=>{
         setTarif(res.data)
-    }).catch(err=>{
-       
-    })
+    }).catch(err=>{})
+    
+
 })
 
 useEffect(()=>{
@@ -627,6 +627,8 @@ console.log(startDate);
       a.push({date:startDate1,value:20})
         setStartDate(a)
     }
+
+    
   return (
 <div>
     <Navbar/>
