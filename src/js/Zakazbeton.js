@@ -429,12 +429,18 @@ const [data5,setData5] =useState(0)
     },
   ])
   const [zag, setZag] = useState(1)
+  const [productsId, setProductsId] = useState()
+  const [products, setProducts] = useState([])
 
   function global2(){
+    axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+        setProducts(res.data)
+    }).catch(err=>{})
     document.querySelector(".zakaz_kvadrat_zagruska").style = "margin-top: 180px;"
     setZag(2) 
    }
-  function yoqil(id){
+  function yoqil(id,items){
+    setProductsId(items.id)
     for (let i = 0; i < document.querySelectorAll(".card_ptich_dumaloq_ptich").length; i++) {
       if(id === i){
         document.querySelectorAll(".card_ptich_dumaloq_ptich")[i].style = "display:block;" 
@@ -520,6 +526,19 @@ useEffect(()=>{
     })
 })
 
+function FilterPorduct(e){
+var m5=e
+var m50=m5==1?"m50":m5==2?"M200":m5==3?"m400":""
+const Filter=marka1.filter(item=>item.title.includes(m50.slice(1)))
+
+axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+    Filter.map(filter1=>{
+        const Filter1=res.data.filter(item=>item.allmarka.id==filter1.id)
+        setProducts(Filter1)
+    })
+}).catch(err=>{})
+}
+
 
 
   return (
@@ -535,7 +554,7 @@ useEffect(()=>{
            :
            <div key={key} className="zakaz_kvadrat_map_card">   
               <div className="card_ptich">
-                <div onClick={()=>{yoqil(key);console.log(item.image,"asad")}} className="card_ptich_dumaloq">
+                <div onClick={()=>{yoqil(key,item);console.log(item.image,"asad")}} className="card_ptich_dumaloq">
                   <BsCheckLg className='card_ptich_dumaloq_ptich'/>
                 </div>
               </div>
@@ -590,7 +609,7 @@ useEffect(()=>{
             {/* <span>М200</span>
             <span>М400</span> */}
           </div>
-          <input min={1} max={3} className='range1' type="range" name="" id="" />
+          <input min={1} max={3}  className='range1' type="range" name="" onChange={(e)=>FilterPorduct(e.target.value)} />
         </div>
         <div className="eng-kottade-ulani-ushab-turadi da_boladi">
                         <div className="eng-kottade-scrol eng-kottade-scrol1">
@@ -605,13 +624,18 @@ useEffect(()=>{
                             </thead>
 
           <tbody>
+            {products.map(item=>{
+                return(
             <tr className='tr_1'>
               <th><img src={kkk} alt="" /></th>
-              <th className='pasqismi-narx-joy-zz'>М200</th>
-              <th className='pasqismi-opessaniya'>Наименование опции</th>
-              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
-            </tr>
-            <tr className='tr_1'>
+              <th className='pasqismi-narx-joy-zz'>{item.allmarka.title}</th>
+              <th className='pasqismi-opessaniya'>{item.description}</th>{/* Наименование опции  */}
+              <th className='pasqismi-narx-joy-zz'>{item.s3_sena}</th>
+            </tr> 
+                )
+            })}
+           
+            {/* <tr className='tr_1'>
               <th><img src={logo} alt="" /></th>
               <th className='pasqismi-narx-joy-zz'>М200</th>
               <th className='pasqismi-opessaniya'>Наименование опции</th>
@@ -658,7 +682,7 @@ useEffect(()=>{
               <th className='pasqismi-narx-joy-zz'>М200</th>
               <th className='pasqismi-opessaniya'>Наименование опции</th>
               <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
-            </tr>
+            </tr> */}
           </tbody>
         </table>
             </div>
@@ -676,8 +700,8 @@ useEffect(()=>{
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="akardon-pasdia-chiqadi-but">
-                                    <button>П3</button>
-                                    <button>П4</button>
+                                    <button onClick={()=>PP(1)}>П3</button>
+                                    <button onClick={()=>PP(2)}>П4</button>
                                 </div>
                             </div>
                             <div className="akardion-pro-zakazz">
