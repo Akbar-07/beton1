@@ -813,6 +813,20 @@ transition:.3s ;
         transition: .3s;
     }
 }
+@media(max-width:1300px){
+    .kal_header_span{
+        width:100px !important;
+    }
+    .kal_header_vid{
+        width: 225px !important;
+    }
+    .span440 {
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        top: 10px;
+    }
+}
 @media(max-width:1050px){
     .kal_header{
         width: 500px;
@@ -991,18 +1005,18 @@ transition:.3s ;
         margin-top: 35px;
     }
     .kal_header_span{
-        width: max-content;
+        width: 116px;
         margin: auto;
         margin-top: 30px;
         position: relative;
-        right: 104px;
+        right: 90px;
     }
     .kal_header_vid{
-        width: max-content;
+        width: 230px;
         margin: auto;
         margin-top: 20px;
         position: relative;
-        right: 64px;
+        right: 34px;
     }
     .kal_header_narxi{
         width: max-content;
@@ -1071,8 +1085,25 @@ transition:.3s ;
         font-family: 'Montserrat', sans-serif;
         font-family: 'Montserrat Alternates', sans-serif;
     }
+    .select_yangi{
+        width: 305px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: white;
+        box-shadow: 0 9px 9px #00000021;
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Exo 2', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+        
+    }
 }
 @media(max-width:630px){
+  
     .kal_header{
         width: 320px;
         margin: auto;
@@ -1252,25 +1283,25 @@ transition:.3s ;
         margin-top: 35px;
     }
     .kal_header_span{
-        width: max-content;
+        width: 35%;
         margin: auto;
         margin-top: 30px;
         position: relative;
-        right: 104px;
+        right: 91px;
     }
     .kal_header_vid{
-        width: max-content;
+        width: 75%;
         margin: auto;
         margin-top: 20px;
         position: relative;
-        right: 64px;
+        right: 27px;
     }
     .kal_header_narxi{
         width: max-content;
         margin: auto;
         margin-top: 20px;
         position: relative;
-        right: 48px;
+        right: 40px;
     }
     .span707 {
         font-size: 13px;
@@ -1303,7 +1334,7 @@ transition:.3s ;
         top: 0px;
     }
     .select_yangi{
-        width: 300px;
+        width: 305px;
         height: 40px;
         border-radius: 15px;
         border: none;
@@ -1319,7 +1350,7 @@ transition:.3s ;
         
     }
     .select_yangi1{
-        width: 300px;
+        width: 305px;
         height: 40px;
         border-radius: 15px;
         background-color: white;

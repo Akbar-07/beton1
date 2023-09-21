@@ -39,31 +39,38 @@ export default function Kankulyator() {
             name : "Монолитная плита фундамента"
         }
     ])
-    const [id1, setId1] = useState(0)
+    const [id1, setId1] = useState(1)
 
-    let ozgar = (key)=>{
+    var ozgar = (key)=>{
         if(key === 1){
             setId1(2)
             document.querySelector(".kal_header2").style ="width:900px"
+            console.log(key ,"rux1_key");
+            console.log(id1,"rux1_id1");
         }
         else if(key === 2){
             setId1(3)
             document.querySelector(".kal_header2").style ="width:900px"
+            console.log(key ,"rux2_key");
+            console.log(id1,"rux2_id1");
         }
         else if(key === 3){
-            setId1(4)
+            setId1(1)
             document.querySelector(".kal_header2").style ="width:740px"
-            console.log(key);
-            console.log(id1);
+            console.log(key ,"rux3_key");
+            console.log(id1,"rux3_id1");
         }
         else{
             setId1(1)
             document.querySelector(".kal_header2").style ="width:740px"
+            console.log(id1,"z1_id1");
+            console.log(key,"z1_key");
         }
     }
     function ruxsat(id){
         for(let i = 0; i < document.querySelectorAll(".kal_header_card_dumaloq").length; i++){
             if(id === i){
+                console.log(id,"bosh_key_id");
                 document.querySelectorAll(".chek_dumaloq")[i].style = "display:block"
                 document.querySelectorAll(".kal_header_card")[i].style = "border:1px solid #FFCB13"
             }
@@ -73,19 +80,6 @@ export default function Kankulyator() {
             }
         }
         
-    }
-    
-    function radio_och(id){
-        for (let i = 0; i <document.querySelectorAll(".radio_inp").length; i++) {
-            if(id === i){
-                console.log("asad")
-                document.querySelectorAll(".radio_inp")[i].style = "background-color: #FFCB13 !important;"
-            }else{
-                console.log("muz")
-                document.querySelectorAll(".radio_inp")[i].style = "background-color: none !important;"
-            }
-            
-        }
     }
     function glavaga(){
         window.location="/home"
@@ -100,20 +94,35 @@ export default function Kankulyator() {
     })
     const [sel1, setSel1] = useState([
         {
-            title : "salom",
+            title : 20,
         },
         {
-            title : "salom1",
+            title : 30,
         },
         {
-            title : "salom2",
+            title : 50,
+        },
+        {
+            title : 75,
+        },
+        {
+            title : 100,
+        },
+        {
+            title : 120,
+        },
+        {
+            title : 150,
+        },
+        {
+            title : 250,
         }
     ])
     const [capitan2, setCapitan2] = useState([{id1:2}])
     var otash1 = ()=>{
         var a = capitan2
         a.push({id1})
-        console.log(id1);
+        console.log(id1, "id2");
         setCapitan2(a)
     }
     const [capitan1, setCapitan1] = useState([{id1:1}])
@@ -121,14 +130,14 @@ export default function Kankulyator() {
         var a = capitan1
         a.push({id1})
         setCapitan1(a)
-        console.log(id1);
+        console.log(id1,"id1");
     } 
     const [capitan3, setCapitan3] = useState([{id1:3}])
     var otash3 = ()=>{
         var a = capitan3
         a.push({id1})
         setCapitan3(a)
-        console.log(id1);
+        console.log(id1,"id3");
 
     } 
     const [capitan4, setCapitan4] = useState([{id1:4}])
@@ -136,13 +145,24 @@ export default function Kankulyator() {
         var a = capitan4
         a.push({id1})
         setCapitan4(a)
-        console.log(id1);
+        console.log(id1,"id4");
 
     } 
-
+    function radio_och(id){
+        for (let i = 0; i <document.querySelectorAll(".radio_inp").length; i++) {
+            if(id === i){
+                console.log(i,"asad")
+                document.querySelectorAll(".radio_inp")[i].style = "background-color: #FFCB13 !important;"
+            }else{
+                console.log("muz")
+                document.querySelectorAll(".radio_inp")[i].style = "background-color: none !important;"
+            }
+            
+        }
+    }
+    const[kalib, setKalib] = useState(0)
     const [hisob_masiv,setHisob_massiv] = useState(0)
     var kan_hisob = ()=>{
-        
         document.querySelector(".yoq_bol_span1").style = "display:none"
         var b = hisob_masiv
         var hisob=0
@@ -152,16 +172,65 @@ export default function Kankulyator() {
         var inp3 = document.querySelectorAll(".mlp3")[i].value
           hisob=hisob+(inp1 * inp2 * inp3)
         } 
-        b=[{}]
-        // var foiz =  (hisob * 3) / 100
+        b=[{}] 
+        var foiz =  (hisob * kalib) / 100
           b.push({hisob})
-        setHisob_massiv(hisob)
-
+        setHisob_massiv(hisob + foiz)
     }
+    var kan_hisob2 = ()=>{
+        document.querySelector(".yoq_bol_span1").style = "display:none"
+        var b = hisob_masiv
+        var hisob=0
+        for (let i=0; i < document.querySelectorAll(".mlp1").length; i++) {
+        var inp1 = document.querySelectorAll(".mlp1")[i].value
+        var inp2 = document.querySelectorAll(".mlp2")[i].value
+        var inp3 = document.querySelectorAll(".mlp3")[i].value
+        var pes = sessionStorage.getItem("pesbeton")
+        console.log(pes,"pes");
+          hisob=hisob+(inp1 * inp2 * inp3 * pes)
+        } 
+        b=[{}] 
+        var foiz =  (hisob * kalib) / 100
+          b.push({hisob})
+        setHisob_massiv(hisob + foiz)
+    }
+    var kan_hisob3 = ()=>{
+        document.querySelector(".yoq_bol_span1").style = "display:none"
+        var b = hisob_masiv
+        var hisob=0
+        for (let i=0; i < document.querySelectorAll(".mlp1").length; i++) {
+        var inp1 = document.querySelectorAll(".mlp1")[i].value
+        var inp2 = document.querySelectorAll(".mlp2")[i].value
+        var inp3 = document.querySelectorAll(".mlp3")[i].value
+        var inp4 = document.querySelectorAll(".mlp4")[i].value
+          hisob=hisob+(inp1 * inp2 * inp3 * inp4)
+        } 
+        b=[{}] 
+        var foiz =  (hisob * kalib) / 100
+          b.push({hisob})
+        setHisob_massiv(hisob + foiz)
+    }
+    var kan_hisob4 = ()=>{
+        document.querySelector(".yoq_bol_span1").style = "display:none"
+        var b = hisob_masiv
+        var hisob=0
+        for (let i=0; i < document.querySelectorAll(".mlp1").length; i++) {
+        var inp1 = document.querySelectorAll(".mlp1")[i].value
+        var inp2 = document.querySelectorAll(".mlp2")[i].value
+        var inp3 = document.querySelectorAll(".mlp3")[i].value
+          hisob=hisob+(inp1 * inp2 * inp3)
+        } 
+        b=[{}] 
+        var foiz =  (hisob * kalib) / 100
+          b.push({hisob})
+        setHisob_massiv(hisob + foiz)
+    }
+    
         const [key1,setKey1] = useState()
         var kod = key1
-        
-    
+        const [pesbeton,setPes] = useState([{}])
+            
+
   return (
     <div>
         <Navbar/>
@@ -200,7 +269,8 @@ export default function Kankulyator() {
                 })}
             </div>
             <div className="kal_header2">
-               {id1 === 1 ? <div className="kal_header2_map1">
+               {id1 === 1 ?<div className="kal_header2_map1">
+                
                 {capitan1.map(item=>{
                     return <>
                     {id1 === item.id1 ? <div className="kal_header2_1">
@@ -218,7 +288,7 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select onChange={(e)=>{console.log(item.name);sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
+                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
                                 return <option className='option1234' key={key} value={item.name}>{item.title}</option>
                               
@@ -251,22 +321,21 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Пескобетон,кг:</span><br />
-                        <select className='select_yangi1'>
+                        <select onChange={(e)=>{sessionStorage.setItem("pesbeton",e.target.value)}} className='select_yangi1'>
                             {sel1.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>
+                                return <option key={key} value={item.title}>{item.title} кг</option>
                                 
                             })}
                         </select>
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select className='select_yangi'>
+                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>
+                                return <option key={key} value={item.name}>{item.title}</option>
                              
                             })}
                         </select>
-                       
                     </div>
                     </div> : ""}
                     </>
@@ -298,13 +367,12 @@ export default function Kankulyator() {
                     <div className="lobila">
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select className='select_yangi'>
+                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>
+                                return <option key={key} value={item.name}>{item.title}</option>
                            
                             })}
                         </select>
-                       
                     </div>
                     <div className="kal_inp1 kal_inp2_2">
                         <span>Внутренние перегородки</span><br />
@@ -321,7 +389,7 @@ export default function Kankulyator() {
              {id1 === 4 ?  <div className="kal_header2_map1">
               {capitan4.map(item=>{
                     return <>
-                    {id1 === item.id4 ? <div className="kal_header2_1">
+                    {id1 === item.id1 ? <div className="kal_header2_1">
                     <div className="kal_inp1">
                         <span>Ширина,м:</span><br />
                     <input type="number" className='inp1_1 mlp1' id="inp1" placeholder='6'/>
@@ -336,9 +404,9 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select className='select_yangi'>
+                        <select  onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value="1">{item.title}</option>
+                                return <option key={key} value={item.name}>{item.title}</option>
                                 
                             })}
                         </select>
@@ -359,19 +427,19 @@ export default function Kankulyator() {
                     <span>Заложить потери:</span><img className='kal_header4_sar_img' src={IMG6} alt="" />
                 </div>
                 <div className="kal_header4_sar1">
-                    <input onClick={()=>{radio_och(0)}} className='radio_inp' type="radio" name="" id="" />
+                    <input onClick={()=>{radio_och(0);setKalib(0)}} className='radio_inp' type="radio" name="" id="poter1" />
                     <span>Не закладывать потери</span>
                 </div>
                 <div className="kal_header4_sar2">
-                    <input onClick={()=>{radio_och(1)}} className='radio_inp' type="radio" name="" id="" />
+                    <input onClick={()=>{radio_och(1);setKalib(3)}} className='radio_inp' type="radio" name="" id="poter2" />
                     <span>Потери 3%</span>
                 </div>
                 <div className="kal_header4_sar2">
-                    <input onClick={()=>{radio_och(2)}} className='radio_inp' type="radio" name="" id="" />
+                    <input onClick={()=>{radio_och(2);setKalib(4)}} className='radio_inp' type="radio" name="" id="poter3" />
                     <span>Потери 4%</span>
                 </div>
                 <div className="kal_header4_sar2">
-                    <input onClick={()=>{radio_och(3)}} className='radio_inp' type="radio" name="" id="" />
+                    <input onClick={()=>{radio_och(3);setKalib(5)}} className='radio_inp' type="radio" name="" id="poter4" />
                     <span>Потери 5%</span>
                 </div>
             </div>
@@ -380,7 +448,7 @@ export default function Kankulyator() {
             </div>
             <div className="kal_header5">
                 <div className="kal_header_but">
-                <button onClick={()=>{kan_hisob()}}>Рассчитать стоимость</button>
+                <button onClick={()=>{id1 === 1 ? kan_hisob() : id1 ===2 ? kan_hisob2() : id1 === 3 ? kan_hisob3() : id1 === 4 ? kan_hisob4():<></>}}>Рассчитать стоимость</button>
                 </div>
                 <div className="kal_header_span">
                     <span className='span707'>Кол-во м3:</span><br />
@@ -395,7 +463,7 @@ export default function Kankulyator() {
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
-                    <h2>5 000 ₽</h2>
+                    <h2>0 ₽</h2>
                     <div className="kal_header_zakaz">
                         <span className='span442'>Добавить в заказ</span>
                         <div className="kal_header_dumaloq">

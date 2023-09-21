@@ -519,6 +519,9 @@ useEffect(()=>{
         alert("salommm")
     })
 })
+
+
+
   return (
     <div>
       {zag === 1 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd1'>
@@ -527,9 +530,12 @@ useEffect(()=>{
         </div>
         <div className="zakaz_kvadrat_map">
           {zol.map((item,key)=>{
-            return <div key={key} className="zakaz_kvadrat_map_card">
+            return <>
+          {zol[key].image === null ? document.querySelector(".zakaz_kvadrat_map_card").style = "background:pink;"
+           :
+           <div key={key} className="zakaz_kvadrat_map_card">   
               <div className="card_ptich">
-                <div onClick={()=>{yoqil(key)}} className="card_ptich_dumaloq">
+                <div onClick={()=>{yoqil(key);console.log(item.image,"asad")}} className="card_ptich_dumaloq">
                   <BsCheckLg className='card_ptich_dumaloq_ptich'/>
                 </div>
               </div>
@@ -541,7 +547,8 @@ useEffect(()=>{
            <div className="poklmn">
            <span className='map_span11'>{item.description}</span>
            </div>
-            </div>
+            </div>}
+            </>
           })}
          {/* <div className="zakaz_kvadrat_map_card1">
               <div className="card_ptich">
