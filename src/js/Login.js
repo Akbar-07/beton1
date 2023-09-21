@@ -51,7 +51,12 @@ export default function Login() {
   
       axios.post(`http://siriyuuc.beget.tech/auth/login`,data).then(res=>{
         localStorage.setItem("token",res.data.access);
-        window.location="/user"
+        localStorage.setItem("position",res.data.position)
+          if(localStorage.getItem("position")==1){
+            window.location="/user"
+          }else(
+            window.location="/mentor"
+          )
         console.log(res.data.access)
       }).catch(err=>{
         console.log(err); 
@@ -72,6 +77,7 @@ export default function Login() {
     
       axios.post(`http://siriyuuc.beget.tech/auth/users`,data).then(res=>{
         localStorage.setItem("token",res.data.access);
+        localStorage.setItem("position",res.data.position);
         console.log(res.data.access)
        setPage2(10)
       }).catch(err=>{
@@ -104,6 +110,7 @@ function voditel(){
 
   axios.post(`http://siriyuuc.beget.tech/auth/users`,data).then(res=>{
     localStorage.setItem("token",res.data.access);
+    localStorage.setItem("position",res.data.position);
     console.log(res.data.access)
    setPage2(20)
   }).catch(err=>{
@@ -136,6 +143,7 @@ function organizatsiyakirish(){
 
   axios.post(`http://siriyuuc.beget.tech/auth/users`,data).then(res=>{
     localStorage.setItem("token",res.data.access);
+    localStorage.setItem("position",res.data.position);
     console.log(res.data.access)
    setPage2(20)
   }).catch(err=>{
@@ -434,7 +442,7 @@ setPage(17)
                   </div>
                   <button onClick={()=>Bos()}>Далее</button>
                 </div>
-                
+
               </div>
               </div>
 
