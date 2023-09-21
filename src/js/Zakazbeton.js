@@ -469,6 +469,12 @@ const [num, setNum] = useState(0)
 const [num1, setNum1] = useState(0)
 const [num2, setNum2] = useState(0)
 const [num3, setNum3] = useState(0)
+const [PP4, setPP4] = useState(1)
+const [PPId, setPPId] = useState()
+const [Addiv, setAddiv] = useState(false)
+const [Fiber, setFiber] = useState(false)
+const [Sovuq, setSovuq] = useState()
+const [Sovuq1, setSovuq1] = useState(1)
 
 function check_ochil(id){
   for (let i = 0; i < document.querySelectorAll(".oplata_map_card_dumaloq").length; i++) {
@@ -539,11 +545,26 @@ axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${
 }).catch(err=>{})
 }
 
-function PP(){
-    
+function PP(id){
+    setPP4(id)
 }
 
+function BacKey(key,item){
+setPPId(item.id)
+// document.querySelectorAll(".tr_1")[key].style="background:white;"
+}
 
+function Addivtin(checked){
+    setAddiv(checked)
+}
+function Fibertin(checked){
+    setFiber(checked)
+}
+
+function SovuqPro(item){
+    setSovuq(item.sena)
+    setSovuq1(2)
+}
 
   return (
     <div>
@@ -628,13 +649,13 @@ function PP(){
                             </thead>
 
           <tbody>
-            {products.map(item=>{
+            {products.map((item,key)=>{
                 return(
-            <tr className='tr_1'>
+            <tr onClick={()=>BacKey(key,item)} style={item.id==PPId?{background:'white'}:{}} className='tr_1'>
               <th><img src={kkk} alt="" /></th>
               <th className='pasqismi-narx-joy-zz'>{item.allmarka.title}</th>
               <th className='pasqismi-opessaniya'>{item.description}</th>{/* Наименование опции  */}
-              <th className='pasqismi-narx-joy-zz'>{item.s3_sena}</th>
+              <th className='pasqismi-narx-joy-zz'>{item.id==PPId?PP4==1?Addiv==true?Fiber==true?Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s3_sena+item.hydrophobic_additive_sena:Fiber==true?item.s3_sena+item.fiber_fiber:item.s3_sena:Addiv==true?Fiber==true?Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s4_sena+item.hydrophobic_additive_sena:Fiber==true?item.s4_sena+item.fiber_fiber:item.s4_sena:item.s3_sena}</th>
             </tr> 
                 )
             })}
@@ -722,12 +743,12 @@ function PP(){
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="alalalalallaalalalal">
                                 <div className="akardon-pasdia-chiqadi-but1">
-                                    <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                    <div  className="ana-pachti-tugadi-inpu-radio">
+                                        <input onClick={()=>Addivtin(true)} id='yes1' type="radio"  value="#009900"  name="contact"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input onClick={()=>Addivtin(false)} id='yes1' type="radio"  value="#009900"  name="contact"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -749,11 +770,11 @@ function PP(){
                                 <div className="alalalalallaalalalal1">
                                 <div className="akardon-pasdia-chiqadi-but1">
                                     <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input onClick={()=>Fibertin(true)} id='yes1' type="radio"  value="#009900"  name="kot"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input onClick={()=>Fibertin(false)} id='yes1' type="radio"  value="#009900"  name="kot"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -778,7 +799,7 @@ function PP(){
                                 <div className="akardon-pasdia-chiqadi-but4">
                                 {gradus.map((item,key)=>{
                                         return (<div>
-                                             <button key={key}>-{item.gradus}C</button>
+                                             <button onClick={()=>SovuqPro(item)} key={key}>-{item.gradus}C</button>
                                         </div>
                                             
                                              ) 
