@@ -45,7 +45,7 @@ import "react-datepicker/dist/react-datepicker.module.css";
 import bmw from '../img/Group 269.png'
 import axios from 'axios'
 import url from './Host'
-import Calendar from 'react-calendar'
+// import Calendar from 'react-calendar'
 
 function sariqyon(){  
       document.querySelector(".beton-blcok2").style=`border:1.5px solid  white`

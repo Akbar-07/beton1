@@ -46,7 +46,7 @@ import money1 from '../img/Coin In Hand.png'
 import nout from '../img/Laptop.png'
 import moneyy from '../img/Money With Arrow.png'
 import karta from '../img/Debit Card (1).png'
-import alert from '../img/Alert.png'
+import alert12 from '../img/Alert.png'
 import nazad from '../img/Group 200.png'
 import qum from '../img/qum.png'
 import bilmadim from '../img/183973062b952e05464d21c9f08676f9 1.png'
@@ -1742,7 +1742,7 @@ useEffect(()=>{
                     <div className="error-aler-div">
                         <div className="eerrror-aler-kottasi">
                             <div className="error-alert-img">
-                                <img src={alert} alt="" />
+                                <img src={alert12} alt="" />
                             </div>
                             <div className="error-alert-text">
                                 <p>Если сумма заказа <span>превышает 150000 </span>
