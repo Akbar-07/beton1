@@ -156,7 +156,7 @@ export default function User() {
       ])
 
       useEffect(()=>{
-        axios.get(`https://dastafka-back.onrender.com/auth/oneuser`,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+        axios.get(`http://siriyuuc.beget.tech/auth/oneuser`,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
             setData1(res.data)
             res.data.map(item=>{
                document.querySelector("#user-name").value=item.username 
@@ -178,7 +178,7 @@ export default function User() {
         data.append("phone",document.querySelector("#user-phone").value)
         data.append("email",document.querySelector("#user-email").value)    
         data.append("surname",document.querySelector("#user-surname").value)    
-        axios.put(`https://dastafka-back.onrender.com/auth/users/header/${data1[0].id}`,data,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+        axios.put(`http://siriyuuc.beget.tech/auth/users/header/${data1[0].id}`,data,{headers:{Authorization : ` Bearer ${localStorage.getItem("token")}`}}).then(res=>{
             alert("Ваша информация была изменена")
             window.location.reload()
         }).catch(err=>{

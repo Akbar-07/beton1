@@ -563,7 +563,7 @@ const [tarif, setTarif] = useState([{}])
 const [product, setProduct] = useState([{}])
 const [rasmal, setRasmmal] = useState([{}])
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/sovuqlik').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/sovuqlik').then(res=>{
     setGradus(res.data)
 }).catch(err=>{
     
@@ -571,7 +571,7 @@ useEffect(()=>{
 },[])
 const [shving, senShving] = useState([{}])
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/shving').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/shving').then(res=>{
         senShving(res.data)
     }).catch(err=>{
        
@@ -600,7 +600,7 @@ useEffect(()=>{
 },[])
 
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/tarif').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/tarif').then(res=>{
         setTarif(res.data)
     }).catch(err=>{
        
@@ -608,14 +608,14 @@ useEffect(()=>{
 })
 
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/product').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/product').then(res=>{
         setProduct(res.data)
     }).catch(err=>{
        
     })
 })
 useEffect(()=>{
-    axios.get(`https://dastafka-back.onrender.com/api/homeiy`).then(res=>{
+    axios.get(`http://siriyuuc.beget.tech/api/homeiy`).then(res=>{
         setRasmmal(res.data)
     }).catch(err=>{
     })

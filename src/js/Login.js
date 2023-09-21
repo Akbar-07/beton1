@@ -49,7 +49,7 @@ export default function Login() {
       data.append("login",document.querySelector("#login").value)
       data.append("password",document.querySelector("#password").value)
   
-      axios.post(`https://dastafka-back.onrender.com/auth/login`,data).then(res=>{
+      axios.post(`http://siriyuuc.beget.tech/auth/login`,data).then(res=>{
         localStorage.setItem("token",res.data.access);
         window.location="/user"
         console.log(res.data.access)
@@ -70,7 +70,7 @@ export default function Login() {
       data.append("password",document.querySelector("#fizika-parol").value)
       data.append("position_id",1)
     
-      axios.post(`https://dastafka-back.onrender.com/auth/users`,data).then(res=>{
+      axios.post(`http://siriyuuc.beget.tech/auth/users`,data).then(res=>{
         localStorage.setItem("token",res.data.access);
         console.log(res.data.access)
        setPage2(10)
@@ -102,7 +102,7 @@ function voditel(){
   data.append("password",document.querySelector("#voditel-parol").value)
   data.append("position_id",3)
 
-  axios.post(`https://dastafka-back.onrender.com/auth/users`,data).then(res=>{
+  axios.post(`http://siriyuuc.beget.tech/auth/users`,data).then(res=>{
     localStorage.setItem("token",res.data.access);
     console.log(res.data.access)
    setPage2(20)
@@ -134,7 +134,7 @@ function organizatsiyakirish(){
   data.append("password",document.querySelector("#organizatsiya-parol").value)
   data.append("position_id",2)
 
-  axios.post(`https://dastafka-back.onrender.com/auth/users`,data).then(res=>{
+  axios.post(`http://siriyuuc.beget.tech/auth/users`,data).then(res=>{
     localStorage.setItem("token",res.data.access);
     console.log(res.data.access)
    setPage2(20)

@@ -52,7 +52,7 @@ export default function Navbar() {
 
     const [company, setCompany] = useState([])
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/compony').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/compony').then(res=>{
         setCompany(res.data)
     }).catch(err=>{
         alert("xato back")

@@ -113,7 +113,7 @@ function sariq1(){
     document.querySelector(".b4").style = "background-color:#FFCB13;"
     document.querySelector(".b3").style = "background-color:#EBEBEB;"
 
-    axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
+    axios.get(`http://siriyuuc.beget.tech/api/preferences`).then(res => {    
         const Filter=res.data.filter(item=>item.liso=="y")
         nashaData(Filter)
         console.log(res.data)
@@ -125,7 +125,7 @@ function sariq2(){
     document.querySelector("#al1").style = "background-color:#red;"
     document.querySelector("#al2").style = "background-color:#EBEBEB;"
 
-    axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
+    axios.get(`http://siriyuuc.beget.tech/api/preferences`).then(res => {    
         const Filter=res.data.filter(item=>item.liso!=="y")
         nashaData(Filter)
         console.log(res.data)
@@ -209,7 +209,7 @@ useEffect(()=>{
 },[])
 
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/skachat_pridlachenu').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/skachat_pridlachenu').then(res=>{
         setData25(res.data);
     }).catch(err=>{
        
@@ -217,7 +217,7 @@ useEffect(()=>{
 },[])
 
 useEffect(()=>{
-    axios.get(`https://dastafka-back.onrender.com/api/preferences`).then(res => {    
+    axios.get(`http://siriyuuc.beget.tech/api/preferences`).then(res => {    
             const Filter=res.data.filter(item=>item.liso!=="y")
             nashaData(Filter)
             console.log(res.data)

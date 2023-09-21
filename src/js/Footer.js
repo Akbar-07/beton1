@@ -15,7 +15,7 @@ import { useEffect } from 'react'
 export default function Footer() {
   const [company1, setCompany1] = useState([{}])
 useEffect(()=>{
-  axios.get('https://dastafka-back.onrender.com/api/compony').then(res=>{
+  axios.get('http://siriyuuc.beget.tech/api/compony').then(res=>{
     setCompany1(res.data)
   }).catch(err=>{
     

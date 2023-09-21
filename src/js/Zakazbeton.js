@@ -479,7 +479,7 @@ function check_ochil(id){
 
 const [gradus, setGradus] = useState([{}])
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/sovuqlik').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/sovuqlik').then(res=>{
     setGradus(res.data)
 }).catch(err=>{
     alert("xato")
@@ -487,7 +487,7 @@ useEffect(()=>{
 },[])
 const [shving, senShving] = useState([{}])
 useEffect(()=>{
-    axios.get('https://dastafka-back.onrender.com/api/shving').then(res=>{
+    axios.get('http://siriyuuc.beget.tech/api/shving').then(res=>{
         senShving(res.data)
     }).catch(err=>{
         alert(".xatolar")
