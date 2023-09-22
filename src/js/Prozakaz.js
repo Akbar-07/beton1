@@ -602,9 +602,9 @@ useEffect(()=>{
 useEffect(()=>{
     axios.get('http://siriyuuc.beget.tech/api/tarif').then(res=>{
         setTarif(res.data)
-    }).catch(err=>{
-       
-    })
+    }).catch(err=>{})
+    
+
 })
 
 useEffect(()=>{
@@ -627,6 +627,8 @@ console.log(startDate);
       a.push({date:startDate1,value:20})
         setStartDate(a)
     }
+
+    
   return (
 <div>
     <Navbar/>
@@ -1366,7 +1368,7 @@ console.log(startDate);
                             <p>М400</p> */}
                             </div>
                             <div className="nom-kooc-inp-range">
-                                <input type="range"  />
+                                <input type="range" step={50}  />
                             </div>
                             <div className="media-select-bossa-chiqadi">
                                 <div className="select-opticon-med-block1">
