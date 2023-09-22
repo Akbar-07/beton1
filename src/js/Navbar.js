@@ -55,7 +55,6 @@ useEffect(()=>{
     axios.get('http://siriyuuc.beget.tech/api/compony').then(res=>{
         setCompany(res.data)
     }).catch(err=>{
-        alert("xato back")
     })
 },[])
   return (

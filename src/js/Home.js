@@ -118,7 +118,6 @@ function sariq1(){
         nashaData(Filter)
         console.log(res.data)
     }).catch((err) => {
-        alert("err")
     })
 }
 function sariq2(){
@@ -130,7 +129,6 @@ function sariq2(){
         nashaData(Filter)
         console.log(res.data)
     }).catch((err) => {
-        alert("err")
     })
 }
 function fabrika2() {

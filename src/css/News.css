@@ -267,10 +267,12 @@ body {
     width: 48%;
     position: relative;
     padding-top: 40px;
+    overflow: hidden;
 }
 
 .news_page_3_card {
     width: 70%;
+    z-index: 111111;
 }
 
 
@@ -278,7 +280,6 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -1;
     height: 661px;
     width: 80%;
     max-width: 427px;
@@ -290,6 +291,7 @@ body {
 }
 .forN_image img{
     height: 100%;
+    z-index: -1;
 }
 .news_page_3_card1{
     display: flex;

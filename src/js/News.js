@@ -32,16 +32,28 @@ import axios from 'axios'
 
 export default function News() {
     const [news,setNews] = useState([])
+    const [news1,setNews1] = useState([])
     const [aksiya,setAksiya] = useState([])
+    const today = new Date();
+const nextThreeDays = new Date(today.setDate(today.getDate() - 3));
+
+console.log(nextThreeDays);
 
     useEffect(() => {
     axios.get(`${url}/api/news`).then(res=>{
         setNews(res.data)
+        setNews1(res.data)
     })
     axios.get(`${url}/api/aksiya`).then(res=>{
         setAksiya(res.data)
     })
     }, [])
+    function news2(id) {
+        axios.get(`${url}/api/news`).then(res=>{
+            const Filter=res.data.filter(item=>item.id==id)
+            setNews1(Filter)
+        })
+    }
     
   return (
     <>
@@ -116,18 +128,19 @@ export default function News() {
         <div id='div1' style={{display:"flex",justifyContent:"center"}} className="div_news_3"><div className="news_page_3">
             <div style={{display:"flex",alignItems:"center"}} className="news_page_3_cards">
                 
-                {news.map((item,key)=>{
-                    
-                    if(key<1){
+                {news1.map((item,key)=>{
+                       if(key<1){
                        return(
                         <div className="news_page_3_card">
-                            <div style={{cursor:"pointer",zIndex:"100000"}} className="arrow_div" onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}><HiArrowRight className='arrow_left'/></div>
                 <h2>{item.title}</h2>
                 <p>{item.min_description}</p>
-            <div className="forN_image"><img src={item.image} alt="" /></div>
+                            
+            <div className="forN_image"><img src={item.image} alt="" /><div style={{cursor:"pointer",zIndex:"100000"}} className="arrow_div" onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}}><HiArrowRight className='arrow_left'/></div></div>
             </div>
                     ) 
-                    }
+                    } 
+                    
+                    
                     
                 })}
                 
@@ -136,7 +149,7 @@ export default function News() {
                 {news.map((item,key)=>{
                     
 return(
-                      <div className="news_page_3_card1">
+                      <div style={{cursor:"pointer"}} className="news_page_3_card1" onClick={()=>{news2(item.id)}}>
                     <div className="newss">
                     <h3>{item.title}</h3>
                     <p>{item.min_description}</p>
@@ -144,8 +157,6 @@ return(
                 <img style={{cursor:"pointer"}} onClick={()=>{window.location="/Article";localStorage.setItem("NewsId",item.id)}} src={arrow} className='news_icon' alt="" />
                 </div>  
                     )
-                    
-                    
                 })}
             </div>
         </div>
@@ -157,7 +168,7 @@ return(
             <div style={{height:"480px",overflow:"hidden",overflowY:"scroll",paddingRight:"10px"}} className="news_page_3_cards">
                 {news.map(item=>{
                     return(
-                        <div className="news_page_3_card1">
+                        <div style={{cursor:"pointer"}} className="news_page_3_card1" onClick={()=>{news2(item.id)}}>
                     <div className="newss">
                     <h3>{item.title}</h3>
                     <p>{item.min_description}</p>

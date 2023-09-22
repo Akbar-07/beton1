@@ -112,7 +112,6 @@ useEffect(()=>{
     axios.get(`${url}/api/marka`).then(res=>{
         setMarka1(res.data)
     }).catch(err=>{
-        alert("vbnm")
     })
 },[])
     
