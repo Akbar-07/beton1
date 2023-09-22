@@ -1368,7 +1368,7 @@ console.log(startDate);
                             <p>М400</p> */}
                             </div>
                             <div className="nom-kooc-inp-range">
-                                <input type="range"  />
+                                <input type="range" step={50}  />
                             </div>
                             <div className="media-select-bossa-chiqadi">
                                 <div className="select-opticon-med-block1">
