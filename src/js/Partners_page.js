@@ -52,6 +52,8 @@ export default function Partners_page() {
     axios.get(`${url}/api/work`).then(res=>{
       setPost1(res.data)
       console.log(res.data);
+      alert("Ваша информация была принято ожидайте ответа ");
+      window.location.reload()
     }).catch(err=>{
     })
   }
@@ -102,6 +104,8 @@ const [shving_id,setShvingid] = useState()
   axios.get(`${url}/api/work`).then(res=>{
     setPost2(res.data)
     console.log(res.data);
+    alert("Ваша информация была принято ожидайте ответа ")
+    window.location.reload()
   }).catch(err=>{
   })
  }else if(id === 3){
@@ -120,6 +124,8 @@ const [shving_id,setShvingid] = useState()
   axios.get(`${url}/api/work`).then(res=>{
     setPost2(res.data)
     console.log(res.data);
+    alert("Ваша информация была принято ожидайте ответа ")
+    window.location.reload()
   }).catch(err=>{ 
   })
  }
@@ -136,6 +142,7 @@ const [shving_id,setShvingid] = useState()
   useEffect(()=>{
     axios.get(`${url}/api/mashina`).then(res=>{
       setShving4(res.data)
+      
     }).catch(err=>{
     })
   },[])
