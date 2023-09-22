@@ -45,26 +45,18 @@ export default function Kankulyator() {
         if(key === 1){
             setId1(2)
             document.querySelector(".kal_header2").style ="width:900px"
-            console.log(key ,"rux1_key");
-            console.log(id1,"rux1_id1");
         }
         else if(key === 2){
             setId1(3)
-            document.querySelector(".kal_header2").style ="width:900px"
-            console.log(key ,"rux2_key");
-            console.log(id1,"rux2_id1");
+            document.querySelector(".kal_header2").style ="width:900px"   
         }
         else if(key === 3){
             setId1(1)
-            document.querySelector(".kal_header2").style ="width:740px"
-            console.log(key ,"rux3_key");
-            console.log(id1,"rux3_id1");
+            document.querySelector(".kal_header2").style ="width:740px" 
         }
         else{
             setId1(1)
             document.querySelector(".kal_header2").style ="width:740px"
-            console.log(id1,"z1_id1");
-            console.log(key,"z1_key");
         }
     }
     function ruxsat(id){
@@ -229,7 +221,16 @@ export default function Kankulyator() {
         const [key1,setKey1] = useState()
         var kod = key1
         const [pesbeton,setPes] = useState([{}])
-            
+        const [s3_sena_ham,setS3]= useState([])
+        useEffect(()=>{
+            axios.get(`${url}/api/product`).then(res=>{
+                setS3(res.data)
+            }).catch(err=>{
+
+            })
+        },[])
+        var sum = 10
+        var summa = hisob_masiv * sum
 
   return (
     <div>
@@ -463,8 +464,8 @@ export default function Kankulyator() {
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
-                    <h2>0 ₽</h2>
-                    <div className="kal_header_zakaz">
+                    <h2>{summa} ₽</h2>
+                    <div onClick={()=>{window.location="/zakazbeton"}} className="kal_header_zakaz">
                         <span className='span442'>Добавить в заказ</span>
                         <div className="kal_header_dumaloq">
                             <BiRightArrowAlt className='icon_fifty'/>

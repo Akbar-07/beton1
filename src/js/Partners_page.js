@@ -59,12 +59,35 @@ export default function Partners_page() {
   }
   const [post2, setPost2] = useState([{}])
 
+  function tanla(key){
+    for (let i = 0; i < document.querySelectorAll(".vash_trans1_patok1_but").length; i++) {
+        if(key === i){
+    document.querySelectorAll(".vash_trans1_patok1_but")[i].style = "border:1px solid #E93333;"
+    }
+      else{
+        document.querySelectorAll(".vash_trans1_patok1_but")[i].style = "border: 1px solid #E0E0E0;"
+      }
+    }
+   var key6 = shving4[key].id
+   setMashid(key6)
+    }
+    function tanla1(key){
+      for (let i = 0; i < document.querySelectorAll(".vash_trans1_patok1_but1").length; i++) {
+          if(key === i){
+      document.querySelectorAll(".vash_trans1_patok1_but1")[i].style = "border:1px solid #E93333;"
+      }
+        else{
+          document.querySelectorAll(".vash_trans1_patok1_but1")[i].style = "border: 1px solid #E0E0E0;"
+        }
+      }
+     var key7 = shving3[key].id
+     setShvingid(key7)
+      }
 
+const [mashina_id,setMashid] = useState()
+const [shving_id,setShvingid] = useState()
 
   function postData1(id){
-    // var rad_1 = document.getElementById("radio_post1")
-    // var rad_2 = document.getElementById("radio_post2")
-    
  if(id === 2){
   var newPostData1 = new FormData()
   newPostData1.append("type",2)
@@ -74,8 +97,8 @@ export default function Partners_page() {
   newPostData1.append("phone",document.querySelector("#phone1").value)
   newPostData1.append("sayt",document.querySelector("#sayt1").value)
   newPostData1.append("email",document.querySelector("#email1").value)
-  newPostData1.append("mashina",id)
-  newPostData1.append("shving",id)
+  newPostData1.append("mashina",mashina_id)
+  newPostData1.append("shving",shving_id)
   axios.post(`${url}/api/work`,newPostData1).then(res=>{
     alert("saqlandi")
   })
@@ -94,8 +117,8 @@ export default function Partners_page() {
   newPostData2.append("phone",document.querySelector("#phone1").value)
   newPostData2.append("sayt",document.querySelector("#sayt1").value)
   newPostData2.append("email",document.querySelector("#email1").value)
-  newPostData2.append("mashina",id)
-  newPostData2.append("shving",id)
+  newPostData2.append("mashina",mashina_id)
+  newPostData2.append("shving",shving_id)
   axios.post(`${url}/api/work`,newPostData2).then(res=>{
     alert("saqlandi")
   })
@@ -124,6 +147,10 @@ export default function Partners_page() {
       alert("b1")
     })
   },[])
+
+
+
+
   return (
     <div>
         <Navbar/>
@@ -364,7 +391,7 @@ export default function Partners_page() {
           {shving4.map((item,key)=>{
               return(
                 <div>
-           <button key={key} id={item.id} className='vash_trans1_patok1_but'>{item.m3}m3 <img className='lnnk11_img' src={item.image} alt="" /></button>
+           <button key={key} id={item.id} onClick={()=>{tanla(key);}} className='vash_trans1_patok1_but'>{item.m3}m3 <img className='lnnk11_img' src={item.image} alt="" /></button>
                 </div>
               )
             })}
@@ -385,7 +412,7 @@ export default function Partners_page() {
             {shving3.map((item,key)=>{
               return(
                 <div>
-          <button key={key} id={item.id} className='vash_trans1_patok1_but1'>{item.m}m<img className='lnnk11_img' src={item.image} alt="" /></button>
+          <button key={key} id={item.id} onClick={()=>{tanla1(key);}} className='vash_trans1_patok1_but1'>{item.m}m<img className='lnnk11_img' src={item.image} alt="" /></button>
                 </div>
               )
             })}
