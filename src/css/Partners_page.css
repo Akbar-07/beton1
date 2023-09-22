@@ -2151,3 +2151,86 @@ border: 1px solid #E93333;
         font-size: 15px;
     }
 }
+.sizning-butru h2{
+    font-family: Montserrat Alternates;
+font-size: 30px;
+font-weight: 600;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: center;
+margin-bottom: 10px;
+}
+.sizning-butru p{
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sizning-butru button{
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    width: 100%;
+    height: 60px;
+    padding: 20px, 98px, 20px, 96px;
+    border-radius: 12px;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #FFCB13;
+
+}
+@media (max-width:560px) {
+    .sizning-butru h2{
+        font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    .sizning-butru button{
+        font-family: Montserrat Alternates;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        width: 100%;
+        height: 50px;
+        padding: 20px, 98px, 20px, 96px;
+        border-radius: 12px;
+        gap: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: #FFCB13;
+    
+    }
+}
+@media (max-width:450px) {
+    .sizning-butru h2 {
+        font-family: Montserrat Alternates;
+        font-size: 5vw;
+        font-weight: 600;
+        line-height: 37px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .sizning-butru p {
+        font-family: Gilroy;
+        font-size: 3.5vw;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

@@ -24,6 +24,9 @@ import url from './Host'
 
 export default function Partners_page() {
   const [ son, setSon] = useState(0)
+  const [page,setPage]= useState(1)
+  const [page1,setPage2]= useState(1)
+
   function radio_bol(id){
     setSon(id)
     for (let i = 0; i < document.querySelectorAll(".radio_part_inp").length; i++) {
@@ -53,7 +56,7 @@ export default function Partners_page() {
       setPost1(res.data)
       console.log(res.data);
       alert("Ваша информация была принято ожидайте ответа ");
-      window.location.reload()
+      setPage(2)
     }).catch(err=>{
     })
   }
@@ -104,8 +107,8 @@ const [shving_id,setShvingid] = useState()
   axios.get(`${url}/api/work`).then(res=>{
     setPost2(res.data)
     console.log(res.data);
+    setPage2(5)
     alert("Ваша информация была принято ожидайте ответа ")
-    window.location.reload()
   }).catch(err=>{
   })
  }else if(id === 3){
@@ -124,8 +127,9 @@ const [shving_id,setShvingid] = useState()
   axios.get(`${url}/api/work`).then(res=>{
     setPost2(res.data)
     console.log(res.data);
+    setPage2(5)
     alert("Ваша информация была принято ожидайте ответа ")
-    window.location.reload()
+
   }).catch(err=>{ 
   })
  }
@@ -261,13 +265,24 @@ const [shving_id,setShvingid] = useState()
     </div>
   </div>
   <div className="kel_card2">
-    <input className='kel_card2_inp' id='organizatsiya' type="text" placeholder='Наименование организации'/><br />
+    {page===1?(
+      <div>
+         <input className='kel_card2_inp' id='organizatsiya' type="text" placeholder='Наименование организации'/><br />
     <input className='kel_card2_inp' id='inn' type="text" placeholder='ИНН'/><br />
     <input className='kel_card2_inp' id='liso_contact' type="text" placeholder='Контактное лицо'/><br />
     <input className='kel_card2_inp' id='phone' type="number" placeholder='Телефон'/><br />
     <input className='kel_card2_inp' id='sayt' type="text" placeholder='Сайт'/><br />
     <input className='kel_card2_inp' id='email' type="email" placeholder='Email'/><br />
     <button onClick={()=>{postData()}} className='kel_card2_but'>Отправить запрос</button>
+      </div>
+
+    ):(page===2?(<div>
+      <div className='sizning-butru'>
+        <h2>Ваша заявка принята!</h2>
+        <p>Уже начали обработку.</p>
+        <button onClick={()=>setPage(1)}>Вернуться к форме </button>
+      </div>
+    </div>):(""))}
   </div>
 </div>
 
@@ -364,7 +379,7 @@ const [shving_id,setShvingid] = useState()
     <img className='kel_card1_dumaloq_img_2' src={IMG5} alt="" />
     </div>
   </div>
-  <div className="kel_card2">
+{page1===1?(  <div className="kel_card2">
     <div className="kel_card2_radio">
       <div className="kel_card2_radio_1">
         <input onClick={()=>{radio_bol(0)}} className='radio_part_inp' type="radio" name="" id="radio_post1" />
@@ -424,7 +439,13 @@ const [shving_id,setShvingid] = useState()
       </div>
     </div>
     <button onClick={()=>{postData1(son===0?2:3)}} className='kel_card2_but'>Отправить запрос</button>
-  </div>
+  </div>):(page1===5?(<div className='kel_card2'>
+  <div className='sizning-butru'>
+        <h2>Ваша заявка принята!</h2>
+        <p>Уже начали обработку.</p>
+        <button onClick={()=>setPage2(1)}>Вернуться к форме </button>
+      </div>
+  </div>):(""))}
 </div>
 
 <div className="tugashga_rasm">
