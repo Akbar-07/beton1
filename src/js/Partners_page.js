@@ -48,13 +48,11 @@ export default function Partners_page() {
     newPostData.append("sayt",document.querySelector("#sayt").value)
     newPostData.append("email",document.querySelector("#email").value)
     axios.post(`${url}/api/work`,newPostData).then(res=>{
-      alert("saqlandi")
     })
     axios.get(`${url}/api/work`).then(res=>{
       setPost1(res.data)
       console.log(res.data);
     }).catch(err=>{
-      alert("qoshilmadi")
     })
   }
   const [post2, setPost2] = useState([{}])
@@ -100,13 +98,11 @@ const [shving_id,setShvingid] = useState()
   newPostData1.append("mashina",mashina_id)
   newPostData1.append("shving",shving_id)
   axios.post(`${url}/api/work`,newPostData1).then(res=>{
-    alert("saqlandi")
   })
   axios.get(`${url}/api/work`).then(res=>{
     setPost2(res.data)
     console.log(res.data);
   }).catch(err=>{
-    alert("qoshilmadi")
   })
  }else if(id === 3){
   var newPostData2 = new FormData()
@@ -120,13 +116,11 @@ const [shving_id,setShvingid] = useState()
   newPostData2.append("mashina",mashina_id)
   newPostData2.append("shving",shving_id)
   axios.post(`${url}/api/work`,newPostData2).then(res=>{
-    alert("saqlandi")
   })
   axios.get(`${url}/api/work`).then(res=>{
     setPost2(res.data)
     console.log(res.data);
-  }).catch(err=>{
-    alert("qoshilmadi")
+  }).catch(err=>{ 
   })
  }
   }
@@ -136,7 +130,6 @@ const [shving_id,setShvingid] = useState()
     axios.get(`${url}/api/shving`).then(res=>{
       setShving3(res.data)
     }).catch(err=>{
-      alert("b1")
     })
   },[])
   const [shving4, setShving4] = useState([])
@@ -144,7 +137,6 @@ const [shving_id,setShvingid] = useState()
     axios.get(`${url}/api/mashina`).then(res=>{
       setShving4(res.data)
     }).catch(err=>{
-      alert("b1")
     })
   },[])
 

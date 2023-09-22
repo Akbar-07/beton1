@@ -494,7 +494,6 @@ useEffect(()=>{
     axios.get('http://siriyuuc.beget.tech/api/sovuqlik').then(res=>{
     setGradus(res.data)
 }).catch(err=>{
-    alert("xato")
 })
 },[])
 const [shving, senShving] = useState([{}])
@@ -502,7 +501,6 @@ useEffect(()=>{
     axios.get('http://siriyuuc.beget.tech/api/shving').then(res=>{
         senShving(res.data)
     }).catch(err=>{
-        alert(".xatolar")
     })
 })
 const [marka1, setMarka1] = useState([])
@@ -510,7 +508,6 @@ useEffect(()=>{
     axios.get(`${url}/api/marka`).then(res=>{
         setMarka1(res.data)
     }).catch(err=>{
-        alert("vbnm")
     })
 },[])
 const [mashina3, setMashina3] = useState([])
@@ -518,7 +515,6 @@ useEffect(()=>{
     axios.get(`${url}/api/mashina`).then(res=>{
         setMashina3(res.data)
     }).catch(err=>{
-        alert("popi")
     })
 })
 const [kamaz, setKamaz] = useState([
@@ -528,7 +524,6 @@ useEffect(()=>{
     axios.get(`${url}/api/tarif`).then(res=>{
         setKamaz(res.data)
     }).catch(err=>{
-        alert("salommm")
     })
 })
 
