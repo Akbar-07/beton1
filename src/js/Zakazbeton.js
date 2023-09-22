@@ -429,12 +429,18 @@ const [data5,setData5] =useState(0)
     },
   ])
   const [zag, setZag] = useState(1)
+  const [productsId, setProductsId] = useState()
+  const [products, setProducts] = useState([])
 
   function global2(){
+    axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+        setProducts(res.data)
+    }).catch(err=>{})
     document.querySelector(".zakaz_kvadrat_zagruska").style = "margin-top: 180px;"
     setZag(2) 
    }
-  function yoqil(id){
+  function yoqil(id,items){
+    setProductsId(items.id)
     for (let i = 0; i < document.querySelectorAll(".card_ptich_dumaloq_ptich").length; i++) {
       if(id === i){
         document.querySelectorAll(".card_ptich_dumaloq_ptich")[i].style = "display:block;" 
@@ -463,6 +469,12 @@ const [num, setNum] = useState(0)
 const [num1, setNum1] = useState(0)
 const [num2, setNum2] = useState(0)
 const [num3, setNum3] = useState(0)
+const [PP4, setPP4] = useState(1)
+const [PPId, setPPId] = useState()
+const [Addiv, setAddiv] = useState(false)
+const [Fiber, setFiber] = useState(false)
+const [Sovuq, setSovuq] = useState()
+const [Sovuq1, setSovuq1] = useState(1)
 
 function check_ochil(id){
   for (let i = 0; i < document.querySelectorAll(".oplata_map_card_dumaloq").length; i++) {
@@ -520,7 +532,39 @@ useEffect(()=>{
     })
 })
 
+function FilterPorduct(e){
+var m5=e
+var m50=m5==1?"m50":m5==2?"M200":m5==3?"m400":""
+const Filter=marka1.filter(item=>item.title.includes(m50.slice(1)))
 
+axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+    Filter.map(filter1=>{
+        const Filter1=res.data.filter(item=>item.allmarka.id==filter1.id)
+        setProducts(Filter1)
+    })
+}).catch(err=>{})
+}
+
+function PP(id){
+    setPP4(id)
+}
+
+function BacKey(key,item){
+setPPId(item.id)
+// document.querySelectorAll(".tr_1")[key].style="background:white;"
+}
+
+function Addivtin(checked){
+    setAddiv(checked)
+}
+function Fibertin(checked){
+    setFiber(checked)
+}
+
+function SovuqPro(item){
+    setSovuq(item.sena)
+    setSovuq1(2)
+}
 
   return (
     <div>
@@ -535,7 +579,7 @@ useEffect(()=>{
            :
            <div key={key} className="zakaz_kvadrat_map_card">   
               <div className="card_ptich">
-                <div onClick={()=>{yoqil(key);console.log(item.image,"asad")}} className="card_ptich_dumaloq">
+                <div onClick={()=>{yoqil(key,item);console.log(item.image,"asad")}} className="card_ptich_dumaloq">
                   <BsCheckLg className='card_ptich_dumaloq_ptich'/>
                 </div>
               </div>
@@ -590,7 +634,7 @@ useEffect(()=>{
             {/* <span>М200</span>
             <span>М400</span> */}
           </div>
-          <input min={1} max={3} className='range1' type="range" name="" id="" />
+          <input min={1} max={3}  className='range1' type="range" name="" onChange={(e)=>FilterPorduct(e.target.value)} />
         </div>
         <div className="eng-kottade-ulani-ushab-turadi da_boladi">
                         <div className="eng-kottade-scrol eng-kottade-scrol1">
@@ -605,13 +649,18 @@ useEffect(()=>{
                             </thead>
 
           <tbody>
-            <tr className='tr_1'>
+            {products.map((item,key)=>{
+                return(
+            <tr onClick={()=>BacKey(key,item)} style={item.id==PPId?{background:'white'}:{}} className='tr_1'>
               <th><img src={kkk} alt="" /></th>
-              <th className='pasqismi-narx-joy-zz'>М200</th>
-              <th className='pasqismi-opessaniya'>Наименование опции</th>
-              <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
-            </tr>
-            <tr className='tr_1'>
+              <th className='pasqismi-narx-joy-zz'>{item.allmarka.title}</th>
+              <th className='pasqismi-opessaniya'>{item.description}</th>{/* Наименование опции  */}
+              <th className='pasqismi-narx-joy-zz'>{item.id==PPId?PP4==1?Addiv==true?Fiber==true?Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s3_sena+item.hydrophobic_additive_sena:Fiber==true?item.s3_sena+item.fiber_fiber:item.s3_sena:Addiv==true?Fiber==true?Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s4_sena+item.hydrophobic_additive_sena:Fiber==true?item.s4_sena+item.fiber_fiber:item.s4_sena:item.s3_sena}</th>
+            </tr> 
+                )
+            })}
+           
+            {/* <tr className='tr_1'>
               <th><img src={logo} alt="" /></th>
               <th className='pasqismi-narx-joy-zz'>М200</th>
               <th className='pasqismi-opessaniya'>Наименование опции</th>
@@ -658,7 +707,7 @@ useEffect(()=>{
               <th className='pasqismi-narx-joy-zz'>М200</th>
               <th className='pasqismi-opessaniya'>Наименование опции</th>
               <th className='pasqismi-narx-joy-zz'>2 000 ₽</th>
-            </tr>
+            </tr> */}
           </tbody>
         </table>
             </div>
@@ -676,8 +725,8 @@ useEffect(()=>{
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="akardon-pasdia-chiqadi-but">
-                                    <button>П3</button>
-                                    <button>П4</button>
+                                    <button onClick={()=>PP(1)}>П3</button>
+                                    <button onClick={()=>PP(2)}>П4</button>
                                 </div>
                             </div>
                             <div className="akardion-pro-zakazz">
@@ -694,12 +743,12 @@ useEffect(()=>{
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="alalalalallaalalalal">
                                 <div className="akardon-pasdia-chiqadi-but1">
-                                    <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                    <div  className="ana-pachti-tugadi-inpu-radio">
+                                        <input onClick={()=>Addivtin(true)} id='yes1' type="radio"  value="#009900"  name="contact"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input onClick={()=>Addivtin(false)} id='yes1' type="radio"  value="#009900"  name="contact"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -721,11 +770,11 @@ useEffect(()=>{
                                 <div className="alalalalallaalalalal1">
                                 <div className="akardon-pasdia-chiqadi-but1">
                                     <div className="ana-pachti-tugadi-inpu-radio">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input onClick={()=>Fibertin(true)} id='yes1' type="radio"  value="#009900"  name="kot"/>
                                         <span>Да</span>
                                         </div>
                                         <div className="ana-pachti-tugadi-inpu-radio1">
-                                        <input  id='yes1' type="radio"  value="#009900"  name="contact"/>
+                                        <input onClick={()=>Fibertin(false)} id='yes1' type="radio"  value="#009900"  name="kot"/>
                                         <span>Нет</span>
                                     </div>
                                 </div>
@@ -750,7 +799,7 @@ useEffect(()=>{
                                 <div className="akardon-pasdia-chiqadi-but4">
                                 {gradus.map((item,key)=>{
                                         return (<div>
-                                             <button key={key}>-{item.gradus}C</button>
+                                             <button onClick={()=>SovuqPro(item)} key={key}>-{item.gradus}C</button>
                                         </div>
                                             
                                              ) 
