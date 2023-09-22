@@ -55,7 +55,7 @@ export default function Partners_page() {
     axios.get(`${url}/api/work`).then(res=>{
       setPost1(res.data)
       console.log(res.data);
-      alert("Ваша информация была принято ожидайте ответа ");
+      ;
       setPage(2)
     }).catch(err=>{
     })
@@ -108,7 +108,7 @@ const [shving_id,setShvingid] = useState()
     setPost2(res.data)
     console.log(res.data);
     setPage2(5)
-    alert("Ваша информация была принято ожидайте ответа ")
+    
   }).catch(err=>{
   })
  }else if(id === 3){
@@ -128,7 +128,7 @@ const [shving_id,setShvingid] = useState()
     setPost2(res.data)
     console.log(res.data);
     setPage2(5)
-    alert("Ваша информация была принято ожидайте ответа ")
+    
 
   }).catch(err=>{ 
   })
@@ -443,7 +443,7 @@ const [shving_id,setShvingid] = useState()
   <div className='sizning-butru'>
         <h2>Ваша заявка принята!</h2>
         <p>Уже начали обработку.</p>
-        <button onClick={()=>setPage2(1)}>Вернуться к форме </button>
+        <button onClick={()=>setPage2 (1)}>Вернуться к форме </button>
       </div>
   </div>):(""))}
 </div>
