@@ -80,7 +80,7 @@ export default function Kankulyator() {
        
     ])
     useEffect(()=>{
-        axios.get(`${url}/api/marka`).then(res=>{
+        axios.get(`${url}/api/product`).then(res=>{
             setSel(res.data)
         })
     })
@@ -289,9 +289,9 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
+                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value);console.log(sessionStorage.setItem("Швинг",e.target.value));}} className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option className='option1234' key={key} value={item.name}>{item.title}</option>
+                                return <option className='option1234' key={key} value={item.allmarka.title+ ' ' + item.allhomeiy.title + ' ' + (item.description)}>{item.allmarka.title}, {item.allhomeiy.title}</option>
                               
                             })}
                         </select>
@@ -460,7 +460,7 @@ export default function Kankulyator() {
                 </div>
                 <div className="kal_header_vid">
                     <span className='span707'>Вид бетона:</span><br />
-                    <span className='span441'>{kod === 0 ? "Фундамент по своим размерам" : kod === 1 ? "Пескобетон на стяжку": kod === 2 ? "Ленточный фундамент" : kod === 3 ? "Монолитная плита фундамента":""} <br />{sessionStorage.getItem("Швинг")}</span>
+                    <span className='span441'>{sessionStorage.getItem("Швинг")} <br /></span>
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
