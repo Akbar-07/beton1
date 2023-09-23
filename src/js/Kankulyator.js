@@ -131,7 +131,8 @@ export default function Kankulyator() {
         setCapitan3(a)
         console.log(id1,"id3");
 
-    } 
+    }
+    const [senabbas, setSenabbas] = useState(0)
     const [capitan4, setCapitan4] = useState([{id1:4}])
     var otash4 = ()=>{
         var a = capitan4
@@ -287,14 +288,18 @@ export default function Kankulyator() {
                     <input type="number" className='inp1_1 mlp2' id="inp2" placeholder='8'/>
                     </div>
                     <div className="kal_inp1">
-                        <span>Высота ленты,м:1</span><br />
+                        <span>Высота ленты,м:</span><br />
                     <input type="number" className='inp1_1 mlp3' id="inp3" placeholder='2'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select  className='select_yangi'>
+                        <select  className='select_yangi' >
                             {sel.map((item,key)=>{
-                                return <option className='option1234' onChange={()=>{setSes([item.allmarka.title,item.allhomeiy.title,"jonnibek"]);console.log("sdf");}} key={key} value={JSON.stringify(item)}>{item.allmarka.title}, {item.allhomeiy.title}</option>
+                                return <option className='option1234' onClick={()=>{setSes([item.allmarka.title,item.allhomeiy.title,"П3"]);setSenabbas(item.s3_sena)}} key={key} value={JSON.stringify(item)}>{item.allmarka.title}, {item.allhomeiy.title}(П3)</option>
+                              
+                            })}
+                              {sel.map((item,key)=>{
+                                return <option className='option1234' onClick={()=>{setSes([item.allmarka.title,item.allhomeiy.title,"П4"]);setSenabbas(item.s4_sena)}} key={key} value={JSON.stringify(item)}>{item.allmarka.title}, {item.allhomeiy.title}(П4)</option>
                               
                             })}
                         </select>
@@ -463,11 +468,11 @@ export default function Kankulyator() {
                 </div>
                 <div className="kal_header_vid">
                     <span className='span707'>Вид бетона:</span><br />
-                    <span className='span441'>{ses[0]} <br />{ses[1]} {ses[2]} </span>
+                    <span className='span441'>{ses[0]} <br />{ses[1]}({ses[2]})</span>
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
-                    <h2>{summa} ₽</h2>
+                    <h2>{hisob_masiv*senabbas} ₽</h2>
                     <div onClick={()=>{window.location="/zakazbeton"}} className="kal_header_zakaz">
                         <span className='span442'>Добавить в заказ</span>
                         <div className="kal_header_dumaloq">
