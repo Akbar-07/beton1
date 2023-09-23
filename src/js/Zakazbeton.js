@@ -333,8 +333,22 @@ function eeeeee3(){
 
 export default function Zakazbeton() {
 
-  const [startDate, setStartDate] = useState(new Date());
+    const [startDate, setStartDate] = useState([{date:new Date(),value:20}]);
+      const [startDate2, setStartDate2] =useState(new Date());
   
+
+ const onChange = startDate1 =>{
+      var a=startDate
+console.log(startDate);
+      a.push({date:startDate1,value:20})
+        setStartDate(a)
+    }
+    function ochirday1(key){
+        var a=startDate
+        a.splice(key,1)
+        setStartDate(a)
+        }
+
   function chiqaqol(){
     var y= document.querySelector(".akardon-pasdia-chiqadi-but").style.display;
     if(y==="none"){
@@ -404,6 +418,8 @@ const [data3,setData3] =useState(0)
 const [data4,setData4] =useState(0)
 const [data5,setData5] =useState(0)
   const [zol, setZol] = useState([{}])
+
+  
   useEffect(()=>{
     axios.get(`${url}/api/category`).then(res=>{
         setZol(res.data)
@@ -664,7 +680,17 @@ function SovuqPro(item){
               <th><img src={kkk} alt="" /></th>
               <th className='pasqismi-narx-joy-zz'>{item.allmarka.title}</th>
               <th className='pasqismi-opessaniya'>{item.description}</th>{/* Наименование опции  */}
-              <th className='pasqismi-narx-joy-zz'>{item.id==PPId?PP4==1?Addiv==true?Fiber==true?Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s3_sena+item.hydrophobic_additive_sena:Fiber==true?item.s3_sena+item.fiber_fiber:item.s3_sena:Addiv==true?Fiber==true?Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s4_sena+item.hydrophobic_additive_sena:Fiber==true?item.s4_sena+item.fiber_fiber:item.s4_sena:item.s3_sena}</th>
+              <th className='pasqismi-narx-joy-zz'>{item.id==PPId?
+                PP4==1?
+                Addiv==true?
+                Fiber==true?
+                Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s3_sena+item.hydrophobic_additive_sena:
+                Fiber==true?item.s3_sena+item.fiber_fiber:item.s3_sena
+                :
+                Addiv==true?
+                Fiber==true?
+                Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s4_sena+item.hydrophobic_additive_sena:
+                Fiber==true?item.s4_sena+item.fiber_fiber:item.s4_sena:item.s3_sena}</th>
             </tr> 
                 )
             })}
@@ -734,8 +760,8 @@ function SovuqPro(item){
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="akardon-pasdia-chiqadi-but">
-                                    <button onClick={()=>PP(1)}>П3</button>
-                                    <button onClick={()=>PP(2)}>П4</button>
+                                    <button style={PP4==1?{color:"#E93333"}:{}} onClick={()=>PP(1)}>П3</button>
+                                    <button style={PP4==2?{color:"#E93333"}:{}} onClick={()=>PP(2)}>П4</button>
                                 </div>
                             </div>
                             <div className="akardion-pro-zakazz">
@@ -963,7 +989,7 @@ function SovuqPro(item){
               <div className="kogda_div2_1_voht"><span>12:00 - 15:00</span></div>
               <div className="kogda_div2_1_voht"><span>18:00 - 21:00</span></div>
             </div>
-            <div className="kogda_div2_2">
+            {/* <div className="kogda_div2_2">
              <div className="oplkjnm">
              <div className="kogda_div2_2_sanasi">
                 <div className="kogda_div2_2_sanasi_vohti">
@@ -997,8 +1023,40 @@ function SovuqPro(item){
       inline
     />
               </div>
-            </div>
+            </div> */}
           </div>
+                                      <div className="kalendar-joy-justify-end">
+                                <div className="kotta-data-vremiyanaa">
+                                    {startDate.map((item,key)=>{
+                                 return  <div key={key} className="xaxa-skfkdkf" id='day-1'>
+                                    <div className="data-srokkkk">
+                                        <p>{item.date.getDate()}.{item.date.getMonth()}.{item.date.getFullYear()}</p>
+                                    </div>
+                                    <div className="xxxx-data" onClick={()=>ochirday1(key)}>
+                                       <span>x</span>
+                                    </div>
+                                    <div className="data-srokkkk">
+                                        <select>
+                                            <option value="">20м3</option>
+                                            <option value="">40м3</option>
+                                            <option value="">30м3</option>
+                                        </select>
+                                        </div>
+                                        
+                                </div>      
+                                    })}
+                              
+                     
+                                </div>
+                                <div className="data-pricers">
+                                                                <DatePicker
+      selected={startDate2}
+      onChange={onChange}
+      value={startDate2}
+      inline
+    />
+                                </div>
+                            </div>
         </div>
         <div className="zakaz_kvadrat_zagruska zakaz_kvadrat_zagruska_kop">
           <span>6/9</span>
