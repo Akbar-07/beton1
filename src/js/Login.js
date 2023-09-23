@@ -59,7 +59,7 @@ export default function Login() {
           )
         console.log(res.data.access)
       }).catch(err=>{
-        console.log(err); 
+      
         alert("ошибка пароля или электронной почты")
       })
     }
@@ -81,7 +81,7 @@ export default function Login() {
         console.log(res.data.access)
        setPage2(10)
       }).catch(err=>{
-        console.log(err); 
+        
         alert("ошибка пароля или электронной почты")
       })
     }
@@ -114,7 +114,7 @@ function voditel(){
     console.log(res.data.access)
    setPage2(20)
   }).catch(err=>{
-    console.log(err); 
+    
     alert("ошибка пароля или электронной почты")
   })
 }
@@ -147,7 +147,7 @@ function organizatsiyakirish(){
     console.log(res.data.access)
    setPage2(20)
   }).catch(err=>{
-    console.log(err); 
+    
     alert("ошибка пароля или электронной почты")
   })
 }
