@@ -684,13 +684,13 @@ function SovuqPro(item){
                 PP4==1?
                 Addiv==true?
                 Fiber==true?
-                Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s3_sena+item.hydrophobic_additive_sena:
-                Fiber==true?item.s3_sena+item.fiber_fiber:item.s3_sena
+                Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+Sovuq:item.s3_sena+item.hydrophobic_additive_sena:
+                Fiber==true?Sovuq1==2?item.s3_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.fiber_fiber:Sovuq1==2?item.s3_sena+Sovuq:item.s3_sena
                 :
                 Addiv==true?
                 Fiber==true?
-                Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s4_sena+item.hydrophobic_additive_sena:
-                Fiber==true?item.s4_sena+item.fiber_fiber:item.s4_sena:item.s3_sena}</th>
+                Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+Sovuq:item.s4_sena+item.hydrophobic_additive_sena:
+                Fiber==true?Sovuq1==2?item.s4_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.fiber_fiber:Sovuq1==2?item.s4_sena+Sovuq:item.s4_sena:item.s3_sena}</th>
             </tr> 
                 )
             })}
