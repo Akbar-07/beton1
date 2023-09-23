@@ -500,6 +500,8 @@ const [Fiber, setFiber] = useState(false)
 const [Sovuq, setSovuq] = useState()
 const [SovuqId, setSovuqId] = useState()
 const [Sovuq1, setSovuq1] = useState(1)
+const [BosKey,setBosKey]=useState()
+const [PulSaqlash,setPulSaqlash]=useState()
 
 
 function check_ochil(id){
@@ -572,6 +574,7 @@ function PP(id){
 }
 
 function BacKey(key,item){
+setBosKey(key)
 setPPId(item.id)
 // document.querySelectorAll(".tr_1")[key].style="background:white;"
 }
@@ -590,7 +593,14 @@ function SovuqPro(item){
 }
 
 function IkkiBosqich(){
-    console.log(document.querySelector("#PulKan").innerHTML,"salom")
+    setPulSaqlash(document.querySelectorAll("#PulKan")[BosKey].innerHTML)
+    console.log(document.querySelectorAll("#PulKan")[BosKey].innerHTML,"salom")
+}
+
+function uchPage(){
+   var a=PulSaqlash*num
+   setPulSaqlash(a)
+   console.log(a,"salom")
 }
 
   return (
@@ -893,7 +903,7 @@ function IkkiBosqich(){
         </div>
         <div className="zakaz_kvadrat_tegi">
           <button onClick={()=>{setZag(2)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(4)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          <button onClick={()=>{setZag(4);uchPage()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}
       {zag === 4 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd4'>
