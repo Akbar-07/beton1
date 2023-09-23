@@ -17,7 +17,7 @@ import {BsCheckLg} from "react-icons/bs"
 import {BiChevronDown} from "react-icons/bi"
 import {BiRightArrowAlt} from "react-icons/bi"
 import { useEffect } from 'react'
-import axios from 'axios'
+import axios, { all } from 'axios'
 import url from './Host'
 
 export default function Kankulyator() {
@@ -83,7 +83,7 @@ export default function Kankulyator() {
         axios.get(`${url}/api/product`).then(res=>{
             setSel(res.data)
         })
-    })
+    },[])
     const [sel1, setSel1] = useState([
         {
             title : 20,
@@ -222,6 +222,7 @@ export default function Kankulyator() {
         var kod = key1
         const [pesbeton,setPes] = useState([{}])
         const [s3_sena_ham,setS3]= useState([])
+        
         useEffect(()=>{
             axios.get(`${url}/api/product`).then(res=>{
                 setS3(res.data)
@@ -229,8 +230,10 @@ export default function Kankulyator() {
 
             })
         },[])
-        var sum = 10
+        console.log(s3_sena_ham);
+        var sum = s3_sena_ham 
         var summa = hisob_masiv * sum
+        const [ses, setSes] = useState([])
 
   return (
     <div>
@@ -284,14 +287,14 @@ export default function Kankulyator() {
                     <input type="number" className='inp1_1 mlp2' id="inp2" placeholder='8'/>
                     </div>
                     <div className="kal_inp1">
-                        <span>Высота ленты,м:</span><br />
+                        <span>Высота ленты,м:1</span><br />
                     <input type="number" className='inp1_1 mlp3' id="inp3" placeholder='2'/>
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value);console.log(sessionStorage.setItem("Швинг",e.target.value));}} className='select_yangi'>
+                        <select  className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option className='option1234' key={key} value={item.allmarka.title+ ' ' + item.allhomeiy.title + ' ' + (item.description)}>{item.allmarka.title}, {item.allhomeiy.title}</option>
+                                return <option className='option1234' onChange={()=>{setSes([item.allmarka.title,item.allhomeiy.title,"jonnibek"]);console.log("sdf");}} key={key} value={JSON.stringify(item)}>{item.allmarka.title}, {item.allhomeiy.title}</option>
                               
                             })}
                         </select>
@@ -331,7 +334,7 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
+                        <select onChange={(e)=>{sessionStorage.setItem("mas",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
                                 return <option key={key} value={item.name}>{item.title}</option>
                              
@@ -368,7 +371,7 @@ export default function Kankulyator() {
                     <div className="lobila">
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
+                        <select onChange={(e)=>{sessionStorage.setItem("mas",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
                                 return <option key={key} value={item.name}>{item.title}</option>
                            
@@ -405,9 +408,9 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select  onChange={(e)=>{sessionStorage.setItem("Швинг",e.target.value)}} className='select_yangi'>
+                        <select  onChange={(e)=>{sessionStorage.setItem("mas",e.target.value)}} className='select_yangi'>
                             {sel.map((item,key)=>{
-                                return <option key={key} value={item.name}>{item.title}</option>
+                                return <option  key={key} value={item.name}>{item.title}</option>
                                 
                             })}
                         </select>
@@ -460,7 +463,7 @@ export default function Kankulyator() {
                 </div>
                 <div className="kal_header_vid">
                     <span className='span707'>Вид бетона:</span><br />
-                    <span className='span441'>{sessionStorage.getItem("Швинг")} <br /></span>
+                    <span className='span441'>{ses[0]} <br />{ses[1]} {ses[2]} </span>
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
