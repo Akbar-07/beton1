@@ -234,7 +234,7 @@ export default function Kankulyator() {
         console.log(s3_sena_ham);
         var sum = s3_sena_ham 
         var summa = hisob_masiv * sum
-        const [ses, setSes] = useState([])
+        const [ses, setSes] = useState()
 
   return (
     <div>
@@ -293,13 +293,13 @@ export default function Kankulyator() {
                     </div>
                     <div className="kal_inp1">
                         <span>Марка бетона:</span><br />
-                        <select  className='select_yangi' >
+                        <select onChange={(e)=>{setSes([(e.target.value).split(",")[0],(e.target.value).split(",")[1],(e.target.value).split(",")[2]]);setSenabbas((e.target.value).split(",")[3])}} id='bir12' className='select_yangi' >
                             {sel.map((item,key)=>{
-                                return <option className='option1234' onClick={()=>{setSes([item.allmarka.title,item.allhomeiy.title,"П3"]);setSenabbas(item.s3_sena)}} key={key} value={JSON.stringify(item)}>{item.allmarka.title}, {item.allhomeiy.title}(П3)</option>
+                                return <option className='option1234'  key={key} value={`${item.allmarka.title},${item.allhomeiy.title},(П3),${item.s3_sena}`}>{item.allmarka.title}, {item.allhomeiy.title}(П3)</option>
                               
                             })}
                               {sel.map((item,key)=>{
-                                return <option className='option1234' onClick={()=>{setSes([item.allmarka.title,item.allhomeiy.title,"П4"]);setSenabbas(item.s4_sena)}} key={key} value={JSON.stringify(item)}>{item.allmarka.title}, {item.allhomeiy.title}(П4)</option>
+                                return <option className='option1234'  key={key} value={`${item.allmarka.title},${item.allhomeiy.title},(П4),${item.s4_sena}`}>{item.allmarka.title}, {item.allhomeiy.title}(П4)</option>
                               
                             })}
                         </select>
