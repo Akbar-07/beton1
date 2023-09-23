@@ -343,11 +343,11 @@ console.log(startDate);
       a.push({date:startDate1,value:20})
         setStartDate(a)
     }
-    function ochirday1(key){
-        var a=startDate
-        a.splice(key,1)
-        setStartDate(a)
-        }
+function ochirday1(key){
+var a=startDate
+a.splice(key,1)
+setStartDate(a)
+}
 
   function chiqaqol(){
     var y= document.querySelector(".akardon-pasdia-chiqadi-but").style.display;
@@ -659,7 +659,7 @@ function SovuqPro(item){
             {/* <span>М200</span>
             <span>М400</span> */}
           </div>
-          <input min={1} max={3}  className='range1' type="range" name="" onChange={(e)=>FilterPorduct(e.target.value)} />
+          <input min={1} max={3} className='range1' type="range" name="" onChange={(e)=>FilterPorduct(e.target.value)} />
         </div>
         <div className="eng-kottade-ulani-ushab-turadi da_boladi">
                         <div className="eng-kottade-scrol eng-kottade-scrol1">
@@ -680,17 +680,7 @@ function SovuqPro(item){
               <th><img src={kkk} alt="" /></th>
               <th className='pasqismi-narx-joy-zz'>{item.allmarka.title}</th>
               <th className='pasqismi-opessaniya'>{item.description}</th>{/* Наименование опции  */}
-              <th className='pasqismi-narx-joy-zz'>{item.id==PPId?
-                PP4==1?
-                Addiv==true?
-                Fiber==true?
-                Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s3_sena+item.hydrophobic_additive_sena:
-                Fiber==true?item.s3_sena+item.fiber_fiber:item.s3_sena
-                :
-                Addiv==true?
-                Fiber==true?
-                Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s4_sena+item.hydrophobic_additive_sena:
-                Fiber==true?item.s4_sena+item.fiber_fiber:item.s4_sena:item.s3_sena}</th>
+              <th className='pasqismi-narx-joy-zz'>{item.id==PPId?PP4==1?Addiv==true?Fiber==true?Sovuq1==2?item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s3_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s3_sena+item.hydrophobic_additive_sena:Fiber==true?item.s3_sena+item.fiber_fiber:item.s3_sena:Addiv==true?Fiber==true?Sovuq1==2?item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber+Sovuq:item.s4_sena+item.hydrophobic_additive_sena+item.fiber_fiber:item.s4_sena+item.hydrophobic_additive_sena:Fiber==true?item.s4_sena+item.fiber_fiber:item.s4_sena:item.s3_sena}</th>
             </tr> 
                 )
             })}
@@ -760,8 +750,8 @@ function SovuqPro(item){
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="akardon-pasdia-chiqadi-but">
-                                    <button style={PP4==1?{color:"#E93333"}:{}} onClick={()=>PP(1)}>П3</button>
-                                    <button style={PP4==2?{color:"#E93333"}:{}} onClick={()=>PP(2)}>П4</button>
+                                    <button onClick={()=>PP(1)}>П3</button>
+                                    <button onClick={()=>PP(2)}>П4</button>
                                 </div>
                             </div>
                             <div className="akardion-pro-zakazz">
