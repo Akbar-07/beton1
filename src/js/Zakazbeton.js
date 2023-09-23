@@ -343,11 +343,11 @@ console.log(startDate);
       a.push({date:startDate1,value:20})
         setStartDate(a)
     }
-    function ochirday1(key){
-        var a=startDate
-        a.splice(key,1)
-        setStartDate(a)
-        }
+function ochirday1(key){
+var a=startDate
+a.splice(key,1)
+setStartDate(a)
+}
 
   function chiqaqol(){
     var y= document.querySelector(".akardon-pasdia-chiqadi-but").style.display;
