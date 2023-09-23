@@ -451,10 +451,17 @@ const [data5,setData5] =useState(0)
 
   function global2(){
     axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
-        setProducts(res.data)
+        var Filter2=marka1.filter((item,key)=>key==0)
+        Filter2.map((item,key)=>{
+            const Filter1=res.data.filter(filter=>filter.allmarka.id==item.id)
+            setProducts(Filter1)
+        })
     }).catch(err=>{})
     document.querySelector(".zakaz_kvadrat_zagruska").style = "margin-top: 180px;"
     setZag(2) 
+    setTimeout(()=>{
+        document.querySelector("#FilterRange").value=0
+    },[])
    }
   function yoqil(id,items){
     setProductsId(items.id)
@@ -491,7 +498,9 @@ const [PPId, setPPId] = useState()
 const [Addiv, setAddiv] = useState(false)
 const [Fiber, setFiber] = useState(false)
 const [Sovuq, setSovuq] = useState()
+const [SovuqId, setSovuqId] = useState()
 const [Sovuq1, setSovuq1] = useState(1)
+
 
 function check_ochil(id){
   for (let i = 0; i < document.querySelectorAll(".oplata_map_card_dumaloq").length; i++) {
@@ -521,8 +530,11 @@ useEffect(()=>{
     })
 })
 const [marka1, setMarka1] = useState([])
+const [marka1Key, setMarka1Key] = useState()
 useEffect(()=>{
     axios.get(`${url}/api/marka`).then(res=>{
+        var a=res.data.length-1
+        setMarka1Key(a)
         setMarka1(res.data)
     }).catch(err=>{
     })
@@ -545,9 +557,7 @@ useEffect(()=>{
 })
 
 function FilterPorduct(e){
-var m5=e
-var m50=m5==1?"m50":m5==2?"M200":m5==3?"m400":""
-const Filter=marka1.filter(item=>item.title.includes(m50.slice(1)))
+const Filter=marka1.filter((item,key)=>key==e)
 
 axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
     Filter.map(filter1=>{
@@ -574,8 +584,13 @@ function Fibertin(checked){
 }
 
 function SovuqPro(item){
+    setSovuqId(item.id)
     setSovuq(item.sena)
     setSovuq1(2)
+}
+
+function IkkiBosqich(){
+    console.log(document.querySelector("#PulKan").innerHTML,"salom")
 }
 
   return (
@@ -659,7 +674,7 @@ function SovuqPro(item){
             {/* <span>М200</span>
             <span>М400</span> */}
           </div>
-          <input min={1} max={3}  className='range1' type="range" name="" onChange={(e)=>FilterPorduct(e.target.value)} />
+          <input min={0} max={marka1Key} id="FilterRange" className='range1' type="range" name="" onChange={(e)=>FilterPorduct(e.target.value)} />
         </div>
         <div className="eng-kottade-ulani-ushab-turadi da_boladi">
                         <div className="eng-kottade-scrol eng-kottade-scrol1">
@@ -680,7 +695,7 @@ function SovuqPro(item){
               <th><img src={kkk} alt="" /></th>
               <th className='pasqismi-narx-joy-zz'>{item.allmarka.title}</th>
               <th className='pasqismi-opessaniya'>{item.description}</th>{/* Наименование опции  */}
-              <th className='pasqismi-narx-joy-zz'>{item.id==PPId?
+              <th id="PulKan" className='pasqismi-narx-joy-zz'>{item.id==PPId?
                 PP4==1?
                 Addiv==true?
                 Fiber==true?
@@ -760,8 +775,8 @@ function SovuqPro(item){
                             </div>
                             <div className="akardion-pasida-chiqadi-bosilganda">
                                 <div className="akardon-pasdia-chiqadi-but">
-                                    <button style={PP4==1?{color:"#E93333"}:{}} onClick={()=>PP(1)}>П3</button>
-                                    <button style={PP4==2?{color:"#E93333"}:{}} onClick={()=>PP(2)}>П4</button>
+                                    <button style={PP4==1?{color:"#E93333",background:'white'}:{}} onClick={()=>PP(1)}>П3</button>
+                                    <button style={PP4==2?{color:"#E93333",background:'white'}:{}} onClick={()=>PP(2)}>П4</button>
                                 </div>
                             </div>
                             <div className="akardion-pro-zakazz">
@@ -834,7 +849,7 @@ function SovuqPro(item){
                                 <div className="akardon-pasdia-chiqadi-but4">
                                 {gradus.map((item,key)=>{
                                         return (<div>
-                                             <button onClick={()=>SovuqPro(item)} key={key}>-{item.gradus}C</button>
+                                             <button style={SovuqId==item.id?{color:'#E93333',background:'white'}:{}} onClick={()=>SovuqPro(item)} key={key}>-{item.gradus}C</button>
                                         </div>
                                             
                                              ) 
@@ -852,7 +867,7 @@ function SovuqPro(item){
         </div>
         <div className="zakaz_kvadrat_tegi">
           <button onClick={()=>{setZag(1)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(3)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          <button onClick={()=>{setZag(3);IkkiBosqich()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}
       {zag === 3 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd3'>

@@ -1,2 +1,2 @@
-var url="http://siriyuuc.beget.tech"
+var url="https://dastafka-back.onrender.com"
 export default url;
