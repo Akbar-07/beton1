@@ -468,7 +468,7 @@ export default function Kankulyator() {
                 </div>
                 <div className="kal_header_vid">
                     <span className='span707'>Вид бетона:</span><br />
-                    <span className='span441'>{ses[0]} <br />{ses[1]}({ses[2]})</span>
+                    <span className='span441'>{ses[0]} <br />{ses[1]}{ses[2]}</span>
                 </div>
                 <div className="kal_header_narxi">
                     <span className='span707'>Стоимость:</span>
