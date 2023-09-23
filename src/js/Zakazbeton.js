@@ -59,6 +59,7 @@ import m350 from '../img/m350 1.png'
 import { useEffect } from 'react'
 import axios from 'axios'
 import url from './Host'
+import { pink } from '@mui/material/colors'
 
 
 
@@ -570,7 +571,20 @@ function SovuqPro(item){
         <div className="zakaz_kvadrat_map">
           {zol.map((item,key)=>{
             return <>
-          {zol[key].image === null ? document.querySelector(".zakaz_kvadrat_map_card").style = "background:pink;"
+          {zol[key].image === null ? <div key={key} style={{background:"linear-gradient(135deg,#000 20%,#757575)"}} className="zakaz_kvadrat_map_card">   
+              <div className="card_ptich">
+                <div onClick={()=>{yoqil(key,item);console.log(item.image,"asad")}} className="card_ptich_dumaloq">
+                  <BsCheckLg className='card_ptich_dumaloq_ptich'/>
+                </div>
+              </div>
+            <div className="wwse">
+            <span className='map_span'>{item.title}</span>
+         
+            </div>
+           <div className="poklmn">
+           <span className='map_span11'>{item.description}</span>
+           </div>
+            </div>
            :
            <div key={key} className="zakaz_kvadrat_map_card">   
               <div className="card_ptich">
