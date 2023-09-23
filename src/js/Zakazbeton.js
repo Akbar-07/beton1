@@ -594,13 +594,19 @@ function SovuqPro(item){
 
 function IkkiBosqich(){
     setPulSaqlash(document.querySelectorAll("#PulKan")[BosKey].innerHTML)
-    console.log(document.querySelectorAll("#PulKan")[BosKey].innerHTML,"salom")
+    // console.log(document.querySelectorAll("#PulKan")[BosKey].innerHTML,"salom")
 }
 
 function uchPage(){
    var a=PulSaqlash*num
    setPulSaqlash(a)
-   console.log(a,"salom")
+}
+
+function tortBos(){
+    console.log(document.querySelector("#adressZakaz").value)
+    console.log(num1,"salom");
+    console.log(num2,"salom");
+    console.log(num3,"salom");
 }
 
   return (
@@ -912,7 +918,7 @@ function uchPage(){
         </div>
         <div className="kuda_div">
           <div className="kuda_div1">
-            <input maxLength={100} className='kuda_div1_input' type="text" placeholder='Введите адрес'/><br />
+            <input maxLength={100} className='kuda_div1_input' id='adressZakaz' type="text" placeholder='Введите адрес'/><br />
             <BiSearch className='search_icon'/>
             <div className="kuda_div11">
             <img src={IMG5} alt="" />
@@ -957,7 +963,7 @@ function uchPage(){
         </div>
         <div className="zakaz_kvadrat_tegi">
           <button onClick={()=>{setZag(3)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(5)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          <button onClick={()=>{setZag(5);tortBos()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}  
       {zag === 5 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd5'>
