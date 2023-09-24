@@ -448,22 +448,30 @@ const [data5,setData5] =useState(0)
   const [zag, setZag] = useState(1)
   const [productsId, setProductsId] = useState()
   const [products, setProducts] = useState([])
+  const [Otish,setOtish]=useState(false)
+  const [Otish1,setOtish1]=useState(false)
+  const [Otish2,setOtish2]=useState(false)
 
   function global2(){
-    axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
+    if (Otish!==false) {
+        axios.get(`${url}/api/category/${productsId}`,{headers:{Authorization:`Bearer ${localStorage.getItem("token")}`}}).then(res=>{
         var Filter2=marka1.filter((item,key)=>key==0)
         Filter2.map((item,key)=>{
             const Filter1=res.data.filter(filter=>filter.allmarka.id==item.id)
             setProducts(Filter1)
         })
-    }).catch(err=>{})
-    document.querySelector(".zakaz_kvadrat_zagruska").style = "margin-top: 180px;"
-    setZag(2) 
-    setTimeout(()=>{
+        }).catch(err=>{})
+        document.querySelector(".zakaz_kvadrat_zagruska").style = "margin-top: 180px;"
+        setZag(2) 
+        setTimeout(()=>{
         document.querySelector("#FilterRange").value=0
-    },[])
+        },100)   
+    }else{
+        alert("Выберите категорию")
+    }
    }
   function yoqil(id,items){
+    setOtish(id)
     setProductsId(items.id)
     for (let i = 0; i < document.querySelectorAll(".card_ptich_dumaloq_ptich").length; i++) {
       if(id === i){
@@ -502,6 +510,7 @@ const [SovuqId, setSovuqId] = useState()
 const [Sovuq1, setSovuq1] = useState(1)
 const [BosKey,setBosKey]=useState()
 const [PulSaqlash,setPulSaqlash]=useState()
+const [adressSaqlash,setAdressSaqlash]=useState()
 
 
 function check_ochil(id){
@@ -574,6 +583,7 @@ function PP(id){
 }
 
 function BacKey(key,item){
+setOtish1(item.id)
 setBosKey(key)
 setPPId(item.id)
 // document.querySelectorAll(".tr_1")[key].style="background:white;"
@@ -593,20 +603,33 @@ function SovuqPro(item){
 }
 
 function IkkiBosqich(){
-    setPulSaqlash(document.querySelectorAll("#PulKan")[BosKey].innerHTML)
+    if(Otish1!==false){
+        setZag(3)
+        setPulSaqlash(document.querySelectorAll("#PulKan")[BosKey].innerHTML)
+    }else{
+        alert("Выберите продукт")
+    }
     // console.log(document.querySelectorAll("#PulKan")[BosKey].innerHTML,"salom")
 }
 
 function uchPage(){
-   var a=PulSaqlash*num
-   setPulSaqlash(a)
+   if(num!==0){
+       setZag(4)
+       var a=PulSaqlash*num
+       localStorage.setItem("Pul",a)
+       setPulSaqlash(a)
+   }else{
+    alert("Выберите количество")
+   }
 }
 
 function tortBos(){
-    console.log(document.querySelector("#adressZakaz").value)
-    console.log(num1,"salom");
-    console.log(num2,"salom");
-    console.log(num3,"salom");
+    if(document.querySelector("#adressZakaz").value){
+        setZag(5);
+        setAdressSaqlash(document.querySelector("#adressZakaz").value)
+    }else{
+        alert('Введите свой адрес')
+    }
 }
 
   return (
@@ -882,8 +905,8 @@ function tortBos(){
           </div>
         </div>
         <div className="zakaz_kvadrat_tegi">
-          <button onClick={()=>{setZag(1)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(3);IkkiBosqich()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          <button onClick={()=>{setZag(1);setOtish(false)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
+          <button onClick={()=>{IkkiBosqich()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}
       {zag === 3 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd3'>
@@ -908,8 +931,8 @@ function tortBos(){
           </div>
         </div>
         <div className="zakaz_kvadrat_tegi">
-          <button onClick={()=>{setZag(2)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(4);uchPage()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          <button onClick={()=>{setZag(2);setOtish1(false);setPPId(false)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
+          <button onClick={()=>{uchPage()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}
       {zag === 4 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd4'>
@@ -963,7 +986,7 @@ function tortBos(){
         </div>
         <div className="zakaz_kvadrat_tegi">
           <button onClick={()=>{setZag(3)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(5);tortBos()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          <button onClick={()=>{tortBos()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}  
       {zag === 5 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd5'>
