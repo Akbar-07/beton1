@@ -60,6 +60,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 import url from './Host'
 import { pink } from '@mui/material/colors'
+import { Gradient } from '@material-ui/icons'
 
 
 
@@ -417,7 +418,8 @@ const [data2,setData2] =useState(0)
 const [data3,setData3] =useState(0)
 const [data4,setData4] =useState(0)
 const [data5,setData5] =useState(0)
-  const [zol, setZol] = useState([{}])
+const [zol, setZol] = useState([{}])
+const [tarifId,setTarifId]=useState()
 
   
   useEffect(()=>{
@@ -485,7 +487,9 @@ const [data5,setData5] =useState(0)
     }
   }
  
-function bosilganda(id){
+function bosilganda(id,item){
+    setTarifId(item.id)
+    setOtish2(id)
 for (let i = 0; i < document.querySelectorAll(".kvad_map_karoch_card1_dumaloq").length; i++) {
   if(id === i ){
     document.querySelectorAll(".iconchek")[i].style = "display:block;"
@@ -511,6 +515,8 @@ const [Sovuq1, setSovuq1] = useState(1)
 const [BosKey,setBosKey]=useState()
 const [PulSaqlash,setPulSaqlash]=useState()
 const [adressSaqlash,setAdressSaqlash]=useState()
+const [qayer,setQayer]=useState(1)
+const [Checkbox,setCheckbox]=useState(false)
 
 
 function check_ochil(id){
@@ -629,6 +635,15 @@ function tortBos(){
         setAdressSaqlash(document.querySelector("#adressZakaz").value)
     }else{
         alert('Введите свой адрес')
+    }
+}
+
+function beshPage(){
+    if(Otish2!==false){
+        setZag(6)
+        console.log(tarifId,"salom");
+    }else{
+        alert("Выберите тариф")
     }
 }
 
@@ -998,7 +1013,7 @@ function tortBos(){
           return <div key={key} className="kvad_map_karoch_card">
             <div className="kvad_map_karoch_card1">
               <img src={IMG9} alt="" />
-              <div onClick={()=>{bosilganda(key)}} className="kvad_map_karoch_card1_dumaloq">
+              <div onClick={()=>{bosilganda(key,item)}} className="kvad_map_karoch_card1_dumaloq">
               <BsCheckLg className='iconchek'/>
               </div>
             </div>
@@ -1017,7 +1032,7 @@ function tortBos(){
         </div>
         <div className="zakaz_kvadrat_tegi">
           <button onClick={()=>{setZag(4)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
-          <button onClick={()=>{setZag(6)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
+          <button onClick={()=>{beshPage()}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""} 
       {zag === 6 ? <div className="zakaz_kvadrat" id='suasjdasdsajjsnd6'>
@@ -1028,15 +1043,15 @@ function tortBos(){
 
         <div className="kogda_div">
           <div className="kogda_div1">
-            <button className='kogda_div1_but1'>Как можно быстрее</button>
-            <button className='kogda_div1_but2'>Сегодня</button>
-            <button className='kogda_div1_but3'>Предварительный заказ</button>
-            <div className="kogda_div1_check">
-              <input className='checkbox_3' type="checkbox" name="" id="" />
-              <span>Разбить заказ на части</span>
-            </div>
+            <button className='kogda_div1_but1' style={qayer==1?{background: '#000000',color:'white'}:{}} onClick={()=>{setQayer(1)}}>Как можно быстрее</button>
+            <button className='kogda_div1_but2' style={qayer==2?{background: '#000000',color:'white'}:{}}  onClick={()=>{setQayer(2)}}>Сегодня</button>
+            <button className="kogda_div1_but3" style={qayer==3?{background: '#000000',color:'white'}:{}}  onClick={()=>{setQayer(3)}}>Предварительный заказ</button>
+            {qayer==3?(<div className="kogda_div1_check">
+            <input className='checkbox_3' type="checkbox" name="" id="" onChange={(e)=>{setCheckbox(e.target.checked)}} />
+            <span>Разбить заказ на части</span>
+          </div>):("")}
           </div>
-          <div className="kogda_div2">
+          {qayer==2?(<div className="kogda_div2">
             <div className="kogda_div2_1">
               <div className="kogda_div2_1_voht"><span>9:00 - 12:00</span></div>
               <div className="kogda_div2_1_voht"><span>12:00 - 15:00</span></div>
@@ -1078,8 +1093,9 @@ function tortBos(){
     />
               </div>
             </div> */}
-          </div>
-                                      <div className="kalendar-joy-justify-end">
+          </div>):("")}
+                         
+                 {Checkbox?(<div className="kalendar-joy-justify-end">
                                 <div className="kotta-data-vremiyanaa">
                                     {startDate.map((item,key)=>{
                                  return  <div key={key} className="xaxa-skfkdkf" id='day-1'>
@@ -1110,7 +1126,8 @@ function tortBos(){
       inline
     />
                                 </div>
-                            </div>
+                            </div>):("")}
+                            
         </div>
         <div className="zakaz_kvadrat_zagruska zakaz_kvadrat_zagruska_kop">
           <span>6/9</span>

@@ -1054,7 +1054,7 @@ font-weight: 600;
   cursor: pointer;
 }
 .kogda_div1_but2:hover{
-  background: linear-gradient(0.35turn,#1a1a1a,#747474);
+  /* background: linear-gradient(0.35turn,#1a1a1a,#747474); */
   cursor: pointer;
 }
 .kogda_div1_but2{
@@ -1062,12 +1062,13 @@ font-weight: 600;
   height: 45px;
   border-radius: 10px;
   border: none;
-  color: white;
+  color: #000000;
+  border: 1px solid #000000;
   font-size: 15px;
   transition: .3s;
   font-weight: 600;
   background-color: transparent;
-  background: linear-gradient(0.35turn,#000000,#606060);
+  /* background: linear-gradient(0.35turn,#000000,#606060); */
 }
 .kogda_div1_but3{
   width: 250px;
@@ -1204,7 +1205,7 @@ font-weight: 600;
     cursor: pointer;
   }
   .kogda_div1_but2:hover{
-    background: linear-gradient(0.35turn,#1a1a1a,#747474);
+    /* background: linear-gradient(0.35turn,#1a1a1a,#747474); */
     cursor: pointer;
   }
   .kogda_div1_but2{
@@ -1212,12 +1213,13 @@ font-weight: 600;
     height: 45px;
     border-radius: 10px;
     border: none;
-    color: white;
+    border: 1px solid #000000;
+    color: #000000;
     font-size: 15px;
     transition: .3s;
     font-weight: 600;
     background-color: transparent;
-    background: linear-gradient(0.35turn,#000000,#606060);
+    /* background: linear-gradient(0.35turn,#000000,#606060); */
   }
   .kogda_div1_but3{
     width: 250px;
@@ -1371,13 +1373,14 @@ font-weight: 600;
     height: 45px;
     border-radius: 10px;
     border: none;
-    color: white;
+    color: #000000;
     font-size: 15px;
     transition: .3s;
+    border: 1px solid #000000;
     font-weight: 600;
     margin-bottom: 15px;
     background-color: transparent;
-    background: linear-gradient(0.35turn,#000000,#606060);
+    /* background: linear-gradient(0.35turn,#000000,#606060); */
   }
   .kogda_div1_but3{
     width: 300px;
