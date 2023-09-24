@@ -517,6 +517,7 @@ const [PulSaqlash,setPulSaqlash]=useState()
 const [adressSaqlash,setAdressSaqlash]=useState()
 const [qayer,setQayer]=useState(1)
 const [Checkbox,setCheckbox]=useState(false)
+const [Jonim,setJonim]=useState(1)
 
 
 function check_ochil(id){
@@ -1043,9 +1044,9 @@ function beshPage(){
 
         <div className="kogda_div">
           <div className="kogda_div1">
-            <button className='kogda_div1_but1' style={qayer==1?{background: '#000000',color:'white'}:{}} onClick={()=>{setQayer(1)}}>Как можно быстрее</button>
-            <button className='kogda_div1_but2' style={qayer==2?{background: '#000000',color:'white'}:{}}  onClick={()=>{setQayer(2)}}>Сегодня</button>
-            <button className="kogda_div1_but3" style={qayer==3?{background: '#000000',color:'white'}:{}}  onClick={()=>{setQayer(3)}}>Предварительный заказ</button>
+            <button className='kogda_div1_but1'  style={qayer==1?{background: '#000000',color:'white'}:{}} onClick={()=>{setQayer(1);setCheckbox(false)}}>Как можно быстрее</button>
+            <button className='kogda_div1_but2'  style={qayer==2?{background: '#000000',color:'white'}:{}}  onClick={()=>{setQayer(2);setCheckbox(false)}}>Сегодня</button>
+            <button className="kogda_div1_but3"  style={qayer==3?{background: '#000000',color:'white'}:{}}  onClick={()=>{setQayer(3);setCheckbox(false)}}>Предварительный заказ</button>
             {qayer==3?(<div className="kogda_div1_check">
             <input className='checkbox_3' type="checkbox" name="" id="" onChange={(e)=>{setCheckbox(e.target.checked)}} />
             <span>Разбить заказ на части</span>
@@ -1136,7 +1137,7 @@ function beshPage(){
           </div>
         </div>
         <div className="zakaz_kvadrat_tegi">
-          <button onClick={()=>{setZag(5)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
+          <button onClick={()=>{setZag(5);setCheckbox(false);setOtish2(false)}} className='zakaz_kvadrat_tegi_but1'><BsArrowLeft/>Назад</button>
           <button onClick={()=>{setZag(7)}} className='zakaz_kvadrat_tegi_but2'>Далее <BsArrowRight/></button>
           </div>
         </div> : ""}  
